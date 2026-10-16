@@ -55,7 +55,11 @@ button{font:inherit;color:inherit}
 .ruler-note{font-size:15px;margin-top:10px}
 .spark{display:block;width:100%;max-width:760px;height:56px;margin-top:16px}
 
-.tape{margin:0;border-bottom:1px solid var(--line);min-height:46px}
+.tape{margin:0;border-bottom:1px solid var(--line);min-height:46px;overflow:hidden;white-space:nowrap;display:flex;align-items:center}
+.tape-track{display:inline-flex;gap:28px;padding:12px 14px;font-size:14px;animation:tape 90s linear infinite}
+.tape:hover .tape-track{animation-play-state:paused}
+@keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tape-track{animation:none}}
 
 /* ---------- Tab ---------- */
 .tabs{display:flex;gap:4px;margin:22px 0 18px;border-bottom:1px solid var(--line);overflow-x:auto}
@@ -186,7 +190,7 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
     <div class="toolbar">
       <input class="search" id="chart-sym" placeholder="Kode saham, mis. BBCA" aria-label="Kode saham untuk grafik">
       <button class="chip" id="chart-go">Tampilkan</button>
-      <span class="hint">Grafik dari TradingView. Untuk akun gratis, data BEI bisa tertunda.</span>
+      <span class="hint">Grafik dari TradingView. Untuk saham BEI, widget gratis biasanya hanya sampai harga penutupan hari sebelumnya; harga hari ini ada di bagian atas halaman.</span>
     </div>
     <div class="chart-box" id="chart-box"></div>
   </section>
@@ -255,7 +259,7 @@ function renderHero(){
   }
 }
 
-/* ---------- Ticker tape TradingView ---------- */
+/* ---------- Widget TradingView & pita harga ---------- */
 function tvWidget(container, name, config){
   container.innerHTML = "";
   const box = document.createElement("div"); box.className = "tradingview-widget-container"; box.style.height = "100%";
@@ -266,12 +270,13 @@ function tvWidget(container, name, config){
   box.append(inner, s); container.append(box);
 }
 function renderTape(){
-  const top = (S.screener?.rows || []).filter(r => !r.flags).slice(0, 14).map(r => r.kode);
-  const codes = top.length ? top : ["BBCA","BBRI","BMRI","TLKM","ASII","AMRT","ICBP","UNTR"];
-  tvWidget($("#tape"), "ticker-tape", {
-    symbols: [{proName:"IDX:COMPOSITE", title:"IHSG"}, ...codes.map(c => ({proName:`IDX:${c}`, title:c}))],
-    showSymbolLogo:false, isTransparent:true, displayMode:"adaptive", colorTheme: dark()?"dark":"light", locale:"id"
-  });
+  const st = S.quotes?.stocks || {}, ih = S.quotes?.ihsg;
+  const top = (S.screener?.rows || []).filter(r => !r.flags).slice(0, 20).map(r => r.kode);
+  const codes = (top.length ? top : Object.keys(st)).filter(c => st[c]);
+  const item = (n, v, c) => '<span class="tk"><b>' + esc(n) + '</b> ' + fmt(v, n === 'IHSG' ? 2 : 0) + ' <span class="' + cls(c) + '">' + pct(c, 2) + '</span></span>';
+  let h = ih && isNum(ih.last) ? item('IHSG', ih.last, ih.chg) : '';
+  h += codes.map(c => item(c, st[c].last, st[c].chg)).join('');
+  $('#tape').innerHTML = h ? '<div class="tape-track">' + h + h + '</div>' : '';
 }
 function renderChart(code){
   tvWidget($("#chart-box"), "advanced-chart", {
@@ -434,7 +439,7 @@ async function loadAll(first){
   const [q, s, a] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions")]);
   S.quotes = q; S.screener = s; S.actions = a;
   renderHero(); renderEvFilters(); renderEvents(); renderScreener();
-  if(first) renderTape();
+  renderTape();
 }
 loadAll(true);
 setInterval(loadAll, 60_000);
