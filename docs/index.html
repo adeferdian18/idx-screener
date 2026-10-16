@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meja Pantau IDX</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E9EDF1; --surface:#F8FAFB; --ink:#172A46; --muted:#5C6B82; --line:#CBD3DD;
+  --up:#0B8457; --down:#C33B2E; --accent:#9A6B0E; --accent-soft:#F1E3C2; --warn-soft:#F6DCD8; --good-soft:#D3EEE2;
+  --font:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1828; --surface:#15233A; --ink:#E3E9F1; --muted:#93A2B8; --line:#26384F;
+    --up:#2FBF8A; --down:#F06A5B; --accent:#D9A63A; --accent-soft:#3A3020; --warn-soft:#3D2226; --good-soft:#173A31;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1828; --surface:#15233A; --ink:#E3E9F1; --muted:#93A2B8; --line:#26384F;
+  --up:#2FBF8A; --down:#F06A5B; --accent:#D9A63A; --accent-soft:#3A3020; --warn-soft:#3D2226; --good-soft:#173A31;
+  color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5;
+  font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ---------- Hero: IHSG dan penggaris jarak dari puncak ---------- */
+.hero{padding:28px 0 22px;border-bottom:1px solid var(--line)}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:15px;color:var(--muted)}
+.fresh{font-size:13px;color:var(--muted);text-align:right}
+.fresh b{color:var(--ink);font-weight:600}
+.index-line{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-top:6px}
+.index-name{font-size:18px;font-weight:600}
+.index-val{font-size:clamp(56px,11vw,120px);font-weight:800;letter-spacing:-.04em;line-height:.95}
+.index-chg{font-size:clamp(20px,3vw,30px);font-weight:700}
+.up{color:var(--up)} .down{color:var(--down)}
+.ruler{margin-top:22px;max-width:760px}
+.ruler-track{position:relative;height:14px;border-radius:7px;background:linear-gradient(90deg,var(--down),var(--line) 55%,var(--up))}
+.ruler-mark{position:absolute;top:-7px;width:4px;height:28px;background:var(--ink);border-radius:2px;transform:translateX(-2px);transition:left .6s ease}
+.ruler-legend{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:8px}
+.ruler-note{font-size:15px;margin-top:10px}
+.spark{display:block;width:100%;max-width:760px;height:56px;margin-top:16px}
+
+.tape{margin:0;border-bottom:1px solid var(--line);min-height:46px}
+
+/* ---------- Tab ---------- */
+.tabs{display:flex;gap:4px;margin:22px 0 18px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tab{background:none;border:0;padding:10px 14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.panel[hidden]{display:none}
+
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.search{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;font:inherit;color:var(--ink);min-width:200px}
+.hint{font-size:14px;color:var(--muted)}
+
+/* ---------- Aksi korporasi ---------- */
+.events{display:flex;flex-direction:column;gap:2px}
+.ev{display:grid;grid-template-columns:170px 1fr 230px;gap:20px;background:var(--surface);padding:18px 20px;border-left:5px solid var(--line)}
+.ev:first-child{border-top-right-radius:10px}
+.ev:last-child{border-bottom-right-radius:10px}
+.ev.pos{border-left-color:var(--up)} .ev.neg{border-left-color:var(--down)}
+.ev-code{font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.ev-code:hover{text-decoration:underline}
+.ev-co{font-size:13px;color:var(--muted);margin-top:4px}
+.ev-type{display:inline-block;margin-top:10px;font-size:13px;font-weight:600;padding:2px 8px;border-radius:4px;background:var(--accent-soft)}
+.ev-date{font-size:13px;color:var(--muted);margin-top:6px}
+.ev-title{font-weight:600;margin:0 0 6px;font-size:16px}
+.ev-title a{text-decoration:none}
+.ev-title a:hover{text-decoration:underline}
+.ev-narr{margin:0;color:var(--ink);font-size:15px;max-width:68ch}
+.ev-by{font-size:12px;color:var(--muted);margin-top:8px}
+.ev-side{text-align:right}
+.score{font-size:40px;font-weight:800;line-height:1}
+.verdict{display:inline-block;font-size:13px;font-weight:600;margin-top:6px;padding:2px 8px;border-radius:4px}
+.v-good{background:var(--good-soft);color:var(--up)} .v-mid{background:var(--accent-soft);color:var(--accent)} .v-bad{background:var(--warn-soft);color:var(--down)}
+.facts{margin:12px 0 0;display:grid;grid-template-columns:auto auto;gap:2px 10px;font-size:13px;justify-content:end}
+.facts dt{color:var(--muted)} .facts dd{margin:0;font-weight:600} .facts dt,.facts dd{white-space:nowrap}
+
+/* ---------- Tabel screener ---------- */
+.table-wrap{overflow-x:auto;background:var(--surface);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 12px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+th:nth-child(-n+2),td:nth-child(-n+2){text-align:left}
+th{font-weight:600;color:var(--muted);position:sticky;top:0;background:var(--surface);cursor:pointer;user-select:none}
+th[aria-sort="descending"]::after{content:" ▾"} th[aria-sort="ascending"]::after{content:" ▴"}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--bg)}
+td.code{font-weight:700}
+.bar{display:inline-block;width:46px;height:6px;border-radius:3px;background:var(--line);vertical-align:middle;margin-left:6px;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.flag{color:var(--down);font-size:12px;text-align:left;white-space:normal;min-width:140px}
+
+.chart-box{height:560px;background:var(--surface);border-radius:10px;overflow:hidden}
+
+/* ---------- Detail saham ---------- */
+dialog{border:0;padding:0;background:var(--surface);color:var(--ink);border-radius:14px;width:min(920px,94vw);max-height:90vh}
+dialog::backdrop{background:rgba(8,15,28,.55)}
+.dlg-head{display:flex;justify-content:space-between;align-items:flex-start;padding:20px 22px 10px;gap:12px}
+.dlg-head h2{margin:0;font-size:30px;letter-spacing:-.02em}
+.dlg-head p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.close{background:var(--bg);border:0;border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:600}
+.dlg-body{padding:0 22px 22px;overflow:auto;max-height:calc(90vh - 90px)}
+.mini-chart{height:300px;border-radius:10px;overflow:hidden;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cell{background:var(--bg);border-radius:8px;padding:10px 12px}
+.cell span{display:block;font-size:12px;color:var(--muted)}
+.cell b{font-size:18px}
+.dlg-body h3{font-size:16px;margin:20px 0 8px}
+
+.empty{background:var(--surface);border-radius:10px;padding:28px;max-width:640px}
+.empty h3{margin:0 0 6px}
+footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
+
+@media (max-width:820px){
+  .ev{grid-template-columns:1fr;gap:10px}
+  .ev-side{text-align:left;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .facts{justify-content:start;margin:0}
+  .chart-box{height:420px}
+}
+@media (prefers-reduced-motion:reduce){.ruler-mark{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="brand">Meja Pantau IDX</div>
+      <div class="fresh" id="fresh">Memuat data…</div>
+    </div>
+    <div class="index-line">
+      <span class="index-name">IHSG</span>
+      <span class="index-val" id="ihsg-val">–</span>
+      <span class="index-chg" id="ihsg-chg"></span>
+    </div>
+    <div class="ruler" aria-label="Posisi IHSG antara titik terendah dan tertinggi 52 minggu">
+      <div class="ruler-track"><div class="ruler-mark" id="ruler-mark" style="left:50%"></div></div>
+      <div class="ruler-legend"><span id="low52">Terendah 52 mgg</span><span id="peak52">Tertinggi 52 mgg</span></div>
+      <div class="ruler-note" id="ruler-note"></div>
+    </div>
+    <svg class="spark" id="spark" viewBox="0 0 760 56" preserveAspectRatio="none" aria-label="Pergerakan IHSG hari ini"></svg>
+  </div>
+</header>
+
+<div class="tape" id="tape"></div>
+
+<main class="wrap">
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-tab="aksi">Aksi korporasi</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="screener">Screener fundamental</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="grafik">Grafik</button>
+  </div>
+
+  <section class="panel" id="panel-aksi">
+    <div class="toolbar" id="ev-filters"></div>
+    <div class="events" id="events"></div>
+  </section>
+
+  <section class="panel" id="panel-screener" hidden>
+    <div class="toolbar">
+      <input class="search" id="q" type="search" placeholder="Cari kode atau nama" aria-label="Cari saham">
+      <button class="chip" id="only-clean" aria-pressed="true">Hanya yang lolos filter</button>
+      <button class="chip" id="only-bank" aria-pressed="false">Bank saja</button>
+      <span class="hint" id="sc-count"></span>
+    </div>
+    <div class="table-wrap"><table id="sc-table"><thead></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="panel" id="panel-grafik" hidden>
+    <div class="toolbar">
+      <input class="search" id="chart-sym" placeholder="Kode saham, mis. BBCA" aria-label="Kode saham untuk grafik">
+      <button class="chip" id="chart-go">Tampilkan</button>
+      <span class="hint">Grafik dari TradingView. Untuk akun gratis, data BEI bisa tertunda.</span>
+    </div>
+    <div class="chart-box" id="chart-box"></div>
+  </section>
+
+  <footer>
+    Harga dari Yahoo Finance, diperbarui tiap 15 menit di jam bursa dan tertunda sekitar 15 menit dari BEI. Fundamental dihitung ulang setiap hari pukul 16:30 WIB; aksi korporasi dipindai pukul 08:00, 12:30 dan 16:30 WIB dari berita dan jadwal dividen.
+    Skor dan narasi adalah alat bantu riset, bukan rekomendasi beli atau jual. Cocokkan selalu dengan keterbukaan informasi resmi di idx.co.id.
+  </footer>
+</main>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="dlg-head">
+    <div><h2 id="dlg-title"></h2><p id="dlg-sub"></p></div>
+    <button class="close" id="dlg-close">Tutup</button>
+  </div>
+  <div class="dlg-body" id="dlg-body"></div>
+</dialog>
+
+<script>
+"use strict";
+const S = { quotes:null, screener:null, actions:null, evFilter:"semua", sort:{key:"peringkat",dir:1} };
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isNum = x => typeof x === "number" && isFinite(x);
+const fmt = (x, d=0) => isNum(x) ? x.toLocaleString("id-ID",{minimumFractionDigits:d,maximumFractionDigits:d}) : "–";
+const pct = (x, d=1, sign=true) => isNum(x) ? (sign && x>0?"+":"") + (x*100).toLocaleString("id-ID",{minimumFractionDigits:d,maximumFractionDigits:d}) + "%" : "–";
+const cls = x => isNum(x) ? (x>0?"up":x<0?"down":"") : "";
+const dark = () => matchMedia("(prefers-color-scheme: dark)").matches;
+
+async function getJSON(name){
+  try{
+    const r = await fetch(`data/${name}.json?t=${Date.now()}`, {cache:"no-store"});
+    if(!r.ok) return null;
+    return await r.json();
+  }catch{ return null; }
+}
+
+function ago(iso){
+  if(!iso) return "belum pernah";
+  const m = Math.round((Date.now() - new Date(iso).getTime())/60000);
+  if(m < 1) return "baru saja";
+  if(m < 60) return `${m} menit lalu`;
+  if(m < 1440) return `${Math.round(m/60)} jam lalu`;
+  return `${Math.round(m/1440)} hari lalu`;
+}
+
+/* ---------- Hero ---------- */
+function renderHero(){
+  const q = S.quotes, ih = q?.ihsg;
+  $("#fresh").innerHTML = `Harga <b>${ago(q?.updated)}</b><br>Fundamental <b>${ago(S.screener?.updated)}</b>, aksi korporasi <b>${ago(S.actions?.updated)}</b>`;
+  if(!ih || !isNum(ih.last)) return;
+  $("#ihsg-val").textContent = fmt(ih.last, 2);
+  const c = $("#ihsg-chg"); c.textContent = `${ih.chg>0?"+":""}${fmt(ih.last-ih.prev,2)} (${pct(ih.chg,2)})`; c.className = "index-chg " + cls(ih.chg);
+  const pos = (ih.last - ih.low52) / (ih.peak52 - ih.low52);
+  $("#ruler-mark").style.left = `${Math.max(0,Math.min(1,pos))*100}%`;
+  $("#low52").textContent = `Terendah 52 mgg ${fmt(ih.low52)}`;
+  $("#peak52").textContent = `Tertinggi 52 mgg ${fmt(ih.peak52)}`;
+  const dd = ih.last/ih.peak52 - 1;
+  $("#ruler-note").innerHTML = `IHSG <b class="down">${pct(dd,1,false).replace("-","")}</b> di bawah puncaknya dan ${pct(ih.last/ih.low52-1,1,false)} di atas titik terendah setahun.`;
+  const pts = ih.intraday?.length > 1 ? ih.intraday : ih.year || [];
+  if(pts.length > 1){
+    const mn = Math.min(...pts), mx = Math.max(...pts), w = 760, h = 56;
+    const xy = pts.map((v,i)=>`${(i/(pts.length-1)*w).toFixed(1)},${(h-4-(v-mn)/((mx-mn)||1)*(h-8)).toFixed(1)}`).join(" ");
+    const col = pts.at(-1) >= pts[0] ? "var(--up)" : "var(--down)";
+    $("#spark").innerHTML = `<polyline points="${xy}" fill="none" stroke="${col}" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
+  }
+}
+
+/* ---------- Ticker tape TradingView ---------- */
+function tvWidget(container, name, config){
+  container.innerHTML = "";
+  const box = document.createElement("div"); box.className = "tradingview-widget-container"; box.style.height = "100%";
+  const inner = document.createElement("div"); inner.className = "tradingview-widget-container__widget"; inner.style.height = "100%";
+  const s = document.createElement("script");
+  s.src = `https://s3.tradingview.com/external-embedding/embed-widget-${name}.js`; s.async = true;
+  s.textContent = JSON.stringify(config);
+  box.append(inner, s); container.append(box);
+}
+function renderTape(){
+  const top = (S.screener?.rows || []).filter(r => !r.flags).slice(0, 14).map(r => r.kode);
+  const codes = top.length ? top : ["BBCA","BBRI","BMRI","TLKM","ASII","AMRT","ICBP","UNTR"];
+  tvWidget($("#tape"), "ticker-tape", {
+    symbols: [{proName:"IDX:COMPOSITE", title:"IHSG"}, ...codes.map(c => ({proName:`IDX:${c}`, title:c}))],
+    showSymbolLogo:false, isTransparent:true, displayMode:"adaptive", colorTheme: dark()?"dark":"light", locale:"id"
+  });
+}
+function renderChart(code){
+  tvWidget($("#chart-box"), "advanced-chart", {
+    autosize:true, symbol: code ? `IDX:${code}` : "IDX:COMPOSITE", interval:"D", timezone:"Asia/Jakarta",
+    theme: dark()?"dark":"light", style:"1", locale:"id", allow_symbol_change:true, hide_side_toolbar:false
+  });
+}
+
+/* ---------- Aksi korporasi ---------- */
+const EV_FILTERS = [["semua","Semua"],["Layak dicermati","Layak dicermati"],["buyback","Buyback"],["insider","Orang dalam beli"],["dividend","Dividen"],["dilusi","Rights issue & private placement"],["lain","Lainnya"]];
+function evMatch(e, f){
+  if(f === "semua") return true;
+  if(f === "Layak dicermati") return e.verdict === f;
+  if(f === "dilusi") return e.type === "rights" || e.type === "placement";
+  if(f === "lain") return ["split","acquisition","tender","reverse","delisting"].includes(e.type);
+  return e.type === f;
+}
+function renderEvFilters(){
+  const evs = S.actions?.events || [];
+  $("#ev-filters").innerHTML = EV_FILTERS.map(([k,l]) => {
+    const n = evs.filter(e => evMatch(e,k)).length;
+    return `<button class="chip" data-f="${esc(k)}" aria-pressed="${S.evFilter===k}">${esc(l)} (${n})</button>`;
+  }).join("");
+}
+function vClass(v){ return v === "Layak dicermati" ? "v-good" : v === "Waspada" ? "v-bad" : "v-mid"; }
+function liveOf(code){ return S.quotes?.stocks?.[code]; }
+function renderEvents(){
+  const box = $("#events");
+  const evs = (S.actions?.events || []).filter(e => evMatch(e, S.evFilter));
+  if(!S.actions){
+    box.innerHTML = `<div class="empty"><h3>Data aksi korporasi belum ada</h3><p>Buka repo GitHub kamu, tab Actions, pilih "Screener + aksi korporasi (harian)" lalu klik Run workflow. Halaman ini terisi otomatis setelah selesai, sekitar 10 menit.</p></div>`;
+    return;
+  }
+  if(!evs.length){ box.innerHTML = `<div class="empty"><h3>Tidak ada aksi korporasi di kategori ini</h3><p>Coba kategori lain atau tunggu pemindaian berikutnya.</p></div>`; return; }
+  box.innerHTML = evs.map(e => {
+    const f = e.fund || {}, live = liveOf(e.code);
+    const price = live?.last ?? f.harga;
+    const d = new Date(e.date);
+    const when = e.ex_date ? `Ex-dividen ${new Date(e.ex_date).toLocaleDateString("id-ID",{day:"numeric",month:"long"})}`
+                           : d.toLocaleDateString("id-ID",{day:"numeric",month:"short"}) + ", " + d.toLocaleTimeString("id-ID",{hour:"2-digit",minute:"2-digit"});
+    const title = e.link ? `<a href="${esc(e.link)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
+    const also = e.also?.length ? ` Juga diberitakan ${e.also.length} media lain.` : "";
+    return `<article class="ev ${e.signal>0?"pos":e.signal<0?"neg":""}">
+      <div>
+        <button class="ev-code" data-code="${esc(e.code)}">${esc(e.code)}</button>
+        <div class="ev-co">${esc(e.company||"")}</div>
+        <span class="ev-type">${esc(e.label)}</span>
+        <div class="ev-date">${esc(when)}</div>
+      </div>
+      <div>
+        <h3 class="ev-title">${title}</h3>
+        <p class="ev-narr">${esc(e.narrative)}</p>
+        <div class="ev-by">${e.narrative_by==="claude"?"Narasi ditulis Claude dari data fundamental":"Narasi otomatis berbasis aturan"}. Sumber: ${esc(e.source||"-")}.${also}</div>
+      </div>
+      <div class="ev-side">
+        <div><div class="score">${e.score}</div><span class="verdict ${vClass(e.verdict)}">${esc(e.verdict)}</span></div>
+        <dl class="facts">
+          <dt>Harga</dt><dd>${fmt(price)} <span class="${cls(live?.chg)}">${live?pct(live.chg):""}</span></dd>
+          <dt>Dari puncak</dt><dd class="down">${pct(f.dari_puncak_52w,0)}</dd>
+          <dt>Skor fundamental</dt><dd>${isNum(f.skor)?fmt(f.skor):"–"}</dd>
+          <dt>ROE / PBV</dt><dd>${pct(f.roe,0,false)} / ${fmt(f.pbv,1)}x</dd>
+        </dl>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+/* ---------- Screener ---------- */
+const COLS = [
+  ["peringkat","#",r=>r.peringkat],
+  ["kode","Saham",r=>`<span class="code">${esc(r.kode)}</span>`],
+  ["skor","Skor",r=>`${fmt(r.skor)}<span class="bar"><i style="width:${r.skor||0}%"></i></span>`],
+  ["harga","Harga",r=>fmt(liveOf(r.kode)?.last ?? r.harga)],
+  ["chg","Hari ini",r=>{const c=liveOf(r.kode)?.chg ?? r.chg_1d;return `<span class="${cls(c)}">${pct(c)}</span>`}],
+  ["dari_puncak_52w","Dari puncak",r=>`<span class="down">${pct(r.dari_puncak_52w,0)}</span>`],
+  ["piotroski","F-Score",r=>isNum(r.piotroski)?fmt(r.piotroski):"bank"],
+  ["altman_z","Altman Z",r=>fmt(r.altman_z,1)],
+  ["roe","ROE",r=>pct(r.roe,0,false)],
+  ["per","PER",r=>fmt(r.per,1)],
+  ["pbv","PBV",r=>fmt(r.pbv,1)],
+  ["margin_of_safety","MoS Graham",r=>`<span class="${cls(r.margin_of_safety)}">${pct(r.margin_of_safety,0)}</span>`],
+  ["div_yield","Dividen",r=>pct(r.div_yield,1,false)],
+  ["flags","Catatan",r=>`<span class="flag">${esc((r.flags||"").toLowerCase())}</span>`],
+];
+function scRows(){
+  let rows = (S.screener?.rows || []).map(r => ({...r, chg: liveOf(r.kode)?.chg ?? r.chg_1d}));
+  const q = $("#q").value.trim().toUpperCase();
+  if(q) rows = rows.filter(r => r.kode.includes(q) || (r.nama||"").toUpperCase().includes(q));
+  if($("#only-clean").getAttribute("aria-pressed")==="true") rows = rows.filter(r => !r.flags);
+  if($("#only-bank").getAttribute("aria-pressed")==="true") rows = rows.filter(r => r.bank);
+  const {key, dir} = S.sort;
+  rows.sort((a,b) => {
+    const x=a[key], y=b[key];
+    if(x==null && y==null) return 0; if(x==null) return 1; if(y==null) return -1;
+    return (typeof x === "string" ? x.localeCompare(y) : x - y) * dir;
+  });
+  return rows;
+}
+function renderScreener(){
+  const t = $("#sc-table");
+  t.tHead.innerHTML = "<tr>" + COLS.map(([k,l]) => `<th data-k="${k}" ${S.sort.key===k?`aria-sort="${S.sort.dir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("") + "</tr>";
+  if(!S.screener){ t.tBodies[0].innerHTML = `<tr><td colspan="${COLS.length}" style="text-align:left">Belum ada data screener. Jalankan workflow harian di GitHub Actions.</td></tr>`; return; }
+  const rows = scRows();
+  $("#sc-count").textContent = `${rows.length} saham`;
+  t.tBodies[0].innerHTML = rows.map(r => `<tr data-code="${esc(r.kode)}">` + COLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("");
+}
+
+/* ---------- Detail saham ---------- */
+function openDetail(code){
+  const r = (S.screener?.rows || []).find(x => x.kode === code) || {};
+  const live = liveOf(code);
+  const evs = (S.actions?.events || []).filter(e => e.code === code);
+  const fromEv = evs[0]?.fund || {};
+  const f = Object.keys(r).length ? r : fromEv;
+  $("#dlg-title").textContent = code;
+  $("#dlg-sub").textContent = [r.nama || evs[0]?.company, f.sektor].filter(Boolean).join(", ");
+  const cells = [
+    ["Harga", fmt(live?.last ?? f.harga)], ["Hari ini", pct(live?.chg)], ["Dari puncak 52 mgg", pct(f.dari_puncak_52w,0)],
+    ["Skor fundamental", fmt(f.skor)], ["Peringkat", f.peringkat ?? "–"], ["Piotroski F", isNum(f.piotroski)?fmt(f.piotroski)+"/9":"–"],
+    ["Altman Z''", fmt(f.altman_z,2)], ["ROE", pct(f.roe,1,false)], ["ROA", pct(f.roa,1,false)], ["PER", fmt(f.per,1)],
+    ["PBV", fmt(f.pbv,2)], ["DER", fmt(f.der,2)], ["Current ratio", fmt(f.current_ratio,2)], ["PEG", fmt(f.peg,2)],
+    ["Graham number", fmt(f.graham_number)], ["Margin of safety", pct(f.margin_of_safety,0)], ["Earnings yield", pct(f.earnings_yield,1,false)],
+    ["Dividend yield", pct(f.div_yield,1,false)], ["Nilai transaksi/hari", isNum(f.nilai_transaksi_rata2)?"Rp"+fmt(f.nilai_transaksi_rata2/1e9,1)+" M":"–"],
+  ];
+  $("#dlg-body").innerHTML = `<div class="mini-chart" id="mini-chart"></div>
+    <div class="grid">${cells.map(([l,v]) => `<div class="cell"><span>${l}</span><b>${esc(v)}</b></div>`).join("")}</div>
+    ${f.flags ? `<h3>Tanda bahaya</h3><p class="down">${esc(f.flags.toLowerCase())}</p>` : ""}
+    <h3>Aksi korporasi 30 hari terakhir</h3>
+    ${evs.length ? evs.map(e => `<p><b>${esc(e.label)}</b>, skor ${e.score} (${esc(e.verdict)}). ${esc(e.narrative)}</p>`).join("") : `<p class="hint">Belum ada aksi korporasi yang terdeteksi untuk ${esc(code)}.</p>`}`;
+  $("#dlg").showModal();
+  tvWidget($("#mini-chart"), "advanced-chart", {autosize:true, symbol:`IDX:${code}`, interval:"D", timezone:"Asia/Jakarta",
+    theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, hide_legend:false, allow_symbol_change:false});
+}
+
+/* ---------- Event & refresh ---------- */
+document.addEventListener("click", e => {
+  const tab = e.target.closest(".tab");
+  if(tab){
+    document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t===tab));
+    document.querySelectorAll(".panel").forEach(p => p.hidden = p.id !== "panel-"+tab.dataset.tab);
+    if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
+    return;
+  }
+  const chip = e.target.closest("#ev-filters .chip");
+  if(chip){ S.evFilter = chip.dataset.f; renderEvFilters(); renderEvents(); return; }
+  const code = e.target.closest("[data-code]");
+  if(code){ openDetail(code.dataset.code); return; }
+  const th = e.target.closest("#sc-table th");
+  if(th){ const k = th.dataset.k; S.sort = {key:k, dir: S.sort.key===k ? -S.sort.dir : (["peringkat","per","pbv","kode"].includes(k)?1:-1)}; renderScreener(); return; }
+});
+["only-clean","only-bank"].forEach(id => $("#"+id).addEventListener("click", ev => {
+  const b = ev.currentTarget; b.setAttribute("aria-pressed", b.getAttribute("aria-pressed")!=="true"); renderScreener();
+}));
+$("#q").addEventListener("input", renderScreener);
+$("#chart-go").addEventListener("click", () => renderChart($("#chart-sym").value.trim().toUpperCase().replace(".JK","")));
+$("#chart-sym").addEventListener("keydown", e => { if(e.key==="Enter") $("#chart-go").click(); });
+$("#dlg-close").addEventListener("click", () => $("#dlg").close());
+
+async function loadAll(first){
+  const [q, s, a] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions")]);
+  S.quotes = q; S.screener = s; S.actions = a;
+  renderHero(); renderEvFilters(); renderEvents(); renderScreener();
+  if(first) renderTape();
+}
+loadAll(true);
+setInterval(loadAll, 60_000);
+</script>
+</body>
+</html>
