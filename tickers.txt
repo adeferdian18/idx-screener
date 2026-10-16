@@ -1,0 +1,104 @@
+# Daftar saham yang dipindai. Satu kode per baris, tanpa .JK
+# Tambah/hapus sesukamu. Baris diawali # diabaikan.
+# Perbankan & keuangan
+BBCA
+BBRI
+BMRI
+BBNI
+BRIS
+BBTN
+BNGA
+NISP
+PNBN
+BTPS
+ARTO
+BFIN
+ADMF
+# Telekomunikasi & infrastruktur
+TLKM
+ISAT
+EXCL
+TOWR
+TBIG
+MTEL
+JSMR
+# Konsumer
+ICBP
+INDF
+MYOR
+UNVR
+CMRY
+ULTJ
+ROTI
+SIDO
+KLBF
+GGRM
+HMSP
+CPIN
+JPFA
+# Ritel
+AMRT
+MIDI
+MAPI
+MAPA
+ACES
+ERAA
+LPPF
+# Otomotif & industri
+ASII
+UNTR
+AUTO
+SMSM
+DRMA
+IMPC
+# Energi & tambang
+ADRO
+PTBA
+ITMG
+INDY
+HRUM
+MEDC
+PGAS
+AKRA
+ELSA
+ANTM
+INCO
+MDKA
+TINS
+NCKL
+MBMA
+AMMN
+PGEO
+# Kimia & semen
+BRPT
+TPIA
+SMGR
+INTP
+# Properti
+BSDE
+CTRA
+PWON
+SMRA
+# Kesehatan
+MIKA
+SILO
+HEAL
+# Perkebunan
+AALI
+LSIP
+DSNG
+TAPG
+SSMS
+# Teknologi & media
+GOTO
+BUKA
+EMTK
+SCMA
+MTDL
+# Lainnya
+AVIA
+SRTG
+ESSA
+CLEO
+HRTA
+PNLF
