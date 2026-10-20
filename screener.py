@@ -174,24 +174,41 @@ def altman_z_em(inc, bal, info):
     return 3.25 + 6.56 * wc / ta + 3.26 * re_ / ta + 6.72 * ebit / ta + 1.05 * eq / tl
 
 
-def magic_formula_parts(inc, bal, info):
-    """Greenblatt: Earnings Yield = EBIT/EV, Return on Capital = EBIT/(NWC + aset tetap bersih)."""
+def magic_formula_parts(inc, bal, info, fx=1.0):
+    """Greenblatt: Earnings Yield = EBIT/EV, Return on Capital = EBIT/(NWC + aset tetap bersih).
+    `fx` mengubah angka laporan keuangan ke IDR agar sebanding dengan kapitalisasi pasar."""
     ebit = get_row(inc, ["EBIT", "Operating Income"])
+    ebit = ebit * fx if ok(ebit) else None
     mcap = info.get("marketCap")
-    debt = get_row(bal, ["Total Debt"]) or 0.0
-    cash = get_row(bal, ["Cash And Cash Equivalents", "Cash Cash Equivalents And Short Term Investments"]) or 0.0
+    debt = (get_row(bal, ["Total Debt"]) or 0.0) * fx
+    cash = (get_row(bal, ["Cash And Cash Equivalents", "Cash Cash Equivalents And Short Term Investments"]) or 0.0) * fx
     ev = mcap + debt - cash if ok(mcap) else None
     ca, cl = get_row(bal, ["Current Assets"]), get_row(bal, ["Current Liabilities"])
     nppe = get_row(bal, ["Net PPE"])
-    nwc = max((ca or 0) - (cl or 0) - cash, 0) if ok(ca) and ok(cl) else None
+    nppe = nppe * fx if ok(nppe) else None
+    nwc = max((ca - cl) * fx - cash, 0) if ok(ca) and ok(cl) else None
     capital = (nwc or 0) + (nppe or 0) if ok(nwc) or ok(nppe) else None
     ey = safe_div(ebit, ev) if ok(ev) and ev > 0 else None
     roc = safe_div(ebit, capital) if ok(capital) and capital > 0 else None
     return ey, roc
 
 
-def graham(info, price):
-    eps, bvps = info.get("trailingEps"), info.get("bookValue")
+_fx_cache = {"IDR": 1.0}
+
+
+def fx_to_idr(ccy):
+    """Kurs mata uang laporan keuangan -> IDR. Emiten batu bara/nikel/petrokimia (ITMG, ADRO, TPIA, ...)
+    melapor dalam USD sementara harga sahamnya dalam IDR; tanpa konversi PBV, Graham dan EV jadi kacau."""
+    ccy = (ccy or "IDR").upper()
+    if ccy not in _fx_cache:
+        try:
+            _fx_cache[ccy] = float(yf.Ticker(f"{ccy}IDR=X").history(period="5d")["Close"].iloc[-1])
+        except Exception:  # noqa: BLE001
+            _fx_cache[ccy] = None
+    return _fx_cache[ccy]
+
+
+def graham(eps, bvps, price):
     if not ok(eps) or not ok(bvps) or eps <= 0 or bvps <= 0:
         return None, None
     gn = math.sqrt(22.5 * eps * bvps)
@@ -214,6 +231,9 @@ def analyze(code, d):
     is_fin = sector == "Financial Services"
     name = info.get("shortName") or code
 
+    fin_ccy = (info.get("financialCurrency") or "IDR").upper()
+    fx = fx_to_idr(fin_ccy)
+
     roe = info.get("returnOnEquity")
     roa = info.get("returnOnAssets")
     pe = info.get("trailingPE")
@@ -222,18 +242,29 @@ def analyze(code, d):
     der = der / 100 if ok(der) else None  # yfinance memberi dalam persen
     cr = info.get("currentRatio")
     eg = info.get("earningsGrowth")
+    # yfinance >= 0.2.54 memberi dividendYield dalam persen (7.52 = 7,52%). Aturan lama "bagi 100
+    # jika > 1" membuat yield 0,5% terbaca 50%.
     dy = info.get("dividendYield")
-    if ok(dy) and dy > 1:  # beberapa versi yfinance memberi persen, bukan desimal
-        dy = dy / 100
+    dy = dy / 100 if ok(dy) else None
     fcf = get_row(cf, ["Free Cash Flow"])
     ni = get_row(inc, ["Net Income"])
     eq = get_row(bal, ["Stockholders Equity", "Common Stock Equity"])
     ta = get_row(bal, ["Total Assets"])
 
+    # Nilai buku per saham dihitung sendiri dalam IDR. bookValue/priceToBook dari Yahoo memakai mata uang
+    # laporan (USD untuk ITMG/ADRO/TPIA) sehingga PBV bisa terbaca 15.000x.
+    shares = info.get("sharesOutstanding")
+    eps = info.get("trailingEps")  # sudah dalam mata uang harga (IDR)
+    bvps = info.get("bookValue")
+    if fin_ccy != "IDR":
+        bvps = eq * fx / shares if ok(eq) and ok(fx) and ok(shares) and shares > 0 else None
+        pb = price / bvps if ok(bvps) and bvps > 0 else None
+        fcf = fcf * fx if ok(fcf) and ok(fx) else None
+
     fscore, _ = (None, 0) if is_fin else piotroski(inc, bal, cf)
     z = None if is_fin else altman_z_em(inc, bal, info)
-    ey, roc = (None, None) if is_fin else magic_formula_parts(inc, bal, info)
-    gn, mos = graham(info, price)
+    ey, roc = (None, None) if is_fin or not ok(fx) else magic_formula_parts(inc, bal, info, fx)
+    gn, mos = graham(eps, bvps, price)
     peg = safe_div(pe, eg * 100) if ok(pe) and ok(eg) and eg > 0 else None
 
     # --- Komponen skor (0..1)
@@ -289,6 +320,11 @@ def analyze(code, d):
     coverage = sum(v is not None for v in [quality, safety, value])
     if coverage < 2:
         flags.append("DATA KURANG")
+    report_date = inc.columns[0] if inc is not None and not inc.empty else None
+    if report_date is not None and (dt.datetime.now() - pd.Timestamp(report_date).to_pydatetime()).days > 550:
+        flags.append("LAPORAN USANG")  # laporan tahunan terakhir di Yahoo lebih dari ~18 bulan
+    if (ok(pb) and pb > 50) or (ok(pe) and pe > 500) or (fin_ccy != "IDR" and not ok(fx)):
+        flags.append("DATA JANGGAL")  # angka tidak masuk akal, kemungkinan salah data/kurs
 
     graham_defensive = bool(
         ok(pe) and ok(pb) and 0 < pe < 15 and 0 < pb < 1.5 and pe * pb < 22.5 and (is_fin or (ok(cr) and cr >= 1.5))
@@ -304,6 +340,8 @@ def analyze(code, d):
         "graham_number": gn, "margin_of_safety": mos, "graham_defensif": graham_defensive,
         "roe": roe, "roa": roa, "per": pe, "pbv": pb, "der": der, "current_ratio": cr,
         "peg": peg, "div_yield": dy, "fcf": fcf,
+        "mata_uang_lapkeu": fin_ccy,
+        "tgl_lapkeu": f"{pd.Timestamp(report_date):%Y-%m-%d}" if report_date is not None else None,
         "flags": ", ".join(flags),
     }
 
