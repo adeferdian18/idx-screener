@@ -42,6 +42,10 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-5-5")
 MAX_AI_NARRATIVES = int(os.getenv("MAX_AI_NARRATIVES", 12))
+GMAIL_USER = os.getenv("GMAIL_USER", "")
+GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "")
+EMAIL_TO = os.getenv("EMAIL_TO", "")
+EMAIL_MIN_SCORE = int(os.getenv("EMAIL_MIN_SCORE", 50))  # aksi dengan skor di bawah ini tidak diemail
 
 NEWS_QUERIES = [
     "buyback saham emiten",
@@ -378,6 +382,55 @@ def ai_narrative(ev, f):
     return "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
 
 
+def send_email(subject, html_body):
+    """Kirim email lewat SMTP Gmail. Butuh secret GMAIL_USER + GMAIL_APP_PASSWORD (App Password Google,
+    bukan password biasa). Penerima: EMAIL_TO, atau GMAIL_USER sendiri jika kosong."""
+    if not GMAIL_USER or not GMAIL_APP_PASSWORD:
+        return
+    import smtplib
+    from email.mime.text import MIMEText
+    msg = MIMEText(html_body, "html", "utf-8")
+    msg["Subject"], msg["From"], msg["To"] = subject, GMAIL_USER, EMAIL_TO or GMAIL_USER
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
+            s.login(GMAIL_USER, GMAIL_APP_PASSWORD)
+            s.send_message(msg)
+        print(f"Email terkirim ke {msg['To']}")
+    except Exception as e:  # noqa: BLE001
+        print(f"! email: {e}")
+
+
+def email_html(events):
+    cards = []
+    for e in events:
+        f = e.get("fund") or {}
+        facts = " · ".join(x for x in [
+            f"Skor fundamental {f['skor']:.0f}" if ok(f.get("skor")) else "",
+            f"ROE {pct(f['roe'])}" if ok(f.get("roe")) else "",
+            f"PBV {num(f['pbv'])}x" if ok(f.get("pbv")) else "",
+            f"PER {num(f['per'])}x" if ok(f.get("per")) else "",
+            f"{pct(f['dari_puncak_52w'])} dari puncak 52 mgg" if ok(f.get("dari_puncak_52w")) else "",
+        ] if x)
+        early = f" · ⚡ {e['age_hours']:.1f} jam lalu" if e.get("early") else ""
+        link = f'<a href="{html.escape(e["link"])}">Buka sumber</a>' if e.get("link") else ""
+        flags = f'<p style="color:#b42318;margin:4px 0">⚠ {html.escape(f["flags"])}</p>' if f.get("flags") else ""
+        cards.append(
+            f'<div style="border:1px solid #ddd;border-radius:8px;padding:12px;margin:10px 0">'
+            f'<b style="font-size:16px">{e["code"]}</b> · {html.escape(e.get("company", ""))}<br>'
+            f'<b>{html.escape(e["label"])}</b> · skor {e["score"]} ({e["verdict"]}){early}<br>'
+            f'<p style="margin:6px 0">{html.escape(e["title"])}</p>'
+            f'<p style="margin:4px 0;color:#555">{facts}</p>{flags}'
+            f'<p style="margin:6px 0"><i>{html.escape(e["narrative"])}</i></p>{link}</div>'
+        )
+    return (
+        '<div style="font-family:Arial,sans-serif;max-width:640px">'
+        f'<h2>🏢 {len(events)} aksi korporasi baru</h2>' + "".join(cards) +
+        '<p style="color:#777;font-size:12px">Ringkasan otomatis dari idx-screener. Bukan rekomendasi beli/jual; '
+        'verifikasi di keterbukaan informasi resmi idx.co.id.<br>'
+        '<a href="https://adeferdian18.github.io/idx-screener/">Buka dashboard</a></p></div>'
+    )
+
+
 def send_telegram(text):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         return
@@ -461,6 +514,12 @@ def main():
         "events": events,
     }, ensure_ascii=False))
     print(f"Tersimpan {len(events)} aksi korporasi ({ai_used} narasi Claude baru)")
+
+    mail = [e for e in events if e["id"] in fresh_ids and e["score"] >= EMAIL_MIN_SCORE][:15]
+    if mail:
+        top = ", ".join(sorted({e["code"] for e in mail})[:6])
+        early = "⚡ " if any(e.get("early") for e in mail) else ""
+        send_email(f"{early}[IDX] {len(mail)} aksi korporasi baru: {top}", email_html(mail))
 
     fresh = [e for e in events if e["id"] in fresh_ids and e["score"] >= 60][:6]
     if fresh:
