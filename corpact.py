@@ -57,6 +57,25 @@ NEWS_QUERIES = [
     "pengendali tambah kepemilikan saham",
 ]
 
+# Query kilat (24 jam terakhir) untuk menangkap berita yang bersumber dari keterbukaan informasi,
+# biasanya terbit beberapa menit sampai jam setelah emiten melapor ke BEI.
+FAST_QUERIES = [
+    "keterbukaan informasi Tbk",
+    "laporan kepemilikan saham Tbk",
+    "rencana buyback Tbk",
+    "pengumuman dividen Tbk",
+    "rencana private placement Tbk",
+    "rencana rights issue Tbk",
+]
+
+IDX_API = "https://www.idx.co.id/primary/ListedCompany/GetAnnouncement"
+IDX_HEADERS = {
+    "User-Agent": "Mozilla/5.0 idx-screener (+https://github.com/adeferdian18/idx-screener)",
+    "Accept": "application/json",
+    "Referer": "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/",
+}
+EARLY_HOURS = 3  # berita/pengumuman yang terbit < 3 jam lalu dianggap "baru terbit"
+
 # jenis aksi: (kata kunci, label, sinyal dasar -3..+3, penjelasan singkat)
 TYPES = [
     ("insider", ["borong saham", "tambah kepemilikan", "menambah kepemilikan", "beli saham sendiri",
@@ -140,8 +159,9 @@ def extract_codes(title, universe):
 # ---------------------------------------------------------------- Sumber 1: berita
 def fetch_news(universe):
     events = []
-    for q in NEWS_QUERIES:
-        url = f"https://news.google.com/rss/search?q={quote_plus(q + ' when:14d')}&hl=id&gl=ID&ceid=ID:id"
+    queries = [(q, "1d") for q in FAST_QUERIES] + [(q, "14d") for q in NEWS_QUERIES]
+    for q, window in queries:
+        url = f"https://news.google.com/rss/search?q={quote_plus(q + ' when:' + window)}&hl=id&gl=ID&ceid=ID:id"
         try:
             r = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0 idx-screener"})
             root = ET.fromstring(r.content)
@@ -170,6 +190,53 @@ def fetch_news(universe):
         time.sleep(1)
     print(f"Berita: {len(events)} aksi korporasi terdeteksi")
     return events
+
+
+# ---------------------------------------------------------------- Sumber 0: keterbukaan informasi BEI
+def fetch_idx_disclosures(days=2):
+    """Pengumuman resmi emiten dari idx.co.id. Situs ini dilindungi Cloudflare; jika permintaan
+    ditolak (403/halaman tantangan) sumber ini dilewati begitu saja, tanpa mencoba mengakali proteksi."""
+    today = dt.datetime.now(WIB).date()
+    params = {"kodeEmiten": "", "emitenType": "*", "indexFrom": 0, "pageSize": 100, "lang": "id", "keyword": "",
+              "dateFrom": f"{today - dt.timedelta(days=days):%Y%m%d}", "dateTo": f"{today:%Y%m%d}"}
+    try:
+        r = requests.get(IDX_API, params=params, headers=IDX_HEADERS, timeout=20)
+        data = r.json() if r.ok and "json" in r.headers.get("content-type", "") else None
+    except Exception as e:  # noqa: BLE001
+        data = None
+        print(f"! keterbukaan informasi BEI: {e}")
+    if not data:
+        print("Keterbukaan informasi BEI: tidak dapat diakses (diblokir Cloudflare), dilewati")
+        return []
+    events = []
+    for rep in data.get("Replies", []):
+        p = rep.get("pengumuman") or {}
+        code = (p.get("Kode_Emiten") or p.get("KodeEmiten") or "").strip().upper()[:4]
+        title = html.unescape(p.get("JudulPengumuman") or p.get("PerihalPengumuman") or "")
+        kind = classify(title)
+        if not kind or len(code) != 4:
+            continue
+        try:
+            published = dt.datetime.fromisoformat(str(p.get("TglPengumuman"))[:19]).replace(tzinfo=WIB)
+        except Exception:  # noqa: BLE001
+            published = dt.datetime.now(WIB)
+        att = rep.get("attachments") or []
+        link = att[0].get("FullSavePath", "") if att else ""
+        events.append({
+            "id": hashlib.md5(f"{code}|idx|{p.get('NoPengumuman') or title}".encode()).hexdigest()[:12],
+            "code": code, "type": kind[0], "label": kind[1], "signal": kind[2], "why": kind[3],
+            "title": title, "link": link, "source": "Keterbukaan Informasi BEI",
+            "date": published.isoformat(timespec="minutes"), "origin": "idx",
+        })
+    print(f"Keterbukaan informasi BEI: {len(events)} aksi korporasi")
+    return events
+
+
+def hours_since(iso):
+    try:
+        return (dt.datetime.now(WIB) - dt.datetime.fromisoformat(iso)).total_seconds() / 3600
+    except Exception:  # noqa: BLE001
+        return None
 
 
 # ---------------------------------------------------------------- Sumber 2: jadwal dividen Yahoo
@@ -328,7 +395,7 @@ def main():
     old = load_json(OUT, {"events": []})
     old_by_id = {e["id"]: e for e in old.get("events", [])}
 
-    new_events = fetch_news(universe) + fetch_dividend_calendar(universe, rows)
+    new_events = fetch_idx_disclosures() + fetch_news(universe) + fetch_dividend_calendar(universe, rows)
 
     cutoff = dt.datetime.now(WIB) - dt.timedelta(days=KEEP_DAYS)
     merged = dict(old_by_id)
@@ -352,6 +419,9 @@ def main():
                                               "der", "dari_puncak_52w", "harga", "flags", "bank", "sektor"]}
         ev["score"] = momentum_score(ev, f)
         ev["verdict"] = verdict(ev["score"])
+        age = hours_since(ev["date"]) if ev.get("origin") != "jadwal" else None
+        ev["age_hours"] = round(age, 1) if age is not None else None
+        ev["early"] = age is not None and 0 <= age < EARLY_HOURS
         if not ev.get("narrative"):
             ev["narrative"] = rule_narrative(ev, f)
             ev["narrative_by"] = "aturan"
@@ -376,7 +446,8 @@ def main():
     dedup = {}
     for ev in events:
         ev.pop("also", None)
-    for ev in sorted(events, key=lambda e: e["date"], reverse=True):
+    # Pengumuman resmi BEI didahulukan sebagai kartu utama; media lain masuk ke "also"
+    for ev in sorted(events, key=lambda e: (e.get("origin") == "idx", e["date"]), reverse=True):
         key = (ev["code"], ev["type"], ev["date"][:10])
         if key in dedup:
             dedup[key].setdefault("also", []).append({"source": ev["source"], "link": ev["link"]})
@@ -395,7 +466,8 @@ def main():
     if fresh:
         lines = ["🏢 <b>AKSI KORPORASI BARU</b>", ""]
         for e in fresh:
-            lines.append(f"<b>{e['code']}</b> · {e['label']} · skor {e['score']} ({e['verdict']})")
+            early = f" · ⚡ {e['age_hours']:.1f} jam lalu" if e.get("early") else ""
+            lines.append(f"<b>{e['code']}</b> · {e['label']} · skor {e['score']} ({e['verdict']}){early}")
             lines.append(html.escape(e["title"][:160]))
             lines.append(f"<i>{html.escape(e['narrative'][:350])}</i>")
             lines.append("")

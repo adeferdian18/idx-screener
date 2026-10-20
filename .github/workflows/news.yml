@@ -2,8 +2,9 @@ name: Aksi korporasi (pagi & siang)
 
 on:
   schedule:
-    - cron: "0 1 * * 1-5"    # 08:00 WIB, sebelum bursa buka
-    - cron: "30 5 * * 1-5"   # 12:30 WIB, jeda siang
+    - cron: "0 1 * * 1-5"         # 08:00 WIB, sebelum bursa buka
+    - cron: "*/30 2-9 * * 1-5"    # tiap 30 menit 09:00-16:30 WIB, agar berita baru cepat tertangkap
+    - cron: "0 12 * * 0-4"        # 19:00 WIB, pengumuman yang terbit setelah bursa tutup
   workflow_dispatch: {}
 
 permissions:

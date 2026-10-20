@@ -323,7 +323,7 @@ function renderEvents(){
       <div>
         <button class="ev-code" data-code="${esc(e.code)}">${esc(e.code)}</button>
         <div class="ev-co">${esc(e.company||"")}</div>
-        <span class="ev-type">${esc(e.label)}</span>
+        <span class="ev-type">${esc(e.label)}</span>${e.early ? ` <span class="ev-type" title="Terbit ${e.age_hours} jam lalu">⚡ baru</span>` : ""}${e.origin === "idx" ? ` <span class="ev-type">Resmi BEI</span>` : ""}
         <div class="ev-date">${esc(when)}</div>
       </div>
       <div>
