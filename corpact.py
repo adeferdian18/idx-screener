@@ -516,6 +516,8 @@ def main():
     print(f"Tersimpan {len(events)} aksi korporasi ({ai_used} narasi Claude baru)")
 
     mail = [e for e in events if e["id"] in fresh_ids and e["score"] >= EMAIL_MIN_SCORE][:15]
+    if os.getenv("EMAIL_TEST") == "true" and not mail:
+        mail = events[:3]  # tes manual: kirim 3 aksi teratas walau bukan yang baru
     if mail:
         top = ", ".join(sorted({e["code"] for e in mail})[:6])
         early = "⚡ " if any(e.get("early") for e in mail) else ""
