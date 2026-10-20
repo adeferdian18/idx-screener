@@ -524,6 +524,8 @@ def main():
         send_email(f"{early}[IDX] {len(mail)} aksi korporasi baru: {top}", email_html(mail))
 
     fresh = [e for e in events if e["id"] in fresh_ids and e["score"] >= 60][:6]
+    if os.getenv("EMAIL_TEST") == "true" and not fresh:
+        fresh = events[:3]  # tes manual juga ke Telegram
     if fresh:
         lines = ["🏢 <b>AKSI KORPORASI BARU</b>", ""]
         for e in fresh:
