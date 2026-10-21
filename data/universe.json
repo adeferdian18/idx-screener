@@ -1,0 +1,4220 @@
+{
+"updated": "2026-10-21T09:36+07:00",
+"rows": [
+{
+"kode": "AADI",
+"nama": "Pt Adaro Andalan Indonesia Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "AALI",
+"nama": "PT Astra Agro Lestari Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ABDA",
+"nama": "PT Asuransi Bina Dana Arta Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "ABMM",
+"nama": "PT ABM Investama Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ACES",
+"nama": "PT Aspirasi Hidup Indonesia Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "ACRO",
+"nama": "PT Samcro Hyosung Adilestari Tbk Class A",
+"sektor": "Process Industries"
+},
+{
+"kode": "ACST",
+"nama": "PT Acset Indonusa Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "ADES",
+"nama": "PT Akasha Wira International Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "ADMF",
+"nama": "PT Adira Dinamika Multi Finance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ADMG",
+"nama": "PT Polychem Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ADMR",
+"nama": "PT Alamtri Minerals Indonesia Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ADRO",
+"nama": "PT Alamtri Resources Indonesia Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "AEGS",
+"nama": "PT Anugerah Spareparts Sejahtera Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "AGAR",
+"nama": "PT Asia Sejahtera Mina Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "AGII",
+"nama": "PT Samator Indo Gas Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "AGRO",
+"nama": "PT Bank Raya Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AGRS",
+"nama": "PT Bank IBK Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AHAP",
+"nama": "PT Asuransi Harta Aman Pratama Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AIMS",
+"nama": "PT Artha Mahiya Investama Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "AISA",
+"nama": "PT FKS Food Sejahtera Tbk Class A",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "AKKU",
+"nama": "PT Anugerah Kagum Karya Utama Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "AKPI",
+"nama": "PT Argha Karya Prima Industry Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "AKRA",
+"nama": "PT AKR Corporindo Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "AKSI",
+"nama": "PT Mineral Sumberdaya Mandiri Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ALDO",
+"nama": "PT Alkindo Naratama Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ALII",
+"nama": "PT Ancara Logistics Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ALKA",
+"nama": "PT Alakasa Industrindo, Tbk Class A",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "AMAG",
+"nama": "PT Asuransi Multi Artha Guna Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AMAN",
+"nama": "PT Makmur Berkah Amanda Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AMAR",
+"nama": "PT Bank Amar Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AMFG",
+"nama": "PT Asahimas Flat Glass Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "AMIN",
+"nama": "PT Ateliers Mecaniques D'Indonesie Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "AMMN",
+"nama": "PT Amman Mineral Internasional Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "AMMS",
+"nama": "PT Agung Menjangan Mas Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "AMOR",
+"nama": "PT Ashmore Asset Management Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "AMRT",
+"nama": "PT Sumber Alfaria Trijaya",
+"sektor": "Retail Trade"
+},
+{
+"kode": "ANDI",
+"nama": "PT Andira Agro Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ANJT",
+"nama": "PT Austindo Nusantara Jaya Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ANTM",
+"nama": "PT ANTAM (Persero) Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "APEX",
+"nama": "PT Apexindo Pratama Duta Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "APIC",
+"nama": "PT Pacific Strategic Financial Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "APII",
+"nama": "PT Arita Prima Indonesia Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "APLI",
+"nama": "PT Asiaplast Industries Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "APLN",
+"nama": "PT Agung Podomoro Land Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ARCI",
+"nama": "PT Archi Indonesia Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "AREA",
+"nama": "PT Dunia Virtual Online Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "ARGO",
+"nama": "PT Argo Pantes Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ARII",
+"nama": "PT Atlas Resources Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ARKO",
+"nama": "PT Arkora Hydro Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "ARNA",
+"nama": "PT Arwana Citramulia Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "ARTA",
+"nama": "PT Arthavest Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ARTO",
+"nama": "PT Bank Jago Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASBI",
+"nama": "PT Asuransi Bintang Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASDM",
+"nama": "PT Asuransi Dayin Mitra Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASGR",
+"nama": "PT Astra Graphia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "ASHA",
+"nama": "PT Cilacap Samudera Fishing Industry Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ASII",
+"nama": "PT Astra International Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "ASJT",
+"nama": "PT Asuransi Jasa Tania Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASLC",
+"nama": "PT Autopedia Sukses Lestari Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "ASLI",
+"nama": "PT Asri Karya Lestari Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "ASMI",
+"nama": "PT Asuransi Maximus Graha Persada Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASPI",
+"nama": "PT Andalan Sakti Primaindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASPR",
+"nama": "PT Asia Pramulia Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "ASRI",
+"nama": "PT Alam Sutera Realty Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASRM",
+"nama": "PT Asuransi Ramayana Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ASSA",
+"nama": "PT Adi Sarana Armada Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "ATAP",
+"nama": "PT Trimitra Prawara Goldland Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "ATIC",
+"nama": "PT Anabatic Technologies Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "ATLA",
+"nama": "PT Atlantis Subsea Indonesia Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "AUTO",
+"nama": "PT Astra Otoparts Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "AVIA",
+"nama": "PT Avia Avian Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "AWAN",
+"nama": "PT Era Digital Media Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "AXIO",
+"nama": "PT Tera Data Indonusa Tbk",
+"sektor": "Electronic Technology"
+},
+{
+"kode": "AYAM",
+"nama": "PT Janu Putra Sejahtera Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "AYLS",
+"nama": "PT Arkayana Lestari Grup Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "BABP",
+"nama": "PT Bank MNC Internasional Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BABY",
+"nama": "PT Multitrend Indo Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "BACA",
+"nama": "PT Bank Capital Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BACH",
+"nama": "PT Bach Multi Global Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "BAIK",
+"nama": "PT Bersama Mencapai Puncak Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BAJA",
+"nama": "PT Saranacentral Bajatama Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BALI",
+"nama": "PT Bali Towerindo Sentra Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "BANK",
+"nama": "PT Bank Aladin Syariah Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BAPA",
+"nama": "PT Bekasi Asri Pemula Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "BAPI",
+"nama": "PT Bhakti Agung Propertindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BATR",
+"nama": "PT Benteng Api Technic Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BAUT",
+"nama": "PT Mitra Angkasa Sejahtera Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "BAYU",
+"nama": "PT Bayu Buana Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BBCA",
+"nama": "PT Bank Central Asia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BBHI",
+"nama": "PT Allo Bank Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BBKP",
+"nama": "PT Bank KB Indonesia Tbk Class B",
+"sektor": "Finance"
+},
+{
+"kode": "BBLD",
+"nama": "PT Buana Finance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BBMD",
+"nama": "PT Bank Mestika Dharma Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BBNI",
+"nama": "PT Bank Negara Indonesia (Persero) Tbk Class B",
+"sektor": "Finance"
+},
+{
+"kode": "BBRI",
+"nama": "PT Bank Rakyat Indonesia (Persero) Tbk Class B",
+"sektor": "Finance"
+},
+{
+"kode": "BBRM",
+"nama": "PT Pelayaran Nasional Bina Buana Raya Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BBSI",
+"nama": "PT Krom Bank Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BBSS",
+"nama": "PT Bumi Benowo Sukses Sejahtera Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "BBTN",
+"nama": "PT Bank Tabungan Negara (Persero) Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BBYB",
+"nama": "PT Bank Neo Commerce Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BCAP",
+"nama": "PT MNC Kapital Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BCIC",
+"nama": "PT Bank JTrust Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BCIP",
+"nama": "PT Bumi Citra Permai Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BDKR",
+"nama": "PT Berdikari Pondasi Perkasa Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "BDMN",
+"nama": "PT Bank Danamon Indonesia Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "BEEF",
+"nama": "PT Estika Tata Tiara Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "BEER",
+"nama": "PT Jobubu Jarum Minahasa Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "BEKS",
+"nama": "PT Bank Pembangunan Daerah Banten (Perseroda) Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "BELI",
+"nama": "PT Global Digital Niaga Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "BELL",
+"nama": "PT Trisula Textile Industries Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "BESS",
+"nama": "PT Batulicin Nusantara Maritim Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BEST",
+"nama": "PT Bekasi Fajar Industrial Estate Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "BFIN",
+"nama": "PT BFI Finance Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BGTG",
+"nama": "PT Bank Ganesha Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BHIT",
+"nama": "PT MNC Asia Holding Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BIKE",
+"nama": "PT Bhineka Inovasi Ketahanan Energi Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "BINA",
+"nama": "PT Bank Ina Perdana Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BINO",
+"nama": "PT Perma Plasindo Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "BIPI",
+"nama": "PT Astrindo Nusantara Infrastruktur Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "BIPP",
+"nama": "PT Bhuwanatala Indah Permai Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "BIRD",
+"nama": "PT Blue Bird Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BISI",
+"nama": "PT BISI International Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "BJBR",
+"nama": "PT Bank Pembangunan Daerah Jawa Barat & Banten Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BJTM",
+"nama": "PT Bank Pembangunan Daerah Jawa Timur Tbk Class B",
+"sektor": "Finance"
+},
+{
+"kode": "BKDP",
+"nama": "PT Bukit Darmo Property Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BKSL",
+"nama": "PT Sentul City Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BKSW",
+"nama": "PT Bank QNB Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BLES",
+"nama": "PT Superior Prima Sukses Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BLOG",
+"nama": "PT Trimitra Trans Persada Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BLTA",
+"nama": "PT Berlian Laju Tanker Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BLTZ",
+"nama": "PT Graha Layar Prima Tbk Class C",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BLUE",
+"nama": "PT Berkah Prima Perkasa Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "BMAS",
+"nama": "PT Bank Kasikorn Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BMBL",
+"nama": "PT Lavender Bina Cendikia Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "BMHS",
+"nama": "PT Bundamedik Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "BMRI",
+"nama": "PT Bank Mandiri (Persero) Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BMSR",
+"nama": "PT Bintang Mitra Semestaraya Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "BMTR",
+"nama": "PT Global Mediacom Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BNBA",
+"nama": "PT Bank Bumi Arta Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BNBR",
+"nama": "PT Bakrie & Brothers Tbk Class A",
+"sektor": "Industrial Services"
+},
+{
+"kode": "BNGA",
+"nama": "PT Bank CIMB Niaga Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "BNII",
+"nama": "PT Bank Maybank Indonesia Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "BNLI",
+"nama": "PT Bank Permata Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "BOAT",
+"nama": "PT Newport Marine Services Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BOBA",
+"nama": "PT Formosa Ingredient Factory Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "BOGA",
+"nama": "PT Apollo Global Interactive Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "BOLA",
+"nama": "PT Bali Bintang Sejahtera Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BOLT",
+"nama": "PT Garuda Metalindo Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "BPFI",
+"nama": "PT Woori Finance Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BPII",
+"nama": "PT Batavia Prosperindo Internasional Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "BPTR",
+"nama": "PT Batavia Prosperindo Trans Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BRAM",
+"nama": "PT Indo Kordsa Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "BREN",
+"nama": "PT Barito Renewables Energy Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "BRIS",
+"nama": "PT Bank Syariah Indonesia (Persero) Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BRMS",
+"nama": "PT Bumi Resources Minerals Tbk Class A",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BRNA",
+"nama": "PT Berlina Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "BRPT",
+"nama": "PT Barito Pacific Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BRRC",
+"nama": "PT Raja Roti Cemerlang Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "BSBK",
+"nama": "PT Wulandari Bangun Laksana Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BSDE",
+"nama": "PT Bumi Serpong Damai Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BSIM",
+"nama": "PT Bank Sinarmas Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BSML",
+"nama": "PT Bintang Samudera Mandiri Lines Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BSSR",
+"nama": "PT Baramulti Suksessarana Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "BSWD",
+"nama": "PT Bank of India Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BTEK",
+"nama": "PT Bumi Teknokultura Unggul Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "BTON",
+"nama": "PT Betonjaya Manunggal Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BTPN",
+"nama": "PT Bank SMBC Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BTPS",
+"nama": "PT Bank BTPN Syariah Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BUAH",
+"nama": "PT Segar Kumala Indonesia Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "BUDI",
+"nama": "PT Budi Starch & Sweetener Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "BUKA",
+"nama": "PT Bukalapak.com Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "BUKK",
+"nama": "PT Bukaka Teknik Utama Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "BULL",
+"nama": "PT Buana Lintas Lautan Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "BUMI",
+"nama": "PT Bumi Resources Tbk Class A",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "BUVA",
+"nama": "PT Bukit Uluwatu Villa Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "BVIC",
+"nama": "PT Bank Victoria International Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "BWPT",
+"nama": "PT Eagle High Plantations Tbk.",
+"sektor": "Process Industries"
+},
+{
+"kode": "BYAN",
+"nama": "PT Bayan Resources Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "CAKK",
+"nama": "PT Cahayaputra Asa Keramik Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "CAMP",
+"nama": "PT Campina Ice Cream Industry Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "CARE",
+"nama": "PT Metro Healthcare Indonesia Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "CARS",
+"nama": "PT Industri dan Perdagangan Bintraco Dharma Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "CASA",
+"nama": "PT Capital Financial Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CASH",
+"nama": "PT.Cashlez Worldwide Indonesia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "CASS",
+"nama": "PT Cahaya Aero Services Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "CBDK",
+"nama": "PT Bangun Kosambi Sukses Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CBPE",
+"nama": "PT Citra Buana Prasida Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CBRE",
+"nama": "PT Cakra Buana Resources Energi Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "CBUT",
+"nama": "PT Citra Borneo Utama Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "CCSI",
+"nama": "PT Communication Cable Systems Indonesia Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "CDIA",
+"nama": "PT Chandra Daya Investasi Tbk.",
+"sektor": "Utilities"
+},
+{
+"kode": "CEKA",
+"nama": "PT Wilmar Cahaya Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "CENT",
+"nama": "PT Centratama Telekomunikasi Indonesia Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "CFIN",
+"nama": "PT Clipan Finance Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CGAS",
+"nama": "PT Citra Nusantara Gemilang Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "CHEK",
+"nama": "PT Diastika Biotekindo Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "CHEM",
+"nama": "PT Chemstar Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "CHIP",
+"nama": "PT Pelita Teknologi Global Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "CINT",
+"nama": "PT Chitose Internasional Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "CITA",
+"nama": "PT Cita Mineral Investindo Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "CITY",
+"nama": "PT Natura City Developments Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CLAY",
+"nama": "PT Citra Putra Realty Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "CLEO",
+"nama": "PT Sariguna Primatirta Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "CLPI",
+"nama": "PT Colorpak Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "CMNP",
+"nama": "PT Citra Marga Nusaphala Persada Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "CMNT",
+"nama": "PT Cemindo Gemilang Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "CMRY",
+"nama": "PT Cisarua Mountain Dairy Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "CNMA",
+"nama": "PT Nusantara Sejahtera Raya Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "COCO",
+"nama": "PT Wahana Interfood Nusantara Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "COIN",
+"nama": "PT Indokripto Koin Semesta Tbk",
+"sektor": "Miscellaneous"
+},
+{
+"kode": "CPIN",
+"nama": "PT Charoen Pokphand Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "CPRO",
+"nama": "PT Central Proteina Prima Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "CRAB",
+"nama": "PT Toba Surimi Industries Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "CRSN",
+"nama": "PT Carsurin Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "CSAP",
+"nama": "PT Catur Sentosa Adiprana Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "CSIS",
+"nama": "PT Cahayasakti Investindo Sukses Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CSRA",
+"nama": "PT Cisadane Sawit Raya Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "CTBN",
+"nama": "PT Citra Tubindo Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "CTRA",
+"nama": "PT Ciputra Development Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "CTTH",
+"nama": "PT Citatah Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "CUAN",
+"nama": "PT Petrindo Jaya Kreasi Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "CYBR",
+"nama": "PT ITSEC Asia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "DAAZ",
+"nama": "PT Daaz Bara Lestari Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "DADA",
+"nama": "PT Diamond Citra Propertindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "DART",
+"nama": "PT Duta Anggada Realty Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "DATA",
+"nama": "PT Remala Abadi Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "DAYA",
+"nama": "PT Duta Intidaya Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "DCII",
+"nama": "PT DCI Indonesia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "DEFI",
+"nama": "PT Danasupra Erapacific Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "DEPO",
+"nama": "PT Caturkarda Depo Bangunan Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "DEWA",
+"nama": "PT Darma Henwa Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "DEWI",
+"nama": "PT Dewi Shri Farmindo Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "DFAM",
+"nama": "PT Dafam Property Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "DGIK",
+"nama": "PT Nusa Konstruksi Enjiniring Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "DGNS",
+"nama": "PT Diagnos Laboratorium Utama Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "DGWG",
+"nama": "PT Delta Giri Wacana Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "DILD",
+"nama": "PT Intiland Development Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "DIVA",
+"nama": "PT Distribusi Voucher Nusantara Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "DKFT",
+"nama": "PT Central Omega Resources Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "DKHH",
+"nama": "Pt Cipta Sarana Medika Tbk.",
+"sektor": "Health Services"
+},
+{
+"kode": "DLTA",
+"nama": "PT Delta Djakarta Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "DMAS",
+"nama": "PT Puradelta Lestari Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "DMMX",
+"nama": "PT Digital Mediatama Maxima Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "DMND",
+"nama": "PT Diamond Food Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "DNAR",
+"nama": "PT Bank Oke Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "DNET",
+"nama": "PT Indoritel Makmur Internasional Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "DOID",
+"nama": "PT BUMA Internasional Grup Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "DOOH",
+"nama": "PT Era Media Sejahtera Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "DOSS",
+"nama": "PT Global Sukses Digital Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "DPUM",
+"nama": "PT Dua Putra Utama Makmur Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "DRMA",
+"nama": "PT Dharma Polimetal Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "DSFI",
+"nama": "PT Dharma Samudera Fishing Industries Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "DSNG",
+"nama": "PT Dharma Satya Nusantara Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "DSSA",
+"nama": "PT Dian Swastatika Sentosa Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "DUTI",
+"nama": "PT Duta Pertiwi Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "DVLA",
+"nama": "PT Darya-Varia Laboratoria Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "DWGL",
+"nama": "PT Dwi Guna Laksana Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "DYAN",
+"nama": "PT Dyandra Media International Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "EAST",
+"nama": "PT Eastparc Hotel Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ECII",
+"nama": "PT Electronic City Indonesia Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "EKAD",
+"nama": "PT Ekadharma International Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ELIT",
+"nama": "PT Data Sinergitama Jaya Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "ELPI",
+"nama": "PT Pelayaran Nasional Ekalya Purnamasari Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "ELSA",
+"nama": "PT Elnusa Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ELTY",
+"nama": "PT Bakrieland Development Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "EMAS",
+"nama": "PT Merdeka Gold Resources Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "EMDE",
+"nama": "PT Megapolitan Developments Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "EMMI",
+"nama": "PT ESA Medika Mandiri Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "EMTK",
+"nama": "PT Elang Mahkota Teknologi Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ENAK",
+"nama": "PT Champ Resto Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ENRG",
+"nama": "PT Energi Mega Persada Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ENZO",
+"nama": "PT Morenzo Abadi Perkasa Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "EPAC",
+"nama": "PT Megalestari Epack Sentosaraya Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "EPMT",
+"nama": "PT Enseval Putera Megatrading Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "ERAA",
+"nama": "PT Erajaya Swasembada Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "ERAL",
+"nama": "PT Sinar Eka Selaras Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "ERTX",
+"nama": "PT Eratex Djaja Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "ESIP",
+"nama": "PT Sinergi Inti Plastindo Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "ESSA",
+"nama": "PT ESSA Industries Indonesia Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ESTA",
+"nama": "PT Esta Multi Usaha Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ESTI",
+"nama": "PT Ever Shine Textile Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "EURO",
+"nama": "PT Estee Gold Feet Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "EXCL",
+"nama": "PT XLSMART Telecom Sejahtera Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "FAPA",
+"nama": "PT FAP Agri Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "FAST",
+"nama": "PT Fast Food Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "FILM",
+"nama": "PT MD Entertainment Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "FIRE",
+"nama": "PT Alfa Energi Investama Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "FISH",
+"nama": "PT FKS Multi Agro Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "FITT",
+"nama": "PT Fortune Resources Investment Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "FLMC",
+"nama": "PT Falmaco Nonwoven Industri Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "FMII",
+"nama": "PT Fortune Mate Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "FOLK",
+"nama": "PT Multi Garam Utama Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "FORE",
+"nama": "PT Fore Kopi Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "FORU",
+"nama": "PT Fortune Indonesia Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "FPNI",
+"nama": "PT Lotte Chemical Titan Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "FUJI",
+"nama": "PT Fuji Finance Indonesia Tbk.",
+"sektor": "Finance"
+},
+{
+"kode": "FUTR",
+"nama": "PT Futura Energi Global Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "FWCT",
+"nama": "PT Wijaya Cahaya Timber Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "GDST",
+"nama": "PT Gunawan Dianjaya Steel Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "GDYR",
+"nama": "PT Goodyear Indonesia Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "GEMA",
+"nama": "PT Gema Grahasarana Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "GEMS",
+"nama": "PT Golden Energy Mines Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "GGRM",
+"nama": "PT Gudang Garam Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "GGRP",
+"nama": "PT Gunung Raja Paksi Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "GHON",
+"nama": "PT Gihon Telekomunikasi Indonesia",
+"sektor": "Communications"
+},
+{
+"kode": "GIAA",
+"nama": "PT Garuda Indonesia (Persero) Tbk Class B",
+"sektor": "Transportation"
+},
+{
+"kode": "GJTL",
+"nama": "PT Gajah Tunggal Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "GLVA",
+"nama": "PT Galva Technologies Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "GMFI",
+"nama": "PT Garuda Maintenance Facility Aero Asia Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "GMTD",
+"nama": "PT Gowa Makassar Tourism Development Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "GOLD",
+"nama": "PT Visi Telekomunikasi Infrastruktur Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "GOLF",
+"nama": "PT Intra Golflink Resorts Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "GOOD",
+"nama": "PT Garudafood Putra Putri Jaya Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "GOTO",
+"nama": "PT GoTo Gojek Tokopedia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "GPRA",
+"nama": "PT Perdana Gapuraprima Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "GPSO",
+"nama": "PT Geoprima Solusi Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "GRIA",
+"nama": "PT Ingria Pratama Capitalindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "GRPH",
+"nama": "PT Griptha Putra Persada Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "GRPM",
+"nama": "PT Graha Prima Mentari Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "GSMF",
+"nama": "PT Equity Development Investment Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "GTBO",
+"nama": "PT Garda Tujuh Buana Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "GTRA",
+"nama": "PT Grahaprima Suksesmandiri Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "GTSI",
+"nama": "PT GTS Internasional",
+"sektor": "Transportation"
+},
+{
+"kode": "GULA",
+"nama": "PT Aman Agrindo Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "GUNA",
+"nama": "PT Gunanusa Eramandiri Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "GWSA",
+"nama": "PT Greenwood Sejahtera Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "GZCO",
+"nama": "PT Gozco Plantations Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "HADE",
+"nama": "PT Himalaya Energi Perkasa Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "HAIS",
+"nama": "PT Hasnur Internasional Shipping Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "HAJJ",
+"nama": "PT Arsy Buana Travelindo Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "HALO",
+"nama": "PT Haloni Jane Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "HATM",
+"nama": "PT Habco Trans Maritima Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "HBAT",
+"nama": "PT Minahasa Membangun Hebat Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "HDFA",
+"nama": "PT Radana Bhaskara Finance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "HDIT",
+"nama": "PT Hensel Davest Indonesia Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "HEAL",
+"nama": "PT Medikaloka Hermina Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "HELI",
+"nama": "PT Jaya Trishindo Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "HERO",
+"nama": "PT DFI Retail Nusantara Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "HEXA",
+"nama": "PT Hexindo Adiperkasa Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "HGII",
+"nama": "PT Hero Global Investment Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "HMSP",
+"nama": "PT Hanjaya Mandala Sampoerna Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "HOKI",
+"nama": "PT Buyung Poetra Sembada Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "HOMI",
+"nama": "PT Grand House Mulia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "HOPE",
+"nama": "PT Harapan Duta Pertiwi Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "HRME",
+"nama": "PT Menteng Heritage Realty Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "HRTA",
+"nama": "PT Hartadinata Abadi Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "HRUM",
+"nama": "PT Harum Energy Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "HUMI",
+"nama": "PT Humpuss Maritim Internasional Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "HYGN",
+"nama": "PT Ecocare Indo Pasifik Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "IATA",
+"nama": "PT Karya Pacific Energy Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "IBOS",
+"nama": "PT Indo Boga Sukses Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "ICBP",
+"nama": "PT Indofood CBP Sukses Makmur Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "ICON",
+"nama": "PT Island Concepts Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "IDEA",
+"nama": "PT Idea Indonesia Akademi Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "IDPR",
+"nama": "PT Indonesia Pondasi Raya Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "IFII",
+"nama": "PT Indonesia Fibreboard Industry Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "IFSH",
+"nama": "PT Ifishdeco Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "IGAR",
+"nama": "PT Champion Pacific Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "IKAI",
+"nama": "PT Intikeramik Alamasri Industri Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "IKAN",
+"nama": "PT Era Mandiri Cemerlang Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "IKBI",
+"nama": "PT Sumi Indo Kabel Tbk",
+"sektor": "Electronic Technology"
+},
+{
+"kode": "IKPM",
+"nama": "PT Ikapharmindo Putramas Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "IMAS",
+"nama": "PT Indomobil Sukses Internasional Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "IMJS",
+"nama": "PT Indomobil Multi Jasa Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "IMPC",
+"nama": "PT Impack Pratama Industri Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "INAI",
+"nama": "PT Indal Aluminium Industry Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "INCI",
+"nama": "PT Intanwijaya Internasional Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "INCO",
+"nama": "PT Vale Indonesia Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "INDF",
+"nama": "PT Indofood Sukses Makmur Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "INDO",
+"nama": "PT Royalindo Investa Wijaya Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "INDR",
+"nama": "PT Indo-Rama Synthetics Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "INDS",
+"nama": "PT Indospring Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "INDY",
+"nama": "PT Indika Energy Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "INET",
+"nama": "PT Sinergi Inti Andalan Prima Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "INKP",
+"nama": "PT Indah Kiat Pulp & Paper Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "INOV",
+"nama": "PT Inocycle Technology Group Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "INPC",
+"nama": "PT Bank Artha Graha Internasional Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "INPP",
+"nama": "PT Indonesian Paradise Property Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "INTD",
+"nama": "PT Inter-Delta Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "INTP",
+"nama": "PT Indocement Tunggal Prakarsa Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "IOTF",
+"nama": "PT Sumber Sinergi Makmur Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "IPCC",
+"nama": "PT Indonesia Kendaraan Terminal Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "IPCM",
+"nama": "PT Jasa Armada Indonesia Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "IPOL",
+"nama": "PT Indopoly Swakarsa Industry Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "IPTV",
+"nama": "PT MNC Vision Networks Tbk Class A",
+"sektor": "Consumer Services"
+},
+{
+"kode": "IRRA",
+"nama": "PT Itama Ranoraya Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "IRSX",
+"nama": "PT Folago Global Nusantara Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "ISAP",
+"nama": "PT Isra Presisi Indonesia Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "ISAT",
+"nama": "PT Indosat Tbk Class B",
+"sektor": "Communications"
+},
+{
+"kode": "ISEA",
+"nama": "PT Indo American Seafoods Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "ISSP",
+"nama": "PT Steel Pipe Industry of Indonesia Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "ITIC",
+"nama": "PT Indonesian Tobacco Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "ITMA",
+"nama": "PT Sumber Energi Andalan Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ITMG",
+"nama": "PT Indo Tambangraya Megah Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "JARR",
+"nama": "PT Jhonlin Agro Raya Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "JAST",
+"nama": "PT Jasnita Telekomindo Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "JATI",
+"nama": "PT Informasi Teknologi Indonesia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "JAWA",
+"nama": "PT Jaya Agra Wattie Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "JAYA",
+"nama": "PT Armada Berjaya Trans Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "JECC",
+"nama": "PT Jembo Cable Co. Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "JECX",
+"nama": "PT Nitrasanata Dharma Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "JELI",
+"nama": "PT Niramas Utama Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "JGLE",
+"nama": "PT Graha Andrasentra Propertindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "JIHD",
+"nama": "PT Jakarta International Hotels & Development Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "JKON",
+"nama": "PT Jaya Konstruksi Manggala Pratama Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "JPFA",
+"nama": "PT Japfa Comfeed Indonesia Tbk Class A",
+"sektor": "Process Industries"
+},
+{
+"kode": "JRPT",
+"nama": "PT Jaya Real Property Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "JSMR",
+"nama": "PT Jasa Marga (Persero) Tbk Class B",
+"sektor": "Transportation"
+},
+{
+"kode": "JSPT",
+"nama": "PT Jakarta Setiabudi Internasional Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "JTPE",
+"nama": "PT Jasuindo Tiga Perkasa Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "KAEF",
+"nama": "PT Kimia Farma (Persero) Tbk Class B",
+"sektor": "Health Technology"
+},
+{
+"kode": "KAQI",
+"nama": "PT Jantra Grupo Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "KBAG",
+"nama": "PT Karya Bersama Anugerah Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "KBLI",
+"nama": "PT KMI Wire & Cable Tbk Class A",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "KBLM",
+"nama": "PT Kabelindo Murni Tbk Class A",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "KBLV",
+"nama": "PT First Media Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "KDSI",
+"nama": "PT Kedawung Setia Industrial Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "KDTN",
+"nama": "PT Puri Sentul Permai Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "KEEN",
+"nama": "PT Kencana Energi Lestari Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "KEJU",
+"nama": "PT Mulia Boga Raya Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "KETR",
+"nama": "PT Ketrosden Triasmitra Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "KICI",
+"nama": "PT Kedaung Indah Can Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "KIJA",
+"nama": "PT Kawasan Industri Jababeka Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "KING",
+"nama": "PT Hoffmen Cleanindo Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "KINO",
+"nama": "PT Kino Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "KIOS",
+"nama": "PT Kioson Komersial Indonesia Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "KJEN",
+"nama": "PT Krida Jaringan Nusantara Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "KKES",
+"nama": "PT Kusuma Kemindo Sentosa Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "KKGI",
+"nama": "PT Resource Alam Indonesia Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "KLAS",
+"nama": "PT Pelayaran Kurnia Lautan Semesta Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "KLBF",
+"nama": "PT Kalbe Farma Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "KLIN",
+"nama": "PT Klinko Karya Imaji Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "KMDS",
+"nama": "PT Kurniamitra Duta Sentosa Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "KMTR",
+"nama": "PT Kirana Megatara Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "KOBX",
+"nama": "PT Kobexindo Tractors Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "KOCI",
+"nama": "PT Kokoh Exa Nusantara Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "KOKA",
+"nama": "PT Koka Indonesia Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "KONI",
+"nama": "PT Perdana Bangun Pusaka Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "KOPI",
+"nama": "PT Mitra Energi Persada Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "KOTA",
+"nama": "PT DMS Propertindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "KPIG",
+"nama": "PT MNC Tourism Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "KRAS",
+"nama": "PT Krakatau Steel (Persero) Tbk Class B",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "KREN",
+"nama": "PT Quantum Clovera Investama Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "KRYA",
+"nama": "PT Bangun Karya Perkasa Jaya Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "KSIX",
+"nama": "PT Kentanix Supra International Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "KUAS",
+"nama": "PT Ace Oldfields Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "LABA",
+"nama": "PT Green Power Group Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "LABS",
+"nama": "PT UBC Medical Indonesia Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "LAJU",
+"nama": "PT Jasa Berdikari Logistics Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "LAND",
+"nama": "PT Trimitra Propertindo Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "LAPD",
+"nama": "PT Leyand International Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "LEAD",
+"nama": "PT Logindo Samudramakmur Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "LFLO",
+"nama": "PT Imago Mulia Persada Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "LIFE",
+"nama": "PT MSIG Life Insurance Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "LINK",
+"nama": "PT Link Net Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "LION",
+"nama": "PT Lion Metal Works Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "LIVE",
+"nama": "PT Homeco Victoria Makmur Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "LMAX",
+"nama": "PT Lupromax Pelumas Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "LMPI",
+"nama": "PT Langgeng Makmur Industri Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "LOPI",
+"nama": "PT Logisticsplus International Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "LPCK",
+"nama": "PT Lippo Cikarang Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "LPGI",
+"nama": "PT Lippo General Insurance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "LPIN",
+"nama": "PT Multi Prima Sejahtera Tbk",
+"sektor": "Electronic Technology"
+},
+{
+"kode": "LPKR",
+"nama": "PT Lippo Karawaci Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "LPLI",
+"nama": "PT Star Pacific Tbk Class A",
+"sektor": "Technology Services"
+},
+{
+"kode": "LPPF",
+"nama": "PT MDS Retailing Tbk Class A",
+"sektor": "Retail Trade"
+},
+{
+"kode": "LPPS",
+"nama": "PT Lenox Pasifik InvestamaTbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "LRNA",
+"nama": "PT Eka Sari Lorena Transport Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "LSIP",
+"nama": "PT Perusahaan Perkebunan London Sumatra Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "LTLS",
+"nama": "PT Lautan Luas Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "LUCK",
+"nama": "PT Sentral Mitra Informatika Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "LUCY",
+"nama": "PT Lima Dua Lima Tiga Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MAHA",
+"nama": "PT Mandiri Herindo Adiperkasa Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "MAIN",
+"nama": "PT Malindo Feedmill Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "MANG",
+"nama": "PT Manggung Polahraya Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "MAPA",
+"nama": "PT MAP Aktif Adiperkasa Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "MAPB",
+"nama": "PT Map Boga Adiperkasa Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "MAPI",
+"nama": "PT Mitra Adiperkasa Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "MARK",
+"nama": "PT Mark Dynamics Indonesia Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "MASB",
+"nama": "PT Bank Multiarta Sentosa Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MAXI",
+"nama": "PT Maxindo Karya Anugerah Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "MAYA",
+"nama": "PT Bank Mayapada Internasional Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "MBAP",
+"nama": "PT Mitrabara Adiperdana Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "MBMA",
+"nama": "PT Merdeka Battery Materials Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "MBSS",
+"nama": "PT Mitrabahtera Segara Sejati Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "MBTO",
+"nama": "PT Martina Berto Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "MCAS",
+"nama": "PT M Cash Integrasi Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "MCOL",
+"nama": "PT Prima Andalan Mandiri Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "MCOR",
+"nama": "PT Bank China Construction Bank Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MDIA",
+"nama": "PT Intermedia Capital Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "MDIY",
+"nama": "PT Daya Intiguna Yasa Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "MDKA",
+"nama": "PT Merdeka Copper Gold Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "MDKI",
+"nama": "PT Emdeki Utama Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "MDLA",
+"nama": "PT Medela Potentia Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "MDLN",
+"nama": "PT Modernland Realty Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "MEDC",
+"nama": "PT Medco Energi Internasional Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "MEDS",
+"nama": "PT Hetzer Medical Indonesia Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "MEGA",
+"nama": "PT Bank Mega Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MEJA",
+"nama": "PT Harta Djaya Karya Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MERI",
+"nama": "PT Merry Riana Edukasi Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MERK",
+"nama": "PT Merck Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "MGLV",
+"nama": "PT NexAI Digital Infrastruktur Tbk.",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "MGNA",
+"nama": "PT Magna Investama Mandiri Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MGRO",
+"nama": "PT Mahkota Group Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "MHKI",
+"nama": "PT Multi Hanna Kreasindo Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "MICE",
+"nama": "PT Multi Indocitra Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "MIDI",
+"nama": "PT Midi Utama Indonesia Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "MIKA",
+"nama": "PT Mitra Keluarga Karyasehat Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "MINA",
+"nama": "PT Sanurhasta Mitra Tbk.",
+"sektor": "Consumer Services"
+},
+{
+"kode": "MINE",
+"nama": "PT Sinar Terang Mandiri TBK",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "MIRA",
+"nama": "PT Mitra International Resources Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "MITI",
+"nama": "PT Mitra Investindo Tbk Class A",
+"sektor": "Transportation"
+},
+{
+"kode": "MKAP",
+"nama": "PT Multikarya Asia Pasifik Raya Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "MKNT",
+"nama": "Pt Mitra Komunikasi Nusantara Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "MKPI",
+"nama": "PT Metropolitan Kentjana Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MKTR",
+"nama": "PT Menthobi Karyatama Raya Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MLBI",
+"nama": "PT Multi Bintang Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "MLIA",
+"nama": "PT Mulia Industrindo Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "MLPL",
+"nama": "PT Multipolar Tbk Class A",
+"sektor": "Retail Trade"
+},
+{
+"kode": "MLPT",
+"nama": "PT Multipolar Technology Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "MMIX",
+"nama": "PT Multi Medika Internasional Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "MMLP",
+"nama": "PT Mega Manunggal Property Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MNCN",
+"nama": "PT Media Nusantara Citra Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MOLI",
+"nama": "PT Madusari Murni Indah Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "MORA",
+"nama": "PT Ekamas Mora Republik Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "MPIX",
+"nama": "PT Mitra Pedagang Indonesia Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MPMX",
+"nama": "PT Mitra Pinasthika Mustika Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "MPOW",
+"nama": "PT Megapower Makmur Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "MPPA",
+"nama": "PT Matahari Putra Prima Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "MPRO",
+"nama": "PT Maha Properti Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MPXL",
+"nama": "PT MPX Logistics International Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "MRAT",
+"nama": "PT Mustika Ratu Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "MSIE",
+"nama": "PT Multisarana Intan Eduka Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MSIN",
+"nama": "PT MNC Digital Entertainment Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "MSJA",
+"nama": "PT Multi Spunindo Jaya Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "MSKY",
+"nama": "PT MNC Vision Network",
+"sektor": "Communications"
+},
+{
+"kode": "MSTI",
+"nama": "PT Mastersystem Infotama Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "MTDL",
+"nama": "PT Metrodata Electronics Tbk",
+"sektor": "Electronic Technology"
+},
+{
+"kode": "MTEL",
+"nama": "PT Dayamitra Telekomunikasi Tbk",
+"sektor": "Communications"
+},
+{
+"kode": "MTLA",
+"nama": "PT Metropolitan Land Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MTMH",
+"nama": "PT Murni Sadar Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "MTWI",
+"nama": "PT Malacca Trust Wuwungan Insurance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "MUTU",
+"nama": "PT Mutuagung Lestari Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "MYOH",
+"nama": "PT Samindo Resources Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "MYOR",
+"nama": "PT Mayora Indah Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "NAIK",
+"nama": "PT Adiwarna Anugerah Abadi Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "NANO",
+"nama": "PT Nanotech Indonesia Global Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "NASA",
+"nama": "PT Andalan Perkasa Abadi Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "NASI",
+"nama": "PT Wahana Inti Makmur Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "NATO",
+"nama": "PT Olympus Strategic Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "NAYZ",
+"nama": "PT Hassana Boga Sejahtera Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "NCKL",
+"nama": "PT Trimegah Bangun Persada Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "NELY",
+"nama": "PT Pelayaran Nelly Dwi Putri Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "NEST",
+"nama": "PT Esta Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "NETV",
+"nama": "PT MDTV Media Technologies Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "NFCX",
+"nama": "PT NFC Indonesia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "NICE",
+"nama": "PT Adhi Kartiko Pratama Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "NICK",
+"nama": "PT Charnic Capital Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "NICL",
+"nama": "PT PAM Mineral Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "NIKL",
+"nama": "PT Pelat Timah Nusantara Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "NINE",
+"nama": "PT Techno9 Indonesia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "NIRO",
+"nama": "PT City Retail Developments Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "NISP",
+"nama": "PT Bank OCBC NISP Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "NOBU",
+"nama": "PT Bank Nationalnobu Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "NPGF",
+"nama": "PT Nusa Palapa Gemilang Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "NRCA",
+"nama": "PT Nusa Raya Cipta Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "NSSS",
+"nama": "PT Nusantara Sawit Sejahtera Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "NTBK",
+"nama": "PT Nusatama Berkah Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "NZIA",
+"nama": "PT Nusantara Almazia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "OASA",
+"nama": "PT Maharaksa Biru Energi Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "OBAT",
+"nama": "PT Brigit Biofarmaka Teknologi Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "OBMD",
+"nama": "PT OBM Drilchem Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "OILS",
+"nama": "PT Indo Oil Perkasa Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "OKAS",
+"nama": "PT Ancora Indonesia Resources Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "OLIV",
+"nama": "PT Atlas Nexus Group Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "OMED",
+"nama": "PT Jayamas Medica Industri Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "OMRE",
+"nama": "PT Indonesia Prima Property Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "OPMS",
+"nama": "PT Optima Prima Metal Sinergi Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "PACK",
+"nama": "PT Abadi Nusantara Hijau Investama Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PADA",
+"nama": "PT Personel Alih Daya Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "PADI",
+"nama": "PT Minna Padi Investama Sekuritas Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PALM",
+"nama": "PT Provident Investasi Bersama Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PAMG",
+"nama": "PT Bima Sakti Pertiwi Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PANI",
+"nama": "PT Pantai Indah Kapuk Dua Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "PANR",
+"nama": "PT Panorama Sentrawisata Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PANS",
+"nama": "PT Panin Sekuritas Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PART",
+"nama": "PT Cipta Perdana Lancar Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "PBID",
+"nama": "PT Panca Budi Idaman Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PBRX",
+"nama": "PT Pan Brothers Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PBSA",
+"nama": "PT Paramita Bangun Sarana Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "PCAR",
+"nama": "PT Prima Cakrawala Abadi Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "PDES",
+"nama": "PT Destinasi Tirta Nusantara Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PDPP",
+"nama": "PT Primadaya Plastisindo Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PEGE",
+"nama": "PT Panca Global Kapital Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PEHA",
+"nama": "PT Phapros Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "PEVE",
+"nama": "PT Penta Valent Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "PGAS",
+"nama": "PT Perusahaan Gas Negara (Persero) Tbk Class B",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "PGEO",
+"nama": "PT Pertamina Geothermal Energy Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "PGJO",
+"nama": "PT Bahtera Bumi Raya Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "PGLI",
+"nama": "PT Pembangunan Graha Lestari Indah Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PGUN",
+"nama": "PT Pradiksi Gunatama Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PICO",
+"nama": "PT Pelangi Indah Canindo Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PIPA",
+"nama": "PT Oxala Energy International Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "PJAA",
+"nama": "PT Pembangunan Jaya Ancol Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PJHB",
+"nama": "PT Pelayaran Jaya Hidup Baru",
+"sektor": "Transportation"
+},
+{
+"kode": "PKPK",
+"nama": "PT Paragon Karya Perkasa Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "PLAN",
+"nama": "PT Planet Properindo Jaya Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PMJS",
+"nama": "PT Putra Mandiri Jembar Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "PMUI",
+"nama": "PT Prima Multi Usaha Indonesia Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "PNBN",
+"nama": "PT Bank Pan Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PNBS",
+"nama": "PT Bank Panin Dubai Syariah Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PNGO",
+"nama": "PT AEP Pinago Plantations Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PNIN",
+"nama": "PT Paninvest Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PNLF",
+"nama": "PT Panin Financial Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "PNSE",
+"nama": "PT Pudjiadi & Sons Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "POLA",
+"nama": "PT Pool Advista Finance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "POLI",
+"nama": "PT Pollux Hotels Group Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "POLU",
+"nama": "PT Golden Flower Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "PORT",
+"nama": "PT Nusantara Pelabuhan Handal Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "POWR",
+"nama": "PT Cikarang Listrindo Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "PPRE",
+"nama": "PT PP Presisi Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "PPRI",
+"nama": "PT Paperocks Indonesia Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "PPRO",
+"nama": "PT PP Properti Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PRAY",
+"nama": "PT Famon Awal Bros Sedaya Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "PRDA",
+"nama": "PT Prodia Widyahusada Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "PRDL",
+"nama": "PT Prodia Diagnostic Line Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "PRIM",
+"nama": "PT Royal Prima Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "PSAB",
+"nama": "PT J Resources Asia Pasifik Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "PSAT",
+"nama": "PT Pancaran Samudera Transport Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "PSDN",
+"nama": "PT Prasidha Aneka Niaga Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PSGO",
+"nama": "PT Palma Serasih Tbk.",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "PSKT",
+"nama": "PT Red Planet Indonesia Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PSSI",
+"nama": "PT IMC Pelita Logistik Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "PTBA",
+"nama": "PT Bukit Asam (Persero) Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "PTIS",
+"nama": "PT Indo Straits Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "PTMP",
+"nama": "PT Mitra Pack Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "PTPS",
+"nama": "PT Pulau Subur Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "PTPW",
+"nama": "PT Pratama Widya Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "PTRO",
+"nama": "PT Petrosea Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "PTSN",
+"nama": "PT Sat Nusapersada Tbk",
+"sektor": "Electronic Technology"
+},
+{
+"kode": "PTSP",
+"nama": "PT Pioneerindo Gourmet International Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "PUDP",
+"nama": "PT Pudjiadi Prestige Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "PURA",
+"nama": "PT Putra Rajawali Kencana Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "PURI",
+"nama": "PT Puri Global Sukses Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PWON",
+"nama": "PT Pakuwon Jati Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "PYFA",
+"nama": "PT Pyridam Farma Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "PZZA",
+"nama": "PT Sarimelati Kencana Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "RAAM",
+"nama": "PT Tripar Multivision Plus Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "RAJA",
+"nama": "PT Rukun Raharja Tbk",
+"sektor": "Utilities"
+},
+{
+"kode": "RALS",
+"nama": "PT Ramayana Lestari Sentosa Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "RANC",
+"nama": "PT Supra Boga Lestari Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "RANS",
+"nama": "PT Rans Entertainmen Indonesia Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "RATU",
+"nama": "PT Raharja Energi Cepu Tbk",
+"sektor": "Miscellaneous"
+},
+{
+"kode": "RBMS",
+"nama": "PT Ristia Bintang Mahkotasejati Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "RCCC",
+"nama": "PT Utama Radar Cahaya Tbk",
+"sektor": "Electronic Technology"
+},
+{
+"kode": "RDTX",
+"nama": "PT Roda Vivatex Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "REAL",
+"nama": "PT Repower Asia Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "RELF",
+"nama": "PT Graha Mitra Asia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "RELI",
+"nama": "PT Reliance Sekuritas Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "RGAS",
+"nama": "PT Kian Santang Muliatama Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "RICY",
+"nama": "PT Ricky Putra Globalindo Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "RIGS",
+"nama": "PT Rig Tenders Indonesia Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "RISE",
+"nama": "PT Jaya Sukses Makmur Sentosa Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "RLCO",
+"nama": "PT Abadi Lestari Indonesia Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "RMKE",
+"nama": "PT RMK Energy Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "RMKO",
+"nama": "PT Royaltama Mulia Kontraktorindo Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "ROCK",
+"nama": "PT Rockfields Properti Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "RODA",
+"nama": "PT Pikko Land Development Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "RONY",
+"nama": "PT Aracord Nusantara Group Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "ROTI",
+"nama": "PT Nippon Indosari Corpindo Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "RSCH",
+"nama": "PT Charlie Hospital Semarang Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "RSGK",
+"nama": "PT Kedoya Adyaraya Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "RUIS",
+"nama": "PT Radiant Utama Interinsco Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "RUNS",
+"nama": "PT Global Sukses Solusi Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "SAFE",
+"nama": "PT Steady Safe Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "SAGE",
+"nama": "PT Saptausaha Gemilangindah Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SAME",
+"nama": "PT Sarana Meditama Metropolitan Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "SAMF",
+"nama": "PT Saraswanti Anugerah Makmur Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SAPX",
+"nama": "PT Satria Antaran Prima Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "SATU",
+"nama": "PT Kota Satu Properti Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SBMA",
+"nama": "PT Surya Biru Murni Acetylene Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SCCO",
+"nama": "PT Supreme Cable Manufacturing & Commerce Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "SCMA",
+"nama": "PT Surya Citra Media Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "SCNP",
+"nama": "PT Selaras Citra Nusantara Perkasa Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "SDMU",
+"nama": "PT Sidomulyo Selaras Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "SDPC",
+"nama": "PT Millennium Pharmacon International Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "SDRA",
+"nama": "PT Bank Woori Saudara Indonesia 1906 Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SEMA",
+"nama": "PT Semacom Integrated Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "SFAN",
+"nama": "PT Surya Fajar Capital Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SGER",
+"nama": "PT Sumber Global Energy Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "SGRO",
+"nama": "PT Prime Agri Resources Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SHID",
+"nama": "PT Hotel Sahid Jaya International Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "SHIP",
+"nama": "PT Sillo Maritime Perdana Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "SICO",
+"nama": "PT Sigma Energy Compressindo Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "SIDO",
+"nama": "PT Industri Jamu dan Farmasi Sido Muncul Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "SILO",
+"nama": "PT Siloam International Hospitals Tbk Reg-S",
+"sektor": "Health Services"
+},
+{
+"kode": "SIMP",
+"nama": "PT Salim Ivomas Pratama Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "SINI",
+"nama": "PT Singaraja Putra Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "SIPD",
+"nama": "PT Sreeya Sewu Indonesia Tbk Class A",
+"sektor": "Process Industries"
+},
+{
+"kode": "SKBM",
+"nama": "PT Sekar Bumi Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "SKLT",
+"nama": "PT Sekar Laut Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "SKRN",
+"nama": "PT Superkrane Mitra Utama",
+"sektor": "Finance"
+},
+{
+"kode": "SLIS",
+"nama": "PT Gaya Abadi Sempurna Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "SMAR",
+"nama": "PT Sinar Mas Agro Resources & Technology Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SMBR",
+"nama": "PT Semen Baturaja (Persero) Tbk Class B",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "SMDM",
+"nama": "PT Suryamas Dutamakmur Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SMDR",
+"nama": "PT Samudera Indonesia Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "SMGA",
+"nama": "PT Sumber Mineral Global Abadi Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "SMGR",
+"nama": "PT Semen Indonesia (Persero) Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "SMIL",
+"nama": "PT Sarana Mitra Luas Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SMKL",
+"nama": "PT Satyamitra Kemas Lestari Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SMKM",
+"nama": "PT Sumber Mas Konstruksi Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "SMLE",
+"nama": "PT Sinergi Multi Lestarindo Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "SMMA",
+"nama": "PT Sinar Mas Multiartha Tbk Class A",
+"sektor": "Finance"
+},
+{
+"kode": "SMMT",
+"nama": "PT Golden Eagle Energy Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "SMRA",
+"nama": "PT Summarecon Agung Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SMSM",
+"nama": "PT Selamat Sempurna Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "SNLK",
+"nama": "PT Sunter Lakeside Hotel Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "SOCI",
+"nama": "PT Soechi Lines Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "SOFA",
+"nama": "PT Solusi Environment Asia Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "SOHO",
+"nama": "PT Soho Global Health Tbk",
+"sektor": "Health Technology"
+},
+{
+"kode": "SOLA",
+"nama": "PT Xolare Rcr Energy Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "SONA",
+"nama": "PT Sona Topas Tourism Industry Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "SOSS",
+"nama": "PT ALSOK Indonesia Services Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "SOTS",
+"nama": "PT Satria Mega Kencana Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "SPMA",
+"nama": "PT Suparma Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SPRE",
+"nama": "PT Soraya Berjaya Indonesia Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "SPTO",
+"nama": "PT Surya Pertiwi Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "SQMI",
+"nama": "PT Wilton Makmur Indonesia Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "SRAJ",
+"nama": "PT Sejahteraraya Anugrahjaya Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "SRSN",
+"nama": "PT Indo Acidatama Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "SRTG",
+"nama": "PT Saratoga Investama Sedaya Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SSIA",
+"nama": "PT Surya Semesta Internusa Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "SSMS",
+"nama": "PT Sawit Sumbermas Sarana Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "SSTM",
+"nama": "PT Sunson Textile Manufacturer Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "STAA",
+"nama": "PT Sumber Tani Agung Resources Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "STAR",
+"nama": "PT Calculus Global Ventures Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "STRK",
+"nama": "PT Lovina Beach Brewery Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "STTP",
+"nama": "PT Siantar Top Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "SULI",
+"nama": "PT SLJ Global Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "SUNI",
+"nama": "PT Sunindo Pratama Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "SUPA",
+"nama": "PT Super Bank Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "SURE",
+"nama": "PT Super Energy Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "SURI",
+"nama": "PT Maja Agung Latexindo Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "SWID",
+"nama": "PT Saraswanti Indoland Development Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TALF",
+"nama": "PT Tunas Alfin Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TAMA",
+"nama": "PT Lancartama Sejati Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "TAMU",
+"nama": "PT Pelayaran Tamarin Samudra Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "TAPG",
+"nama": "PT Triputra Agro Persada Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TARA",
+"nama": "PT Agung Semesta Sejahtera Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TAXI",
+"nama": "PT Express Transindo Utama Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "TBIG",
+"nama": "PT Tower Bersama Infrastructure Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TBLA",
+"nama": "PT Tunas Baru Lampung Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TBMS",
+"nama": "PT Tembaga Mulia Semanan Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "TCID",
+"nama": "PT Mandom Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "TCPI",
+"nama": "PT Transcoal Pacific",
+"sektor": "Transportation"
+},
+{
+"kode": "TEBE",
+"nama": "PT Dana Brata Luhur Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "TFAS",
+"nama": "PT Telefast Indonesia Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "TFCO",
+"nama": "PT Tifico Fiber Indonesia, Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TGKA",
+"nama": "PT Tigaraksa Satria Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "TGUK",
+"nama": "PT Platinum Wahab Nusantara Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "TIFA",
+"nama": "PT KDB Tifa Finance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TINS",
+"nama": "PT TIMAH (Persero) Tbk",
+"sektor": "Non-Energy Minerals"
+},
+{
+"kode": "TIRA",
+"nama": "PT Tira Austenite Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "TKIM",
+"nama": "PT Pabrik Kertas Tjiwi Kimia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TLDN",
+"nama": "PT Teladan Prima Agro Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TLKM",
+"nama": "PT Telkom Indonesia (Persero) Tbk Class B",
+"sektor": "Communications"
+},
+{
+"kode": "TMAS",
+"nama": "PT Temas Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "TMPO",
+"nama": "PT Tempo Inti Media Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "TNCA",
+"nama": "PT Trimuda Nuansa Citra Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "TOBA",
+"nama": "PT TBS Energi Utama Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "TOOL",
+"nama": "PT Rohartindo Nusantara Luas Tbk",
+"sektor": "Commercial Services"
+},
+{
+"kode": "TOSK",
+"nama": "PT Topindo Solusi Komunika Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "TOTL",
+"nama": "PT Total Bangun Persada Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "TOTO",
+"nama": "PT Surya Toto Indonesia Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "TOWR",
+"nama": "PT Sarana Menara Nusantara Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TPIA",
+"nama": "PT Chandra Asri Pacific Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TPMA",
+"nama": "PT Trans Power Marine Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "TRGU",
+"nama": "PT Cerestar Indonesia Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TRIM",
+"nama": "PT Trimegah Sekuritas Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TRIN",
+"nama": "PT Perintis Triniti Properti Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TRIS",
+"nama": "PT Trisula International Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "TRJA",
+"nama": "PT Transkon Jaya Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TRON",
+"nama": "PT Teknologi Karya Digital Nusa Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "TRST",
+"nama": "PT Trias Sentosa, Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "TRUE",
+"nama": "PT Triniti Dinamik Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TRUK",
+"nama": "PT Guna Timur Raya Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "TRUS",
+"nama": "PT Trust Finance Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TSPC",
+"nama": "PT Tempo Scan Pacific Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "TUGU",
+"nama": "PT Asuransi Tugu Pratama Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "TYRE",
+"nama": "PT King Tire Indonesia Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "UANG",
+"nama": "PT Pakuan Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "UCID",
+"nama": "PT Uni-Charm Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "UDNG",
+"nama": "PT Agro Bahari Nusantara Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "UFOE",
+"nama": "PT Damai Sejahtera Abadi Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "ULTJ",
+"nama": "PT Ultrajaya Milk Industry & Trading Co. Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "UNIC",
+"nama": "PT Unggul Indah Cahaya Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "UNIQ",
+"nama": "PT Ulima Nitra Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "UNSP",
+"nama": "PT Bakrie Sumatera Plantations Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "UNTD",
+"nama": "PT Terang Dunia Internusa Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "UNTR",
+"nama": "PT United Tractors Tbk",
+"sektor": "Energy Minerals"
+},
+{
+"kode": "UNVR",
+"nama": "PT Unilever Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "URBN",
+"nama": "PT Urban Jakarta Propertindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "UVCR",
+"nama": "PT Trimegah Karya Pratama Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "VAST",
+"nama": "PT Vastland Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "VERN",
+"nama": "PT Verona Indah Pictures Tbk",
+"sektor": "Consumer Services"
+},
+{
+"kode": "VICI",
+"nama": "PT Victoria Care Indonesia Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "VICO",
+"nama": "PT Victoria Investama Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "VINS",
+"nama": "PT Victoria Insurance Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "VISI",
+"nama": "PT Satu Visi Putra Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "VIVA",
+"nama": "PT Visi Media Asia Tbk Class A",
+"sektor": "Consumer Services"
+},
+{
+"kode": "VKTR",
+"nama": "PT VKTR Teknologi Mobilitas Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "VOKS",
+"nama": "PT Voksel Electric Tbk",
+"sektor": "Producer Manufacturing"
+},
+{
+"kode": "VRNA",
+"nama": "PT Mizuho Leasing Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "VTNY",
+"nama": "PT Venteny Fortuna International Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "WAPO",
+"nama": "PT Wahana Pronatural Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "WBSA",
+"nama": "PT BSA Logistics Indonesia Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "WEGE",
+"nama": "PT Wijaya Karya Bangunan Gedung Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "WEHA",
+"nama": "PT WEHA Transportasi Indonesia Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "WGSH",
+"nama": "PT Wira Global Solusi Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "WIDI",
+"nama": "PT Widiant Jaya Krenindo Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "WIFI",
+"nama": "PT Solusi Sinergi Digital Tbk",
+"sektor": "Technology Services"
+},
+{
+"kode": "WIIM",
+"nama": "PT Wismilak Inti Makmur Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "WINE",
+"nama": "PT Hatten Bali Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "WINR",
+"nama": "PT Winner Nusantara Jaya Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "WINS",
+"nama": "PT Wintermar Offshore Marine Tbk",
+"sektor": "Transportation"
+},
+{
+"kode": "WIRG",
+"nama": "PT WIR Asia Tbk",
+"sektor": "Health Services"
+},
+{
+"kode": "WMPP",
+"nama": "PT Widodo Makmur Perkasa Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "WMUU",
+"nama": "PT Widodo Makmur Unggas Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "WOMF",
+"nama": "PT Wahana Ottomitra Multiartha Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "WOOD",
+"nama": "PT Integra Indocabinet Tbk",
+"sektor": "Consumer Durables"
+},
+{
+"kode": "WOWS",
+"nama": "PT Ginting Jaya Energi Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "WTON",
+"nama": "PT Wijaya Karya Beton Tbk",
+"sektor": "Industrial Services"
+},
+{
+"kode": "XCID",
+"nama": "DIRE CIPTADANA PROPERTI RITEL INDONESIA",
+"sektor": "Finance"
+},
+{
+"kode": "XCIS",
+"nama": "Dana Investasi Real Estat Ciptadana Properti Perhotelan Padjajaran",
+"sektor": "Finance"
+},
+{
+"kode": "YELO",
+"nama": "PT Yelooo Integra Datanet Tbk",
+"sektor": "Distribution Services"
+},
+{
+"kode": "YOII",
+"nama": "PT Asuransi Digital Bersama Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "YPAS",
+"nama": "PT Yanaprima Hastapersada Tbk",
+"sektor": "Process Industries"
+},
+{
+"kode": "YULE",
+"nama": "PT Yulie Sekuritas Indonesia Tbk",
+"sektor": "Finance"
+},
+{
+"kode": "YUPI",
+"nama": "Pt Yupi Indo Jelly Gum Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "ZATA",
+"nama": "PT Bersama Zatta Jaya Tbk",
+"sektor": "Retail Trade"
+},
+{
+"kode": "ZONE",
+"nama": "PT Mega Perintis Tbk",
+"sektor": "Consumer Non-Durables"
+},
+{
+"kode": "ZYRX",
+"nama": "PT Zyrexindo Mandiri Buana Tbk",
+"sektor": "Electronic Technology"
+}
+]
+}

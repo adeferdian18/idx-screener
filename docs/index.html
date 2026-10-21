@@ -127,6 +127,21 @@ dialog::backdrop{background:rgba(8,15,28,.55)}
 .cell b{font-size:18px}
 .dlg-body h3{font-size:16px;margin:20px 0 8px}
 
+/* ---------- Momentum ---------- */
+.mkt{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border-radius:10px;padding:14px 18px;margin-bottom:16px;border-left:5px solid var(--line)}
+.mkt.uptrend{border-left-color:var(--up)} .mkt.tertekan{border-left-color:var(--accent)} .mkt.downtrend{border-left-color:var(--down)}
+.mkt b{font-size:15px} .mkt p{margin:2px 0 0;font-size:14px;color:var(--muted)}
+.rs{font-weight:800}
+.rs.hi{color:var(--up)}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:4px;background:var(--accent-soft);color:var(--accent);vertical-align:1px}
+.badge.good{background:var(--good-soft);color:var(--up)}
+.dots i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:2px;background:var(--line)}
+.dots i.y{background:var(--up)} .dots i.n{background:var(--down)}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.checks li{background:var(--bg);border-radius:8px;padding:8px 12px;font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.checks .ok{color:var(--up);font-weight:700} .checks .no{color:var(--down);font-weight:700}
+.brief{background:var(--bg);border-radius:8px;padding:12px 14px;font-size:15px;margin:0}
+
 .empty{background:var(--surface);border-radius:10px;padding:28px;max-width:640px}
 .empty h3{margin:0 0 6px}
 footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
@@ -166,12 +181,27 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
 
 <main class="wrap">
   <div class="tabs" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" data-tab="aksi">Aksi korporasi</button>
+    <button class="tab" role="tab" aria-selected="true" data-tab="momentum">Momentum</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="aksi">Aksi korporasi</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="screener">Screener fundamental</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="grafik">Grafik</button>
   </div>
 
-  <section class="panel" id="panel-aksi">
+  <section class="panel" id="panel-momentum">
+    <div class="mkt" id="mkt"></div>
+    <div class="toolbar">
+      <input class="search" id="mq" type="search" placeholder="Cari kode atau nama" aria-label="Cari saham momentum">
+      <button class="chip" data-mf="lolos" aria-pressed="true">Lolos Trend Template</button>
+      <button class="chip" data-mf="hampir" aria-pressed="false">Hampir (6–7 dari 8)</button>
+      <button class="chip" data-mf="semua" aria-pressed="false">Semua saham</button>
+      <button class="chip" id="m-rs90" aria-pressed="false">RS 90+ saja</button>
+      <span class="hint" id="m-count"></span>
+    </div>
+    <div class="table-wrap"><table id="m-table"><thead></thead><tbody></tbody></table></div>
+    <p class="hint">RS Rating = persentil 1–99 kinerja 12 bulan berbobot (kuartal terakhir dibobot ganda) dibanding seluruh saham BEI. Ini Relative Strength, bukan RSI. RS Line = harga saham dibagi IHSG.</p>
+  </section>
+
+  <section class="panel" id="panel-aksi" hidden>
     <div class="toolbar" id="ev-filters"></div>
     <div class="events" id="events"></div>
   </section>
@@ -211,7 +241,8 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
 
 <script>
 "use strict";
-const S = { quotes:null, screener:null, actions:null, evFilter:"semua", sort:{key:"peringkat",dir:1} };
+const S = { quotes:null, screener:null, actions:null, momentum:null, evFilter:"semua", sort:{key:"peringkat",dir:1},
+  mFilter:"lolos", msort:{key:"rs_rating",dir:-1} };
 const $ = (s, el=document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const isNum = x => typeof x === "number" && isFinite(x);
@@ -240,7 +271,7 @@ function ago(iso){
 /* ---------- Hero ---------- */
 function renderHero(){
   const q = S.quotes, ih = q?.ihsg;
-  $("#fresh").innerHTML = `Harga <b>${ago(q?.updated)}</b><br>Fundamental <b>${ago(S.screener?.updated)}</b>, aksi korporasi <b>${ago(S.actions?.updated)}</b>`;
+  $("#fresh").innerHTML = `Harga <b>${ago(q?.updated)}</b><br>Momentum <b>${ago(S.momentum?.updated)}</b>, fundamental <b>${ago(S.screener?.updated)}</b>, aksi korporasi <b>${ago(S.actions?.updated)}</b>`;
   if(!ih || !isNum(ih.last)) return;
   $("#ihsg-val").textContent = fmt(ih.last, 2);
   const c = $("#ihsg-chg"); c.textContent = `${ih.chg>0?"+":""}${fmt(ih.last-ih.prev,2)} (${pct(ih.chg,2)})`; c.className = "index-chg " + cls(ih.chg);
@@ -384,6 +415,107 @@ function renderScreener(){
   t.tBodies[0].innerHTML = rows.map(r => `<tr data-code="${esc(r.kode)}">` + COLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("");
 }
 
+/* ---------- Momentum ---------- */
+const STAGE = {1:"Stage 1 · basing",2:"Stage 2 · naik",3:"Stage 3 · puncak",4:"Stage 4 · turun"};
+function renderMarket(){
+  const m = S.momentum?.pasar;
+  if(!m){ $("#mkt").innerHTML = `<div><b>Data momentum belum ada</b><p>Jalankan workflow harian di GitHub Actions.</p></div>`; return; }
+  const lbl = {uptrend:"Pasar uptrend", tertekan:"Pasar tertekan", downtrend:"Pasar downtrend"}[m.status];
+  $("#mkt").className = "mkt " + m.status;
+  $("#mkt").innerHTML = `<div><b>${lbl}</b> · IHSG ${fmt(m.ihsg,0)} (MA50 ${fmt(m.ma50,0)}, MA200 ${fmt(m.ma200,0)})
+    <p>${esc(m.catatan)} Koreksi terdalam 3 bulan terakhir ${pct(m.koreksi_3b?.turun,1)}. Data per ${esc(S.momentum.tgl_data)}, ${S.momentum.dipindai} saham dipindai.</p></div>`;
+}
+function rsLine(r){
+  if(r.rs_line_mendahului) return `<span class="badge good" title="RS Line di puncak 52 minggu sebelum harga">mendahului</span>`;
+  if(r.rs_line_high) return `<span class="badge good" title="RS Line di puncak 52 minggu">high</span>`;
+  if(r.rs_line_naik_1b == null) return "–";
+  return r.rs_line_naik_1b ? `<span class="up" title="RS Line naik 1 bulan">▲</span>` : `<span class="down" title="RS Line turun 1 bulan">▼</span>`;
+}
+const dots = tt => `<span class="dots">${tt.map(v => `<i class="${v===true?"y":v===false?"n":""}"></i>`).join("")}</span>`;
+const MCOLS = [
+  ["kode","Saham",r=>`${esc(r.kode)}${r.rs_rating>=90 && r.lolos_tt?`<span class="badge good">RS 90+</span>`:""}`],
+  ["rs_rating","RS",r=>`<span class="rs ${r.rs_rating>=90?"hi":""}">${r.rs_rating ?? "–"}</span>`],
+  ["rs_line_high","RS Line",rsLine],
+  ["harga","Harga",r=>fmt(liveOf(r.kode)?.last ?? r.harga)],
+  ["chg","Hari ini",r=>`<span class="${cls(r.chg)}">${pct(r.chg)}</span>`],
+  ["dari_high52","Dari high 52m",r=>`<span class="${cls(r.dari_high52)}">${pct(r.dari_high52,0)}</span>`],
+  ["dari_low52","Dari low 52m",r=>pct(r.dari_low52,0)],
+  ["tt_skor","Trend Template",r=>`${dots(r.tt)} ${r.tt_skor}/8`],
+  ["stage","Stage",r=>r.stage ? `Stage ${r.stage}` : "–"],
+  ["ret_3m","3 bln",r=>`<span class="${cls(r.ret_3m)}">${pct(r.ret_3m,0)}</span>`],
+  ["ketahanan","Ketahanan",r=>`<span class="${cls(r.ketahanan)}" title="Kinerja saham saat IHSG koreksi, dikurangi penurunan IHSG">${pct(r.ketahanan,0)}</span>`],
+  ["nilai_rata2","Nilai/hari",r=>isNum(r.nilai_rata2)?"Rp"+fmt(r.nilai_rata2/1e9,1)+" M":"–"],
+  ["flags","Catatan",r=>`<span class="flag">${esc(r.flags.join(", ").toLowerCase())}</span>`],
+];
+function mRows(){
+  let rows = (S.momentum?.rows || []).map(r => ({...r, chg: liveOf(r.kode)?.chg ?? r.chg_1d}));
+  const q = $("#mq").value.trim().toUpperCase();
+  if(q) rows = rows.filter(r => r.kode.includes(q) || (r.nama||"").toUpperCase().includes(q));
+  else if(S.mFilter === "lolos") rows = rows.filter(r => r.lolos_tt && r.likuid);
+  else if(S.mFilter === "hampir") rows = rows.filter(r => r.label === "Hampir");
+  if($("#m-rs90").getAttribute("aria-pressed")==="true") rows = rows.filter(r => r.rs_rating >= 90);
+  const {key, dir} = S.msort;
+  rows.sort((a,b) => {
+    const x=a[key], y=b[key];
+    if(x==null && y==null) return 0; if(x==null) return 1; if(y==null) return -1;
+    return (typeof x === "string" ? x.localeCompare(y) : x - y) * dir;
+  });
+  return rows;
+}
+function renderMomentum(){
+  renderMarket();
+  document.querySelectorAll("[data-mf]").forEach(b => b.setAttribute("aria-pressed", b.dataset.mf === S.mFilter));
+  const t = $("#m-table");
+  t.tHead.innerHTML = "<tr>" + MCOLS.map(([k,l]) => `<th data-mk="${k}" ${S.msort.key===k?`aria-sort="${S.msort.dir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("") + "</tr>";
+  if(!S.momentum){ t.tBodies[0].innerHTML = ""; return; }
+  const rows = mRows();
+  $("#m-count").textContent = `${rows.length} saham`;
+  t.tBodies[0].innerHTML = rows.length ? rows.map(r => `<tr data-mcode="${esc(r.kode)}">` + MCOLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("")
+    : `<tr><td colspan="${MCOLS.length}" style="text-align:left">Tidak ada saham yang memenuhi filter ini hari ini.</td></tr>`;
+}
+function briefing(r){
+  const m = S.momentum.pasar, labels = S.momentum.tt_labels;
+  const fail = r.tt.map((v,i) => v===false ? labels[i] : null).filter(Boolean);
+  const pros = [], cons = [];
+  if(r.rs_rating >= 90) pros.push(`RS Rating ${r.rs_rating}: kinerjanya mengalahkan sekitar ${r.rs_rating}% saham BEI`);
+  else if(r.rs_rating >= 70) pros.push(`RS Rating ${r.rs_rating}, lolos syarat minimum tapi belum di zona 90+`);
+  if(r.rs_line_mendahului) pros.push("RS Line sudah cetak rekor 52 minggu sebelum harganya (jejak akumulasi)");
+  else if(r.rs_line_high) pros.push("RS Line di puncak 52 minggu");
+  if(isNum(r.ketahanan) && r.ketahanan > 0) pros.push(`${pct(r.ketahanan,0)} lebih kuat dari IHSG saat koreksi terakhir`);
+  if(isNum(r.ketahanan) && r.ketahanan < 0) cons.push(`lebih lemah dari IHSG saat koreksi terakhir (${pct(r.ketahanan,0)})`);
+  if(fail.length) cons.push("gagal Trend Template: " + fail.join("; ").toLowerCase());
+  if(m.status !== "uptrend") cons.push(`arah pasar ${m.status}, breakout lebih sering gagal`);
+  r.flags.forEach(f => cons.push(f.toLowerCase()));
+  const verdict = r.lolos_tt && r.likuid ? "Kandidat watchlist Stage 2. Tunggu pola VCP dan breakout pivot, jangan beli hanya karena lolos filter."
+    : "Belum valid untuk strategi momentum.";
+  return `<p class="brief"><b>${verdict}</b>${pros.length?`<br>Kenapa kuat: ${esc(pros.join("; "))}.`:""}${cons.length?`<br>Kenapa hati-hati: ${esc(cons.join("; "))}.`:""}</p>`;
+}
+function openMomentum(code){
+  const r = (S.momentum?.rows || []).find(x => x.kode === code);
+  if(!r) return;
+  const live = liveOf(code), labels = S.momentum.tt_labels;
+  $("#dlg-title").textContent = code;
+  $("#dlg-sub").textContent = [r.nama, r.sektor, STAGE[r.stage] ? STAGE[r.stage] + " (perkiraan)" : null].filter(Boolean).join(" · ");
+  const cells = [
+    ["Harga", fmt(live?.last ?? r.harga)], ["RS Rating", r.rs_rating ?? "–"], ["Trend Template", `${r.tt_skor}/8`],
+    ["MA50", fmt(r.ma50)], ["MA150", fmt(r.ma150)], ["MA200", fmt(r.ma200)],
+    ["MA200 naik", isNum(r.ma200_naik_hari) ? `${r.ma200_naik_hari} hari` : "–"],
+    ["High 52 mgg", fmt(r.high52)], ["Low 52 mgg", fmt(r.low52)],
+    ["1 bln", pct(r.ret_1m,0)], ["3 bln", pct(r.ret_3m,0)], ["6 bln", pct(r.ret_6m,0)], ["12 bln", pct(r.ret_12m,0)],
+    ["Ketahanan koreksi", pct(r.ketahanan,0)], ["Nilai transaksi/hari", isNum(r.nilai_rata2)?"Rp"+fmt(r.nilai_rata2/1e9,1)+" M":"–"],
+  ];
+  $("#dlg-body").innerHTML = `<div class="mini-chart" id="mini-chart"></div>
+    <h3>Briefing</h3>${briefing(r)}
+    <h3>Trend Template (8 poin)</h3>
+    <ul class="checks">${r.tt.map((v,i) => `<li><span>${esc(labels[i])}</span>${v===true?`<span class="ok">✓ lolos</span>`:v===false?`<span class="no">✗ gagal</span>`:`<span class="hint">data kurang</span>`}</li>`).join("")}</ul>
+    <h3>Angka</h3>
+    <div class="grid">${cells.map(([l,v]) => `<div class="cell"><span>${l}</span><b>${esc(v)}</b></div>`).join("")}</div>
+    <p class="hint">Data harian per ${esc(r.tgl_data)}. Pola VCP, titik pivot, entry, stop loss dan target menyusul di Fase 2.</p>`;
+  $("#dlg").showModal();
+  tvWidget($("#mini-chart"), "advanced-chart", {autosize:true, symbol:`IDX:${code}`, interval:"D", timezone:"Asia/Jakarta",
+    theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, hide_legend:false, allow_symbol_change:false});
+}
+
 /* ---------- Detail saham ---------- */
 function openDetail(code){
   const r = (S.screener?.rows || []).find(x => x.kode === code) || {};
@@ -422,11 +554,21 @@ document.addEventListener("click", e => {
   }
   const chip = e.target.closest("#ev-filters .chip");
   if(chip){ S.evFilter = chip.dataset.f; renderEvFilters(); renderEvents(); return; }
+  const mf = e.target.closest("[data-mf]");
+  if(mf){ S.mFilter = mf.dataset.mf; renderMomentum(); return; }
+  const mcode = e.target.closest("[data-mcode]");
+  if(mcode){ openMomentum(mcode.dataset.mcode); return; }
+  const mth = e.target.closest("#m-table th");
+  if(mth){ const k = mth.dataset.mk; S.msort = {key:k, dir: S.msort.key===k ? -S.msort.dir : (k==="kode"?1:-1)}; renderMomentum(); return; }
   const code = e.target.closest("[data-code]");
   if(code){ openDetail(code.dataset.code); return; }
   const th = e.target.closest("#sc-table th");
   if(th){ const k = th.dataset.k; S.sort = {key:k, dir: S.sort.key===k ? -S.sort.dir : (["peringkat","per","pbv","kode"].includes(k)?1:-1)}; renderScreener(); return; }
 });
+$("#m-rs90").addEventListener("click", ev => {
+  const b = ev.currentTarget; b.setAttribute("aria-pressed", b.getAttribute("aria-pressed")!=="true"); renderMomentum();
+});
+$("#mq").addEventListener("input", renderMomentum);
 ["only-clean","only-bank"].forEach(id => $("#"+id).addEventListener("click", ev => {
   const b = ev.currentTarget; b.setAttribute("aria-pressed", b.getAttribute("aria-pressed")!=="true"); renderScreener();
 }));
@@ -436,9 +578,9 @@ $("#chart-sym").addEventListener("keydown", e => { if(e.key==="Enter") $("#chart
 $("#dlg-close").addEventListener("click", () => $("#dlg").close());
 
 async function loadAll(first){
-  const [q, s, a] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions")]);
-  S.quotes = q; S.screener = s; S.actions = a;
-  renderHero(); renderEvFilters(); renderEvents(); renderScreener();
+  const [q, s, a, m] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), getJSON("momentum")]);
+  S.quotes = q; S.screener = s; S.actions = a; S.momentum = m;
+  renderHero(); renderMomentum(); renderEvFilters(); renderEvents(); renderScreener();
   renderTape();
 }
 loadAll(true);

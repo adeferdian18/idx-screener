@@ -39,6 +39,10 @@ jobs:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
           WA_TARGET: ${{ secrets.WA_TARGET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Momentum (RS Rating + Trend Template, semua saham BEI)
+        run: |
+          python universe.py
+          python momentum.py
       - run: python market.py
       - name: Simpan data ke website
         run: |
