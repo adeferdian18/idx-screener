@@ -1,0 +1,35 @@
+name: Transaksi orang dalam
+
+on:
+  schedule:
+    - cron: "*/15 1-9 * * 1-5"    # tiap 15 menit 08:00-16:45 WIB
+    - cron: "0 10 * * 1-5"        # 17:00 WIB
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-data
+  cancel-in-progress: false
+
+jobs:
+  insider:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python insider.py
+      - name: Simpan data ke website
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data
+          git commit -m "Insider $(TZ=Asia/Jakarta date "+%F %H:%M")" || exit 0
+          git pull --rebase -X theirs origin ${{ github.ref_name }}
+          git push
