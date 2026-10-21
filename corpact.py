@@ -15,8 +15,8 @@ Mode:
 
 Setiap aksi korporasi diberi "skor momentum" yang menggabungkan jenis aksi
 (buyback = sinyal positif, private placement = dilusi, dst.) dengan skor fundamental
-dari screener.py, lalu diberi narasi. Jika secret ANTHROPIC_API_KEY diisi, narasinya
-ditulis oleh Claude; jika tidak, dipakai narasi berbasis aturan.
+dari screener.py, lalu diberi narasi. Jika secret LLM_API_KEY (LLMAPI, llmapi.ai) atau
+ANTHROPIC_API_KEY diisi, narasinya ditulis oleh Claude; jika tidak, dipakai narasi berbasis aturan.
 
 Output: docs/data/corporate_actions.json, plus ringkasan aksi baru ke Telegram.
 """
@@ -47,6 +47,10 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-5-5")
+# LLMAPI (llmapi.ai): gateway berformat OpenAI; jika diisi, dipakai lebih dulu daripada Anthropic langsung
+LLM_API_KEY = os.getenv("LLM_API_KEY", "")
+LLM_API_BASE = os.getenv("LLM_API_BASE") or "https://api.llmapi.ai/v1"
+LLM_API_MODEL = os.getenv("LLM_API_MODEL") or "claude-sonnet-5"
 MAX_AI_NARRATIVES = int(os.getenv("MAX_AI_NARRATIVES", 12))
 GMAIL_USER = os.getenv("GMAIL_USER", "")
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "")
@@ -451,6 +455,12 @@ def ai_narrative(ev, f):
         f"Konteks pasar: IHSG sedang tertekan setelah MSCI membuka konsultasi penurunan status Indonesia "
         f"menjadi Standalone Market (Oktober 2026).\nData fundamental: {json.dumps(data, ensure_ascii=False)}"
     )
+    if LLM_API_KEY:
+        r = requests.post(f"{LLM_API_BASE.rstrip('/')}/chat/completions", timeout=60, headers={
+            "Authorization": f"Bearer {LLM_API_KEY}", "content-type": "application/json",
+        }, json={"model": LLM_API_MODEL, "max_tokens": 400, "messages": [{"role": "user", "content": prompt}]})
+        r.raise_for_status()
+        return (r.json()["choices"][0]["message"].get("content") or "").strip()
     r = requests.post("https://api.anthropic.com/v1/messages", timeout=60, headers={
         "x-api-key": ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json",
     }, json={"model": CLAUDE_MODEL, "max_tokens": 400, "messages": [{"role": "user", "content": prompt}]})
@@ -567,7 +577,7 @@ def main(fast=False):
         events.append(ev)
 
     # Narasi Claude untuk aksi baru dengan skor tertinggi (hemat biaya API)
-    if ANTHROPIC_API_KEY:
+    if LLM_API_KEY or ANTHROPIC_API_KEY:
         for ev in sorted(events, key=lambda e: -e["score"]):
             if ai_used >= MAX_AI_NARRATIVES:
                 break

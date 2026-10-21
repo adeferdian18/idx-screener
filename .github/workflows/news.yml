@@ -43,6 +43,8 @@ jobs:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
           WA_TARGET: ${{ secrets.WA_TARGET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_MODEL: ${{ vars.LLM_API_MODEL }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}

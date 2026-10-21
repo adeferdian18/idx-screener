@@ -31,6 +31,8 @@ jobs:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
           WA_TARGET: ${{ secrets.WA_TARGET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_MODEL: ${{ vars.LLM_API_MODEL }}
       - name: Aksi korporasi
         run: python corpact.py
         env:
@@ -39,6 +41,8 @@ jobs:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
           WA_TARGET: ${{ secrets.WA_TARGET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_MODEL: ${{ vars.LLM_API_MODEL }}
       - name: Momentum (RS Rating, Trend Template, VCP, HGM, semua saham BEI)
         run: |
           python universe.py
