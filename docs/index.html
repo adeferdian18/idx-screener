@@ -56,10 +56,15 @@ button{font:inherit;color:inherit}
 .spark{display:block;width:100%;max-width:760px;height:56px;margin-top:16px}
 
 .tape{margin:0;border-bottom:1px solid var(--line);min-height:46px;overflow:hidden;white-space:nowrap;display:flex;align-items:center}
-.tape-track{display:inline-flex;gap:28px;padding:12px 14px;font-size:14px;animation:tape 90s linear infinite}
-.tape:hover .tape-track{animation-play-state:paused}
+.tape-view{overflow:hidden;flex:1;min-width:0}
+/* Pita sengaja tetap berjalan walau sistem meminta gerakan dikurangi (permintaan pemilik situs);
+   tombol jeda di kiri menghentikannya dan pilihan itu diingat di perangkat. */
+.tape-track{display:inline-flex;gap:28px;padding:12px 14px;font-size:14px;animation:tape 90s linear infinite;will-change:transform}
+.tape:hover .tape-track,.tape.paused .tape-track{animation-play-state:paused}
 @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.tape-track{animation:none}}
+.tk{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;white-space:nowrap}
+.tk:hover b{text-decoration:underline}
+.tape-btn{flex:0 0 auto;margin-left:10px;width:30px;height:26px;border:1px solid var(--line);border-radius:6px;background:var(--surface);cursor:pointer;font-size:11px;color:var(--muted)}
 
 /* ---------- Tab ---------- */
 .tabs{display:flex;gap:4px;margin:22px 0 18px;border-bottom:1px solid var(--line);overflow-x:auto}
@@ -454,14 +459,40 @@ function tvWidget(container, name, config){
   s.textContent = JSON.stringify(config);
   box.append(inner, s); container.append(box);
 }
-function renderTape(){
+// Pita harga: saham watchlist momentum dulu, lalu yang lolos screener fundamental.
+// Dibangun ulang hanya kalau daftar sahamnya berubah, supaya animasi tidak mulai dari awal tiap refresh.
+function tapeItems(){
   const st = S.quotes?.stocks || {}, ih = S.quotes?.ihsg;
-  const top = (S.screener?.rows || []).filter(r => !r.flags).slice(0, 20).map(r => r.kode);
-  const codes = (top.length ? top : Object.keys(st)).filter(c => st[c]);
-  const item = (n, v, c) => '<span class="tk"><b>' + esc(n) + '</b> ' + fmt(v, n === 'IHSG' ? 2 : 0) + ' <span class="' + cls(c) + '">' + pct(c, 2) + '</span></span>';
-  let h = ih && isNum(ih.last) ? item('IHSG', ih.last, ih.chg) : '';
-  h += codes.map(c => item(c, st[c].last, st[c].chg)).join('');
-  $('#tape').innerHTML = h ? '<div class="tape-track">' + h + h + '</div>' : '';
+  const mrows = Object.fromEntries((S.momentum?.rows || []).map(r => [r.kode, r]));
+  const mom = typeof wlSections === "function" && S.momentum ? wlSections().slice(0, 3).flatMap(([, rows]) => rows.map(r => r.kode)) : [];
+  const fund = (S.screener?.rows || []).filter(r => !r.flags).slice(0, 20).map(r => r.kode);
+  const codes = [...new Set([...mom, ...fund])].filter(c => st[c] || mrows[c]).slice(0, 40);
+  const items = codes.map(c => ({k:c, v: st[c]?.last ?? mrows[c]?.harga, c: st[c]?.chg ?? mrows[c]?.chg_1d}));
+  if(ih && isNum(ih.last)) items.unshift({k:"IHSG", v:ih.last, c:ih.chg});
+  return items;
+}
+function renderTape(){
+  const items = tapeItems(), key = items.map(x => x.k).join(",");
+  const tape = $("#tape");
+  if(!items.length){ tape.innerHTML = ""; return; }
+  if(tape.dataset.key !== key){
+    const one = items.map(x => `<button class="tk" data-tk="${esc(x.k)}" ${x.k === "IHSG" ? "" : `data-mcode="${esc(x.k)}"`}><b>${esc(x.k)}</b> <span class="tk-v"></span> <span class="tk-c"></span></button>`).join("");
+    tape.innerHTML = `<button class="tape-btn" id="tape-btn" aria-label="Jeda pita harga"></button><div class="tape-view"><div class="tape-track">${one}${one}</div></div>`;
+    tape.dataset.key = key;
+    const track = tape.querySelector(".tape-track");
+    requestAnimationFrame(() => { track.style.animationDuration = Math.max(30, track.scrollWidth / 2 / 45) + "s"; });
+    setTapePaused(store.get("tape-pause") === "1");
+  }
+  for(const x of items) tape.querySelectorAll(`[data-tk="${x.k}"]`).forEach(el => {
+    el.querySelector(".tk-v").textContent = fmt(x.v, x.k === "IHSG" ? 2 : 0);
+    const c = el.querySelector(".tk-c"); c.textContent = pct(x.c, 2); c.className = "tk-c " + cls(x.c);
+  });
+}
+function setTapePaused(p){
+  const tape = $("#tape"), btn = $("#tape-btn");
+  tape.classList.toggle("paused", p);
+  if(btn){ btn.textContent = p ? "▶" : "❚❚"; btn.setAttribute("aria-label", p ? "Jalankan pita harga" : "Jeda pita harga"); btn.setAttribute("aria-pressed", p); }
+  store.set("tape-pause", p ? "1" : "0");
 }
 function renderChart(code){
   tvWidget($("#chart-box"), "advanced-chart", {
@@ -1066,6 +1097,7 @@ document.addEventListener("click", e => {
     if(tab.dataset.tab === "analisa"){ drawBreadth(); renderBacktest(); }
     return;
   }
+  if(e.target.closest("#tape-btn")){ setTapePaused(!$("#tape").classList.contains("paused")); return; }
   const st = e.target.closest("[data-star]");
   if(st){ WL.toggle(st.dataset.star); const on = WL.get().has(st.dataset.star);
     document.querySelectorAll(`[data-star="${st.dataset.star}"]`).forEach(b => b.setAttribute("aria-pressed", on));
