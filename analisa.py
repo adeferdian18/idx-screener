@@ -71,12 +71,14 @@ def skor_setup(z, status_pasar):
     # pola yang sudah dipakai (trade selesai / gagal) tidak lagi menjadi peluang
     if v.get("valid") and e.get("status") not in ("kena_sl", "time_stop", "kena_tp2", "tp1_impas", "extended"):
         s += 15 + (5 if v.get("ketat") else 0) + (5 if v.get("kering") else 0)
+    elif e.get("setup") == "reversal" and e.get("status") in ("entry_hari_ini", "entry_baru", "berjalan", "kena_tp1"):
+        s += 15
     s += {"uptrend": 5, "tertekan": 2}.get(status_pasar, 0)
     return round(s)
 
 
 # ---------------------------------------------------------------- Briefing per saham
-def briefing(z, pasar, tt_labels):
+def briefing(z, pasar, tt_labels, bt=None):
     st_pasar = pasar["status"]
     e = z.get("entry") or {}
     v = e.get("vcp") or {}
@@ -109,6 +111,20 @@ def briefing(z, pasar, tt_labels):
                     + (", volume mengering" if v.get("kering") else ""))
     elif v.get("alasan"):
         hati.append("pola VCP belum terbentuk: " + "; ".join(v["alasan"]))
+    rev = e.get("setup") == "reversal"
+    if rev:
+        pola = e.get("pola") or {}
+        kuat.append(f"setup pembalikan pemimpin RS ({tgl(e.get('tgl_trigger'))}): RS Line cetak high 50 hari saat harga "
+                    f"{pc(pola.get('koreksi'))} dari high 20 hari, candle trigger bullish")
+    # bukti backtest untuk setup ini di kondisi pasar sekarang
+    mode = "rev_close" if rev else "pivot_semua"
+    bukti = ((bt or {}).get(mode) or {}).get(st_pasar)
+    bukti_negatif = bool(bukti and bukti[1] < 0)
+    if bukti and e.get("status") and e.get("status") not in ("kena_sl", "kena_tp2", "tp1_impas", "time_stop"):
+        n_bt, r_bt = bukti
+        teks = (f"backtest 4 tahun setup {'pembalikan RS' if rev else 'VCP'} saat pasar {st_pasar}: "
+                f"{n_bt} trade, rata-rata {r_bt:+.2f}R per trade setelah biaya".replace(".", ","))
+        (kuat if r_bt >= 0.1 else hati).append(teks)
     g = z.get("hgm")
     if g and g.get("skor") is not None:
         rinci = (f"laba {pc(g.get('laba_yoy'))} YoY, penjualan {pc(g.get('penjualan_yoy'))}, margin "
@@ -159,13 +175,20 @@ def briefing(z, pasar, tt_labels):
     elif st == "volume_kurang":
         tingkat, vonis = "pantau", "Harga tembus pivot tanpa volume konfirmasi (< 1,5× rata-rata 50 hari)."
         langkah = f"Belum valid. Eksekusi hanya jika ada candle tutup di atas {rp(e['entry'])} dengan volume besar."
-    elif not lolos:
+    elif not lolos and not rev:
         tingkat, vonis = "tidak", "Belum valid untuk strategi momentum."
         langkah = "Abaikan dulu; fokus ke saham yang lolos 8 poin Trend Template."
+    elif st in ("entry_hari_ini", "entry_baru", "berjalan") and e.get("risiko_ok") and bukti_negatif:
+        tingkat = "pantau"
+        r_txt = f"{bukti[1]:+.2f}".replace(".", ",") + "R"
+        vonis = f"Entry trigger terjadi, tapi secara historis setup ini merugi saat pasar {st_pasar} (rata-rata {r_txt})."
+        langkah = (f"Kalau tetap eksekusi: beli di {rp(e['entry'])} maks {rp(e['beli_maks'])}, SL {rp(e['sl'])}, "
+                   f"TP1 {rp(e['tp1'])}, dengan seperempat sampai separuh ukuran posisi normal.")
     elif st in ("entry_hari_ini", "entry_baru", "berjalan") and e.get("risiko_ok"):
         tingkat = "valid"
-        vonis = ("Entry trigger VALID: Stage 2, VCP, breakout pivot dengan volume, risiko dalam batas."
-                 if st_pasar == "uptrend" else f"Entry trigger terjadi, tapi pasar sedang {st_pasar}.")
+        dasar = ("pemimpin RS berbalik naik saat pasar koreksi" if rev else "VCP, breakout pivot dengan volume")
+        vonis = (f"Entry trigger VALID: Stage 2, {dasar}, risiko dalam batas."
+                 if st_pasar == "uptrend" else f"Entry trigger terjadi ({dasar}), tapi pasar sedang {st_pasar}.")
         langkah = (f"Beli di {rp(e['entry'])} sampai maksimal {rp(e['beli_maks'])}, SL {rp(e['sl'])}, "
                    f"TP1 {rp(e['tp1'])}, TP2 {rp(e['tp2'])}." + kecil)
     elif st in ("entry_hari_ini", "entry_baru", "berjalan"):

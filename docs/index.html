@@ -159,8 +159,9 @@ dialog::backdrop{background:rgba(8,15,28,.55)}
 .chart-tools{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .chart-tools .chip{font-size:13px;padding:3px 10px}
 .chart-own{display:flex;flex-direction:column;gap:2px}
-.chart-own .c-price{flex:72}
-.chart-own .c-rs{flex:28;position:relative;border-top:1px solid var(--line)}
+.chart-own .c-price{flex:60}
+.chart-own .c-rs{flex:22;position:relative;border-top:1px solid var(--line)}
+.chart-own .c-rsr{flex:18;position:relative;border-top:1px solid var(--line)}
 .c-rs-label{position:absolute;left:8px;top:4px;font-size:11px;color:var(--muted);z-index:3;pointer-events:none}
 dialog.wide{width:98vw;max-height:96vh}
 dialog.wide .dlg-body{max-height:calc(96vh - 90px)}
@@ -306,7 +307,7 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
       <summary>Tabel lengkap: sinyal entry & watchlist Trend Template</summary>
       <div class="mkt" id="mkt"></div>
       <h2>Sinyal entry</h2>
-      <p>Entry trigger = harga tutup di atas pivot VCP dengan volume minimal 1,5× rata-rata 50 hari. Aktif berarti trigger hari ini sampai 10 hari bursa lalu yang belum kena TP2 atau SL, ditambah yang sempat kena SL tapi sudah naik lagi di atasnya (oranye).</p>
+      <p>Dua jenis entry trigger: (1) VCP, harga tutup di atas pivot dengan volume minimal 1,5× rata-rata 50 hari; (2) pembalikan pemimpin RS (↺), RS Line high 50 hari saat harga terkoreksi lalu candle bullish. Aktif berarti trigger hari ini sampai 10 hari bursa lalu yang belum kena TP2 atau SL, ditambah yang sempat kena SL tapi sudah naik lagi di atasnya (oranye).</p>
       <div class="toolbar" id="e-filters"></div>
       <div class="table-wrap"><table id="e-table"><thead></thead><tbody></tbody></table></div>
       <h2 style="margin-top:18px">Watchlist Trend Template</h2>
@@ -697,22 +698,27 @@ function renderSignals(){
 /* ---------- Rencana posisi & kalkulator lot ---------- */
 const store = { get(k){ try{ return localStorage.getItem(k); }catch{ return null; } }, set(k,v){ try{ localStorage.setItem(k,v); }catch{} } };
 function planHTML(r){
-  const e = r.entry, v = e?.vcp;
+  const e = r.entry, rev = e?.setup === "reversal", v = rev ? e?.vcp_info : e?.vcp;
   if(!e || !isNum(e.entry)) return v ? `<h3>Pola VCP</h3><p class="brief">Belum ada basis yang bisa dinilai: ${esc((v.alasan||[]).join("; "))}.</p>` : "";
-  const dep = (v.kedalaman||[]).map(d => "−" + fmt(d*100,0) + "%").join(" → ");
-  const vcpLine = `${v.valid ? "<b>VCP valid</b>" : "<b>VCP belum valid</b>"}: kontraksi ${dep} dalam basis ${v.basis_hari} hari (mulai ${tgl(v.tgl_basis)}). `
+  const dep = v ? (v.kedalaman||[]).map(d => "−" + fmt(d*100,0) + "%").join(" → ") : "";
+  const vcpLine = !v || !v.pivot ? "Belum ada basis VCP yang bisa dinilai."
+    : `${v.valid ? "<b>VCP valid</b>" : "<b>VCP belum valid</b>"}: kontraksi ${dep} dalam basis ${v.basis_hari} hari (mulai ${tgl(v.tgl_basis)}). `
     + `Pivot ${fmt(v.pivot)} (${tgl(v.tgl_pivot)}). Volume 5 hari terakhir basis ${isNum(v.dryup) ? fmt(v.dryup*100,0)+"%" : "–"} dari rata-rata 50 hari${v.kering ? " (mengering ✓)" : " (belum mengering)"}.`
     + (v.alasan?.length ? `<br>Belum memenuhi: ${esc(v.alasan.join("; "))}.` : "");
+  const revLine = rev ? `<b>Pembalikan pemimpin RS</b>: pada candle trigger ${tgl(e.tgl_trigger)} RS Line mencetak high 50 hari padahal harga
+    ${pct(e.pola?.koreksi,0)} dari high 20 hari, dan candle-nya bullish (tutup di separuh atas). Entry = harga tutup candle trigger,
+    SL 1 tick di bawah low candle (${fmt(e.pola?.low_trigger)}), target 2R dan 3R.` : "";
   const risk = e.catatan_risiko?.length ? `<p class="brief" style="margin-top:8px"><b class="down">Risiko:</b> ${esc(e.catatan_risiko.join("; "))}.</p>` : "";
   return `<h3>Rencana posisi ${e.label ? "· " + esc(e.label) : "(acuan, belum trigger)"}</h3>
     <div class="plan">
-      <div class="cell"><span>Entry (di atas pivot)</span><b class="lv-e">${fmt(e.entry)}</b></div>
-      <div class="cell"><span>Beli maksimal (+5%)</span><b>${fmt(e.beli_maks)}</b></div>
+      <div class="cell"><span>${rev ? "Entry (tutup candle trigger)" : "Entry (di atas pivot)"}</span><b class="lv-e">${fmt(e.entry)}</b></div>
+      <div class="cell"><span>Beli maksimal (+${rev ? 3 : 5}%)</span><b>${fmt(e.beli_maks)}</b></div>
       <div class="cell"><span>Stop loss</span><b class="lv-sl">${fmt(e.sl)} (${pct(-e.sl_pct,1)})</b></div>
       <div class="cell"><span>TP1 · 2R</span><b class="lv-tp">${fmt(e.tp1)} (${pct(e.tp1/e.entry-1,1)})</b></div>
       <div class="cell"><span>TP2 · 3R</span><b class="lv-tp">${fmt(e.tp2)} (${pct(e.tp2/e.entry-1,1)})</b></div>
-      ${e.tgl_trigger ? `<div class="cell"><span>Trigger</span><b>${tgl(e.tgl_trigger)} · vol ${fmt(e.vol_breakout,1)}×</b></div>` : ""}
+      ${e.tgl_trigger ? `<div class="cell"><span>Trigger</span><b>${tgl(e.tgl_trigger)}${isNum(e.vol_breakout) ? ` · vol ${fmt(e.vol_breakout,1)}×` : ""}</b></div>` : ""}
     </div>${risk}
+    ${rev ? `<h3>Pola: pembalikan pemimpin RS</h3><p class="brief">${revLine}</p>` : ""}
     <h3>Pola VCP</h3><p class="brief">${vcpLine}</p>
     <h3>Ukuran posisi</h3>
     <div class="calc">
@@ -755,10 +761,14 @@ async function drawChart(box, r){
   if(!d || !window.LightweightCharts) return false;
   liveCharts.forEach(c => c.remove()); liveCharts = [];
   const css = getComputedStyle(document.documentElement), col = n => css.getPropertyValue(n).trim();
-  box.innerHTML = `<div class="c-price"></div><div class="c-rs"><span class="c-rs-label">RS Line (harga ÷ IHSG). Menanjak = mengalahkan pasar</span></div>`;
+  box.innerHTML = `<div class="c-price"></div>
+    <div class="c-rs"><span class="c-rs-label">RS Line (harga ÷ IHSG) dan MA50-nya · ○ potong ke atas MA50 · ● high 50 hari</span></div>
+    <div class="c-rsr"><span class="c-rs-label">RS Rating harian (1–99), garis putus = 70</span></div>`;
+  const noGrid = {grid:{vertLines:{visible:false}, horzLines:{visible:false}}};
   const ch = LightweightCharts.createChart(box.querySelector(".c-price"), chartOpts(col, {timeScale:{visible:false}}));
-  const rc = LightweightCharts.createChart(box.querySelector(".c-rs"), chartOpts(col, {grid:{vertLines:{visible:false}, horzLines:{visible:false}}}));
-  liveCharts = [ch, rc];
+  const rc = LightweightCharts.createChart(box.querySelector(".c-rs"), chartOpts(col, {...noGrid, timeScale:{visible:false}}));
+  const rr = LightweightCharts.createChart(box.querySelector(".c-rsr"), chartOpts(col, noGrid));
+  liveCharts = [ch, rc, rr];
   const t = d.t;
   const cs = ch.addCandlestickSeries({upColor:col("--up"), downColor:col("--down"), borderVisible:false, wickUpColor:col("--up"), wickDownColor:col("--down")});
   cs.setData(t.map((x,i) => ({time:x, open:d.o[i], high:d.h[i], low:d.l[i], close:d.c[i]})).filter(b => isNum(b.close)));
@@ -769,13 +779,30 @@ async function drawChart(box, r){
   ch.priceScale("vol").applyOptions({scaleMargins:{top:0.82, bottom:0}});
   vs.setData(t.map((x,i) => ({time:x, value:d.v[i], color: d.c[i] >= d.o[i] ? col("--up")+"66" : col("--down")+"66"})));
   const rsl = rc.addLineSeries({color:col("--accent"), lineWidth:2, priceLineVisible:false, lastValueVisible:false, priceFormat:{type:"price", precision:4, minMove:0.0001}});
-  const rsData = t.map((x,i) => ({time:x, value: d.ihsg[i] ? d.c[i]/d.ihsg[i] : null})).filter(b => isNum(b.value));
-  rsl.setData(rsData);
-  if(rsData.length){ const top = rsData.reduce((a,b) => b.value > a.value ? b : a); rsl.setMarkers([{time:top.time, position:"aboveBar", color:col("--up"), shape:"circle", text:"RS high"}]); }
-  // dua panel memakai indeks tanggal yang sama, jadi rentang logis bisa disalin langsung
+  const rsv = t.map((x,i) => d.ihsg[i] && isNum(d.c[i]) ? d.c[i]/d.ihsg[i] : null);
+  rsl.setData(t.map((x,i) => ({time:x, value:rsv[i]})).filter(b => isNum(b.value)));
+  // MA50 RS Line, potong ke atas MA50, dan high 50 hari (hanya hari pertama tiap rangkaian agar tidak penuh)
+  const ma = rsv.map((_, i) => { if(i < 49) return null; const w = rsv.slice(i-49, i+1); return w.every(isNum) ? w.reduce((a,b) => a+b, 0)/50 : null; });
+  const rsm = rc.addLineSeries({color:col("--muted"), lineWidth:1, lineStyle:2, priceLineVisible:false, lastValueVisible:false, priceFormat:{type:"price", precision:4, minMove:0.0001}});
+  rsm.setData(t.map((x,i) => ({time:x, value:ma[i]})).filter(b => isNum(b.value)));
+  const rmk = [];
+  let prevHigh = false;
+  rsv.forEach((v, i) => {
+    if(!isNum(v) || i < 49) return;
+    const hi = v >= Math.max(...rsv.slice(i-49, i+1).filter(isNum)) * 0.999;
+    if(hi && !prevHigh) rmk.push({time:t[i], position:"aboveBar", color:col("--up"), shape:"circle", size:0.6});
+    prevHigh = hi;
+    if(isNum(ma[i]) && isNum(ma[i-1]) && isNum(rsv[i-1]) && v > ma[i] && rsv[i-1] <= ma[i-1])
+      rmk.push({time:t[i], position:"belowBar", color:col("--accent"), shape:"arrowUp", size:0.6});
+  });
+  rsl.setMarkers(rmk);
+  const rrs = rr.addLineSeries({color:"#9B7BD4", lineWidth:1.5, priceLineVisible:false, lastValueVisible:true});
+  rrs.setData(t.map((x,i) => ({time:x, value:(d.rsr||[])[i]})).filter(b => isNum(b.value)));
+  rrs.createPriceLine({price:70, color:col("--muted"), lineWidth:1, lineStyle:2, axisLabelVisible:false});
+  // panel memakai indeks tanggal yang sama, jadi rentang logis bisa disalin langsung
   let syncing = false;
-  const sync = (a, b) => a.timeScale().subscribeVisibleLogicalRangeChange(rg => { if(!rg || syncing) return; syncing = true; b.timeScale().setVisibleLogicalRange(rg); syncing = false; });
-  sync(ch, rc); sync(rc, ch);
+  const sync = (a, others) => a.timeScale().subscribeVisibleLogicalRangeChange(rg => { if(!rg || syncing) return; syncing = true; others.forEach(o => o.timeScale().setVisibleLogicalRange(rg)); syncing = false; });
+  sync(ch, [rc, rr]); sync(rc, [ch, rr]); sync(rr, [ch, rc]);
   const e = r.entry;
   if(e && isNum(e.entry)){
     const pl = (price, color, title, style=0) => cs.createPriceLine({price, color, lineWidth:1, lineStyle:style, axisLabelVisible:true, title});
@@ -828,7 +855,7 @@ function wlItem(r){
   const live = liveOf(r.kode), px = live?.last ?? r.harga, ch = live?.chg ?? r.chg_1d, st = r.entry?.status;
   return `<button class="wl-item" data-sel="${esc(r.kode)}" aria-current="${S.sel === r.kode}">
     <span class="k">${esc(r.kode)}</span>
-    <span>${st && TAG[st] ? `<span class="tag st ${stClass(st)}">${TAG[st]}</span>` : ""} <span class="hint">RS ${r.rs_rating ?? "–"}</span></span>
+    <span>${st && TAG[st] ? `<span class="tag st ${stClass(st)}" title="${esc(r.entry.label)}">${TAG[st]}${r.entry.setup === "reversal" ? " ↺" : ""}</span>` : ""} <span class="hint">RS ${r.rs_rating ?? "–"}</span></span>
     <span class="px">${fmt(px)}</span>
     <span class="n">${esc(r.nama)}</span><span class="ch ${cls(ch)}">${pct(ch,2)}</span></button>`;
 }
@@ -878,7 +905,7 @@ function renderTermMain(){
       <div><div class="px">${fmt(px)}</div><div class="${cls(ch)}" style="text-align:right;font-weight:600">${pct(ch,2)}</div></div></div>
     <div class="chart-tools">${[[63,"3 bln"],[130,"6 bln"],[260,"1 thn"]].map(([n,l]) => `<button class="chip" data-rng="${n}">${l}</button>`).join("")}</div>
     <div class="chart-own" id="mini-chart"></div>
-    <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line (panel bawah)</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
+    <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line</span><span><i style="background:#9B7BD4"></i>RS Rating harian</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
     <h3>Analisa</h3>${briefing(r)}
     <h3>Trend Template (8 poin)</h3>
     <ul class="checks">${r.tt.map((v,i) => `<li><span>${esc(labels[i])}</span>${v===true?`<span class="ok">✓ lolos</span>`:v===false?`<span class="no">✗ gagal</span>`:`<span class="hint">data kurang</span>`}</li>`).join("")}</ul>
@@ -932,8 +959,8 @@ function renderAnalisa(){
     <td>${x.rs_median}<span class="bar"><i style="width:${x.rs_median}%"></i></span></td><td>${x.stage2}</td><td>${x.lolos_tt}</td>
     <td class="${cls(x.ret_3m)}">${pct(x.ret_3m,0)}</td><td style="text-align:left">${x.pemimpin.map(k => `<span class="code" data-mcode="${esc(k)}" style="cursor:pointer;margin-right:8px">${esc(k)}</span>`).join("")}</td></tr>`).join("");
 }
-const BT_ORDER = ["pivot_semua", "pivot", "close", "eod"];
-const BT_COLOR = {pivot_semua:"--up", pivot:"#2F9BD6", close:"--accent", eod:"#9B7BD4"};
+const BT_ORDER = ["pivot_semua", "pivot", "close", "eod", "rev_close", "rev_open"];
+const BT_COLOR = {pivot_semua:"--up", pivot:"#2F9BD6", close:"--accent", eod:"#9B7BD4", rev_close:"--down", rev_open:"#E08A3C"};
 let eqChart;
 async function renderBacktest(){
   S.bt ??= await getJSON("backtest");

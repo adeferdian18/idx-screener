@@ -11,6 +11,8 @@ Dua cara eksekusi diuji terpisah:
   C. "Buy-stop tanpa syarat volume": sama dengan B tapi tanpa filter volume, karena volume akhir hari belum
      diketahui saat order terisi. Selisih B dan C menunjukkan seberapa besar hasil B bergantung pada informasi
      yang baru pasti setelah pasar tutup.
+  E/F. Setup kedua "Pembalikan pemimpin RS" (lihat signals.py): beli di harga tutup candle trigger (E)
+     atau di open besok (F, dilewati jika open > entry +3% atau < SL). SL di bawah low candle trigger, maks 8%.
   D. "Beli menjelang tutup": harga tutup di atas pivot dan volume >= 1,5x sudah terlihat menjelang penutupan
      (pre-closing 15:50-16:00 WIB), beli di harga TUTUP hari itu. Dilewati jika tutup > zona beli.
   - Biaya: beli 0,15%, jual 0,25% (termasuk PPh final 0,1%), slippage 0,1% tiap sisi.
@@ -35,6 +37,7 @@ import numpy as np
 import pandas as pd
 
 import momentum as mom
+import signals
 import vcp
 
 PERIOD = "5y"
@@ -45,25 +48,6 @@ MIN_VALUE = mom.MIN_AVG_VALUE_IDR
 
 BASE = Path(__file__).parent
 WIB = dt.timezone(dt.timedelta(hours=7))
-
-
-def matrices(hist, ihsg):
-    idx = ihsg.index
-    get = lambda k: pd.DataFrame({c: h[k] for c, h in hist.items()}).reindex(idx)  # noqa: E731
-    return get("Open"), get("High"), get("Low"), get("Close"), get("Volume").fillna(0)
-
-
-def rs_rating_matrix(C):
-    roc = lambda k: C / C.shift(k) - 1  # noqa: E731
-    raw = 0.4 * roc(63) + 0.2 * roc(126) + 0.2 * roc(189) + 0.2 * roc(252)
-    return raw.rank(axis=1, pct=True) * 98 + 1
-
-
-def trend_template_matrix(H, L, C, rs):
-    m50, m150, m200 = C.rolling(50).mean(), C.rolling(150).mean(), C.rolling(200).mean()
-    hi52, lo52 = H.rolling(252, min_periods=200).max(), L.rolling(252, min_periods=200).min()
-    return ((C > m150) & (C > m200) & (m150 > m200) & (m200 > m200.shift(21)) & (m50 > m150) & (m50 > m200)
-            & (C > m50) & (C >= lo52 * 1.25) & (C >= hi52 * 0.75) & (rs >= 70))
 
 
 def market_series(ihsg):
@@ -189,12 +173,11 @@ def main():
     hist = mom.download(codes, PERIOD)
     for c, h in hist.items():
         h.index = pd.to_datetime(h.index).tz_localize(None).normalize()
-    O, H, L, C, V = matrices(hist, ihsg)
-    rs = rs_rating_matrix(C)
-    tt = trend_template_matrix(H, L, C, rs)
-    value20 = (C * V).rolling(20).mean()
-    zero20 = (V == 0).rolling(20).sum()
-    tradable = (value20 >= MIN_VALUE) & (zero20 < 5)
+    O, H, L, C, V = signals.matrices(hist, ihsg.index)
+    rs = signals.rs_rating_matrix(C)
+    tt = signals.trend_template_matrix(H, L, C, rs)
+    tradable = signals.tradable_matrix(C, V, MIN_VALUE)
+    rev = signals.reversal_matrix(O, H, L, C, V, ihsg, rs, tt, tradable)
     v50 = V.rolling(50).mean().shift(1)
     mkt = market_series(ihsg)
     dates = ihsg.index
@@ -204,6 +187,8 @@ def main():
     results = {}
     for mode in ("close", "pivot", "pivot_semua", "eod"):
         results[mode] = scan(mode, hist, dates, start, O, H, L, C, V, tt, tradable, v50, rs, mkt)
+    for mode in ("rev_close", "rev_open"):
+        results[mode] = scan_rev(mode, hist, dates, start, O, H, L, C, rev, rs, mkt)
     payload = {
         "updated": dt.datetime.now(WIB).isoformat(timespec="minutes"),
         "periode": [f"{dates[start]:%Y-%m-%d}", f"{dates[-1]:%Y-%m-%d}"],
@@ -216,7 +201,8 @@ def main():
         "strategi": {},
     }
     labels = {"close": "Beli menjelang tutup (volume sudah terkonfirmasi)", "pivot": "Buy-stop di pivot + volume 1,5x", "pivot_semua": "Buy-stop di pivot tanpa syarat volume",
-              "eod": "Beli besok pagi (setelah sinyal EOD)"}
+              "eod": "Beli besok pagi (setelah sinyal EOD)",
+              "rev_close": "Pembalikan RS: beli di tutup candle trigger", "rev_open": "Pembalikan RS: beli besok pagi"}
     for mode, (tr, skipped) in results.items():
         if tr.empty:
             continue
@@ -255,9 +241,49 @@ def kesimpulan(st, ihsg_total):
     if c and cl:
         out.append(f"Menunggu konfirmasi lalu membeli saat tutup ({f(cl['rata_r'])}) atau besok pagi ({f(c['rata_r'])}) "
                    f"menghapus hampir seluruh edge, karena keuntungan breakout terjadi di hari breakout itu sendiri.")
+    for k, nama in (("rev_close", "di tutup candle trigger"), ("rev_open", "besok pagi")):
+        x = st.get(k, {}).get("ringkasan")
+        if x:
+            lo, hi = x["rata_r"] - 2 * x["se_r"], x["rata_r"] + 2 * x["se_r"]
+            out.append(f"Setup pembalikan pemimpin RS, beli {nama}: {f(x['rata_r'])} per trade ({x['trade']} trade, "
+                       f"menang {x['menang']:.0%}, ekuitas {p(x['total'])}, penurunan terdalam {p(x['max_dd'])}); "
+                       f"rentang ~95% {f(lo)} sampai {f(hi)}"
+                       + (", belum terbukti berbeda dari nol." if lo <= 0 < hi else ", positif secara statistik." if lo > 0 else "."))
     out.append("Praktiknya: pasang alert di entry pada malam hari, eksekusi di jam bursa hanya jika laju volume "
                "hari itu terproyeksi ≥ 1,5× rata-rata; data realtime (misalnya DSI) membuat cek laju volume ini jauh lebih akurat.")
     return out
+
+
+def scan_rev(mode, hist, dates, start, O, H, L, C, rev, rs, mkt):
+    trades, skipped = [], {}
+    for c in hist:
+        o, hh, ll, cc = (M[c].to_numpy(float) for M in (O, H, L, C))
+        trg, rsc = rev[c].to_numpy(bool), rs[c].to_numpy(float)
+        d = start
+        while d < len(dates) - 1:
+            if not trg[d]:
+                d += 1
+                continue
+            lv = signals.reversal_levels(ll[d], cc[d])
+            if not lv["risiko_ok"]:
+                skipped["SL > 8%"] = skipped.get("SL > 8%", 0) + 1
+                d += 1
+                continue
+            res, why = run_trade(o, hh, ll, cc, d, lv, "close" if mode == "rev_close" else "eod")
+            if res is None:
+                skipped[why] = skipped.get(why, 0) + 1
+                d += 1
+                continue
+            trades.append({
+                "kode": c, "tgl_sinyal": f"{dates[d]:%Y-%m-%d}", "tgl_keluar": f"{dates[res['keluar_i']]:%Y-%m-%d}",
+                "pasar": mkt.iloc[d], "rs": int(rsc[d]) if np.isfinite(rsc[d]) else None, "sl_pct": lv["sl_pct"],
+                **{k2: res[k2] for k2 in ("beli", "sl", "r_pct", "alasan", "net_r", "ret", "hari")},
+            })
+            d = res["keluar_i"] + 1
+    tr = pd.DataFrame(trades)
+    if not tr.empty:
+        tr = tr.sort_values("tgl_sinyal").reset_index(drop=True)
+    return tr, skipped
 
 
 def scan(mode, hist, dates, start, O, H, L, C, V, tt, tradable, v50, rs, mkt):
@@ -319,8 +345,11 @@ def report(tr, skipped, test_dates, ihsg, label):
 
     tr["tahun"] = tr["tgl_sinyal"].str[:4]
     tr["rs_kelompok"] = np.where(tr["rs"] >= 90, "RS 90+", "RS 70-89")
-    tr["kualitas"] = np.where(tr["ketat"] & tr["kering"], "ketat + volume kering",
-                              np.where(tr["ketat"] | tr["kering"], "salah satu", "tidak keduanya"))
+    if "ketat" in tr.columns:
+        tr["kualitas"] = np.where(tr["ketat"] & tr["kering"], "ketat + volume kering",
+                                  np.where(tr["ketat"] | tr["kering"], "salah satu", "tidak keduanya"))
+    else:
+        tr["kualitas"] = "-"
     step = max(1, len(test_dates) // 260)
     return {
         "label": label,
@@ -330,7 +359,7 @@ def report(tr, skipped, test_dates, ihsg, label):
         "per_pasar": grp("pasar", ["uptrend", "tertekan", "downtrend"]),
         "per_tahun": grp("tahun"),
         "per_rs": grp("rs_kelompok", ["RS 90+", "RS 70-89"]),
-        "per_kualitas": grp("kualitas", ["ketat + volume kering", "salah satu", "tidak keduanya"]),
+        "per_kualitas": grp("kualitas", ["ketat + volume kering", "salah satu", "tidak keduanya"]) if "ketat" in tr.columns else [],
         "per_alasan_keluar": tr["alasan"].value_counts().to_dict(),
         "kurva": [{"t": f"{d:%Y-%m-%d}", "semua": round(float(eq_all.loc[d]), 4),
                    "uptrend": round(float(eq_up.loc[d]), 4) if eq_up is not None else None,

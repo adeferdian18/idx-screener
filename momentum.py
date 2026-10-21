@@ -14,6 +14,7 @@ Memindai SELURUH saham BEI (data/universe.json) dengan kerangka SEPA Mark Minerv
   - Fase 2 (vcp.py): pola VCP, pivot, entry trigger, SL/TP dan status posisi.
   - Fase 3 (analisa.py): skor setup, briefing per saham, breadth & sektor.
   - Fase 4 (hgm.py): pertumbuhan laba & penjualan kuartalan (HGM) dan katalis aksi korporasi.
+  - Setup kedua (signals.py): pembalikan pemimpin RS saat pasar koreksi.
 
 Hasil: docs/data/momentum.json (dibaca website), docs/data/chart/KODE.json (grafik kandidat)
 dan data/momentum_YYYY-MM-DD.csv.
@@ -31,6 +32,7 @@ import yfinance as yf
 
 import analisa
 import hgm
+import signals
 import vcp
 
 # ---------------------------------------------------------------- Pengaturan
@@ -246,9 +248,10 @@ def market_status(ihsg):
     }
 
 
-def write_chart(folder, code, h, ihsg):
-    """OHLCV ~1 tahun + IHSG (untuk RS Line) agar website bisa menggambar level entry/SL/TP sendiri."""
+def write_chart(folder, code, h, ihsg, rsr):
+    """OHLCV ~1 tahun + IHSG (untuk RS Line) + RS Rating harian agar website bisa menggambar level sendiri."""
     t = h.tail(CHART_BARS)
+    rsr = rsr.reindex(t.index)
     ih = ihsg.reindex(t.index, method="ffill")
     rnd = lambda s: [None if not ok(v) else round(float(v), 2) for v in s]  # noqa: E731
     data = {"t": [f"{d:%Y-%m-%d}" for d in t.index], "o": rnd(t["Open"]), "h": rnd(t["High"]), "l": rnd(t["Low"]),
@@ -256,7 +259,8 @@ def write_chart(folder, code, h, ihsg):
             # MA dihitung dari histori penuh supaya awal grafik tidak kosong
             "ma50": rnd(h["Close"].rolling(50).mean().tail(CHART_BARS)),
             "ma150": rnd(h["Close"].rolling(150).mean().tail(CHART_BARS)),
-            "ma200": rnd(h["Close"].rolling(200).mean().tail(CHART_BARS))}
+            "ma200": rnd(h["Close"].rolling(200).mean().tail(CHART_BARS)),
+            "rsr": [None if not ok(v) else int(round(float(v))) for v in rsr]}
     (folder / f"{code}.json").write_text(json.dumps(data, allow_nan=False), encoding="utf-8")
 
 
@@ -347,37 +351,62 @@ def main():
             "label": label, "flags": x["flags"],
         })
 
-    # Fase 2: VCP & entry untuk saham likuid yang lolos atau hampir lolos Trend Template
+    # Matriks lintas saham: RS Rating harian & setup pembalikan pemimpin RS
+    O, H, L, C, V = signals.matrices(frames, ihsg.index)
+    rs_m = signals.rs_rating_matrix(C)
+    tt_m = signals.trend_template_matrix(H, L, C, rs_m)
+    rev_m = signals.reversal_matrix(O, H, L, C, V, ihsg, rs_m, tt_m, signals.tradable_matrix(C, V, MIN_AVG_VALUE_IDR))
+    rev_recent = rev_m.iloc[-(vcp.TRACK + 1):].any()
+
+    # Fase 2: VCP & entry untuk saham likuid yang lolos/hampir lolos Trend Template atau punya trigger pembalikan RS.
+    # Kalau keduanya ada, trigger yang paling baru yang dipakai.
     chart_dir = SITE / "chart"
     chart_dir.mkdir(exist_ok=True)
     for f in chart_dir.glob("*.json"):
         f.unlink()
     for z in out_rows:
         z["entry"] = None
-        if z["likuid"] and z["tt_skor"] >= 6:
-            h = frames[z["kode"]]
+        code = z["kode"]
+        has_rev = bool(rev_recent.get(code, False))
+        if z["likuid"] and (z["tt_skor"] >= 6 or has_rev):
+            h = frames[code]
+            e_v = e_r = None
             try:
-                z["entry"] = vcp.analyze(h)
+                e_v = vcp.analyze(h)
+                e_r = signals.reversal_entry(h, rev_m[code]) if has_rev else None
             except Exception as e:  # noqa: BLE001
-                print(f"  ! {z['kode']}: VCP gagal ({e})")
-            write_chart(chart_dir, z["kode"], h, ihsg)
+                print(f"  ! {code}: analisa setup gagal ({e})")
+            if e_v:
+                e_v.setdefault("setup", "vcp")
+            if e_r and not (e_v and e_v.get("tgl_trigger") and e_v["tgl_trigger"] >= e_r["tgl_trigger"]):
+                e_r["vcp_info"] = (e_v or {}).get("vcp")
+                z["entry"] = e_r
+            else:
+                z["entry"] = e_v
+            write_chart(chart_dir, code, h, ihsg, rs_m[code])
 
     market = market_status(ihsg)
     market["koreksi_3b"] = {"puncak": f"{peak:%Y-%m-%d}", "dasar": f"{trough:%Y-%m-%d}", "turun": round(ihsg_drop, 4)}
 
     # Fase 4: fundamental HGM & katalis hanya untuk kandidat (permintaan ke Yahoo dibatasi)
-    cand = [z["kode"] for z in out_rows if z["likuid"] and z["tt_skor"] >= 6]
+    cand = [z["kode"] for z in out_rows if z["likuid"] and (z["tt_skor"] >= 6 or z["entry"])]
     print(f"  HGM & katalis untuk {len(cand)} kandidat...")
     hg, kat = hgm.hgm_for(cand), hgm.katalis_for(cand)
     for z in out_rows:
         z["hgm"] = hg.get(z["kode"])
         z["katalis"] = kat.get(z["kode"], [])
 
-    # Fase 3: skor setup & briefing untuk saham yang relevan (menjaga ukuran JSON tetap kecil)
+    # Fase 3: skor setup & briefing untuk saham yang relevan (menjaga ukuran JSON tetap kecil).
+    # Hasil backtest mingguan ikut dikutip di briefing sebagai bukti per kondisi pasar.
+    try:
+        bt_raw = json.loads((SITE / "backtest.json").read_text(encoding="utf-8"))["strategi"]
+        bt = {m: {g["kelompok"]: (g["trade"], g["rata_r"]) for g in v["per_pasar"]} for m, v in bt_raw.items()}
+    except (OSError, ValueError, KeyError):
+        bt = {}
     for z in out_rows:
         relevant = z["likuid"] and (z["tt_skor"] >= 5 or z["entry"])
         z["skor_setup"] = analisa.skor_setup(z, market["status"]) if relevant else None
-        z["briefing"] = analisa.briefing(z, market, TT_LABELS) if relevant else None
+        z["briefing"] = analisa.briefing(z, market, TT_LABELS, bt) if relevant else None
     an = analisa.pasar(market, out_rows, frames, ihsg)
     an["pemimpin"] = [z["kode"] for z in sorted((z for z in out_rows if z["lolos_tt"] and z["likuid"]),
                                                 key=lambda z: -z["skor_setup"])[:10]]
@@ -411,7 +440,7 @@ def main():
         e = z["entry"]
         if e["status"] in ("entry_hari_ini", "entry_baru", "setup", "kena_sl", "sl_naik_lagi", "kena_tp1"):
             print(f"  {z['kode']:5} {e['label']:<34} trig {e.get('tgl_trigger', '-'):10} entry {e['entry']:>7,} "
-                  f"SL {e['sl']:>7,} ({e['sl_pct']:.1%}) TP1 {e['tp1']:>7,} · kontraksi {e['vcp']['kedalaman']}")
+                  f"SL {e['sl']:>7,} ({e['sl_pct']:.1%}) TP1 {e['tp1']:>7,} · {e.get('setup')} {(e.get('vcp') or {}).get('kedalaman', '')}")
     print("Analisa:", an["teks"])
     print("Sektor:", [(x["sektor"], x["rs_median"], x["lolos_tt"]) for x in an["sektor"][:5]])
     print("Pemimpin (skor setup):", an["pemimpin"])
