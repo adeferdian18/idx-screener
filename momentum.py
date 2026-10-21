@@ -12,6 +12,7 @@ Memindai SELURUH saham BEI (data/universe.json) dengan kerangka SEPA Mark Minerv
   - Arah pasar (IHSG)             -> momentum hanya dieksekusi saat pasar mendukung.
 
   - Fase 2 (vcp.py): pola VCP, pivot, entry trigger, SL/TP dan status posisi.
+  - Fase 3 (analisa.py): skor setup, briefing per saham, breadth & sektor.
 
 Hasil: docs/data/momentum.json (dibaca website), docs/data/chart/KODE.json (grafik kandidat)
 dan data/momentum_YYYY-MM-DD.csv.
@@ -27,6 +28,7 @@ from pathlib import Path
 import pandas as pd
 import yfinance as yf
 
+import analisa
 import vcp
 
 # ---------------------------------------------------------------- Pengaturan
@@ -358,23 +360,34 @@ def main():
                 print(f"  ! {z['kode']}: VCP gagal ({e})")
             write_chart(chart_dir, z["kode"], h, ihsg)
 
-    out_rows.sort(key=lambda z: (not z["lolos_tt"] or not z["likuid"], -(z["rs_rating"] or 0)))
     market = market_status(ihsg)
     market["koreksi_3b"] = {"puncak": f"{peak:%Y-%m-%d}", "dasar": f"{trough:%Y-%m-%d}", "turun": round(ihsg_drop, 4)}
 
+    # Fase 3: skor setup & briefing untuk saham yang relevan (menjaga ukuran JSON tetap kecil)
+    for z in out_rows:
+        relevant = z["likuid"] and (z["tt_skor"] >= 5 or z["entry"])
+        z["skor_setup"] = analisa.skor_setup(z, market["status"]) if relevant else None
+        z["briefing"] = analisa.briefing(z, market, TT_LABELS) if relevant else None
+    an = analisa.pasar(market, out_rows, frames, ihsg)
+    an["pemimpin"] = [z["kode"] for z in sorted((z for z in out_rows if z["lolos_tt"] and z["likuid"]),
+                                                key=lambda z: -z["skor_setup"])[:10]]
+
+    out_rows.sort(key=lambda z: (not z["lolos_tt"] or not z["likuid"], -(z["rs_rating"] or 0)))
     payload = {
-        "schema": 2,
+        "schema": 3,
         "updated": dt.datetime.now(WIB).isoformat(timespec="minutes"),
         "tgl_data": f"{ihsg.index[-1]:%Y-%m-%d}",
         "universe": len(codes), "dipindai": len(out_rows),
         "tt_labels": TT_LABELS,
         "pasar": {k: (r(v) if isinstance(v, float) else v) for k, v in market.items()},
+        "analisa": an,
         "rows": out_rows,
     }
     (SITE / "momentum.json").write_text(json.dumps(payload, ensure_ascii=False, allow_nan=False), encoding="utf-8")
     flat = pd.DataFrame(out_rows)
     for k in ("status", "tgl_trigger", "entry", "sl", "tp1", "tp2"):
         flat[f"e_{k}"] = flat["entry"].map(lambda e, k=k: (e or {}).get(k))
+    flat["briefing"] = flat["briefing"].map(lambda b: b["vonis"] if b else None)
     flat = flat.drop(columns="entry")
     for i, lab in enumerate(TT_LABELS):
         flat[f"tt{i + 1}"] = flat["tt"].map(lambda v, i=i: v[i])
@@ -389,6 +402,9 @@ def main():
         if e["status"] in ("entry_hari_ini", "entry_baru", "setup", "kena_sl", "sl_naik_lagi", "kena_tp1"):
             print(f"  {z['kode']:5} {e['label']:<34} trig {e.get('tgl_trigger', '-'):10} entry {e['entry']:>7,} "
                   f"SL {e['sl']:>7,} ({e['sl_pct']:.1%}) TP1 {e['tp1']:>7,} · kontraksi {e['vcp']['kedalaman']}")
+    print("Analisa:", an["teks"])
+    print("Sektor:", [(x["sektor"], x["rs_median"], x["lolos_tt"]) for x in an["sektor"][:5]])
+    print("Pemimpin (skor setup):", an["pemimpin"])
     n2 = sum(1 for z in out_rows if z["lolos_tt"] and z["likuid"])
     n90 = sum(1 for z in out_rows if z["label"] == "Stage 2 · RS 90+")
     print(f"Tersimpan: docs/data/momentum.json ({len(out_rows)} saham)")

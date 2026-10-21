@@ -156,6 +156,31 @@ dialog::backdrop{background:rgba(8,15,28,.55)}
 .chart-own{height:340px;border-radius:10px;overflow:hidden;margin-bottom:6px;background:var(--surface)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:14px}
 .legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:4px}
+.chart-tools{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.chart-tools .chip{font-size:13px;padding:3px 10px}
+.chart-own{display:flex;flex-direction:column;gap:2px}
+.chart-own .c-price{flex:72}
+.chart-own .c-rs{flex:28;position:relative;border-top:1px solid var(--line)}
+.c-rs-label{position:absolute;left:8px;top:4px;font-size:11px;color:var(--muted);z-index:3;pointer-events:none}
+dialog.wide{width:98vw;max-height:96vh}
+dialog.wide .dlg-body{max-height:calc(96vh - 90px)}
+dialog.wide .chart-own{height:68vh}
+.star{background:none;border:0;padding:0 6px 0 0;cursor:pointer;color:var(--line);font-size:16px;line-height:1}
+.star[aria-pressed="true"]{color:var(--accent)}
+.lvl{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;margin-right:6px;vertical-align:1px}
+.lvl-valid,.lvl-siap{background:var(--good-soft);color:var(--up)} .lvl-pantau,.lvl-selesai{background:var(--accent-soft);color:var(--accent)} .lvl-tidak{background:var(--warn-soft);color:var(--down)}
+.brief ul{margin:6px 0 0;padding-left:20px}
+.an-top{display:grid;grid-template-columns:1fr 220px;gap:18px;align-items:start}
+.expo{background:var(--bg);border-radius:10px;padding:14px;text-align:center}
+.expo b{display:block;font-size:34px;font-weight:800;letter-spacing:-.02em}
+.expo span{font-size:13px;color:var(--muted)}
+.breadth-box{height:260px;margin-top:10px}
+.leaders{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.leader{background:var(--bg);border-radius:10px;padding:12px 14px;cursor:pointer;border:0;text-align:left}
+.leader:hover{outline:1px solid var(--line)}
+.leader h4{margin:0;font-size:18px;display:flex;justify-content:space-between}
+.leader p{margin:4px 0 0;font-size:13px}
+@media (max-width:820px){ .an-top{grid-template-columns:1fr} }
 .brief{background:var(--bg);border-radius:8px;padding:12px 14px;font-size:15px;margin:0}
 
 .empty{background:var(--surface);border-radius:10px;padding:28px;max-width:640px}
@@ -198,6 +223,7 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
 <main class="wrap">
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" aria-selected="true" data-tab="momentum">Momentum</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="analisa">Analisa pasar</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="aksi">Aksi korporasi</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="screener">Screener fundamental</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="grafik">Grafik</button>
@@ -217,11 +243,31 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
       <button class="chip" data-mf="lolos" aria-pressed="true">Lolos Trend Template</button>
       <button class="chip" data-mf="hampir" aria-pressed="false">Hampir (6–7 dari 8)</button>
       <button class="chip" data-mf="semua" aria-pressed="false">Semua saham</button>
+      <button class="chip" data-mf="saya" aria-pressed="false">★ Watchlist saya</button>
       <button class="chip" id="m-rs90" aria-pressed="false">RS 90+ saja</button>
       <span class="hint" id="m-count"></span>
     </div>
     <div class="table-wrap"><table id="m-table"><thead></thead><tbody></tbody></table></div>
     <p class="hint">RS Rating = persentil 1–99 kinerja 12 bulan berbobot (kuartal terakhir dibobot ganda) dibanding seluruh saham BEI. Ini Relative Strength, bukan RSI. RS Line = harga saham dibagi IHSG.</p>
+  </section>
+
+  <section class="panel" id="panel-analisa" hidden>
+    <div class="card">
+      <h2>Briefing pasar</h2>
+      <div class="an-top"><p class="brief" id="an-text" style="margin:0"></p><div class="expo"><span>Panduan eksposur modal di saham</span><b id="an-expo">–</b><span id="an-status"></span></div></div>
+      <div class="breadth-box" id="breadth-box"></div>
+      <div class="legend"><span><i style="background:var(--up)"></i>% saham likuid di atas MA200</span><span><i style="background:#2F9BD6"></i>% di atas MA50</span><span><i style="background:var(--muted)"></i>IHSG (skala kanan)</span></div>
+    </div>
+    <div class="card">
+      <h2>Pemimpin pasar</h2>
+      <p>Saham lolos Trend Template dengan skor setup tertinggi (RS, tren, RS Line, ketahanan, kualitas VCP, arah pasar). Klik untuk grafik dan rencana.</p>
+      <div class="leaders" id="an-leaders"></div>
+    </div>
+    <div class="card">
+      <h2>Kekuatan sektor</h2>
+      <p>Urut dari median RS Rating saham likuid di sektor itu. Saham pemenang biasanya datang berkelompok dari sektor yang memimpin.</p>
+      <div class="table-wrap"><table id="an-sektor"><thead></thead><tbody></tbody></table></div>
+    </div>
   </section>
 
   <section class="panel" id="panel-aksi" hidden>
@@ -454,9 +500,15 @@ function rsLine(r){
   if(r.rs_line_naik_1b == null) return "–";
   return r.rs_line_naik_1b ? `<span class="up" title="RS Line naik 1 bulan">▲</span>` : `<span class="down" title="RS Line turun 1 bulan">▼</span>`;
 }
+const WL = {
+  get(){ try{ return new Set(JSON.parse(localStorage.getItem("wl") || "[]")); }catch{ return new Set(); } },
+  toggle(c){ const w = WL.get(); w.has(c) ? w.delete(c) : w.add(c); try{ localStorage.setItem("wl", JSON.stringify([...w])); }catch{} },
+};
+const star = c => `<button class="star" data-star="${esc(c)}" aria-pressed="${WL.get().has(c)}" aria-label="Simpan ${esc(c)} ke watchlist saya">★</button>`;
 const dots = tt => `<span class="dots">${tt.map(v => `<i class="${v===true?"y":v===false?"n":""}"></i>`).join("")}</span>`;
 const MCOLS = [
-  ["kode","Saham",r=>`${esc(r.kode)}${r.rs_rating>=90 && r.lolos_tt?`<span class="badge good">RS 90+</span>`:""}`],
+  ["kode","Saham",r=>`${star(r.kode)}${esc(r.kode)}${r.rs_rating>=90 && r.lolos_tt?`<span class="badge good">RS 90+</span>`:""}`],
+  ["skor_setup","Skor",r=>isNum(r.skor_setup) ? `${r.skor_setup}<span class="bar"><i style="width:${r.skor_setup}%"></i></span>` : "–"],
   ["rs_rating","RS",r=>`<span class="rs ${r.rs_rating>=90?"hi":""}">${r.rs_rating ?? "–"}</span>`],
   ["rs_line_high","RS Line",rsLine],
   ["harga","Harga",r=>fmt(liveOf(r.kode)?.last ?? r.harga)],
@@ -477,6 +529,7 @@ function mRows(){
   if(q) rows = rows.filter(r => r.kode.includes(q) || (r.nama||"").toUpperCase().includes(q));
   else if(S.mFilter === "lolos") rows = rows.filter(r => r.lolos_tt && r.likuid);
   else if(S.mFilter === "hampir") rows = rows.filter(r => r.label === "Hampir");
+  else if(S.mFilter === "saya"){ const w = WL.get(); rows = rows.filter(r => w.has(r.kode)); }
   if($("#m-rs90").getAttribute("aria-pressed")==="true") rows = rows.filter(r => r.rs_rating >= 90);
   const {key, dir} = S.msort;
   rows.sort((a,b) => {
@@ -495,7 +548,7 @@ function renderMomentum(){
   const rows = mRows();
   $("#m-count").textContent = `${rows.length} saham`;
   t.tBodies[0].innerHTML = rows.length ? rows.map(r => `<tr data-mcode="${esc(r.kode)}">` + MCOLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("")
-    : `<tr><td colspan="${MCOLS.length}" style="text-align:left">Tidak ada saham yang memenuhi filter ini hari ini.</td></tr>`;
+    : `<tr><td colspan="${MCOLS.length}" style="text-align:left">${S.mFilter === "saya" ? "Belum ada saham di watchlist kamu. Klik ★ di samping kode saham untuk menyimpannya (tersimpan di perangkat ini)." : "Tidak ada saham yang memenuhi filter ini hari ini."}</td></tr>`;
 }
 /* ---------- Sinyal entry ---------- */
 const E_GROUPS = [
@@ -582,14 +635,21 @@ function loadLWC(){
     s.onload = ok; s.onerror = fail; document.head.append(s); });
   return lwcLoad;
 }
+let liveCharts = [];
+function chartOpts(col, extra={}){
+  return {autoSize:true, layout:{background:{color:"transparent"}, textColor:col("--muted"), fontFamily:col("--font")},
+    grid:{vertLines:{visible:false}, horzLines:{color:col("--line")}}, rightPriceScale:{borderVisible:false, minimumWidth:70},
+    timeScale:{borderVisible:false}, crosshair:{mode:0}, ...extra};
+}
 async function drawChart(box, r){
   const [d] = await Promise.all([getJSON("chart/" + r.kode), loadLWC().catch(() => null)]);
   if(!d || !window.LightweightCharts) return false;
+  liveCharts.forEach(c => c.remove()); liveCharts = [];
   const css = getComputedStyle(document.documentElement), col = n => css.getPropertyValue(n).trim();
-  box.innerHTML = "";
-  const ch = LightweightCharts.createChart(box, {autoSize:true, layout:{background:{color:"transparent"}, textColor:col("--muted"), fontFamily:col("--font")},
-    grid:{vertLines:{visible:false}, horzLines:{color:col("--line")}}, rightPriceScale:{borderVisible:false}, timeScale:{borderVisible:false},
-    crosshair:{mode:0}});
+  box.innerHTML = `<div class="c-price"></div><div class="c-rs"><span class="c-rs-label">RS Line (harga ÷ IHSG). Menanjak = mengalahkan pasar</span></div>`;
+  const ch = LightweightCharts.createChart(box.querySelector(".c-price"), chartOpts(col, {timeScale:{visible:false}}));
+  const rc = LightweightCharts.createChart(box.querySelector(".c-rs"), chartOpts(col, {grid:{vertLines:{visible:false}, horzLines:{visible:false}}}));
+  liveCharts = [ch, rc];
   const t = d.t;
   const cs = ch.addCandlestickSeries({upColor:col("--up"), downColor:col("--down"), borderVisible:false, wickUpColor:col("--up"), wickDownColor:col("--down")});
   cs.setData(t.map((x,i) => ({time:x, open:d.o[i], high:d.h[i], low:d.l[i], close:d.c[i]})).filter(b => isNum(b.close)));
@@ -599,9 +659,14 @@ async function drawChart(box, r){
   const vs = ch.addHistogramSeries({priceScaleId:"vol", priceFormat:{type:"volume"}, priceLineVisible:false, lastValueVisible:false});
   ch.priceScale("vol").applyOptions({scaleMargins:{top:0.82, bottom:0}});
   vs.setData(t.map((x,i) => ({time:x, value:d.v[i], color: d.c[i] >= d.o[i] ? col("--up")+"66" : col("--down")+"66"})));
-  const rsl = ch.addLineSeries({priceScaleId:"rs", color:col("--accent"), lineWidth:1, lineStyle:2, priceLineVisible:false, lastValueVisible:false});
-  ch.priceScale("rs").applyOptions({scaleMargins:{top:0.05, bottom:0.55}, visible:false});
-  rsl.setData(t.map((x,i) => ({time:x, value: d.ihsg[i] ? d.c[i]/d.ihsg[i] : null})).filter(b => isNum(b.value)));
+  const rsl = rc.addLineSeries({color:col("--accent"), lineWidth:2, priceLineVisible:false, lastValueVisible:false, priceFormat:{type:"price", precision:4, minMove:0.0001}});
+  const rsData = t.map((x,i) => ({time:x, value: d.ihsg[i] ? d.c[i]/d.ihsg[i] : null})).filter(b => isNum(b.value));
+  rsl.setData(rsData);
+  if(rsData.length){ const top = rsData.reduce((a,b) => b.value > a.value ? b : a); rsl.setMarkers([{time:top.time, position:"aboveBar", color:col("--up"), shape:"circle", text:"RS high"}]); }
+  // dua panel memakai indeks tanggal yang sama, jadi rentang logis bisa disalin langsung
+  let syncing = false;
+  const sync = (a, b) => a.timeScale().subscribeVisibleLogicalRangeChange(rg => { if(!rg || syncing) return; syncing = true; b.timeScale().setVisibleLogicalRange(rg); syncing = false; });
+  sync(ch, rc); sync(rc, ch);
   const e = r.entry;
   if(e && isNum(e.entry)){
     const pl = (price, color, title, style=0) => cs.createPriceLine({price, color, lineWidth:1, lineStyle:style, axisLabelVisible:true, title});
@@ -615,47 +680,24 @@ async function drawChart(box, r){
     mk.sort((a,b) => a.time.localeCompare(b.time));
     cs.setMarkers(mk.filter(m => t.includes(m.time)));
   }
-  ch.timeScale().setVisibleLogicalRange({from: t.length - 130, to: t.length + 3});
+  S.chartRange = n => ch.timeScale().setVisibleLogicalRange({from: Math.max(0, t.length - n), to: t.length + 3});
+  S.chartRange(130);
   return true;
 }
 
+const LVL = {valid:"Valid", siap:"Siap", pantau:"Pantau", selesai:"Selesai", tidak:"Tidak valid"};
 function briefing(r){
-  const m = S.momentum.pasar, labels = S.momentum.tt_labels;
-  const fail = r.tt.map((v,i) => v===false ? labels[i] : null).filter(Boolean);
-  const pros = [], cons = [];
-  if(r.rs_rating >= 90) pros.push(`RS Rating ${r.rs_rating}: kinerjanya mengalahkan sekitar ${r.rs_rating}% saham BEI`);
-  else if(r.rs_rating >= 70) pros.push(`RS Rating ${r.rs_rating}, lolos syarat minimum tapi belum di zona 90+`);
-  if(r.rs_line_mendahului) pros.push("RS Line sudah cetak rekor 52 minggu sebelum harganya (jejak akumulasi)");
-  else if(r.rs_line_high) pros.push("RS Line di puncak 52 minggu");
-  if(isNum(r.ketahanan) && r.ketahanan > 0) pros.push(`${pct(r.ketahanan,0)} lebih kuat dari IHSG saat koreksi terakhir`);
-  if(isNum(r.ketahanan) && r.ketahanan < 0) cons.push(`lebih lemah dari IHSG saat koreksi terakhir (${pct(r.ketahanan,0)})`);
-  if(fail.length) cons.push("gagal Trend Template: " + fail.join("; ").toLowerCase());
-  if(m.status !== "uptrend") cons.push(`arah pasar ${m.status}, breakout lebih sering gagal`);
-  r.flags.forEach(f => cons.push(f.toLowerCase()));
-  const e = r.entry, v = e?.vcp;
-  if(v?.valid) pros.push(`VCP valid (${(v.kedalaman||[]).map(d => fmt(d*100,0)+"%").join(" → ")})` + (v.kering ? ", volume mengering" : ""));
-  else if(v?.alasan?.length) cons.push("pola VCP belum terbentuk: " + v.alasan.join("; "));
-  if(e && e.risiko_ok === false) cons.push("stop loss struktur lebih lebar dari 8%");
-  if(e?.extended) cons.push("harga sudah lebih dari 5% di atas entry, jangan dikejar");
-  const ok8 = r.lolos_tt && r.likuid;
-  let verdict;
-  const hit = e?.hit || {};
-  if(e?.status === "kena_sl") verdict = `Trigger ${tgl(e.tgl_trigger)} sudah kena SL pada ${tgl(hit.sl)}. Disiplin: posisi ditutup, tunggu basis baru.`;
-  else if(e?.status === "sl_naik_lagi") verdict = `Sempat kena SL (${tgl(hit.sl)}) dan kini naik lagi di atas SL. Jangan masuk lagi tanpa pivot baru; kembali ke watchlist.`;
-  else if(e?.status === "time_stop") verdict = `Time stop: ${e.hari_sejak} hari bursa sejak trigger belum naik 1R. Modal lebih baik dipindah ke setup lain.`;
-  else if(e?.status === "kena_tp1") verdict = `TP1 tercapai ${tgl(hit.tp1)}. Stop sudah dinaikkan ke impas (${fmt(e.entry)}); sisa posisi menuju TP2 ${fmt(e.tp2)}.`;
-  else if(e?.status === "kena_tp2") verdict = `Trade selesai di TP2 (${tgl(hit.tp2)}), +3R. Tunggu basis baru sebelum masuk lagi.`;
-  else if(e?.status === "tp1_impas") verdict = `TP1 tercapai ${tgl(hit.tp1)}, sisa posisi keluar impas ${tgl(hit.impas)}. Trade selesai dengan untung.`;
-  else if(e?.status === "extended") verdict = `Sudah lewat zona beli (maks ${fmt(e.beli_maks)}). Jangan kejar; tunggu pullback atau basis baru.`;
-  else if(e?.status === "volume_kurang") verdict = "Harga tembus pivot tanpa volume konfirmasi (< 1,5× rata-rata). Belum valid; tunggu candle dengan volume.";
-  else if(!ok8) verdict = "Belum valid untuk strategi momentum.";
-  else if(["entry_hari_ini","entry_baru"].includes(e?.status) && !e.extended && e.risiko_ok)
-    verdict = m.status === "uptrend" ? "Entry trigger VALID: Stage 2, VCP, breakout pivot dengan volume, risiko dalam batas."
-      : "Entry trigger terjadi, tapi pasar sedang " + m.status + ". Jika eksekusi, kecilkan ukuran posisi.";
-  else if(e?.status === "setup") verdict = "Setup siap: pasang alert harga di entry " + fmt(e.entry) + " dan tunggu volume konfirmasi.";
-  else if(e?.status === "vcp") verdict = "VCP terbentuk tapi harga masih jauh dari pivot. Pantau.";
-  else verdict = "Kandidat watchlist Stage 2. Tunggu pola VCP dan breakout pivot, jangan beli hanya karena lolos filter.";
-  return `<p class="brief"><b>${verdict}</b>${pros.length?`<br>Kenapa kuat: ${esc(pros.join("; "))}.`:""}${cons.length?`<br>Kenapa hati-hati: ${esc(cons.join("; "))}.`:""}</p>`;
+  const b = r.briefing;
+  if(!b){
+    const fail = r.tt.map((v,i) => v===false ? S.momentum.tt_labels[i] : null).filter(Boolean);
+    return `<p class="brief"><span class="lvl lvl-tidak">Tidak valid</span><b>Belum valid untuk strategi momentum.</b>${fail.length ? `<br>Gagal Trend Template: ${esc(fail.join("; ").toLowerCase())}.` : ""}${r.flags.length ? `<br>Catatan: ${esc(r.flags.join(", ").toLowerCase())}.` : ""}</p>`;
+  }
+  const li = xs => `<ul>${xs.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  return `<p class="brief"><span class="lvl lvl-${b.tingkat}">${LVL[b.tingkat]}</span><b>${esc(b.vonis)}</b><br><b>Langkah:</b> ${esc(b.langkah)}</p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:8px">
+      ${b.kuat.length ? `<div class="cell"><span>Kenapa kuat</span>${li(b.kuat)}</div>` : ""}
+      ${b.hati.length ? `<div class="cell"><span>Kenapa hati-hati</span>${li(b.hati)}</div>` : ""}
+    </div>`;
 }
 function openMomentum(code){
   const r = (S.momentum?.rows || []).find(x => x.kode === code);
@@ -671,8 +713,10 @@ function openMomentum(code){
     ["1 bln", pct(r.ret_1m,0)], ["3 bln", pct(r.ret_3m,0)], ["6 bln", pct(r.ret_6m,0)], ["12 bln", pct(r.ret_12m,0)],
     ["Ketahanan koreksi", pct(r.ketahanan,0)], ["Nilai transaksi/hari", isNum(r.nilai_rata2)?"Rp"+fmt(r.nilai_rata2/1e9,1)+" M":"–"],
   ];
-  $("#dlg-body").innerHTML = `<div class="chart-own" id="mini-chart"></div>
-    <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line (garis putus)</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
+  $("#dlg-body").innerHTML = `<div class="chart-tools">${[[63,"3 bln"],[130,"6 bln"],[260,"1 thn"]].map(([n,l]) => `<button class="chip" data-rng="${n}">${l}</button>`).join("")}
+      <button class="chip" id="wide-btn" aria-pressed="${$("#dlg").classList.contains("wide")}">Perlebar grafik</button>${star(code)}</div>
+    <div class="chart-own" id="mini-chart"></div>
+    <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line (panel bawah)</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
     <h3>Briefing</h3>${briefing(r)}
     ${planHTML(r)}
     <h3>Trend Template (8 poin)</h3>
@@ -687,6 +731,42 @@ function openMomentum(code){
   }
   drawChart($("#mini-chart"), r).then(okDraw => { if(!okDraw) tvWidget($("#mini-chart"), "advanced-chart", {autosize:true, symbol:`IDX:${code}`, interval:"D",
     timezone:"Asia/Jakarta", theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, allow_symbol_change:false}); });
+}
+
+/* ---------- Analisa pasar ---------- */
+function renderAnalisa(){
+  const a = S.momentum?.analisa, m = S.momentum?.pasar;
+  if(!a){ $("#an-text").textContent = "Data analisa belum ada. Jalankan workflow harian."; return; }
+  $("#an-text").textContent = a.teks;
+  $("#an-expo").textContent = a.eksposur;
+  $("#an-status").textContent = {uptrend:"Pasar uptrend", tertekan:"Pasar tertekan", downtrend:"Pasar downtrend"}[m.status];
+  const rows = Object.fromEntries((S.momentum.rows || []).map(r => [r.kode, r]));
+  $("#an-leaders").innerHTML = a.pemimpin.length ? a.pemimpin.map(k => { const r = rows[k], b = r.briefing || {};
+    return `<button class="leader" data-mcode="${esc(k)}"><h4><span>${esc(k)}</span><span>${r.skor_setup}</span></h4>
+      <p class="hint">${esc(r.nama)} · RS ${r.rs_rating} · ${esc(r.entry?.label || "belum VCP")}</p>
+      <p><span class="lvl lvl-${b.tingkat}">${LVL[b.tingkat] || ""}</span>${esc(b.vonis || "")}</p></button>`; }).join("")
+    : `<p class="hint">Belum ada saham yang lolos Trend Template hari ini.</p>`;
+  const t = $("#an-sektor");
+  t.tHead.innerHTML = "<tr><th>Sektor</th><th>Saham likuid</th><th>Median RS</th><th>Stage 2</th><th>Lolos TT</th><th>Rata-rata 3 bln</th><th>RS tertinggi</th></tr>";
+  t.tBodies[0].innerHTML = a.sektor.map(x => `<tr><td>${esc(x.sektor)}</td><td>${x.n}</td>
+    <td>${x.rs_median}<span class="bar"><i style="width:${x.rs_median}%"></i></span></td><td>${x.stage2}</td><td>${x.lolos_tt}</td>
+    <td class="${cls(x.ret_3m)}">${pct(x.ret_3m,0)}</td><td style="text-align:left">${x.pemimpin.map(k => `<span class="code" data-mcode="${esc(k)}" style="cursor:pointer;margin-right:8px">${esc(k)}</span>`).join("")}</td></tr>`).join("");
+}
+let breadthChart;
+async function drawBreadth(){
+  const a = S.momentum?.analisa;
+  if(!a || !(await loadLWC().catch(() => null))) return;
+  const css = getComputedStyle(document.documentElement), col = n => css.getPropertyValue(n).trim();
+  breadthChart?.remove();
+  const box = $("#breadth-box"); box.innerHTML = "";
+  breadthChart = LightweightCharts.createChart(box, chartOpts(col, {leftPriceScale:{visible:true, borderVisible:false}}));
+  const pctFmt = {type:"custom", formatter: v => Math.round(v*100) + "%"};
+  const mk = (k, color) => { const s = breadthChart.addLineSeries({priceScaleId:"left", color, lineWidth:2, priceFormat:pctFmt, priceLineVisible:false});
+    s.setData(a.breadth.filter(b => isNum(b[k])).map(b => ({time:b.t, value:b[k]}))); };
+  mk("di_atas_ma200", col("--up")); mk("di_atas_ma50", "#2F9BD6");
+  const ih = breadthChart.addLineSeries({priceScaleId:"right", color:col("--muted"), lineWidth:1, priceLineVisible:false});
+  ih.setData(a.breadth.map(b => ({time:b.t, value:b.ihsg})));
+  breadthChart.timeScale().fitContent();
 }
 
 /* ---------- Detail saham ---------- */
@@ -723,8 +803,16 @@ document.addEventListener("click", e => {
     document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t===tab));
     document.querySelectorAll(".panel").forEach(p => p.hidden = p.id !== "panel-"+tab.dataset.tab);
     if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
+    if(tab.dataset.tab === "analisa") drawBreadth();
     return;
   }
+  const st = e.target.closest("[data-star]");
+  if(st){ WL.toggle(st.dataset.star); const on = WL.get().has(st.dataset.star);
+    document.querySelectorAll(`[data-star="${st.dataset.star}"]`).forEach(b => b.setAttribute("aria-pressed", on));
+    if(S.mFilter === "saya") renderMomentum(); return; }
+  const rg = e.target.closest("[data-rng]");
+  if(rg){ S.chartRange?.(Number(rg.dataset.rng)); return; }
+  if(e.target.closest("#wide-btn")){ const d = $("#dlg"); d.classList.toggle("wide"); $("#wide-btn").setAttribute("aria-pressed", d.classList.contains("wide")); return; }
   const chip = e.target.closest("#ev-filters .chip");
   if(chip){ S.evFilter = chip.dataset.f; renderEvFilters(); renderEvents(); return; }
   const ef = e.target.closest("[data-ef]");
@@ -751,11 +839,15 @@ $("#q").addEventListener("input", renderScreener);
 $("#chart-go").addEventListener("click", () => renderChart($("#chart-sym").value.trim().toUpperCase().replace(".JK","")));
 $("#chart-sym").addEventListener("keydown", e => { if(e.key==="Enter") $("#chart-go").click(); });
 $("#dlg-close").addEventListener("click", () => $("#dlg").close());
+$("#dlg").addEventListener("close", () => { liveCharts.forEach(c => c.remove()); liveCharts = []; });
 
 async function loadAll(first){
-  const [q, s, a, m] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), getJSON("momentum")]);
-  S.quotes = q; S.screener = s; S.actions = a; S.momentum = m;
-  renderHero(); renderMomentum(); renderEvFilters(); renderEvents(); renderScreener();
+  const needM = !S.momentum || Date.now() - (S.mAt || 0) > 10 * 60_000;
+  const [q, s, a, m] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null]);
+  S.quotes = q; S.screener = s; S.actions = a;
+  if(m){ S.momentum = m; S.mAt = Date.now(); }
+  renderHero(); renderMomentum(); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener();
+  if(m && !$("#panel-analisa").hidden) drawBreadth();
   renderTape();
 }
 loadAll(true);
