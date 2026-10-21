@@ -3,7 +3,7 @@ name: Aksi korporasi (pagi & siang)
 on:
   schedule:
     - cron: "0 1 * * 1-5"         # 08:00 WIB, sebelum bursa buka
-    - cron: "*/30 2-9 * * 1-5"    # tiap 30 menit 09:00-16:30 WIB, agar berita baru cepat tertangkap
+    - cron: "*/10 2-9 * * 1-5"    # mode cepat tiap 10 menit 09:00-16:50 WIB (GitHub bisa telat beberapa menit)
     - cron: "0 12 * * 0-4"        # 19:00 WIB, pengumuman yang terbit setelah bursa tutup
   workflow_dispatch:
     inputs:
@@ -30,7 +30,13 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python corpact.py
+      - name: Aksi korporasi (cepat tiap 10 menit, lengkap pagi & malam)
+        run: |
+          if [ "${{ github.event.schedule }}" = "*/10 2-9 * * 1-5" ]; then
+            python corpact.py cepat
+          else
+            python corpact.py
+          fi
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

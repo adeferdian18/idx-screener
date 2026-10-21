@@ -2,10 +2,16 @@
 Pemantau aksi korporasi BEI + narasi fundamental.
 
 Sumber:
-  1. Google News RSS (berita berbahasa Indonesia, 14 hari terakhir) untuk kata kunci
-     buyback, dividen, stock split, rights issue, private placement, tender offer,
-     akuisisi, pembelian saham oleh orang dalam.
-  2. Yahoo Finance: jadwal ex-dividen yang akan datang untuk saham di tickers.txt.
+  0. Keterbukaan informasi BEI (dicoba, tapi diblokir Cloudflare untuk akses otomatis).
+  1. RSS langsung media pasar modal (IDX Channel, Liputan6 Saham, Stockwatch, Kontan, CNBC, dll.):
+     lebih cepat dari Google News karena tidak menunggu Google mengindeks.
+  2. Google News RSS (berita berbahasa Indonesia) untuk kata kunci buyback, dividen, stock split,
+     rights issue, private placement, tender offer, akuisisi, pembelian saham oleh orang dalam.
+  3. Yahoo Finance: jadwal ex-dividen yang akan datang untuk saham di tickers.txt.
+
+Mode:
+  python corpact.py         -> lengkap (sumber 0-3, berita 14 hari)
+  python corpact.py cepat   -> tiap 10 menit di jam bursa: sumber 0, 1 dan Google News 24 jam terakhir saja
 
 Setiap aksi korporasi diberi "skor momentum" yang menggabungkan jenis aksi
 (buyback = sinyal positif, private placement = dilusi, dst.) dengan skor fundamental
@@ -72,6 +78,20 @@ FAST_QUERIES = [
     "rencana rights issue Tbk",
 ]
 
+# RSS langsung media yang feed-nya aktif dan terbaru dalam hitungan menit (dicek 21 Okt 2026).
+# EmitenNews, KabarBursa, Bisnis, Investor.id tidak punya feed yang bisa dibaca; isinya tetap tertangkap via Google News.
+MEDIA_FEEDS = [
+    ("IDX Channel", "https://www.idxchannel.com/rss"),
+    ("Liputan6 Saham", "https://feed.liputan6.com/rss/saham"),
+    ("Stockwatch", "https://www.stockwatch.id/rss"),
+    ("Kontan Investasi", "https://investasi.kontan.co.id/rss"),
+    ("CNBC Indonesia Market", "https://www.cnbcindonesia.com/market/rss"),
+    ("CNN Indonesia Ekonomi", "https://www.cnnindonesia.com/ekonomi/rss"),
+    ("Detik Finance", "https://finance.detik.com/rss"),
+    ("Okezone Ekonomi", "https://sindikasi.okezone.com/index.php/rss/11/RSS2.0"),
+    ("Antara Bursa", "https://www.antaranews.com/rss/ekonomi-bursa.xml"),
+]
+
 IDX_API = "https://www.idx.co.id/primary/ListedCompany/GetAnnouncement"
 IDX_HEADERS = {
     "User-Agent": "Mozilla/5.0 idx-screener (+https://github.com/adeferdian18/idx-screener)",
@@ -133,12 +153,17 @@ def load_json(p, default):
 
 
 def load_tickers():
-    out = []
+    """Semua saham BEI (data/universe.json dari universe.py) + tickers.txt sebagai cadangan."""
+    out = set()
     for ln in (BASE / "tickers.txt").read_text().splitlines():
         ln = ln.strip().upper()
         if ln and not ln.startswith("#"):
-            out.append(ln)
-    return set(out)
+            out.add(ln)
+    try:
+        out |= {r["kode"] for r in json.loads((BASE / "data" / "universe.json").read_text(encoding="utf-8"))["rows"]}
+    except (OSError, ValueError, KeyError):
+        pass
+    return out
 
 
 def classify(text):
@@ -160,10 +185,61 @@ def extract_codes(title, universe):
     return seen
 
 
-# ---------------------------------------------------------------- Sumber 1: berita
-def fetch_news(universe):
+# ---------------------------------------------------------------- Sumber 1: RSS langsung media
+_ITEM_RE = re.compile(r"<item\b.*?</item>", re.S | re.I)
+
+
+def _tag(block, name):
+    m = re.search(rf"<{name}\b[^>]*>(.*?)</{name}>", block, re.S | re.I)
+    if not m:
+        return ""
+    v = re.sub(r"^\s*<!\[CDATA\[(.*)\]\]>\s*$", r"\1", m.group(1), flags=re.S)
+    return html.unescape(re.sub(r"<[^>]+>", " ", v)).strip()
+
+
+def parse_feed(content):
+    """Item RSS (judul, link, ringkasan, tanggal). Dibaca dengan regex karena beberapa feed media XML-nya tidak valid."""
+    out = []
+    for block in _ITEM_RE.findall(content.decode("utf-8", "replace")):
+        try:
+            published = parsedate_to_datetime(_tag(block, "pubDate")).astimezone(WIB)
+        except Exception:  # noqa: BLE001
+            published = dt.datetime.now(WIB)
+        out.append({"title": _tag(block, "title"), "link": _tag(block, "link") or _tag(block, "guid"),
+                    "desc": _tag(block, "description")[:600], "published": published})
+    return out
+
+
+def fetch_media(universe):
     events = []
-    queries = [(q, "1d") for q in FAST_QUERIES] + [(q, "14d") for q in NEWS_QUERIES]
+    for source, url in MEDIA_FEEDS:
+        try:
+            r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0 idx-screener"})
+            items = parse_feed(r.content) if r.ok else []
+        except Exception as e:  # noqa: BLE001
+            print(f"! RSS {source}: {e}")
+            continue
+        for it in items:
+            kind = classify(it["title"])
+            if not kind:
+                continue
+            # kode saham sering hanya ada di ringkasan ("BCA Perpanjang Buyback" -> "(BBCA)" di ringkasan)
+            codes = extract_codes(it["title"], universe) or extract_codes(it["desc"], universe)[:1]
+            for code in codes[:2]:
+                events.append({
+                    "id": hashlib.md5(f"{code}|{it['title']}".encode()).hexdigest()[:12],
+                    "code": code, "type": kind[0], "label": kind[1], "signal": kind[2], "why": kind[3],
+                    "title": it["title"], "link": it["link"], "source": source,
+                    "date": it["published"].isoformat(timespec="minutes"), "origin": "media",
+                })
+    print(f"RSS media langsung: {len(events)} aksi korporasi terdeteksi")
+    return events
+
+
+# ---------------------------------------------------------------- Sumber 2: Google News
+def fetch_news(universe, fast=False):
+    events = []
+    queries = [(q, "1d") for q in FAST_QUERIES] + ([] if fast else [(q, "14d") for q in NEWS_QUERIES])
     for q, window in queries:
         url = f"https://news.google.com/rss/search?q={quote_plus(q + ' when:' + window)}&hl=id&gl=ID&ceid=ID:id"
         try:
@@ -440,7 +516,7 @@ def send_telegram(text):
 
 
 # ---------------------------------------------------------------- Main
-def main():
+def main(fast=False):
     universe = load_tickers()
     screener = load_json(SITE / "screener.json", {"rows": []})
     rows = {r["kode"]: r for r in screener.get("rows", [])}
@@ -448,13 +524,21 @@ def main():
     old = load_json(OUT, {"events": []})
     old_by_id = {e["id"]: e for e in old.get("events", [])}
 
-    new_events = fetch_idx_disclosures() + fetch_news(universe) + fetch_dividend_calendar(universe, rows)
+    new_events = fetch_idx_disclosures() + fetch_media(universe) + fetch_news(universe, fast)
+    if not fast:
+        # kalender dividen tetap untuk saham screener saja: memanggil Yahoo per saham, 843 saham terlalu lama
+        new_events += fetch_dividend_calendar(set(rows) or universe, rows)
 
-    cutoff = dt.datetime.now(WIB) - dt.timedelta(days=KEEP_DAYS)
+    now = dt.datetime.now(WIB)
+    cutoff = now - dt.timedelta(days=KEEP_DAYS)
     merged = dict(old_by_id)
     fresh_ids = []
     for ev in new_events:
         if ev["id"] not in merged:
+            # kapan pertama kali tertangkap, untuk mengukur keterlambatan dari waktu terbit
+            ev["terdeteksi"] = now.isoformat(timespec="minutes")
+            age = hours_since(ev["date"]) if ev.get("origin") != "jadwal" else None
+            ev["telat_menit"] = round(age * 60) if age is not None and age >= 0 else None
             merged[ev["id"]] = ev
             fresh_ids.append(ev["id"])
 
@@ -466,7 +550,9 @@ def main():
                 continue
         except Exception:  # noqa: BLE001
             pass
-        f = rows.get(ev["code"]) or light_fundamentals(ev["code"])
+        # saham di luar daftar screener: pakai data yang sudah tersimpan agar run tiap 10 menit tetap cepat
+        prev = dict(ev["fund"], nama=ev.get("company")) if ev.get("fund") and ev.get("company") else None
+        f = rows.get(ev["code"]) or prev or light_fundamentals(ev["code"])
         ev["company"] = f.get("nama") or ev["code"]
         ev["fund"] = {k: f.get(k) for k in ["skor", "peringkat", "piotroski", "altman_z", "roe", "pbv", "per",
                                               "der", "dari_puncak_52w", "harga", "flags", "bank", "sektor"]}
@@ -510,6 +596,7 @@ def main():
 
     SITE.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
+        "mode": "cepat" if fast else "lengkap",
         "updated": dt.datetime.now(WIB).isoformat(timespec="minutes"),
         "events": events,
     }, ensure_ascii=False))
@@ -529,9 +616,9 @@ def main():
     if fresh:
         lines = ["🏢 <b>AKSI KORPORASI BARU</b>", ""]
         for e in fresh:
-            early = f" · ⚡ {e['age_hours']:.1f} jam lalu" if e.get("early") else ""
+            early = f" · ⚡ terbit {e['age_hours']:.1f} jam lalu".replace(".", ",") if e.get("early") else ""
             lines.append(f"<b>{e['code']}</b> · {e['label']} · skor {e['score']} ({e['verdict']}){early}")
-            lines.append(html.escape(e["title"][:160]))
+            lines.append(html.escape(e["title"][:160]) + f" <i>({html.escape(e.get('source') or '-')})</i>")
             lines.append(f"<i>{html.escape(e['narrative'][:350])}</i>")
             lines.append("")
         lines.append("Bukan rekomendasi. Baca keterbukaan informasi resmi di idx.co.id.")
@@ -539,4 +626,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(fast=len(sys.argv) > 1 and sys.argv[1] == "cepat")
