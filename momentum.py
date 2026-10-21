@@ -13,6 +13,7 @@ Memindai SELURUH saham BEI (data/universe.json) dengan kerangka SEPA Mark Minerv
 
   - Fase 2 (vcp.py): pola VCP, pivot, entry trigger, SL/TP dan status posisi.
   - Fase 3 (analisa.py): skor setup, briefing per saham, breadth & sektor.
+  - Fase 4 (hgm.py): pertumbuhan laba & penjualan kuartalan (HGM) dan katalis aksi korporasi.
 
 Hasil: docs/data/momentum.json (dibaca website), docs/data/chart/KODE.json (grafik kandidat)
 dan data/momentum_YYYY-MM-DD.csv.
@@ -29,6 +30,7 @@ import pandas as pd
 import yfinance as yf
 
 import analisa
+import hgm
 import vcp
 
 # ---------------------------------------------------------------- Pengaturan
@@ -78,13 +80,13 @@ def load_universe():
 
 
 # ---------------------------------------------------------------- Ambil data
-def download(codes):
+def download(codes, period="2y"):
     """Histori harian ~2 tahun (butuh 252 hari + MA200 + kemiringan MA200). Return {kode: DataFrame}."""
     out = {}
     for i in range(0, len(codes), CHUNK):
         part = codes[i:i + CHUNK]
         print(f"  unduh {i + 1}-{i + len(part)} dari {len(codes)}")
-        df = yf.download([f"{c}.JK" for c in part], period="2y", interval="1d", group_by="ticker",
+        df = yf.download([f"{c}.JK" for c in part], period=period, interval="1d", group_by="ticker",
                          auto_adjust=True, threads=True, progress=False)
         for c in part:
             try:
@@ -98,8 +100,8 @@ def download(codes):
     return out
 
 
-def download_ihsg():
-    h = yf.Ticker("^JKSE").history(period="2y", auto_adjust=True)
+def download_ihsg(period="2y"):
+    h = yf.Ticker("^JKSE").history(period=period, auto_adjust=True)
     h = h.dropna(subset=["Close"])
     h.index = h.index.tz_localize(None).normalize()
     return h["Close"]
@@ -362,6 +364,14 @@ def main():
 
     market = market_status(ihsg)
     market["koreksi_3b"] = {"puncak": f"{peak:%Y-%m-%d}", "dasar": f"{trough:%Y-%m-%d}", "turun": round(ihsg_drop, 4)}
+
+    # Fase 4: fundamental HGM & katalis hanya untuk kandidat (permintaan ke Yahoo dibatasi)
+    cand = [z["kode"] for z in out_rows if z["likuid"] and z["tt_skor"] >= 6]
+    print(f"  HGM & katalis untuk {len(cand)} kandidat...")
+    hg, kat = hgm.hgm_for(cand), hgm.katalis_for(cand)
+    for z in out_rows:
+        z["hgm"] = hg.get(z["kode"])
+        z["katalis"] = kat.get(z["kode"], [])
 
     # Fase 3: skor setup & briefing untuk saham yang relevan (menjaga ukuran JSON tetap kecil)
     for z in out_rows:

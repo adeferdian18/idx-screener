@@ -59,9 +59,11 @@ def lin(x, bad, good):
 
 # ---------------------------------------------------------------- Skor setup
 def skor_setup(z, status_pasar):
-    """0-100. Bobot: RS 30, Trend Template 20, kualitas VCP 25, RS Line 10, ketahanan 10, pasar 5."""
+    """0-100. Bobot: RS 25, Trend Template 20, kualitas VCP 25, RS Line 10, ketahanan 10, HGM 5, pasar 5."""
     rs = z.get("rs_rating") or 0
-    s = rs / 99 * 30 + z["tt_skor"] / 8 * 20
+    s = rs / 99 * 25 + z["tt_skor"] / 8 * 20
+    g = z.get("hgm") or {}
+    s += (g.get("skor") or 0) / 3 * 5
     s += 10 if z.get("rs_line_mendahului") else 7 if z.get("rs_line_high") else 3 if z.get("rs_line_naik_1b") else 0
     s += lin(z.get("ketahanan"), -0.10, 0.30) * 10
     e = z.get("entry") or {}
@@ -107,6 +109,21 @@ def briefing(z, pasar, tt_labels):
                     + (", volume mengering" if v.get("kering") else ""))
     elif v.get("alasan"):
         hati.append("pola VCP belum terbentuk: " + "; ".join(v["alasan"]))
+    g = z.get("hgm")
+    if g and g.get("skor") is not None:
+        rinci = (f"laba {pc(g.get('laba_yoy'))} YoY, penjualan {pc(g.get('penjualan_yoy'))}, margin "
+                 f"{pc(g.get('margin'), 1, False)} (setahun lalu {pc(g.get('margin_lalu'), 1, False)}), kuartal {g['kuartal']}")
+        if g["skor"] == 3:
+            kuat.append("fundamental HGM kuat: " + rinci + (", laba berakselerasi" if g.get("akselerasi") else ""))
+        else:
+            gagal_f = [n for n, okk in (("laba > 20%", g["cek"]["laba"]), ("penjualan > 15%", g["cek"]["penjualan"]),
+                                       ("margin melebar", g["cek"]["margin"])) if not okk]
+            hati.append(f"fundamental belum HGM penuh ({g['skor']}/3, kurang: {', '.join(gagal_f)}): " + rinci)
+    elif g:
+        hati.append("data laporan kuartalan di Yahoo tidak lengkap; cek laporan keuangan di idx.co.id")
+    for k in z.get("katalis") or []:
+        teks = f"katalis {k['jenis'].lower()} ({tgl(k['tgl'])}): {k['judul']}"
+        (kuat if (k.get("sinyal") or 0) > 0 else hati).append(teks)
     if e.get("risiko_ok") is False:
         hati.append("stop loss struktur lebih lebar dari 8%")
     if e.get("extended"):

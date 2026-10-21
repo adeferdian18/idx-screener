@@ -1,0 +1,34 @@
+name: Backtest momentum (mingguan)
+
+on:
+  schedule:
+    - cron: "0 2 * * 6"   # Sabtu 09:00 WIB, saat bursa libur
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-data
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python backtest.py
+      - name: Simpan hasil ke website
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data/backtest.json data/backtest_trades_*.csv
+          git commit -m "Backtest $(TZ=Asia/Jakarta date "+%F %H:%M")" || exit 0
+          git pull --rebase -X theirs origin ${{ github.ref_name }}
+          git push

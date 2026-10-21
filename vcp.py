@@ -268,5 +268,5 @@ def analyze(h):
 
 def _vcp_out(v):
     keep = ("valid", "alasan", "pivot", "tgl_pivot", "low_akhir", "puncak_basis", "tgl_basis", "basis_hari",
-            "kedalaman", "rapi", "ketat", "dryup", "kering")
+            "kedalaman", "rapi", "ketat", "dryup", "kering", "vol50")
     return {k: v.get(k) for k in keep}

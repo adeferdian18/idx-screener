@@ -181,6 +181,12 @@ dialog.wide .chart-own{height:68vh}
 .leader h4{margin:0;font-size:18px;display:flex;justify-content:space-between}
 .leader p{margin:4px 0 0;font-size:13px}
 @media (max-width:820px){ .an-top{grid-template-columns:1fr} }
+.bt-list{margin:0 0 12px;padding-left:20px;font-size:15px;max-width:95ch}
+.bt-list li{margin-bottom:6px}
+.eq-box{height:280px;margin:6px 0}
+.hgm{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px}
+.hgm-kuat{background:var(--good-soft);color:var(--up)} .hgm-sebagian{background:var(--accent-soft);color:var(--accent)}
+.hgm-lemah{background:var(--warn-soft);color:var(--down)} .hgm-kurang{color:var(--muted)}
 .brief{background:var(--bg);border-radius:8px;padding:12px 14px;font-size:15px;margin:0}
 
 .empty{background:var(--surface);border-radius:10px;padding:28px;max-width:640px}
@@ -262,6 +268,17 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
       <h2>Pemimpin pasar</h2>
       <p>Saham lolos Trend Template dengan skor setup tertinggi (RS, tren, RS Line, ketahanan, kualitas VCP, arah pasar). Klik untuk grafik dan rencana.</p>
       <div class="leaders" id="an-leaders"></div>
+    </div>
+    <div class="card" id="bt-card">
+      <h2>Backtest strategi</h2>
+      <p id="bt-sub">Memuat hasil backtest…</p>
+      <ul class="bt-list" id="bt-concl"></ul>
+      <div class="table-wrap"><table id="bt-table"><thead></thead><tbody></tbody></table></div>
+      <div class="eq-box" id="eq-box"></div>
+      <div class="legend" id="eq-legend"></div>
+      <div class="toolbar" id="bt-filters" style="margin-top:8px"></div>
+      <div class="table-wrap"><table id="bt-groups"><thead></thead><tbody></tbody></table></div>
+      <p class="hint" id="bt-note"></p>
     </div>
     <div class="card">
       <h2>Kekuatan sektor</h2>
@@ -500,6 +517,30 @@ function rsLine(r){
   if(r.rs_line_naik_1b == null) return "–";
   return r.rs_line_naik_1b ? `<span class="up" title="RS Line naik 1 bulan">▲</span>` : `<span class="down" title="RS Line turun 1 bulan">▼</span>`;
 }
+function hgmBadge(g){
+  if(!g) return "–";
+  if(g.skor == null) return `<span class="hgm hgm-kurang">data kurang</span>`;
+  return `<span class="hgm hgm-${g.status}" title="laba ${pct(g.laba_yoy,0)} YoY, penjualan ${pct(g.penjualan_yoy,0)}, kuartal ${esc(g.kuartal)}">${esc(g.status)} ${g.skor}/3</span>`;
+}
+function hgmHTML(r){
+  const g = r.hgm, k = r.katalis || [];
+  if(!g && !k.length) return "";
+  let h = `<h3>Fundamental (HGM) & katalis</h3>`;
+  if(g && g.skor != null){
+    const ck = (b, l) => `<div class="cell"><span>${l}</span><b class="${b ? "up" : "down"}">${b ? "✓" : "✗"}</b></div>`;
+    h += `<div class="plan">
+      <div class="cell"><span>Laba bersih YoY (kuartal ${esc(g.kuartal)})</span><b class="${cls(g.laba_yoy)}">${pct(g.laba_yoy,0)}</b></div>
+      <div class="cell"><span>Penjualan YoY</span><b class="${cls(g.penjualan_yoy)}">${pct(g.penjualan_yoy,0)}</b></div>
+      <div class="cell"><span>Margin bersih</span><b>${pct(g.margin,1,false)} <span class="hint">(lalu ${pct(g.margin_lalu,1,false)})</span></b></div>
+      ${ck(g.cek.laba, "Laba > 20%")}${ck(g.cek.penjualan, "Penjualan > 15%")}${ck(g.cek.margin, "Margin melebar")}
+    </div>
+    <p class="hint">Laba bersih dipakai sebagai pengganti EPS karena data EPS kuartalan Yahoo untuk saham BEI sering kosong.${g.akselerasi ? " Pertumbuhan laba berakselerasi dibanding kuartal sebelumnya." : ""}</p>`;
+  } else if(g){
+    h += `<p class="brief">Data laporan kuartalan di Yahoo tidak lengkap untuk ${esc(r.kode)}. Cek laporan keuangan di idx.co.id.</p>`;
+  }
+  if(k.length) h += `<p class="brief">${k.map(x => `<b>${esc(x.jenis)}</b> (${tgl(x.tgl)}): ${esc(x.judul)}`).join("<br>")}</p>`;
+  return h;
+}
 const WL = {
   get(){ try{ return new Set(JSON.parse(localStorage.getItem("wl") || "[]")); }catch{ return new Set(); } },
   toggle(c){ const w = WL.get(); w.has(c) ? w.delete(c) : w.add(c); try{ localStorage.setItem("wl", JSON.stringify([...w])); }catch{} },
@@ -517,6 +558,7 @@ const MCOLS = [
   ["dari_low52","Dari low 52m",r=>pct(r.dari_low52,0)],
   ["tt_skor","Trend Template",r=>`${dots(r.tt)} ${r.tt_skor}/8`],
   ["setup","Setup",r=>r.entry?.label ? `<span class="st ${stClass(r.entry.status)}">${esc(r.entry.label)}</span>` : `<span class="hint">${r.entry ? "belum VCP" : "–"}</span>`],
+  ["hgm","HGM",r=>hgmBadge(r.hgm)],
   ["stage","Stage",r=>r.stage ? `Stage ${r.stage}` : "–"],
   ["ret_3m","3 bln",r=>`<span class="${cls(r.ret_3m)}">${pct(r.ret_3m,0)}</span>`],
   ["ketahanan","Ketahanan",r=>`<span class="${cls(r.ketahanan)}" title="Kinerja saham saat IHSG koreksi, dikurangi penurunan IHSG">${pct(r.ketahanan,0)}</span>`],
@@ -719,6 +761,7 @@ function openMomentum(code){
     <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line (panel bawah)</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
     <h3>Briefing</h3>${briefing(r)}
     ${planHTML(r)}
+    ${hgmHTML(r)}
     <h3>Trend Template (8 poin)</h3>
     <ul class="checks">${r.tt.map((v,i) => `<li><span>${esc(labels[i])}</span>${v===true?`<span class="ok">✓ lolos</span>`:v===false?`<span class="no">✗ gagal</span>`:`<span class="hint">data kurang</span>`}</li>`).join("")}</ul>
     <h3>Angka</h3>
@@ -751,6 +794,59 @@ function renderAnalisa(){
   t.tBodies[0].innerHTML = a.sektor.map(x => `<tr><td>${esc(x.sektor)}</td><td>${x.n}</td>
     <td>${x.rs_median}<span class="bar"><i style="width:${x.rs_median}%"></i></span></td><td>${x.stage2}</td><td>${x.lolos_tt}</td>
     <td class="${cls(x.ret_3m)}">${pct(x.ret_3m,0)}</td><td style="text-align:left">${x.pemimpin.map(k => `<span class="code" data-mcode="${esc(k)}" style="cursor:pointer;margin-right:8px">${esc(k)}</span>`).join("")}</td></tr>`).join("");
+}
+const BT_ORDER = ["pivot_semua", "pivot", "close", "eod"];
+const BT_COLOR = {pivot_semua:"--up", pivot:"#2F9BD6", close:"--accent", eod:"#9B7BD4"};
+let eqChart;
+async function renderBacktest(){
+  S.bt ??= await getJSON("backtest");
+  const b = S.bt;
+  if(!b){ $("#bt-sub").textContent = "Hasil backtest belum ada. Jalankan workflow mingguan \"Backtest momentum\" di GitHub Actions."; return; }
+  const st = b.strategi, a = b.asumsi;
+  $("#bt-sub").textContent = `Seluruh saham BEI ${tgl(b.periode[0])} ${b.periode[0].slice(0,4)} – ${tgl(b.periode[1])} ${b.periode[1].slice(0,4)}: Trend Template + RS ≥ 70 + VCP + breakout pivot, setelah biaya beli ${pct(a.biaya_beli,2,false)}, jual ${pct(a.biaya_jual,2,false)} dan slippage ${pct(a.slippage,1,false)} per sisi. IHSG di periode yang sama ${pct(b.ihsg.total,0)}.`;
+  $("#bt-concl").innerHTML = (b.kesimpulan || []).map(x => `<li>${esc(x)}</li>`).join("");
+  const t = $("#bt-table");
+  t.tHead.innerHTML = "<tr><th>Cara eksekusi</th><th>Trade</th><th>Menang</th><th>Rata-rata</th><th>Profit factor</th><th>Ekuitas</th><th>CAGR</th><th>Max DD</th><th>Hanya saat uptrend</th></tr>";
+  const r2 = x => isNum(x) ? (x>0?"+":"") + fmt(x,2) + "R" : "–";
+  t.tBodies[0].innerHTML = BT_ORDER.filter(k => st[k]).map(k => { const s = st[k].ringkasan, u = st[k].hanya_uptrend;
+    return `<tr><td>${esc(st[k].label)}${k==="pivot" ? ' <span class="badge" title="memakai volume akhir hari yang belum diketahui saat order terisi">batas atas</span>' : ""}</td>
+      <td>${s.trade}</td><td>${pct(s.menang,0,false)}</td><td class="${cls(s.rata_r)}">${r2(s.rata_r)} <span class="hint">±${fmt(2*s.se_r,2)}</span></td>
+      <td>${fmt(s.profit_factor,2)}</td><td class="${cls(s.total)}">${pct(s.total,0)}</td><td>${pct(s.cagr,1)}</td><td class="down">${pct(s.max_dd,0)}</td>
+      <td class="${cls(u.rata_r)}">${u.trade ? `${r2(u.rata_r)} (${u.trade})` : "–"}</td></tr>`; }).join("");
+  S.btSel ??= "pivot_semua";
+  $("#bt-filters").innerHTML = BT_ORDER.filter(k => st[k]).map(k => `<button class="chip" data-bt="${k}" aria-pressed="${S.btSel===k}">${esc(st[k].label)}</button>`).join("");
+  renderBtGroups();
+  $("#bt-note").textContent = `${a.keluar}. ${a.catatan}`;
+  drawEquity();
+}
+function renderBtGroups(){
+  const g = S.bt.strategi[S.btSel];
+  const rows = [["Arah pasar", g.per_pasar], ["Tahun", g.per_tahun], ["RS Rating", g.per_rs], ["Kualitas VCP", g.per_kualitas]];
+  const t = $("#bt-groups");
+  t.tHead.innerHTML = "<tr><th>Kelompok</th><th></th><th>Trade</th><th>Menang</th><th>Rata-rata</th><th>Profit factor</th><th>Rata-rata hari</th></tr>";
+  t.tBodies[0].innerHTML = rows.map(([name, xs]) => xs.map((x,i) => `<tr><td>${i ? "" : esc(name)}</td><td style="text-align:left">${esc(x.kelompok)}</td>
+    <td>${x.trade}</td><td>${pct(x.menang,0,false)}</td><td class="${cls(x.rata_r)}">${isNum(x.rata_r) ? (x.rata_r>0?"+":"") + fmt(x.rata_r,2) + "R" : "–"}</td>
+    <td>${fmt(x.profit_factor,2)}</td><td>${fmt(x.rata_hari,1)}</td></tr>`).join("")).join("");
+}
+async function drawEquity(){
+  if(!S.bt || !(await loadLWC().catch(() => null))) return;
+  const css = getComputedStyle(document.documentElement), col = n => n.startsWith("--") ? css.getPropertyValue(n).trim() : n;
+  eqChart?.remove();
+  const box = $("#eq-box"); box.innerHTML = "";
+  eqChart = LightweightCharts.createChart(box, chartOpts(col));
+  const pf = {type:"custom", formatter: v => Math.round((v-1)*100) + "%"};
+  const st = S.bt.strategi, leg = [];
+  BT_ORDER.filter(k => st[k]).forEach(k => {
+    const s = eqChart.addLineSeries({color:col(BT_COLOR[k]), lineWidth: k==="pivot_semua" ? 3 : 1.5, priceFormat:pf, priceLineVisible:false, lineStyle: k==="pivot" ? 2 : 0});
+    s.setData(st[k].kurva.map(x => ({time:x.t, value:x.semua})));
+    leg.push(`<span><i style="background:${col(BT_COLOR[k])}"></i>${esc(st[k].label)}</span>`);
+  });
+  const any = st[BT_ORDER.find(k => st[k])];
+  const ih = eqChart.addLineSeries({color:col("--muted"), lineWidth:1, priceFormat:pf, priceLineVisible:false});
+  ih.setData(any.kurva.map(x => ({time:x.t, value:x.ihsg})));
+  leg.push(`<span><i style="background:${col("--muted")}"></i>IHSG</span>`);
+  $("#eq-legend").innerHTML = leg.join("") + `<span>Ekuitas dengan risiko 1% modal per trade</span>`;
+  eqChart.timeScale().fitContent();
 }
 let breadthChart;
 async function drawBreadth(){
@@ -803,13 +899,15 @@ document.addEventListener("click", e => {
     document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t===tab));
     document.querySelectorAll(".panel").forEach(p => p.hidden = p.id !== "panel-"+tab.dataset.tab);
     if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
-    if(tab.dataset.tab === "analisa") drawBreadth();
+    if(tab.dataset.tab === "analisa"){ drawBreadth(); renderBacktest(); }
     return;
   }
   const st = e.target.closest("[data-star]");
   if(st){ WL.toggle(st.dataset.star); const on = WL.get().has(st.dataset.star);
     document.querySelectorAll(`[data-star="${st.dataset.star}"]`).forEach(b => b.setAttribute("aria-pressed", on));
     if(S.mFilter === "saya") renderMomentum(); return; }
+  const bt = e.target.closest("[data-bt]");
+  if(bt){ S.btSel = bt.dataset.bt; document.querySelectorAll("[data-bt]").forEach(b => b.setAttribute("aria-pressed", b===bt)); renderBtGroups(); return; }
   const rg = e.target.closest("[data-rng]");
   if(rg){ S.chartRange?.(Number(rg.dataset.rng)); return; }
   if(e.target.closest("#wide-btn")){ const d = $("#dlg"); d.classList.toggle("wide"); $("#wide-btn").setAttribute("aria-pressed", d.classList.contains("wide")); return; }
