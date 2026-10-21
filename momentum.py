@@ -11,7 +11,10 @@ Memindai SELURUH saham BEI (data/universe.json) dengan kerangka SEPA Mark Minerv
   - Perkiraan Stage Weinstein     -> 1 basing, 2 naik, 3 puncak, 4 turun.
   - Arah pasar (IHSG)             -> momentum hanya dieksekusi saat pasar mendukung.
 
-Hasil: docs/data/momentum.json (dibaca website) dan data/momentum_YYYY-MM-DD.csv.
+  - Fase 2 (vcp.py): pola VCP, pivot, entry trigger, SL/TP dan status posisi.
+
+Hasil: docs/data/momentum.json (dibaca website), docs/data/chart/KODE.json (grafik kandidat)
+dan data/momentum_YYYY-MM-DD.csv.
 Data harian Yahoo Finance (bisa telat/bolong untuk saham kecil). Alat bantu riset, BUKAN rekomendasi.
 """
 
@@ -24,11 +27,14 @@ from pathlib import Path
 import pandas as pd
 import yfinance as yf
 
+import vcp
+
 # ---------------------------------------------------------------- Pengaturan
 MIN_AVG_VALUE_IDR = float(os.getenv("MOM_MIN_VALUE_IDR", 1e9))  # likuiditas min watchlist: Rp1 miliar/hari
 RS_MIN = 70            # syarat Trend Template
 RS_FOCUS = 90          # fokus utama modul
 CHUNK = 100            # jumlah ticker per permintaan yf.download
+CHART_BARS = 260       # panjang data grafik per kandidat (~1 tahun)
 
 BASE = Path(__file__).parent
 DATA_DIR = BASE / "data"
@@ -236,6 +242,20 @@ def market_status(ihsg):
     }
 
 
+def write_chart(folder, code, h, ihsg):
+    """OHLCV ~1 tahun + IHSG (untuk RS Line) agar website bisa menggambar level entry/SL/TP sendiri."""
+    t = h.tail(CHART_BARS)
+    ih = ihsg.reindex(t.index, method="ffill")
+    rnd = lambda s: [None if not ok(v) else round(float(v), 2) for v in s]  # noqa: E731
+    data = {"t": [f"{d:%Y-%m-%d}" for d in t.index], "o": rnd(t["Open"]), "h": rnd(t["High"]), "l": rnd(t["Low"]),
+            "c": rnd(t["Close"]), "v": [int(v) if ok(v) else 0 for v in t["Volume"]], "ihsg": rnd(ih),
+            # MA dihitung dari histori penuh supaya awal grafik tidak kosong
+            "ma50": rnd(h["Close"].rolling(50).mean().tail(CHART_BARS)),
+            "ma150": rnd(h["Close"].rolling(150).mean().tail(CHART_BARS)),
+            "ma200": rnd(h["Close"].rolling(200).mean().tail(CHART_BARS))}
+    (folder / f"{code}.json").write_text(json.dumps(data, allow_nan=False), encoding="utf-8")
+
+
 # ---------------------------------------------------------------- Main
 def main():
     DATA_DIR.mkdir(exist_ok=True)
@@ -250,10 +270,11 @@ def main():
     print(f"  data tersedia: {len(hist)} saham")
     peak, trough, ihsg_drop = ihsg_correction(ihsg)
 
-    rows = []
+    rows, frames = [], {}
     for c, h in hist.items():
         h = h.copy()
         h.index = pd.to_datetime(h.index).tz_localize(None).normalize()
+        frames[c] = h
         close = h["Close"]
         last_date = h.index[-1]
         if (ihsg.index[-1] - last_date).days > 7:
@@ -322,12 +343,27 @@ def main():
             "label": label, "flags": x["flags"],
         })
 
+    # Fase 2: VCP & entry untuk saham likuid yang lolos atau hampir lolos Trend Template
+    chart_dir = SITE / "chart"
+    chart_dir.mkdir(exist_ok=True)
+    for f in chart_dir.glob("*.json"):
+        f.unlink()
+    for z in out_rows:
+        z["entry"] = None
+        if z["likuid"] and z["tt_skor"] >= 6:
+            h = frames[z["kode"]]
+            try:
+                z["entry"] = vcp.analyze(h)
+            except Exception as e:  # noqa: BLE001
+                print(f"  ! {z['kode']}: VCP gagal ({e})")
+            write_chart(chart_dir, z["kode"], h, ihsg)
+
     out_rows.sort(key=lambda z: (not z["lolos_tt"] or not z["likuid"], -(z["rs_rating"] or 0)))
     market = market_status(ihsg)
     market["koreksi_3b"] = {"puncak": f"{peak:%Y-%m-%d}", "dasar": f"{trough:%Y-%m-%d}", "turun": round(ihsg_drop, 4)}
 
     payload = {
-        "schema": 1,
+        "schema": 2,
         "updated": dt.datetime.now(WIB).isoformat(timespec="minutes"),
         "tgl_data": f"{ihsg.index[-1]:%Y-%m-%d}",
         "universe": len(codes), "dipindai": len(out_rows),
@@ -337,11 +373,22 @@ def main():
     }
     (SITE / "momentum.json").write_text(json.dumps(payload, ensure_ascii=False, allow_nan=False), encoding="utf-8")
     flat = pd.DataFrame(out_rows)
+    for k in ("status", "tgl_trigger", "entry", "sl", "tp1", "tp2"):
+        flat[f"e_{k}"] = flat["entry"].map(lambda e, k=k: (e or {}).get(k))
+    flat = flat.drop(columns="entry")
     for i, lab in enumerate(TT_LABELS):
         flat[f"tt{i + 1}"] = flat["tt"].map(lambda v, i=i: v[i])
     flat.drop(columns="tt").assign(flags=flat["flags"].map(", ".join)).to_csv(
         DATA_DIR / f"momentum_{dt.datetime.now(WIB):%Y-%m-%d}.csv", index=False)
 
+    sig = [z for z in out_rows if z["entry"] and z["entry"]["status"]]
+    from collections import Counter
+    print("Status entry:", dict(Counter(z["entry"]["status"] for z in sig)))
+    for z in sig:
+        e = z["entry"]
+        if e["status"] in ("entry_hari_ini", "entry_baru", "setup", "kena_sl", "sl_naik_lagi", "kena_tp1"):
+            print(f"  {z['kode']:5} {e['label']:<34} trig {e.get('tgl_trigger', '-'):10} entry {e['entry']:>7,} "
+                  f"SL {e['sl']:>7,} ({e['sl_pct']:.1%}) TP1 {e['tp1']:>7,} · kontraksi {e['vcp']['kedalaman']}")
     n2 = sum(1 for z in out_rows if z["lolos_tt"] and z["likuid"])
     n90 = sum(1 for z in out_rows if z["label"] == "Stage 2 · RS 90+")
     print(f"Tersimpan: docs/data/momentum.json ({len(out_rows)} saham)")

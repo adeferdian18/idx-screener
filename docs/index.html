@@ -140,6 +140,22 @@ dialog::backdrop{background:rgba(8,15,28,.55)}
 .checks{list-style:none;padding:0;margin:0;display:grid;gap:6px}
 .checks li{background:var(--bg);border-radius:8px;padding:8px 12px;font-size:14px;display:flex;justify-content:space-between;gap:10px}
 .checks .ok{color:var(--up);font-weight:700} .checks .no{color:var(--down);font-weight:700}
+.card{background:var(--surface);border-radius:10px;padding:16px 18px;margin-bottom:18px}
+.card h2{font-size:18px;margin:0 0 4px}
+.card > p{margin:0 0 12px;font-size:14px;color:var(--muted);max-width:90ch}
+.card .table-wrap{background:none}
+.st{font-weight:600}
+.st-good{color:var(--up)} .st-warn{color:var(--accent)} .st-bad{color:var(--down)} .st-mute{color:var(--muted)}
+.plan{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.plan .cell b{font-size:17px}
+.lv-e{color:#2F6FDB} .lv-sl{color:var(--down)} .lv-tp{color:var(--up)}
+.calc{display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin:6px 0 10px}
+.calc label{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.calc input,.calc select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:6px 10px;font:inherit;width:170px}
+.calc-out{font-size:15px;margin:0}
+.chart-own{height:340px;border-radius:10px;overflow:hidden;margin-bottom:6px;background:var(--surface)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:14px}
+.legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:4px}
 .brief{background:var(--bg);border-radius:8px;padding:12px 14px;font-size:15px;margin:0}
 
 .empty{background:var(--surface);border-radius:10px;padding:28px;max-width:640px}
@@ -189,6 +205,13 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
 
   <section class="panel" id="panel-momentum">
     <div class="mkt" id="mkt"></div>
+    <div class="card">
+      <h2>Sinyal entry</h2>
+      <p>Entry trigger = harga tutup di atas pivot VCP dengan volume minimal 1,5× rata-rata 50 hari. Aktif berarti trigger hari ini sampai 10 hari bursa lalu yang belum kena TP2 atau SL, ditambah yang sempat kena SL tapi sudah naik lagi di atasnya (oranye). Klik baris untuk grafik dan rencana posisi.</p>
+      <div class="toolbar" id="e-filters"></div>
+      <div class="table-wrap"><table id="e-table"><thead></thead><tbody></tbody></table></div>
+    </div>
+    <h2 style="font-size:18px;margin:0 0 10px">Watchlist Trend Template</h2>
     <div class="toolbar">
       <input class="search" id="mq" type="search" placeholder="Cari kode atau nama" aria-label="Cari saham momentum">
       <button class="chip" data-mf="lolos" aria-pressed="true">Lolos Trend Template</button>
@@ -242,7 +265,7 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
 <script>
 "use strict";
 const S = { quotes:null, screener:null, actions:null, momentum:null, evFilter:"semua", sort:{key:"peringkat",dir:1},
-  mFilter:"lolos", msort:{key:"rs_rating",dir:-1} };
+  mFilter:"lolos", msort:{key:"rs_rating",dir:-1}, eFilter:"aktif" };
 const $ = (s, el=document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const isNum = x => typeof x === "number" && isFinite(x);
@@ -441,6 +464,7 @@ const MCOLS = [
   ["dari_high52","Dari high 52m",r=>`<span class="${cls(r.dari_high52)}">${pct(r.dari_high52,0)}</span>`],
   ["dari_low52","Dari low 52m",r=>pct(r.dari_low52,0)],
   ["tt_skor","Trend Template",r=>`${dots(r.tt)} ${r.tt_skor}/8`],
+  ["setup","Setup",r=>r.entry?.label ? `<span class="st ${stClass(r.entry.status)}">${esc(r.entry.label)}</span>` : `<span class="hint">${r.entry ? "belum VCP" : "–"}</span>`],
   ["stage","Stage",r=>r.stage ? `Stage ${r.stage}` : "–"],
   ["ret_3m","3 bln",r=>`<span class="${cls(r.ret_3m)}">${pct(r.ret_3m,0)}</span>`],
   ["ketahanan","Ketahanan",r=>`<span class="${cls(r.ketahanan)}" title="Kinerja saham saat IHSG koreksi, dikurangi penurunan IHSG">${pct(r.ketahanan,0)}</span>`],
@@ -463,7 +487,7 @@ function mRows(){
   return rows;
 }
 function renderMomentum(){
-  renderMarket();
+  renderMarket(); renderSignals();
   document.querySelectorAll("[data-mf]").forEach(b => b.setAttribute("aria-pressed", b.dataset.mf === S.mFilter));
   const t = $("#m-table");
   t.tHead.innerHTML = "<tr>" + MCOLS.map(([k,l]) => `<th data-mk="${k}" ${S.msort.key===k?`aria-sort="${S.msort.dir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("") + "</tr>";
@@ -473,6 +497,128 @@ function renderMomentum(){
   t.tBodies[0].innerHTML = rows.length ? rows.map(r => `<tr data-mcode="${esc(r.kode)}">` + MCOLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("")
     : `<tr><td colspan="${MCOLS.length}" style="text-align:left">Tidak ada saham yang memenuhi filter ini hari ini.</td></tr>`;
 }
+/* ---------- Sinyal entry ---------- */
+const E_GROUPS = [
+  ["aktif","Aktif",["entry_hari_ini","entry_baru","berjalan","kena_tp1","sl_naik_lagi"]],
+  ["setup","Setup & VCP",["setup","vcp","volume_kurang","extended"]],
+  ["tp","Kena TP",["kena_tp2","tp1_impas"]],
+  ["sl","Kena SL & time stop",["kena_sl","time_stop"]],
+];
+function stClass(st){
+  if(["entry_hari_ini","entry_baru","berjalan","kena_tp1","kena_tp2","setup"].includes(st)) return "st-good";
+  if(["sl_naik_lagi","extended","volume_kurang","tp1_impas","time_stop"].includes(st)) return "st-warn";
+  if(st === "kena_sl") return "st-bad";
+  return "st-mute";
+}
+const tgl = s => s ? new Date(s + "T00:00:00").toLocaleDateString("id-ID",{day:"numeric",month:"short"}) : "–";
+function eRows(group){
+  const sts = E_GROUPS.find(g => g[0] === group)[2];
+  return (S.momentum?.rows || []).filter(r => r.entry?.status && sts.includes(r.entry.status));
+}
+function renderSignals(){
+  $("#e-filters").innerHTML = E_GROUPS.map(([k,l]) => `<button class="chip" data-ef="${k}" aria-pressed="${S.eFilter===k}">${l} (${eRows(k).length})</button>`).join("");
+  const t = $("#e-table");
+  t.tHead.innerHTML = "<tr><th>Kode</th><th>Status</th><th>Tgl trigger</th><th>Harga</th><th>Entry</th><th>SL</th><th>TP1 (2R)</th><th>TP2 (3R)</th><th>R saat ini</th><th>RS</th></tr>";
+  if(!S.momentum){ t.tBodies[0].innerHTML = ""; return; }
+  const rows = eRows(S.eFilter).sort((a,b) => (a.entry.hari_sejak ?? 99) - (b.entry.hari_sejak ?? 99) || (b.rs_rating||0) - (a.rs_rating||0));
+  const weak = S.momentum.pasar.status !== "uptrend";
+  t.tBodies[0].innerHTML = rows.length ? rows.map(r => { const e = r.entry; return `<tr data-mcode="${esc(r.kode)}">
+      <td class="code">${esc(r.kode)}</td><td><span class="st ${stClass(e.status)}">${esc(e.label)}</span>${e.extended && e.status!=="extended"?` <span class="badge">extended</span>`:""}</td>
+      <td>${tgl(e.tgl_trigger)}</td><td>${fmt(liveOf(r.kode)?.last ?? r.harga)}</td>
+      <td class="lv-e">${fmt(e.entry)}</td><td class="lv-sl">${fmt(e.sl)} <span class="hint">${pct(-e.sl_pct,1)}</span></td>
+      <td class="lv-tp">${fmt(e.tp1)}</td><td class="lv-tp">${fmt(e.tp2)}</td>
+      <td class="${cls(e.r_sekarang)}">${isNum(e.r_sekarang) ? (e.r_sekarang>0?"+":"") + fmt(e.r_sekarang,1) + "R" : (isNum(e.jarak_pivot) ? pct(e.jarak_pivot,1) + " ke entry" : "–")}</td>
+      <td>${r.rs_rating ?? "–"}</td></tr>`; }).join("")
+    : `<tr><td colspan="10" style="text-align:left;white-space:normal">Tidak ada saham di kelompok ini hari ini.${weak && S.eFilter==="aktif" ? " Pasar sedang " + esc(S.momentum.pasar.status) + ": sesuai modul, ini fase menyusun watchlist, bukan agresif entry." : ""}</td></tr>`;
+}
+
+/* ---------- Rencana posisi & kalkulator lot ---------- */
+const store = { get(k){ try{ return localStorage.getItem(k); }catch{ return null; } }, set(k,v){ try{ localStorage.setItem(k,v); }catch{} } };
+function planHTML(r){
+  const e = r.entry, v = e?.vcp;
+  if(!e || !isNum(e.entry)) return v ? `<h3>Pola VCP</h3><p class="brief">Belum ada basis yang bisa dinilai: ${esc((v.alasan||[]).join("; "))}.</p>` : "";
+  const dep = (v.kedalaman||[]).map(d => "−" + fmt(d*100,0) + "%").join(" → ");
+  const vcpLine = `${v.valid ? "<b>VCP valid</b>" : "<b>VCP belum valid</b>"}: kontraksi ${dep} dalam basis ${v.basis_hari} hari (mulai ${tgl(v.tgl_basis)}). `
+    + `Pivot ${fmt(v.pivot)} (${tgl(v.tgl_pivot)}). Volume 5 hari terakhir basis ${isNum(v.dryup) ? fmt(v.dryup*100,0)+"%" : "–"} dari rata-rata 50 hari${v.kering ? " (mengering ✓)" : " (belum mengering)"}.`
+    + (v.alasan?.length ? `<br>Belum memenuhi: ${esc(v.alasan.join("; "))}.` : "");
+  const risk = e.catatan_risiko?.length ? `<p class="brief" style="margin-top:8px"><b class="down">Risiko:</b> ${esc(e.catatan_risiko.join("; "))}.</p>` : "";
+  return `<h3>Rencana posisi ${e.label ? "· " + esc(e.label) : "(acuan, belum trigger)"}</h3>
+    <div class="plan">
+      <div class="cell"><span>Entry (di atas pivot)</span><b class="lv-e">${fmt(e.entry)}</b></div>
+      <div class="cell"><span>Beli maksimal (+5%)</span><b>${fmt(e.beli_maks)}</b></div>
+      <div class="cell"><span>Stop loss</span><b class="lv-sl">${fmt(e.sl)} (${pct(-e.sl_pct,1)})</b></div>
+      <div class="cell"><span>TP1 · 2R</span><b class="lv-tp">${fmt(e.tp1)} (${pct(e.tp1/e.entry-1,1)})</b></div>
+      <div class="cell"><span>TP2 · 3R</span><b class="lv-tp">${fmt(e.tp2)} (${pct(e.tp2/e.entry-1,1)})</b></div>
+      ${e.tgl_trigger ? `<div class="cell"><span>Trigger</span><b>${tgl(e.tgl_trigger)} · vol ${fmt(e.vol_breakout,1)}×</b></div>` : ""}
+    </div>${risk}
+    <h3>Pola VCP</h3><p class="brief">${vcpLine}</p>
+    <h3>Ukuran posisi</h3>
+    <div class="calc">
+      <label>Modal (Rp)<input id="c-modal" inputmode="numeric" value="${esc(store.get("modal") || "100000000")}"></label>
+      <label>Risiko per transaksi<select id="c-risk">${[0.5,0.75,1,1.25].map(x => `<option value="${x}" ${String(x)===(store.get("risk")||"1")?"selected":""}>${fmt(x,2)}% modal</option>`).join("")}</select></label>
+    </div>
+    <p class="calc-out" id="c-out"></p>
+    <p class="hint">Piramida: beli 50% di breakout; tambah 30% saat naik 2–3% dan bertahan (naikkan SL ke impas); sisa 20% di konsolidasi lanjutan. Jangan pernah average down. Time stop: keluar jika 7 hari bursa belum naik 1R.</p>`;
+}
+function calc(e){
+  const modal = Number(String($("#c-modal").value).replace(/\D/g,"")), risk = Number($("#c-risk").value)/100;
+  store.set("modal", String(modal)); store.set("risk", $("#c-risk").value);
+  const perShare = e.entry - e.sl;
+  if(!(modal > 0) || !(perShare > 0)){ $("#c-out").textContent = ""; return; }
+  const lot = Math.floor(modal * risk / perShare / 100);
+  const value = lot * 100 * e.entry;
+  const lots = [0.5,0.3,0.2].map(f => Math.floor(lot*f));
+  $("#c-out").innerHTML = lot > 0
+    ? `<b>${fmt(lot)} lot</b> (Rp${fmt(value)}, ${pct(value/modal,1,false)} modal). Rugi maksimal jika kena SL ≈ Rp${fmt(lot*100*perShare)} (${pct(risk,2,false)} modal).<br>Piramida: ${lots[0]} lot + ${lots[1]} lot + ${lot-lots[0]-lots[1]} lot.`
+      + (value > modal ? ` <span class="down">Nilai posisi melebihi modal; batasi ke modal yang ada.</span>` : "")
+    : `Modal terlalu kecil untuk 1 lot dengan risiko ${pct(risk,2,false)}.`;
+}
+
+/* ---------- Grafik sendiri: candle, MA, volume, RS Line, level entry ---------- */
+let lwcLoad;
+function loadLWC(){
+  lwcLoad ??= new Promise((ok, fail) => { const s = document.createElement("script");
+    s.src = "https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js";
+    s.onload = ok; s.onerror = fail; document.head.append(s); });
+  return lwcLoad;
+}
+async function drawChart(box, r){
+  const [d] = await Promise.all([getJSON("chart/" + r.kode), loadLWC().catch(() => null)]);
+  if(!d || !window.LightweightCharts) return false;
+  const css = getComputedStyle(document.documentElement), col = n => css.getPropertyValue(n).trim();
+  box.innerHTML = "";
+  const ch = LightweightCharts.createChart(box, {autoSize:true, layout:{background:{color:"transparent"}, textColor:col("--muted"), fontFamily:col("--font")},
+    grid:{vertLines:{visible:false}, horzLines:{color:col("--line")}}, rightPriceScale:{borderVisible:false}, timeScale:{borderVisible:false},
+    crosshair:{mode:0}});
+  const t = d.t;
+  const cs = ch.addCandlestickSeries({upColor:col("--up"), downColor:col("--down"), borderVisible:false, wickUpColor:col("--up"), wickDownColor:col("--down")});
+  cs.setData(t.map((x,i) => ({time:x, open:d.o[i], high:d.h[i], low:d.l[i], close:d.c[i]})).filter(b => isNum(b.close)));
+  const line = (k, color) => { const s = ch.addLineSeries({color, lineWidth:1, priceLineVisible:false, lastValueVisible:false, crosshairMarkerVisible:false});
+    s.setData(t.map((x,i) => ({time:x, value:d[k][i]})).filter(b => isNum(b.value))); };
+  line("ma50", "#2F9BD6"); line("ma150", "#9B7BD4"); line("ma200", col("--muted"));
+  const vs = ch.addHistogramSeries({priceScaleId:"vol", priceFormat:{type:"volume"}, priceLineVisible:false, lastValueVisible:false});
+  ch.priceScale("vol").applyOptions({scaleMargins:{top:0.82, bottom:0}});
+  vs.setData(t.map((x,i) => ({time:x, value:d.v[i], color: d.c[i] >= d.o[i] ? col("--up")+"66" : col("--down")+"66"})));
+  const rsl = ch.addLineSeries({priceScaleId:"rs", color:col("--accent"), lineWidth:1, lineStyle:2, priceLineVisible:false, lastValueVisible:false});
+  ch.priceScale("rs").applyOptions({scaleMargins:{top:0.05, bottom:0.55}, visible:false});
+  rsl.setData(t.map((x,i) => ({time:x, value: d.ihsg[i] ? d.c[i]/d.ihsg[i] : null})).filter(b => isNum(b.value)));
+  const e = r.entry;
+  if(e && isNum(e.entry)){
+    const pl = (price, color, title, style=0) => cs.createPriceLine({price, color, lineWidth:1, lineStyle:style, axisLabelVisible:true, title});
+    pl(e.tp2, col("--up"), "TP2", 2); pl(e.tp1, col("--up"), "TP1", 2); pl(e.entry, "#2F6FDB", "Entry"); pl(e.sl, col("--down"), "SL");
+    const mk = [];
+    if(e.vcp?.tgl_basis) mk.push({time:e.vcp.tgl_basis, position:"aboveBar", color:col("--muted"), shape:"arrowDown", text:"basis"});
+    if(e.vcp?.tgl_pivot) mk.push({time:e.vcp.tgl_pivot, position:"aboveBar", color:"#2F6FDB", shape:"circle", text:"pivot"});
+    if(e.tgl_trigger) mk.push({time:e.tgl_trigger, position:"belowBar", color:col("--up"), shape:"arrowUp", text:"trigger"});
+    Object.entries(e.hit || {}).forEach(([k,v]) => v && mk.push({time:v, position: k==="sl"||k==="impas" ? "belowBar" : "aboveBar",
+      color: k==="sl" ? col("--down") : col("--up"), shape:"square", text:k.toUpperCase()}));
+    mk.sort((a,b) => a.time.localeCompare(b.time));
+    cs.setMarkers(mk.filter(m => t.includes(m.time)));
+  }
+  ch.timeScale().setVisibleLogicalRange({from: t.length - 130, to: t.length + 3});
+  return true;
+}
+
 function briefing(r){
   const m = S.momentum.pasar, labels = S.momentum.tt_labels;
   const fail = r.tt.map((v,i) => v===false ? labels[i] : null).filter(Boolean);
@@ -486,8 +632,29 @@ function briefing(r){
   if(fail.length) cons.push("gagal Trend Template: " + fail.join("; ").toLowerCase());
   if(m.status !== "uptrend") cons.push(`arah pasar ${m.status}, breakout lebih sering gagal`);
   r.flags.forEach(f => cons.push(f.toLowerCase()));
-  const verdict = r.lolos_tt && r.likuid ? "Kandidat watchlist Stage 2. Tunggu pola VCP dan breakout pivot, jangan beli hanya karena lolos filter."
-    : "Belum valid untuk strategi momentum.";
+  const e = r.entry, v = e?.vcp;
+  if(v?.valid) pros.push(`VCP valid (${(v.kedalaman||[]).map(d => fmt(d*100,0)+"%").join(" → ")})` + (v.kering ? ", volume mengering" : ""));
+  else if(v?.alasan?.length) cons.push("pola VCP belum terbentuk: " + v.alasan.join("; "));
+  if(e && e.risiko_ok === false) cons.push("stop loss struktur lebih lebar dari 8%");
+  if(e?.extended) cons.push("harga sudah lebih dari 5% di atas entry, jangan dikejar");
+  const ok8 = r.lolos_tt && r.likuid;
+  let verdict;
+  const hit = e?.hit || {};
+  if(e?.status === "kena_sl") verdict = `Trigger ${tgl(e.tgl_trigger)} sudah kena SL pada ${tgl(hit.sl)}. Disiplin: posisi ditutup, tunggu basis baru.`;
+  else if(e?.status === "sl_naik_lagi") verdict = `Sempat kena SL (${tgl(hit.sl)}) dan kini naik lagi di atas SL. Jangan masuk lagi tanpa pivot baru; kembali ke watchlist.`;
+  else if(e?.status === "time_stop") verdict = `Time stop: ${e.hari_sejak} hari bursa sejak trigger belum naik 1R. Modal lebih baik dipindah ke setup lain.`;
+  else if(e?.status === "kena_tp1") verdict = `TP1 tercapai ${tgl(hit.tp1)}. Stop sudah dinaikkan ke impas (${fmt(e.entry)}); sisa posisi menuju TP2 ${fmt(e.tp2)}.`;
+  else if(e?.status === "kena_tp2") verdict = `Trade selesai di TP2 (${tgl(hit.tp2)}), +3R. Tunggu basis baru sebelum masuk lagi.`;
+  else if(e?.status === "tp1_impas") verdict = `TP1 tercapai ${tgl(hit.tp1)}, sisa posisi keluar impas ${tgl(hit.impas)}. Trade selesai dengan untung.`;
+  else if(e?.status === "extended") verdict = `Sudah lewat zona beli (maks ${fmt(e.beli_maks)}). Jangan kejar; tunggu pullback atau basis baru.`;
+  else if(e?.status === "volume_kurang") verdict = "Harga tembus pivot tanpa volume konfirmasi (< 1,5× rata-rata). Belum valid; tunggu candle dengan volume.";
+  else if(!ok8) verdict = "Belum valid untuk strategi momentum.";
+  else if(["entry_hari_ini","entry_baru"].includes(e?.status) && !e.extended && e.risiko_ok)
+    verdict = m.status === "uptrend" ? "Entry trigger VALID: Stage 2, VCP, breakout pivot dengan volume, risiko dalam batas."
+      : "Entry trigger terjadi, tapi pasar sedang " + m.status + ". Jika eksekusi, kecilkan ukuran posisi.";
+  else if(e?.status === "setup") verdict = "Setup siap: pasang alert harga di entry " + fmt(e.entry) + " dan tunggu volume konfirmasi.";
+  else if(e?.status === "vcp") verdict = "VCP terbentuk tapi harga masih jauh dari pivot. Pantau.";
+  else verdict = "Kandidat watchlist Stage 2. Tunggu pola VCP dan breakout pivot, jangan beli hanya karena lolos filter.";
   return `<p class="brief"><b>${verdict}</b>${pros.length?`<br>Kenapa kuat: ${esc(pros.join("; "))}.`:""}${cons.length?`<br>Kenapa hati-hati: ${esc(cons.join("; "))}.`:""}</p>`;
 }
 function openMomentum(code){
@@ -504,16 +671,22 @@ function openMomentum(code){
     ["1 bln", pct(r.ret_1m,0)], ["3 bln", pct(r.ret_3m,0)], ["6 bln", pct(r.ret_6m,0)], ["12 bln", pct(r.ret_12m,0)],
     ["Ketahanan koreksi", pct(r.ketahanan,0)], ["Nilai transaksi/hari", isNum(r.nilai_rata2)?"Rp"+fmt(r.nilai_rata2/1e9,1)+" M":"–"],
   ];
-  $("#dlg-body").innerHTML = `<div class="mini-chart" id="mini-chart"></div>
+  $("#dlg-body").innerHTML = `<div class="chart-own" id="mini-chart"></div>
+    <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line (garis putus)</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
     <h3>Briefing</h3>${briefing(r)}
+    ${planHTML(r)}
     <h3>Trend Template (8 poin)</h3>
     <ul class="checks">${r.tt.map((v,i) => `<li><span>${esc(labels[i])}</span>${v===true?`<span class="ok">✓ lolos</span>`:v===false?`<span class="no">✗ gagal</span>`:`<span class="hint">data kurang</span>`}</li>`).join("")}</ul>
     <h3>Angka</h3>
     <div class="grid">${cells.map(([l,v]) => `<div class="cell"><span>${l}</span><b>${esc(v)}</b></div>`).join("")}</div>
-    <p class="hint">Data harian per ${esc(r.tgl_data)}. Pola VCP, titik pivot, entry, stop loss dan target menyusul di Fase 2.</p>`;
+    <p class="hint">Data harian per ${esc(r.tgl_data)}. Level dibulatkan ke fraksi harga BEI. Alat bantu riset, bukan rekomendasi.</p>`;
   $("#dlg").showModal();
-  tvWidget($("#mini-chart"), "advanced-chart", {autosize:true, symbol:`IDX:${code}`, interval:"D", timezone:"Asia/Jakarta",
-    theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, hide_legend:false, allow_symbol_change:false});
+  if(r.entry && isNum(r.entry.entry)){
+    const go = () => calc(r.entry);
+    $("#c-modal").addEventListener("input", go); $("#c-risk").addEventListener("change", go); go();
+  }
+  drawChart($("#mini-chart"), r).then(okDraw => { if(!okDraw) tvWidget($("#mini-chart"), "advanced-chart", {autosize:true, symbol:`IDX:${code}`, interval:"D",
+    timezone:"Asia/Jakarta", theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, allow_symbol_change:false}); });
 }
 
 /* ---------- Detail saham ---------- */
@@ -554,6 +727,8 @@ document.addEventListener("click", e => {
   }
   const chip = e.target.closest("#ev-filters .chip");
   if(chip){ S.evFilter = chip.dataset.f; renderEvFilters(); renderEvents(); return; }
+  const ef = e.target.closest("[data-ef]");
+  if(ef){ S.eFilter = ef.dataset.ef; renderSignals(); return; }
   const mf = e.target.closest("[data-mf]");
   if(mf){ S.mFilter = mf.dataset.mf; renderMomentum(); return; }
   const mcode = e.target.closest("[data-mcode]");
