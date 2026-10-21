@@ -1150,6 +1150,14 @@ function renderInsider(){
     const neg = n.net_shares < 0;
     $("#ins-pill").innerHTML = `<div class="ins-pill ${neg ? "neg" : "pos"}"><b>${esc(c)}</b>: net ${neg ? "jual" : "beli"} <b class="${neg ? "down" : "up"}">${lbr(isNum(n.net_shares) ? Math.abs(n.net_shares) : null)}</b> (≈${rp(isNum(n.net_value) ? Math.abs(n.net_value) : null)}) · ${n.count ?? "–"} transaksi</div>`;
   } else $("#ins-pill").innerHTML = "";
+  const kc = q && codes.length === 1 ? codes[0] : (/^[A-Za-z]{4}$/.test(q) ? q.toUpperCase() : null);
+  const kr = kc && S.ksei?.rows?.[kc];
+  if(kr){
+    const pc = v => isNum(v) ? (v*100).toLocaleString("id-ID",{maximumFractionDigits:1}) + "%" : "–";
+    const dp = v => isNum(v) ? `<span class="${v>0?"up":v<0?"down":""}">${v>0?"+":""}${(v*100).toLocaleString("id-ID",{maximumFractionDigits:2})} poin</span>` : "";
+    const sig = {akumulasi:"🟢 Akumulasi", distribusi:"🔴 Distribusi", netral:"Netral"}[kr.sinyal] || "–";
+    $("#ins-pill").innerHTML += `<div class="ins-pill" title="Kategori individu termasuk pengendali/komisaris perorangan, bukan hanya ritel kecil"><b>${esc(kc)} · KSEI ${esc(S.ksei.periode || "")}</b> (vs ${esc(S.ksei.periode_lalu || "–")}): ${sig}<br>Asing ${pc(kr.asing)} ${dp(kr.d_asing)} · Institusi lokal ${pc(kr.institusi_lokal)} ${dp(kr.d_institusi_lokal)} · Reksa dana ${pc(kr.reksadana)} ${dp(kr.d_reksadana)} · Individu ${pc(kr.individu)} ${dp(kr.d_individu)}</div>`;
+  }
   const mset = new Set((S.momentum?.rows || []).map(r => r.kode)), now = Date.now();
   t.tBodies[0].innerHTML = rows.length ? rows.map(x => {
     const fresh = x.first_seen && now - new Date(x.first_seen).getTime() < 3 * 3600_000;
@@ -1257,6 +1265,7 @@ async function loadAll(first){
   const needM = !S.momentum || Date.now() - (S.mAt || 0) > 10 * 60_000;
   const [q, s, a, m, ins] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider")]);
   S.quotes = q; S.screener = s; S.actions = a; S.insider = ins;
+  if(!S.ksei) S.ksei = await getJSON("ksei");
   if(m){ S.momentum = m; S.mAt = Date.now(); }
   renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener(); renderInsider();
   if(m && !$("#panel-analisa").hidden) drawBreadth();
