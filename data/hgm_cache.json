@@ -882,5 +882,138 @@
 "margin": false
 },
 "diambil": "2026-10-21"
+},
+"AKRA": {
+"status": "sebagian",
+"skor": 2,
+"kuartal": "2026-06",
+"laba_yoy": 0.2593,
+"penjualan_yoy": 0.6038,
+"margin": 0.0433,
+"margin_lalu": 0.0551,
+"akselerasi": true,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": false
+},
+"diambil": "2026-10-21"
+},
+"BEST": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-06",
+"laba_yoy": 9.99,
+"penjualan_yoy": 4.9546,
+"margin": 0.4643,
+"margin_lalu": -0.5191,
+"akselerasi": false,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-21"
+},
+"BNGA": {
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-06",
+"laba_yoy": 0.0129,
+"penjualan_yoy": 0.0718,
+"margin": 0.3279,
+"margin_lalu": 0.347,
+"akselerasi": true,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": false
+},
+"diambil": "2026-10-21"
+},
+"DKHH": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-10-21"
+},
+"GGRM": {
+"status": "sebagian",
+"skor": 2,
+"kuartal": "2026-06",
+"laba_yoy": 111.9405,
+"penjualan_yoy": -0.0112,
+"margin": 0.0683,
+"margin_lalu": 0.0006,
+"akselerasi": false,
+"cek": {
+"laba": true,
+"penjualan": false,
+"margin": true
+},
+"diambil": "2026-10-21"
+},
+"ITMG": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-06",
+"laba_yoy": 0.9732,
+"penjualan_yoy": 0.1511,
+"margin": 0.1021,
+"margin_lalu": 0.0595,
+"akselerasi": null,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-21"
+},
+"KKGI": {
+"status": "sebagian",
+"skor": 2,
+"kuartal": "2026-06",
+"laba_yoy": 3.5506,
+"penjualan_yoy": 0.1244,
+"margin": 0.0275,
+"margin_lalu": 0.0068,
+"akselerasi": true,
+"cek": {
+"laba": true,
+"penjualan": false,
+"margin": true
+},
+"diambil": "2026-10-21"
+},
+"SRTG": {
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-06",
+"laba_yoy": -2.4884,
+"penjualan_yoy": -2.6118,
+"margin": 0.9144,
+"margin_lalu": 0.9902,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": false
+},
+"diambil": "2026-10-21"
+},
+"TINS": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-06",
+"laba_yoy": 5.626,
+"penjualan_yoy": 1.3349,
+"margin": 0.245,
+"margin_lalu": 0.0863,
+"akselerasi": false,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-21"
 }
 }
