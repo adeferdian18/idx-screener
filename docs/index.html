@@ -251,6 +251,23 @@ details.card[open] > summary{margin-bottom:12px}
 }
 .brief{background:var(--bg);border-radius:8px;padding:12px 14px;font-size:15px;margin:0}
 
+/* ---------- Transaksi orang dalam ---------- */
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:6px 12px;font-size:14px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.ck{display:inline-flex;gap:6px;align-items:center;font-size:14px;cursor:pointer}
+.ins-pill{display:inline-block;background:var(--surface);border-left:4px solid var(--line);border-radius:8px;padding:8px 14px;font-size:15px;margin-bottom:12px}
+.ins-pill.pos{border-left-color:var(--up)} .ins-pill.neg{border-left-color:var(--down)}
+#ins-table td{text-align:right} #ins-table th{cursor:default}
+#ins-table td.l,#ins-table th.l{text-align:left}
+#ins-table td.wrap-txt{white-space:normal;min-width:140px;max-width:240px}
+#ins-table tbody tr{cursor:default}
+#ins-table tr.fresh-row{background:var(--accent-soft)}
+.ins-code{background:none;border:0;padding:0;font-weight:800;text-decoration:underline;cursor:pointer}
+.act{font-weight:700;font-size:12px;padding:2px 8px;border-radius:4px}
+.act-beli{background:var(--good-soft);color:var(--up)} .act-jual{background:var(--warn-soft);color:var(--down)}
+
 .empty{background:var(--surface);border-radius:10px;padding:28px;max-width:640px}
 .empty h3{margin:0 0 6px}
 footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
@@ -293,6 +310,7 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
     <button class="tab" role="tab" aria-selected="true" data-tab="momentum">Momentum</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisa">Analisa pasar</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="aksi">Aksi korporasi</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="insider">Orang dalam</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="screener">Screener fundamental</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="grafik">Grafik</button>
   </div>
@@ -363,6 +381,23 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
   <section class="panel" id="panel-aksi" hidden>
     <div class="toolbar" id="ev-filters"></div>
     <div class="events" id="events"></div>
+  </section>
+
+  <section class="panel" id="panel-insider" hidden>
+    <div class="card">
+      <h2>Transaksi direksi, komisaris dan pemegang saham</h2>
+      <p>Perubahan kepemilikan dari laporan kepemilikan BEI/KSEI (wajib dilaporkan direksi, komisaris dan pemegang saham ≥5% sesuai POJK 4/2024) bila tersedia, dilengkapi berita media. Klik kode untuk grafik.</p>
+      <p class="hint" id="ins-status" style="margin:0 0 12px"></p>
+      <div class="toolbar">
+        <input class="search" id="ins-q" type="search" placeholder="Cari kode atau pihak" aria-label="Cari transaksi orang dalam">
+        <span class="seg" id="ins-act"><button data-ia="semua" aria-pressed="true">Semua</button><button data-ia="beli" aria-pressed="false">Beli</button><button data-ia="jual" aria-pressed="false">Jual</button></span>
+        <label class="ck"><input type="checkbox" id="ins-sig"> Hanya saham yang punya sinyal</label>
+        <label class="ck"><input type="checkbox" id="ins-repo" checked> Sembunyikan repo</label>
+      </div>
+      <div class="toolbar" id="ins-roles"></div>
+      <div id="ins-pill"></div>
+      <div class="table-wrap"><table id="ins-table"><thead></thead><tbody></tbody></table></div>
+    </div>
   </section>
 
   <section class="panel" id="panel-screener" hidden>
@@ -1060,6 +1095,80 @@ async function drawBreadth(){
   breadthChart.timeScale().fitContent();
 }
 
+/* ---------- Transaksi orang dalam ---------- */
+const INS_ROLES = [["semua","Semua pihak"],["direksi_komisaris","Direksi & komisaris"],["pengendali","Pengendali"],["sekuritas_mi","Sekuritas & MI"],["korporasi","Korporasi"],["individu5","Individu ≥5%"]];
+const INS_ROLE_LBL = Object.fromEntries(INS_ROLES);
+S.insAct = "semua"; S.insRole = "semua";
+const lbr = x => isNum(x) ? fmt(x) + " lbr" : "–";
+function rp(x){
+  if(!isNum(x)) return "–";
+  const a = Math.abs(x);
+  if(a >= 1e12) return "Rp" + fmt(x/1e12, 2) + " T";
+  if(a >= 1e9) return "Rp" + fmt(x/1e9, 1) + " M";
+  if(a >= 1e6) return "Rp" + fmt(x/1e6, 1) + " jt";
+  return "Rp" + fmt(x);
+}
+const tglPanjang = s => s ? new Date(s + "T00:00:00").toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"}) : "–";
+const pctPlain = x => isNum(x) ? fmt(x, 2) + "%" : "–";
+function insSignal(code){
+  const r = (S.momentum?.rows || []).find(x => x.kode === code);
+  if(r?.entry?.label && (AKTIF_ST.includes(r.entry.status) || SETUP_ST.includes(r.entry.status)))
+    return {has:true, html:`<span class="st ${stClass(r.entry.status)}">${esc(r.entry.label)}</span>`};
+  if(r?.lolos_tt && r.likuid) return {has:true, html:`<span class="st st-good">Lolos Trend Template</span>`};
+  const ev = (S.actions?.events || []).find(e => e.code === code);
+  if(ev) return {has:true, html:`<span class="st st-warn">${esc(ev.label)}</span>`};
+  return {has:false, html:"–"};
+}
+function insRows(){
+  let rows = S.insider?.transactions || [];
+  const q = $("#ins-q").value.trim().toUpperCase();
+  if(q) rows = rows.filter(t => (t.code||"").toUpperCase().includes(q) || (t.party||"").toUpperCase().includes(q));
+  if(S.insAct !== "semua") rows = rows.filter(t => t.action === S.insAct);
+  if(S.insRole !== "semua") rows = rows.filter(t => t.role === S.insRole);
+  if($("#ins-repo").checked) rows = rows.filter(t => !t.is_repo);
+  if($("#ins-sig").checked) rows = rows.filter(t => insSignal(t.code).has);
+  return [...rows].sort((a,b) => (b.date||"").localeCompare(a.date||"") || (b.first_seen||"").localeCompare(a.first_seen||""));
+}
+function renderInsider(){
+  const d = S.insider, t = $("#ins-table");
+  $("#ins-roles").innerHTML = INS_ROLES.map(([k,l]) => `<button class="chip" data-ir="${k}" aria-pressed="${S.insRole===k}">${esc(l)}</button>`).join("");
+  t.tHead.innerHTML = `<tr><th class="l">Tanggal</th><th class="l">Kode</th><th class="l">Status sinyal</th><th class="l">Pihak</th><th class="l">Peran</th><th class="l">Aksi</th><th>Jumlah</th><th>Harga</th><th>Nilai</th><th class="l">Kepemilikan sebelum → sesudah</th><th class="l">Tujuan</th><th class="l">Sumber</th></tr>`;
+  if(!d){
+    $("#ins-status").textContent = "Data transaksi orang dalam belum ada.";
+    $("#ins-pill").innerHTML = ""; t.tBodies[0].innerHTML = ""; return;
+  }
+  const rows = insRows();
+  const idx = {ok:"ok", blocked:"diblokir", error:"error"}[d.sources?.idx] || "–";
+  $("#ins-status").textContent = `${rows.length} transaksi ditampilkan · sumber BEI: ${idx} · diambil ${ago(d.updated)}`;
+  const codes = [...new Set(rows.map(r => r.code))], q = $("#ins-q").value.trim();
+  if(q && codes.length === 1){
+    const c = codes[0], all = (d.transactions || []).filter(x => x.code === c);
+    const n = d.net_by_code?.[c] || {
+      net_shares: all.reduce((s,x) => s + (isNum(x.shares) ? (x.action==="jual" ? -x.shares : x.shares) : 0), 0),
+      net_value: all.reduce((s,x) => s + (isNum(x.value) ? (x.action==="jual" ? -x.value : x.value) : 0), 0),
+      count: all.length };
+    const neg = n.net_shares < 0;
+    $("#ins-pill").innerHTML = `<div class="ins-pill ${neg ? "neg" : "pos"}"><b>${esc(c)}</b>: net ${neg ? "jual" : "beli"} <b class="${neg ? "down" : "up"}">${lbr(isNum(n.net_shares) ? Math.abs(n.net_shares) : null)}</b> (≈${rp(isNum(n.net_value) ? Math.abs(n.net_value) : null)}) · ${n.count ?? "–"} transaksi</div>`;
+  } else $("#ins-pill").innerHTML = "";
+  const mset = new Set((S.momentum?.rows || []).map(r => r.kode)), now = Date.now();
+  t.tBodies[0].innerHTML = rows.length ? rows.map(x => {
+    const fresh = x.first_seen && now - new Date(x.first_seen).getTime() < 3 * 3600_000;
+    const own = (p, s) => isNum(p) || isNum(s) ? `${pctPlain(p)} (${lbr(s)})` : "–";
+    const src = x.link ? `<a href="${esc(x.link)}" target="_blank" rel="noopener" title="${esc(x.title||"")}">${esc(x.source || "tautan")}</a>` : esc(x.source || "–");
+    return `<tr class="${fresh ? "fresh-row" : ""}">
+      <td class="l">${tglPanjang(x.date)}${fresh ? ` <span class="badge" title="Terdeteksi ${esc(ago(x.first_seen))}">⚡ baru</span>` : ""}</td>
+      <td class="l"><button class="ins-code" ${mset.has(x.code) ? "data-mcode" : "data-code"}="${esc(x.code)}">${esc(x.code)}</button></td>
+      <td class="l">${insSignal(x.code).html}</td>
+      <td class="l wrap-txt">${esc(x.party || "–")}</td>
+      <td class="l">${esc(INS_ROLE_LBL[x.role] || x.role || "–")}${x.is_repo ? ` <span class="badge">repo</span>` : ""}</td>
+      <td class="l">${x.action === "beli" ? `<span class="act act-beli">Beli</span>` : x.action === "jual" ? `<span class="act act-jual">Jual</span>` : "–"}</td>
+      <td>${fmt(x.shares)}</td><td>${fmt(x.price)}</td><td>${rp(x.value)}</td>
+      <td class="l">${own(x.before_pct, x.before_shares)} → ${own(x.after_pct, x.after_shares)}</td>
+      <td class="l wrap-txt">${esc(x.purpose || "–")}</td>
+      <td class="l">${src}</td></tr>`;
+  }).join("") : `<tr><td colspan="12" class="l" style="white-space:normal">Tidak ada transaksi yang cocok dengan filter ini.</td></tr>`;
+}
+
 /* ---------- Detail saham ---------- */
 function openDetail(code){
   const r = (S.screener?.rows || []).find(x => x.kode === code) || {};
@@ -1107,6 +1216,10 @@ document.addEventListener("click", e => {
   const rg = e.target.closest("[data-rng]");
   if(rg){ S.chartRange?.(Number(rg.dataset.rng)); return; }
   if(e.target.closest("#wide-btn")){ const d = $("#dlg"); d.classList.toggle("wide"); $("#wide-btn").setAttribute("aria-pressed", d.classList.contains("wide")); return; }
+  const ia = e.target.closest("[data-ia]");
+  if(ia){ S.insAct = ia.dataset.ia; document.querySelectorAll("[data-ia]").forEach(b => b.setAttribute("aria-pressed", b===ia)); renderInsider(); return; }
+  const ir = e.target.closest("[data-ir]");
+  if(ir){ S.insRole = ir.dataset.ir; renderInsider(); return; }
   const chip = e.target.closest("#ev-filters .chip");
   if(chip){ S.evFilter = chip.dataset.f; renderEvFilters(); renderEvents(); return; }
   const ef = e.target.closest("[data-ef]");
@@ -1133,6 +1246,8 @@ $("#tq").addEventListener("input", renderTermList);
   const b = ev.currentTarget; b.setAttribute("aria-pressed", b.getAttribute("aria-pressed")!=="true"); renderScreener();
 }));
 $("#q").addEventListener("input", renderScreener);
+$("#ins-q").addEventListener("input", renderInsider);
+["ins-sig","ins-repo"].forEach(id => $("#"+id).addEventListener("change", renderInsider));
 $("#chart-go").addEventListener("click", () => renderChart($("#chart-sym").value.trim().toUpperCase().replace(".JK","")));
 $("#chart-sym").addEventListener("keydown", e => { if(e.key==="Enter") $("#chart-go").click(); });
 $("#dlg-close").addEventListener("click", () => $("#dlg").close());
@@ -1140,10 +1255,10 @@ $("#dlg").addEventListener("close", () => { liveCharts.forEach(c => c.remove());
 
 async function loadAll(first){
   const needM = !S.momentum || Date.now() - (S.mAt || 0) > 10 * 60_000;
-  const [q, s, a, m] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null]);
-  S.quotes = q; S.screener = s; S.actions = a;
+  const [q, s, a, m, ins] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider")]);
+  S.quotes = q; S.screener = s; S.actions = a; S.insider = ins;
   if(m){ S.momentum = m; S.mAt = Date.now(); }
-  renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener();
+  renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener(); renderInsider();
   if(m && !$("#panel-analisa").hidden) drawBreadth();
   renderTape();
 }
