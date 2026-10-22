@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-22T11:50+07:00",
+ "updated": "2026-10-22T12:30+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 120
+  "news": 128
  },
  "transactions": [
   {
@@ -888,27 +888,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "c111a5bde71a",
-   "date": "2026-10-20",
-   "code": "DEWI",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNWNJTFR3dDlpUWRGUUgyckxNZnV2QVV3MkFhd2NKRUhCSksxXzNyX3JxS1hOcmNoeFEzVlpYRFFPOGFBdzhBUWNyR1ZGbk5sVHczeTJDYXk5RFJUTjUyMjlBaFp2Yl9abWl0QzhmaW5Ld3VwZmlVdi04cVVkRXB2b0t1by1BbFU?oc=5",
-   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "cf30c25f7e3b",
    "date": "2026-10-20",
    "code": "WIFI",
@@ -1600,6 +1579,27 @@
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
    "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
    "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
+   "id": "c111a5bde71a",
+   "date": "2026-10-19",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkZsRjJJNWpPeElVcGt0aFBFelU2c0NGbjBnck1HTjdJUFJRSkRvS2VHZGVINHU3amhfX3FMLTc5QkVabXFpSzI1Y0hHREtRMVV3UjNBOC1qazJQOGdlSDRmdXRnaGZsRVhEdHNKSE84cHNIdzlMbUJxUWxEMjZhUVd3?oc=5",
+   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
+   "first_seen": "2026-10-21T18:03+07:00"
   },
   {
    "id": "f9cc3b2f3b85",
