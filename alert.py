@@ -6,6 +6,10 @@ Fase 4 (A9): notifikasi momentum ke Telegram (dan opsional WhatsApp via Fonnte).
   python alert.py intraday   -> dijalankan tiap 15 menit di jam bursa: kabari saat harga setup menembus entry
                                 (beserta laju volume hari ini) atau posisi aktif menyentuh SL. Satu kabar per saham
                                 per jenis per hari (status di data/alert_intraday.json).
+  python alert.py pullback   -> setelah `python pullback.py` (penutupan): Entry hari ini baru, Kena TP/SL, daftar
+                                Menunggu trigger. Tambah `s1` untuk snapshot Sesi 1 (hanya terkirim bila ada kabar).
+                                Status terkirim di data/alert_pullback.json agar Sesi 1 dan penutupan tidak dobel.
+  Pantauan intraday pullback (calon trigger, sentuh SL/TP) ada di pullback_live(), dipanggil live.py.
 
 Harga intraday dari Yahoo tertunda sekitar 15 menit. Ini pengingat, bukan perintah beli/jual.
 """
@@ -245,5 +249,269 @@ def intraday():
         print(f"{now:%H:%M}: {len(codes)} saham dipantau, belum ada yang menembus entry/SL/TP.")
 
 
+# ---------------------------------------------------------------- Pullback (saham kuat yang sedang pullback)
+# Data dari pullback.py (lihat spesifikasi_pullback.md bagian 7). Semua akses kolom memakai .get()
+# supaya alert tetap jalan walau ada kolom yang kosong/null.
+PB_FILES = {"close": BASE / "docs" / "data" / "pullback.json", "s1": BASE / "docs" / "data" / "pullback_s1.json"}
+PB_STATE = BASE / "data" / "alert_pullback.json"
+PB_EXIT = ("Kena TP", "Kena SL", "Kena SL, naik lagi")
+PB_AKTIF = ("Entry hari ini", "Entry baru")
+PB_POLA = ("Bullish Engulfing", "Hammer", "Inverted Hammer", "Piercing Line", "Bullish Harami",
+           "Morning Star", "Bullish Marubozu")
+RISIKO_RP = 1_000_000  # risiko per transaksi untuk hitung lot (sama dengan situs referensi)
+
+
+def num(x, d=1):
+    """Angka desimal gaya Indonesia (1,4); '-' bila kosong."""
+    return f"{x:.{d}f}".replace(".", ",") if isinstance(x, (int, float)) else "-"
+
+
+def load_pullback(session=None):
+    """Isi pullback.json / pullback_s1.json. Tanpa `session`: pilih snapshot yang paling baru dibuat."""
+    out = []
+    for s, f in PB_FILES.items():
+        if session and s != session:
+            continue
+        try:
+            m = json.loads(f.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        out.append((str((m.get("market") or {}).get("generated_at") or ""), m))
+    return max(out, key=lambda t: t[0])[1] if out else None
+
+
+def pb_labels(r):
+    lab = (["Syariah"] if r.get("syariah") else []) + (["⚠️ HSC"] if r.get("hsc") else [])
+    return (" · " + " · ".join(lab)) if lab else ""
+
+
+def pb_entry_text(r, tentative=False):
+    lot = lambda x: f" · {x} lot" if x else ""  # noqa: E731
+    vol = f" · volume {num(r.get('trig_vol_x'))}× rata-rata 5 hari" if r.get("trig_vol_x") is not None else ""
+    return (f"• <b>{r['code']}</b> {r.get('pattern') or '-'} · Ranking 3 Bulan {num(r.get('rs3m_x'), 0)} · "
+            f"Skor Momentum {num(r.get('rs_rating'), 0)}{vol}{pb_labels(r)}\n"
+            f"   ATR: entry {rp(r.get('atr_entry'))} · SL {rp(r.get('atr_sl'))} · TP {rp(r.get('atr_tp'))}{lot(r.get('atr_lot'))}\n"
+            f"   N-candle: beli di atas {rp(r.get('n_entry'))} · SL {rp(r.get('n_sl'))} · TP {rp(r.get('n_tp'))}{lot(r.get('n_lot'))}"
+            + (" · <i>candle belum tutup</i>" if tentative else ""))
+
+
+def pullback_daily(session="close"):
+    """Alert dari snapshot pullback (dipanggil workflow setelah pullback.py):
+    Entry hari ini yang baru, Kena TP / Kena SL hari ini; snapshot penutupan juga menyebut saham Menunggu trigger.
+    Status terkirim disimpan di data/alert_pullback.json ({kunci: tanggal}) agar Sesi 1 dan penutupan tidak dobel."""
+    m = load_pullback(session)
+    if not m:
+        print(f"{PB_FILES[session].name} belum ada; alert pullback dilewati.")
+        return
+    mk, rows = m.get("market") or {}, m.get("rows") or []
+    as_of = mk.get("as_of") or f"{dt.datetime.now(WIB):%Y-%m-%d}"
+    try:
+        state = json.loads(PB_STATE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        state = {}
+    batas = f"{dt.date.fromisoformat(as_of) - dt.timedelta(days=40)}"
+    state = {k: v for k, v in state.items() if v >= batas}  # buang riwayat lama
+    s1 = session == "s1"
+
+    entries = sorted((r for r in rows if r.get("status") == "Entry hari ini"), key=lambda r: -(r.get("rs3m_x") or 0))
+    baru, konfirmasi = [], []
+    for r in entries:
+        key = f"entry:{r['code']}:{r.get('signal_date')}"
+        if key in state:
+            continue
+        if not s1 and f"{key}:s1" in state:
+            konfirmasi.append(r["code"])
+        elif s1 and f"{key}:s1" in state:
+            continue
+        else:
+            baru.append(r)
+        state[key + (":s1" if s1 else "")] = as_of
+    batal = []
+    if not s1:  # entry yang terlihat di Sesi 1 tapi hilang di penutupan
+        kode_entry = {r["code"] for r in entries}
+        for k, v in list(state.items()):
+            if k.startswith("entry:") and k.endswith(":s1") and v == as_of:
+                code = k.split(":")[1]
+                if code not in kode_entry and f"batal:{code}:{as_of}" not in state:
+                    batal.append(code)
+                    state[f"batal:{code}:{as_of}"] = as_of
+
+    exits = []
+    for r in rows:
+        # status tetap "Entry baru" selama 5 hari; hasil posisi (SL/TP tetap metode ATR) ada di atr_trade
+        if r.get("atr_trade") not in PB_EXIT or r.get("atr_exit_date") != as_of:
+            continue
+        key = f"exit:{r['code']}:{r.get('signal_date')}"
+        if key in state:
+            continue
+        state[key] = as_of
+        tp = r["atr_trade"] == "Kena TP"
+        exits.append(f"• {'✅' if tp else '🔻'} <b>{r['code']}</b> {r['atr_trade']} "
+                     f"di {rp(r.get('atr_exit') or (r.get('atr_tp') if tp else r.get('atr_sl')))} "
+                     f"(entry {rp(r.get('atr_entry'))}, trigger {r.get('signal_date') or '-'})")
+
+    menunggu = sorted((r for r in rows if r.get("status") == "Menunggu trigger"), key=lambda r: -(r.get("rs3m_x") or 0))
+    ada_kabar = baru or konfirmasi or batal or exits
+    if not ada_kabar and s1:
+        print(f"Pullback {mk.get('session_label') or session} {as_of}: tidak ada entry/TP/SL baru.")
+    else:
+        lbl = mk.get("session_label") or ("Sesi 1" if s1 else "Penutupan")
+        lines = [f"📐 <b>PULLBACK IDX</b> · {lbl} {as_of}"]
+        if mk.get("ihsg_close") is not None:
+            lines.append(f"IHSG {rp(mk.get('ihsg_close'))} · {mk.get('regime') or '-'} "
+                         f"({num(mk.get('ihsg_dist'))}% dari MA50)")
+        lines += ["", f"🎯 <b>Entry hari ini ({len(baru)})</b>" + (" · <i>sementara, candle Sesi 1 belum tutup</i>" if s1 else "")]
+        lines += [pb_entry_text(r, s1) for r in baru] or ["Tidak ada yang baru."]
+        if konfirmasi:
+            lines.append("Terkonfirmasi di penutupan (sudah dikabarkan Sesi 1): " + ", ".join(konfirmasi))
+        if batal:
+            lines.append("⚠️ Batal di penutupan (syarat trigger tidak terpenuhi lagi): " + ", ".join(batal))
+        if exits:
+            lines += ["", "📊 <b>Update posisi</b>"] + exits
+        if not s1 and menunggu:
+            lines += ["", f"⏳ <b>Menunggu trigger ({len(menunggu)})</b>: "
+                      + ", ".join(f"{r['code']} ({r.get('watch_days_left') if r.get('watch_days_left') is not None else '-'})"
+                                  for r in menunggu[:15]) + (" …" if len(menunggu) > 15 else ""),
+                      "<i>Angka dalam kurung = sisa candle jendela trigger.</i>"]
+        lines += ["", f"Detail: {SITE_URL}",
+                  "<i>Data Yahoo Finance. Alat bantu riset, bukan rekomendasi beli/jual.</i>"]
+        send("\n".join(lines))
+    PB_STATE.parent.mkdir(exist_ok=True)
+    PB_STATE.write_text(json.dumps(dict(sorted(state.items())), indent=0), encoding="utf-8")
+
+
+def pb_pattern(bars):
+    """Pola candle bullish di candle terakhir. bars: list (open, high, low, close), terlama dulu, min 1 candle.
+    Dipakai bila pullback.py tidak menyediakan fungsi pola sendiri."""
+    o, h, l, c = bars[-1]
+    body, rng = abs(c - o), max(h - l, 1e-9)
+    up_sh, lo_sh = h - max(o, c), min(o, c) - l
+    p1 = bars[-2] if len(bars) >= 2 else None
+    p2 = bars[-3] if len(bars) >= 3 else None
+    green = c > o
+    if p1:
+        po, _, _, pc_ = p1
+        pbody = abs(pc_ - po)
+        p_red = pc_ < po
+        if p2 and p2[3] < p2[0] and abs(p2[3] - p2[0]) > 0 and pbody <= 0.5 * abs(p2[3] - p2[0]) \
+                and green and c > (p2[0] + p2[3]) / 2:
+            return "Morning Star"
+        if p_red and green and o <= pc_ and c >= po and body > pbody:
+            return "Bullish Engulfing"
+        if p_red and green and o < pc_ and (pc_ + po) / 2 < c < po:
+            return "Piercing Line"
+        if p_red and green and pbody > 0 and o >= pc_ and c <= po and body < pbody:
+            return "Bullish Harami"
+    if green and body >= 0.9 * rng:
+        return "Bullish Marubozu"
+    if body > 0 and lo_sh >= 2 * body and up_sh <= body:
+        return "Hammer"
+    if body > 0 and up_sh >= 2 * body and lo_sh <= body:
+        return "Inverted Hammer"
+    return None
+
+
+def _pb_pattern_fn():
+    """Fungsi pola dari pullback.py bila ada (nama yang dicoba di bawah); selain itu pb_pattern."""
+    try:
+        import pullback  # noqa: PLC0415
+        for name in ("detect_pattern", "bullish_pattern", "candle_pattern"):
+            fn = getattr(pullback, name, None)
+            if callable(fn):
+                return fn
+    except Exception:  # noqa: BLE001
+        pass
+    return None
+
+
+def _tick_round(p, arah):
+    try:
+        import vcp  # noqa: PLC0415
+        return vcp.up(p) if arah > 0 else vcp.down(p)
+    except Exception:  # noqa: BLE001
+        return round(p)
+
+
+def pullback_watch(pb):
+    """Kode yang dipantau live: Menunggu trigger + posisi Entry aktif."""
+    return sorted({r["code"] for r in (pb or {}).get("rows") or []
+                   if r.get("status") == "Menunggu trigger" or r.get("status") in PB_AKTIF})
+
+
+def pullback_live(pb, quotes, prev, now, sent):
+    """Cek intraday setup pullback (dipanggil live.py tiap siklus).
+    quotes: {kode: {"open","last","high","low","vol"}} candle hari ini; prev: {kode: [(o,h,l,c,v), ...]} candle
+    sebelum hari ini, terlama dulu. `sent` diperbarui: satu alert per saham per jenis per hari.
+    Return (pesan, sinyal per kode)."""
+    today = f"{now:%Y-%m-%d}"
+    frac = session_fraction(now)
+    pat_fn = _pb_pattern_fn()
+    msgs, sig = [], {}
+    for r in (pb or {}).get("rows") or []:
+        c, st = r.get("code"), r.get("status")
+        q = quotes.get(c)
+        if not q or st not in ("Menunggu trigger",) + PB_AKTIF:
+            continue
+        last, hi, lo = q["last"], q.get("high", q["last"]), q.get("low", q["last"])
+        if st in PB_AKTIF:
+            if (r.get("signal_date") or today) >= today:  # posisi baru dimulai candle berikutnya
+                continue
+            if r.get("atr_trade") in ("Kena SL", "Kena TP"):  # posisi sudah selesai (status tetap "Entry baru")
+                continue
+            sl, tp = r.get("atr_sl"), r.get("atr_tp")
+            ev = "kena_sl" if sl and lo <= sl else "kena_tp" if tp and hi >= tp else "berjalan"
+            sig[c] = {"ev": ev}
+            if ev != "berjalan" and f"pb_{ev}:{c}" not in sent:
+                sent.add(f"pb_{ev}:{c}")
+                msgs.append(f"🔻 <b>{c}</b> (pullback) menyentuh SL {rp(sl)} (harga {rp(last)}, low {rp(lo)}). Sesuai rencana: keluar."
+                            if ev == "kena_sl" else
+                            f"✅ <b>{c}</b> (pullback) menyentuh TP {rp(tp)} (harga {rp(last)}, high {rp(hi)}). Rencana: ambil untung.")
+            continue
+        # Menunggu trigger: candle hari ini hijau + pola bullish + laju volume >= 1,1x rata-rata 5 hari sebelumnya
+        o = q.get("open")
+        hist = prev.get(c) or []
+        if o is None or len(hist) < 5:
+            continue
+        avg5 = sum(b[4] for b in hist[-5:]) / 5
+        proj = q["vol"] / frac / avg5 if avg5 else None
+        bars = [tuple(b[:4]) for b in hist[-2:]] + [(o, hi, lo, last)]
+        pola = None
+        if pat_fn:
+            try:
+                import pandas as pd  # noqa: PLC0415
+                pola = pat_fn(pd.DataFrame(bars, columns=["Open", "High", "Low", "Close"]))
+            except Exception:  # noqa: BLE001
+                pola = None
+        pola = pola if pola in PB_POLA else pb_pattern(bars)
+        green = last > o
+        ok = bool(green and pola and proj is not None and proj >= 1.1 and (r.get("rs_rating") or 0) >= 70)
+        sig[c] = {"ev": "calon_trigger" if ok else "menunggu", "pola": pola,
+                  "pace": round(proj, 2) if proj is not None else None}
+        if ok and f"pb_calon:{c}" not in sent:
+            sent.add(f"pb_calon:{c}")
+            atr = r.get("atr")
+            lv = ""
+            if atr:
+                sl, tp = _tick_round(last - 1.5 * atr, -1), _tick_round(last + 3 * atr, 1)
+                lot = int(RISIKO_RP // ((last - sl) * 100)) if last > sl else None
+                lv = f"\n   Bila tutup di sini (ATR): entry ±{rp(last)} · SL {rp(sl)} · TP {rp(tp)}" + (f" · {lot} lot" if lot else "")
+            msgs.append(f"🔷 <b>{c}</b> calon entry trigger pullback: candle hijau, {pola}, laju volume diproyeksikan "
+                        f"{num(proj)}× rata-rata 5 hari (harga {rp(last)}, open {rp(o)}). Ranking 3 Bulan "
+                        f"{num(r.get('rs3m_x'), 0)} · Skor Momentum {num(r.get('rs_rating'), 0)}{pb_labels(r)}"
+                        f"{lv}\n   <i>Belum sah sampai candle tutup; sisa jendela {r.get('watch_days_left', '-')} candle.</i>")
+    return msgs, sig
+
+
+def pullback_alert_text(now, msgs):
+    return (f"📐 <b>ALERT PULLBACK</b> {now:%H:%M} WIB (harga tertunda ±15 menit)\n\n" + "\n\n".join(msgs)
+            + f"\n\n{SITE_URL}")
+
+
 if __name__ == "__main__":
-    intraday() if len(sys.argv) > 1 and sys.argv[1] == "intraday" else daily()
+    mode = sys.argv[1] if len(sys.argv) > 1 else ""
+    if mode == "intraday":
+        intraday()
+    elif mode == "pullback":
+        pullback_daily("s1" if "s1" in sys.argv[2:] else "close")
+    else:
+        daily()

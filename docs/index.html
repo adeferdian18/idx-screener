@@ -12,6 +12,7 @@
 :root{
   --bg:#E9EDF1; --surface:#F8FAFB; --ink:#172A46; --muted:#5C6B82; --line:#CBD3DD;
   --up:#0B8457; --down:#C33B2E; --accent:#9A6B0E; --accent-soft:#F1E3C2; --warn-soft:#F6DCD8; --good-soft:#D3EEE2;
+  --blue:#2F6FDB; --orange:#D46B12; --teal:#12968A;
   --font:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   color-scheme:light;
 }
@@ -19,12 +20,14 @@
   :root:not([data-theme="light"]){
     --bg:#0E1828; --surface:#15233A; --ink:#E3E9F1; --muted:#93A2B8; --line:#26384F;
     --up:#2FBF8A; --down:#F06A5B; --accent:#D9A63A; --accent-soft:#3A3020; --warn-soft:#3D2226; --good-soft:#173A31;
+    --blue:#6A9CF2; --orange:#F2924A; --teal:#3CC8B8;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0E1828; --surface:#15233A; --ink:#E3E9F1; --muted:#93A2B8; --line:#26384F;
   --up:#2FBF8A; --down:#F06A5B; --accent:#D9A63A; --accent-soft:#3A3020; --warn-soft:#3D2226; --good-soft:#173A31;
+    --blue:#6A9CF2; --orange:#F2924A; --teal:#3CC8B8;
   color-scheme:dark;
 }
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -285,6 +288,60 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
   .facts{justify-content:start;margin:0}
   .chart-box{height:420px}
 }
+/* ---------- Pullback: saham kuat yang sedang pullback ---------- */
+.pb-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.pb-top h2{margin:0}
+.pb-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.seg[hidden]{display:none}
+.pb-status{margin:8px 0 14px !important;font-size:15px !important;color:var(--ink) !important}
+.pb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.pb-card{display:flex;flex-direction:column;justify-content:flex-start;background:var(--bg);border:0;border-radius:10px;padding:12px 14px;text-align:left;cursor:pointer;min-width:0;border-top:3px solid var(--line)}
+.pb-card:hover{outline:1px solid var(--line)}
+.pb-card span{display:block;font-size:12px;color:var(--muted)}
+.pb-card b{display:block;font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.pb-card small{display:block;font-size:12px;color:var(--muted);line-height:1.4}
+.pb-card.c-blue{border-top-color:var(--blue)} .pb-card.c-warn{border-top-color:var(--accent)} .pb-card.c-good{border-top-color:var(--up)} .pb-card.c-bad{border-top-color:var(--down)}
+.pb-tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);margin:0 0 12px}
+.pb-tab{background:none;border:0;padding:8px 12px;font-weight:600;font-size:14px;color:var(--muted);border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.pb-tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--blue)}
+.pb-tab i{font-style:normal;font-weight:500;font-size:12px;background:var(--surface);border-radius:999px;padding:1px 7px;margin-left:4px}
+.pb-sel{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:4px 6px;font:inherit;font-size:14px}
+.pb-mute{color:var(--muted)}
+#pb-table td{vertical-align:middle}
+.pb-ok{color:var(--up);font-weight:700} .pb-no{color:var(--muted)}
+.pb-tag{display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;border-radius:4px;margin-left:4px;vertical-align:1px}
+.pb-tag.syr{background:var(--good-soft);color:var(--up)} .pb-tag.hsc{background:var(--warn-soft);color:var(--down)}
+.sc{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:5px;vertical-align:1px}
+.sc.s90{background:var(--up);color:var(--surface)} .sc.s70{background:var(--good-soft);color:var(--up)} .sc.s50{background:var(--bg);color:var(--muted)}
+.sc.s30{background:var(--accent-soft);color:var(--accent)} .sc.s0{background:var(--warn-soft);color:var(--down)}
+.mo{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px;margin-right:3px;background:var(--bg);color:var(--muted)}
+.mo-pos{color:var(--up)} .mo-x{color:var(--blue)} .mo-xd{color:var(--down)} .mo-top{background:var(--good-soft);color:var(--teal)} .mo-lead{background:var(--orange);color:var(--surface)} .mo-full{background:var(--up);color:var(--surface)}
+.st-blue{color:var(--blue)} .st-orange{color:var(--orange)}
+.lv-e2{color:var(--blue)}
+.pbc-info{font-size:12px;color:var(--muted);min-height:18px;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pbc-info b{color:var(--ink);font-weight:600}
+.pbc{background:var(--bg);border-radius:10px;overflow:hidden;margin-bottom:6px;touch-action:pan-y}
+.pbc svg{display:block;width:100%;height:auto}
+.pbc text{font-family:var(--font);font-size:11px;fill:var(--muted)}
+.pbc .gl{stroke:var(--line);stroke-width:1}
+.pbc .wick{stroke-width:1}
+.pbc .cu{fill:var(--up);stroke:var(--up)} .pbc .cd{fill:var(--down);stroke:var(--down)}
+.pbc .vb{fill:var(--muted);opacity:.45} .pbc .vt{fill:var(--blue)}
+.pbc .m-w{fill:var(--up)} .pbc .m-t{fill:var(--blue)} .pbc .m-l{fill:var(--orange)}
+.pbc .ln-e{stroke:var(--blue);stroke-width:1.5} .pbc .ln-sl{stroke:var(--down);stroke-width:1.5;stroke-dasharray:5 4} .pbc .ln-tp{stroke:var(--up);stroke-width:1.5;stroke-dasharray:5 4}
+.pbc .tg-e{fill:var(--blue)} .pbc .tg-sl{fill:var(--down)} .pbc .tg-tp{fill:var(--up)} .pbc text.tg{fill:var(--surface);font-weight:700}
+.pbc .rl{fill:none;stroke:var(--accent);stroke-width:1.6} .pbc .rm{fill:none;stroke:var(--muted);stroke-width:1.2;stroke-dasharray:4 3}
+.pbc .rh{fill:var(--teal)} .pbc .rx{fill:var(--bg);stroke:var(--teal);stroke-width:1.5}
+.pbc .xh{stroke:var(--ink);stroke-width:1;opacity:.35}
+.pb-lv td,.pb-lv th{padding:7px 10px}
+.pb-lv th{cursor:default}
+.faq h3{font-size:16px;margin:18px 0 6px} .faq p,.faq li{font-size:15px;max-width:75ch} .faq ul{padding-left:20px;margin:4px 0}
+.faq .warn{background:var(--warn-soft);border-radius:8px;padding:10px 14px;font-weight:600}
+@media (max-width:600px){
+  .pb-card b{font-size:22px}
+  .pb-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pb-cards .pb-card:last-child{grid-column:1 / -1}
+}
 @media (prefers-reduced-motion:reduce){.ruler-mark{transition:none}}
 </style>
 </head>
@@ -315,6 +372,7 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
 <main class="wrap">
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" aria-selected="true" data-tab="momentum">Momentum</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="pullback">Pullback</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisa">Analisa pasar</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="aksi">Aksi korporasi</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="insider">Orang dalam</button>
@@ -353,6 +411,34 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
       <div class="table-wrap"><table id="m-table"><thead></thead><tbody></tbody></table></div>
     </details>
     <p class="hint">RS Rating = persentil 1–99 kinerja 12 bulan berbobot (kuartal terakhir dibobot ganda) dibanding seluruh saham BEI. Ini Relative Strength, bukan RSI. RS Line = harga saham dibagi IHSG.</p>
+  </section>
+
+  <section class="panel" id="panel-pullback" hidden>
+    <div class="card">
+      <div class="pb-top">
+        <h2>Saham kuat yang sedang pullback</h2>
+        <div class="pb-actions"><span class="seg" id="pb-snap" aria-label="Snapshot data"></span><button class="chip" id="pb-faq">FAQ · cara hitung</button></div>
+      </div>
+      <p class="pb-status" id="pb-status">Memuat data pullback…</p>
+      <div class="pb-cards" id="pb-cards"></div>
+    </div>
+    <div class="pb-tabs" id="pb-tabs" role="tablist" aria-label="Kelompok saham pullback"></div>
+    <div class="toolbar">
+      <span class="seg" aria-label="Metode level harga"><button data-pbm="atr">ATR</button><button data-pbm="n">N-candle</button></span>
+      <span class="seg" aria-label="Cara keluar"><button data-pbmode="fixed">SL tetap</button><button data-pbmode="trail">Trailing stop</button></span>
+      <input class="search" id="pb-q" type="search" placeholder="Cari kode atau nama" aria-label="Cari saham pullback">
+    </div>
+    <div class="toolbar">
+      <label class="ck"><input type="checkbox" data-pbf="syariah"> Hanya syariah</label>
+      <label class="ck"><input type="checkbox" data-pbf="nohsc"> Sembunyikan HSC</label>
+      <label class="ck"><input type="checkbox" data-pbf="liquid"> Likuid (value ≥ Rp1 M)</label>
+      <label class="ck"><input type="checkbox" data-pbf="noext"> Sembunyikan extended</label>
+      <label class="ck">Volat. 5 hari <select class="pb-sel" data-pbf="vmin" aria-label="Volatilitas minimum"></select> – <select class="pb-sel" data-pbf="vmax" aria-label="Volatilitas maksimum"></select></label>
+      <button class="chip" id="pb-cols" aria-pressed="false">Tampilkan semua kolom</button>
+      <span class="hint" id="pb-count"></span>
+    </div>
+    <div class="table-wrap"><table id="pb-table"><thead></thead><tbody></tbody></table></div>
+    <p class="hint">Klik baris untuk grafik dan rincian. Ranking 3 Bulan dan Skor Momentum adalah kekuatan relatif terhadap IHSG (bukan RSI). Alat bantu analisis, bukan rekomendasi beli atau jual.</p>
   </section>
 
   <section class="panel" id="panel-analisa" hidden>
@@ -1272,6 +1358,469 @@ function openDetail(code){
     theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, hide_legend:false, allow_symbol_change:false});
 }
 
+/* ---------- Pullback: saham kuat yang sedang pullback ----------
+   Data dari pullback.py: data/pullback.json (penutupan), data/pullback_s1.json (sesi 1),
+   data/pullback_chart/KODE.json (grafik). Nama kolom mengikuti spesifikasi_pullback.md bagian 7. */
+const PB = { snap:null, sub:"trigger", sort:{key:"rs3m_x", dir:-1}, allCols:false,
+  method: store.get("pb-m") === "n" ? "n" : "atr", mode: store.get("pb-mode") === "trail" ? "trail" : "fixed",
+  f: (() => { try{ return JSON.parse(store.get("pb-f") || "{}") || {}; }catch{ return {}; } })(), chart:null };
+const PB_TRIG = ["Entry hari ini","Entry baru","Kena SL","Kena TP","Kena SL, naik lagi"];
+const PB_SNAP_LBL = {s1:"Sesi 1 (12:00)", close:"Penutupan"};
+const pbData = () => S.pb?.[PB.snap] || S.pb?.close || S.pb?.s1 || null;
+const pctN = (x, d=2) => isNum(x) ? (x>0?"+":x<0?"−":"") + fmt(Math.abs(x), d) + "%" : "–";       // nilai yang sudah dalam persen
+const tglTh = s => s ? new Date(s + "T00:00:00").toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"}) : "–";
+function scoreLbl(v){
+  if(!isNum(v)) return null;
+  return v >= 90 ? ["Pemimpin","s90"] : v >= 70 ? ["Kuat","s70"] : v >= 50 ? ["Netral","s50"] : v >= 30 ? ["Laggard","s30"] : ["Lemah","s0"];
+}
+function scoreHTML(v){
+  const l = scoreLbl(v);
+  return l ? `<b>${fmt(Math.round(v))}</b><span class="sc ${l[1]}">${l[0]}</span>` : "–";
+}
+// Hari bursa (Senin–Jumat) antara dua tanggal, cadangan bila lead_days_ago tidak ada
+function bdays(a, b){
+  if(!a || !b) return null;
+  let n = 0; const d = new Date(a + "T00:00:00"), e = new Date(b + "T00:00:00");
+  while(d < e){ d.setDate(d.getDate() + 1); if(d.getDay() % 6) n++; }
+  return n;
+}
+function pbLeadAgo(r){ return isNum(r.lead_days_ago) ? r.lead_days_ago : r.lead_date ? bdays(r.lead_date, pbData()?.market?.as_of) : null; }
+function pbTriggered(r){ return PB_TRIG.includes(r.status) && !(isNum(r.days_since_signal) && r.days_since_signal > 5); }
+// Keadaan posisi untuk metode (ATR / N-candle) dan cara keluar (SL tetap / trailing) yang dipilih
+function pbTrade(r, m = PB.method, mode = PB.mode){
+  if(!pbTriggered(r)) return null;
+  const e = r[m+"_entry"], sl = r[m+"_sl"], tp = r[m+"_tp"];
+  const float = () => isNum(e) && isNum(r.close) ? (r.close / e - 1) * 100 : null;
+  if(mode === "trail"){
+    const out = r[m+"_trail_out"] || "Berjalan", stop = r[m+"_trail"] ?? sl;
+    let pl = r[m+"_trail_pl"];
+    if(out === "Kena trailing"){
+      const ex = r[m+"_trail_exit"];
+      pl ??= isNum(ex) && isNum(e) ? (ex / e - 1) * 100 : null;
+      const win = isNum(pl) ? pl > 0 : false;
+      return {k: win ? "tp" : "sl", label: win ? "Keluar untung" : "Keluar rugi", pl, stop, exit:ex, date:r[m+"_trail_date"]};
+    }
+    if(out === "Kemungkinan sudah kena") return {k:"maybe", label:"Kemungkinan sudah kena", pl: pl ?? float(), stop};
+    if(out === "Belum terisi") return {k:"open", label:"Belum terisi", pl:null, stop};
+    return {k:"run", label:"Berjalan", pl: pl ?? float(), stop};
+  }
+  let st = typeof r[m+"_trade"] === "string" && /SL|TP|Berjalan|Belum/.test(r[m+"_trade"]) ? r[m+"_trade"] : null;
+  const ex = r[m+"_exit"];
+  if(!st && isNum(ex) && isNum(e)) st = isNum(tp) && ex >= tp ? "Kena TP" : "Kena SL";
+  // cadangan: kolom status dari mesin dihitung dengan level ATR
+  if(!st && m === "atr" && r.status !== "Entry hari ini" && r.status !== "Entry baru") st = r.status === "Kena TP" ? "Kena TP" : "Kena SL";
+  st ||= "Berjalan";
+  let pl = r[m+"_pl"];
+  if(/TP/.test(st)){ pl ??= isNum(tp) && isNum(e) ? (tp / e - 1) * 100 : null; return {k:"tp", label:"Kena TP", pl, stop:sl, exit: ex ?? tp, date:r[m+"_exit_date"]}; }
+  if(/SL/.test(st)){
+    pl ??= isNum(sl) && isNum(e) ? (sl / e - 1) * 100 : null;
+    const back = isNum(sl) && isNum(r.close) && r.close > sl;
+    return {k: back ? "back" : "sl", label: back ? "Kena SL, naik lagi" : "Kena SL", pl, stop:sl, exit: ex ?? sl, date:r[m+"_exit_date"]};
+  }
+  if(/Belum/.test(st)) return {k:"open", label:"Belum terisi", pl:null, stop:sl};
+  return {k:"run", label:"Berjalan", pl: pl ?? float(), stop:sl};
+}
+const PB_ST_CLS = {"Menunggu trigger":"st-warn", "Setup valid":"st-good", "Tidak ada sinyal":"st-mute", "Riwayat belum cukup":"st-mute"};
+function pbStatus(r){
+  const t = pbTrade(r);
+  if(!t) return {label: r.status || "–", c: PB_ST_CLS[r.status] || "st-mute"};
+  const base = r.days_since_signal === 0 || r.status === "Entry hari ini" ? "Entry hari ini" : "Entry baru";
+  if(t.k === "run") return {label: base, c:"st-blue"};
+  if(t.k === "open") return {label: base + " · belum terisi", c:"st-blue pb-mute"};
+  return {label: t.label, c: {tp:"st-good", sl:"st-bad", back:"st-orange", maybe:"st-orange"}[t.k]};
+}
+function pbMom(r){
+  const b = [];
+  if(r.rs_above_ma) b.push(["Positif","mo-pos","Garis Momentum di atas MA50-nya"]);
+  if(r.rs_cross === "Up") b.push(["Crossing ↑","mo-x","Garis Momentum memotong MA50 ke atas hari ini"]);
+  else if(r.rs_cross === "Down") b.push(["Crossing ↓","mo-xd","Garis Momentum memotong MA50 ke bawah hari ini"]);
+  if(r.rs_quality) b.push(["Puncak+","mo-top","Puncak 50 hari, harga naik, volume ≥ 1,2× dan likuid"]);
+  else if(r.rs_high) b.push(["Puncak","mo-top","Garis Momentum di titik tertinggi 50 hari"]);
+  if(r.rs_lead) b.push(["Duluan","mo-lead","Momentum Duluan: garis di puncak sebelum harga"]);
+  return b;
+}
+const pbMomScore = r => (r.rs_lead?8:0) + (r.rs_quality?4:0) + (r.rs_high?3:0) + (r.rs_cross==="Up"?2:0) + (r.rs_above_ma?1:0);
+const pbFull = r => !!(r.rs_above_ma && r.rs_high && r.rs_lead && r.rs_rating >= 70 && r.rs3m_x >= 70);
+const pbOk = (r, k) => typeof r[k+"_ok"] === "boolean" ? r[k+"_ok"]
+  : k === "p1" ? r.p1 < 1 : k === "p2" ? r.p2 > 1.05 : r.p3 > 3;
+function pbP(r, k){
+  const v = r[k];
+  if(!isNum(v)) return "–";
+  const s = k === "p3" ? fmt(v,1) + "%" : fmt(v, k === "p1" ? 3 : 2);
+  return pbOk(r, k) ? `${s} <span class="pb-ok" title="lolos">✓</span>` : `<span class="pb-no">${s}</span>`;
+}
+function pbLeft(r){
+  const n = r.watch_days_left ?? r.rewatch_days_left;
+  if(!isNum(n)) return "–";
+  if(PB.snap === "s1") return n <= 1 ? `<span class="st st-warn">Hari ini terakhir</span>` : `Hari ini + ${n - 1}`;
+  return `${n} hari`;
+}
+function pbLv(v, ref){ return isNum(v) ? fmt(v) + (isNum(ref) && ref ? ` <span class="hint">${pctN((v / ref - 1) * 100, 1)}</span>` : "") : "–"; }
+const PB_SUBS = [
+  ["trigger","Entry trigger", r => !!pbTrade(r)],
+  ["tp","Kena TP", r => pbTrade(r)?.k === "tp"],
+  ["sl","Kena SL", r => ["sl","back"].includes(pbTrade(r)?.k)],
+  ["antara","Antara SL & Entry", r => { const t = pbTrade(r), e = r[PB.method+"_entry"];
+    return !!t && ["run","back","maybe"].includes(t.k) && isNum(e) && isNum(t.stop) && r.close > t.stop && r.close < e; }],
+  ["wait","Menunggu trigger", r => r.status === "Menunggu trigger"],
+  ["lead","Momentum Duluan", r => !!r.rs_lead],   // sama dengan situs: Momentum Duluan HARI INI (market.lead_count)
+  ["setup","Setup valid", r => r.status === "Setup valid"],
+  ["all","Semua saham", () => true],
+];
+// [kunci, judul, isi sel, nilai urut, tampil: "core" | "extra" | fungsi(sub)]
+const PB_COLS = [
+  ["code","Kode", r => `<b>${esc(r.code)}</b>${r.syariah ? `<span class="pb-tag syr" title="Saham syariah (ISSI)">Syariah</span>` : ""}${r.hsc ? `<span class="pb-tag hsc" title="High Shareholding Concentration: kepemilikan terkonsentrasi">HSC</span>` : ""}`, r => r.code, "core"],
+  ["status","Status", r => { const s = pbStatus(r); return `<span class="st ${s.c}">${esc(s.label)}</span>`; }, r => pbStatus(r).label, "core"],
+  ["signal_date","Tgl trigger", r => tgl(r.signal_date), r => r.signal_date, s => !["wait","lead","setup"].includes(s)],
+  ["lead_date","Tgl Duluan", r => tgl(r.lead_date), r => r.lead_date, s => s === "lead"],
+  ["left","Sisa hari", pbLeft, r => r.watch_days_left ?? r.rewatch_days_left, s => s === "wait"],
+  ["chg","Close", r => `${fmt(r.close)} <span class="${isNum(r.chg) ? (r.chg>0?"up":r.chg<0?"down":"") : ""}">${pctN(r.chg)}</span>`, r => r.chg, "core"],
+  ["rs3m_x","Ranking 3 Bulan", r => scoreHTML(r.rs3m_x), r => r.rs3m_x, "core"],
+  ["rs_rating","Skor Momentum", r => scoreHTML(r.rs_rating), r => r.rs_rating, "core"],
+  ["p1","P1", r => pbP(r,"p1"), r => r.p1, "core"],
+  ["p2","P2", r => pbP(r,"p2"), r => r.p2, "core"],
+  ["p3","P3", r => pbP(r,"p3"), r => r.p3, "core"],
+  ["mom","Momentum", r => pbMom(r).map(([l,c,t]) => `<span class="mo ${c}" title="${esc(t)}">${l}</span>`).join("") || `<span class="pb-mute">–</span>`, pbMomScore, "core"],
+  ["adx","Tren (ADX)", r => r.trend ? `${esc(r.trend)} <span class="hint">${fmt(r.adx,1)}</span>` : "–", r => r.adx, "extra"],
+  ["pattern","Pola candle", r => esc(r.pattern || "–"), r => r.pattern, "extra"],
+  ["vol_ratio","Vol ×", r => isNum(r.vol_ratio) ? fmt(r.vol_ratio,2) + "×" : "–", r => r.vol_ratio, "extra"],
+  ["value_avg","Value", r => rp(r.value_avg), r => r.value_avg, "extra"],
+  ["ext_atr","Ext. ATR", r => isNum(r.ext_atr) ? fmt(r.ext_atr,2) + (r.extended ? ` <span class="badge">extended</span>` : "") : "–", r => r.ext_atr, "extra"],
+  ["entry","Entry", r => `<span class="lv-e2">${pbLv(r[PB.method+"_entry"])}</span>`, r => r[PB.method+"_entry"], "core"],
+  ["sl", () => PB.mode === "trail" ? "Stop trailing" : "SL", r => { const e = r[PB.method+"_entry"];
+    const v = PB.mode === "trail" ? (r[PB.method+"_trail"] ?? r[PB.method+"_sl"]) : r[PB.method+"_sl"];
+    return `<span class="lv-sl">${pbLv(v, e)}</span>`; }, r => PB.mode === "trail" ? r[PB.method+"_trail"] : r[PB.method+"_sl"], "core"],
+  ["tp","TP", r => `<span class="lv-tp">${pbLv(r[PB.method+"_tp"], r[PB.method+"_entry"])}</span>`, r => r[PB.method+"_tp"], () => PB.mode === "fixed"],
+  ["lot","Lot", r => fmt(r[PB.method+"_lot"]), r => r[PB.method+"_lot"], "extra"],
+  ["hasil","Hasil", r => { const t = pbTrade(r); if(!t) return "–"; if(t.k === "open") return `<span class="pb-mute">belum terisi</span>`;
+    return `<span class="${isNum(t.pl) ? (t.pl>0?"up":t.pl<0?"down":"") : ""}" title="${t.k === "run" || t.k === "maybe" ? "mengambang, dari harga terakhir" : "posisi selesai"}">${pctN(t.pl,1)}</span>`; },
+    r => pbTrade(r)?.pl, "core"],
+];
+function pbCols(){
+  return PB_COLS.filter(c => { const v = c[4];
+    return typeof v === "function" ? v(PB.sub) : v === "core" || PB.allCols; });
+}
+function pbFiltered(){
+  const d = pbData(); if(!d) return [];
+  const f = PB.f, q = ($("#pb-q").value || "").trim().toUpperCase();
+  return (d.rows || []).filter(r => {
+    if(q && !(r.code || "").includes(q) && !(r.name || "").toUpperCase().includes(q)) return false;
+    if(f.syariah && !r.syariah) return false;
+    if(f.nohsc && r.hsc) return false;
+    if(f.liquid && !(r.liquid ?? (r.value_avg >= 1e9))) return false;
+    if(f.noext && r.extended) return false;
+    if(f.vmin && !(r.p3 >= Number(f.vmin))) return false;
+    if(f.vmax && !(r.p3 <= Number(f.vmax))) return false;
+    return true;
+  });
+}
+function pbSorted(rows){
+  const col = PB_COLS.find(c => c[0] === PB.sort.key) || PB_COLS.find(c => c[0] === "rs3m_x"), dir = PB.sort.dir;
+  return rows.map(r => [col[3](r), r]).sort((a, b) => {
+    const x = a[0], y = b[0];
+    if(x == null && y == null) return 0; if(x == null) return 1; if(y == null) return -1;
+    return (typeof x === "string" ? x.localeCompare(y) : x - y) * dir || (b[1].rs3m_x ?? -1) - (a[1].rs3m_x ?? -1);
+  }).map(x => x[1]);
+}
+function pbSummary(d){
+  const rows = d.rows || [];
+  const trig = rows.filter(r => pbTriggered(r));
+  const today = trig.filter(r => r.days_since_signal === 0 || r.status === "Entry hari ini");
+  const past = trig.filter(r => !today.includes(r));
+  const by = {run:0, back:0, sl:0, tp:0, open:0, maybe:0};
+  past.forEach(r => by[pbTrade(r).k]++);
+  const cnt = s => rows.length > 20 || !isNum(d.counts?.[s]) ? rows.filter(r => r.status === s).length : d.counts[s];
+  return {today, past, by, wait: cnt("Menunggu trigger"), setup: cnt("Setup valid")};
+}
+function renderPbHead(){
+  const d = pbData(), has = {close:!!S.pb?.close, s1:!!S.pb?.s1};
+  const snap = $("#pb-snap");
+  snap.hidden = !(has.close && has.s1);
+  snap.innerHTML = has.close && has.s1 ? ["s1","close"].map(k => `<button data-pbsnap="${k}" aria-pressed="${PB.snap===k}" title="${esc(tglTh(S.pb[k].market?.as_of))}">${PB_SNAP_LBL[k]}</button>`).join("") : "";
+  if(!d){
+    $("#pb-status").innerHTML = `Data pullback belum ada. Jalankan <code>python pullback.py</code> (penutupan) atau <code>python pullback.py s1</code> (sesi 1) untuk membuat data/pullback.json.`;
+    $("#pb-cards").innerHTML = ""; return;
+  }
+  const m = d.market || {}, sm = pbSummary(d);
+  const lbl = m.session === "s1" ? `Sesi 1 ${tglTh(m.as_of)} (12:00)` : `Penutupan ${tglTh(m.as_of)}`;
+  const reg = m.regime === "Bullish" ? "up" : "down";
+  $("#pb-status").innerHTML = `<b>${esc(lbl)}</b>: IHSG <b class="${cls(m.ihsg_dist)}">${pctN(m.ihsg_dist)}</b> dari MA50, kondisi pasar <b class="${reg}">${esc(m.regime || "–")}</b>. `
+    + `<b>${sm.today.length}</b> saham memicu entry trigger ${m.session === "s1" ? "sejauh sesi 1" : "hari ini"}, dari ${fmt(m.universe)} saham.`
+    + (m.generated_at ? ` <span class="hint">Dihitung ${esc(ago(m.generated_at.replace(" WIB", "+07:00").replace(" ", "T")))}.</span>` : "");
+  const b = sm.by, how = PB.mode === "trail" ? "trailing" : "SL tetap", meth = PB.method === "n" ? "N-candle" : "ATR";
+  const parts = [[b.run + b.open + b.maybe, "masih jalan"], [b.back, "naik lagi"], [b.sl, PB.mode === "trail" ? "keluar rugi" : "kena SL"], [b.tp, PB.mode === "trail" ? "keluar untung" : "kena TP"]];
+  $("#pb-cards").innerHTML = `
+    <button class="pb-card c-blue" data-pbsub="trigger"><span>Entry trigger hari ini</span><b>${sm.today.length}</b><small>${esc(sm.today.slice(0,6).map(r => r.code).join(", ") || "belum ada")}</small></button>
+    <button class="pb-card c-blue" data-pbsub="trigger"><span>Entry trigger 1–5 hari lalu</span><b>${sm.past.length}</b><small>${parts.filter(p => p[0] || p[1] !== "naik lagi").map(([n, l]) => `${n} ${l}`).join(" · ")}<br>${meth}, ${how}</small></button>
+    <button class="pb-card c-warn" data-pbsub="wait"><span>Menunggu entry trigger</span><b>${fmt(sm.wait)}</b><small>dalam jendela 5 candle</small></button>
+    <button class="pb-card c-good" data-pbsub="setup"><span>Setup valid, jendela lewat</span><b>${fmt(sm.setup)}</b><small>tanpa trigger</small></button>
+    <div class="pb-card c-${reg === "up" ? "good" : "bad"}" style="cursor:default"><span>IHSG terhadap MA50</span><b class="${cls(m.ihsg_dist)}">${pctN(m.ihsg_dist)}</b><small>${fmt(m.ihsg_close,2)} vs MA50 ${fmt(m.ihsg_ma50,2)} · ${esc(m.regime || "–")}</small></div>`;
+}
+function renderPbTable(){
+  const t = $("#pb-table"), d = pbData();
+  document.querySelectorAll("[data-pbm]").forEach(b => b.setAttribute("aria-pressed", b.dataset.pbm === PB.method));
+  document.querySelectorAll("[data-pbmode]").forEach(b => b.setAttribute("aria-pressed", b.dataset.pbmode === PB.mode));
+  $("#pb-cols").setAttribute("aria-pressed", PB.allCols);
+  $("#pb-cols").textContent = PB.allCols ? "Kolom ringkas" : "Tampilkan semua kolom";
+  const base = pbFiltered();
+  $("#pb-tabs").innerHTML = PB_SUBS.map(([k, l, fn]) => `<button class="pb-tab" role="tab" data-pbsub="${k}" aria-selected="${PB.sub===k}">${l}<i>${d ? base.filter(fn).length : 0}</i></button>`).join("");
+  const cols = pbCols();
+  t.tHead.innerHTML = "<tr>" + cols.map(([k, l]) => `<th data-pk="${k}" ${PB.sort.key===k ? `aria-sort="${PB.sort.dir>0?"ascending":"descending"}"` : ""}>${typeof l === "function" ? l() : l}</th>`).join("") + "</tr>";
+  if(!d){ t.tBodies[0].innerHTML = ""; $("#pb-count").textContent = ""; return; }
+  const fn = PB_SUBS.find(s => s[0] === PB.sub)[2];
+  const rows = pbSorted(base.filter(fn));
+  $("#pb-count").textContent = `${rows.length} saham`;
+  const show = rows.slice(0, 400);
+  t.tBodies[0].innerHTML = rows.length ? show.map(r => `<tr data-pb="${esc(r.code)}">` + cols.map(([k,,f]) => `<td>${f(r)}</td>`).join("") + "</tr>").join("")
+      + (rows.length > show.length ? `<tr><td colspan="${cols.length}" style="text-align:left" class="hint">${rows.length - show.length} saham lain disembunyikan, gunakan pencarian atau filter.</td></tr>` : "")
+    : `<tr><td colspan="${cols.length}" style="text-align:left;white-space:normal">Tidak ada saham di kelompok ini${Object.values(PB.f).some(Boolean) ? " dengan filter yang aktif" : ""}.</td></tr>`;
+}
+function renderPullback(){
+  if(S.pb && !(PB.snap && S.pb[PB.snap])){
+    const c = S.pb.close, s = S.pb.s1;
+    PB.snap = c && s ? ((s.market?.generated_at || "") > (c.market?.generated_at || "") ? "s1" : "close") : c ? "close" : s ? "s1" : null;
+  }
+  renderPbHead(); renderPbTable();
+}
+function pbInitFilters(){
+  const opt = (xs, v) => `<option value="">–</option>` + xs.map(x => `<option value="${x}" ${String(v)===String(x)?"selected":""}>${x}%</option>`).join("");
+  $('[data-pbf="vmin"]').innerHTML = opt([4,5,6,7,8,9,10], PB.f.vmin);
+  $('[data-pbf="vmax"]').innerHTML = opt([7,8,9,10,11,12,13,14,15], PB.f.vmax);
+  document.querySelectorAll('input[data-pbf]').forEach(i => i.checked = !!PB.f[i.dataset.pbf]);
+}
+async function loadPullback(force){
+  if(!force && S.pbAt && Date.now() - S.pbAt < 5 * 60_000) return false;
+  const [c, s1] = await Promise.all([getJSON("pullback"), getJSON("pullback_s1")]);
+  S.pbAt = Date.now();
+  const g = x => x?.market?.generated_at || (x ? "?" : "");
+  const changed = !S.pb || g(c) !== g(S.pb.close) || g(s1) !== g(S.pb.s1);
+  S.pb = {close:c, s1};
+  return changed;
+}
+
+/* Grafik pullback (SVG buatan sendiri): candle + penanda, volume, Garis Momentum */
+function pbDrawChart(){
+  const box = $("#pb-chart"), info = $("#pb-chart-info"), c = PB.chart;
+  if(!box || !c) return;
+  const {d, r} = c, bars = (d.bars || []).filter(b => isNum(b[4]));
+  if(bars.length < 2){ box.innerHTML = `<p class="hint" style="padding:12px">Data grafik belum cukup.</p>`; return; }
+  const W = Math.max(300, Math.round(box.clientWidth || 640)), H = W < 560 ? 380 : 470;
+  const padL = 6, padR = 58, top = 12, gap = 10, axisH = 18;
+  const inner = H - top - axisH - gap * 2, hP = Math.round(inner * .6), hV = Math.round(inner * .14), hM = inner - hP - hV;
+  const yP0 = top, yV0 = yP0 + hP + gap, yM0 = yV0 + hV + gap;
+  const n = bars.length, pw = W - padL - padR, slot = pw / n, bw = Math.max(1, Math.min(10, slot * .66));
+  const X = i => padL + slot * (i + .5);
+  const m = PB.method, trail = PB.mode === "trail";
+  const lv = [["Entry", r?.[m+"_entry"], "e"], [trail ? "Trail" : "SL", trail ? (r?.[m+"_trail"] ?? r?.[m+"_sl"]) : r?.[m+"_sl"], "sl"], ["TP", trail ? null : r?.[m+"_tp"], "tp"]].filter(x => isNum(x[1]));
+  let lo = Math.min(...bars.map(b => b[3])), hi = Math.max(...bars.map(b => b[2]));
+  lv.forEach(([, v]) => { lo = Math.min(lo, v); hi = Math.max(hi, v); });
+  const pad = (hi - lo) * .1 || hi * .05 || 1; lo -= pad; hi += pad;
+  const YP = v => yP0 + (hi - v) / (hi - lo) * hP;
+  const f1 = x => x.toFixed(1);
+  const idx = Object.fromEntries(bars.map((b, i) => [b[0], i]));
+  const mk = d.marks || {}, set = k => new Set((mk[k] || []).filter(t => t in idx));
+  const sW = set("watch"), sT = set("trigger"), sL = set("lead"), sH = set("rs_high"), sX = set("rs_cross");
+  const o = [];
+  // grid & sumbu harga
+  const step = (() => { const raw = (hi - lo) / 4, p = 10 ** Math.floor(Math.log10(raw)), q = raw / p; return (q < 1.5 ? 1 : q < 3 ? 2 : q < 7 ? 5 : 10) * p; })();
+  for(let v = Math.ceil(lo / step) * step; v <= hi; v += step){
+    const y = f1(YP(v));
+    o.push(`<line class="gl" x1="${padL}" x2="${W - padR}" y1="${y}" y2="${y}"/><text x="${W - padR + 6}" y="${+y + 4}">${fmt(v, step < 1 ? 1 : 0)}</text>`);
+  }
+  [yV0 - gap / 2, yM0 - gap / 2].forEach(y => o.push(`<line class="gl" x1="${padL}" x2="${W - padR}" y1="${y}" y2="${y}"/>`));
+  let pm = "";
+  bars.forEach((b, i) => { const mo = b[0].slice(0, 7);
+    if(mo !== pm && i){ const x = f1(X(i)); o.push(`<line class="gl" x1="${x}" x2="${x}" y1="${top}" y2="${H - axisH}" opacity=".5"/><text x="${+x + 3}" y="${H - 5}">${new Date(b[0] + "T00:00:00").toLocaleDateString("id-ID",{month:"short"})}</text>`); }
+    pm = mo; });
+  // candle
+  bars.forEach((b, i) => {
+    const [, op, h, l, cl] = b, up = cl >= op, x = X(i), c2 = up ? "cu" : "cd";
+    const y1 = YP(Math.max(op, cl)), y2 = YP(Math.min(op, cl));
+    o.push(`<line class="wick ${c2}" x1="${f1(x)}" x2="${f1(x)}" y1="${f1(YP(h))}" y2="${f1(YP(l))}"/><rect class="${c2}" x="${f1(x - bw / 2)}" y="${f1(y1)}" width="${f1(bw)}" height="${f1(Math.max(1, y2 - y1))}"/>`);
+  });
+  // garis level
+  const tgs = [];
+  lv.forEach(([lbl, v, k]) => { const y = YP(v);
+    o.push(`<line class="ln-${k}" x1="${padL}" x2="${W - padR}" y1="${f1(y)}" y2="${f1(y)}"/>`);
+    tgs.push([y, lbl, v, k]); });
+  tgs.sort((a, b) => a[0] - b[0]).forEach((t, i, a) => { if(i && t[0] - a[i-1][0] < 15) t[0] = a[i-1][0] + 15; });
+  tgs.forEach(([y, lbl, v, k]) => o.push(`<rect class="tg-${k}" x="${W - padR + 1}" y="${f1(y - 7)}" width="${padR - 2}" height="14" rx="3"/><text class="tg" x="${W - padR + 4}" y="${f1(y + 4)}">${fmt(v)}</text>`));
+  // penanda: ▲ watchlist di bawah, ◆ trigger dan ● Momentum Duluan di atas
+  bars.forEach((b, i) => {
+    const x = X(i), s = Math.max(4, Math.min(6, slot * .5));
+    if(sW.has(b[0])){ const y = YP(b[3]) + 6; o.push(`<polygon class="m-w" points="${f1(x)},${f1(y)} ${f1(x - s)},${f1(y + s * 1.6)} ${f1(x + s)},${f1(y + s * 1.6)}"><title>Watchlist ${tgl(b[0])}</title></polygon>`); }
+    let y = YP(b[2]) - 6;
+    if(sT.has(b[0])){ const cy = y - s; o.push(`<polygon class="m-t" points="${f1(x)},${f1(cy - s)} ${f1(x + s)},${f1(cy)} ${f1(x)},${f1(cy + s)} ${f1(x - s)},${f1(cy)}"><title>Entry trigger ${tgl(b[0])}</title></polygon>`); y -= s * 2 + 3; }
+    if(sL.has(b[0])) o.push(`<circle class="m-l" cx="${f1(x)}" cy="${f1(y - s)}" r="${f1(s * .85)}"><title>Momentum Duluan ${tgl(b[0])}</title></circle>`);
+  });
+  // volume
+  const vmax = Math.max(...bars.map(b => b[5] || 0)) || 1;
+  o.push(`<text x="${padL + 4}" y="${yV0 + 11}">Volume</text>`);
+  bars.forEach((b, i) => { const h = (b[5] || 0) / vmax * (hV - 2);
+    o.push(`<rect class="${sT.has(b[0]) ? "vt" : "vb"}" x="${f1(X(i) - bw / 2)}" y="${f1(yV0 + hV - h)}" width="${f1(bw)}" height="${f1(Math.max(0, h))}"/>`); });
+  // Garis Momentum (rl) dan MA50-nya (rm), tanpa angka sumbu
+  const mv = bars.flatMap(b => [b[8], b[9]]).filter(isNum);
+  if(mv.length){
+    let a = Math.min(...mv), z = Math.max(...mv); const pz = (z - a) * .12 || a * .05 || 1; a -= pz; z += pz;
+    const YM = v => yM0 + (z - v) / (z - a) * hM;
+    const path = k => { let s = "", pen = false; bars.forEach((b, i) => { if(isNum(b[k])){ s += `${pen ? "L" : "M"}${f1(X(i))},${f1(YM(b[k]))}`; pen = true; } else pen = false; }); return s; };
+    o.push(`<path class="rm" d="${path(9)}"/><path class="rl" d="${path(8)}"/>`);
+    bars.forEach((b, i) => { if(!isNum(b[8])) return; const x = f1(X(i)), y = f1(YM(b[8]));
+      if(sH.has(b[0])) o.push(`<circle class="rh" cx="${x}" cy="${y}" r="3"><title>Momentum Puncak ${tgl(b[0])}</title></circle>`);
+      if(sX.has(b[0])) o.push(`<circle class="rx" cx="${x}" cy="${y}" r="4"><title>Momentum Crossing ${tgl(b[0])}</title></circle>`); });
+  }
+  o.push(`<text x="${padL + 4}" y="${yM0 + 11}">Garis Momentum (harga ÷ IHSG) & MA50</text>`);
+  o.push(`<line class="xh" id="pb-xh" x1="0" x2="0" y1="${top}" y2="${H - axisH}" visibility="hidden"/><rect id="pb-hit" x="${padL}" y="${top}" width="${pw}" height="${H - axisH - top}" fill="transparent"/>`);
+  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Grafik harga ${esc(d.code || "")}">${o.join("")}</svg>`;
+  const show = i => { const b = bars[i];
+    info.innerHTML = `<b>${tglTh(b[0])}</b> · O ${fmt(b[1])} H ${fmt(b[2])} L ${fmt(b[3])} C <b>${fmt(b[4])}</b> · Vol ${fmt((b[5] || 0) / 100)} lot · Skor ${b[6] ?? "–"} · Ranking ${isNum(b[7]) ? fmt(b[7], 1) : "–"}`
+      + [[sW,"▲ watchlist"],[sT,"◆ trigger"],[sL,"● Duluan"]].filter(([s]) => s.has(b[0])).map(([, l]) => ` · ${l}`).join(""); };
+  show(n - 1);
+  const svg = box.querySelector("svg"), xh = $("#pb-xh");
+  const move = ev => { const rc = svg.getBoundingClientRect(), x = (ev.clientX - rc.left) * W / rc.width;
+    const i = Math.max(0, Math.min(n - 1, Math.floor((x - padL) / slot)));
+    xh.setAttribute("x1", f1(X(i))); xh.setAttribute("x2", f1(X(i))); xh.setAttribute("visibility", "visible"); show(i); };
+  svg.addEventListener("pointermove", move); svg.addEventListener("pointerdown", move);
+  svg.addEventListener("pointerleave", () => { xh.setAttribute("visibility", "hidden"); show(n - 1); });
+}
+function pbLevelTable(r){
+  const row = (m, name) => {
+    const f = pbTrade(r, m, "fixed"), t = pbTrade(r, m, "trail");
+    const st = x => !x ? "–" : `${esc(x.label)}${isNum(x.pl) && x.k !== "open" ? ` <span class="${x.pl>0?"up":x.pl<0?"down":""}">${pctN(x.pl,1)}</span>` : ""}`;
+    return `<tr><td>${name}</td><td class="lv-e2">${fmt(r[m+"_entry"])}</td><td class="lv-sl">${fmt(r[m+"_sl"])}</td><td class="lv-tp">${fmt(r[m+"_tp"])}</td><td>${fmt(r[m+"_lot"])}</td><td style="text-align:left">${st(f)}</td><td class="lv-sl">${fmt(r[m+"_trail"])}</td><td style="text-align:left">${st(t)}</td></tr>`;
+  };
+  return `<div class="table-wrap" style="background:var(--bg)"><table class="pb-lv"><thead><tr><th>Metode</th><th>Entry</th><th>SL</th><th>TP</th><th>Lot</th><th>SL tetap</th><th>Stop trailing</th><th>Trailing</th></tr></thead>
+    <tbody>${row("atr","ATR")}${row("n","N-candle")}</tbody></table></div>`;
+}
+async function pbDetail(code){
+  const r = (pbData()?.rows || []).find(x => x.code === code);
+  if(!r) return;
+  const s = pbStatus(r), sc = (v, l) => scoreLbl(v)?.[0] || l;
+  $("#dlg-title").innerHTML = `${esc(code)}${r.syariah ? `<span class="pb-tag syr">Syariah</span>` : ""}${r.hsc ? `<span class="pb-tag hsc">HSC</span>` : ""}`;
+  $("#dlg-sub").innerHTML = `${esc([r.name, r.board ? "Papan " + r.board : null].filter(Boolean).join(" · "))} · <span class="st ${s.c}">${esc(s.label)}</span>`;
+  const ck = (lbl, ok, val) => `<li><span>${lbl}</span><span>${val} ${ok === true ? `<span class="ok">✓ lolos</span>` : ok === false ? `<span class="no">✗</span>` : ""}</span></li>`;
+  const mom = pbMom(r), full = pbFull(r);
+  const trig = r.signal_date ? `<p class="brief">Entry trigger <b>${tglTh(r.signal_date)}</b>${isNum(r.days_since_signal) ? ` (${r.days_since_signal ? r.days_since_signal + " hari bursa lalu" : "hari ini"})` : ""}: candle hijau${r.pattern ? ` berpola <b>${esc(r.pattern)}</b>` : ""}, volume ${isNum(r.trig_vol_x) ? fmt(r.trig_vol_x,2) + "×" : "–"} rata-rata 5 hari sebelumnya, Skor Momentum saat itu ${r.trig_rs ?? "–"}.</p>`
+    : r.status === "Menunggu trigger" ? `<p class="brief">Setup valid, menunggu candle trigger. Sisa jendela: ${pbLeft(r)}.</p>` : "";
+  const cells = [
+    ["Close", `${fmt(r.close)} <span class="${cls(r.chg)}">${pctN(r.chg)}</span>`], ["ATR(5)", fmt(r.atr, 1)],
+    ["Tren (ADX 14)", `${esc(r.trend || "–")} · ${fmt(r.adx,1)}`], ["DI+ / DI−", `${fmt(r.di_plus,1)} / ${fmt(r.di_minus,1)}`],
+    ["Pola candle terakhir", esc(r.pattern || "–")], ["Volume vs 5 hari", isNum(r.vol_ratio) ? fmt(r.vol_ratio,2) + "×" : "–"],
+    ["Value rata-rata", rp(r.value_avg) + (r.liquid ? "" : ` <span class="badge">tidak likuid</span>`)], ["Value hari ini", rp(r.value_today)],
+    ["Jarak (ATR)", isNum(r.ext_atr) ? fmt(r.ext_atr,2) + (r.extended ? ` <span class="badge">extended</span>` : "") : "–"],
+    ["Return 3 bulan", pctN(r.ret3m,1)], ["Momentum mentah", pctN(r.raw_mom,1)],
+    ["Momentum Duluan terakhir", r.lead_date ? tgl(r.lead_date) + (isNum(pbLeadAgo(r)) ? ` (${pbLeadAgo(r)} hr)` : "") : "–"],
+  ];
+  const inMom = (S.momentum?.rows || []).some(x => x.kode === code);
+  $("#dlg-body").innerHTML = `<div class="pbc-info" id="pb-chart-info"></div><div class="pbc" id="pb-chart"><p class="hint" style="padding:12px">Memuat grafik…</p></div>
+    <div class="legend"><span><b class="up">▲</b> watchlist</span><span><b class="st-blue">◆</b> entry trigger</span><span><b class="st-orange">●</b> Momentum Duluan</span>
+      <span><i style="background:var(--blue)"></i>Entry</span><span><i style="background:var(--down)"></i>${PB.mode === "trail" ? "Stop trailing" : "SL"}</span>${PB.mode === "trail" ? "" : `<span><i style="background:var(--up)"></i>TP</span>`}
+      <span><i style="background:var(--accent)"></i>Garis Momentum</span><span><b style="color:var(--teal)">●</b> Puncak · ○ Crossing</span><span>Level: ${PB.method === "n" ? "N-candle" : "ATR"}, ${PB.mode === "trail" ? "trailing" : "SL tetap"}</span></div>
+    ${trig}
+    <h3>Setup (hari terakhir)</h3>
+    <ul class="checks">
+      ${ck("P1 Pullback: close ÷ rata-rata 5 hari &lt; 1", pbOk(r,"p1"), fmt(r.p1,3))}
+      ${ck("P2 Performa 50 hari vs IHSG &gt; 1,05", pbOk(r,"p2"), fmt(r.p2,2))}
+      ${ck("P3 Volatilitas ATR(5) &gt; 3%", pbOk(r,"p3"), isNum(r.p3) ? fmt(r.p3,1) + "%" : "–")}
+      ${ck("Ranking 3 Bulan ≥ 70", r.rs3m_ok ?? (r.rs3m_x >= 70), `${fmt(r.rs3m_x,0)} ${sc(r.rs3m_x, "")}`)}
+      ${ck("Skor Momentum ≥ 70 (syarat trigger)", r.rs_ok ?? (r.rs_rating >= 70), `${r.rs_rating ?? "–"} ${sc(r.rs_rating, "")}`)}
+    </ul>
+    <h3>Momentum</h3>
+    <p>${mom.map(([l, c, t]) => `<span class="mo ${c}" title="${esc(t)}">${l}</span>`).join("") || `<span class="hint">Garis Momentum di bawah MA50.</span>`}${full ? `<span class="mo mo-full" title="Positif + Puncak + Duluan + Skor ≥ 70 + Ranking ≥ 70">Momentum Penuh</span>` : ""}</p>
+    <h3>Level harga & hasil</h3>
+    ${pbLevelTable(r)}
+    <p class="hint">Lot = risiko sekitar Rp1 juta per transaksi (selisih entry dan SL × 100 lembar). ${pbTriggered(r) ? "" : "Belum ada trigger: level dihitung dari candle terakhir sebagai gambaran."}</p>
+    <h3>Angka</h3>
+    <div class="grid">${cells.map(([l, v]) => `<div class="cell"><span>${l}</span><b>${v}</b></div>`).join("")}</div>
+    <p class="hint">Data ${esc(pbData()?.market?.session_label || "")} ${esc(tglTh(pbData()?.market?.as_of))}. ${inMom ? `<a href="#" data-mcode="${esc(code)}">Buka di tab Momentum</a> · ` : ""}Alat bantu analisis, bukan rekomendasi beli atau jual.</p>`;
+  $("#dlg-body").scrollTop = 0; $("#dlg").showModal();
+  PB.chart = null;
+  const d = await getJSON("pullback_chart/" + code);
+  if($("#dlg-title").textContent.slice(0, code.length) !== code || !$("#pb-chart")) return;
+  if(!d){ $("#pb-chart").innerHTML = `<p class="hint" style="padding:12px">Grafik belum tersedia untuk ${esc(code)} (hanya dibuat untuk saham yang punya sinyal).</p>`; return; }
+  PB.chart = {d, r}; pbDrawChart();
+}
+function pbFaq(){
+  $("#dlg-title").textContent = "FAQ · cara hitung";
+  $("#dlg-sub").textContent = "Setup \"saham kuat yang sedang pullback\"";
+  $("#dlg-body").innerHTML = `<div class="faq">
+    <p class="warn">Alat bantu analisis, bukan rekomendasi beli atau jual. Keputusan dan risikonya tetap di tangan kamu.</p>
+    <h3>Idenya apa?</h3>
+    <p>Mencari saham yang beberapa bulan terakhir lebih kuat dari IHSG, lalu sedang turun sebentar (pullback). Saat pullback itu selesai dan muncul candle pembalikan dengan volume, itulah titik masuk yang dicari: harga lebih murah dibanding mengejar saat sudah naik tinggi.</p>
+    <h3>Tiga poin setup</h3>
+    <ul>
+      <li><b>P1 Pullback</b>: harga penutupan dibagi rata-rata 5 hari. Di bawah 1 berarti harga sedang di bawah rata-rata pendeknya.</li>
+      <li><b>P2 Performa</b>: kenaikan saham 50 hari dibanding kenaikan IHSG di periode yang sama (dalam bentuk rasio). Harus di atas 1,05, artinya saham setidaknya 5% lebih baik dari indeks.</li>
+      <li><b>P3 Volatilitas</b>: rata-rata rentang harian 5 hari (ATR 5) sebagai persen harga. Harus di atas 3% supaya ada ruang gerak. Filter "Volat. 5 hari" di tabel hanya menyaring tampilan, tidak mengubah sinyal.</li>
+    </ul>
+    <h3>Ranking 3 Bulan dan Skor Momentum</h3>
+    <p><b>Ranking 3 Bulan</b> membandingkan return 63 hari bursa sebuah saham dengan semua saham lain pada hari yang sama, lalu diubah ke skala 0–100. Setup baru dihitung bila nilainya minimal 70. Tabel diurutkan dari ranking ini.</p>
+    <p><b>Skor Momentum</b> melihat selisih return 63 hari saham dengan IHSG, lalu membandingkan selisih hari ini dengan riwayat saham itu sendiri selama 63 hari (persentil). Skor tinggi berarti keunggulannya atas IHSG sedang di dekat level terbaiknya. Trigger hanya sah bila skor minimal 70. Butuh sekitar 6 bulan data; saham yang lebih baru diberi status "Riwayat belum cukup".</p>
+    <p>Label keduanya: 90–100 Pemimpin, 70–89 Kuat, 50–69 Netral, 30–49 Laggard, 0–29 Lemah. Keduanya kekuatan relatif, bukan RSI.</p>
+    <h3>Garis Momentum</h3>
+    <p>Garis = harga saham dibagi IHSG, dengan MA50 dari garis itu. Hanya informasi tambahan, bukan syarat setup.</p>
+    <ul>
+      <li><b>Positif</b>: garis di atas MA50-nya.</li>
+      <li><b>Crossing</b>: garis memotong MA50 pada hari itu (○ di grafik).</li>
+      <li><b>Puncak</b>: garis di titik tertinggi 50 hari (● hijau-toska). <b>Puncak+</b> bila hari itu harga juga naik, volume minimal 1,2× rata-rata 5 hari sebelumnya, dan sahamnya likuid.</li>
+      <li><b>Duluan</b>: garis sudah di puncak padahal harga sendiri belum di titik tertinggi 50 hari, dan hari itu tidak turun (● oranye). Sering muncul sebelum harga menyusul.</li>
+      <li><b>Momentum Penuh</b>: Positif, Puncak dan Duluan sekaligus, ditambah Skor dan Ranking minimal 70.</li>
+    </ul>
+    <h3>Dari setup sampai entry</h3>
+    <ul>
+      <li>Hari pertama P1, P2, P3 dan Ranking terpenuhi bersamaan menjadi <b>watchlist</b> (▲ hijau).</li>
+      <li>Setelah itu ada jendela 5 candle (<b>Menunggu trigger</b>, kolom Sisa hari). Candle watchlist sendiri tidak dihitung.</li>
+      <li><b>Entry trigger</b> (◆ biru) adalah candle di dalam jendela yang hijau, volumenya minimal 1,1× rata-rata 5 hari sebelumnya, membentuk pola bullish (Bullish Engulfing, Hammer, Inverted Hammer, Piercing Line, Bullish Harami, Morning Star, Bullish Marubozu), dan Skor Momentum hari itu minimal 70. Hari yang berstatus Momentum Duluan tidak dihitung sebagai trigger.</li>
+      <li>Jendela habis tanpa trigger: statusnya <b>Setup valid</b> (jendela lewat). Setelah posisi selesai, watchlist baru boleh terbentuk lagi.</li>
+    </ul>
+    <h3>Level harga</h3>
+    <ul>
+      <li><b>ATR</b>: entry di harga penutupan candle trigger, SL 1,5× ATR(5) di bawahnya, TP 3× ATR(5) di atasnya.</li>
+      <li><b>N-candle</b>: entry di high tertinggi 2 candle terakhir (order beli yang baru terisi kalau harga menembusnya, sebelum itu "belum terisi"), SL di low terendah 2 candle terakhir, TP 2× jarak entry–SL.</li>
+      <li><b>Trailing stop</b>: stop awal = SL, lalu naik mengikuti high tertinggi sejak entry dengan jarak sebesar risiko awal. Stop tidak pernah turun dan tidak ada TP. Kenaikan stop berlaku mulai candle berikutnya; kalau harga dibuka di bawah stop, dianggap keluar di harga pembukaan.</li>
+      <li><b>Lot</b> dihitung supaya kerugian bila kena SL sekitar Rp1 juta. Semua level dibulatkan ke fraksi harga BEI.</li>
+      <li>Hasil dicek dari high dan low harian setelah trigger. Bila SL dan TP tersentuh di hari yang sama, dianggap SL lebih dulu (konservatif). "Kena SL, naik lagi" (oranye) berarti sempat kena SL tapi harga terakhir sudah di atas SL lagi.</li>
+    </ul>
+    <h3>Sesi 1 dan Penutupan</h3>
+    <p>Data dihitung dua kali per hari bursa: setelah sesi 1 (sekitar 12:05 WIB) dan setelah penutupan (sekitar 16:30 WIB). Di snapshot Sesi 1 candle hari ini belum selesai, jadi trigger bisa berubah atau batal saat penutupan. Di snapshot ini kolom Sisa hari menulis "Hari ini terakhir" bila jendela habis hari ini.</p>
+    <h3>Kolom lain</h3>
+    <ul>
+      <li><b>Tren (ADX)</b>: ADX(14) di bawah 25 lemah, 25–40 kuat, di atas 40 sangat kuat; arah naik bila DI+ di atas DI−.</li>
+      <li><b>Value</b>: rata-rata nilai transaksi harian. Likuid bila minimal Rp1 miliar.</li>
+      <li><b>Syariah</b>: konstituen ISSI. <b>HSC</b>: saham dengan kepemilikan sangat terkonsentrasi menurut BEI, harganya mudah digerakkan.</li>
+      <li><b>Extended</b>: harga sudah terlalu jauh dari acuannya diukur dalam ATR.</li>
+    </ul>
+    <p class="hint">Data harga dari Yahoo Finance dan bisa tertunda atau berbeda dengan data resmi BEI. Hasil masa lalu tidak menjamin hasil berikutnya.</p></div>`;
+  $("#dlg-body").scrollTop = 0; $("#dlg").showModal();
+}
+document.addEventListener("click", e => {
+  const sub = e.target.closest("[data-pbsub]");
+  if(sub){ PB.sub = sub.dataset.pbsub; renderPbTable(); if(sub.classList.contains("pb-card")) $("#pb-tabs").scrollIntoView({behavior:"smooth", block:"nearest"}); return; }
+  const sn = e.target.closest("[data-pbsnap]");
+  if(sn){ PB.snap = sn.dataset.pbsnap; renderPullback(); return; }
+  const pm = e.target.closest("[data-pbm]");
+  if(pm){ PB.method = pm.dataset.pbm; store.set("pb-m", PB.method); renderPullback(); return; }
+  const pmo = e.target.closest("[data-pbmode]");
+  if(pmo){ PB.mode = pmo.dataset.pbmode; store.set("pb-mode", PB.mode); renderPullback(); return; }
+  if(e.target.closest("#pb-cols")){ PB.allCols = !PB.allCols; renderPbTable(); return; }
+  if(e.target.closest("#pb-faq")){ pbFaq(); return; }
+  const th = e.target.closest("#pb-table th");
+  if(th){ const k = th.dataset.pk; PB.sort = {key:k, dir: PB.sort.key === k ? -PB.sort.dir : (["code","status","signal_date","lead_date","left","pattern"].includes(k) ? 1 : -1)}; renderPbTable(); return; }
+  const row = e.target.closest("[data-pb]");
+  if(row){ pbDetail(row.dataset.pb); return; }
+  if(e.target.closest("#dlg [data-mcode]")){ e.preventDefault(); $("#dlg").close(); }
+});
+$("#panel-pullback").addEventListener("change", e => {
+  const f = e.target.closest("[data-pbf]");
+  if(!f) return;
+  PB.f[f.dataset.pbf] = f.type === "checkbox" ? f.checked : f.value;
+  store.set("pb-f", JSON.stringify(PB.f)); renderPbTable();
+});
+$("#pb-q").addEventListener("input", renderPbTable);
+let pbRz;
+addEventListener("resize", () => { clearTimeout(pbRz); pbRz = setTimeout(() => { if($("#dlg").open && $("#pb-chart") && PB.chart) pbDrawChart(); }, 150); });
+pbInitFilters();
+
 /* ---------- Event & refresh ---------- */
 document.addEventListener("click", e => {
   const tab = e.target.closest(".tab");
@@ -1331,13 +1880,14 @@ $("#dlg").addEventListener("close", () => { liveCharts.forEach(c => c.remove());
 
 async function loadAll(first){
   const needM = !S.momentum || Date.now() - (S.mAt || 0) > 10 * 60_000;
-  const [q, s, a, m, ins] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider"), loadLive()]);
+  const [q, s, a, m, ins, , pbNew] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider"), loadLive(), loadPullback()]);
   S.quotes = q; S.screener = s; S.actions = a; S.insider = ins;
   if(!S.ksei) S.ksei = await getJSON("ksei");
   if(m){ S.momentum = m; S.mAt = Date.now(); }
   renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener(); renderInsider();
   if(m && !$("#panel-analisa").hidden) drawBreadth();
   renderTape(); renderLiveBox();
+  if(pbNew) renderPullback();
 }
 loadAll(true);
 setInterval(loadAll, 60_000);

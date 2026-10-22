@@ -6,6 +6,9 @@ Setiap siklus (default 2 menit) selama jam bursa:
   1. ambil candle hari ini untuk SEMUA saham BEI + IHSG (Yahoo Finance, tertunda ±15 menit dari bursa);
   2. cocokkan dengan setup momentum: tembus entry (dengan proyeksi laju volume), kena SL, kena TP;
   3. kirim alert Telegram/WA seketika (sekali per saham per jenis per hari);
+     juga setup pullback (docs/data/pullback*.json dari pullback.py): saham "Menunggu trigger" yang candle
+     hari ininya hijau + pola bullish + laju volume >= 1,1x rata-rata 5 hari -> alert calon entry trigger,
+     dan posisi Entry aktif yang menyentuh SL/TP;
   4. tulis docs/data/live.json -> situs lokal http://localhost:8765 langsung memakai harga terbaru;
   5. tiap 5 menit unggah live.json ke branch `live` di GitHub -> situs publik (HP) ikut terbarui
      tanpa memicu build GitHub Pages (branch `live` selalu satu commit, riwayatnya tidak menumpuk).
@@ -98,7 +101,7 @@ def fetch(codes, today):
             is_today = f"{h.index[-1]:%Y-%m-%d}" == today
             last = float(h["Close"].iloc[-1])
             prev = float(h["Close"].iloc[-2]) if is_today and len(h) > 1 else last
-            row = {"last": last, "prev": prev, "chg": last / prev - 1 if prev else 0.0, "today": is_today,
+            row = {"last": last, "prev": prev, "open": float(h["Open"].iloc[-1]) if is_today else last, "chg": last / prev - 1 if prev else 0.0, "today": is_today,
                    "high": float(h["High"].iloc[-1]) if is_today else last,
                    "low": float(h["Low"].iloc[-1]) if is_today else last,
                    "vol": float(h["Volume"].iloc[-1]) if is_today else 0.0}
@@ -107,6 +110,48 @@ def fetch(codes, today):
             else:
                 out[sym[:-3]] = row
     return out, ihsg
+
+
+# ---------------------------------------------------------------- Pullback
+_pb_hist = {"day": None, "data": {}}
+
+
+def pb_prev(codes, today):
+    """{kode: [(o,h,l,c,v), ...]} candle harian SEBELUM hari ini (maks 10), diunduh sekali per hari per kode."""
+    if _pb_hist["day"] != today:
+        _pb_hist.update(day=today, data={})
+    need = [c for c in codes if c not in _pb_hist["data"]]
+    for i in range(0, len(need), CHUNK):
+        part = need[i:i + CHUNK]
+        try:
+            df = yf.download([f"{c}.JK" for c in part], period="1mo", interval="1d", group_by="ticker",
+                             auto_adjust=False, threads=True, progress=False)
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! unduh riwayat pullback gagal: {e}")
+            continue
+        for c in part:
+            try:
+                h = df[f"{c}.JK"] if isinstance(df.columns, pd.MultiIndex) else df
+                h = h.dropna(subset=["Close"])
+            except KeyError:
+                h = pd.DataFrame()
+            h = h[[f"{d:%Y-%m-%d}" < today for d in h.index]] if not h.empty else h
+            _pb_hist["data"][c] = [tuple(float(x) for x in b) for b in
+                                   h[["Open", "High", "Low", "Close", "Volume"]].tail(10).itertuples(index=False)]
+    return {c: _pb_hist["data"].get(c, []) for c in codes}
+
+
+def pb_check(todays, now, sent):
+    """Alert pullback; tanpa pullback.json (atau bila gagal) tidak mengganggu alert momentum."""
+    try:
+        pb = alert.load_pullback()
+        codes = alert.pullback_watch(pb)
+        if not codes:
+            return [], {}
+        return alert.pullback_live(pb, todays, pb_prev(codes, f"{now:%Y-%m-%d}"), now, sent)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! cek pullback gagal: {e}")
+        return [], {}
 
 
 # ---------------------------------------------------------------- Unggah ke branch `live`
@@ -163,6 +208,7 @@ def cycle(codes, last_push):
         sent = set()
     todays = {c: q for c, q in quotes.items() if q["today"]}
     msgs, sig = alert.check(m, todays, now, sent)
+    pb_msgs, pb_sig = pb_check(todays, now, sent)
     STATE_DIR.mkdir(exist_ok=True)
     state_file.write_text(json.dumps(sorted(sent)), encoding="utf-8")
 
@@ -175,6 +221,7 @@ def cycle(codes, last_push):
         "p": {c: [r2(q["last"]), round(q["chg"], 5), r2(q["high"]), r2(q["low"]), int(q["vol"])]
               for c, q in quotes.items()},
         "sig": sig,
+        "pb": pb_sig,
     }
     tmp = OUT.with_suffix(".tmp")
     tmp.write_text(json.dumps(payload, separators=(",", ":"), allow_nan=False), encoding="utf-8")
@@ -182,6 +229,8 @@ def cycle(codes, last_push):
 
     if msgs:
         alert.send(alert.alert_text(now, msgs))
+    if pb_msgs:
+        alert.send(alert.pullback_alert_text(now, pb_msgs))
     pushed = ""
     if time.time() - last_push >= PUSH_MIN * 60 - 5:
         if publish():
@@ -189,8 +238,9 @@ def cycle(codes, last_push):
             pushed = " · diunggah ke GitHub"
     ih = f"IHSG {ihsg['last']:,.2f} ({ihsg['chg'] * 100:+.2f}%)".replace(",", "_").replace(".", ",").replace("_", ".") if ihsg else "IHSG -"
     n_sig = {k: sum(1 for v in sig.values() if v["ev"] == k) for k in ("tembus_entry", "lewat_zona", "kena_sl", "kena_tp1", "kena_tp2")}
+    n_sig.update({f"pullback {k}": sum(1 for v in pb_sig.values() if v["ev"] == k) for k in ("calon_trigger", "kena_sl", "kena_tp")})
     print(f"{now:%H:%M:%S} {ih} · {len(todays)}/{len(quotes)} saham sudah bertransaksi · "
-          f"sinyal {', '.join(f'{k} {v}' for k, v in n_sig.items() if v) or 'tidak ada'} · alert {len(msgs)} · "
+          f"sinyal {', '.join(f'{k} {v}' for k, v in n_sig.items() if v) or 'tidak ada'} · alert {len(msgs) + len(pb_msgs)} · "
           f"{time.time() - t0:.0f} dtk{pushed}")
     return last_push
 

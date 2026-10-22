@@ -1,0 +1,77 @@
+name: Pullback (Sesi 1 & penutupan)
+
+# Setup "saham kuat yang sedang pullback" (pullback.py, lihat spesifikasi_pullback.md).
+# Jadwal dalam UTC (WIB = UTC+7). GitHub bisa telat beberapa menit sampai puluhan menit.
+on:
+  schedule:
+    - cron: "5 5 * * 1-4"    # 12:05 WIB Senin-Kamis, setelah Sesi 1 (tutup 12:00)
+    - cron: "35 4 * * 5"     # 11:35 WIB Jumat, setelah Sesi 1 (tutup 11:30)
+    - cron: "26 9 * * 1-5"   # 16:26 WIB setelah penutupan
+  workflow_dispatch:
+    inputs:
+      session:
+        description: "Snapshot yang dihitung"
+        type: choice
+        options: [close, s1]
+        default: close
+
+permissions:
+  contents: write
+
+# Sengaja TIDAK memakai grup `site-data`: GitHub hanya menyimpan SATU run tertunda per grup dan membatalkan
+# yang lebih lama. Run pullback yang lama (unduh ~900 saham) di grup itu bisa membuat run daily.yml yang sedang
+# menunggu dibatalkan oleh intraday.yml 15 menit berikutnya (atau sebaliknya). Workflow ini hanya menulis
+# file pullback sendiri, jadi tidak pernah bentrok isi dengan workflow lain; balapan push diatasi dengan
+# pull --rebase + ulang beberapa kali di langkah simpan.
+concurrency:
+  group: pullback
+  cancel-in-progress: false
+
+jobs:
+  pullback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Tentukan sesi
+        id: sesi
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            s="${{ inputs.session }}"
+          elif [ "${{ github.event.schedule }}" = "26 9 * * 1-5" ]; then
+            s=close
+          else
+            s=s1
+          fi
+          echo "session=$s" >> "$GITHUB_OUTPUT"
+          if [ "$s" = "s1" ]; then echo "arg=s1" >> "$GITHUB_OUTPUT"; else echo "arg=" >> "$GITHUB_OUTPUT"; fi
+          echo "Snapshot: $s"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Hitung setup pullback
+        run: python pullback.py ${{ steps.sesi.outputs.arg }}
+      - name: Alert pullback ke Telegram
+        run: python alert.py pullback ${{ steps.sesi.outputs.arg }}
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          WA_TARGET: ${{ secrets.WA_TARGET }}
+      - name: Simpan data ke website
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for f in docs/data/pullback.json docs/data/pullback_s1.json docs/data/pullback_chart data/alert_pullback.json; do
+            if [ -e "$f" ]; then git add -A -- "$f"; fi
+          done
+          git commit -m "Pullback ${{ steps.sesi.outputs.session }} $(TZ=Asia/Jakarta date "+%F %H:%M")" || exit 0
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin ${{ github.ref_name }} && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 15))
+          done
+          exit 1
