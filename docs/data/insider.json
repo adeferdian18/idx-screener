@@ -1,10 +1,157 @@
 {
- "updated": "2026-10-21T18:29+07:00",
+ "updated": "2026-10-22T09:14+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 131
+  "news": 115
  },
  "transactions": [
+  {
+   "id": "789befa52c03",
+   "date": "2026-10-22",
+   "code": "AVIA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1430000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcTJ0dGRDcEVYWnlMbHoxd0U0ZXVzVTNsc0FjdlpVRFhScXM3ZzFxX1NORy1rWWMtSnEtcmo5bS1jWmlXX3FtMUVDS25RTXNWVmRPZjBQQXNITHFGd3EycmRLX3VaaU1LazRhOGthUzlKSGJtblRMWWhVOVVDOENETGN2clIwMVE1b1RobUNCV08weFlrby1RREozSXl4X1JkclVveDN5bXFqcVdLU0VBcXNKVWduckVyRkZVTDl3cDZnUQ?oc=5",
+   "title": "Robert Christian Tanoko Kembali Borong Saham AVIA, Kepemilikan Tembus 1,43 Miliar Lembar",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "136d30568004",
+   "date": "2026-10-22",
+   "code": "ADRO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 470000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzdjU0pocnRpb2RDZmJxQURHUnI1VkM5STJJTVBXRUR6cEItYWVNZzBnOWVRVG1UWmxySmpMR21vcnozRl95TC1oYTBEVzVhTTAzUHFFaVFIaEdtMzlxbkxsdHhGTHVVQ0QxME9uakxEU0I0UENocEFaSTRJQTBuVWVkWkhqXzF1WjdsaUVDTXRYVG4ya19rLWZNM2szS24ySnNQUUs5NHhsbDlZ?oc=5",
+   "title": "Trinugraha Thohir Borong 470.000 Saham ADRO, Investasi Tembus Rp1 Miliar",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "85a071994c4b",
+   "date": "2026-10-22",
+   "code": "EMMI",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 3570000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 11.04,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYk02MHRHb0t6ZGxaM0g3VGI4cGp3V0FlelJsZDZwMy14dzctRC1RMV9qRmZsMHpHQjBGaTVLZm1VanBZV1pZM3NXY2huaHB4ZmlHdnprYUVLb3ZyTVZDTnI4aWViU0RUT21RZFdja0JOZ3J3dkM2Z3JOMV9IWE4wQWRwclRMRVpsemNObVVPSDI5OEhhUTFZNkcyNWtJQzlQWEUxd0JPbWsxNDFjTkhJNGI1Z3ZyUFE?oc=5",
+   "title": "Yulie Sekuritas Kembali Borong 3,57 Juta Saham EMMI, Kepemilikan Naik Jadi 11,04%",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "0f9ad883f60d",
+   "date": "2026-10-22",
+   "code": "DRMA",
+   "party": "Noel Laras",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 10000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORHdXQ0tDTWZMbW1zN0I5cFRxYlVscnQ0WnFid3BjblRoN1pMcWZJQTQ3dXgzU0NQTDVLZDR3aWg2eWJLSXg3TmRnRDBRQ2R6Qzc0OWNWejdFN0d3aHZoaDlVYW9kMEJZUzhoUUpLRTNsNWFNaVJCWVNEWXVBM1pxTWEwWkR2Umw4MUY0aHF4R3l3X1pDd0dEdUV6QzBzUjd1QXFRb1I0SjNzcGowdXktSnkycw?oc=5",
+   "title": "Balik Arah! Komisaris Noel Laras Borong 10 Juta Saham DRMA Senilai Rp8 Miliar",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "c31637874d5e",
+   "date": "2026-10-22",
+   "code": "BMRI",
+   "party": "Asing Ramai",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "TOPIK.ID",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYzNqWkRuTnpwLWdkUnJPbUdFdkNwaUFwMWhYa1RIM1pfMWdCbkQtOWFVaFRtUTFGdnhLOS0waHA0ZFAzZzBtWTNlSHFhNUxWSjFBcW04dE5xdXB6M3V6V1JkNnY4R2oyRG9XZTlHWVhKZkxHWkIzTEVnbmdwQU1XTmRMS2hrWmdjYUhQOEdGY0huaWRUaHl2SVJhSkRwaFhXWTEwUExWdw?oc=5",
+   "title": "Investor Asing Ramai Jual Saham BMRI Hingga Rp 227,4 Miliar Saat IHSG Menguat ke 0,94%",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "2274a0236402",
+   "date": "2026-10-21",
+   "code": "TLKM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 42450000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbjhzNnRtdUljSmNFMXJmMkEtZkNSSnZFYUZPcm56SEpBTDJqS1pPenBfMy1BcDN1ckV2Smo3bWRzU1lHRnlKRXUxdGZuaTBmZERqX203ai1IeExWYXRUZVd2U21aYkNib2RhNnNycHFTX1JKMU8wdjhDWXVwa2xQdGJVM2dIeFVKYldvdmxXRlB1MTVSTmlUWTN1RQ?oc=5",
+   "title": "BNY Mellon terus borong TLKM, beli 42,45 juta lembar",
+   "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
+   "id": "69147b50d1bc",
+   "date": "2026-10-21",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Citra Sumsel",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc1VEbm93VmQ1WXA4dlRPajBIUEJKX1pzUmNZbWJrUFlTVkFfc0ZWN2U2QkJHMGlreURPQU5KMzY4d1VIWWNpU1ZNQ3JoT0xtbnBNOUNCMnFDbFFpczh6djBPX2NXMW95eGVhWEJwaWdiNGpfRVQ5RmpZRE5yWFFYWFlNRkMybTQtRHZGSEVCN2RmM0ZFd2h1WXhZYnFfcXJRZ1ZyUUJxNUN5Q0ZPQ3gwSU5DZjZQeVUzMHhOLTJySnJSb0dySlhJUTJvbTFiRnJuVnpkYXhrMTdNMG9zaVBIUTEtLXNaOGd6TXZ2VUtWbldNZ9IB9wFBVV95cUxQYUxkWVRkQ1UtbTlDNkhmbkl2YmpjQUxhdF9aQ2czN2ltZGxJSl84ZldPVnU0V2g5eklYZGdRQTlUNDBDNzhDNXlEZjVwYVlwUklwNTVCMmVwQktDYXlkVnlOSXdZRmMxOWs5RjQ1eF8xcVN3dWUyTUVic3ozWlBNZ3BrbmtOYVZjZUl1Qk5BTFZudEVBM1FjXzVvaHNITURkc2hMaFJzcUw2T1g0UkVHWGtSWTI3bVVITDByb1FVR0FiV3B5THRvei1pTk9NNGpKZ0FRMDdhWkFSVlZMaml4VXo4a1BfQXZmWWtOVk5JMzRpckNROUJz?oc=5",
+   "title": "Hashim Djojohadikusumo Lewat Perusahaan Afiliasi Lepas Saham WIFI Rp4,06 Triliun, Harga Transaksi 180% di Atas Pasar",
+   "first_seen": "2026-10-22T08:34+07:00"
+  },
   {
    "id": "8e5f94f7e3f3",
    "date": "2026-10-21",
@@ -105,8 +252,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/direktur-avia-robert-tanoko-borong-103-juta-saham-kepemilikan-naik/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdW5oU2hTRWdkU3ZtSWI0aXZJS1ByTVNNN3FjTTBObEt6ZHFDQzVTVWxNdVNrRWk5Ti1lQmpJZXhlUU5OR3U0WGlxT0dUWGxFMVNwcTFCLXhPTnBBdW5NUWZZeE8tVjMtazJWNkduUEN1NzlMRUdhT0MzQ212NVI5bHRnTXdKOG1RSTJBcjZCVDNhdXc?oc=5",
    "title": "Direktur AVIA Robert Tanoko Borong 1,03 Juta Saham, Kepemilikan Naik",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -357,8 +504,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "https://olenka.id/",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjA?oc=5",
+   "source": "Olenka",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjDSAZgBQVVfeXFMTWRLYjZ6T2hqQjQxUGJkSXd0UE1EMnBiZ3V4cTNZUWtCUnZ4Zk9JODRBTHVBV1QxRUhhd1d1d0Z2d1lZRlJTZmhlRXdsWHoyVWtIMFpUY0kzX3V6eXpYYWZXektQRlBmZHVzXzB6aEdheUZlUEl6V25ZU0pIbFVPSjQybllzQXF3QWV2VGRQT3pBb0JKcWRua1A?oc=5",
    "title": "Pemegang Saham Pengendali HRTA Borong Saham di Tengah Volatilitas Pasar",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -1008,7 +1155,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "RuangEnergi.com",
+   "source": "Ruang Energi",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUkdKdzY4V3BxYU40cXpoZFdCQ1N0eEZKOXNyY1NPdF83dTc2MU1aSG9Xd1MzU0Ezd1d2Z051Y0N0X2JxZnRkRUVpYVplWTdDSUEyM21JRGRBQkpwUkxvTE5Nb1RFWGhLVjV4SElvNHZNT185NVdKdVJIZzNZRmNRWlNYTkYwX0Q4dUxfbThXVVhiQzczSnhWQU40RERNNUlEay1aN1BHc3NzeWRPbG1xcA?oc=5",
    "title": "Direksi BRMS Tambah Kepemilikan Saham, Sinyal Optimisme terhadap Kinerja Perusahaan",
    "first_seen": "2026-10-21T18:03+07:00"
@@ -1308,27 +1455,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "f9cc3b2f3b85",
-   "date": "2026-10-20",
-   "code": "WIFI",
-   "party": null,
-   "role": "individu5",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdEE5RDJPSDJuVGY5bGViQ2o0NXJoUHlMeW1ibWRrcWJsZkhZYzl4T185dmZHX0YxMnJXcnppNEFqNUh2VkprbGZ4SHZ0SHI1M1JFTHhaaVhQcDlhS0hLd3dMaWYwMmpKdDEyOS02ZzIydkx1VVVpSVQ0eHpKc2lwOHd6ZDV6TDVLQy02aG5tOG1nTl9wYVlRWg?oc=5",
-   "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "a1bd6204262e",
    "date": "2026-10-20",
    "code": "HRTA",
@@ -1389,6 +1515,69 @@
    "source": "CNBC Indonesia Market",
    "link": "https://www.cnbcindonesia.com/market/20261020141954-17-777863/pengendali-intikeramik-alamasri-borong-476-juta-saham",
    "title": "Pengendali Intikeramik Alamasri Borong 47,6 Juta Saham",
+   "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "787f17a9aa37",
+   "date": "2026-10-19",
+   "code": "GOTO",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Suara Independent News",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV3g2bzNxcGNTTFRtbmo1b3ZtNmRNZHFxdlI2V1JpMld3dXdveDhqMVVWMEZiX0g3WmZWMXgyNUlSLUcxWUxDX0h6R3QzQnBFOXZ0VkpCSEloMVAyNXlOU2pfTDN6elhxOEgxVk9ValRCcDBDMy1jVVVobXA1QTYzS2VOWXpRMVlT?oc=5",
+   "title": "Morgan Stanley Pangkas Kepemilikan Saham GOTO Jadi 5,96 Persen",
+   "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
+   "id": "a5a69dfc2fc5",
+   "date": "2026-10-19",
+   "code": "GMFI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 350000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
+   "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
+   "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
+   "id": "f9cc3b2f3b85",
+   "date": "2026-10-19",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
+   "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
@@ -1644,27 +1833,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "e5e4f4a2932a",
-   "date": "2026-10-19",
-   "code": "BGTG",
-   "party": null,
-   "role": "sekuritas_mi",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Lotus Andalan Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLU84eFJGX0VkSjdhblMtazBwZlNkbVFPY1lUYndiVE5yV3JCZGNrV3N6QTBnQTlubTV2RGRWZHduRFd3TFVvTjJhczZSdHRfUDJpRWFCRzhsVzZaTHFrOGpsVTFzT2N5ZGZ4X0J6d2Y5Q2RtXzVkV0dUNlAxUUVGd1loVGEtV3NhQVFZR1p1R0RudHlabWJZeVljR0Zqa29CS29uRWQ2ZUZDZw?oc=5",
-   "title": "Investor Ini Borong 5,75% Porsi Saham Bank Ganesha (BGTG) Rp172,31M!",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "7163df28a7fd",
    "date": "2026-10-19",
    "code": "BBCA",
@@ -1767,6 +1935,27 @@
    "source": "bsinews.id",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5sbmVfV3pDeVpZeWliNEJNeHVXSUVNeUdlNTVnVVNUY3BleURsQjZGMkpEMzFLU0t4U3RCRFZfWWtZbVo4WXNVVjFjVm5uX2l5cU92VGFVUlE?oc=5",
    "title": "Direktur BBRI Borong 1,1 Juta Saham Senilai Rp2,97 Miliar",
+   "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "e5e4f4a2932a",
+   "date": "2026-10-18",
+   "code": "BGTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOUpCLVVjVWFabXQ1RWsyajJNLTRwMEhhcVNINGtrd0wxVk9KOG95MUdhTlRFOHE3Z3NsdjFsZWpWSlVfOEQ1MUlMWUhTWDlMcGhRMms5YUJZYkNWaGpsUlU3cllWX2xPZnQxM3JDNzZtMFpCMF9jWUM0RGZheW90S1lxbUhFeFA4UjJickJHcHdvUW84?oc=5",
+   "title": "Investor Ini Borong 5,75% Porsi Saham Bank Ganesha (BGTG) Rp172,31M!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
@@ -2863,20 +3052,45 @@
   }
  ],
  "net_by_code": {
-  "ESSA": {
-   "net_shares": 4500000,
+  "AVIA": {
+   "net_shares": 2876970000,
    "net_value": 0.0,
    "count": 5
   },
   "ADRO": {
-   "net_shares": 0,
+   "net_shares": 470000,
    "net_value": 0.0,
+   "count": 5
+  },
+  "EMMI": {
+   "net_shares": 3570000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "DRMA": {
+   "net_shares": 24850000,
+   "net_value": -141750000.0,
    "count": 4
   },
-  "AVIA": {
-   "net_shares": 1446970000,
+  "BMRI": {
+   "net_shares": 29100,
    "net_value": 0.0,
-   "count": 4
+   "count": 3
+  },
+  "TLKM": {
+   "net_shares": 117450000,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "WIFI": {
+   "net_shares": -10000000,
+   "net_value": 0.0,
+   "count": 15
+  },
+  "ESSA": {
+   "net_shares": 4500000,
+   "net_value": 0.0,
+   "count": 5
   },
   "ATIC": {
    "net_shares": 0,
@@ -2888,11 +3102,6 @@
    "net_value": 0.0,
    "count": 13
   },
-  "TLKM": {
-   "net_shares": 75000000,
-   "net_value": 0.0,
-   "count": 5
-  },
   "TPIA": {
    "net_shares": 2000000,
    "net_value": 0.0,
@@ -2902,16 +3111,6 @@
    "net_shares": 2423000,
    "net_value": 0.0,
    "count": 2
-  },
-  "DRMA": {
-   "net_shares": 14850000,
-   "net_value": -141750000.0,
-   "count": 3
-  },
-  "WIFI": {
-   "net_shares": -10000000,
-   "net_value": 0.0,
-   "count": 14
   },
   "DEWI": {
    "net_shares": 0,
@@ -2961,7 +3160,12 @@
   "GOTO": {
    "net_shares": -1740000000,
    "net_value": 0.0,
-   "count": 6
+   "count": 7
+  },
+  "GMFI": {
+   "net_shares": 350000,
+   "net_value": 0.0,
+   "count": 1
   },
   "PEGE": {
    "net_shares": 8060000,
@@ -3002,11 +3206,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BMRI": {
-   "net_shares": 29100,
-   "net_value": 0.0,
-   "count": 2
   },
   "VIVA": {
    "net_shares": 0,
