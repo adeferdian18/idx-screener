@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-22T09:14+07:00",
+ "updated": "2026-10-22T09:54+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 115
+  "news": 129
  },
  "transactions": [
+  {
+   "id": "78127ecf201b",
+   "date": "2026-10-22",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Info Temanggung",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMTlEek14cWhsQkRoanA5QVJwdHB4Vl9YOGlwdlpPNk9mYmJQelJ1OVpmUXlGcklSOEpWZF9rWlE1QjdHSW1RY21sZ29Od1dCVzBJemloUHJuYmJIdDNtOHdZT0ZiR0VYZ0JrQjVQT0dXTkx0aG9mMWJxbnE3OWpGby1kb21PZnVXVGhPbGdEM1JfOFA0TFJnMGg2bVdEZWo0YUR0RlJKMko0SURoaE12ZnNLWUIzeGFzSW9uZDAwUm9ud1YwYV9IM2lvbFRMV1NXcnlYVGZEeGlNc0s4NzZaTHBXTUM3Zk1xaXJDZNIB8gFBVV95cUxOUlk0a1lMbXlyTlJza2VacVU2ZlJMSUVzakJSSGlyRHRYeDVmYVk2R1Fqc1p3T0NDZWJmUmZNeFBWTXVCajZHa29lVVhjd0JBcTBVd3ptRlVxT1E5VjZsVERKWm9BMTZTanRkQXF0em15LUczN0RXVUxjQVdVVVR4cXBMQWZKdDdxSmFwUy1OdDRIWHQweUdsLXFqcUV6ZXNBQWxUTVZGVk1heF90Zy1ZbXZCbmZKLXY5Vk9UMGJKODJHc3N6UEdzT3RtMWpjbUNYODlXekpxU3pvS0Yyb1E4V0t2MnhyMk1rNEctLUdsSG1DZw?oc=5",
+   "title": "Sinergi Graha Kapital Beli Saham WIFI Rp4,06 Triliun, Siapa Pemiliknya dan Bergerak di Bidang Apa?",
+   "first_seen": "2026-10-22T09:54+07:00"
+  },
   {
    "id": "789befa52c03",
    "date": "2026-10-22",
@@ -504,8 +525,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Olenka",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjDSAZgBQVVfeXFMTWRLYjZ6T2hqQjQxUGJkSXd0UE1EMnBiZ3V4cTNZUWtCUnZ4Zk9JODRBTHVBV1QxRUhhd1d1d0Z2d1lZRlJTZmhlRXdsWHoyVWtIMFpUY0kzX3V6eXpYYWZXektQRlBmZHVzXzB6aEdheUZlUEl6V25ZU0pIbFVPSjQybllzQXF3QWV2VGRQT3pBb0JKcWRua1A?oc=5",
+   "source": "https://olenka.id/",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjA?oc=5",
    "title": "Pemegang Saham Pengendali HRTA Borong Saham di Tengah Volatilitas Pasar",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -1516,6 +1537,27 @@
    "link": "https://www.cnbcindonesia.com/market/20261020141954-17-777863/pengendali-intikeramik-alamasri-borong-476-juta-saham",
    "title": "Pengendali Intikeramik Alamasri Borong 47,6 Juta Saham",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "d16382c18a02",
+   "date": "2026-10-19",
+   "code": "RUNS",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
+   "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
+   "first_seen": "2026-10-22T09:54+07:00"
   },
   {
    "id": "787f17a9aa37",
@@ -3052,6 +3094,11 @@
   }
  ],
  "net_by_code": {
+  "WIFI": {
+   "net_shares": -10000000,
+   "net_value": 0.0,
+   "count": 16
+  },
   "AVIA": {
    "net_shares": 2876970000,
    "net_value": 0.0,
@@ -3081,11 +3128,6 @@
    "net_shares": 117450000,
    "net_value": 0.0,
    "count": 6
-  },
-  "WIFI": {
-   "net_shares": -10000000,
-   "net_value": 0.0,
-   "count": 15
   },
   "ESSA": {
    "net_shares": 4500000,
@@ -3155,6 +3197,11 @@
   "IKAI": {
    "net_shares": 47600000,
    "net_value": 47600000.0,
+   "count": 1
+  },
+  "RUNS": {
+   "net_shares": 0,
+   "net_value": 0.0,
    "count": 1
   },
   "GOTO": {
