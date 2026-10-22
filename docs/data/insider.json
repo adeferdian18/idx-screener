@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-22T13:15+07:00",
+ "updated": "2026-10-22T14:13+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 128
+  "news": 126
  },
  "transactions": [
+  {
+   "id": "a4d5c6e36e87",
+   "date": "2026-10-22",
+   "code": "AKPI",
+   "party": "Argha Karya Prima Industry",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 100000,
+   "price": 575.0,
+   "value": 57500000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/henry-liem-lepas-100-000-saham-akpi-kepemilikan-turun-jadi-53-juta/",
+   "title": "Henry Liem Lepas 100 000 Saham AKPI, Kepemilikan Turun Jadi 5,3 Juta",
+   "first_seen": "2026-10-22T14:13+07:00"
+  },
+  {
+   "id": "fc9f58366dd2",
+   "date": "2026-10-22",
+   "code": "ATIC",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRndvUWR4Uzk5MU4yYmZ0ZDZuSGdWb2JMTTVUVnFqbzRFSEo4bVRrSDRmREhKTWF2OFpZTmhrSEFpSUNBZHJPanFHQ3NlOU9aOHdRdzYzQ1BFcmRtLU5Ud0N5VnRFNXlxbzdQSUloMG10dmo5UGVHS0U0OUxZTi1oZUNGcGd0R2picGhhNE9QSlMydFRla0ViTEotMTQzcHU0MzFURWtjeTFPSng0SGc?oc=5",
+   "title": "Inti Global Resources Kembali Borong Saham ATIC, Kepemilikan Tembus 5,615%!",
+   "first_seen": "2026-10-22T14:13+07:00"
+  },
   {
    "id": "78127ecf201b",
    "date": "2026-10-22",
@@ -3115,6 +3157,16 @@
   }
  ],
  "net_by_code": {
+  "AKPI": {
+   "net_shares": -500000,
+   "net_value": -57500000.0,
+   "count": 2
+  },
+  "ATIC": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
+  },
   "WIFI": {
    "net_shares": -10000000,
    "net_value": 0.0,
@@ -3154,11 +3206,6 @@
    "net_shares": 4500000,
    "net_value": 0.0,
    "count": 5
-  },
-  "ATIC": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "HRTA": {
    "net_shares": 28050000,
@@ -3307,11 +3354,6 @@
   },
   "MPRO": {
    "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "AKPI": {
-   "net_shares": -400000,
    "net_value": 0.0,
    "count": 1
   },
