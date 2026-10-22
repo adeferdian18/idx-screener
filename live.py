@@ -117,7 +117,9 @@ def publish():
     run = partial(subprocess.run, cwd=BASE, env=env, capture_output=True, text=True, check=True)
     try:
         blob = run(["git", "hash-object", "-w", str(OUT)]).stdout.strip()
-        tree = run(["git", "mktree"], input=f"100644 blob {blob}\tlive.json\n").stdout.strip()
+        # -z + bytes: di Windows mode teks mengubah \n jadi \r\n sehingga nama file menjadi "live.json\r"
+        tree = subprocess.run(["git", "mktree", "-z"], cwd=BASE, env=env, capture_output=True, check=True,
+                              input=f"100644 blob {blob}\tlive.json\0".encode()).stdout.decode().strip()
         commit = run(["git", "commit-tree", tree, "-m", f"live {dt.datetime.now(WIB):%F %H:%M}"]).stdout.strip()
         run(["git", "push", "-f", "-q", "origin", f"{commit}:refs/heads/live"])
         return True
