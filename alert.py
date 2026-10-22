@@ -24,6 +24,7 @@ MOM = BASE / "docs" / "data" / "momentum.json"
 STATE = BASE / "data" / "alert_intraday.json"
 WIB = dt.timezone(dt.timedelta(hours=7))
 SITE_URL = os.getenv("SITE_URL", "https://adeferdian18.github.io/idx-screener/")
+LIVE_URL = "https://raw.githubusercontent.com/adeferdian18/idx-screener/live/live.json"
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 FONNTE_TOKEN = os.getenv("FONNTE_TOKEN", "")
@@ -137,15 +138,83 @@ def session_fraction(now):
     return max(done / total, 0.05)
 
 
+def watch_codes(m):
+    """Saham yang dipantau intraday: setup/VCP yang lolos Trend Template dan semua posisi aktif."""
+    return sorted({z["kode"] for z in m["rows"] if (z.get("entry") or {}).get("status") in AKTIF
+                   or ((z.get("entry") or {}).get("status") in ("setup", "vcp", "volume_kurang")
+                       and z["lolos_tt"] and z["likuid"])})
+
+
+def check(m, quotes, now, sent):
+    """Bandingkan harga hari ini dengan level setiap setup.
+    quotes: {kode: {"last", "vol", "high", "low"}} hanya untuk candle hari ini.
+    Return (pesan alert baru, sinyal live per kode). `sent` (set) diperbarui agar satu alert per jenis per hari."""
+    rows = {z["kode"]: z for z in m["rows"]}
+    frac = session_fraction(now)
+    msgs, sig = [], {}
+    for c in watch_codes(m):
+        q = quotes.get(c)
+        if not q:
+            continue
+        e = rows[c]["entry"]
+        last, vol, hi, lo = q["last"], q["vol"], q.get("high", q["last"]), q.get("low", q["last"])
+        v50 = (e.get("vcp") or {}).get("vol50") or (e.get("vcp_info") or {}).get("vol50")
+        proj = vol / frac / v50 if v50 else None
+        risk = e["entry"] - e["sl"]
+        r_now = round((last - e["entry"]) / risk, 2) if risk > 0 else None
+        if e["status"] in AKTIF:
+            ev = ("kena_sl" if lo <= e["sl"] else "kena_tp2" if hi >= e["tp2"]
+                  else "kena_tp1" if hi >= e["tp1"] and e["status"] != "kena_tp1" else "berjalan")
+            sig[c] = {"ev": ev, "r": r_now}
+            if ev == "kena_sl" and f"sl:{c}" not in sent:
+                msgs.append(f"🔻 <b>{c}</b> menyentuh SL {rp(e['sl'])} (harga {rp(last)}, low {rp(lo)}). Sesuai rencana: keluar.")
+                sent.add(f"sl:{c}")
+            elif ev in ("kena_tp1", "kena_tp2") and f"{ev}:{c}" not in sent:
+                lvl = e["tp1"] if ev == "kena_tp1" else e["tp2"]
+                todo = "jual 50% dan naikkan stop ke impas" if ev == "kena_tp1" else "ambil untung sisa posisi"
+                msgs.append(f"✅ <b>{c}</b> menyentuh {'TP1' if ev == 'kena_tp1' else 'TP2'} {rp(lvl)} (harga {rp(last)}). Rencana: {todo}.")
+                sent.add(f"{ev}:{c}")
+        elif last >= e["entry"]:
+            ev = "lewat_zona" if last > e["beli_maks"] else "tembus_entry"
+            sig[c] = {"ev": ev, "pace": round(proj, 2) if proj is not None else None, "r": r_now}
+            if f"entry:{c}" not in sent:
+                pace = ""
+                if proj is not None:
+                    pace = (f" Volume sejauh ini diproyeksikan {proj:.1f}".replace(".", ",") + "× rata-rata harian "
+                            + ("✅ memenuhi 1,5×." if proj >= 1.5 else "⚠️ belum 1,5×, konfirmasi lemah."))
+                zone = " ⚠️ Sudah di atas zona beli, jangan kejar." if ev == "lewat_zona" else ""
+                msgs.append(f"⚡ <b>{c}</b> menembus entry {rp(e['entry'])} (harga {rp(last)}, maks {rp(e['beli_maks'])}). "
+                            f"SL {rp(e['sl'])}, TP {rp(e['tp1'])}/{rp(e['tp2'])}.{pace}{zone}")
+                sent.add(f"entry:{c}")
+        else:
+            sig[c] = {"ev": "menunggu", "jarak": round(last / e["entry"] - 1, 4)}
+    return msgs, sig
+
+
+def alert_text(now, msgs):
+    return (f"⏱️ <b>ALERT MOMENTUM</b> {now:%H:%M} WIB (harga tertunda ±15 menit)\n\n" + "\n\n".join(msgs)
+            + f"\n\n{SITE_URL}")
+
+
+def live_engine_active(max_age_min=12):
+    """True jika mesin live di komputer pemilik (live.py) baru saja memperbarui branch `live`:
+    alert intraday dari GitHub dilewati supaya tidak terkirim dua kali."""
+    try:
+        r = requests.get(LIVE_URL, timeout=15)
+        upd = dt.datetime.fromisoformat(r.json()["updated"])
+        return (dt.datetime.now(WIB) - upd).total_seconds() < max_age_min * 60
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def intraday():
     now = dt.datetime.now(WIB)
     today = f"{now:%Y-%m-%d}"
+    if live_engine_active():
+        print("Mesin live di komputer pemilik aktif; alert intraday dari GitHub dilewati.")
+        return
     m = load()
-    rows = {z["kode"]: z for z in m["rows"]}
-    watch = [z for z in m["rows"] if (z.get("entry") or {}).get("status") in ("setup", "vcp", "volume_kurang")
-             and z["lolos_tt"] and z["likuid"]]
-    hold = [z for z in m["rows"] if (z.get("entry") or {}).get("status") in AKTIF]
-    codes = sorted({z["kode"] for z in watch + hold})
+    codes = watch_codes(m)
     if not codes:
         print("Tidak ada saham untuk dipantau.")
         return
@@ -156,8 +225,7 @@ def intraday():
     sent = set(state.get(today, []))
     df = yf.download([f"{c}.JK" for c in codes], period="5d", interval="1d", group_by="ticker",
                      auto_adjust=False, threads=True, progress=False)
-    frac = session_fraction(now)
-    msgs = []
+    quotes = {}
     for c in codes:
         try:
             h = df[f"{c}.JK"].dropna(subset=["Close"]) if len(codes) > 1 else df.dropna(subset=["Close"])
@@ -165,30 +233,16 @@ def intraday():
             continue
         if h.empty or f"{h.index[-1]:%Y-%m-%d}" != today:
             continue
-        last, vol = float(h["Close"].iloc[-1]), float(h["Volume"].iloc[-1])
-        z, e = rows[c], rows[c]["entry"]
-        v50 = (e.get("vcp") or {}).get("vol50")
-        if e["status"] in AKTIF and last <= e["sl"] and f"sl:{c}" not in sent:
-            msgs.append(f"🔻 <b>{c}</b> menyentuh SL {rp(e['sl'])} (harga {rp(last)}). Sesuai rencana: keluar.")
-            sent.add(f"sl:{c}")
-        elif e["status"] not in AKTIF and last >= e["entry"] and f"entry:{c}" not in sent:
-            pace = ""
-            if v50:
-                proj = vol / frac / v50
-                pace = (f" Volume sejauh ini diproyeksikan {proj:.1f}".replace(".", ",") + "× rata-rata harian "
-                        + ("✅ memenuhi 1,5×." if proj >= 1.5 else "⚠️ belum 1,5×, konfirmasi lemah."))
-            zone = " ⚠️ Sudah di atas zona beli, jangan kejar." if last > e["beli_maks"] else ""
-            msgs.append(f"⚡ <b>{c}</b> menembus entry {rp(e['entry'])} (harga {rp(last)}, maks {rp(e['beli_maks'])}). "
-                        f"SL {rp(e['sl'])}, TP {rp(e['tp1'])}/{rp(e['tp2'])}.{pace}{zone}")
-            sent.add(f"entry:{c}")
+        quotes[c] = {"last": float(h["Close"].iloc[-1]), "vol": float(h["Volume"].iloc[-1]),
+                     "high": float(h["High"].iloc[-1]), "low": float(h["Low"].iloc[-1])}
+    msgs, _ = check(m, quotes, now, sent)
     state = {today: sorted(sent)}  # simpan hanya hari ini
     STATE.parent.mkdir(exist_ok=True)
     STATE.write_text(json.dumps(state), encoding="utf-8")
     if msgs:
-        send(f"⏱️ <b>ALERT MOMENTUM</b> {now:%H:%M} WIB (harga tertunda ±15 menit)\n\n" + "\n\n".join(msgs)
-             + f"\n\n{SITE_URL}")
+        send(alert_text(now, msgs))
     else:
-        print(f"{now:%H:%M}: {len(codes)} saham dipantau, belum ada yang menembus entry/SL.")
+        print(f"{now:%H:%M}: {len(codes)} saham dipantau, belum ada yang menembus entry/SL/TP.")
 
 
 if __name__ == "__main__":

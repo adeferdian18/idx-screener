@@ -1,2 +1,8 @@
 graphify-out/
 __pycache__/
+
+# mesin live lokal
+docs/data/live.json
+docs/data/live.tmp
+.env.local
+.live-state/

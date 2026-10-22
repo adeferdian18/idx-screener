@@ -249,6 +249,13 @@ details.card[open] > summary{margin-bottom:12px}
   .term .chart-own{height:380px}
   .fresh{margin-left:0}
 }
+.live-box{background:var(--bg);border-radius:8px;padding:10px 12px;margin-bottom:12px;font-size:14px}
+.live-box .lv-h{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin-bottom:4px}
+.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--up);margin-right:6px;animation:pulse 1.6s ease-in-out infinite}
+.live-dot.off{background:var(--muted);animation:none}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.live-box .lv-px{font-size:22px;font-weight:800}
+.live-box p{margin:6px 0 0}
 .brief{background:var(--bg);border-radius:8px;padding:12px 14px;font-size:15px;margin:0}
 
 /* ---------- Transaksi orang dalam ---------- */
@@ -464,8 +471,8 @@ function ago(iso){
 
 /* ---------- Hero ---------- */
 function renderHero(){
-  const q = S.quotes, ih = q?.ihsg;
-  $("#fresh").innerHTML = `Harga <b>${ago(q?.updated)}</b><br>Momentum <b>${ago(S.momentum?.updated)}</b>, fundamental <b>${ago(S.screener?.updated)}</b>, aksi korporasi <b>${ago(S.actions?.updated)}</b>`;
+  const q = S.quotes, ih = ihsgNow();
+  $("#fresh").innerHTML = `Harga <b>${useLive() ? `<span class="live-dot"></span>live ${ago(S.live.updated)}` : ago(q?.updated)}</b><br>Momentum <b>${ago(S.momentum?.updated)}</b>, fundamental <b>${ago(S.screener?.updated)}</b>, aksi korporasi <b>${ago(S.actions?.updated)}</b>`;
   if(!ih || !isNum(ih.last)) return;
   $("#ihsg-val").textContent = fmt(ih.last, 2);
   const c = $("#ihsg-chg"); c.textContent = `${ih.chg>0?"+":""}${fmt(ih.last-ih.prev,2)} (${pct(ih.chg,2)})`; c.className = "index-chg " + cls(ih.chg);
@@ -497,12 +504,12 @@ function tvWidget(container, name, config){
 // Pita harga: saham watchlist momentum dulu, lalu yang lolos screener fundamental.
 // Dibangun ulang hanya kalau daftar sahamnya berubah, supaya animasi tidak mulai dari awal tiap refresh.
 function tapeItems(){
-  const st = S.quotes?.stocks || {}, ih = S.quotes?.ihsg;
+  const st = S.quotes?.stocks || {}, ih = ihsgNow();
   const mrows = Object.fromEntries((S.momentum?.rows || []).map(r => [r.kode, r]));
   const mom = typeof wlSections === "function" && S.momentum ? wlSections().slice(0, 3).flatMap(([, rows]) => rows.map(r => r.kode)) : [];
   const fund = (S.screener?.rows || []).filter(r => !r.flags).slice(0, 20).map(r => r.kode);
-  const codes = [...new Set([...mom, ...fund])].filter(c => st[c] || mrows[c]).slice(0, 40);
-  const items = codes.map(c => ({k:c, v: st[c]?.last ?? mrows[c]?.harga, c: st[c]?.chg ?? mrows[c]?.chg_1d}));
+  const codes = [...new Set([...mom, ...fund])].filter(c => liveOf(c) || mrows[c]).slice(0, 40);
+  const items = codes.map(c => ({k:c, v: liveOf(c)?.last ?? mrows[c]?.harga, c: liveOf(c)?.chg ?? mrows[c]?.chg_1d}));
   if(ih && isNum(ih.last)) items.unshift({k:"IHSG", v:ih.last, c:ih.chg});
   return items;
 }
@@ -553,7 +560,47 @@ function renderEvFilters(){
   }).join("");
 }
 function vClass(v){ return v === "Layak dicermati" ? "v-good" : v === "Waspada" ? "v-bad" : "v-mid"; }
-function liveOf(code){ return S.quotes?.stocks?.[code]; }
+/* ---------- Harga live ----------
+   1) Situs lokal dari live.py: data/live.json diperbarui tiap ±2 menit.
+   2) Situs publik: branch `live` di GitHub lewat API (cache ±1 menit, 60 permintaan/jam per IP pengunjung),
+      jika kena batas jatuh ke raw.githubusercontent (cache ±5 menit).
+   Tanpa mesin live: quotes.json dari GitHub Actions seperti sebelumnya. */
+const LIVE_API = "https://api.github.com/repos/adeferdian18/idx-screener/contents/live.json?ref=live";
+const LIVE_RAW = "https://raw.githubusercontent.com/adeferdian18/idx-screener/live/live.json";
+async function loadLive(){
+  let d = await getJSON("live");
+  if(d){ S.liveLocal = true; S.live = d; return; }
+  S.liveLocal = false;
+  if(Date.now() - (S.liveRemoteAt || 0) < 110_000) return;
+  S.liveRemoteAt = Date.now();
+  if(Date.now() > (S.liveBackoff || 0)){
+    try{
+      const r = await fetch(LIVE_API, {headers:{Accept:"application/vnd.github.raw"}, cache:"no-store"});
+      if(r.ok) d = await r.json(); else S.liveBackoff = Date.now() + 10 * 60_000;
+    }catch{}
+  }
+  if(!d){ try{ const r = await fetch(LIVE_RAW, {cache:"no-store"}); if(r.ok) d = await r.json(); }catch{} }
+  if(d) S.live = d;
+}
+// Data live dipakai jika lebih baru dari quotes.json dan umurnya < 30 menit (mesin live masih menyala)
+function useLive(){
+  if(!S.live?.updated) return false;
+  const t = Date.parse(S.live.updated);
+  return Date.now() - t < 30 * 60_000 && (!S.quotes?.updated || t >= Date.parse(S.quotes.updated));
+}
+function liveOf(code){
+  const p = useLive() && S.live.p?.[code];
+  if(p) return {last:p[0], chg:p[1], high:p[2], low:p[3], vol:p[4]};
+  return S.quotes?.stocks?.[code];
+}
+function ihsgNow(){
+  const q = S.quotes?.ihsg;
+  if(useLive() && S.live.ihsg) return {...(q || {}), last:S.live.ihsg.last, prev:S.live.ihsg.prev, chg:S.live.ihsg.chg};
+  return q;
+}
+const LIVE_EV = {tembus_entry:["⚡ TEMBUS","st-good"], lewat_zona:["⚡ LEWAT ZONA","st-warn"], kena_sl:["SL!","st-bad"],
+  kena_tp1:["TP1 ✓","st-good"], kena_tp2:["TP2 ✓","st-good"]};
+function liveSig(code){ return useLive() ? S.live.sig?.[code] : null; }
 function renderEvents(){
   const box = $("#events");
   const evs = (S.actions?.events || []).filter(e => evMatch(e, S.evFilter));
@@ -921,12 +968,12 @@ function wlItem(r){
   const live = liveOf(r.kode), px = live?.last ?? r.harga, ch = live?.chg ?? r.chg_1d, st = r.entry?.status;
   return `<button class="wl-item" data-sel="${esc(r.kode)}" aria-current="${S.sel === r.kode}">
     <span class="k">${esc(r.kode)}</span>
-    <span>${st && TAG[st] ? `<span class="tag st ${stClass(st)}" title="${esc(r.entry.label)}">${TAG[st]}${r.entry.setup === "reversal" ? " ↺" : ""}</span>` : ""} <span class="hint">RS ${r.rs_rating ?? "–"}</span></span>
+    <span>${(() => { const ls = LIVE_EV[liveSig(r.kode)?.ev]; return ls ? `<span class="tag st ${ls[1]}" title="sinyal live hari ini">${ls[0]}</span>` : ""; })()}${st && TAG[st] ? `<span class="tag st ${stClass(st)}" title="${esc(r.entry.label)}">${TAG[st]}${r.entry.setup === "reversal" ? " ↺" : ""}</span>` : ""} <span class="hint">RS ${r.rs_rating ?? "–"}</span></span>
     <span class="px">${fmt(px)}</span>
     <span class="n">${esc(r.nama)}</span><span class="ch ${cls(ch)}">${pct(ch,2)}</span></button>`;
 }
 function renderTermIhsg(){
-  const ih = S.quotes?.ihsg, m = S.momentum?.pasar, a = S.momentum?.analisa;
+  const ih = ihsgNow(), m = S.momentum?.pasar, a = S.momentum?.analisa;
   const last = ih?.last ?? m?.ihsg, chg = ih?.chg ?? m?.chg_1d;
   const pos = ih && isNum(ih.low52) ? (ih.last - ih.low52) / (ih.peak52 - ih.low52) : null;
   const lbl = m ? {uptrend:"Uptrend", tertekan:"Tertekan", downtrend:"Downtrend"}[m.status] : "–";
@@ -968,7 +1015,7 @@ function renderTermMain(){
   ];
   $("#t-main").innerHTML = `<div class="t-head">
       <div><h2>${esc(r.kode)} ${star(r.kode)}</h2><p>${esc([r.nama, r.sektor, STAGE[r.stage] ? STAGE[r.stage] + " (perkiraan)" : null].filter(Boolean).join(" · "))}</p></div>
-      <div><div class="px">${fmt(px)}</div><div class="${cls(ch)}" style="text-align:right;font-weight:600">${pct(ch,2)}</div></div></div>
+      <div><div class="px" id="t-px">${fmt(px)}</div><div class="${cls(ch)}" id="t-chg" style="text-align:right;font-weight:600">${pct(ch,2)}</div></div></div>
     <div class="chart-tools">${[[63,"3 bln"],[130,"6 bln"],[260,"1 thn"]].map(([n,l]) => `<button class="chip" data-rng="${n}">${l}</button>`).join("")}</div>
     <div class="chart-own" id="mini-chart"></div>
     <div class="legend"><span><i style="background:#2F9BD6"></i>MA50</span><span><i style="background:#9B7BD4"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line</span><span><i style="background:#9B7BD4"></i>RS Rating harian</span><span><i style="background:#2F6FDB"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
@@ -980,14 +1027,35 @@ function renderTermMain(){
     <div class="grid">${cells.map(([l,v]) => `<div class="cell"><span>${l}</span><b>${esc(v)}</b></div>`).join("")}</div>
     <p class="hint">Data harian per ${esc(r.tgl_data)}. Level dibulatkan ke fraksi harga BEI. Alat bantu riset, bukan rekomendasi.</p>`;
   const b = r.briefing;
-  $("#t-setup").innerHTML = (planHTML(r) || `<h3>Setup entry</h3><p class="brief">Belum ada setup untuk ${esc(r.kode)}.</p>`)
+  $("#t-setup").innerHTML = `<div id="t-live"></div>` + (planHTML(r) || `<h3>Setup entry</h3><p class="brief">Belum ada setup untuk ${esc(r.kode)}.</p>`)
     + (b ? `<h3>Langkah berikutnya</h3><p class="brief"><span class="lvl lvl-${b.tingkat}">${LVL[b.tingkat]}</span>${esc(b.langkah)}</p>` : "");
   if(r.entry && isNum(r.entry.entry)){
     const go = () => calc(r.entry);
     $("#c-modal").addEventListener("input", go); $("#c-risk").addEventListener("change", go); go();
   }
+  renderLiveBox();
   drawChart($("#mini-chart"), r).then(okDraw => { if(!okDraw) tvWidget($("#mini-chart"), "advanced-chart", {autosize:true, symbol:`IDX:${r.kode}`, interval:"D",
     timezone:"Asia/Jakarta", theme: dark()?"dark":"light", style:"1", locale:"id", hide_top_toolbar:true, allow_symbol_change:false}); });
+}
+function renderLiveBox(){
+  const box = $("#t-live"), r = (S.momentum?.rows || []).find(x => x.kode === S.sel);
+  if(!box || !r) return;
+  const q = liveOf(r.kode), on = useLive(), sg = liveSig(r.kode), e = r.entry;
+  if(q){ $("#t-px").textContent = fmt(q.last); const c = $("#t-chg"); c.textContent = pct(q.chg,2); c.className = cls(q.chg); }
+  if(!q){ box.innerHTML = ""; return; }
+  const when = on ? `live ${ago(S.live.updated)}${S.liveLocal ? " · mesin lokal" : ""}` : `harga ${ago(S.quotes?.updated)} (mesin live mati)`;
+  let note = "";
+  if(sg?.ev === "tembus_entry") note = `⚡ Menembus entry ${fmt(e?.entry)}.${isNum(sg.pace) ? ` Laju volume diproyeksikan ${fmt(sg.pace,1)}× rata-rata ${sg.pace >= 1.5 ? "✅ memenuhi 1,5×" : "⚠️ belum 1,5×, konfirmasi lemah"}.` : ""}`;
+  else if(sg?.ev === "lewat_zona") note = `⚠️ Sudah di atas zona beli ${fmt(e?.beli_maks)}: jangan kejar.`;
+  else if(sg?.ev === "kena_sl") note = `🔻 Menyentuh SL ${fmt(e?.sl)} hari ini. Sesuai rencana: keluar.`;
+  else if(sg?.ev === "kena_tp1") note = `✅ Menyentuh TP1 ${fmt(e?.tp1)}: jual 50%, stop ke impas.`;
+  else if(sg?.ev === "kena_tp2") note = `✅ Menyentuh TP2 ${fmt(e?.tp2)}: ambil untung sisa posisi.`;
+  else if(sg?.ev === "berjalan") note = `Posisi berjalan: ${isNum(sg.r) ? (sg.r > 0 ? "+" : "") + fmt(sg.r,2) + "R" : "–"} dari entry ${fmt(e?.entry)}.`;
+  else if(sg?.ev === "menunggu") note = `Menunggu: harga ${pct(sg.jarak,1)} dari entry ${fmt(e?.entry)}.`;
+  box.innerHTML = `<div class="live-box"><div class="lv-h"><span><span class="live-dot ${on ? "" : "off"}"></span>${esc(when)}</span><span>tertunda ±15 menit</span></div>
+    <div><span class="lv-px">${fmt(q.last)}</span> <span class="${cls(q.chg)}" style="font-weight:700">${pct(q.chg,2)}</span></div>
+    ${isNum(q.high) ? `<div class="hint">High ${fmt(q.high)} · Low ${fmt(q.low)}${q.vol ? ` · Vol ${fmt(q.vol/100)} lot` : ""}</div>` : ""}
+    ${note ? `<p>${esc(note)}</p>` : ""}</div>`;
 }
 function selectStock(code){
   S.sel = code;
@@ -1263,13 +1331,13 @@ $("#dlg").addEventListener("close", () => { liveCharts.forEach(c => c.remove());
 
 async function loadAll(first){
   const needM = !S.momentum || Date.now() - (S.mAt || 0) > 10 * 60_000;
-  const [q, s, a, m, ins] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider")]);
+  const [q, s, a, m, ins] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider"), loadLive()]);
   S.quotes = q; S.screener = s; S.actions = a; S.insider = ins;
   if(!S.ksei) S.ksei = await getJSON("ksei");
   if(m){ S.momentum = m; S.mAt = Date.now(); }
   renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener(); renderInsider();
   if(m && !$("#panel-analisa").hidden) drawBreadth();
-  renderTape();
+  renderTape(); renderLiveBox();
 }
 loadAll(true);
 setInterval(loadAll, 60_000);
