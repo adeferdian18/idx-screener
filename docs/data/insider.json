@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-22T15:01+07:00",
+ "updated": "2026-10-22T15:54+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 126
+  "news": 123
  },
  "transactions": [
+  {
+   "id": "8ea66b4ca724",
+   "date": "2026-10-22",
+   "code": "RLCO",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 89290000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 7.23,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNX3V2Z1JxSDVWb01rengzR1BjSjVXRHo0X3o5bHRxNGNVd1g0WmcxOUpnclp5SmM3aVQxdDd4Y2pma0NIY29iVi1vMU14cURNaWFmYV9zQkZMQi1HRDc0czZWX1FxbXVWeWpTaEkwT2ktY01FcXJrMjFNNHpHcURZdmdaMW81NmxOSTBxZjJZaXVpaEZ2VjBGZWZ1dVdJQ1lTWEtKaXlnWDhUZXVlNHlob2l4cw?oc=5",
+   "title": "Samuel Sekuritas Borong 89,29 Juta Saham RLCO, Kepemilikan Melonjak Jadi 7,23%!",
+   "first_seen": "2026-10-22T15:54+07:00"
+  },
+  {
+   "id": "025b558847de",
+   "date": "2026-10-22",
+   "code": "AYLS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 4900,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSUY5aWw1djFqdHhOQ0dBLWlCTlNLU2prSjU2cjNMS3RBSkhULVMtWjlHQTM4Y3NoNDdLSG1TamVmTU9jVDhvUkFWNUpXdWRLWktCakhSYWtYOUhja1NGTkkzSFZ6OE5sY0U0NEQtRDQ4UnVkb2dhdExYQWxIeFVJeXYwRkhXUVI1XzRnSjg0SmVlUmx6b1hDaFRhX05iZ2N4RlExMjN0T3VUZw?oc=5",
+   "title": "AYLS Rogoh Rp1 Miliar, Borong 4.900 Saham GPI dari Gunung Daya Permata",
+   "first_seen": "2026-10-22T15:54+07:00"
+  },
+  {
+   "id": "94e530c528da",
+   "date": "2026-10-22",
+   "code": "ATLA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2p6R08tVmVrN3lrNWd4bDJ0X1lBVHg5cGdObmEwZURpbzd6U0JfZDBmNnZtdzdqT3N5NWJYZi1SOFhSNlhnbkg4T3pTWV9EYXVNXzJMa3NLTzBKS2h6dklua1BVdHM0ejNTRzdLU2JlRDNScTdHMGtQeE0tRm5zUXc1aEVucGY2XzJveE5jMjlvWXczc0x1Zk95TWVseHlIUUl2ell4T2F2Ukk?oc=5",
+   "title": "Rudi Reksa Sutantra Agresif Jual Saham ATLA, Kepemilikan Turun ke 42,10%",
+   "first_seen": "2026-10-22T15:54+07:00"
+  },
   {
    "id": "9ff9b5d3f8d9",
    "date": "2026-10-22",
@@ -22,7 +85,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Pena Bicara",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWG1oSTFkd0RkTWhQcTVOeDR6bWZ1WUczUXBQNW9jX0NBdWJDX1QxVFI4Qk5XVzlFSExQZjJQbHZ0cWV4VlFQbVUxWFc5SUlyXzQ3dFQtRVVGNTlxLTE2bzI0MG9sXzg5alpKR1gtdnhVbVJjQlpPY0Q2RDUycFViRjFLVm9vWUlJSG05a1NuNEk4d3BsNVVSb2EwQ01rSmZvWjExMm1qRGhVNDlFREZKTzZ0YndJbTQwZ2tyM25CSXNRY0lLdFFGTHAzYmdYcDY4azJKdlJPR2xyd3RFMlU2TNIB4AFBVV95cUxQWG1oSTFkd0RkTWhQcTVOeDR6bWZ1WUczUXBQNW9jX0NBdWJDX1QxVFI4Qk5XVzlFSExQZjJQbHZ0cWV4VlFQbVUxWFc5SUlyXzQ3dFQtRVVGNTlxLTE2bzI0MG9sXzg5alpKR1gtdnhVbVJjQlpPY0Q2RDUycFViRjFLVm9vWUlJSG05a1NuNEk4d3BsNVVSb2EwQ01rSmZvWjExMm1qRGhVNDlFREZKTzZ0YndJbTQwZ2tyM25CSXNRY0lLdFFGTHAzYmdYcDY4azJKdlJPR2xyd3RFMlU2TA?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcXpfczM3NmFnZlgzbGpaVThoeHhOSmhKd0pFa1ZJV2Y0by1ESnpJV21kUFlGR3ZkLXAzQXZQWXdhSkUyWDVVZU94QWV3c0J0X2gycjBFRHFkUEtZLW9ydDhtT2dZMDg3eWV4SzFxTk9mRjIzMnJLbkZtaDR1MzJsY0djLXBTWXkyU1lSdlNsQWVmd3pCdllNeG1zWU94NVpGSjZuSmkxanRYNnVCanZHS2Jzbk1QNlVER1AyMnEwamZUYXpxWG1BNGVXMjV4Zy02UUVFT2VlS0ItWjTSAeABQVVfeXFMUFhtaEkxZHdEZE1oUHE1Tng0em1mdVlHM1FwUDVvY19DQXViQ19UMVRSOEJOV1c5RUhMUGYyUGx2dHFleFZRUG1VMVhXOUlJcl80N3RULUVVRjU5cS0xNm8yNDBvbF84OWpaSkdYLXZ4VW1SY0JaT2NENkQ1MnBVYkYxS1Zvb1lJSUhtOWtTbjRJOHdwbDVVUm9hMENNa0pmb1oxMTJtakRoVTQ5RURGSk82dGJ3SW00MGdrcjNuQklzUWNJS3RRRkxwM2JnWHA2OGsySnZST0dscnd0RTJVNkw?oc=5",
    "title": "Soal Pengalihan Saham Bayan Resources, Muhammad Lutfi Pertanyakan Aturan Divestasi dan Status PMA",
    "first_seen": "2026-10-22T15:01+07:00"
   },
@@ -618,8 +681,8 @@
    "id": "119a58b88894",
    "date": "2026-10-21",
    "code": "WIFI",
-   "party": "PT Investasi Sukses Bersama",
-   "role": "korporasi",
+   "party": null,
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -628,10 +691,10 @@
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
-   "purpose": "investasi",
+   "purpose": null,
    "is_repo": false,
-   "source": "Detik Finance",
-   "link": "https://finance.detik.com/bursa-dan-valas/d-8716949/hashim-kantongi-rp-4-triliun-dari-jual-saham-wifi",
+   "source": "detikFinance",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbWFTa3B4a2hiZmNsVHppbmZzeng2MGxXcFBvLTZ2bEh6ZUhmbDI0QjVRZ2R4T2JDWnN5SU00M2tnQXNEYWE5dWRLbGxEY3N0cjBFbjVPLXdHUGhkaVRqelNtMDhKazkxdGZBZnRyanNsaVhJNWlMVHU0NF9kdzlldDBQbTl4UW4yNnBucHgtMEpCMnYwM1N4MmktTGdGU3V0c0dv0gGoAUFVX3lxTE94aHRiV3ZBMFhLODhTeUFOd014THVEdFFoT2t0XzM5WjV3ZlE3Qk5WUjlBcUNEUVRqZmdURktrd3lDdUxJRkFfTi13dlhxT0ZWSFhRcXZTRkdrRk45RUhQVXRNZ0lfUjc3TVhRbDJ5dlFTS2E2OVE0dW5DWHpUQkhZbUIxdlJUZ01FcXQwY1NPeGNVMXNWUWk0NzBXUjZ1X0RjVl8zVUlIaA?oc=5",
    "title": "Hashim Kantongi Rp 4 Triliun dari Jual Saham WIFI",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -714,8 +777,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Cirebon Times",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1pUk1QSHBwUmNGY2JzaTk4TWFxQzkzQ052WjdHZlZ5Y1p3MVk2dEh5Y0JBVVhKc21ycjFIa292cUZNNEVTbl81WGgzZTJnMTRsb2JzcEFDYkFLNjM4ZndBV2ZhV0lacUJ3QUFkb1M5M0FzSkpG?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZX1RZUFZDZmJTUkdUTXB2ZGk0X0R4NF8wTzBlTmM2ZkotNGpMUGRnYkRmekFZZU1JS0N5OWdITUVuOUdVVVppUlBfVXVBZ0xzd29SODhTQzJvNGhpR2pyWnlB?oc=5",
    "title": "Boy Thohir Tambah Saham ESSA ADRO dan AADI",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -1513,7 +1576,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Konteks.co.id",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNXzdoVjczaXhWOUVOM0JPa0JDTlZSZ3NRLVFvUUkyQXJmZXBRcEF5N2JwaFJVc3M0RWhrcjNRcW9nX19oZVFnZl9MU1RpSzYzSjgxN0s4cWVoZlJkN3FrYmNsU3JRcUNOVkFkOHZPYkN6WlJOZWlfUG5ZZ0JqQW9KQ29LUWdITG5kaWJiLXpRTFBMcnlJNW5MX3M1TE5mQ1JlT3I0OUZvcURYeHl0YXpHMEJYbmdzUHhEcldxWlRfVGlLeXFvWXfSAcsBQVVfeXFMTTRwSjgtbzNuV1ZXMm83eWp0RzhmQWFmeWFOOUlwYnJFemhsT2lUZVVuRTZwb1ZwbVVQRTZlbmVJSFZXQ01IaTNkaXJHYmVWLW9XdEk1XzNCYUo4NFk2SXMwS1p1amFYMmNRb3piSHIzQ0x5V2x5S2g2MGR0c2Y2ZjM0cGxPY0NyQnF0YWdwejF1b3MyQTdLZkpKcEVCOWNPd1BOeGE3R0ZwM1FTS3QxNWRJNHJTQUtiblBxTW5ZUEVYaHB0c19MNlJUYUE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNHBKOC1vM25XVlcybzd5anRHOGZBYWZ5YU45SXBickV6aGxPaVRlVW5FNnBvVnBtVVBFNmVuZUlIVldDTUhpM2RpckdiZVYtb1d0STVfM0JhSjg0WTZJczBLWnVqYVgyY1FvemJIcjNDTHlXbHlLaDYwZHRzZjZmMzRwbE9jQ3JCcXRhZ3B6MXVvczJBN0tmSkpwRUI5Y093UE54YTdHRnAzUVNLdDE1ZEk0clNBS2JuUHFNbllQRVhocHRzX0w2UlRhQdIBywFBVV95cUxNNHBKOC1vM25XVlcybzd5anRHOGZBYWZ5YU45SXBickV6aGxPaVRlVW5FNnBvVnBtVVBFNmVuZUlIVldDTUhpM2RpckdiZVYtb1d0STVfM0JhSjg0WTZJczBLWnVqYVgyY1FvemJIcjNDTHlXbHlLaDYwZHRzZjZmMzRwbE9jQ3JCcXRhZ3B6MXVvczJBN0tmSkpwRUI5Y093UE54YTdHRnAzUVNLdDE1ZEk0clNBS2JuUHFNbllQRVhocHRzX0w2UlRhQQ?oc=5",
    "title": "Perusahaan Hashim Lepas Saham WIFI Rp4,06 Triliun, Harga Transaksi 180% di Atas Pasar",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -2836,7 +2899,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMml0ekF4bGxlYzN5TmQ1Qk5icmZsQzRIU0N5NkZwdm9XUUs4RUhHcDh4OHBuREl4ZUZNSGZGOG5TM08zSEt0TzFTa1BybVF4NDVqcGVQV0dZby1xV2RwRTBJcU85bnBsZ0RBbWFaNmt4M2hzeUVTakpwaUlOWGhxbTVtdkNlX3JzQ21nVDl2aWlFaTVvd3dZeDlHTHlHRmIxWE9nYmJlN214SE5Cd3JiZ1o4SXJzTVlVdzI5V0lhbnfSAcYBQVVfeXFMTk9GRjFab3g2UnZnOVlmZTVoT2xwT0x1ckE3U3dhZ3hxcHJzcl9hRGNQNnVFYzU3XzRPcURlOWxhLVZuVldma1RaWlZ3Y2NNREsxdEVqeml3MkY2aFlxRnY1MTI0UXI3ejROS05penFqVjNmLVBQMTFSNmxqUjNKdlY5cFgwOXBhay1YVnMtQThnYUlKQWQ1MlVHTWZidkdVY1NXVWs1YmZWbGFoeEFjODNVX2QwaUpHclVtQzBINjhGcGUxRktn?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMml0ekF4bGxlYzN5TmQ1Qk5icmZsQzRIU0N5NkZwdm9XUUs4RUhHcDh4OHBuREl4ZUZNSGZGOG5TM08zSEt0TzFTa1BybVF4NDVqcGVQV0dZby1xV2RwRTBJcU85bnBsZ0RBbWFaNmt4M2hzeUVTakpwaUlOWGhxbTVtdkNlX3JzQ21nVDl2aWlFaTVvd3dZeDlHTHlHRmIxWE9nYmJlN214SE5Cd3JiZ1o4SXJzTVlVdzI5V0lhbnc?oc=5",
    "title": "Morgan Stanley Terciduk Asik Jual-Beli Saham GOTO, Cuan Berapa?",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3178,6 +3241,21 @@
   }
  ],
  "net_by_code": {
+  "RLCO": {
+   "net_shares": 49220000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "AYLS": {
+   "net_shares": 9800,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "ATLA": {
+   "net_shares": -36500000,
+   "net_value": 0.0,
+   "count": 2
+  },
   "BYAN": {
    "net_shares": -466170000,
    "net_value": 0.0,
@@ -3258,11 +3336,6 @@
    "net_value": 0.0,
    "count": 4
   },
-  "AYLS": {
-   "net_shares": 4900,
-   "net_value": 0.0,
-   "count": 1
-  },
   "BRMS": {
    "net_shares": 1580000,
    "net_value": 0.0,
@@ -3277,11 +3350,6 @@
    "net_shares": 4400000,
    "net_value": 2970000000.0,
    "count": 5
-  },
-  "RLCO": {
-   "net_shares": -40070000,
-   "net_value": 0.0,
-   "count": 1
   },
   "NSSS": {
    "net_shares": 0,
@@ -3380,11 +3448,6 @@
   },
   "BAJA": {
    "net_shares": 243550000,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "ATLA": {
-   "net_shares": -36500000,
    "net_value": 0.0,
    "count": 1
   },
