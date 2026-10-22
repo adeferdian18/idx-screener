@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T12:30+07:00",
+ "updated": "2026-10-22T13:15+07:00",
  "sources": {
   "idx": "blocked",
   "news": 128
@@ -1518,6 +1518,27 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
+   "id": "c111a5bde71a",
+   "date": "2026-10-20",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNWNJTFR3dDlpUWRGUUgyckxNZnV2QVV3MkFhd2NKRUhCSksxXzNyX3JxS1hOcmNoeFEzVlpYRFFPOGFBdzhBUWNyR1ZGbk5sVHczeTJDYXk5RFJUTjUyMjlBaFp2Yl9abWl0QzhmaW5Ld3VwZmlVdi04cVVkRXB2b0t1by1BbFU?oc=5",
+   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
+   "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
    "id": "d16382c18a02",
    "date": "2026-10-19",
    "code": "RUNS",
@@ -1579,27 +1600,6 @@
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
    "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
    "first_seen": "2026-10-22T08:34+07:00"
-  },
-  {
-   "id": "c111a5bde71a",
-   "date": "2026-10-19",
-   "code": "DEWI",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkZsRjJJNWpPeElVcGt0aFBFelU2c0NGbjBnck1HTjdJUFJRSkRvS2VHZGVINHU3amhfX3FMLTc5QkVabXFpSzI1Y0hHREtRMVV3UjNBOC1qazJQOGdlSDRmdXRnaGZsRVhEdHNKSE84cHNIdzlMbUJxUWxEMjZhUVd3?oc=5",
-   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
-   "first_seen": "2026-10-21T18:03+07:00"
   },
   {
    "id": "f9cc3b2f3b85",
@@ -2002,10 +2002,10 @@
   },
   {
    "id": "e5e4f4a2932a",
-   "date": "2026-10-18",
+   "date": "2026-10-19",
    "code": "BGTG",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -2016,8 +2016,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOUpCLVVjVWFabXQ1RWsyajJNLTRwMEhhcVNINGtrd0wxVk9KOG95MUdhTlRFOHE3Z3NsdjFsZWpWSlVfOEQ1MUlMWUhTWDlMcGhRMms5YUJZYkNWaGpsUlU3cllWX2xPZnQxM3JDNzZtMFpCMF9jWUM0RGZheW90S1lxbUhFeFA4UjJickJHcHdvUW84?oc=5",
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLU84eFJGX0VkSjdhblMtazBwZlNkbVFPY1lUYndiVE5yV3JCZGNrV3N6QTBnQTlubTV2RGRWZHduRFd3TFVvTjJhczZSdHRfUDJpRWFCRzhsVzZaTHFrOGpsVTFzT2N5ZGZ4X0J6d2Y5Q2RtXzVkV0dUNlAxUUVGd1loVGEtV3NhQVFZR1p1R0RudHlabWJZeVljR0Zqa29CS29uRWQ2ZUZDZw?oc=5",
    "title": "Investor Ini Borong 5,75% Porsi Saham Bank Ganesha (BGTG) Rp172,31M!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -2125,6 +2125,27 @@
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVTk2ZnpBRkRmazhaRV9EaTJNSmtfZ1RzaklSR01Bbm1Ea21XN0dJN3NkTFJVMTNhQk5HSUtoM0dOUWpJVFFtRnA0cjR6ZjB3aFVxckY3Y0VUVEF0TjlRZXVCbFQzUXd4WVk2NW5SZUpraWtub2ZsT2kyTVA4OC1taUQtSnlnT05vVmdQSEctZHdjUkVJREFxUm51TFhUaWlCcmh1ZHNsV1Q?oc=5",
    "title": "IHSG Anjlok 11,57 Persen, Investor Asing Ramai-Ramai Lepas Saham BBCA, BBRI, hingga BMRI",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "56172b90570f",
+   "date": "2026-10-16",
+   "code": "MDLA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Prokalteng",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcFBIb3BIZGJ6VzNFSXpva1FTdWR5NFlMYTJJVGx4bmtZX0kyYmxjMHcwek9KR3FZelVkRndKb2VyM2NvYWw1NVhsMlllNjgtUDgyeDlwUUw4Sm53ZFo1VG95MTJva2lyOWNzTHZNazZEamo0WGtCU29SUUk0WTNBSmpvSU5mdWhsR3FMbzBwaUd5SnFDYTBGaUF6Wm1XemxhdWFoOWFHbDVDb0RPdWdPeGowSkI0SWRmMXNNaFNQR0NfT25QWDVTZlBGemlhMmJBbHfSAdcBQVVfeXFMTW5yX29jRS01c2c5MjQ2UzRxeXcxZThqUlVSUEZHeDJpd0toYXlYTy1saUtKQU5QQmpYUS1zZ1U2TmgtbnUwWmpqQjFVTnZzcnVYYmdLTVBGakY0bXBfWkI1ZHFicTZxU0tvMkZ1YlZuLTBDeUtKMDNMUE5QdVRKNUlxd0xST2VlSENzVDBKMHBMdXZOM2h6QmpkQmEyWGFJOW1qS09NQVBEeEp1WDR5YnRYUHFXdkF4R2VMMDZsU3hWUXZxckQ3NjJsZ3B1akkzNE1mUWZmdzg?oc=5",
+   "title": "Korupsi Dana Siap Pakai BNPB, Adik Eks Kepala BNPB Diduga Beli Saham MDLA Rp30 Miliar",
+   "first_seen": "2026-10-22T13:15+07:00"
   },
   {
    "id": "606c11a48373",
@@ -3162,7 +3183,7 @@
   "MDLA": {
    "net_shares": 1380000,
    "net_value": 0.0,
-   "count": 3
+   "count": 4
   },
   "AYLS": {
    "net_shares": 4900,
