@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-22T16:32+07:00",
+ "updated": "2026-10-22T17:19+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 124
+  "news": 123
  },
  "transactions": [
+  {
+   "id": "a644c6cb2633",
+   "date": "2026-10-22",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSlVwdHhibzk5eUJ4QmxCNzlGY1BERHhOS3dGaUtlZkFhbnBOVjhlbU5HOVVEY3V4SWtJUXlqN04zYzE0b1FTb1pzOTI3eEFMcmFZV0RYZUFydnBZandUWXF4dWUya1E3VWVYY1N3dWV5eHJIenVkV2I5OFRFRS12NklmdTJzajFHN0R5d2tGX0FUWXl0SzU5MDRzNF9TaTd6bmdjdzVIdHQ?oc=5",
+   "title": "Edwin Soeryadjaya Kembali Borong Saham SRTG, Kepemilikan Tembus 36,06%",
+   "first_seen": "2026-10-22T17:19+07:00"
+  },
+  {
+   "id": "5014b0363620",
+   "date": "2026-10-22",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Edisi",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOV2c1dXJ5Sjc5VGRtaWpaMDc0dXd2MGpRMHByaEtqampjQnFCczdra2wyMWZIOUU4S2tEWXN0dHNjOFZjR0ttS1I0SkdIYlhuMzFwdFA5Wjctb2dnSEUxZ2NJYXZQQ3RDV1hXQVlEUmpLZ0pYUnc2YjFiSkkxVHhEUGpOSzdmLW84cS1Wd29uNTV4WHFrUURrSmlfWWF5MmowWlI3T1VMY25EVllaNzNySm5Kd0lGcm82QlF1T0N0UmpNc0gwWU5tNlZWMEktbTRCTjBJLXdnMXJCSnE4RlHSAeMBQVVfeXFMTlJhaGQzQkdNVHZpZXFZZzdRMGVubThVajB5MlBlS2RiTXlzT2VOVllVQU1XRnJDUlprek1HeFN3UWhiQzVFbHFfTkxKUUxPU1VLRzNNNHB5elRBQk5tWGlPTFZPMk9mY09BRkcxREdBWlFuamJyQ3hwU1ljZkxaRGlnLWVjNGZZc2RSTVJWdnA2SjJnRHA5aHdFRF9jcWlGTXBaVDQ3RUdIeDl2NUdNYV9JYk9UNU9PZFZXaVZzbEpna0FVVkRUU0tPbmxGYUt4Z3FPc2tfQWtOYkxULTNMU3MwQmc?oc=5",
+   "title": "Muhammad Lutfi Soroti Pengalihan 22 Persen Saham Bayan Resources ke Elin Low, Singgung Aturan Divestasi",
+   "first_seen": "2026-10-22T17:19+07:00"
+  },
+  {
+   "id": "872028f3636a",
+   "date": "2026-10-22",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZi1mdWp5TzdxSHpJeVBoT1Y0QnJMeEh0WWxWNnhVNWNYRkZ3b1ZnR05IaG1YbnVlQ0ZCakhPamJYS1Q0T284RERKMWlyWm9wemVTRFhVMGNqRUVMOHJFZF9uNElKMVNaVkZzX0N4OFh6SGw3bmZhLXQxdjFKTElGMGV1dFF4TVhYLVE2MGd6UUpWcDJyRjhPbnM2dXcwSWdLTHdVYWNRcVJVOHlWc0t5Z1V2VWxfdw?oc=5",
+   "title": "Bursa Cecar Bayan Resources (BYAN) Soal Harga Jual Saham ke Jhonlin",
+   "first_seen": "2026-10-22T17:19+07:00"
+  },
   {
    "id": "8ea66b4ca724",
    "date": "2026-10-22",
@@ -3241,6 +3304,16 @@
   }
  ],
  "net_by_code": {
+  "SRTG": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 25
+  },
   "RLCO": {
    "net_shares": 49220000,
    "net_value": 0.0,
@@ -3255,11 +3328,6 @@
    "net_shares": -36500000,
    "net_value": 0.0,
    "count": 2
-  },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 23
   },
   "AKPI": {
    "net_shares": -500000,
