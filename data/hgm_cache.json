@@ -1015,5 +1015,69 @@
 "margin": true
 },
 "diambil": "2026-10-21"
+},
+"BFIN": {
+"status": "sebagian",
+"skor": 2,
+"kuartal": "2026-06",
+"laba_yoy": 0.3303,
+"penjualan_yoy": 0.0384,
+"margin": 0.2882,
+"margin_lalu": 0.2249,
+"akselerasi": true,
+"cek": {
+"laba": true,
+"penjualan": false,
+"margin": true
+},
+"diambil": "2026-10-22"
+},
+"ELSA": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-06",
+"laba_yoy": 0.6362,
+"penjualan_yoy": 0.2261,
+"margin": 0.0618,
+"margin_lalu": 0.0463,
+"akselerasi": true,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-22"
+},
+"MEDC": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-03",
+"laba_yoy": 2.8234,
+"penjualan_yoy": 0.1924,
+"margin": 0.1008,
+"margin_lalu": 0.0314,
+"akselerasi": null,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-22"
+},
+"MITI": {
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-06",
+"laba_yoy": -0.379,
+"penjualan_yoy": -0.0553,
+"margin": 0.0419,
+"margin_lalu": 0.0638,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": false
+},
+"diambil": "2026-10-22"
 }
 }
