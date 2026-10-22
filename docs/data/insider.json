@@ -1,10 +1,115 @@
 {
- "updated": "2026-10-22T08:34+07:00",
+ "updated": "2026-10-22T09:14+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 116
+  "news": 115
  },
  "transactions": [
+  {
+   "id": "789befa52c03",
+   "date": "2026-10-22",
+   "code": "AVIA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1430000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcTJ0dGRDcEVYWnlMbHoxd0U0ZXVzVTNsc0FjdlpVRFhScXM3ZzFxX1NORy1rWWMtSnEtcmo5bS1jWmlXX3FtMUVDS25RTXNWVmRPZjBQQXNITHFGd3EycmRLX3VaaU1LazRhOGthUzlKSGJtblRMWWhVOVVDOENETGN2clIwMVE1b1RobUNCV08weFlrby1RREozSXl4X1JkclVveDN5bXFqcVdLU0VBcXNKVWduckVyRkZVTDl3cDZnUQ?oc=5",
+   "title": "Robert Christian Tanoko Kembali Borong Saham AVIA, Kepemilikan Tembus 1,43 Miliar Lembar",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "136d30568004",
+   "date": "2026-10-22",
+   "code": "ADRO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 470000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzdjU0pocnRpb2RDZmJxQURHUnI1VkM5STJJTVBXRUR6cEItYWVNZzBnOWVRVG1UWmxySmpMR21vcnozRl95TC1oYTBEVzVhTTAzUHFFaVFIaEdtMzlxbkxsdHhGTHVVQ0QxME9uakxEU0I0UENocEFaSTRJQTBuVWVkWkhqXzF1WjdsaUVDTXRYVG4ya19rLWZNM2szS24ySnNQUUs5NHhsbDlZ?oc=5",
+   "title": "Trinugraha Thohir Borong 470.000 Saham ADRO, Investasi Tembus Rp1 Miliar",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "85a071994c4b",
+   "date": "2026-10-22",
+   "code": "EMMI",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 3570000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 11.04,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYk02MHRHb0t6ZGxaM0g3VGI4cGp3V0FlelJsZDZwMy14dzctRC1RMV9qRmZsMHpHQjBGaTVLZm1VanBZV1pZM3NXY2huaHB4ZmlHdnprYUVLb3ZyTVZDTnI4aWViU0RUT21RZFdja0JOZ3J3dkM2Z3JOMV9IWE4wQWRwclRMRVpsemNObVVPSDI5OEhhUTFZNkcyNWtJQzlQWEUxd0JPbWsxNDFjTkhJNGI1Z3ZyUFE?oc=5",
+   "title": "Yulie Sekuritas Kembali Borong 3,57 Juta Saham EMMI, Kepemilikan Naik Jadi 11,04%",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "0f9ad883f60d",
+   "date": "2026-10-22",
+   "code": "DRMA",
+   "party": "Noel Laras",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 10000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORHdXQ0tDTWZMbW1zN0I5cFRxYlVscnQ0WnFid3BjblRoN1pMcWZJQTQ3dXgzU0NQTDVLZDR3aWg2eWJLSXg3TmRnRDBRQ2R6Qzc0OWNWejdFN0d3aHZoaDlVYW9kMEJZUzhoUUpLRTNsNWFNaVJCWVNEWXVBM1pxTWEwWkR2Umw4MUY0aHF4R3l3X1pDd0dEdUV6QzBzUjd1QXFRb1I0SjNzcGowdXktSnkycw?oc=5",
+   "title": "Balik Arah! Komisaris Noel Laras Borong 10 Juta Saham DRMA Senilai Rp8 Miliar",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "c31637874d5e",
+   "date": "2026-10-22",
+   "code": "BMRI",
+   "party": "Asing Ramai",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "TOPIK.ID",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYzNqWkRuTnpwLWdkUnJPbUdFdkNwaUFwMWhYa1RIM1pfMWdCbkQtOWFVaFRtUTFGdnhLOS0waHA0ZFAzZzBtWTNlSHFhNUxWSjFBcW04dE5xdXB6M3V6V1JkNnY4R2oyRG9XZTlHWVhKZkxHWkIzTEVnbmdwQU1XTmRMS2hrWmdjYUhQOEdGY0huaWRUaHl2SVJhSkRwaFhXWTEwUExWdw?oc=5",
+   "title": "Investor Asing Ramai Jual Saham BMRI Hingga Rp 227,4 Miliar Saat IHSG Menguat ke 0,94%",
+   "first_seen": "2026-10-22T09:14+07:00"
+  },
   {
    "id": "2274a0236402",
    "date": "2026-10-21",
@@ -399,8 +504,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "https://olenka.id/",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjA?oc=5",
+   "source": "Olenka",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjDSAZgBQVVfeXFMTWRLYjZ6T2hqQjQxUGJkSXd0UE1EMnBiZ3V4cTNZUWtCUnZ4Zk9JODRBTHVBV1QxRUhhd1d1d0Z2d1lZRlJTZmhlRXdsWHoyVWtIMFpUY0kzX3V6eXpYYWZXektQRlBmZHVzXzB6aEdheUZlUEl6V25ZU0pIbFVPSjQybllzQXF3QWV2VGRQT3pBb0JKcWRua1A?oc=5",
    "title": "Pemegang Saham Pengendali HRTA Borong Saham di Tengah Volatilitas Pasar",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -2947,6 +3052,31 @@
   }
  ],
  "net_by_code": {
+  "AVIA": {
+   "net_shares": 2876970000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "ADRO": {
+   "net_shares": 470000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "EMMI": {
+   "net_shares": 3570000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "DRMA": {
+   "net_shares": 24850000,
+   "net_value": -141750000.0,
+   "count": 4
+  },
+  "BMRI": {
+   "net_shares": 29100,
+   "net_value": 0.0,
+   "count": 3
+  },
   "TLKM": {
    "net_shares": 117450000,
    "net_value": 0.0,
@@ -2961,16 +3091,6 @@
    "net_shares": 4500000,
    "net_value": 0.0,
    "count": 5
-  },
-  "ADRO": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 4
-  },
-  "AVIA": {
-   "net_shares": 1446970000,
-   "net_value": 0.0,
-   "count": 4
   },
   "ATIC": {
    "net_shares": 0,
@@ -2991,11 +3111,6 @@
    "net_shares": 2423000,
    "net_value": 0.0,
    "count": 2
-  },
-  "DRMA": {
-   "net_shares": 14850000,
-   "net_value": -141750000.0,
-   "count": 3
   },
   "DEWI": {
    "net_shares": 0,
@@ -3091,11 +3206,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BMRI": {
-   "net_shares": 29100,
-   "net_value": 0.0,
-   "count": 2
   },
   "VIVA": {
    "net_shares": 0,
