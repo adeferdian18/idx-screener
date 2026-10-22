@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-22T17:19+07:00",
+ "updated": "2026-10-22T17:22+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 123
+  "news": 118
  },
  "transactions": [
   {
@@ -1707,27 +1707,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "c111a5bde71a",
-   "date": "2026-10-20",
-   "code": "DEWI",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNWNJTFR3dDlpUWRGUUgyckxNZnV2QVV3MkFhd2NKRUhCSksxXzNyX3JxS1hOcmNoeFEzVlpYRFFPOGFBdzhBUWNyR1ZGbk5sVHczeTJDYXk5RFJUTjUyMjlBaFp2Yl9abWl0QzhmaW5Ld3VwZmlVdi04cVVkRXB2b0t1by1BbFU?oc=5",
-   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "d16382c18a02",
    "date": "2026-10-19",
    "code": "RUNS",
@@ -1744,7 +1723,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
    "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
    "first_seen": "2026-10-22T09:54+07:00"
   },
@@ -1789,6 +1768,27 @@
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
    "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
    "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
+   "id": "c111a5bde71a",
+   "date": "2026-10-19",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkZsRjJJNWpPeElVcGt0aFBFelU2c0NGbjBnck1HTjdJUFJRSkRvS2VHZGVINHU3amhfX3FMLTc5QkVabXFpSzI1Y0hHREtRMVV3UjNBOC1qazJQOGdlSDRmdXRnaGZsRVhEdHNKSE84cHNIdzlMbUJxUWxEMjZhUVd3?oc=5",
+   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
+   "first_seen": "2026-10-21T18:03+07:00"
   },
   {
    "id": "f9cc3b2f3b85",
