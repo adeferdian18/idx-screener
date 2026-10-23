@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-23T12:03+07:00",
+ "updated": "2026-10-23T12:47+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 112
+  "news": 117
  },
  "transactions": [
+  {
+   "id": "849ecfec8a97",
+   "date": "2026-10-23",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Sinar Harapan",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWkxkY1dGVHNLQ19RUEw0N0hSaWVGbXRGanJzOU9nVTV0bE9ac1E1SW5rLXo0aGdCQkFOSHZMd1dJd09CbkJiMjMwU3ozTFFHR2gxR0FQcVkwU1JEeFNFNlVXUlpiUjh0SVgza3NFU1JwWGJNMnZhWlBndnN2NWtURnVQZnB6Rm5WWFRRV1Q1TFVIQk43OHphQWxOeElZWTY2UGw5cUdUTHlRV2hHS3h1cU9adk42ejkzVVVBX0VvdTXSAcYBQVVfeXFMT3Jlc2lwY2NSUmM3TXZQNTNEbTd6QlJsdm9MNFd3WUlRbWZzZ3NLRV9wR191ZHZWbHhyUVN6cnhqa3dqZmwwSC1JSHNKX2RkU19YTWUxeUFsZndDaElkSWRaSVBMaGo2VG5WWHNYS1BEQTVJdE9yM2VMeVg5cGwtSUhodjRBMlhPSU9HeVBlNnFOTUV3RGRPMUlnOGNZbDMyWVlSMjV6blRaSExUNFBwc29WaEQxQWN3QkI0V0ZzSFNuVEp1SG5R?oc=5",
+   "title": "Diskon Harga Jual Saham BYAN ke Haji Isam Disorot BEI, Ini Jawaban Manajemen!",
+   "first_seen": "2026-10-23T12:47+07:00"
+  },
+  {
+   "id": "422c2d526793",
+   "date": "2026-10-23",
+   "code": "ENRG",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95a1luTktUVER1VHV1LUZ3X0RXazEyNGx5RjJPQU9mSHhUdjB0MEE2OUV3S1l4dkhwUFF2RkFMYTdmNGpPUkVWTFBwM2ZaQ216Mldpb0NKY1dEZnQxbXdJbHBFejBLUzVXekozMzREb0w?oc=5",
+   "title": "Trimegah Sekuritas Tambah Kepemilikan Saham ENRG Jadi 11,24 Persen",
+   "first_seen": "2026-10-23T12:47+07:00"
+  },
   {
    "id": "a110d6f8ff22",
    "date": "2026-10-23",
@@ -1287,6 +1329,27 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
+   "id": "a5a69dfc2fc5",
+   "date": "2026-10-20",
+   "code": "GMFI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 350000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHZhYUhneVVOcnBBUktDSVlDMHZRclhwcUlxb3dYSVFpclpDQjhPYW1kZ0FNUk95WkpDVGdjZW04SENuN3VPZVVhSXJUWm5qc2NYdFpzNExGMzVBRk1mV09iTmZIWEN2NWtXSTJrQ2JwQzA0d0FiQTZGZEdVblpOaU83YnAyQ0RkWDFwaUZfRkJ5eFdXMkxDeWVB?oc=5",
+   "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
+   "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
    "id": "f38ae24373b8",
    "date": "2026-10-20",
    "code": "HRTA",
@@ -2043,6 +2106,48 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
+   "id": "f9cc3b2f3b85",
+   "date": "2026-10-20",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
+   "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
+   "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "0340d47c84a5",
+   "date": "2026-10-20",
+   "code": "ERAA",
+   "party": "Ini Tambah Saham Erajaya",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmZzNk16ZXRqdVExb2dHU21EaGgyemtvVk95Y2toNlJzRmdMdlJlemJCNDduZi1kSm1MalhybW02X09GUHZEcFFCVWhscmZnR2FwQkJlOUZSWDYwdG1fOG1LcHF2MkllMVJIbnBYVDBOWnR2T0YtSDhsZDA5R0UxZ0Yyd1JIM2xsVk9SSFJ5RE5sUVp3ZlVJekxyOA?oc=5",
+   "title": "Program Mesop, Direktur Ini Tambah Saham Erajaya Swasembada (ERAA)",
+   "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
    "id": "d16382c18a02",
    "date": "2026-10-19",
    "code": "RUNS",
@@ -2059,7 +2164,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
    "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
    "first_seen": "2026-10-22T09:54+07:00"
   },
@@ -2085,27 +2190,6 @@
    "first_seen": "2026-10-22T08:34+07:00"
   },
   {
-   "id": "a5a69dfc2fc5",
-   "date": "2026-10-19",
-   "code": "GMFI",
-   "party": null,
-   "role": "direksi_komisaris",
-   "action": "beli",
-   "shares": 350000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": "investasi",
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHZhYUhneVVOcnBBUktDSVlDMHZRclhwcUlxb3dYSVFpclpDQjhPYW1kZ0FNUk95WkpDVGdjZW04SENuN3VPZVVhSXJUWm5qc2NYdFpzNExGMzVBRk1mV09iTmZIWEN2NWtXSTJrQ2JwQzA0d0FiQTZGZEdVblpOaU83YnAyQ0RkWDFwaUZfRkJ5eFdXMkxDeWVB?oc=5",
-   "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
-   "first_seen": "2026-10-22T08:34+07:00"
-  },
-  {
    "id": "c111a5bde71a",
    "date": "2026-10-19",
    "code": "DEWI",
@@ -2124,27 +2208,6 @@
    "source": "Emitennews.com",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkZsRjJJNWpPeElVcGt0aFBFelU2c0NGbjBnck1HTjdJUFJRSkRvS2VHZGVINHU3amhfX3FMLTc5QkVabXFpSzI1Y0hHREtRMVV3UjNBOC1qazJQOGdlSDRmdXRnaGZsRVhEdHNKSE84cHNIdzlMbUJxUWxEMjZhUVd3?oc=5",
    "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
-   "id": "f9cc3b2f3b85",
-   "date": "2026-10-19",
-   "code": "WIFI",
-   "party": null,
-   "role": "individu5",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
-   "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
@@ -2505,27 +2568,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "0340d47c84a5",
-   "date": "2026-10-19",
-   "code": "ERAA",
-   "party": "Ini Tambah Saham Erajaya",
-   "role": "direksi_komisaris",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmZzNk16ZXRqdVExb2dHU21EaGgyemtvVk95Y2toNlJzRmdMdlJlemJCNDduZi1kSm1MalhybW02X09GUHZEcFFCVWhscmZnR2FwQkJlOUZSWDYwdG1fOG1LcHF2MkllMVJIbnBYVDBOWnR2T0YtSDhsZDA5R0UxZ0Yyd1JIM2xsVk9SSFJ5RE5sUVp3ZlVJekxyOA?oc=5",
-   "title": "Program Mesop, Direktur Ini Tambah Saham Erajaya Swasembada (ERAA)",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "e5e4f4a2932a",
    "date": "2026-10-19",
    "code": "BGTG",
@@ -2650,6 +2692,27 @@
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVTk2ZnpBRkRmazhaRV9EaTJNSmtfZ1RzaklSR01Bbm1Ea21XN0dJN3NkTFJVMTNhQk5HSUtoM0dOUWpJVFFtRnA0cjR6ZjB3aFVxckY3Y0VUVEF0TjlRZXVCbFQzUXd4WVk2NW5SZUpraWtub2ZsT2kyTVA4OC1taUQtSnlnT05vVmdQSEctZHdjUkVJREFxUm51TFhUaWlCcmh1ZHNsV1Q?oc=5",
    "title": "IHSG Anjlok 11,57 Persen, Investor Asing Ramai-Ramai Lepas Saham BBCA, BBRI, hingga BMRI",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "aeacc21ded9a",
+   "date": "2026-10-16",
+   "code": "GOTO",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Cirebon Times",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5BZEpIdUJPSENuWDdaTnlCOU1FVlJ1dTA2cjM5WGprQ0ktdEJTRmtxTThVdHhoV1czbXZEU25Da2c1bmhObTVfd0JxZ1RweUxrNGZyLWVZWE43OTdRelRRNDZUcGtYYmdSU1dZOXhOYw?oc=5",
+   "title": "Morgan Stanley Kurangi Saham GOTO Jadi 5,96 Persen",
+   "first_seen": "2026-10-23T12:47+07:00"
   },
   {
    "id": "56172b90570f",
@@ -3265,7 +3328,7 @@
    "date": "2026-10-16",
    "code": "BYAN",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": 650000000,
    "price": null,
@@ -3276,8 +3339,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUE1FZkd4Tl9OQ0hfSTVBVmdvMFpjVHVjSXBhM1RZYW14eV9EVWJFalhXUi0yT1pTUm16b0hpc0VkRlMtZWxLZXRMN2U0TzNMcGxnZTJOOUZ3TGZMSVEwc0FtSU45S3hFRkJnS01pZjJzTVhtVEpiYXVXM0x1VEZ6alpfcVk1V0ZGMElFdG5nNnkzQTZxOVIzVWNXeG5LWC1VT1NsNDdWazA?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcFpJc2pMN3FpMXFDNnpDa203Rk9NRnB1ZFhEbmN1eGhKU2hBdzMtX1dDMEZxSlJpWnRVV0w3ZHRRem4wMEtuUUtLZktVdGxEU3ExM20yNHEzWjBmaF9FNUYxY0xWSFhrVlk4bEhZYVAzQjhYY09vek1rTS1Id016dmQ3SG9USUpRU0xLWmhYaWplZ0F0NTdZV2N0RGpnRHVjS1hj?oc=5",
    "title": "Low Tuck Kwong Lepas 650 Juta Saham BYAN, Kepemilikan Susut Jadi 8,30%!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3640,6 +3703,16 @@
   }
  ],
  "net_by_code": {
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 29
+  },
+  "ENRG": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BEEF": {
    "net_shares": 795500,
    "net_value": 119325000.0,
@@ -3659,11 +3732,6 @@
    "net_shares": 1150000,
    "net_value": 0.0,
    "count": 1
-  },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 28
   },
   "CYBR": {
    "net_shares": -30763400,
@@ -3770,6 +3838,11 @@
    "net_value": 0.0,
    "count": 4
   },
+  "GMFI": {
+   "net_shares": 350000,
+   "net_value": 0.0,
+   "count": 1
+  },
   "TOTL": {
    "net_shares": 6160000,
    "net_value": 0.0,
@@ -3790,6 +3863,11 @@
    "net_value": 47600000.0,
    "count": 1
   },
+  "ERAA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "RUNS": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -3798,12 +3876,7 @@
   "GOTO": {
    "net_shares": -1740000000,
    "net_value": 0.0,
-   "count": 7
-  },
-  "GMFI": {
-   "net_shares": 350000,
-   "net_value": 0.0,
-   "count": 1
+   "count": 8
   },
   "PEGE": {
    "net_shares": 8060000,
@@ -3836,11 +3909,6 @@
    "count": 3
   },
   "FOLK": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "ERAA": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
