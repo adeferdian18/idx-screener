@@ -1,10 +1,94 @@
 {
- "updated": "2026-10-23T08:37+07:00",
+ "updated": "2026-10-23T09:15+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 2
+  "news": 122
  },
  "transactions": [
+  {
+   "id": "5c3dbaa2c7e1",
+   "date": "2026-10-23",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 5500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV0M1c3dFWmRhcGI2cV9uMjJOdHphLW1kRWMzZnZaaUpYQl9QeHE3YzdPenJoWmp3RGJUdVdXcjZ4OUNCSXN0SnpuQWpoOHFjbWtoUnZveHo0amRGc1VjS2lGTmxnRklYZHBLWURpUXFWOEtkOTZ4QUJUS2NUclk4Y1Exa0ZtUGxDUi1sNlBGRUFyRk5iRUJTbDVXeFViZ2FvdFlfS1dYcU5QMnVWTkE?oc=5",
+   "title": "Agoes Projosasmito borong 5,5 juta saham BRMS jelang rilis Lapkeu",
+   "first_seen": "2026-10-23T09:15+07:00"
+  },
+  {
+   "id": "4d0c41ecf6c7",
+   "date": "2026-10-23",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis Indonesia Premium",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUzJ4cWJpc29MenVFOC14LWJZeG1uNzFLN2sxSGxUYVc2NWRQNzVTeUsyUDBiVDhoUnZJSkY5blc2T1V0VmtJcXFRejlGWS03dm5tdTNHUTRKdmhvaGRPZ2Q5TnBCT2Nlek5hSXZ3ZzBKd0NObzRtS3lobk9VaFNIUjRkR1Z1OVFzcXRhcmNqdE9KSjRLT216WEZ0aGllaTBmWmJtRU5MX25MQ3hRQTZXQkJ3?oc=5",
+   "title": "Edwin Soeryadjaya Borong Saham SRTG, Kepemilikan Tembus 36,04%",
+   "first_seen": "2026-10-23T09:15+07:00"
+  },
+  {
+   "id": "61e05be8e2a1",
+   "date": "2026-10-23",
+   "code": "PTBA",
+   "party": "Ferial Martifauzi Jual Seluruh",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUDJnYXRrc2pPalZLVmtlMG1kWGNLY1NSZDdnOHlRV0hYS25YSmVqNTYzbFVSbU5raG1yaHpIb3haS3FnaFMwU29VTlQyNld3Z2F6WV91WHNPUklNSUVBUDdwNkN6UDVvMFBBanlROUUtZW9jVW1aMGszZmhROHBrcE8wQldUeUZMV05NTnBTRnU4SmZXTDhLMEhoMnN0b1FKeEx5aWdPNlhGWEdUSzloRmw5cEs?oc=5",
+   "title": "Komisaris PTBA Ferial Martifauzi Jual Seluruh Sahamnya, Kepemilikan Kini Nihil",
+   "first_seen": "2026-10-23T09:15+07:00"
+  },
+  {
+   "id": "e93d1d19d478",
+   "date": "2026-10-23",
+   "code": "PDPP",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS0Fqd21aQlRLMTE0NUF6UkF1NlZxVGUtQVlIdEd4MU9lOWFEelgtdmRZLVhQSGZWUlhXVnR1eWJ4RENMUlotVXhOUTNiTFNON0xZSjFYaEJHSldEZi1jZmlvUUlVOGZ1LW82R21CeEhmVU1Ka3JwWkE0MmluR2VmWlRVSVV1S19UQ2NkXzJhT2lGQ1A5WVVyeTRkMA?oc=5",
+   "title": "Lee Bee Teng Lepas Saham PDPP, Kepemilikan Turun di Bawah 5%",
+   "first_seen": "2026-10-23T09:15+07:00"
+  },
   {
    "id": "215389e7b090",
    "date": "2026-10-23",
@@ -25,6 +109,48 @@
    "link": "https://www.liputan6.com/saham/read/8319506/penjelasan-bayan-resources-soal-harga-jual-saham-rp-2588-ke-jhonlin",
    "title": "Penjelasan Bayan Resources Soal Harga Jual Saham Rp 2.588 ke Jhonlin",
    "first_seen": "2026-10-23T08:37+07:00"
+  },
+  {
+   "id": "ace6c85774b3",
+   "date": "2026-10-22",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis Tekno",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWlhtemtzWHJvNXpJWnNYMUxOWTBKUkItYmlNVF9Xa1RoVW45bXV3aElNVEdwalFwZEg1bWpSTFFMVXd1S1pQb0NaY2F3dFNzMlo4MWNpczVvUm16LVRHYjByX1FleXRtYjNTdUlsOUJadjlkSU1URDdYSlZUUVhVZXJWT3lEUGd3ZDFpbEFQaFVrdU9yUDNIcjNFSFJuNExlcFJKdjU1TUJCTEw4YUM2Q3ZxRm5nRWhoR09LaEoxeVpyeElhODBINEhuY1k?oc=5",
+   "title": "Hashim Djojohadikusumo Lepas Saham Surge (WIFI), Bagaimana Nasib Internet Rakyat?",
+   "first_seen": "2026-10-23T09:15+07:00"
+  },
+  {
+   "id": "22644c7acd43",
+   "date": "2026-10-22",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 53510000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXVYUFdoVkpQTXRzNEtfNy1SMWZLMGdEdkhfX194ZklPZFF1d05NUlVORGFmakxtbVJBLWdGWVNmaFBnclVwZ18wYkN4OUM2SW9BVlhiX0g0aGlGdW9uSVZWOHBIQ0l2Rm9wcWt2SmhjbWhYQWVFb1RFejFfbDh0d3lwUHZWT0Jtd0s4TDRfTGpuYlhhZWVob2xUWlBpYmVyTDktOWtuMlFrQzQ?oc=5",
+   "title": "Sujito Ngatiman Lepas 53,51 Juta Saham DEWI, Porsi Kepemilikan Menyusut!",
+   "first_seen": "2026-10-23T09:15+07:00"
   },
   {
    "id": "e40119edcb52",
@@ -198,20 +324,20 @@
    "id": "a4d5c6e36e87",
    "date": "2026-10-22",
    "code": "AKPI",
-   "party": "Argha Karya Prima Industry",
-   "role": "direksi_komisaris",
+   "party": null,
+   "role": "individu5",
    "action": "jual",
-   "shares": 100000,
-   "price": 575.0,
-   "value": 57500000.0,
+   "shares": null,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/henry-liem-lepas-100-000-saham-akpi-kepemilikan-turun-jadi-53-juta/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbnhzdWVnYngtVXllbjIxc21KWlBlNDBxaXRwUjFyLXBDQllhUkhSNU5kMUpONFJGdW43dzFQRDUzMWFkSExhckdsZmJyT0Z3QjF6Y2d3cGw5ZmwxTW5TWDhOYWczLWFqRmxQOUpkWWpLU1dHakNXcEt1dmI2aG5HZ1BjcTZ3M0diaTJabkRfUWx3ejQ?oc=5",
    "title": "Henry Liem Lepas 100 000 Saham AKPI, Kepemilikan Turun Jadi 5,3 Juta",
    "first_seen": "2026-10-22T14:13+07:00"
   },
@@ -361,6 +487,27 @@
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYzNqWkRuTnpwLWdkUnJPbUdFdkNwaUFwMWhYa1RIM1pfMWdCbkQtOWFVaFRtUTFGdnhLOS0waHA0ZFAzZzBtWTNlSHFhNUxWSjFBcW04dE5xdXB6M3V6V1JkNnY4R2oyRG9XZTlHWVhKZkxHWkIzTEVnbmdwQU1XTmRMS2hrWmdjYUhQOEdGY0huaWRUaHl2SVJhSkRwaFhXWTEwUExWdw?oc=5",
    "title": "Investor Asing Ramai Jual Saham BMRI Hingga Rp 227,4 Miliar Saat IHSG Menguat ke 0,94%",
    "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "78f989a1af05",
+   "date": "2026-10-21",
+   "code": "HRTA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 4350000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDX Channel",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVG9nMG1tRnlvQ2lzYXNtb3B6Ni04MlYwX1FvMkZIaTYzNFQ0SHl5QWVoRWt1ZFBMUlh5WVMxRDdtaW9FRmgyU0hRa3lDZ2kzNkNZMGJ2QWNzd0w1djJ3akVSekUtaUJWMUFlMGNOUEVUbVNNYW1KRm1SMFYzd3lSbE83MWFuMUJtWDVtYmo4OUFVWGRERlI3TFNQanAxckRWRXQydzNDd2h4S3FGUnVHUTJMT2VtQdIBuwFBVV95cUxPNTY4dmRESVZQU3BXTmNSSTFSbUhRNDZCTGxjdzl5M0JYNmVNZ0xQU29wWldUaW9uc1pfUzd2LUl1TWh0czJrc29FZHRudm0yNFprQ25GQnRVVnI5dHdHcHBwTEIwOGhZQ2gxS1huWlZaR1FUckR6YzVPSlJlVllMckJvTldNbjB4N0RRZ0wya0llamdUa0UyWUtVLU9pWWh2UG5TU1oxcWlJcjg5clZ2RndRZnBDeE5kcnpr?oc=5",
+   "title": "Pasar Bergejolak, Terang Anugrah Abadi Borong 4,35 Juta Saham Hartadinata (HRTA)",
+   "first_seen": "2026-10-23T09:15+07:00"
   },
   {
    "id": "2274a0236402",
@@ -1639,7 +1786,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "SINDOnews Ekbis",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOcDJqSVM5ek12bl82cGVKRkZyUXExVGZKOUZqQUxVQ0gxS3B2YTVDM1pYaV8wVlBfLXJJSloxd1N2YkNIbi1CVXdUZDVCTzVaYTJFVG9pZnJFN0VISlVnVldUZjVGbWctRmdOeXRQMElhNGViY1pUSDVqa29ITGgzODNCRENLN2I4WXBhVktzTE5GbDFkdkVlQURmVHB3clhURnpHOEV0OG9FdlotdjFYTVprSTNGR2tCUThTNGtYd1dSQVA5TzlmcmNYZGdUX0xQb2lVVjdYTE1XRzBVRHhxY2lqdVTSAeoBQVVfeXFMT0FhQzI4d3NJdW1udnBVaGx0ZnI5ajFqX1pHUEJvb1lQek5oMWJ2ZGV0R0tURFBzNUlJM0o3c1dnN0Q2ZGFmZmxKRlV4WE05bkRMSzNlV216R0Rvc3JEa1d1eTliTXQza1F2M0JYNUxPVjBwUWhQWDdiWDdkdkNSS1d2Q1dBQU5lZzdZNlNyWXFGWWx5U1lUNFhuckNFOUFVYVN5SzVEM1pDRV9Id1ZLWklDQlY2WElFSzJyUmljNkxxLW5MQ3RDeHNuRWJiRjl3M2R2X2Y2aGRpUlMxelI4dVhUQlZfSEVTWHhB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQWFDMjh3c0l1bW52cFVobHRmcjlqMWpfWkdQQm9vWVB6TmgxYnZkZXRHS1REUHM1SUkzSjdzV2c3RDZkYWZmbEpGVXhYTTluRExLM2VXbXpHRG9zckRrV3V5OWJNdDNrUXYzQlg1TE9WMHBRaFBYN2JYN2R2Q1JLV3ZDV0FBTmVnN1k2U3JZcUZZbHlTWVQ0WG5yQ0U5QVVhU3lLNUQzWkNFX0h3VktaSUNCVjZYSUVLMnJSaWM2THEtbkxDdEN4c25FYmJGOXczZHZfZjZoZGlSUzF6Ujh1WFRCVl9IRVNYeEHSAeoBQVVfeXFMT0FhQzI4d3NJdW1udnBVaGx0ZnI5ajFqX1pHUEJvb1lQek5oMWJ2ZGV0R0tURFBzNUlJM0o3c1dnN0Q2ZGFmZmxKRlV4WE05bkRMSzNlV216R0Rvc3JEa1d1eTliTXQza1F2M0JYNUxPVjBwUWhQWDdiWDdkdkNSS1d2Q1dBQU5lZzdZNlNyWXFGWWx5U1lUNFhuckNFOUFVYVN5SzVEM1pDRV9Id1ZLWklDQlY2WElFSzJyUmljNkxxLW5MQ3RDeHNuRWJiRjl3M2R2X2Y2aGRpUlMxelI4dVhUQlZfSEVTWHhB?oc=5",
    "title": "Pengendali HRTA Akumulasi Saham di Tengah Volatilitas Pasar: Keyakinan terhadap Prospek Ekonomi",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -1765,7 +1912,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
    "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
    "first_seen": "2026-10-22T09:54+07:00"
   },
@@ -1807,7 +1954,7 @@
    "purpose": "investasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHZhYUhneVVOcnBBUktDSVlDMHZRclhwcUlxb3dYSVFpclpDQjhPYW1kZ0FNUk95WkpDVGdjZW04SENuN3VPZVVhSXJUWm5qc2NYdFpzNExGMzVBRk1mV09iTmZIWEN2NWtXSTJrQ2JwQzA0d0FiQTZGZEdVblpOaU83YnAyQ0RkWDFwaUZfRkJ5eFdXMkxDeWVB?oc=5",
    "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
    "first_seen": "2026-10-22T08:34+07:00"
   },
@@ -2752,7 +2899,7 @@
    "purpose": "investasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbk9GQjdhZlZXODloTFRabUNrclFzTzlxU29fOVhINk9BSFBZdHVtSjNxcGF5NDl1YVZ5dlVfNEtIck1hYk1UR0lyZUw1aVpoRFRtTDJlSmFMM2lwNUdNSVdhQl9hcXRzQjNTS3BGU1pQV1FhSVlaM0ZuNXlXQjdGZGZwQVE4SXRuN08wNHRpcUNwV1V2YXhxNHBBMXJaUQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcFFmUTRTWTZtcGo3b29vc1RqRTBiRnVwdno3OTgwVDRPVXhWTHdyRlZpT0xEeGR3TW04ZTQ3Um91SHVGbm5XdGdWdDB2R0FGUkw3QWlMR3JlbkNUeFpLVjVLb0s0dGxsLWgweDg5YXkydTRnd1JLVUZvM1l4bnVpREN1bFUydHVWU0tWdWVZdGZpWlBxRUpFLQ?oc=5",
    "title": "Investasi Langsung, Direktur BRMS Ini Tambah 100 Ribu Lembar Saham",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -2772,8 +2919,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSGJlUVA1ZWczd0hwWS1neUE1NFQ4RmRqN2IwRkUwbTNPZzFmcVVzWThMd3J3dkFuT2xBcFhVM3V4MWQ2dExIajVacjdadXNQMV85bVJzRmdzektMUjlibElwT1JwcE9URzVJUll6WC0xUXhTM2NlczFtZEtOSjdNU2lsSHdfZGxITnBKQVl5NzlmS0RLcGhPVE1XQQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnlnR1o3QWRxWGY0UXBCTjJpUURBWm5iSUJSVEVwdjJ6MUJJWU1PbExVTUp6VnRKc2pGaTh4Y29LaUZDRmZ0aWxQMU1rUFFIakRsLUVZbVJJd01pZ0JCUUhmalB1M0lPaS1HQTFHVVdrS2JBcU03R1pGQVlaVXpycE16RTM1ZjZpV21IdWFVaUFVaEhFZXc?oc=5",
    "title": "Dirut PART Agresif Tambah Saham, Kepemilikan Naik Jadi 9,57%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3346,15 +3493,40 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 7080000,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "SRTG": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "PTBA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "PDPP": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BYAN": {
    "net_shares": -466170000,
    "net_value": 0.0,
    "count": 27
   },
-  "SRTG": {
-   "net_shares": 0,
+  "WIFI": {
+   "net_shares": -10000000,
    "net_value": 0.0,
-   "count": 1
+   "count": 17
+  },
+  "DEWI": {
+   "net_shares": -53510000,
+   "net_value": 0.0,
+   "count": 3
   },
   "RLCO": {
    "net_shares": 49220000,
@@ -3372,19 +3544,14 @@
    "count": 2
   },
   "AKPI": {
-   "net_shares": -500000,
-   "net_value": -57500000.0,
+   "net_shares": -400000,
+   "net_value": 0.0,
    "count": 2
   },
   "ATIC": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "WIFI": {
-   "net_shares": -10000000,
-   "net_value": 0.0,
-   "count": 16
   },
   "AVIA": {
    "net_shares": 2876970000,
@@ -3411,6 +3578,11 @@
    "net_value": 0.0,
    "count": 3
   },
+  "HRTA": {
+   "net_shares": 32400000,
+   "net_value": 0.0,
+   "count": 14
+  },
   "TLKM": {
    "net_shares": 117450000,
    "net_value": 0.0,
@@ -3420,11 +3592,6 @@
    "net_shares": 4500000,
    "net_value": 0.0,
    "count": 5
-  },
-  "HRTA": {
-   "net_shares": 28050000,
-   "net_value": 0.0,
-   "count": 13
   },
   "TPIA": {
    "net_shares": 2000000,
@@ -3436,20 +3603,10 @@
    "net_value": 0.0,
    "count": 2
   },
-  "DEWI": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
-  },
   "MDLA": {
    "net_shares": 1380000,
    "net_value": 0.0,
    "count": 4
-  },
-  "BRMS": {
-   "net_shares": 1580000,
-   "net_value": 0.0,
-   "count": 5
   },
   "TOTL": {
    "net_shares": 6160000,
