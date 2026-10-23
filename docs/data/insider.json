@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-23T13:36+07:00",
+ "updated": "2026-10-23T14:29+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 119
+  "news": 110
  },
  "transactions": [
   {
@@ -21,8 +21,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW55RVRZWnpGeWxPbWRTNVRUT1JjQmJrSVVCaG1WZlBFZ0JkM21kem51MHRJS0Rvd3NyaHVVZWF2RXNWNDgzd1Q4cHpMX015STczb1g2cVRfNV9kU2R3MXhvNENUU0ZuclpkX3V5alV6UkFlejRwamZlZms4YmlqR2JtR0NHcmtySktMbEQySGNnc1lZdUtrd010NWVydzVvM2paaTVXNkdjVjRz0gGkAUFVX3lxTE5KdnVtREgwVXpmSUdkS2t0RkM1Zzk2NkR4YlUwdktoeDVNcHAzeFJHZmFPVlR1ZFJoR1ZzZmJOYUhpcHBGMVJYRnR4aVhzZHpnMV95cDJ4NnNEUjlDeDZ3NE40eGV4TUR1R2JjdlVGaTVCTkFNbVZWWlJPdmNjZ05ZaWk1RGpWaUl4dFdndlBkMmRCQksyTkdHN3NSdDJZYmd0WEtR?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSnZ1bURIMFV6ZklHZEtrdEZDNWc5NjZEeGJVMHZLaHg1TXBwM3hSR2ZhT1ZUdWRSaEdWc2ZiTmFIaXBwRjFSWEZ0eGlYc2R6ZzFfeXAyeDZzRFI5Q3g2dzRONHhleE1EdUdiY3ZVRmk1Qk5BTW1WVlpST3ZjY2dOWWlpNURqVmlJeHRXZ3ZQZDJkQkJLMk5HRzdzUnQyWWJndFhLUdIBpAFBVV95cUxOSnZ1bURIMFV6ZklHZEtrdEZDNWc5NjZEeGJVMHZLaHg1TXBwM3hSR2ZhT1ZUdWRSaEdWc2ZiTmFIaXBwRjFSWEZ0eGlYc2R6ZzFfeXAyeDZzRFI5Q3g2dzRONHhleE1EdUdiY3ZVRmk1Qk5BTW1WVlpST3ZjY2dOWWlpNURqVmlJeHRXZ3ZQZDJkQkJLMk5HRzdzUnQyWWJndFhLUQ?oc=5",
    "title": "Trimegah Sekuritas Beli 156,57 Juta Saham ENRG, Kepemilikan Naik Jadi 11,24%",
    "first_seen": "2026-10-23T13:36+07:00"
   },
@@ -1408,7 +1408,7 @@
    "purpose": "investasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHZhYUhneVVOcnBBUktDSVlDMHZRclhwcUlxb3dYSVFpclpDQjhPYW1kZ0FNUk95WkpDVGdjZW04SENuN3VPZVVhSXJUWm5qc2NYdFpzNExGMzVBRk1mV09iTmZIWEN2NWtXSTJrQ2JwQzA0d0FiQTZGZEdVblpOaU83YnAyQ0RkWDFwaUZfRkJ5eFdXMkxDeWVB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
    "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
    "first_seen": "2026-10-22T08:34+07:00"
   },
@@ -2209,6 +2209,27 @@
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmZzNk16ZXRqdVExb2dHU21EaGgyemtvVk95Y2toNlJzRmdMdlJlemJCNDduZi1kSm1MalhybW02X09GUHZEcFFCVWhscmZnR2FwQkJlOUZSWDYwdG1fOG1LcHF2MkllMVJIbnBYVDBOWnR2T0YtSDhsZDA5R0UxZ0Yyd1JIM2xsVk9SSFJ5RE5sUVp3ZlVJekxyOA?oc=5",
    "title": "Program Mesop, Direktur Ini Tambah Saham Erajaya Swasembada (ERAA)",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "ef5b0618a34a",
+   "date": "2026-10-19",
+   "code": "BBRI",
+   "party": "Alexander Dippo",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1100000,
+   "price": 2700.0,
+   "value": 2970000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRFA3djMxVFhZNkJQcXVPQm1fZG9zY0pfZ2oxYkZ1Y05iMS1xZXp6OU9ZMExUeGwya3ZvbWVXX2RlYkJ0Z2pqcnBFejk4MTFmeENEbDVnRy1SNGJnVlItOXgtNm9UczNra1lqTDBsd2NxTGdXSk5oOTNTYnZVNjZ3cVVmQ0JtTlUwSEFsekNfMElvLWxnVkJzNm1ZdWpwMHUwd0R1Z01BUnBMUWFuTDF0R2tlNHY3MnFQSS1zd216VVZYbU8wbkZj0gHMAUFVX3lxTE9QYUVsYXJOQkdaRFY4Mk9HNUdjUkRLRjV2UGVMYjRBd0EzZUg2V0MxSHp5WmpnZzR0bklNSjZ2Uy11akNmaEIyVlQ0X3RVVmtSbWV2NWpLSVdvRmdxZGpsRlMwTmhJOXdfa0lRek1CYzhpbldxTGkySk1EdEphTmlMT1NEdkdTVGduWmRrZFl1RHFGM0Z0QXZYSDhkV0NWZUNEaGxKNEtaQ3dORGFGaGQyc1BOZkhkUkFwT0taalRmWDBWUUtxME95WHliQg?oc=5",
+   "title": "Direktur BBRI Alexander Dippo Borong 1,1 Juta Saham di Harga Rp2.700",
+   "first_seen": "2026-10-23T14:29+07:00"
   },
   {
    "id": "787f17a9aa37",
@@ -3171,8 +3192,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnlnR1o3QWRxWGY0UXBCTjJpUURBWm5iSUJSVEVwdjJ6MUJJWU1PbExVTUp6VnRKc2pGaTh4Y29LaUZDRmZ0aWxQMU1rUFFIakRsLUVZbVJJd01pZ0JCUUhmalB1M0lPaS1HQTFHVVdrS2JBcU03R1pGQVlaVXpycE16RTM1ZjZpV21IdWFVaUFVaEhFZXc?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSGJlUVA1ZWczd0hwWS1neUE1NFQ4RmRqN2IwRkUwbTNPZzFmcVVzWThMd3J3dkFuT2xBcFhVM3V4MWQ2dExIajVacjdadXNQMV85bVJzRmdzektMUjlibElwT1JwcE9URzVJUll6WC0xUXhTM2NlczFtZEtOSjdNU2lsSHdfZGxITnBKQVl5NzlmS0RLcGhPVE1XQQ?oc=5",
    "title": "Dirut PART Agresif Tambah Saham, Kepemilikan Naik Jadi 9,57%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3370,7 +3391,7 @@
    "date": "2026-10-16",
    "code": "BYAN",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": 650000000,
    "price": null,
@@ -3381,8 +3402,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUE1FZkd4Tl9OQ0hfSTVBVmdvMFpjVHVjSXBhM1RZYW14eV9EVWJFalhXUi0yT1pTUm16b0hpc0VkRlMtZWxLZXRMN2U0TzNMcGxnZTJOOUZ3TGZMSVEwc0FtSU45S3hFRkJnS01pZjJzTVhtVEpiYXVXM0x1VEZ6alpfcVk1V0ZGMElFdG5nNnkzQTZxOVIzVWNXeG5LWC1VT1NsNDdWazA?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcFpJc2pMN3FpMXFDNnpDa203Rk9NRnB1ZFhEbmN1eGhKU2hBdzMtX1dDMEZxSlJpWnRVV0w3ZHRRem4wMEtuUUtLZktVdGxEU3ExM20yNHEzWjBmaF9FNUYxY0xWSFhrVlk4bEhZYVAzQjhYY09vek1rTS1Id016dmQ3SG9USUpRU0xLWmhYaWplZ0F0NTdZV2N0RGpnRHVjS1hj?oc=5",
    "title": "Low Tuck Kwong Lepas 650 Juta Saham BYAN, Kepemilikan Susut Jadi 8,30%!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3896,9 +3917,9 @@
    "count": 1
   },
   "BBRI": {
-   "net_shares": 4400000,
-   "net_value": 2970000000.0,
-   "count": 5
+   "net_shares": 5500000,
+   "net_value": 5940000000.0,
+   "count": 6
   },
   "NSSS": {
    "net_shares": 0,
