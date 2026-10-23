@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-23T15:55+07:00",
+ "updated": "2026-10-23T16:32+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 110
+  "news": 120
  },
  "transactions": [
+  {
+   "id": "58200d31b104",
+   "date": "2026-10-23",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 5500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE45enJ3V1VfczdEOUhoRHVpbTdXWGpJNkZLdUZ4NnJZNkhRUHpkU3dRcFhmcnpTRHFBV2pzT0ZjQmRjWk5aTjNnRUdFZmlCZnBsdVBXUmUtVE0?oc=5",
+   "title": "Agoes Borong 5,5 Juta Saham BRMS Senilai Rp 2,46 Miliar",
+   "first_seen": "2026-10-23T16:32+07:00"
+  },
+  {
+   "id": "9be22909e975",
+   "date": "2026-10-23",
+   "code": "BAJA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 271000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 10.84,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQa2dKSXdZNmJBdFdNOXdacTI4a3AxQTVFMDlIWVBHWi16cW1ZalVhRnFxb2lkNTFSc1hURVZ0RXVobzdBYXh1UG82bGpYWVhjc2t3dFVPVngzVUFQSnZDd1hib1NSY3FBZ1NiVDlIdnpUUEhEOXJXM1BWd3RwYXhiNVMxcUw5VFl1eUVUNEVXalZtcEJQWU5TYmlPR3dkbHpvM2ZCS204eUxDZGc0UmhVQVdsMVhicUZaN2tCcjhoS0VTWTRXd1E?oc=5",
+   "title": "Ibnu Susanto Lepas 271 Juta Saham BAJA Senilai Rp135,5 Miliar, Kepemilikan Turun Jadi 10,84%",
+   "first_seen": "2026-10-23T16:32+07:00"
+  },
   {
    "id": "eb7d85c750d6",
    "date": "2026-10-23",
@@ -85,7 +127,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaGh4YW10V3NhVHNwZ1pXRE92eUVxbHkxVldjQ0x6MlNKRC05LTNrNkl5N19zWC1BNTB4aHZOODVlZkt5dE5PLVlaZkxLNmlEaWpwVG5kN0NUWHlfbTdtWmRWa1h5eURfSUpuQ1h1ckswUUZlU0I2REVYMkU1UlRXX01QM3JPcmRrenRwZFhwcGs3cnQ3aEEzY09QdFNsM0NoQ1Z4cllOb2dZTy1RRmN1ZndpR190NlEweTluTdIBwgFBVV95cUxQSlY3bm9mWkNUWFpPMHk5dmw4RVd3WnVYdTVneHZDRUFhTFZuNUwzdWVZdWI5dW1UMHNFTjBBSXZyOGFWOXNtWS10eWU2NnBWalhiWDQ1TDFzeU1kQWs1SzNMTDhsQjlSUVYwSWIzNDdjeFYyOGpuMmFsTDd5cThnb1BjdU5lbGF0SGVyT2Vpc2hfQUVnR00xeTlRdUxYWnBmcFNJa0dkSFBjVXZMUHNSSWxsS2NSUlJ4YkxYV0dEQmp3dw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOczA0UDJKTlpfMVlFMkVUZDRJcFJsOWNHWERaSkRuTmRwcnRZV2xsTDluOXoydnBtcnZaRFNSeGI5UElfam45Uk9weWNjLTZVUE1CTUxCZDFwanliWERzOEFFWWozdjlZMW9fdXhhNGxHMzJ0TVJlQUFEM2o4VzQ4ZjBJdklFNmE2VzNyYW5lVVplNXRDb3MxcDRYVXRBRm1mR3ZpUzg3NU44V2szQURKRk84VlZyeXPSAcIBQVVfeXFMUEpWN25vZlpDVFhaTzB5OXZsOEVXd1p1WHU1Z3h2Q0VBYUxWbjVMM3VlWXViOXVtVDBzRU4wQUl2cjhhVjlzbVktdHllNjZwVmpYYlg0NUwxc3lNZEFrNUszTEw4bEI5UlFWMEliMzQ3Y3hWMjhqbjJhbEw3eXE4Z29QY3VOZWxhdEhlck9laXNoX0FFZ0dNMXk5UXVMWFpwZnBTSWtHZEhQY1V2TFBzUklsbEtjUlJSeGJMWFdHREJqd3c?oc=5",
    "title": "Trimegah Sekuritas Borong Saham Grup Bakrie (ENRG), Ada Apa?",
    "first_seen": "2026-10-23T15:13+07:00"
   },
@@ -526,7 +568,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Edisi",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOV2c1dXJ5Sjc5VGRtaWpaMDc0dXd2MGpRMHByaEtqampjQnFCczdra2wyMWZIOUU4S2tEWXN0dHNjOFZjR0ttS1I0SkdIYlhuMzFwdFA5Wjctb2dnSEUxZ2NJYXZQQ3RDV1hXQVlEUmpLZ0pYUnc2YjFiSkkxVHhEUGpOSzdmLW84cS1Wd29uNTV4WHFrUURrSmlfWWF5MmowWlI3T1VMY25EVllaNzNySm5Kd0lGcm82QlF1T0N0UmpNc0gwWU5tNlZWMEktbTRCTjBJLXdnMXJCSnE4RlHSAeMBQVVfeXFMTlJhaGQzQkdNVHZpZXFZZzdRMGVubThVajB5MlBlS2RiTXlzT2VOVllVQU1XRnJDUlprek1HeFN3UWhiQzVFbHFfTkxKUUxPU1VLRzNNNHB5elRBQk5tWGlPTFZPMk9mY09BRkcxREdBWlFuamJyQ3hwU1ljZkxaRGlnLWVjNGZZc2RSTVJWdnA2SjJnRHA5aHdFRF9jcWlGTXBaVDQ3RUdIeDl2NUdNYV9JYk9UNU9PZFZXaVZzbEpna0FVVkRUU0tPbmxGYUt4Z3FPc2tfQWtOYkxULTNMU3MwQmc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUmFoZDNCR01UdmllcVlnN1EwZW5tOFVqMHkyUGVLZGJNeXNPZU5WWVVBTVdGckNSWmt6TUd4U3dRaGJDNUVscV9OTEpRTE9TVUtHM000cHl6VEFCTm1YaU9MVk8yT2ZjT0FGRzFER0FaUW5qYnJDeHBTWWNmTFpEaWctZWM0ZllzZFJNUlZ2cDZKMmdEcDlod0VEX2NxaUZNcFpUNDdFR0h4OXY1R01hX0liT1Q1T09kVldpVnNsSmdrQVVWRFRTS09ubEZhS3hncU9za19Ba05iTFQtM0xTczBCZ9IB4wFBVV95cUxOUmFoZDNCR01UdmllcVlnN1EwZW5tOFVqMHkyUGVLZGJNeXNPZU5WWVVBTVdGckNSWmt6TUd4U3dRaGJDNUVscV9OTEpRTE9TVUtHM000cHl6VEFCTm1YaU9MVk8yT2ZjT0FGRzFER0FaUW5qYnJDeHBTWWNmTFpEaWctZWM0ZllzZFJNUlZ2cDZKMmdEcDlod0VEX2NxaUZNcFpUNDdFR0h4OXY1R01hX0liT1Q1T09kVldpVnNsSmdrQVVWRFRTS09ubEZhS3hncU9za19Ba05iTFQtM0xTczBCZw?oc=5",
    "title": "Muhammad Lutfi Soroti Pengalihan 22 Persen Saham Bayan Resources ke Elin Low, Singgung Aturan Divestasi",
    "first_seen": "2026-10-22T17:19+07:00"
   },
@@ -631,7 +673,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Pena Bicara",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcXpfczM3NmFnZlgzbGpaVThoeHhOSmhKd0pFa1ZJV2Y0by1ESnpJV21kUFlGR3ZkLXAzQXZQWXdhSkUyWDVVZU94QWV3c0J0X2gycjBFRHFkUEtZLW9ydDhtT2dZMDg3eWV4SzFxTk9mRjIzMnJLbkZtaDR1MzJsY0djLXBTWXkyU1lSdlNsQWVmd3pCdllNeG1zWU94NVpGSjZuSmkxanRYNnVCanZHS2Jzbk1QNlVER1AyMnEwamZUYXpxWG1BNGVXMjV4Zy02UUVFT2VlS0ItWjTSAeABQVVfeXFMUFhtaEkxZHdEZE1oUHE1Tng0em1mdVlHM1FwUDVvY19DQXViQ19UMVRSOEJOV1c5RUhMUGYyUGx2dHFleFZRUG1VMVhXOUlJcl80N3RULUVVRjU5cS0xNm8yNDBvbF84OWpaSkdYLXZ4VW1SY0JaT2NENkQ1MnBVYkYxS1Zvb1lJSUhtOWtTbjRJOHdwbDVVUm9hMENNa0pmb1oxMTJtakRoVTQ5RURGSk82dGJ3SW00MGdrcjNuQklzUWNJS3RRRkxwM2JnWHA2OGsySnZST0dscnd0RTJVNkw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWG1oSTFkd0RkTWhQcTVOeDR6bWZ1WUczUXBQNW9jX0NBdWJDX1QxVFI4Qk5XVzlFSExQZjJQbHZ0cWV4VlFQbVUxWFc5SUlyXzQ3dFQtRVVGNTlxLTE2bzI0MG9sXzg5alpKR1gtdnhVbVJjQlpPY0Q2RDUycFViRjFLVm9vWUlJSG05a1NuNEk4d3BsNVVSb2EwQ01rSmZvWjExMm1qRGhVNDlFREZKTzZ0YndJbTQwZ2tyM25CSXNRY0lLdFFGTHAzYmdYcDY4azJKdlJPR2xyd3RFMlU2TNIB4AFBVV95cUxQWG1oSTFkd0RkTWhQcTVOeDR6bWZ1WUczUXBQNW9jX0NBdWJDX1QxVFI4Qk5XVzlFSExQZjJQbHZ0cWV4VlFQbVUxWFc5SUlyXzQ3dFQtRVVGNTlxLTE2bzI0MG9sXzg5alpKR1gtdnhVbVJjQlpPY0Q2RDUycFViRjFLVm9vWUlJSG05a1NuNEk4d3BsNVVSb2EwQ01rSmZvWjExMm1qRGhVNDlFREZKTzZ0YndJbTQwZ2tyM25CSXNRY0lLdFFGTHAzYmdYcDY4azJKdlJPR2xyd3RFMlU2TA?oc=5",
    "title": "Soal Pengalihan Saham Bayan Resources, Muhammad Lutfi Pertanyakan Aturan Divestasi dan Status PMA",
    "first_seen": "2026-10-22T15:01+07:00"
   },
@@ -1453,6 +1495,27 @@
    "link": "https://stockwatch.id/ayls-akuisisi-saham-gpi-senilai-rp1-miliar-ini-dampaknya-terhadap-kepemilikan/",
    "title": "AYLS Akuisisi Saham GPI Senilai Rp1 Miliar, Ini Dampaknya terhadap Kepemilikan",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "f616d4b49622",
+   "date": "2026-10-20",
+   "code": "TAPG",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 700000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc3VKU3J4NmM0M1pqLUJ5b2g4V2hTRXdYNGRPN1JBTFd6bC05alpaY2YxQzdqNGFMcG5sVVF3WjJ3Q1YtNlhVa3dhSTF5dkY5N0ctWWotMkpKLUtHX2hSc1h3QzY4eFR5OUd3bDNaVEV4SVo3YWxPUzBsblk5czRyMW9IM0k4YzQ1amdPX0xaSWMzQTc5MkZmVkNnaw?oc=5",
+   "title": "Presdir Emiten Sawit TAPG Divestasi 700 Ribu Saham, Total Rp1,33M",
+   "first_seen": "2026-10-23T16:32+07:00"
   },
   {
    "id": "d16382c18a02",
@@ -3297,8 +3360,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSGJlUVA1ZWczd0hwWS1neUE1NFQ4RmRqN2IwRkUwbTNPZzFmcVVzWThMd3J3dkFuT2xBcFhVM3V4MWQ2dExIajVacjdadXNQMV85bVJzRmdzektMUjlibElwT1JwcE9URzVJUll6WC0xUXhTM2NlczFtZEtOSjdNU2lsSHdfZGxITnBKQVl5NzlmS0RLcGhPVE1XQQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnlnR1o3QWRxWGY0UXBCTjJpUURBWm5iSUJSVEVwdjJ6MUJJWU1PbExVTUp6VnRKc2pGaTh4Y29LaUZDRmZ0aWxQMU1rUFFIakRsLUVZbVJJd01pZ0JCUUhmalB1M0lPaS1HQTFHVVdrS2JBcU03R1pGQVlaVXpycE16RTM1ZjZpV21IdWFVaUFVaEhFZXc?oc=5",
    "title": "Dirut PART Agresif Tambah Saham, Kepemilikan Naik Jadi 9,57%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3496,7 +3559,7 @@
    "date": "2026-10-16",
    "code": "BYAN",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": 650000000,
    "price": null,
@@ -3507,8 +3570,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcFpJc2pMN3FpMXFDNnpDa203Rk9NRnB1ZFhEbmN1eGhKU2hBdzMtX1dDMEZxSlJpWnRVV0w3ZHRRem4wMEtuUUtLZktVdGxEU3ExM20yNHEzWjBmaF9FNUYxY0xWSFhrVlk4bEhZYVAzQjhYY09vek1rTS1Id016dmQ3SG9USUpRU0xLWmhYaWplZ0F0NTdZV2N0RGpnRHVjS1hj?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUE1FZkd4Tl9OQ0hfSTVBVmdvMFpjVHVjSXBhM1RZYW14eV9EVWJFalhXUi0yT1pTUm16b0hpc0VkRlMtZWxLZXRMN2U0TzNMcGxnZTJOOUZ3TGZMSVEwc0FtSU45S3hFRkJnS01pZjJzTVhtVEpiYXVXM0x1VEZ6alpfcVk1V0ZGMElFdG5nNnkzQTZxOVIzVWNXeG5LWC1VT1NsNDdWazA?oc=5",
    "title": "Low Tuck Kwong Lepas 650 Juta Saham BYAN, Kepemilikan Susut Jadi 8,30%!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3871,15 +3934,20 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 23580000,
+   "net_value": 0.0,
+   "count": 10
+  },
+  "BAJA": {
+   "net_shares": -27450000,
+   "net_value": 0.0,
+   "count": 2
+  },
   "AKPI": {
    "net_shares": -400000,
    "net_value": 0.0,
    "count": 4
-  },
-  "BRMS": {
-   "net_shares": 18080000,
-   "net_value": 0.0,
-   "count": 9
   },
   "AHAP": {
    "net_shares": 2770000000,
@@ -4002,9 +4070,9 @@
    "count": 2
   },
   "TAPG": {
-   "net_shares": 2423000,
+   "net_shares": 1723000,
    "net_value": 0.0,
-   "count": 2
+   "count": 3
   },
   "MDLA": {
    "net_shares": 1380000,
@@ -4108,11 +4176,6 @@
   },
   "MPRO": {
    "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "BAJA": {
-   "net_shares": 243550000,
    "net_value": 0.0,
    "count": 1
   },
