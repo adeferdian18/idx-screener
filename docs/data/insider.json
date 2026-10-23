@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-23T15:13+07:00",
+ "updated": "2026-10-23T15:55+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 107
+  "news": 110
  },
  "transactions": [
+  {
+   "id": "eb7d85c750d6",
+   "date": "2026-10-23",
+   "code": "AKPI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 0.8168,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
+   "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
+   "first_seen": "2026-10-23T15:55+07:00"
+  },
   {
    "id": "7ae1fd7ae5c1",
    "date": "2026-10-23",
@@ -84,8 +105,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "KONTAN",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSnZ1bURIMFV6ZklHZEtrdEZDNWc5NjZEeGJVMHZLaHg1TXBwM3hSR2ZhT1ZUdWRSaEdWc2ZiTmFIaXBwRjFSWEZ0eGlYc2R6ZzFfeXAyeDZzRFI5Q3g2dzRONHhleE1EdUdiY3ZVRmk1Qk5BTW1WVlpST3ZjY2dOWWlpNURqVmlJeHRXZ3ZQZDJkQkJLMk5HRzdzUnQyWWJndFhLUdIBpAFBVV95cUxOSnZ1bURIMFV6ZklHZEtrdEZDNWc5NjZEeGJVMHZLaHg1TXBwM3hSR2ZhT1ZUdWRSaEdWc2ZiTmFIaXBwRjFSWEZ0eGlYc2R6ZzFfeXAyeDZzRFI5Q3g2dzRONHhleE1EdUdiY3ZVRmk1Qk5BTW1WVlpST3ZjY2dOWWlpNURqVmlJeHRXZ3ZQZDJkQkJLMk5HRzdzUnQyWWJndFhLUQ?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW55RVRZWnpGeWxPbWRTNVRUT1JjQmJrSVVCaG1WZlBFZ0JkM21kem51MHRJS0Rvd3NyaHVVZWF2RXNWNDgzd1Q4cHpMX015STczb1g2cVRfNV9kU2R3MXhvNENUU0ZuclpkX3V5alV6UkFlejRwamZlZms4YmlqR2JtR0NHcmtySktMbEQySGNnc1lZdUtrd010NWVydzVvM2paaTVXNkdjVjRz0gGkAUFVX3lxTE5KdnVtREgwVXpmSUdkS2t0RkM1Zzk2NkR4YlUwdktoeDVNcHAzeFJHZmFPVlR1ZFJoR1ZzZmJOYUhpcHBGMVJYRnR4aVhzZHpnMV95cDJ4NnNEUjlDeDZ3NE40eGV4TUR1R2JjdlVGaTVCTkFNbVZWWlJPdmNjZ05ZaWk1RGpWaUl4dFdndlBkMmRCQksyTkdHN3NSdDJZYmd0WEtR?oc=5",
    "title": "Trimegah Sekuritas Beli 156,57 Juta Saham ENRG, Kepemilikan Naik Jadi 11,24%",
    "first_seen": "2026-10-23T13:36+07:00"
   },
@@ -177,10 +198,10 @@
    "id": "c597ec3ab661",
    "date": "2026-10-23",
    "code": "AKPI",
-   "party": "Argha Karya Prima Industry",
-   "role": "direksi_komisaris",
+   "party": null,
+   "role": "individu5",
    "action": "jual",
-   "shares": 300000,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -189,8 +210,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/berlanjut-henry-liem-kembali-jual-saham-akpi-kepemilikan-makin-susut/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUkI1aE9taWV0Y3BhdEx3ZlNOTVhFVnBfdTRZdmgyNVozV1pMMHVmZXVpZWdNU1RuZGgxNlpvZmRYUHcyUU5Iek1BUmNOZGVDQ19iSlpVQk9pVm5SY2JWaXNXbko0ZE5neHlpSmVUSVRWUE5ybThWN1BmSldMZ2ZhM09maTRQdjdRWHJtTHdWeG52X0huQWc?oc=5",
    "title": "Berlanjut! Henry Liem Kembali Jual Saham AKPI, Kepemilikan Makin Susut",
    "first_seen": "2026-10-23T11:16+07:00"
   },
@@ -2820,6 +2841,27 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
+   "id": "80f9994841cf",
+   "date": "2026-10-16",
+   "code": "BBRI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcGg2MzNQbFEwVGgyMF9GVXY1Ny1Hbi1sTVVVRE1KZVctQkZydldaTnR1NlZOVzdzSkRxVjFvOUxYR3BoTnY2Wi1rYy04UUtNejRzaXVpQXNhUGJxZzljWURTSnI2eFV2aEtraTNIUEYzQkxqQU9nMjFUZ2FpN0pJd09FNkRSbTJIWm13VDI1WC1hTXVwV2t0NS1HZ9IBlAFBVV95cUxONnpDTU53SldpWFI3ZWxCX0h1c0wwTVgzQ2l3WG5vbEpXcUZBWUpidVd6TmRZbmZ6Yl9wLXdxcnhyZ0pFSzdnTG1QUlo1aEl3d3RieElKS0ZyWnB0Vy1LUEt6el9yN3lDUzJycWtQX2RmYWpELU1wU19XbTR2d0Q0czFLcW1qN241S1A5RFQxbkpHamhv?oc=5",
+   "title": "Direksi BBRI Borong Saham Saat Harga Koreksi, Segini Harganya",
+   "first_seen": "2026-10-23T15:55+07:00"
+  },
+  {
    "id": "aeacc21ded9a",
    "date": "2026-10-16",
    "code": "GOTO",
@@ -3829,6 +3871,11 @@
   }
  ],
  "net_by_code": {
+  "AKPI": {
+   "net_shares": -400000,
+   "net_value": 0.0,
+   "count": 4
+  },
   "BRMS": {
    "net_shares": 18080000,
    "net_value": 0.0,
@@ -3858,11 +3905,6 @@
    "net_shares": 795500,
    "net_value": 119325000.0,
    "count": 1
-  },
-  "AKPI": {
-   "net_shares": -700000,
-   "net_value": 0.0,
-   "count": 3
   },
   "HGII": {
    "net_shares": 1150000,
@@ -3987,7 +4029,7 @@
   "BBRI": {
    "net_shares": 5500000,
    "net_value": 5940000000.0,
-   "count": 6
+   "count": 7
   },
   "NSSS": {
    "net_shares": 0,
