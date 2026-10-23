@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-22T17:22+07:00",
+ "updated": "2026-10-23T08:37+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 118
+  "news": 2
  },
  "transactions": [
+  {
+   "id": "215389e7b090",
+   "date": "2026-10-23",
+   "code": "BYAN",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Liputan6 Saham",
+   "link": "https://www.liputan6.com/saham/read/8319506/penjelasan-bayan-resources-soal-harga-jual-saham-rp-2588-ke-jhonlin",
+   "title": "Penjelasan Bayan Resources Soal Harga Jual Saham Rp 2.588 ke Jhonlin",
+   "first_seen": "2026-10-23T08:37+07:00"
+  },
+  {
+   "id": "e40119edcb52",
+   "date": "2026-10-22",
+   "code": "BYAN",
+   "party": "PT Bayan Resources",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Detik Finance",
+   "link": "https://finance.detik.com/bursa-dan-valas/d-8719560/bayan-buka-suara-sahamnya-diborong-haji-isam-di-harga-murah",
+   "title": "Bayan Buka Suara Sahamnya Diborong Haji Isam di Harga Murah",
+   "first_seen": "2026-10-23T08:37+07:00"
+  },
   {
    "id": "a644c6cb2633",
    "date": "2026-10-22",
@@ -3304,15 +3346,15 @@
   }
  ],
  "net_by_code": {
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 27
+  },
   "SRTG": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 25
   },
   "RLCO": {
    "net_shares": 49220000,
