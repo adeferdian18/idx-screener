@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-23T12:47+07:00",
+ "updated": "2026-10-23T13:36+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 117
+  "news": 119
  },
  "transactions": [
+  {
+   "id": "78b2bf1acc4f",
+   "date": "2026-10-23",
+   "code": "ENRG",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 156570000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 11.24,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW55RVRZWnpGeWxPbWRTNVRUT1JjQmJrSVVCaG1WZlBFZ0JkM21kem51MHRJS0Rvd3NyaHVVZWF2RXNWNDgzd1Q4cHpMX015STczb1g2cVRfNV9kU2R3MXhvNENUU0ZuclpkX3V5alV6UkFlejRwamZlZms4YmlqR2JtR0NHcmtySktMbEQySGNnc1lZdUtrd010NWVydzVvM2paaTVXNkdjVjRz0gGkAUFVX3lxTE5KdnVtREgwVXpmSUdkS2t0RkM1Zzk2NkR4YlUwdktoeDVNcHAzeFJHZmFPVlR1ZFJoR1ZzZmJOYUhpcHBGMVJYRnR4aVhzZHpnMV95cDJ4NnNEUjlDeDZ3NE40eGV4TUR1R2JjdlVGaTVCTkFNbVZWWlJPdmNjZ05ZaWk1RGpWaUl4dFdndlBkMmRCQksyTkdHN3NSdDJZYmd0WEtR?oc=5",
+   "title": "Trimegah Sekuritas Beli 156,57 Juta Saham ENRG, Kepemilikan Naik Jadi 11,24%",
+   "first_seen": "2026-10-23T13:36+07:00"
+  },
+  {
+   "id": "33816ea6bf4f",
+   "date": "2026-10-23",
+   "code": "CYBR",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 3710000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORm95TjVGblp2WXZwYmJkY1hBRTN1WjAzcTJ0OS0zNE5FckJDUTlXZ2ZJZUVhS29UNHNsc1pZYVBUVDkwWTFCNjlxUUNnNWdoTjZsV3BZNVNnOV8yeXlmWlZCR2RUSzFKbFdTM2NSdzdzU01tVy1PdFdGOWp5ZTNYZjZtZTZvTkVtaEc0T2N4blc1anFqNnNESzBiN0ZsSUNiSEZ3MWNRYmpoREhuZ1lYOHNmZUFBLTQwV2tDczFZYw?oc=5",
+   "title": "Patrick Rudolf Dannacher Kurangi Kepemilikan di CYBR, 3,71 Juta Saham Berpindah Tangan",
+   "first_seen": "2026-10-23T13:36+07:00"
+  },
   {
    "id": "849ecfec8a97",
    "date": "2026-10-23",
@@ -736,7 +778,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Citra Sumsel",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc1VEbm93VmQ1WXA4dlRPajBIUEJKX1pzUmNZbWJrUFlTVkFfc0ZWN2U2QkJHMGlreURPQU5KMzY4d1VIWWNpU1ZNQ3JoT0xtbnBNOUNCMnFDbFFpczh6djBPX2NXMW95eGVhWEJwaWdiNGpfRVQ5RmpZRE5yWFFYWFlNRkMybTQtRHZGSEVCN2RmM0ZFd2h1WXhZYnFfcXJRZ1ZyUUJxNUN5Q0ZPQ3gwSU5DZjZQeVUzMHhOLTJySnJSb0dySlhJUTJvbTFiRnJuVnpkYXhrMTdNMG9zaVBIUTEtLXNaOGd6TXZ2VUtWbldNZ9IB9wFBVV95cUxQYUxkWVRkQ1UtbTlDNkhmbkl2YmpjQUxhdF9aQ2czN2ltZGxJSl84ZldPVnU0V2g5eklYZGdRQTlUNDBDNzhDNXlEZjVwYVlwUklwNTVCMmVwQktDYXlkVnlOSXdZRmMxOWs5RjQ1eF8xcVN3dWUyTUVic3ozWlBNZ3BrbmtOYVZjZUl1Qk5BTFZudEVBM1FjXzVvaHNITURkc2hMaFJzcUw2T1g0UkVHWGtSWTI3bVVITDByb1FVR0FiV3B5THRvei1pTk9NNGpKZ0FRMDdhWkFSVlZMaml4VXo4a1BfQXZmWWtOVk5JMzRpckNROUJz?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYUxkWVRkQ1UtbTlDNkhmbkl2YmpjQUxhdF9aQ2czN2ltZGxJSl84ZldPVnU0V2g5eklYZGdRQTlUNDBDNzhDNXlEZjVwYVlwUklwNTVCMmVwQktDYXlkVnlOSXdZRmMxOWs5RjQ1eF8xcVN3dWUyTUVic3ozWlBNZ3BrbmtOYVZjZUl1Qk5BTFZudEVBM1FjXzVvaHNITURkc2hMaFJzcUw2T1g0UkVHWGtSWTI3bVVITDByb1FVR0FiV3B5THRvei1pTk9NNGpKZ0FRMDdhWkFSVlZMaml4VXo4a1BfQXZmWWtOVk5JMzRpckNROUJz0gH3AUFVX3lxTFBhTGRZVGRDVS1tOUM2SGZuSXZiamNBTGF0X1pDZzM3aW1kbElKXzhmV09WdTRXaDl6SVhkZ1FBOVQ0MEM3OEM1eURmNXBhWXBSSXA1NUIyZXBCS0NheWRWeU5Jd1lGYzE5azlGNDV4XzFxU3d1ZTJNRWJzejNaUE1ncGtua05hVmNlSXVCTkFMVm50RUEzUWNfNW9oc0hNRGRzaExoUnNxTDZPWDRSRUdYa1JZMjdtVUhMMHJvUVVHQWJXcHlMdG96LWlOT000akpnQVEwN2FaQVJWVkxqaXhVejhrUF9BdmZZa05WTkkzNGlyQ1E5QnM?oc=5",
    "title": "Hashim Djojohadikusumo Lewat Perusahaan Afiliasi Lepas Saham WIFI Rp4,06 Triliun, Harga Transaksi 180% di Atas Pasar",
    "first_seen": "2026-10-22T08:34+07:00"
   },
@@ -1327,6 +1369,27 @@
    "link": "https://stockwatch.id/ayls-akuisisi-saham-gpi-senilai-rp1-miliar-ini-dampaknya-terhadap-kepemilikan/",
    "title": "AYLS Akuisisi Saham GPI Senilai Rp1 Miliar, Ini Dampaknya terhadap Kepemilikan",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "d16382c18a02",
+   "date": "2026-10-20",
+   "code": "RUNS",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
+   "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
+   "first_seen": "2026-10-22T09:54+07:00"
   },
   {
    "id": "a5a69dfc2fc5",
@@ -2146,27 +2209,6 @@
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmZzNk16ZXRqdVExb2dHU21EaGgyemtvVk95Y2toNlJzRmdMdlJlemJCNDduZi1kSm1MalhybW02X09GUHZEcFFCVWhscmZnR2FwQkJlOUZSWDYwdG1fOG1LcHF2MkllMVJIbnBYVDBOWnR2T0YtSDhsZDA5R0UxZ0Yyd1JIM2xsVk9SSFJ5RE5sUVp3ZlVJekxyOA?oc=5",
    "title": "Program Mesop, Direktur Ini Tambah Saham Erajaya Swasembada (ERAA)",
    "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
-   "id": "d16382c18a02",
-   "date": "2026-10-19",
-   "code": "RUNS",
-   "party": null,
-   "role": "pengendali",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": "divestasi",
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
-   "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
-   "first_seen": "2026-10-22T09:54+07:00"
   },
   {
    "id": "787f17a9aa37",
@@ -3129,8 +3171,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSGJlUVA1ZWczd0hwWS1neUE1NFQ4RmRqN2IwRkUwbTNPZzFmcVVzWThMd3J3dkFuT2xBcFhVM3V4MWQ2dExIajVacjdadXNQMV85bVJzRmdzektMUjlibElwT1JwcE9URzVJUll6WC0xUXhTM2NlczFtZEtOSjdNU2lsSHdfZGxITnBKQVl5NzlmS0RLcGhPVE1XQQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnlnR1o3QWRxWGY0UXBCTjJpUURBWm5iSUJSVEVwdjJ6MUJJWU1PbExVTUp6VnRKc2pGaTh4Y29LaUZDRmZ0aWxQMU1rUFFIakRsLUVZbVJJd01pZ0JCUUhmalB1M0lPaS1HQTFHVVdrS2JBcU03R1pGQVlaVXpycE16RTM1ZjZpV21IdWFVaUFVaEhFZXc?oc=5",
    "title": "Dirut PART Agresif Tambah Saham, Kepemilikan Naik Jadi 9,57%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3328,7 +3370,7 @@
    "date": "2026-10-16",
    "code": "BYAN",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": 650000000,
    "price": null,
@@ -3339,8 +3381,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcFpJc2pMN3FpMXFDNnpDa203Rk9NRnB1ZFhEbmN1eGhKU2hBdzMtX1dDMEZxSlJpWnRVV0w3ZHRRem4wMEtuUUtLZktVdGxEU3ExM20yNHEzWjBmaF9FNUYxY0xWSFhrVlk4bEhZYVAzQjhYY09vek1rTS1Id016dmQ3SG9USUpRU0xLWmhYaWplZ0F0NTdZV2N0RGpnRHVjS1hj?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUE1FZkd4Tl9OQ0hfSTVBVmdvMFpjVHVjSXBhM1RZYW14eV9EVWJFalhXUi0yT1pTUm16b0hpc0VkRlMtZWxLZXRMN2U0TzNMcGxnZTJOOUZ3TGZMSVEwc0FtSU45S3hFRkJnS01pZjJzTVhtVEpiYXVXM0x1VEZ6alpfcVk1V0ZGMElFdG5nNnkzQTZxOVIzVWNXeG5LWC1VT1NsNDdWazA?oc=5",
    "title": "Low Tuck Kwong Lepas 650 Juta Saham BYAN, Kepemilikan Susut Jadi 8,30%!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3703,15 +3745,20 @@
   }
  ],
  "net_by_code": {
+  "ENRG": {
+   "net_shares": 156570000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "CYBR": {
+   "net_shares": -34473400,
+   "net_value": 0.0,
+   "count": 5
+  },
   "BYAN": {
    "net_shares": -466170000,
    "net_value": 0.0,
    "count": 29
-  },
-  "ENRG": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "BEEF": {
    "net_shares": 795500,
@@ -3732,11 +3779,6 @@
    "net_shares": 1150000,
    "net_value": 0.0,
    "count": 1
-  },
-  "CYBR": {
-   "net_shares": -30763400,
-   "net_value": 0.0,
-   "count": 4
   },
   "SRTG": {
    "net_shares": 0,
@@ -3838,6 +3880,11 @@
    "net_value": 0.0,
    "count": 4
   },
+  "RUNS": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "GMFI": {
    "net_shares": 350000,
    "net_value": 0.0,
@@ -3864,11 +3911,6 @@
    "count": 1
   },
   "ERAA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "RUNS": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
