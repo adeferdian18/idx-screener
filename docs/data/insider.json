@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-23T11:16+07:00",
+ "updated": "2026-10-23T12:03+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 118
+  "news": 112
  },
  "transactions": [
+  {
+   "id": "a110d6f8ff22",
+   "date": "2026-10-23",
+   "code": "BEEF",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 795500,
+   "price": 150.0,
+   "value": 119325000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcGJ1enZUSXNFYUdTbUJGYTZwZE9HdGZabmdPT3IwWWFLVXl1ZzZ0Q2tPenhjZk9RTnk1b2xHanNmdU5tSWhKMkprMG1pZjNxRDBMUjBwSFNfUmRaLWJZUWdRZWFOdEp0cjFiTDRBSmRYd3JjM2I1UXJ3Rk0xYzVrNFN5Q09qaHNyUUlxUDYyWG9DR3hKUl9zNVNrYkdJcE1BODV6M0hYQ1U4UTRHOHc?oc=5",
+   "title": "Aldi Imam Wibowo Borong 795.500 Saham BEEF, Rogoh Dana di Harga Rp150–161",
+   "first_seen": "2026-10-23T12:03+07:00"
+  },
   {
    "id": "c597ec3ab661",
    "date": "2026-10-23",
@@ -1596,8 +1617,8 @@
    "after_shares": null,
    "purpose": "divestasi",
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNW9yWHV2TXZmOUxlYjlTbXRQMlJJQWpKbTBMeHF5ME9jYjNCOTV0elZqZGU2OGtPeTZqd1lSUTVQSWZia0FQZ1lXQnZrTUVvVm0xY2EwWGZVTllOSkcxTFlUMzMwWVc2dV80M0cyU1drUlNBU3k5R1JhaUdaZE5vbFpMUDVLc1p1SnZ0RFlIdkJmOTZmUGk1ZThtb0dTd2d2bHhFQmdGSndDSEFRU1BVZTVUS1llb2hyWFR1TkJB?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQU3g5LTB0dy1XU2RtZi14N25BX2xsYm5TLUx3V1k3SjBYNFB3cGJNRnJiN3hiejBtMmc1NDZHb3QwWHdnV24yY0puQjJDZnhmYVVwZWJEdC0tZjFWT08tUFFPa2J3UlF0MUg3Y2dtTXRnMDlienJvZGxtNTBEVzRjMkhseGVHYWJybFg0VTQyZFBOM1ZuTzRDMmFhN3B3U1UtZVRhcHlfYkppa1NpdllSTHB4T0hXMG1R?oc=5",
    "title": "Komisaris DRMA Noel Aelyo Lanjutkan Aksi Divestasi, Jual 150.000 Saham di Harga Rp945",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3619,6 +3640,11 @@
   }
  ],
  "net_by_code": {
+  "BEEF": {
+   "net_shares": 795500,
+   "net_value": 119325000.0,
+   "count": 1
+  },
   "AKPI": {
    "net_shares": -700000,
    "net_value": 0.0,
