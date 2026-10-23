@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-23T14:29+07:00",
+ "updated": "2026-10-23T15:13+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 110
+  "news": 107
  },
  "transactions": [
+  {
+   "id": "7ae1fd7ae5c1",
+   "date": "2026-10-23",
+   "code": "BRMS",
+   "party": "Agoes Projosasmito",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 5500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYXo3T1I5bnZvR2VraVB0aUc1ZFdudEVuV1JCSGppZmtPSWdDUlJKRllpeE5TWXlLMXZObG1wTnVwaGNFZWdLblg2YmZ0eW5kV3ZUS0ZOenNiR01FR3RVOGVoZ2paR2piWDc0RmE4RklvTjZyZlNSTHNQOGl4S0VkZF9ESjlIeGVsd24xajY4YUY5U2w2VkZkanFTWjRsbHlObm54VDRrYTROQ2NNVlZzeXZNQQ?oc=5",
+   "title": "Bos BRMS Agoes Projosasmito Borong 5,5 Juta Saham dalam Sehari",
+   "first_seen": "2026-10-23T15:13+07:00"
+  },
+  {
+   "id": "aa474150f7d0",
+   "date": "2026-10-23",
+   "code": "AHAP",
+   "party": "PT Asuransi Central Asia",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 2770000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 69.51,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/asuransi-central-asia-borong-277-miliar-saham-ahap-rp13862-miliar-kuasai-6951/",
+   "title": "Asuransi Central Asia Borong 2,77 Miliar Saham AHAP Rp138,62 Miliar, Kuasai 69,51%",
+   "first_seen": "2026-10-23T15:13+07:00"
+  },
+  {
+   "id": "aefbf1aef283",
+   "date": "2026-10-23",
+   "code": "ENRG",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaGh4YW10V3NhVHNwZ1pXRE92eUVxbHkxVldjQ0x6MlNKRC05LTNrNkl5N19zWC1BNTB4aHZOODVlZkt5dE5PLVlaZkxLNmlEaWpwVG5kN0NUWHlfbTdtWmRWa1h5eURfSUpuQ1h1ckswUUZlU0I2REVYMkU1UlRXX01QM3JPcmRrenRwZFhwcGs3cnQ3aEEzY09QdFNsM0NoQ1Z4cllOb2dZTy1RRmN1ZndpR190NlEweTluTdIBwgFBVV95cUxQSlY3bm9mWkNUWFpPMHk5dmw4RVd3WnVYdTVneHZDRUFhTFZuNUwzdWVZdWI5dW1UMHNFTjBBSXZyOGFWOXNtWS10eWU2NnBWalhiWDQ1TDFzeU1kQWs1SzNMTDhsQjlSUVYwSWIzNDdjeFYyOGpuMmFsTDd5cThnb1BjdU5lbGF0SGVyT2Vpc2hfQUVnR00xeTlRdUxYWnBmcFNJa0dkSFBjVXZMUHNSSWxsS2NSUlJ4YkxYV0dEQmp3dw?oc=5",
+   "title": "Trimegah Sekuritas Borong Saham Grup Bakrie (ENRG), Ada Apa?",
+   "first_seen": "2026-10-23T15:13+07:00"
+  },
   {
    "id": "78b2bf1acc4f",
    "date": "2026-10-23",
@@ -3766,10 +3829,20 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 18080000,
+   "net_value": 0.0,
+   "count": 9
+  },
+  "AHAP": {
+   "net_shares": 2770000000,
+   "net_value": 0.0,
+   "count": 1
+  },
   "ENRG": {
    "net_shares": 156570000,
    "net_value": 0.0,
-   "count": 2
+   "count": 3
   },
   "CYBR": {
    "net_shares": -34473400,
@@ -3790,11 +3863,6 @@
    "net_shares": -700000,
    "net_value": 0.0,
    "count": 3
-  },
-  "BRMS": {
-   "net_shares": 12580000,
-   "net_value": 0.0,
-   "count": 8
   },
   "HGII": {
    "net_shares": 1150000,
