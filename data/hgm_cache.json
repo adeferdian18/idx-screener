@@ -1079,5 +1079,85 @@
 "margin": false
 },
 "diambil": "2026-10-22"
+},
+"BAJA": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-06",
+"laba_yoy": 8.9038,
+"penjualan_yoy": 1.3843,
+"margin": 0.0829,
+"margin_lalu": 0.02,
+"akselerasi": null,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-23"
+},
+"INDF": {
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-06",
+"laba_yoy": -0.4329,
+"penjualan_yoy": 0.1183,
+"margin": 0.0558,
+"margin_lalu": 0.1101,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": false
+},
+"diambil": "2026-10-23"
+},
+"PSAB": {
+"status": "sebagian",
+"skor": 1,
+"kuartal": "2026-06",
+"laba_yoy": -11.6835,
+"penjualan_yoy": 0.2103,
+"margin": -0.9891,
+"margin_lalu": 0.1121,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": true,
+"margin": false
+},
+"diambil": "2026-10-23"
+},
+"PTSN": {
+"status": "sebagian",
+"skor": 1,
+"kuartal": "2026-06",
+"laba_yoy": -0.6383,
+"penjualan_yoy": 0.4533,
+"margin": 0.0189,
+"margin_lalu": 0.0761,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": true,
+"margin": false
+},
+"diambil": "2026-10-23"
+},
+"PTSP": {
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-06",
+"laba_yoy": -0.6984,
+"penjualan_yoy": -0.0919,
+"margin": 0.0199,
+"margin_lalu": 0.0598,
+"akselerasi": null,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": false
+},
+"diambil": "2026-10-23"
 }
 }
