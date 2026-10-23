@@ -1,10 +1,94 @@
 {
- "updated": "2026-10-23T10:32+07:00",
+ "updated": "2026-10-23T11:16+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 120
+  "news": 118
  },
  "transactions": [
+  {
+   "id": "c597ec3ab661",
+   "date": "2026-10-23",
+   "code": "AKPI",
+   "party": "Argha Karya Prima Industry",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 300000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/berlanjut-henry-liem-kembali-jual-saham-akpi-kepemilikan-makin-susut/",
+   "title": "Berlanjut! Henry Liem Kembali Jual Saham AKPI, Kepemilikan Makin Susut",
+   "first_seen": "2026-10-23T11:16+07:00"
+  },
+  {
+   "id": "c847a35f006d",
+   "date": "2026-10-23",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUmQzZW5idnVLanZtajVZdnh4UkxUUHI4VjVpdE51SFFCQXhpckVmZHFTOU02TDFGdzFNcUhKa2xMV0NKclVZU25LYjhnbFRIb2RUZGpkWk9famJ3UGMxN2tqRjN4THlaRGZtSnM4LXRpYjVfTmlkdmlZMmhzN3dmTHF1SWtjWW5xdmZkeUFKWFB0cTVQOXAzbmV1ODBIdkloeHMxS2lEMTZwRndNSmhsRGRRNXUxd3VKUThPbE8wdjV4LURhUTAxNXpTSdIB0AFBVV95cUxORlpEbVlzTi1OdUV3MThsQ0hER0J6a1d4NENoWGhpbE9fZ0ZVWDdUeWtqR3NpOVU0NFdjMXNQSTVtYl9iVnBBSUFsd3M0T29ISUN4WGdVS01aRkU3UEotR2pKNE4wRFB3OGZta0h3bjJEYm1fNlU0eWdaNHF0NHBwTVVOa2ZVUmUwYmFLXzZicDZUTDRCSU92M3FVb0Z3YlNsOE9fNnc3RHFvS2Z5UzVpeHJKZTNKZXpFbl9kQkZub29HQ18tSGVoczJjOWJIOHRr?oc=5",
+   "title": "Agoes Projosasmito Borong Saham Bumi Resources (BRMS) Senilai Rp 2,4 M",
+   "first_seen": "2026-10-23T11:16+07:00"
+  },
+  {
+   "id": "c3191646e111",
+   "date": "2026-10-23",
+   "code": "HGII",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1150000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPODJtd2dWZVhxazQ0NWJoWFdLOHByakM5MzQ3RVI3cWhVelRibG5XWERGTWc4TFdheTF3NmdDaHQzY0VuUWVtdXV4bGpZcXcxZzBmUnhLMUJKc3AxcTZUWWlJbW1RcHYzclpzNHl2NzAzZkFRcE5xc1VDY0VKUXZjVnI3YnRfY214YXRrYnlma0xIX3Z2ZW5YQXpnbkVlMXlyNWc?oc=5",
+   "title": "Tambah Koleksi Saham HGII, Robin Sunyoto Borong 1,15 Juta Lembar",
+   "first_seen": "2026-10-23T11:16+07:00"
+  },
+  {
+   "id": "e67945faf735",
+   "date": "2026-10-23",
+   "code": "BRMS",
+   "party": "Tambah Kepemilikan",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 5500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "indoposco",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ0xxSzZRdjl4WGFERVlzcWZXRm42bGwtcXVtdTFXdV9Bci1ZVTY3WTVOdzZ2SlJRdG9oODNYcjJGc0Z2ZTNibTRMRVFockZJamtOU1JYaXdvdldiMjBDQ1Q4c3FRZmNMb0Q4VHFHaFdCZTZPVXZGZkUxdWYxbWtsS2JGZlB2d0w3YlNtelhIeV9iNEh2M0pNYXJiX3QzZ2tGeW5XMG1ZWXdRSXhhQTZ4YjJR?oc=5",
+   "title": "Dirut BRMS Tambah Kepemilikan 5,5 Juta Saham, Produksi Emas Ditargetkan Meningkat",
+   "first_seen": "2026-10-23T11:16+07:00"
+  },
   {
    "id": "eca32f308ff1",
    "date": "2026-10-23",
@@ -945,8 +1029,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "https://olenka.id/",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjA?oc=5",
+   "source": "Olenka",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjDSAZgBQVVfeXFMTWRLYjZ6T2hqQjQxUGJkSXd0UE1EMnBiZ3V4cTNZUWtCUnZ4Zk9JODRBTHVBV1QxRUhhd1d1d0Z2d1lZRlJTZmhlRXdsWHoyVWtIMFpUY0kzX3V6eXpYYWZXektQRlBmZHVzXzB6aEdheUZlUEl6V25ZU0pIbFVPSjQybllzQXF3QWV2VGRQT3pBb0JKcWRua1A?oc=5",
    "title": "Pemegang Saham Pengendali HRTA Borong Saham di Tengah Volatilitas Pasar",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -1954,7 +2038,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWdZUDFmSnV0ejBQbG1DYmV2X2M3ckdFbTNnQkRTc3pCOW1YMDhxNTY4YlVhRlhyYld2YnhuREthTVRyT2FPM05iTVpNaVhoc1ZvSWcybDJkYmhLTUNwZmMxQ2tCdEJBTzNhR3NkbDVhNkZKcG1TN3RPSU1mXzcwSGUzVEVfY1J0TG8zajdRZnlfYnZ5UThzSVRFZkdWTVhjT1E?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
    "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
    "first_seen": "2026-10-22T09:54+07:00"
   },
@@ -2961,8 +3045,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnlnR1o3QWRxWGY0UXBCTjJpUURBWm5iSUJSVEVwdjJ6MUJJWU1PbExVTUp6VnRKc2pGaTh4Y29LaUZDRmZ0aWxQMU1rUFFIakRsLUVZbVJJd01pZ0JCUUhmalB1M0lPaS1HQTFHVVdrS2JBcU03R1pGQVlaVXpycE16RTM1ZjZpV21IdWFVaUFVaEhFZXc?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSGJlUVA1ZWczd0hwWS1neUE1NFQ4RmRqN2IwRkUwbTNPZzFmcVVzWThMd3J3dkFuT2xBcFhVM3V4MWQ2dExIajVacjdadXNQMV85bVJzRmdzektMUjlibElwT1JwcE9URzVJUll6WC0xUXhTM2NlczFtZEtOSjdNU2lsSHdfZGxITnBKQVl5NzlmS0RLcGhPVE1XQQ?oc=5",
    "title": "Dirut PART Agresif Tambah Saham, Kepemilikan Naik Jadi 9,57%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3535,6 +3619,21 @@
   }
  ],
  "net_by_code": {
+  "AKPI": {
+   "net_shares": -700000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "BRMS": {
+   "net_shares": 12580000,
+   "net_value": 0.0,
+   "count": 8
+  },
+  "HGII": {
+   "net_shares": 1150000,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BYAN": {
    "net_shares": -466170000,
    "net_value": 0.0,
@@ -3544,11 +3643,6 @@
    "net_shares": -30763400,
    "net_value": 0.0,
    "count": 4
-  },
-  "BRMS": {
-   "net_shares": 7080000,
-   "net_value": 0.0,
-   "count": 6
   },
   "SRTG": {
    "net_shares": 0,
@@ -3587,11 +3681,6 @@
   },
   "ATLA": {
    "net_shares": -36500000,
-   "net_value": 0.0,
-   "count": 2
-  },
-  "AKPI": {
-   "net_shares": -400000,
    "net_value": 0.0,
    "count": 2
   },
