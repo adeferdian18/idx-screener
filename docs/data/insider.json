@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-26T17:26+07:00",
+ "updated": "2026-10-26T17:28+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 121
+  "news": 122
  },
  "transactions": [
   {
@@ -892,7 +892,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -903,8 +903,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -2646,8 +2646,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT2dGUHd3M3NhdVBRdzJOYmxXRWwwQmdsc29YVGt4OU5kdnlyUHZ5NUwtQ0FkTk9MdnY3REpsbDF3Tmt2ZC1wOEFSY1NiWmRXMU0yelFNUmFud0xUUzhRTmo4TjZ4eU1yaVZQYnNNNVlEVjVqcUpUZU0xdGhuakhJQnQ0d2ZlbWJrdzVkdnNwNmpTMjBXdVBqQzIteVlnUWhtZ3dnbEljdw?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOakRVeng5MWo0MnFjNDhWSVJnc05pZkVXXzNXdGRrZWhibGZLOFpoMy1BcENNcUxGdE5SUTcwUlhvcVhVNWNicmNQeURKVEMtZmhvZFZuU3V3cnVjLTM5X0d1cEFYYlNTeGFyMk9LRlAyUWx3VVc4WmxGQnFMQmdWVHlTZ0pDVGw0RXVUSGZwSW1SWHE5UTFVd2xQUmRJVnJIaWc?oc=5",
    "title": "Bos TAPG George Oetomo Borong 1,8 Juta Saham, Kepemilikan Kian Gemuk!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
