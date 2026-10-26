@@ -1159,5 +1159,42 @@
 "margin": false
 },
 "diambil": "2026-10-23"
+},
+"MTLA": {
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-06",
+"laba_yoy": -0.1995,
+"penjualan_yoy": -0.089,
+"margin": 0.2479,
+"margin_lalu": 0.2821,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": false
+},
+"diambil": "2026-10-26"
+},
+"NATO": {
+"status": "sebagian",
+"skor": 2,
+"kuartal": "2026-03",
+"laba_yoy": null,
+"penjualan_yoy": 96.7862,
+"margin": -0.2494,
+"margin_lalu": -0.689,
+"akselerasi": null,
+"cek": {
+"laba": false,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-10-26"
+},
+"TMPO": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-10-26"
 }
 }
