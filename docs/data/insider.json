@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-26T08:42+07:00",
+ "updated": "2026-10-26T09:20+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 120
+  "news": 119
  },
  "transactions": [
+  {
+   "id": "42ee8769dde6",
+   "date": "2026-10-26",
+   "code": "BAJA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 271000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN2J4LTIyOS1xVlh3NEI2MVlWNkU1VU5BNURRZzlQTGR0NDBvd0p3VG5GMTRTT3Jzb0hyb01QVE5MU3hESlE1ZFpTdFlUeDNlQzdlSnFqN3oyZUNqLTRlN1BLdkV5WGxVLWdBTi1FU2h5UWU0MkFQOHMyOHpaUllIR1VhclZISk1vMEpzeUd1SVpwUDdKNW1ra0RlUjYwNXo0a1pjNldjWElIV2g2cl9zblU5SHRwT05GZW90N09vYUM5ZEdpMHpJYQ?oc=5",
+   "title": "Sarana Steel Borong 271 Juta Saham BAJA Senilai Rp135,5 Miliar, Kepemilikan Melonjak ke 32,98%",
+   "first_seen": "2026-10-26T09:20+07:00"
+  },
+  {
+   "id": "422b56730dfa",
+   "date": "2026-10-26",
+   "code": "ALII",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1510000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 2.24,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUy1jcDJvdGVQeHFZQnlabnNYMVplTkt2V243XzZUMkpTTkNZb25sLV9wVk93aW03SzFDMXhtNmo0cXI1akVNaFoxNzF0cVB1MkNiYVZ2aFFHWUZEenktQmxKeTJxXzNZVFNTdE1zcWxXbWMtczAwNWFyczZBMHp0SjJLcTU4WE1aNDhzaFM3QlBTNWNHaWdBbkl2X1d2VW9FcHVQeGFCVkNESV9RWEtyVWpqMnhjRzg?oc=5",
+   "title": "Komisaris ALII Borong 1,51 Juta Saham dalam Dua Hari, Kepemilikan Naik Jadi 2,24%",
+   "first_seen": "2026-10-26T09:20+07:00"
+  },
   {
    "id": "48f8f0540f79",
    "date": "2026-10-26",
@@ -673,7 +715,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Kompas.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYXo3T1I5bnZvR2VraVB0aUc1ZFdudEVuV1JCSGppZmtPSWdDUlJKRllpeE5TWXlLMXZObG1wTnVwaGNFZWdLblg2YmZ0eW5kV3ZUS0ZOenNiR01FR3RVOGVoZ2paR2piWDc0RmE4RklvTjZyZlNSTHNQOGl4S0VkZF9ESjlIeGVsd24xajY4YUY5U2w2VkZkanFTWjRsbHlObm54VDRrYTROQ2NNVlZzeXZNQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNnd4WTYyM0tpYkVFQmttN1hxMWNYV1RwUDI1b2pHay1YZ1A1Z040WTVHd1BzMFZ6N3hKRWNXWnB5T2tiaUR6bGtRV0VRNmMxV202UlhFY1h6QWhUQ0R4QUxLTjBOTktHS0xhSzlkbklCWUhOak0xWmx4MU9rNVVOVS0weGxmZFZBT2lpb2FGQThZTE01aGQ2UWxncFpaUEFORlVZcGl2U2RVWG5qd3lTU0lyRlZsblIwOHJPTERCUQ?oc=5",
    "title": "Bos BRMS Agoes Projosasmito Borong 5,5 Juta Saham dalam Sehari",
    "first_seen": "2026-10-23T15:13+07:00"
   },
@@ -2400,27 +2442,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "7dad9825ca9c",
-   "date": "2026-10-20",
-   "code": "BBRI",
-   "party": null,
-   "role": "direksi_komisaris",
-   "action": "beli",
-   "shares": 1100000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": "investasi",
-   "is_repo": false,
-   "source": "INFOBRAND.ID",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZTg4WmVramFEdHpFaUFYbjFPMi1MbjRhTW9xUGhScV8wWXh0ZG5LT1Atc1BMZm90NjdNNWEydkdObEFoYWFuclJaN0o5SUp0M0hBdkxKb0RNQ1ZNNDItdjZITzJTcXhJek5vNDdaTTlnYTJ4cjIwVDhrV0lGZW5oRFcyMWVCTGozYllJaE9YNGNkLUNZN2lqdnprdmhDbGhNeEpXd3NDZy1VTElDWEd4SDVYZjVHalZU?oc=5",
-   "title": "Direktur BRI Borong 1,1 Juta Saham BBRI Senilai Rp2,97 Miliar, Perkuat Investasi di Perseroan",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "9405d9c6ad8c",
    "date": "2026-10-20",
    "code": "BRMS",
@@ -3091,6 +3112,27 @@
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV3g2bzNxcGNTTFRtbmo1b3ZtNmRNZHFxdlI2V1JpMld3dXdveDhqMVVWMEZiX0g3WmZWMXgyNUlSLUcxWUxDX0h6R3QzQnBFOXZ0VkpCSEloMVAyNXlOU2pfTDN6elhxOEgxVk9ValRCcDBDMy1jVVVobXA1QTYzS2VOWXpRMVlT?oc=5",
    "title": "Morgan Stanley Pangkas Kepemilikan Saham GOTO Jadi 5,96 Persen",
    "first_seen": "2026-10-22T08:34+07:00"
+  },
+  {
+   "id": "7dad9825ca9c",
+   "date": "2026-10-19",
+   "code": "BBRI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1100000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "INFOBRAND.ID",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZTg4WmVramFEdHpFaUFYbjFPMi1MbjRhTW9xUGhScV8wWXh0ZG5LT1Atc1BMZm90NjdNNWEydkdObEFoYWFuclJaN0o5SUp0M0hBdkxKb0RNQ1ZNNDItdjZITzJTcXhJek5vNDdaTTlnYTJ4cjIwVDhrV0lGZW5oRFcyMWVCTGozYllJaE9YNGNkLUNZN2lqdnprdmhDbGhNeEpXd3NDZy1VTElDWEd4SDVYZjVHalZU?oc=5",
+   "title": "Direktur BRI Borong 1,1 Juta Saham BBRI Senilai Rp2,97 Miliar, Perkuat Investasi di Perseroan",
+   "first_seen": "2026-10-21T18:03+07:00"
   },
   {
    "id": "c111a5bde71a",
@@ -4627,6 +4669,16 @@
   }
  ],
  "net_by_code": {
+  "BAJA": {
+   "net_shares": 243550000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "ALII": {
+   "net_shares": 1510000,
+   "net_value": 0.0,
+   "count": 1
+  },
   "PART": {
    "net_shares": 931900,
    "net_value": 0.0,
@@ -4701,11 +4753,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BAJA": {
-   "net_shares": -27450000,
-   "net_value": 0.0,
-   "count": 2
   },
   "TAPG": {
    "net_shares": 1723000,
@@ -4847,11 +4894,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "BBRI": {
-   "net_shares": 5500000,
-   "net_value": 5940000000.0,
-   "count": 7
-  },
   "NSSS": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -4871,6 +4913,11 @@
    "net_shares": -1740000000,
    "net_value": 0.0,
    "count": 9
+  },
+  "BBRI": {
+   "net_shares": 5500000,
+   "net_value": 5940000000.0,
+   "count": 7
   },
   "PEGE": {
    "net_shares": 8060000,
