@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-26T16:00+07:00",
+ "updated": "2026-10-26T16:45+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 118
+  "news": 122
  },
  "transactions": [
+  {
+   "id": "d07383201db2",
+   "date": "2026-10-26",
+   "code": "PART",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 1880000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdjJHVnA1NDZEb0hqZXc4RVFGbzNLdVRDdW1yaHB1enZyMlFXV1V0elAxeDVrdlAxc0NlejUtTnNmTzRFeDVZQnBmeXdYdUFsSTQxejFPYTdNZHdtd01MVE9qa0hBMzZUamlYUTFaNUF6cnpiZkVpTm9QeEExY1RDem12YVdaN2xIUGdPUkNPZGxNUDZNTnczeXN5SUxDZw?oc=5",
+   "title": "Pengendali PART Borong 1,88 Juta Saham Jelang Aksi Korporasi Besar Ini",
+   "first_seen": "2026-10-26T16:45+07:00"
+  },
+  {
+   "id": "cb955ff186ea",
+   "date": "2026-10-26",
+   "code": "AKPI",
+   "party": "Henry Liem",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 200000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcUtHTnIyQ1otOUtMZ1pWZFY2SXNLemY2QVQ3LTJtWG9vRUx2VW4wVWRnTGNEbkhqVjl6QzMxRUdoSDZuMTU4VHJxVzB5SHJiaFpQY0d3OXJ5VWRkcWEtc19sN0RmOFVJcWRrRG5QeENJQkpUQ05BLV9xZW1ZOGtXMWYwREcyWEZicWVRZ1Y1Vy03RWsyOE0ybW5jX09lb0hYeG1BWVJJZ0tiOV9rTHhn?oc=5",
+   "title": "Komisaris AKPI Henry Liem Lepas 200 Ribu Saham, Porsi Kepemilikan Menyusut!",
+   "first_seen": "2026-10-26T16:45+07:00"
+  },
+  {
+   "id": "3d8114d7b455",
+   "date": "2026-10-26",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 8950000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 7.7,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWlJQR0UzbXBBZFJzYUdaMVM0czZERTFkZzkybzc4dG9UN0hORFBNb3g4U2dLZWJORG1BSWZibnhHWV9kS2ZZTEdJSmtGTl9NNGhRWFl1a2VxeFJIXzZTb2dzemNwVDQwdlpCT25seEtuS1RER2xPR1U2RGRNbmR0NVYxQWxYV2t5R1dOaVB0amhVb0o1Y20zNWNEbXNicGFBTlBVUHFwbklLWEE?oc=5",
+   "title": "Sujito Ngatiman Lepas 8,95 Juta Saham DEWI, Kepemilikan Susut Jadi 7,70%",
+   "first_seen": "2026-10-26T16:45+07:00"
+  },
   {
    "id": "da70a1a42e95",
    "date": "2026-10-26",
@@ -3172,7 +3235,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdEE5RDJPSDJuVGY5bGViQ2o0NXJoUHlMeW1ibWRrcWJsZkhZYzl4T185dmZHX0YxMnJXcnppNEFqNUh2VkprbGZ4SHZ0SHI1M1JFTHhaaVhQcDlhS0hLd3dMaWYwMmpKdDEyOS02ZzIydkx1VVVpSVQ0eHpKc2lwOHd6ZDV6TDVLQy02aG5tOG1nTl9wYVlRWg?oc=5",
    "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -4816,15 +4879,25 @@
   }
  ],
  "net_by_code": {
+  "PART": {
+   "net_shares": 2811900,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "AKPI": {
+   "net_shares": -600000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "DEWI": {
+   "net_shares": -70160000,
+   "net_value": 0.0,
+   "count": 5
+  },
   "SRTG": {
    "net_shares": 711000,
    "net_value": 0.0,
    "count": 3
-  },
-  "PART": {
-   "net_shares": 931900,
-   "net_value": 0.0,
-   "count": 5
   },
   "SOHO": {
    "net_shares": 0,
@@ -4840,11 +4913,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 6
-  },
-  "DEWI": {
-   "net_shares": -61210000,
-   "net_value": 0.0,
-   "count": 4
   },
   "BAJA": {
    "net_shares": 243550000,
@@ -4920,11 +4988,6 @@
    "net_shares": 1723000,
    "net_value": 0.0,
    "count": 3
-  },
-  "AKPI": {
-   "net_shares": -400000,
-   "net_value": 0.0,
-   "count": 4
   },
   "AHAP": {
    "net_shares": 2770000000,
