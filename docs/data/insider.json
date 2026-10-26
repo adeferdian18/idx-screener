@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-26T11:33+07:00",
+ "updated": "2026-10-26T12:18+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 119
+  "news": 105
  },
  "transactions": [
   {
@@ -211,7 +211,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGxRSTM0bmxpOGdXTFNSOFk5MWt5UDJveFlrbURRMmRCU2VaOS1FNll2YXlxQmpEQ2VoVzBoMV9QOC1OVXEzYjV6SXgxYWRnUE5QbWttUU44RjE1aDctaGVaM25TbldIeUxCZjFYOTZLWEhnTGtDREE3bG5vcEpMQ2VDc0d5LVVtdEVueGNaeFR6a1ppQVppZDByTFI?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOXVNWU1EOG0xMjdDVGx3MjBLblYxQTBmSXQxT2F4Wk1keE9FbEZTU0Q3TldVWXA5d0ZXYWF3OElGUG1UVmRpM1hEX0UtdHZXRTNjM2FGTF9jRVhQMUJSN3RMS2JWZGlScEZINVV4QWFkTzNHNTcwalFsMTFHbEg5WUFKTU9vT2RiSkYyZDZBbXNZbGtvTG9ZUzZzNkw2Tm8xRnc?oc=5",
    "title": "3x Borong Saham Sepanjang Oktober, Pengendali HRTA Rogoh Kocek Rp8,31M",
    "first_seen": "2026-10-26T08:42+07:00"
   },
