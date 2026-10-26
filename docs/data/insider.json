@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-26T15:04+07:00",
+ "updated": "2026-10-26T16:00+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 120
+  "news": 118
  },
  "transactions": [
+  {
+   "id": "da70a1a42e95",
+   "date": "2026-10-26",
+   "code": "SRTG",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 711000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/edwin-soeryadjaya-borong-711-ribu-saham-srtg-kini-miliki-3607/",
+   "title": "Edwin Soeryadjaya Borong 711 Ribu Saham SRTG, Kini Miliki 36,07%",
+   "first_seen": "2026-10-26T16:00+07:00"
+  },
   {
    "id": "7c0516ad8be5",
    "date": "2026-10-26",
@@ -94,19 +115,19 @@
    "date": "2026-10-26",
    "code": "ARKO",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "beli",
    "shares": 300000,
-   "price": 1398.0,
-   "value": 419400000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/arya-pradana-tambah-300-000-saham-arko-porsi-kepemilikan-saham-naik/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVHVpTy1xYmZreGYxelFBOGNDV2ZqX3Utemh5LUhobk5jZ3Btd2JKdmZQeDNwRHVtenFXOGZoSEM0Q3NUemR0dW8tc2dNU0VqMWdfYzNnUC10U1JFaW1KbzZGQ2w0VVpfTXkyb1JRcmdkZUZrOXo1Q1FFcGRrVXNLMmp2dGJScE1hU25vTE1JZDlaYUFX?oc=5",
    "title": "Arya Pradana Tambah 300.000 Saham ARKO, Porsi Kepemilikan Saham Naik",
    "first_seen": "2026-10-26T11:33+07:00"
   },
@@ -1207,7 +1228,7 @@
    "date": "2026-10-23",
    "code": "BYAN",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1218,8 +1239,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Liputan6 Saham",
-   "link": "https://www.liputan6.com/saham/read/8319506/penjelasan-bayan-resources-soal-harga-jual-saham-rp-2588-ke-jhonlin",
+   "source": "Liputan6.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdVI1NjJxUmM2NWJ6dmQ4MEtlNG91OC1qUEhxTE15SlJYLWRpbVRuMk1GVTZNWl9wek1uRFdnVnFCTVZleW8zNHRCMlhkbzBfQTYzT2x5MTFRVDA3eTktMlgwWTllOGdfRFAtSWZpNUJoSDgzeDk1QnA0WmhUc3hHYmNEeThCVEozeHdwZzNXTjlYR3pHRDBwMzVGLXVqWFR4eHh1YXp6Si1kOGZkQmtyddIBpwFBVV95cUxNQ3RfYTJIalZOTjNaWEdiNHRDN1hRMlZxSFFGQkRDTmhsQXlXdVpQSEh6V2tOZkowamRGazZodXF5WXZENTRzWVRDWjg4M09kWUtqb2JNMENRd1lQSjBVNm1ZOUNWREQ0SEpYTUdsU2pGZ2ZRS2tNX25CdHRnREFzX1pKOUU3UDBSbzBlYjlVUVNzeElKUUF1dGxnX1dhYnlNb3BDZXNnWQ?oc=5",
    "title": "Penjelasan Bayan Resources Soal Harga Jual Saham Rp 2.588 ke Jhonlin",
    "first_seen": "2026-10-23T08:37+07:00"
   },
@@ -1459,7 +1480,7 @@
    "date": "2026-10-22",
    "code": "ATLA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1470,8 +1491,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbGZILUQyVmhjemlnc1JFckxoYXlDS1BlV3BUWUN5Q1VXeHQxS2JENFowLXlpVWwtaVpLbzZvNFU0S1hYcnY0WG5TaVdWZURIOFlJSDJzVmxkMWhEckR2aU5fMkxXUk1lc0NDeldHbW1QYS1vOS0yN3l4MnJ6aXlUV0RHcmwzWTJTNjlPY2JfTU5mN01qd2hlMHpJaldpeHlSMG85Q1FB?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2p6R08tVmVrN3lrNWd4bDJ0X1lBVHg5cGdObmEwZURpbzd6U0JfZDBmNnZtdzdqT3N5NWJYZi1SOFhSNlhnbkg4T3pTWV9EYXVNXzJMa3NLTzBKS2h6dklua1BVdHM0ejNTRzdLU2JlRDNScTdHMGtQeE0tRm5zUXc1aEVucGY2XzJveE5jMjlvWXczc0x1Zk95TWVseHlIUUl2ell4T2F2Ukk?oc=5",
    "title": "Rudi Reksa Sutantra Agresif Jual Saham ATLA, Kepemilikan Turun ke 42,10%",
    "first_seen": "2026-10-22T15:54+07:00"
   },
@@ -4795,6 +4816,11 @@
   }
  ],
  "net_by_code": {
+  "SRTG": {
+   "net_shares": 711000,
+   "net_value": 0.0,
+   "count": 3
+  },
   "PART": {
    "net_shares": 931900,
    "net_value": 0.0,
@@ -4807,7 +4833,7 @@
   },
   "ARKO": {
    "net_shares": 2445000,
-   "net_value": 419400000.0,
+   "net_value": 0.0,
    "count": 4
   },
   "BBCA": {
@@ -4919,11 +4945,6 @@
    "net_shares": 1150000,
    "net_value": 0.0,
    "count": 1
-  },
-  "SRTG": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
   },
   "PTBA": {
    "net_shares": 0,
