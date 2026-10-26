@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-26T12:18+07:00",
+ "updated": "2026-10-26T13:06+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 105
+  "news": 117
  },
  "transactions": [
+  {
+   "id": "34a94599e9ed",
+   "date": "2026-10-26",
+   "code": "ARKO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ0R0SFhYNmoxdHBicXRHR0dlWlhHam9WYnR3TXh2Z2wwa3VOTDl4d3ZaVHE0VlhjYUwtVU1lcnBLblRSMGZRcVdRd2NfdzU5Um5MeGwxZ1dCMEE1Y1Zack81ZUdzUlhXYzl3czVIQXMzVzJJQ0NzWFJnLXpjMkNzSEJKUmplX3NkM3ozdjBPVGcxQjdKbU11akxWV1Q0YUdyUFpZMGIwaw?oc=5",
+   "title": "Founder ARKO borong saham di harga terendah sejak awal tahun",
+   "first_seen": "2026-10-26T13:06+07:00"
+  },
+  {
+   "id": "c1c48fc93c1d",
+   "date": "2026-10-26",
+   "code": "BBCA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Katadata.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTlNXMUdUd0dOZWpDX04yclBRNkVDQm5URVBoY042RENjMEI2eVRRaUhwV184Rk1qWTl2ZEI0VjA2QnRaWEIxZnVOSjl1bi1udHFxQXg5RG90QXhaUEc0MGdfZXBKaWdNYnBpcmxSNDluWGpiRzR4NmpIUGFMS2hxSy1qaDJkckRZeTUzeHNSRUVJMzlDNmRsR01xR2lxYXhETVNZQk9sY0tzRnpSOVV4SkhCRHl5YWhfdEEwbUk2REpwSVnSAcgBQVVfeXFMT1p3V3pHX3g2cDViSmZsVFl0R2h4ZGxrYlBfaDhpcjJYdFoxTFB6OUNCVE9CMWI0TnBKNVYwLS1mTmYwcldseVhxOXdnaGlhcmVWa0RtTDFaVzhXdTN1c2hRY29raGNjMmpfU3RmWDhObm5iampwcXVoaDJNcEF4a3M1ZUMtc1pXNmlzOGpMeU04N3h5Rzh4TTFKWUFXRnMxVkR1TVV3U0RScElWUGY3V2NWNFlnUVdkckRHNV9hNkt3alU0eVVRUjk?oc=5",
+   "title": "IHSG Merosot 1%, Asing Net Sell Rp 1,14 Triliun Lepas Saham BBCA, BMRI, BBRI",
+   "first_seen": "2026-10-26T13:06+07:00"
+  },
   {
    "id": "a18e275d04d7",
    "date": "2026-10-26",
@@ -31,7 +73,7 @@
    "date": "2026-10-26",
    "code": "DEWI",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "jual",
    "shares": 7700000,
    "price": null,
@@ -42,8 +84,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/sujito-ngatiman-jual-77-juta-saham-dewi-rp172-miliar-kepemilikan-susut/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVUxoejRTSGI2WndzZFFSbXpGVnR2OERIYmdDT00zejRocDNsQWhoOFU0UW80LURxSGQ3dDdVYUJ3cHJQd1lwSUwyUDlsTzhWdExCN3Z5MWpkRU5QTGFyRTVjYjlpQ0NMTWRRSmNWRlNkeWZGWUE1VEMyZDl0aTNHSHhfMUdBcEpCUG1CSEtuSl85c3RpUGpCbA?oc=5",
    "title": "Sujito Ngatiman Jual 7,7 Juta Saham DEWI Rp1,72 Miliar, Kepemilikan Susut",
    "first_seen": "2026-10-26T10:07+07:00"
   },
@@ -757,7 +799,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Kompas.com",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNnd4WTYyM0tpYkVFQmttN1hxMWNYV1RwUDI1b2pHay1YZ1A1Z040WTVHd1BzMFZ6N3hKRWNXWnB5T2tiaUR6bGtRV0VRNmMxV202UlhFY1h6QWhUQ0R4QUxLTjBOTktHS0xhSzlkbklCWUhOak0xWmx4MU9rNVVOVS0weGxmZFZBT2lpb2FGQThZTE01aGQ2UWxncFpaUEFORlVZcGl2U2RVWG5qd3lTU0lyRlZsblIwOHJPTERCUQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYXo3T1I5bnZvR2VraVB0aUc1ZFdudEVuV1JCSGppZmtPSWdDUlJKRllpeE5TWXlLMXZObG1wTnVwaGNFZWdLblg2YmZ0eW5kV3ZUS0ZOenNiR01FR3RVOGVoZ2paR2piWDc0RmE4RklvTjZyZlNSTHNQOGl4S0VkZF9ESjlIeGVsd24xajY4YUY5U2w2VkZkanFTWjRsbHlObm54VDRrYTROQ2NNVlZzeXZNQQ?oc=5",
    "title": "Bos BRMS Agoes Projosasmito Borong 5,5 Juta Saham dalam Sehari",
    "first_seen": "2026-10-23T15:13+07:00"
   },
@@ -4714,7 +4756,12 @@
   "ARKO": {
    "net_shares": 2445000,
    "net_value": 419400000.0,
-   "count": 3
+   "count": 4
+  },
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 6
   },
   "DEWI": {
    "net_shares": -61210000,
@@ -4770,11 +4817,6 @@
    "net_shares": -466170000,
    "net_value": 0.0,
    "count": 33
-  },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 5
   },
   "BUVA": {
    "net_shares": 0,
