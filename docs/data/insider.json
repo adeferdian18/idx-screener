@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-26T14:07+07:00",
+ "updated": "2026-10-26T15:04+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 119
+  "news": 120
  },
  "transactions": [
+  {
+   "id": "7c0516ad8be5",
+   "date": "2026-10-26",
+   "code": "PART",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "TopBusiness.id",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNU1NqQ0hEd3dmMnZwcUJzZ0VmRkdMclRFUVFqR0pGSENfNk9oYUpzZlY1bHJtbExGY2tUTFFDREZRaGpiXy16Yy15WXotZzVOZ3RCVkMxU2lEMGNFOUlvV3ZBcGNrYXV3OXNuUmVXTWxFSWJBVFliTEJlQzJ5NG1FTkhFSHN2TE5oOEhEdElNZ3Q4SExRRkw5elAzZFJMZw?oc=5",
+   "title": "Siap Gelar RUPSLB, Pengendali PART Tambah Kepemilikan Saham",
+   "first_seen": "2026-10-26T15:04+07:00"
+  },
   {
    "id": "2698e38d3f53",
    "date": "2026-10-26",
@@ -735,8 +756,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Cirebon Times",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sODhiSW5MdndLbG9nbnlJOWNlaHZvRGVjemIzZnRMaUNJTzVxUlJpVEZaRFlHQ0ZFOVpzRkVKOXAtTHcyNDBzMHJjYTd0c19BZV9RdklpcEx4YW85MTZpNHF3?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MUGFwU3hObmNuaEZjcjVKMVlobm1PTmFyb0ZaQm45V2dxS0JfbTdTOFM1bFA0SmJ6LXNkSnl3cjN0eUtwNkdHMDExZFVsRDlZVmln?oc=5",
    "title": "Agoes Borong 5,5 Juta Saham BRMS Senilai Rp 2,46 Miliar",
    "first_seen": "2026-10-23T16:32+07:00"
   },
@@ -1438,7 +1459,7 @@
    "date": "2026-10-22",
    "code": "ATLA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1449,8 +1470,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2p6R08tVmVrN3lrNWd4bDJ0X1lBVHg5cGdObmEwZURpbzd6U0JfZDBmNnZtdzdqT3N5NWJYZi1SOFhSNlhnbkg4T3pTWV9EYXVNXzJMa3NLTzBKS2h6dklua1BVdHM0ejNTRzdLU2JlRDNScTdHMGtQeE0tRm5zUXc1aEVucGY2XzJveE5jMjlvWXczc0x1Zk95TWVseHlIUUl2ell4T2F2Ukk?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbGZILUQyVmhjemlnc1JFckxoYXlDS1BlV3BUWUN5Q1VXeHQxS2JENFowLXlpVWwtaVpLbzZvNFU0S1hYcnY0WG5TaVdWZURIOFlJSDJzVmxkMWhEckR2aU5fMkxXUk1lc0NDeldHbW1QYS1vOS0yN3l4MnJ6aXlUV0RHcmwzWTJTNjlPY2JfTU5mN01qd2hlMHpJaldpeHlSMG85Q1FB?oc=5",
    "title": "Rudi Reksa Sutantra Agresif Jual Saham ATLA, Kepemilikan Turun ke 42,10%",
    "first_seen": "2026-10-22T15:54+07:00"
   },
@@ -4774,6 +4795,11 @@
   }
  ],
  "net_by_code": {
+  "PART": {
+   "net_shares": 931900,
+   "net_value": 0.0,
+   "count": 5
+  },
   "SOHO": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -4803,11 +4829,6 @@
    "net_shares": 1510000,
    "net_value": 0.0,
    "count": 1
-  },
-  "PART": {
-   "net_shares": 931900,
-   "net_value": 0.0,
-   "count": 4
   },
   "RAAM": {
    "net_shares": 193000,
