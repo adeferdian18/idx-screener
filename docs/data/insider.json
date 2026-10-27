@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-27T13:05+07:00",
+ "updated": "2026-10-27T14:03+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 113
+  "news": 106
  },
  "transactions": [
   {
@@ -42,7 +42,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWDlqNS16Z3dMdjhKeGVtNGNaNG9VeUI4ZTlFb21ZTHZUamE1SVB3TE1mWERsWWJ4VUFrQTBlOFB5SktJSWR2cU1tamVtQk9vUjVLUTA2UzJDTDZVSW5WdFNZQUVkbDVfYUttbmo4aG5kcURfOWF5elV3NVg0Z1JUSEE1ZkhsUzVJaEEyTTBkTHZrc2NXblFQcXpGR1A5WmZKNTRJN0FLNA?oc=5",
    "title": "Tegaskan Prospek Perseroan, Pengendali PART Tambah Kepemilikan Saham",
    "first_seen": "2026-10-27T13:05+07:00"
@@ -325,7 +325,7 @@
    "date": "2026-10-27",
    "code": "ALII",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "pengendali",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -336,8 +336,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/jawab-bei-ancara-logistics-alii-sebut-pengendali-dan-afiliasi-borong-saham/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQWlxOVZacHpTWkstNy1SRTkyaVFWWEFDVHJrcUhHaDZtRFJvYzVaZU5ySUJiTXZSamQtWEdNX3psenlpX0N0WGdyYnl5LWN4TF9LcWNaTFBtVHJnQnRjR2pzM2syb2I4QXZQZ0JhbkNIMzg4SXk5aHB0SUhNU1NHSEdTZ29XRS05SjBIZTJMeHNIUjNaU0JZTy1YMDlTdw?oc=5",
    "title": "Jawab BEI, Ancara Logistics (ALII) Sebut Pengendali dan Afiliasi Borong Saham",
    "first_seen": "2026-10-27T08:40+07:00"
   },
@@ -1228,7 +1228,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1239,8 +1239,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -1879,7 +1879,7 @@
    "date": "2026-10-22",
    "code": "ATLA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1890,8 +1890,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbGZILUQyVmhjemlnc1JFckxoYXlDS1BlV3BUWUN5Q1VXeHQxS2JENFowLXlpVWwtaVpLbzZvNFU0S1hYcnY0WG5TaVdWZURIOFlJSDJzVmxkMWhEckR2aU5fMkxXUk1lc0NDeldHbW1QYS1vOS0yN3l4MnJ6aXlUV0RHcmwzWTJTNjlPY2JfTU5mN01qd2hlMHpJaldpeHlSMG85Q1FB?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2p6R08tVmVrN3lrNWd4bDJ0X1lBVHg5cGdObmEwZURpbzd6U0JfZDBmNnZtdzdqT3N5NWJYZi1SOFhSNlhnbkg4T3pTWV9EYXVNXzJMa3NLTzBKS2h6dklua1BVdHM0ejNTRzdLU2JlRDNScTdHMGtQeE0tRm5zUXc1aEVucGY2XzJveE5jMjlvWXczc0x1Zk95TWVseHlIUUl2ell4T2F2Ukk?oc=5",
    "title": "Rudi Reksa Sutantra Agresif Jual Saham ATLA, Kepemilikan Turun ke 42,10%",
    "first_seen": "2026-10-22T15:54+07:00"
   },
@@ -3024,8 +3024,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOakRVeng5MWo0MnFjNDhWSVJnc05pZkVXXzNXdGRrZWhibGZLOFpoMy1BcENNcUxGdE5SUTcwUlhvcVhVNWNicmNQeURKVEMtZmhvZFZuU3V3cnVjLTM5X0d1cEFYYlNTeGFyMk9LRlAyUWx3VVc4WmxGQnFMQmdWVHlTZ0pDVGw0RXVUSGZwSW1SWHE5UTFVd2xQUmRJVnJIaWc?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT2dGUHd3M3NhdVBRdzJOYmxXRWwwQmdsc29YVGt4OU5kdnlyUHZ5NUwtQ0FkTk9MdnY3REpsbDF3Tmt2ZC1wOEFSY1NiWmRXMU0yelFNUmFud0xUUzhRTmo4TjZ4eU1yaVZQYnNNNVlEVjVqcUpUZU0xdGhuakhJQnQ0d2ZlbWJrdzVkdnNwNmpTMjBXdVBqQzIteVlnUWhtZ3dnbEljdw?oc=5",
    "title": "Bos TAPG George Oetomo Borong 1,8 Juta Saham, Kepemilikan Kian Gemuk!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
