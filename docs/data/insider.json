@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-27T16:23+07:00",
+ "updated": "2026-10-27T17:12+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 113
+  "news": 117
  },
  "transactions": [
+  {
+   "id": "3a6e4a2c1315",
+   "date": "2026-10-27",
+   "code": "SQMI",
+   "party": "CGS International Securities Singapore Pte Ltd",
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 2200000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 14.17,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/cgs-international-tambah-kepemilikan-saham-sqmi-jadi-1417/",
+   "title": "CGS International Tambah Kepemilikan Saham SQMI Jadi 14,17%",
+   "first_seen": "2026-10-27T17:12+07:00"
+  },
   {
    "id": "82dcf0a168e4",
    "date": "2026-10-27",
@@ -190,7 +211,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Katadata.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcDA3UzExdmR0dGZrNTZuc2ljMExhNjNqSDlzcng0cVB6Y28ydXFad2Y1V2FoWHpYVEZvWFUxTkc4amVRd2Y0TmVWRWV4ZzNFTVpLSEhGT1BYMWpYWmdqUjV4cDl5UVhJa2w0S3h6dE5KcGhVUDExOTktT05rM012bm9uRlNpSTJGU3ZWRmc1MTdKX3lyOEZuSFUzTElNRVl6bFRNVTlqNnplM2VWYWVob2VCdC00TDQ0SlVFeGRlak5JQmYwcnQxZWtR0gHPAUFVX3lxTE1rWHExMHhRR0Mya09NSmNNNkQ4LWppRFdMaGRXUy1LWFBPdDRWN1JCM1lFencwTHp0X1Jjb1FQSGtLNG1vclZMUWVNb0VFWnlPSjFIZUh0ODFZOWxuRmRYTEZLLTh2aWVxWXZxZUtJZkE1MGM5UGZiQm1FcmxteEkxNWhzcndhR0pTLUxnbHhteEhFdUdzalRSZnB0Z0JuaThYNGdJX29QZnRleWhTSzMwcEM0UEFJLXZDenVSUkJHS1h3a3phN0hlM05jSHQ3dw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNa1hxMTB4UUdDMmtPTUpjTTZEOC1qaURXTGhkV1MtS1hQT3Q0VjdSQjNZRXp3MEx6dF9SY29RUEhrSzRtb3JWTFFlTW9FRVp5T0oxSGVIdDgxWTlsbkZkWExGSy04dmllcVl2cWVLSWZBNTBjOVBmYkJtRXJsbXhJMTVoc3J3YUdKUy1MZ2x4bXhIRXVHc2pUUmZwdGdCbmk4WDRnSV9vUGZ0ZXloU0szMHBDNFBBSS12Q3p1UlJCR0tYd2t6YTdIZTNOY0h0N3fSAc8BQVVfeXFMTWtYcTEweFFHQzJrT01KY002RDgtamlEV0xoZFdTLUtYUE90NFY3UkIzWUV6dzBMenRfUmNvUVBIa0s0bW9yVkxRZU1vRUVaeU9KMUhlSHQ4MVk5bG5GZFhMRkstOHZpZXFZdnFlS0lmQTUwYzlQZmJCbUVybG14STE1aHNyd2FHSlMtTGdseG14SEV1R3NqVFJmcHRnQm5pOFg0Z0lfb1BmdGV5aFNLMzBwQzRQQUktdkN6dVJSQkdLWHdremE3SGUzTmNIdDd3?oc=5",
    "title": "IHSG Merosot ke Level 5.355, Asing Net Sell Rp 578 Miliar Lepas Saham BMRI, BBRI",
    "first_seen": "2026-10-27T13:05+07:00"
   },
@@ -231,8 +252,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/yulie-sekuritas-borong-582-09-juta-saham-ahap-kepemilikan-tembus-714/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNckVhYWlNLWNXZWtDWGNOOTdUakprekdid3hoZzdCN21IWV81Z2U4eVg2WG5ubUF0c3JBS0FmZ0JaX25hQ2hSNm40VzhvSDhQUC1VSzRXNTJHZzYzSy1CRFRDNlRSZEdkNEpSbk5LemwxV0d5WXBZclpkTE5nV180Q3M4MmotZ29Fa2YwR0hwSmNseUZSY1E?oc=5",
    "title": "Yulie Sekuritas Borong 582.09 Juta Saham AHAP, Kepemilikan Tembus 7,14%",
    "first_seen": "2026-10-27T12:17+07:00"
   },
@@ -273,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Head Topics",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSFBVNk5ibHN2UVJiS1NWbjAtTGFnWm1QbWJkUGNtZnUzZXN6bWZpa0lzTHZ6QVM5T2RDLWlyaEJZZVFOOWMxcWtZemFZZHRSbDd2b1pJX2FWRkM0R3Y3c09ULWJ5REFQT21RV0tjc2hyNlgxOWZNLXFEcW1mTEw4elhva0pKWGFHMFppTm5NeGtTZ1VaYThVbXMwcw?oc=5",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOEhrQndxOUh0YU1EaGpUcDkycW8wY1F0UVNvbWNQMXoyOE1FSHRwcmgwZmxhYjVHaWo0R1BGV2YtakZUTHY2MVVrYXRDNU1maDdoc2J6clpQY1FnV3hIaW5sdXBydkF2RHdUenZrUGhjeFZreDdyTWozM3l4OGxIWmNFVGVGdU5ua09WZUg4MFh1SF9tSkZuWGxJdzVIMlJMVi1ES18yMWd1V3FZd3loY2o1YW5BYXBja1luV1Vhc0U4ajJy0gHKAUFVX3lxTE05ZEZyN1NqZjNpdUdwUHRhYTJNdjkxR0FFbHk0cXF6d1JyTHExMFQ3N3UtbWFrZzJZb3A3UzBJSHRvM1pLLVdBZDczOGM3OVFVV3A5bER6QUt1dzNBelFlOFJiMzM4amRFa0hJSG1ZOGhwUHEzVTN5aWhlbWFuQXVrWmhJWUV2WlVsM0RqTFhVQ2JIdlp6VHVvbGxZWXFqWEJISm11YzVzT2hFdTgwM19PUzlOVEdsMkEzMmRuQUFNN3FnLWFJOGMxM3c?oc=5",
    "title": "Petinggi Grup Bakrie (BRMS) Borong 5,9 Juta Saham Senilai Rp 2,4 M",
    "first_seen": "2026-10-27T11:31+07:00"
   },
@@ -1291,7 +1312,7 @@
    "date": "2026-10-23",
    "code": "BAJA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": 271000000,
    "price": null,
@@ -1302,8 +1323,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQa2dKSXdZNmJBdFdNOXdacTI4a3AxQTVFMDlIWVBHWi16cW1ZalVhRnFxb2lkNTFSc1hURVZ0RXVobzdBYXh1UG82bGpYWVhjc2t3dFVPVngzVUFQSnZDd1hib1NSY3FBZ1NiVDlIdnpUUEhEOXJXM1BWd3RwYXhiNVMxcUw5VFl1eUVUNEVXalZtcEJQWU5TYmlPR3dkbHpvM2ZCS204eUxDZGc0UmhVQVdsMVhicUZaN2tCcjhoS0VTWTRXd1E?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY24tSGExWS1nSGVWTG5jVnhKR2NLNFROdFptcC1fbm12NkhmcTdZNmVjQjE3VGoxdklBekh5alJnMWFITC0ybm5lZ3U5YmplYklMRjktUTBtYzYwVHpybmppZFBCNDkyakxta3JVWDBDd0ZVdnFjLWN1VTdxcGowSU9nazZlekUyR1VlZkRWQk5haTF6bTdhWkllYUlaVWtLcDd5SkFLTFJyTkRLR3p1Qjh5dVBCQktIcUFhQkVXbG8?oc=5",
    "title": "Ibnu Susanto Lepas 271 Juta Saham BAJA Senilai Rp135,5 Miliar, Kepemilikan Turun Jadi 10,84%",
    "first_seen": "2026-10-23T16:32+07:00"
   },
@@ -1333,7 +1354,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1344,8 +1365,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -2230,6 +2251,27 @@
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYzNqWkRuTnpwLWdkUnJPbUdFdkNwaUFwMWhYa1RIM1pfMWdCbkQtOWFVaFRtUTFGdnhLOS0waHA0ZFAzZzBtWTNlSHFhNUxWSjFBcW04dE5xdXB6M3V6V1JkNnY4R2oyRG9XZTlHWVhKZkxHWkIzTEVnbmdwQU1XTmRMS2hrWmdjYUhQOEdGY0huaWRUaHl2SVJhSkRwaFhXWTEwUExWdw?oc=5",
    "title": "Investor Asing Ramai Jual Saham BMRI Hingga Rp 227,4 Miliar Saat IHSG Menguat ke 0,94%",
    "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "11631c15b169",
+   "date": "2026-10-21",
+   "code": "AADI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koridor.co.id",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTNDBkSTRhRnFKaFhKQmZLNzNEbWtrS1V0bFljSFFxeVJqZUxhZ3ZSZ0hrdXlLazl6LUREWThTV1ZJWndFVnZfOVpMWlVmLWtISDZUV0JRNE41Z012am5zYlpVd0NOUkVLcTBybA?oc=5",
+   "title": "Boy Thohir Borong Saham AADI ADRO dan ESSA",
+   "first_seen": "2026-10-27T17:12+07:00"
   },
   {
    "id": "b3cc4857e895",
@@ -5404,6 +5446,11 @@
   }
  ],
  "net_by_code": {
+  "SQMI": {
+   "net_shares": 2200000000,
+   "net_value": 0.0,
+   "count": 2
+  },
   "TINS": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -5624,6 +5671,11 @@
    "net_value": -141750000.0,
    "count": 4
   },
+  "AADI": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "IMPC": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -5713,11 +5765,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "SQMI": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "MMIX": {
    "net_shares": 0,
