@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-26T17:28+07:00",
+ "updated": "2026-10-27T08:40+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 122
+  "news": 110
  },
  "transactions": [
+  {
+   "id": "1fa2f0ba8e2e",
+   "date": "2026-10-27",
+   "code": "ALII",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/jawab-bei-ancara-logistics-alii-sebut-pengendali-dan-afiliasi-borong-saham/",
+   "title": "Jawab BEI, Ancara Logistics (ALII) Sebut Pengendali dan Afiliasi Borong Saham",
+   "first_seen": "2026-10-27T08:40+07:00"
+  },
   {
    "id": "cb955ff186ea",
    "date": "2026-10-26",
@@ -52,7 +73,7 @@
    "date": "2026-10-26",
    "code": "SRTG",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "beli",
    "shares": 711000,
    "price": null,
@@ -63,8 +84,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/edwin-soeryadjaya-borong-711-ribu-saham-srtg-kini-miliki-3607/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcTJHWDhuUWJKdmF2aU9rbE93UEVtNnl0SnZiTXdZWF9uMUNXa2xMMDFnbm12WXNmQmV3ejNJS0h4WEZ6WmtwOVM3VG1uYmZESmdSTTZtZ0xoRlhjWWQzNjhncVFNU3V0NnlmWnN0eG1GQlgwWVBlczU5aFhxdVlISXNtczMwNkJfV0tnWA?oc=5",
    "title": "Edwin Soeryadjaya Borong 711 Ribu Saham SRTG, Kini Miliki 36,07%",
    "first_seen": "2026-10-26T16:00+07:00"
   },
@@ -273,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlTHpRZHZqWllZQmh6anZpM0U0X3JtcnFUcjhHYklidXlsTXpOT2VnZFI4dVgzMmREU1hCRUtKVDJSRk1sakdzWW5fWlJRS044U2ZN?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1naWx5THhXOEVPZ2ZJOXhIRndSbW11WlhMVEh4bFRhdkpIbFAtV0J5SzZjR3doZ0xvS0dzWXZZZFlqWTlqUHdPTHF6a09IdjZ5TnRuRFhRRkg?oc=5",
    "title": "Hamim Tambah Saham PART dan Siapkan Dua Aksi Korporasi",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -358,7 +379,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOXVNWU1EOG0xMjdDVGx3MjBLblYxQTBmSXQxT2F4Wk1keE9FbEZTU0Q3TldVWXA5d0ZXYWF3OElGUG1UVmRpM1hEX0UtdHZXRTNjM2FGTF9jRVhQMUJSN3RMS2JWZGlScEZINVV4QWFkTzNHNTcwalFsMTFHbEg5WUFKTU9vT2RiSkYyZDZBbXNZbGtvTG9ZUzZzNkw2Tm8xRnc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGxRSTM0bmxpOGdXTFNSOFk5MWt5UDJveFlrbURRMmRCU2VaOS1FNll2YXlxQmpEQ2VoVzBoMV9QOC1OVXEzYjV6SXgxYWRnUE5QbWttUU44RjE1aDctaGVaM25TbldIeUxCZjFYOTZLWEhnTGtDREE3bG5vcEpMQ2VDc0d5LVVtdEVueGNaeFR6a1ppQVppZDByTFI?oc=5",
    "title": "3x Borong Saham Sepanjang Oktober, Pengendali HRTA Rogoh Kocek Rp8,31M",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -399,8 +420,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFODR3bFBvQVo1Y1p2WDBURUdnN01SZVptSlNKLVNLSElxNVBHMmMyT0wxS21OSUwwVFFvenl0b3RVdDZKcUp2cDRLc0lzTkwzU0FjNjAwWmxKUlhaSk9KMGFYMk0?oc=5",
+   "source": "Koridor.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUc0FDU1pLbUh4cnBGU1ZPSGFjVWkzYVVzVmtjeFp3bENQQ09ObVNnVWMya3hBTHRndkNsN0QxOUF0VFMtRmp3aVYtZl9MT2xuMnFaUEctb1hCLTFzT2g4WTZsazBRenM?oc=5",
    "title": "INDF Tambah Kepemilikan Saham ICBP Menjadi 80,56 Persen",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -892,7 +913,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -903,8 +924,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -2047,7 +2068,7 @@
    "date": "2026-10-21",
    "code": "HRTA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -2058,8 +2079,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdkdxV0x0djNHWmxNdnh5OXNmN0RrUE1QMUdoYXJVY2lwSmRrMEs1eURZNEZhXzJFWVNteHloVWpOZk04RkFhOTBBT2pISzlZS2U3OXhpV3ByMGRDOXNxYXl1UmZleGUtdUdUdUZ1bnlWblpGTHdiOGRaWmNPcXlWbXFodTNoTDhlU0ZUNGFyRzNjQTloZHVwTmx5M1RQbE9WZU9Pd1NVVnVqQmY1?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGR3S2IzcWJhekVRdlZvdGRKSk1OWVlsQjBKUWNOcHNvQUtWX25UV1FpcVEwUXJjS2MxQUd4Xzd4QmJZTkhoc2lxd1l6NDA2c3pCc0VCeUdaOHN0alliQzRsOU04aWxqRm9DSzZCN3hUTFFkUmhXMWJ5UHdaYVFPT2hWUGtLUktMdjEyaWVrUVlxZzRYSThIV2xKcUlfTkVTQm5nNF9KNA?oc=5",
    "title": "Terang Anugrah Abadi Agresif Borong Saham HRTA, Kepemilikan Tembus 71,16%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -2247,8 +2268,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "https://olenka.id/",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjA?oc=5",
+   "source": "Olenka",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUpuSktNMHhzX2hGTjFUb3M4dUE2Zi1NeC1tb05FXzhPdGxmbk9uSXpCbm13R0xWRy1uZ05Wd0VQOEwzcmlpMGlwbXctLWFGc3R2UldnaTdHQ1pNWlB3dENQUklkYTQ3UzBKZ3RBT3pMZm9NeVRQSkVlUWt3OXBnMExacmx1TWd0SmZnNFVCOHRscjDSAZgBQVVfeXFMTWRLYjZ6T2hqQjQxUGJkSXd0UE1EMnBiZ3V4cTNZUWtCUnZ4Zk9JODRBTHVBV1QxRUhhd1d1d0Z2d1lZRlJTZmhlRXdsWHoyVWtIMFpUY0kzX3V6eXpYYWZXektQRlBmZHVzXzB6aEdheUZlUEl6V25ZU0pIbFVPSjQybllzQXF3QWV2VGRQT3pBb0JKcWRua1A?oc=5",
    "title": "Pemegang Saham Pengendali HRTA Borong Saham di Tengah Volatilitas Pasar",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -2482,6 +2503,48 @@
    "link": "https://stockwatch.id/ayls-akuisisi-saham-gpi-senilai-rp1-miliar-ini-dampaknya-terhadap-kepemilikan/",
    "title": "AYLS Akuisisi Saham GPI Senilai Rp1 Miliar, Ini Dampaknya terhadap Kepemilikan",
    "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "5771a41d8dae",
+   "date": "2026-10-20",
+   "code": "WIFI",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ0x2Ui1OVklFZXlUcGVFU0kybjNwRUxiMG9WRzNuVDhtLTZYazRBUlh6UjVCbm5vaU11Y0JQYWRIdkdDS01POERfVWpsVGRIWHdOWnFLZDVpZ3RrcTlYM3o0NjJXMWkzOElobmZoN3lkdkFUMF82aEJNM25vaUxHalMtTnFuRXNzWmRLYUNfX3Eyb09O?oc=5",
+   "title": "Premium, Sinergi Kapital Borong Miliaran Saham WIFI",
+   "first_seen": "2026-10-27T08:40+07:00"
+  },
+  {
+   "id": "9f4d8ec39408",
+   "date": "2026-10-20",
+   "code": "BRMS",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "indoposco.id",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcnRkeUZtc05QQjRRVmRWSkRWVzNDRU9LbXNzSU9UYjhfYjlDLTFucC1rTUxVSjdxNGdETG9lNUhWLTRXZGNCb2k2ZmM4Q2t4d1Z5Z1Bxb0g1T1QxckEtQUlXNExuRG41MnJ4NmpXX2dRWVRnMmxCUnRjTjUyeS1MNXIyRlRZRlBEanAyZ2JxZmJMMk9yTHluTDBlY09QYzRLVUR3Uy15Sjg0clU?oc=5",
+   "title": "Direksi Tambah Saham BRMS, Produksi Emas Ditargetkan Terus Naik hingga 2028",
+   "first_seen": "2026-10-27T08:40+07:00"
   },
   {
    "id": "f38ae24373b8",
@@ -3235,7 +3298,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdEE5RDJPSDJuVGY5bGViQ2o0NXJoUHlMeW1ibWRrcWJsZkhZYzl4T185dmZHX0YxMnJXcnppNEFqNUh2VkprbGZ4SHZ0SHI1M1JFTHhaaVhQcDlhS0hLd3dMaWYwMmpKdDEyOS02ZzIydkx1VVVpSVQ0eHpKc2lwOHd6ZDV6TDVLQy02aG5tOG1nTl9wYVlRWg?oc=5",
    "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3258,6 +3321,27 @@
    "source": "Emitennews.com",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmZzNk16ZXRqdVExb2dHU21EaGgyemtvVk95Y2toNlJzRmdMdlJlemJCNDduZi1kSm1MalhybW02X09GUHZEcFFCVWhscmZnR2FwQkJlOUZSWDYwdG1fOG1LcHF2MkllMVJIbnBYVDBOWnR2T0YtSDhsZDA5R0UxZ0Yyd1JIM2xsVk9SSFJ5RE5sUVp3ZlVJekxyOA?oc=5",
    "title": "Program Mesop, Direktur Ini Tambah Saham Erajaya Swasembada (ERAA)",
+   "first_seen": "2026-10-21T18:03+07:00"
+  },
+  {
+   "id": "c111a5bde71a",
+   "date": "2026-10-20",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNWNJTFR3dDlpUWRGUUgyckxNZnV2QVV3MkFhd2NKRUhCSksxXzNyX3JxS1hOcmNoeFEzVlpYRFFPOGFBdzhBUWNyR1ZGbk5sVHczeTJDYXk5RFJUTjUyMjlBaFp2Yl9abWl0QzhmaW5Ld3VwZmlVdi04cVVkRXB2b0t1by1BbFU?oc=5",
+   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
@@ -3342,27 +3426,6 @@
    "source": "INFOBRAND.ID",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZTg4WmVramFEdHpFaUFYbjFPMi1MbjRhTW9xUGhScV8wWXh0ZG5LT1Atc1BMZm90NjdNNWEydkdObEFoYWFuclJaN0o5SUp0M0hBdkxKb0RNQ1ZNNDItdjZITzJTcXhJek5vNDdaTTlnYTJ4cjIwVDhrV0lGZW5oRFcyMWVCTGozYllJaE9YNGNkLUNZN2lqdnprdmhDbGhNeEpXd3NDZy1VTElDWEd4SDVYZjVHalZU?oc=5",
    "title": "Direktur BRI Borong 1,1 Juta Saham BBRI Senilai Rp2,97 Miliar, Perkuat Investasi di Perseroan",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
-   "id": "c111a5bde71a",
-   "date": "2026-10-19",
-   "code": "DEWI",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkZsRjJJNWpPeElVcGt0aFBFelU2c0NGbjBnck1HTjdJUFJRSkRvS2VHZGVINHU3amhfX3FMLTc5QkVabXFpSzI1Y0hHREtRMVV3UjNBOC1qazJQOGdlSDRmdXRnaGZsRVhEdHNKSE84cHNIdzlMbUJxUWxEMjZhUVd3?oc=5",
-   "title": "Ada Aktivitas Borong Saham DEWI, Total Rp29,5 Juta!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
@@ -4879,6 +4942,11 @@
   }
  ],
  "net_by_code": {
+  "ALII": {
+   "net_shares": 1510000,
+   "net_value": 0.0,
+   "count": 2
+  },
   "AKPI": {
    "net_shares": -600000,
    "net_value": 0.0,
@@ -4918,11 +4986,6 @@
    "net_shares": 243550000,
    "net_value": 0.0,
    "count": 3
-  },
-  "ALII": {
-   "net_shares": 1510000,
-   "net_value": 0.0,
-   "count": 1
   },
   "RAAM": {
    "net_shares": 193000,
@@ -4982,7 +5045,7 @@
   "BRMS": {
    "net_shares": 34580000,
    "net_value": 0.0,
-   "count": 12
+   "count": 13
   },
   "TAPG": {
    "net_shares": 1723000,
@@ -5022,7 +5085,7 @@
   "WIFI": {
    "net_shares": -10000000,
    "net_value": 0.0,
-   "count": 17
+   "count": 18
   },
   "RLCO": {
    "net_shares": 49220000,
