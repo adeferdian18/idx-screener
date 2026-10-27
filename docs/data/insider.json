@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-27T08:40+07:00",
+ "updated": "2026-10-27T09:17+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 110
+  "news": 108
  },
  "transactions": [
+  {
+   "id": "ce3631042308",
+   "date": "2026-10-27",
+   "code": "ANDI",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 2380000000,
+   "price": 30.0,
+   "value": 71400000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/central-energi-jual-238-miliar-saham-andi-rp7157-miliar-kepemilikan-turun/",
+   "title": "Central Energi Jual 2,38 Miliar Saham ANDI Rp71,57 Miliar, Kepemilikan Turun",
+   "first_seen": "2026-10-27T09:17+07:00"
+  },
   {
    "id": "1fa2f0ba8e2e",
    "date": "2026-10-27",
@@ -2709,8 +2730,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOakRVeng5MWo0MnFjNDhWSVJnc05pZkVXXzNXdGRrZWhibGZLOFpoMy1BcENNcUxGdE5SUTcwUlhvcVhVNWNicmNQeURKVEMtZmhvZFZuU3V3cnVjLTM5X0d1cEFYYlNTeGFyMk9LRlAyUWx3VVc4WmxGQnFMQmdWVHlTZ0pDVGw0RXVUSGZwSW1SWHE5UTFVd2xQUmRJVnJIaWc?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT2dGUHd3M3NhdVBRdzJOYmxXRWwwQmdsc29YVGt4OU5kdnlyUHZ5NUwtQ0FkTk9MdnY3REpsbDF3Tmt2ZC1wOEFSY1NiWmRXMU0yelFNUmFud0xUUzhRTmo4TjZ4eU1yaVZQYnNNNVlEVjVqcUpUZU0xdGhuakhJQnQ0d2ZlbWJrdzVkdnNwNmpTMjBXdVBqQzIteVlnUWhtZ3dnbEljdw?oc=5",
    "title": "Bos TAPG George Oetomo Borong 1,8 Juta Saham, Kepemilikan Kian Gemuk!",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3298,7 +3319,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdEE5RDJPSDJuVGY5bGViQ2o0NXJoUHlMeW1ibWRrcWJsZkhZYzl4T185dmZHX0YxMnJXcnppNEFqNUh2VkprbGZ4SHZ0SHI1M1JFTHhaaVhQcDlhS0hLd3dMaWYwMmpKdDEyOS02ZzIydkx1VVVpSVQ0eHpKc2lwOHd6ZDV6TDVLQy02aG5tOG1nTl9wYVlRWg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
    "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -4942,6 +4963,11 @@
   }
  ],
  "net_by_code": {
+  "ANDI": {
+   "net_shares": -2380000000,
+   "net_value": -71400000000.0,
+   "count": 1
+  },
   "ALII": {
    "net_shares": 1510000,
    "net_value": 0.0,
