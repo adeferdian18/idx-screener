@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-27T14:03+07:00",
+ "updated": "2026-10-27T14:59+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 106
+  "news": 108
  },
  "transactions": [
+  {
+   "id": "d1557e1502b8",
+   "date": "2026-10-27",
+   "code": "BRMS",
+   "party": "Agoes Projosasmito",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 5900000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ2t5MTlfQk9jQ2VCNWc4RC15QVR1QXVINFVSVFBWX0NiS0JhUUIxZHoycVF2ZlRtRE5IamtfbnA1ZGx0LWw2U09TRlp0bVY1R2RYZTNHU0Z0ZGJVZG5aLU53eDMwZTNyQjRWMXpjUGVheDNFeDFFWWJLNEhlcTJJZGs2ZFZzbXJvTjZiOC1TTGlkeE8xSzZWY0FHTGN3RWJiMEFGaUdmMm5hUzV1M2NuNXZtVWUtZXJoaDZwMWc3bw?oc=5",
+   "title": "Bos BRMS Agoes Projosasmito Borong 5,9 Juta Saham, Kepemilikan Melonjak Dua Kali Lipat!",
+   "first_seen": "2026-10-27T14:59+07:00"
+  },
+  {
+   "id": "17493a488c52",
+   "date": "2026-10-27",
+   "code": "WINR",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 38000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 44.22,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2ZGZDFEeV9CWk53TXZDMEpTU2J3Z3ZTcXplQ08ySGE0MFBaNktfWXZMVzk3SGpRYW1MNzJnNzJJc2JjZWM1dXJHTGM3MTZ4YkdaWHNSU19pT3RyaEdIR0dPR2Yydk1rWUdoN1NQSHFFN0t3dmI1OGxwTE14MG1udnFWbWYtbFEyUXZlX2V2aW5fdzkyUjNMbng1c19BRXBKM043cnpHZ29NSXpyRUtGa2dJSDJkQ1pxTjBR?oc=5",
+   "title": "Tambah Free Float, Pengendali WINR Lepas 38 Juta Saham, Kepemilikan Turun Jadi 44,22%",
+   "first_seen": "2026-10-27T14:59+07:00"
+  },
+  {
+   "id": "2e1bca3d52b1",
+   "date": "2026-10-27",
+   "code": "DEWI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 8.1,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdy1KaXJDSlVQS0Y5Rk4wNVg1MTVxUm4tVjBzNThQMDZubkxFY0NmUV8zZUNrTFc1b1EtLV9TdEZCMFdCR1kwTHgzWjc2bDNISXBZc2xQTWpWMlNCR0JPZWVuQ1lJdVNTRnQtSTBQc2xKSnlLSDN2eDJsVWlDOXFiUWNsWEp4YUtIb2tFOHZFdjFTLXFmWVJaU3NESl8tcmhGeUxXT1FGS0I?oc=5",
+   "title": "Sujito Ngatiman Tambah Koleksi Saham DEWI, Kepemilikan Naik Jadi 8,10%",
+   "first_seen": "2026-10-27T14:59+07:00"
+  },
   {
    "id": "f5f79c3fbdd9",
    "date": "2026-10-27",
@@ -304,19 +367,19 @@
    "date": "2026-10-27",
    "code": "ANDI",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "jual",
    "shares": 2380000000,
-   "price": 30.0,
-   "value": 71400000000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/central-energi-jual-238-miliar-saham-andi-rp7157-miliar-kepemilikan-turun/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0NPWGFtY0xudm9QX2VwMDlfSFllbTZGdkI1XzY4VkV6aEpHbWtoVjZXNXMwZFVsYjhzeWVNdmx0TWhPMTVILUVYV3FBSDJBTVZUa19xSjZGeWdQYjZ0X1NMWTFkMjRsWHluZGo1bHR0eVlibFRMWm9jN3RYakJWUk9qanB0Y3RoRGFCZWVRcFdTeUxQT1RDMThESEQ?oc=5",
    "title": "Central Energi Jual 2,38 Miliar Saham ANDI Rp71,57 Miliar, Kepemilikan Turun",
    "first_seen": "2026-10-27T09:17+07:00"
   },
@@ -1228,7 +1291,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1239,8 +1302,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -1644,6 +1707,48 @@
    "first_seen": "2026-10-23T08:37+07:00"
   },
   {
+   "id": "8d4fa6ec3478",
+   "date": "2026-10-22",
+   "code": "PGAS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis Indonesia Premium",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZENTc0pwOVM0RHRuazVGU3dEMkxOM0ZaTXdEbDNPU2REOFFVS1dIMXBjY3ZFQnBKc2JhbFpSSG5oQlhqNmFXX0Y4TFA3OGFscnJfd2hrVjhRemx5RDRhdmtKZTExbnpiUG10LW1ScjVqSk9VTE5odXBQV1NLSHFwY0tkVTNwWUE2THJmSUlPMV96VjliUHdORkdKbDZUYXZwVlV5YjhXd0hsNjh0M3VqTURGOWNrQWxEbkV3?oc=5",
+   "title": "Diam-Diam Lo Kheng Hong Borong Lagi Saham PGN (PGAS) Semester II/2026",
+   "first_seen": "2026-10-27T14:59+07:00"
+  },
+  {
+   "id": "bfbb419e421b",
+   "date": "2026-10-22",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 5500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Warta Ekonomi",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZ3djM1NiZGQzRUxYdFdpNS14VFpic0RSZFBVWGNiU3FZWXZ0bHFqb3NSUHdfYlEwaS1TN3RCX1BIOTByM2V6OV9NWmxCdjM2b2x2LUY4aWFUSkxqeHVEcHhPMExsdjdpMFlFSFk1dy04anh1S2phbVZBd0NieEo2SV9ka05VUGxsZzZ2OThFRnp4Z9IBlwFBVV95cUxPT2tKVnljeXowclBEU2huT2IyOWJkOGQzREUyQlA5cUREQ01rZTFFZEpacVg5V1RPZmNOV04za2tKbGJJb2tWOHRJUGpzdlRvRXdZRVJRRzk3OHM2ZEVvRURyUDZ1T1JwN3hFQi03b0ozOS15R19QeUxnSjl3cXRyRFRUMHV0N2drc1pJcW13U3EzU2dpMW53?oc=5",
+   "title": "Bos BRMS Borong 5,5 Juta Saham, Siap Berbalik Untung?",
+   "first_seen": "2026-10-27T14:59+07:00"
+  },
+  {
    "id": "fc9612ed89f2",
    "date": "2026-10-22",
    "code": "HRTA",
@@ -1879,7 +1984,7 @@
    "date": "2026-10-22",
    "code": "ATLA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1890,8 +1995,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2p6R08tVmVrN3lrNWd4bDJ0X1lBVHg5cGdObmEwZURpbzd6U0JfZDBmNnZtdzdqT3N5NWJYZi1SOFhSNlhnbkg4T3pTWV9EYXVNXzJMa3NLTzBKS2h6dklua1BVdHM0ejNTRzdLU2JlRDNScTdHMGtQeE0tRm5zUXc1aEVucGY2XzJveE5jMjlvWXczc0x1Zk95TWVseHlIUUl2ell4T2F2Ukk?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbGZILUQyVmhjemlnc1JFckxoYXlDS1BlV3BUWUN5Q1VXeHQxS2JENFowLXlpVWwtaVpLbzZvNFU0S1hYcnY0WG5TaVdWZURIOFlJSDJzVmxkMWhEckR2aU5fMkxXUk1lc0NDeldHbW1QYS1vOS0yN3l4MnJ6aXlUV0RHcmwzWTJTNjlPY2JfTU5mN01qd2hlMHpJaldpeHlSMG85Q1FB?oc=5",
    "title": "Rudi Reksa Sutantra Agresif Jual Saham ATLA, Kepemilikan Turun ke 42,10%",
    "first_seen": "2026-10-22T15:54+07:00"
   },
@@ -5257,6 +5362,21 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 69580000,
+   "net_value": 0.0,
+   "count": 21
+  },
+  "WINR": {
+   "net_shares": 18750000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "DEWI": {
+   "net_shares": -70160000,
+   "net_value": 0.0,
+   "count": 6
+  },
   "BUKA": {
    "net_shares": 424000000,
    "net_value": 0.0,
@@ -5266,11 +5386,6 @@
    "net_shares": 2811900,
    "net_value": 0.0,
    "count": 7
-  },
-  "BRMS": {
-   "net_shares": 58180000,
-   "net_value": 0.0,
-   "count": 19
   },
   "BMRI": {
    "net_shares": 29100,
@@ -5299,7 +5414,7 @@
   },
   "ANDI": {
    "net_shares": -2380000000,
-   "net_value": -71400000000.0,
+   "net_value": 0.0,
    "count": 1
   },
   "ALII": {
@@ -5309,11 +5424,6 @@
   },
   "AKPI": {
    "net_shares": -600000,
-   "net_value": 0.0,
-   "count": 5
-  },
-  "DEWI": {
-   "net_shares": -70160000,
    "net_value": 0.0,
    "count": 5
   },
@@ -5377,11 +5487,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "WINR": {
-   "net_shares": -19250000,
-   "net_value": 0.0,
-   "count": 1
-  },
   "ENRG": {
    "net_shares": 999710000,
    "net_value": 0.0,
@@ -5418,6 +5523,11 @@
    "count": 1
   },
   "PDPP": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "PGAS": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
