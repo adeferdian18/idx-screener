@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-27T14:59+07:00",
+ "updated": "2026-10-27T15:43+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 108
+  "news": 99
  },
  "transactions": [
+  {
+   "id": "83655706f398",
+   "date": "2026-10-27",
+   "code": "TINS",
+   "party": "Asing Diam",
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Aktualita.co",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5peUJ2enRWX1BtWE90MDVrNjNSdFBKbjFwUk9Ka3FRbmM2OE5aNnFxaHRiZkJYUDFtLXp3UjZlVTBaUVJRMVdUcFlfQk9hZnR5bU4tdWlvcjNTMENEaHdKWFF4Ymo4RXNORjlsLWJBdGphOHNxRzdoWWhTdw?oc=5",
+   "title": "IHSG Turun 0,32 Persen, Investor Asing Diam-Diam Borong 5 Saham Ini, TINS dan ADRO Paling Diburu",
+   "first_seen": "2026-10-27T15:43+07:00"
+  },
   {
    "id": "d1557e1502b8",
    "date": "2026-10-27",
@@ -231,8 +252,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOEhrQndxOUh0YU1EaGpUcDkycW8wY1F0UVNvbWNQMXoyOE1FSHRwcmgwZmxhYjVHaWo0R1BGV2YtakZUTHY2MVVrYXRDNU1maDdoc2J6clpQY1FnV3hIaW5sdXBydkF2RHdUenZrUGhjeFZreDdyTWozM3l4OGxIWmNFVGVGdU5ua09WZUg4MFh1SF9tSkZuWGxJdzVIMlJMVi1ES18yMWd1V3FZd3loY2o1YW5BYXBja1luV1Vhc0U4ajJy0gHKAUFVX3lxTE05ZEZyN1NqZjNpdUdwUHRhYTJNdjkxR0FFbHk0cXF6d1JyTHExMFQ3N3UtbWFrZzJZb3A3UzBJSHRvM1pLLVdBZDczOGM3OVFVV3A5bER6QUt1dzNBelFlOFJiMzM4amRFa0hJSG1ZOGhwUHEzVTN5aWhlbWFuQXVrWmhJWUV2WlVsM0RqTFhVQ2JIdlp6VHVvbGxZWXFqWEJISm11YzVzT2hFdTgwM19PUzlOVEdsMkEzMmRuQUFNN3FnLWFJOGMxM3c?oc=5",
+   "source": "Head Topics",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSFBVNk5ibHN2UVJiS1NWbjAtTGFnWm1QbWJkUGNtZnUzZXN6bWZpa0lzTHZ6QVM5T2RDLWlyaEJZZVFOOWMxcWtZemFZZHRSbDd2b1pJX2FWRkM0R3Y3c09ULWJ5REFQT21RV0tjc2hyNlgxOWZNLXFEcW1mTEw4elhva0pKWGFHMFppTm5NeGtTZ1VaYThVbXMwcw?oc=5",
    "title": "Petinggi Grup Bakrie (BRMS) Borong 5,9 Juta Saham Senilai Rp 2,4 M",
    "first_seen": "2026-10-27T11:31+07:00"
   },
@@ -294,8 +315,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/direktur-brms-agoes-projosasmito-borong-59-juta-saham-kini-pegang-114-juta/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUnpKbjBnOWo3WWpmTTcxOVo2a0VoWlQyZTI0bWhZcUZnLWNDWWMwdWlteGtQNWRYQjJyR1dUeUZfUlczNWVLdGR5SW9aVXVQRVY0a1FxeWg1clFLVFNObW9CUnAxems2LXFfempsWDlRTXFoMHlyTmdCb29uRkhhcUlVTFNHbXM5WlNvb3JCamZ0RGhEREJXNUdsLUFqQQ?oc=5",
    "title": "Direktur BRMS Agoes Projosasmito Borong 5,9 Juta Saham, Kini Pegang 11,4 Juta",
    "first_seen": "2026-10-27T10:50+07:00"
   },
@@ -1176,8 +1197,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Liputan6 Saham",
-   "link": "https://www.liputan6.com/saham/read/8320137/emiten-soho-lepas-saham-pfizer-indonesia",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tTjFVSEo5dTF5RkpCOVlDZnk1V1FyQ0Y5ZVF0cFN3Z2tOSnhKa0JWWDJudGRtRU52ZHdnTm9fVER0aTByX0NzbDlQcHd3ZzV5UXln?oc=5",
    "title": "Emiten SOHO Lepas Saham Pfizer Indonesia",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -1291,7 +1312,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1302,8 +1323,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -2488,7 +2509,7 @@
    "date": "2026-10-21",
    "code": "HRTA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -2499,8 +2520,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdkdxV0x0djNHWmxNdnh5OXNmN0RrUE1QMUdoYXJVY2lwSmRrMEs1eURZNEZhXzJFWVNteHloVWpOZk04RkFhOTBBT2pISzlZS2U3OXhpV3ByMGRDOXNxYXl1UmZleGUtdUdUdUZ1bnlWblpGTHdiOGRaWmNPcXlWbXFodTNoTDhlU0ZUNGFyRzNjQTloZHVwTmx5M1RQbE9WZU9Pd1NVVnVqQmY1?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGR3S2IzcWJhekVRdlZvdGRKSk1OWVlsQjBKUWNOcHNvQUtWX25UV1FpcVEwUXJjS2MxQUd4Xzd4QmJZTkhoc2lxd1l6NDA2c3pCc0VCeUdaOHN0alliQzRsOU04aWxqRm9DSzZCN3hUTFFkUmhXMWJ5UHdaYVFPT2hWUGtLUktMdjEyaWVrUVlxZzRYSThIV2xKcUlfTkVTQm5nNF9KNA?oc=5",
    "title": "Terang Anugrah Abadi Agresif Borong Saham HRTA, Kepemilikan Tembus 71,16%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -5362,6 +5383,11 @@
   }
  ],
  "net_by_code": {
+  "TINS": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BRMS": {
    "net_shares": 69580000,
    "net_value": 0.0,
