@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-27T10:06+07:00",
+ "updated": "2026-10-27T10:50+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 105
+  "news": 110
  },
  "transactions": [
+  {
+   "id": "96e1b51dcb45",
+   "date": "2026-10-27",
+   "code": "BRMS",
+   "party": "Agoes Projosasmito",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 5900000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/direktur-brms-agoes-projosasmito-borong-59-juta-saham-kini-pegang-114-juta/",
+   "title": "Direktur BRMS Agoes Projosasmito Borong 5,9 Juta Saham, Kini Pegang 11,4 Juta",
+   "first_seen": "2026-10-27T10:50+07:00"
+  },
   {
    "id": "64c91103a6f7",
    "date": "2026-10-27",
@@ -1711,7 +1732,7 @@
    "date": "2026-10-22",
    "code": "ATIC",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -1722,8 +1743,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcjJiSklIMzVabWxEcDV1Uld3NTl4WGpoZGRpTlNrLTE5RzdXYUEyVFFtMHdaUVRkamdmekRXQjBHdlduOVRMbDBQaHBUUmh0Mk1LbDBpell5QXlxOVQyUV90MnBSdDFIeEZiVFNCVENIY3VyUDk4eWVsVFducWNyVzM2a0J0V3lWR1cwYXJxZ05BN3ZXUU1MRjR2b2VWelM5ZFh3MTlGdXI?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRndvUWR4Uzk5MU4yYmZ0ZDZuSGdWb2JMTTVUVnFqbzRFSEo4bVRrSDRmREhKTWF2OFpZTmhrSEFpSUNBZHJPanFHQ3NlOU9aOHdRdzYzQ1BFcmRtLU5Ud0N5VnRFNXlxbzdQSUloMG10dmo5UGVHS0U0OUxZTi1oZUNGcGd0R2picGhhNE9QSlMydFRla0ViTEotMTQzcHU0MzFURWtjeTFPSng0SGc?oc=5",
    "title": "Inti Global Resources Kembali Borong Saham ATIC, Kepemilikan Tembus 5,615%!",
    "first_seen": "2026-10-22T14:13+07:00"
   },
@@ -2152,7 +2173,7 @@
    "date": "2026-10-21",
    "code": "HRTA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -2163,8 +2184,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdkdxV0x0djNHWmxNdnh5OXNmN0RrUE1QMUdoYXJVY2lwSmRrMEs1eURZNEZhXzJFWVNteHloVWpOZk04RkFhOTBBT2pISzlZS2U3OXhpV3ByMGRDOXNxYXl1UmZleGUtdUdUdUZ1bnlWblpGTHdiOGRaWmNPcXlWbXFodTNoTDhlU0ZUNGFyRzNjQTloZHVwTmx5M1RQbE9WZU9Pd1NVVnVqQmY1?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGR3S2IzcWJhekVRdlZvdGRKSk1OWVlsQjBKUWNOcHNvQUtWX25UV1FpcVEwUXJjS2MxQUd4Xzd4QmJZTkhoc2lxd1l6NDA2c3pCc0VCeUdaOHN0alliQzRsOU04aWxqRm9DSzZCN3hUTFFkUmhXMWJ5UHdaYVFPT2hWUGtLUktMdjEyaWVrUVlxZzRYSThIV2xKcUlfTkVTQm5nNF9KNA?oc=5",
    "title": "Terang Anugrah Abadi Agresif Borong Saham HRTA, Kepemilikan Tembus 71,16%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -3382,7 +3403,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZlJkbk5QR2tnSXJsT0FFUVhDTEZFWDczRTJ5al9hUDU1Skp0SldVZklyUl9PeTJvUUhkVm5HYmlpajVqcHViZnJ6R0o4VVFaQjZKeFZ4RXc5ZHAwSW53emZrYWNLeEFwV3VNbk5lbE04QndIdXprN2VOenpBMC1MNXFoTzF4dThNUXZuRmZhc0NPejg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdEE5RDJPSDJuVGY5bGViQ2o0NXJoUHlMeW1ibWRrcWJsZkhZYzl4T185dmZHX0YxMnJXcnppNEFqNUh2VkprbGZ4SHZ0SHI1M1JFTHhaaVhQcDlhS0hLd3dMaWYwMmpKdDEyOS02ZzIydkx1VVVpSVQ0eHpKc2lwOHd6ZDV6TDVLQy02aG5tOG1nTl9wYVlRWg?oc=5",
    "title": "Jual Saham WIFI, ISB Kantongi Rp4,06 Triliun",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -5026,6 +5047,11 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 40480000,
+   "net_value": 0.0,
+   "count": 14
+  },
   "ARKO": {
    "net_shares": 2445000,
    "net_value": 0.0,
@@ -5140,11 +5166,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BRMS": {
-   "net_shares": 34580000,
-   "net_value": 0.0,
-   "count": 13
   },
   "TAPG": {
    "net_shares": 1723000,
