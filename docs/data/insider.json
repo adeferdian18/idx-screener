@@ -1,10 +1,115 @@
 {
- "updated": "2026-10-27T12:17+07:00",
+ "updated": "2026-10-27T13:05+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 119
+  "news": 113
  },
  "transactions": [
+  {
+   "id": "f5f79c3fbdd9",
+   "date": "2026-10-27",
+   "code": "BUKA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 424000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObzFKYXc1U3RWUHFsLXRPMUV4X3pqYTR2STJrR0JMcXN5enpnTk5kR2JkRVZhLWQydWlLOEpHY0Y4WTFJQTlDMy1YWTVfM05GMHhiT2NfRWlvdy1vYVhUZ2kzQjdzRndzSVJQT1NBakpVMXNYZ3lfMTFwWEg5dGlPMFhiY05tb0RkZXFvVWJmb0NpSWRTNUdpNklidFViZ2M2eDlXeEtMbE4ya3hP?oc=5",
+   "title": "Emtek pegang 11,08% Bukalapak setelah borong 424 juta lembar BUKA",
+   "first_seen": "2026-10-27T13:05+07:00"
+  },
+  {
+   "id": "5b40e7561ab7",
+   "date": "2026-10-27",
+   "code": "PART",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWDlqNS16Z3dMdjhKeGVtNGNaNG9VeUI4ZTlFb21ZTHZUamE1SVB3TE1mWERsWWJ4VUFrQTBlOFB5SktJSWR2cU1tamVtQk9vUjVLUTA2UzJDTDZVSW5WdFNZQUVkbDVfYUttbmo4aG5kcURfOWF5elV3NVg0Z1JUSEE1ZkhsUzVJaEEyTTBkTHZrc2NXblFQcXpGR1A5WmZKNTRJN0FLNA?oc=5",
+   "title": "Tegaskan Prospek Perseroan, Pengendali PART Tambah Kepemilikan Saham",
+   "first_seen": "2026-10-27T13:05+07:00"
+  },
+  {
+   "id": "9f4e5e7e9a33",
+   "date": "2026-10-27",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "https://www.suaralandak.co.id/",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TR0RJaHdxSHY1SUlUdEwzblhMSDB3WFpJTm92UWx1dFllTUJ2ZVpGOVZlTmNQWTgzR3JwalBUVy1nSWg0cmM3VnNGdDBVVmRrdDBoS1RVVEJfRm9YeXZPbXdfUG92RTdXOW5wWDhyQzI?oc=5",
+   "title": "Agus Projosasmito Tambah Kepemilikan Saham BRMS",
+   "first_seen": "2026-10-27T13:05+07:00"
+  },
+  {
+   "id": "3ed65cb59075",
+   "date": "2026-10-27",
+   "code": "BMRI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Katadata.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcDA3UzExdmR0dGZrNTZuc2ljMExhNjNqSDlzcng0cVB6Y28ydXFad2Y1V2FoWHpYVEZvWFUxTkc4amVRd2Y0TmVWRWV4ZzNFTVpLSEhGT1BYMWpYWmdqUjV4cDl5UVhJa2w0S3h6dE5KcGhVUDExOTktT05rM012bm9uRlNpSTJGU3ZWRmc1MTdKX3lyOEZuSFUzTElNRVl6bFRNVTlqNnplM2VWYWVob2VCdC00TDQ0SlVFeGRlak5JQmYwcnQxZWtR0gHPAUFVX3lxTE1rWHExMHhRR0Mya09NSmNNNkQ4LWppRFdMaGRXUy1LWFBPdDRWN1JCM1lFencwTHp0X1Jjb1FQSGtLNG1vclZMUWVNb0VFWnlPSjFIZUh0ODFZOWxuRmRYTEZLLTh2aWVxWXZxZUtJZkE1MGM5UGZiQm1FcmxteEkxNWhzcndhR0pTLUxnbHhteEhFdUdzalRSZnB0Z0JuaThYNGdJX29QZnRleWhTSzMwcEM0UEFJLXZDenVSUkJHS1h3a3phN0hlM05jSHQ3dw?oc=5",
+   "title": "IHSG Merosot ke Level 5.355, Asing Net Sell Rp 578 Miliar Lepas Saham BMRI, BBRI",
+   "first_seen": "2026-10-27T13:05+07:00"
+  },
+  {
+   "id": "6ce447d0a049",
+   "date": "2026-10-27",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPanVUa25aR2FaNVI5empXeUxPSjlMSmoxWmpOMnYwRUpNQ2lRMURySzBrQkpocWdaeEt0VFpnc19MZW1SdC1YQnJyWTM3NlptcG1heVJkY1FnS0FqQjhYb25MMHNZanVrSWRQOVprVVhHV0lYSlhSQjNJWF9RMkJkNTJDWF8wZ1RvWVJaVDR0Z0RZUjdfaGpNSXE1MzA3b3dFbW1GNWJLZjlfZFZ3MmR5RjA4XzdEOC1CNUEtUGhPU2pPeGVETkdkYjJ30gHKAUFVX3lxTE9qdVRrblpHYVo1Ujl6ald5TE9KOUxKajFaak4ydjBFSk1DaVExRHJLMGtCSmhxZ1p4S3RUWmdzX0xlbVJ0LVhCcnJZMzc2Wm1wbWF5UmRjUWdLQWpCOFhvbkwwc1lqdWtJZFA5WmtVWEdXSVhKWFJCM0lYX1EyQmQ1MkNYXzBnVG9ZUlpUNHRnRFlSN19oak1JcTUzMDdvd0VtbUY1YktmOV9kVncyZHlGMDhfN0Q4LUI1QS1QaE9Tak94ZUROR2RiMnc?oc=5",
+   "title": "Petinggi Grup Bakrie (BRMS) Borong Saham 5,9 Juta Senilai Rp 2,4 M",
+   "first_seen": "2026-10-27T13:05+07:00"
+  },
   {
    "id": "796d35e750bb",
    "date": "2026-10-27",
@@ -5152,15 +5257,30 @@
   }
  ],
  "net_by_code": {
-  "AHAP": {
-   "net_shares": 2770090000,
+  "BUKA": {
+   "net_shares": 424000000,
    "net_value": 0.0,
-   "count": 3
+   "count": 1
+  },
+  "PART": {
+   "net_shares": 2811900,
+   "net_value": 0.0,
+   "count": 7
   },
   "BRMS": {
    "net_shares": 58180000,
    "net_value": 0.0,
-   "count": 17
+   "count": 19
+  },
+  "BMRI": {
+   "net_shares": 29100,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "AHAP": {
+   "net_shares": 2770090000,
+   "net_value": 0.0,
+   "count": 3
   },
   "MBSS": {
    "net_shares": 8460000,
@@ -5201,11 +5321,6 @@
    "net_shares": 711000,
    "net_value": 0.0,
    "count": 3
-  },
-  "PART": {
-   "net_shares": 2811900,
-   "net_value": 0.0,
-   "count": 6
   },
   "SOHO": {
    "net_shares": 0,
@@ -5351,11 +5466,6 @@
    "net_shares": 24850000,
    "net_value": -141750000.0,
    "count": 4
-  },
-  "BMRI": {
-   "net_shares": 29100,
-   "net_value": 0.0,
-   "count": 3
   },
   "IMPC": {
    "net_shares": 0,
