@@ -1196,5 +1196,26 @@
 "status": "data kurang",
 "skor": null,
 "diambil": "2026-10-26"
+},
+"ERAL": {
+"status": "sebagian",
+"skor": 2,
+"kuartal": "2026-06",
+"laba_yoy": 0.3525,
+"penjualan_yoy": 0.4096,
+"margin": 0.0294,
+"margin_lalu": 0.0307,
+"akselerasi": null,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": false
+},
+"diambil": "2026-10-27"
+},
+"IDEA": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-10-27"
 }
 }
