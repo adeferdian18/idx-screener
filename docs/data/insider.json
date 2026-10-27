@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-27T09:17+07:00",
+ "updated": "2026-10-27T10:06+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 108
+  "news": 105
  },
  "transactions": [
+  {
+   "id": "64c91103a6f7",
+   "date": "2026-10-27",
+   "code": "ARKO",
+   "party": "Kompak",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdVlyZVoxcHBkVzA4cjhsWjAtUjE2R3l1YjRJcGdZY0VjYVlMb09hOUdIa1VoVHczLXZ0R1dPXzl4U3NJUk1mT25lbWdrWXZQRnRISmlZZ0FoZS1SdTFwQ3BhcjFLT1pTOUxBemFFUW5XZGo2X2NPVmVvdHdyVTNDTEtscWFCY0d3NFlCbWVmeEdFdjJTa01ZWF81NkpyQzR2LVdWSg?oc=5",
+   "title": "Direksi dan Komisaris Kompak Borong Saham ARKO, Ada Sinyal Positif?",
+   "first_seen": "2026-10-27T10:06+07:00"
+  },
+  {
+   "id": "8a550beea8b9",
+   "date": "2026-10-27",
+   "code": "MDLA",
+   "party": "Edbert Orotodan",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1940000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZDhvWlhVU2tFTHlwcDh3V0dDajItYU42UUN1dGtBRHNFVk9uQzdjcnlqN2l0THdtOGQxVGtOQ2xVeEk5WTdIRXJIc1Q1MWU4N3NzOFoxS1lSaWVMWG9XT0dUM1dlbE5IQjNvUDYyaDMwU252TkMtMEQtd0hEbHM2SDY3am5rRFpVdVVpRmNPRmxHUGp6RnVmOFdMeXZnSE5IanF6VVR4eTJZVE5Jd2lIZlFmOGZXdw?oc=5",
+   "title": "Direktur MDLA Edbert Orotodan Borong Saham, Kepemilikan Tembus 1,94 Juta Lembar",
+   "first_seen": "2026-10-27T10:06+07:00"
+  },
+  {
+   "id": "dcc6d46bb3e3",
+   "date": "2026-10-27",
+   "code": "AHAP",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 582000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 62.58,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTmJuU011XzFhdDFCNzBlUjM5SjAtOUtMV29YSlhYYmJjaEFPaGV4eGlzWWNVLW1GUWNQRktLR1p3OFNyYmxtcXU2VGYyeTRPem9SMVBEUlR5aUhqSURoRGdlZllnYkNXdk1CQjUyaUctN3J3aHU2Zmg4OWY0T1NHUzl1bzNSZ2RrMU1hSzZyMi1nZTVfaUJSRnNIbUEwNEJHVVFjVTJzZ2lHeWVlN0ZLZ18tSWtDSGk4N25F?oc=5",
+   "title": "Asuransi Central Asia Lepas 582 Juta Saham AHAP, Porsi Kepemilikan Susut Jadi 62,58%",
+   "first_seen": "2026-10-27T10:06+07:00"
+  },
   {
    "id": "ce3631042308",
    "date": "2026-10-27",
@@ -934,7 +997,7 @@
    "date": "2026-10-23",
    "code": "AKPI",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -945,8 +1008,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWGphRDNMaVZJMXpvWENBZDdMS0hwbDFvbzVmQkY0Q3BuaHhFemJqSFJGX0dSbGw0eGtaOTVhdWNqZU5fM2NCazVFTUhVUDgtLVpQcmRIdWFHMFJRVUdtd1pKQkxNd3ZKd2FzRmo2Z2xnd285OVh1WGJ5a1lpNWJXYlpXVEpCMUhzLWV0Q3U2bTR2S1RnT0I3Qld6ZG9CQVZNNEQ4?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRS10amlFMlBSc3JWQUxfT0JWM3JtdWFEZzJ5bFQxLWFxVlN5RE1zenI5M1dhMTIwTlFBYjNBLTRrUTRaSGpYMEcxaW50WXdyLUFNUjFDbTJoSjdkSTBTYkNmZU5Td19zR1ZsbkkyS2o3OUdDMHltSm1GZThBY2ZKczlzd3JMTE1HUTNSZ0ZWdmxwSEpuUGJlek1SSUdKdw?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Turun Jadi 0,8168%",
    "first_seen": "2026-10-23T15:55+07:00"
   },
@@ -1585,7 +1648,7 @@
    "date": "2026-10-22",
    "code": "ATLA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1596,8 +1659,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2p6R08tVmVrN3lrNWd4bDJ0X1lBVHg5cGdObmEwZURpbzd6U0JfZDBmNnZtdzdqT3N5NWJYZi1SOFhSNlhnbkg4T3pTWV9EYXVNXzJMa3NLTzBKS2h6dklua1BVdHM0ejNTRzdLU2JlRDNScTdHMGtQeE0tRm5zUXc1aEVucGY2XzJveE5jMjlvWXczc0x1Zk95TWVseHlIUUl2ell4T2F2Ukk?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbGZILUQyVmhjemlnc1JFckxoYXlDS1BlV3BUWUN5Q1VXeHQxS2JENFowLXlpVWwtaVpLbzZvNFU0S1hYcnY0WG5TaVdWZURIOFlJSDJzVmxkMWhEckR2aU5fMkxXUk1lc0NDeldHbW1QYS1vOS0yN3l4MnJ6aXlUV0RHcmwzWTJTNjlPY2JfTU5mN01qd2hlMHpJaldpeHlSMG85Q1FB?oc=5",
    "title": "Rudi Reksa Sutantra Agresif Jual Saham ATLA, Kepemilikan Turun ke 42,10%",
    "first_seen": "2026-10-22T15:54+07:00"
   },
@@ -1648,7 +1711,7 @@
    "date": "2026-10-22",
    "code": "ATIC",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -1659,8 +1722,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRndvUWR4Uzk5MU4yYmZ0ZDZuSGdWb2JMTTVUVnFqbzRFSEo4bVRrSDRmREhKTWF2OFpZTmhrSEFpSUNBZHJPanFHQ3NlOU9aOHdRdzYzQ1BFcmRtLU5Ud0N5VnRFNXlxbzdQSUloMG10dmo5UGVHS0U0OUxZTi1oZUNGcGd0R2picGhhNE9QSlMydFRla0ViTEotMTQzcHU0MzFURWtjeTFPSng0SGc?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcjJiSklIMzVabWxEcDV1Uld3NTl4WGpoZGRpTlNrLTE5RzdXYUEyVFFtMHdaUVRkamdmekRXQjBHdlduOVRMbDBQaHBUUmh0Mk1LbDBpell5QXlxOVQyUV90MnBSdDFIeEZiVFNCVENIY3VyUDk4eWVsVFducWNyVzM2a0J0V3lWR1cwYXJxZ05BN3ZXUU1MRjR2b2VWelM5ZFh3MTlGdXI?oc=5",
    "title": "Inti Global Resources Kembali Borong Saham ATIC, Kepemilikan Tembus 5,615%!",
    "first_seen": "2026-10-22T14:13+07:00"
   },
@@ -2089,7 +2152,7 @@
    "date": "2026-10-21",
    "code": "HRTA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -2100,8 +2163,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGR3S2IzcWJhekVRdlZvdGRKSk1OWVlsQjBKUWNOcHNvQUtWX25UV1FpcVEwUXJjS2MxQUd4Xzd4QmJZTkhoc2lxd1l6NDA2c3pCc0VCeUdaOHN0alliQzRsOU04aWxqRm9DSzZCN3hUTFFkUmhXMWJ5UHdaYVFPT2hWUGtLUktMdjEyaWVrUVlxZzRYSThIV2xKcUlfTkVTQm5nNF9KNA?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdkdxV0x0djNHWmxNdnh5OXNmN0RrUE1QMUdoYXJVY2lwSmRrMEs1eURZNEZhXzJFWVNteHloVWpOZk04RkFhOTBBT2pISzlZS2U3OXhpV3ByMGRDOXNxYXl1UmZleGUtdUdUdUZ1bnlWblpGTHdiOGRaWmNPcXlWbXFodTNoTDhlU0ZUNGFyRzNjQTloZHVwTmx5M1RQbE9WZU9Pd1NVVnVqQmY1?oc=5",
    "title": "Terang Anugrah Abadi Agresif Borong Saham HRTA, Kepemilikan Tembus 71,16%",
    "first_seen": "2026-10-21T18:03+07:00"
   },
@@ -4963,6 +5026,21 @@
   }
  ],
  "net_by_code": {
+  "ARKO": {
+   "net_shares": 2445000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "MDLA": {
+   "net_shares": 3320000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "AHAP": {
+   "net_shares": 2188000000,
+   "net_value": 0.0,
+   "count": 2
+  },
   "ANDI": {
    "net_shares": -2380000000,
    "net_value": -71400000000.0,
@@ -4997,11 +5075,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "ARKO": {
-   "net_shares": 2445000,
-   "net_value": 0.0,
-   "count": 4
   },
   "BBCA": {
    "net_shares": 0,
@@ -5077,11 +5150,6 @@
    "net_shares": 1723000,
    "net_value": 0.0,
    "count": 3
-  },
-  "AHAP": {
-   "net_shares": 2770000000,
-   "net_value": 0.0,
-   "count": 1
   },
   "CYBR": {
    "net_shares": -34473400,
@@ -5187,11 +5255,6 @@
    "net_shares": 2000000,
    "net_value": 0.0,
    "count": 2
-  },
-  "MDLA": {
-   "net_shares": 1380000,
-   "net_value": 0.0,
-   "count": 4
   },
   "TOTL": {
    "net_shares": 6160000,
