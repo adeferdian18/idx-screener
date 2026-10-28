@@ -1,18 +1,123 @@
 {
- "updated": "2026-10-27T17:26+07:00",
+ "updated": "2026-10-28T08:52+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 121
+  "news": 106
  },
  "transactions": [
+  {
+   "id": "0d54a8d2acff",
+   "date": "2026-10-28",
+   "code": "BRMS",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Warta Ekonomi",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX0dMWFNicDlJdzR6ZlNrdTZJS1hRb2FUSm03NzdBRVBnd25SbVJ1V2dqS1NhdWhKN2IwUDRzRWdXbGc5eW1NX0ZQdERRWkw5SVlaQV9UWFY1VnlzQTc0eWpRTmlXWjFIbTYwSGk1R0pHc3pQaWxNUkFfNktzaDBhVUY4SC0xR0xFZmNGeDl4NzZqYzZVYnJMQ1RB0gGfAUFVX3lxTE5hNzFTQ3Bjcms5dGJDT1RBWGprNkttYnJ1QUpWdURTak5IWVdHcEwzV194aHJVS1ZSc3BxUDJ5YmFOS1plLXptOUJsSHZFVVk3aWhqM0d5dHpZczJJVzFraEZWNVJ5WWw3ZFgybUxMMmdZa1BRLW5xd0J0eWRReWxWLWt3YWlNRi0tZUJ6c3J4UWRMNVFseEExN0NpQXQxcw?oc=5",
+   "title": "Bos BRMS dan Direksi Lainnya Borong Saham, Ada Sinyal Apa?",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
+   "id": "930201bb814d",
+   "date": "2026-10-28",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "investor.id",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNanZRaTBXbl9LQWFJOEtZRDVWUnA5cVFLQklvc3ZsVkN0X3VweTVpVUhrUnBRbnE5WjBEUlJwbVg2UkFzdTNQSWdMeVZNbURyb3Rmb1NDTFQ2ZWFqcl9adHF1WkZGMXZmVHprdzdyWmJFQlh6aWZnc1kyTmlSbGdYR3d2WEsyeFpiMUttbWx3Y19GUVhtbGNmbVlrTUE2cl9BVktDM2JRV3pvRE4xMFE?oc=5",
+   "title": "BERITA POPULER: Gabriel Rey Borong MMIX hingga Dinamika Harga Emas Perhiasan",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
+   "id": "380def384f4e",
+   "date": "2026-10-27",
+   "code": "AHAP",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 582000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 7.14,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSzZQRjVhOXg2NmduaGlUQkgxWk1NNGtaZEQ0SzF2eGs3U2s5TGtiR2NJanB1WW0taUh3OTJOR2hTSTdQeEROb0lHaFE4V2hCemMydEF6SGdRbWppTUkyWHp0dmxDT1BHeFJrMUJYelFoV09meU4xb3lTYWpZY1kxV1hpbmZQUGRBNExmd3dobE5BT3FleE5LNXNFdFVCZFNRck5rZXNkM2RrZUlVTEVKNUM5eVNDXzcwX0pYT3ZLd2tEQms?oc=5",
+   "title": "Yulie Sekuritas Borong 582 Juta Saham AHAP di Harga Gocap, Kepemilikan Melonjak Jadi 7,14%",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
+   "id": "bc80a011da85",
+   "date": "2026-10-27",
+   "code": "ATIC",
+   "party": "Victor Budi Tanuadji",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 30300,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQ2dmb0Qxbmp2QVlMWE5ERTZYQVpTTUJteFZ2Ym1mZm9TdXJMTTZOLVVCMU5JaWdZbVZ6Ri1KcFlWVkNFTjVFRUJHXzZjNkNlZGZEeUJrMzBNYVI4VW5IdzBaOGVvYmY2cS1IMXl0VnA5WmRsaDZSV182Qi1ZeXRTU1RvcFQ1X0FHVXBIY1U2TGU2SUZ6MUVWd09TcVhlSUllQ3JTNUpHUXB4aHRJdHpzZGhsWi00VERaVVBNMXVsb2o2R1U3T01JQw?oc=5",
+   "title": "Komisaris ATIC Victor Budi Tanuadji Borong 30.300 Saham, Kepemilikan Naik Jadi 241.900 Lembar",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
+   "id": "a65e3637261e",
+   "date": "2026-10-27",
+   "code": "BMRI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNejFhMzctcTVhcXYwMDFfN1R3SEJsa3VtMEZyZ1dMMFdzUjhzNm92NVZzZzFhdUlpamhsaTY2SzhQT0FNeDdxNEhCUUlaSmFtNHpaenJpSUh3N1R5RlhaeUNpN19iQlZINFo1dC0tSUR4WEgxZXVFQkRBNjhNakVzOGZqeWphX3QyWExaT2hmT1NFWjZBMkFjMGI0U05zUVdi?oc=5",
+   "title": "Laba BMRI tumbuh 20,7%, investor asing justru lepas saham",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
   {
    "id": "3a6e4a2c1315",
    "date": "2026-10-27",
    "code": "SQMI",
-   "party": "CGS International Securities Singapore Pte Ltd",
-   "role": "sekuritas_mi",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
-   "shares": 2200000000,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -21,8 +126,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/cgs-international-tambah-kepemilikan-saham-sqmi-jadi-1417/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQX0dhNU52d3VySmZjMEx1QXZuckRHa0dmRldZNkpPNXE3bWllSzZlOFdveC1SSnUzQTZVVnlxYmZTSExMUkZVSWY0R2V3Qy1VU3g2aEs1SXR2RTRSWEFYdlByRW81REtyOExHNUViTXpkY0I3WWE3dUhBd2RTdzhwZ1I3OS1tVXc?oc=5",
    "title": "CGS International Tambah Kepemilikan Saham SQMI Jadi 14,17%",
    "first_seen": "2026-10-27T17:12+07:00"
   },
@@ -468,6 +573,27 @@
    "first_seen": "2026-10-27T08:40+07:00"
   },
   {
+   "id": "899ccd63e5f3",
+   "date": "2026-10-26",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Ibukotakini",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOV0U3ZU8tQWVKYzEyY29NMTZtUFZ1UlJ5cjNVTm1kbU1LZkZhNk9tM2J0UmhwVnJJaGUxaDlUX2JfSFFTQVV2dTlRejlTNEtObTE0TWdKMzhqVC0tZnkzbXpWZGpnbU04UFdiN01sX25UWXU4MEFMOEYwRmx5cktoeFVuOG1KQVhNYXVJ0gGLAUFVX3lxTE5XRTdlTy1BZUpjMTJjb00xNm1QVnVSUnlyM1VObWRtTUtmRmE2T20zYnRSaHBWckloZTFoOVRfYl9IUVNBVXZ1OVF6OVM0S05tMTRNZ0ozOGpULS1meTNtelZkamdtTThQV2I3TWxfblRZdTgwQUw4RjBGbHlyS2h4VW44bUpBWE1hdUk?oc=5",
+   "title": "Gabriel Rey Tambah Kepemilikan di Perusahaan Popok MMIX",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
    "id": "cb955ff186ea",
    "date": "2026-10-26",
    "code": "AKPI",
@@ -507,6 +633,27 @@
    "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWlJQR0UzbXBBZFJzYUdaMVM0czZERTFkZzkybzc4dG9UN0hORFBNb3g4U2dLZWJORG1BSWZibnhHWV9kS2ZZTEdJSmtGTl9NNGhRWFl1a2VxeFJIXzZTb2dzemNwVDQwdlpCT25seEtuS1RER2xPR1U2RGRNbmR0NVYxQWxYV2t5R1dOaVB0amhVb0o1Y20zNWNEbXNicGFBTlBVUHFwbklLWEE?oc=5",
    "title": "Sujito Ngatiman Lepas 8,95 Juta Saham DEWI, Kepemilikan Susut Jadi 7,70%",
+   "first_seen": "2026-10-26T16:45+07:00"
+  },
+  {
+   "id": "d07383201db2",
+   "date": "2026-10-26",
+   "code": "PART",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 1880000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdjJHVnA1NDZEb0hqZXc4RVFGbzNLdVRDdW1yaHB1enZyMlFXV1V0elAxeDVrdlAxc0NlejUtTnNmTzRFeDVZQnBmeXdYdUFsSTQxejFPYTdNZHdtd01MVE9qa0hBMzZUamlYUTFaNUF6cnpiZkVpTm9QeEExY1RDem12YVdaN2xIUGdPUkNPZGxNUDZNTnczeXN5SUxDZw?oc=5",
+   "title": "Pengendali PART Borong 1,88 Juta Saham Jelang Aksi Korporasi Besar Ini",
    "first_seen": "2026-10-26T16:45+07:00"
   },
   {
@@ -903,8 +1050,8 @@
    "after_shares": null,
    "purpose": "nya",
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONndwdFdLM1VYbVdXUlNtWjRQTFJ3Q0hNNWMyUzFtQ0wtZUtoUFVXcE8wNi1keTV0Znp5cUdmUzlDQ0EwTURFYmtqcHVfcGJFQUMzbjZqYkxQOTVUTm16Z1F3Rmx4UkJ1NkNMTlJSdzZ1TE5Rb2o3RjkyZmhrQzBQcjlKXzhRWWRTd2ItbjZ2WmVWTkEzUGFqSzNwSU5kTG9lSUwzTFpMdEhXVXdTTEV2YkpyT3liSHhUZDVGVDZYQ0RmZ9IBnwFBVV95cUxQZnBtMlE3V1VrNndWZ09ZNFNkM19JRE8tUUotY3lNYzVlX2dvQ003Sm5uWlN0ek1FbFpGUng5SVdpQm9vRFl1NTdsZHpQZF9wUHVRU203RFo3YUFYLUdwMy1uNXJhOFpnbENHUk9fSHl6b21XcWtaTmpoNTlKTDlKQ1huYnpZT25TWVRZVHM5SVhYU3JISXdpeU1nOXVNWUE?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZnBtMlE3V1VrNndWZ09ZNFNkM19JRE8tUUotY3lNYzVlX2dvQ003Sm5uWlN0ek1FbFpGUng5SVdpQm9vRFl1NTdsZHpQZF9wUHVRU203RFo3YUFYLUdwMy1uNXJhOFpnbENHUk9fSHl6b21XcWtaTmpoNTlKTDlKQ1huYnpZT25TWVRZVHM5SVhYU3JISXdpeU1nOXVNWUHSAZ8BQVVfeXFMUGZwbTJRN1dVazZ3VmdPWTRTZDNfSURPLVFKLWN5TWM1ZV9nb0NNN0publpTdHpNRWxaRlJ4OUlXaUJvb0RZdTU3bGR6UGRfcFB1UVNtN0RaN2FBWC1HcDMtbjVyYThaZ2xDR1JPX0h5em9tV3FrWk5qaDU5Skw5SkNYbmJ6WU9uU1lUWVRzOUlYWFNySEl3aXlNZzl1TVlB?oc=5",
    "title": "Wijaya Karya (WIKA) Divestasi 50,91 Juta Saham Anak Usaha, Ini Tujuannya",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -970,27 +1117,6 @@
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0bm95RFpqTlcyT3EtdWM4Q0dMOGx0ZU5VUGstMXZTQVI2WFBuTTY1ZHF4SkdCSlNtNmtkNE1lR3NVWE1KYVFpSEg0R0JrNGE4ZjFv?oc=5",
    "title": "BUVA Tambah Saham dan Siapkan Dana Rp 1,54 Triliun",
    "first_seen": "2026-10-26T08:42+07:00"
-  },
-  {
-   "id": "d07383201db2",
-   "date": "2026-10-24",
-   "code": "PART",
-   "party": null,
-   "role": "pengendali",
-   "action": "beli",
-   "shares": 1880000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdjJHVnA1NDZEb0hqZXc4RVFGbzNLdVRDdW1yaHB1enZyMlFXV1V0elAxeDVrdlAxc0NlejUtTnNmTzRFeDVZQnBmeXdYdUFsSTQxejFPYTdNZHdtd01MVE9qa0hBMzZUamlYUTFaNUF6cnpiZkVpTm9QeEExY1RDem12YVdaN2xIUGdPUkNPZGxNUDZNTnczeXN5SUxDZw?oc=5",
-   "title": "Pengendali PART Borong 1,88 Juta Saham Jelang Aksi Korporasi Besar Ini",
-   "first_seen": "2026-10-26T16:45+07:00"
   },
   {
    "id": "541afbfa2bfc",
@@ -1242,6 +1368,27 @@
    "source": "شبكة تواصل الإخبارية",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tTjFVSEo5dTF5RkpCOVlDZnk1V1FyQ0Y5ZVF0cFN3Z2tOSnhKa0JWWDJudGRtRU52ZHdnTm9fVER0aTByX0NzbDlQcHd3ZzV5UXln?oc=5",
    "title": "Emiten SOHO Lepas Saham Pfizer Indonesia",
+   "first_seen": "2026-10-26T08:42+07:00"
+  },
+  {
+   "id": "b3cc4857e895",
+   "date": "2026-10-23",
+   "code": "IMPC",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRExrRUV6QjJlYWhyalBLNWhKVXM2WGxQb2xGb2Q0aEJaTm84eUo4UWljeEMzOFFBT2pyZzZBaTdfQUNObzBuNDY5SlpTZUktZkNFVmJ3NVVOOC1tcVppb0ZjeEVxdkNmQ2ltSUFJZG9KdGx2ZHJKMDFuazJNX2wtT0dYY3dfN0phY1JkdVBUNA?oc=5",
+   "title": "Songsong Dividen, 3 Pemegang Saham IMPC Borong Rp127 Miliar",
    "first_seen": "2026-10-26T08:42+07:00"
   },
   {
@@ -1975,7 +2122,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Edisi",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUmFoZDNCR01UdmllcVlnN1EwZW5tOFVqMHkyUGVLZGJNeXNPZU5WWVVBTVdGckNSWmt6TUd4U3dRaGJDNUVscV9OTEpRTE9TVUtHM000cHl6VEFCTm1YaU9MVk8yT2ZjT0FGRzFER0FaUW5qYnJDeHBTWWNmTFpEaWctZWM0ZllzZFJNUlZ2cDZKMmdEcDlod0VEX2NxaUZNcFpUNDdFR0h4OXY1R01hX0liT1Q1T09kVldpVnNsSmdrQVVWRFRTS09ubEZhS3hncU9za19Ba05iTFQtM0xTczBCZ9IB4wFBVV95cUxOUmFoZDNCR01UdmllcVlnN1EwZW5tOFVqMHkyUGVLZGJNeXNPZU5WWVVBTVdGckNSWmt6TUd4U3dRaGJDNUVscV9OTEpRTE9TVUtHM000cHl6VEFCTm1YaU9MVk8yT2ZjT0FGRzFER0FaUW5qYnJDeHBTWWNmTFpEaWctZWM0ZllzZFJNUlZ2cDZKMmdEcDlod0VEX2NxaUZNcFpUNDdFR0h4OXY1R01hX0liT1Q1T09kVldpVnNsSmdrQVVWRFRTS09ubEZhS3hncU9za19Ba05iTFQtM0xTczBCZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOV2c1dXJ5Sjc5VGRtaWpaMDc0dXd2MGpRMHByaEtqampjQnFCczdra2wyMWZIOUU4S2tEWXN0dHNjOFZjR0ttS1I0SkdIYlhuMzFwdFA5Wjctb2dnSEUxZ2NJYXZQQ3RDV1hXQVlEUmpLZ0pYUnc2YjFiSkkxVHhEUGpOSzdmLW84cS1Wd29uNTV4WHFrUURrSmlfWWF5MmowWlI3T1VMY25EVllaNzNySm5Kd0lGcm82QlF1T0N0UmpNc0gwWU5tNlZWMEktbTRCTjBJLXdnMXJCSnE4RlHSAeMBQVVfeXFMTlJhaGQzQkdNVHZpZXFZZzdRMGVubThVajB5MlBlS2RiTXlzT2VOVllVQU1XRnJDUlprek1HeFN3UWhiQzVFbHFfTkxKUUxPU1VLRzNNNHB5elRBQk5tWGlPTFZPMk9mY09BRkcxREdBWlFuamJyQ3hwU1ljZkxaRGlnLWVjNGZZc2RSTVJWdnA2SjJnRHA5aHdFRF9jcWlGTXBaVDQ3RUdIeDl2NUdNYV9JYk9UNU9PZFZXaVZzbEpna0FVVkRUU0tPbmxGYUt4Z3FPc2tfQWtOYkxULTNMU3MwQmc?oc=5",
    "title": "Muhammad Lutfi Soroti Pengalihan 22 Persen Saham Bayan Resources ke Elin Low, Singgung Aturan Divestasi",
    "first_seen": "2026-10-22T17:19+07:00"
   },
@@ -2080,7 +2227,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Pena Bicara",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWG1oSTFkd0RkTWhQcTVOeDR6bWZ1WUczUXBQNW9jX0NBdWJDX1QxVFI4Qk5XVzlFSExQZjJQbHZ0cWV4VlFQbVUxWFc5SUlyXzQ3dFQtRVVGNTlxLTE2bzI0MG9sXzg5alpKR1gtdnhVbVJjQlpPY0Q2RDUycFViRjFLVm9vWUlJSG05a1NuNEk4d3BsNVVSb2EwQ01rSmZvWjExMm1qRGhVNDlFREZKTzZ0YndJbTQwZ2tyM25CSXNRY0lLdFFGTHAzYmdYcDY4azJKdlJPR2xyd3RFMlU2TNIB4AFBVV95cUxQWG1oSTFkd0RkTWhQcTVOeDR6bWZ1WUczUXBQNW9jX0NBdWJDX1QxVFI4Qk5XVzlFSExQZjJQbHZ0cWV4VlFQbVUxWFc5SUlyXzQ3dFQtRVVGNTlxLTE2bzI0MG9sXzg5alpKR1gtdnhVbVJjQlpPY0Q2RDUycFViRjFLVm9vWUlJSG05a1NuNEk4d3BsNVVSb2EwQ01rSmZvWjExMm1qRGhVNDlFREZKTzZ0YndJbTQwZ2tyM25CSXNRY0lLdFFGTHAzYmdYcDY4azJKdlJPR2xyd3RFMlU2TA?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcXpfczM3NmFnZlgzbGpaVThoeHhOSmhKd0pFa1ZJV2Y0by1ESnpJV21kUFlGR3ZkLXAzQXZQWXdhSkUyWDVVZU94QWV3c0J0X2gycjBFRHFkUEtZLW9ydDhtT2dZMDg3eWV4SzFxTk9mRjIzMnJLbkZtaDR1MzJsY0djLXBTWXkyU1lSdlNsQWVmd3pCdllNeG1zWU94NVpGSjZuSmkxanRYNnVCanZHS2Jzbk1QNlVER1AyMnEwamZUYXpxWG1BNGVXMjV4Zy02UUVFT2VlS0ItWjTSAeABQVVfeXFMUFhtaEkxZHdEZE1oUHE1Tng0em1mdVlHM1FwUDVvY19DQXViQ19UMVRSOEJOV1c5RUhMUGYyUGx2dHFleFZRUG1VMVhXOUlJcl80N3RULUVVRjU5cS0xNm8yNDBvbF84OWpaSkdYLXZ4VW1SY0JaT2NENkQ1MnBVYkYxS1Zvb1lJSUhtOWtTbjRJOHdwbDVVUm9hMENNa0pmb1oxMTJtakRoVTQ5RURGSk82dGJ3SW00MGdrcjNuQklzUWNJS3RRRkxwM2JnWHA2OGsySnZST0dscnd0RTJVNkw?oc=5",
    "title": "Soal Pengalihan Saham Bayan Resources, Muhammad Lutfi Pertanyakan Aturan Divestasi dan Status PMA",
    "first_seen": "2026-10-22T15:01+07:00"
   },
@@ -2253,6 +2400,27 @@
    "first_seen": "2026-10-22T09:14+07:00"
   },
   {
+   "id": "ce83b0cf2aa9",
+   "date": "2026-10-21",
+   "code": "ADRO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Suara.com",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWGw2MHlxSEw3dVVIMzhXLXB4NWw2UU1PNkdtOTRlN0EyeDFOQjdVVmRGSVRSQnFPZ1VmazdjQXJlS0ctdnRfZDc2cU0zTUVsdW1KVGJSbkhLVVdwNVlhRWYtZUFweXdUdG1tenJDZDE4YXNFekl6aXZ0ZFFCbXh6LTRzN09DZllJUmlDUlBnSlVvZGlDcG56LWN3RkNnYUhFMFlTTHRWUHVJd2t3dkJoVnBqUnVQZldNbnfSAboBQVVfeXFMTWZVVk9KanZKZlFzZGdYc1RYX0JSYzVmZE54NlJIZGI4VElFWHhHVDZ5TkptMWlNTWo3dkNrNVlLWmVHY2w5SmZLOVlBTVY2MnI5NVQ5emd2N1lGNlFZamU2R0FFX09CVXF0ZER1M1BqVnpNV0dvX05yRlJUZGlMV2RhSjRXVWZUWmlzYU1VemNCamVLUzU0SGx6MmJyM0NmSHRVTkt1dXN0Qk8tZ25aNmZ1NWdHNExCc3NR?oc=5",
+   "title": "Aksi Aji Mumpung Boy Thohir di Tengah Pasar Lesu, Borong Saham ADRO-AADI",
+   "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
    "id": "11631c15b169",
    "date": "2026-10-21",
    "code": "AADI",
@@ -2272,27 +2440,6 @@
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTNDBkSTRhRnFKaFhKQmZLNzNEbWtrS1V0bFljSFFxeVJqZUxhZ3ZSZ0hrdXlLazl6LUREWThTV1ZJWndFVnZfOVpMWlVmLWtISDZUV0JRNE41Z012am5zYlpVd0NOUkVLcTBybA?oc=5",
    "title": "Boy Thohir Borong Saham AADI ADRO dan ESSA",
    "first_seen": "2026-10-27T17:12+07:00"
-  },
-  {
-   "id": "b3cc4857e895",
-   "date": "2026-10-21",
-   "code": "IMPC",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZGxsamxRTlY3T2NQZHJFMmthVWFMSDZGNUZTbTVQVVgwM3RzZzNyUXpPb2NfLXRFbkhGX3NmamJFTjExRjAtN19MU2xxcWUzNzFDQldmcHdSb182bm5UOXM1a3NkZVFCYlNOVHY4cEt0MWNkdUVsNXJOYjVOLVE3TG5Vc3FyXzhjQmo4TTJVcTV4VEVn?oc=5",
-   "title": "Songsong Dividen, 3 Pemegang Saham IMPC Borong Rp127 Miliar",
-   "first_seen": "2026-10-26T08:42+07:00"
   },
   {
    "id": "91ff21848d81",
@@ -5446,8 +5593,33 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 69580000,
+   "net_value": 0.0,
+   "count": 22
+  },
+  "MMIX": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "AHAP": {
+   "net_shares": 3352090000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "ATIC": {
+   "net_shares": 30300,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "BMRI": {
+   "net_shares": 29100,
+   "net_value": 0.0,
+   "count": 5
+  },
   "SQMI": {
-   "net_shares": 2200000000,
+   "net_shares": 0,
    "net_value": 0.0,
    "count": 2
   },
@@ -5455,11 +5627,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "BRMS": {
-   "net_shares": 69580000,
-   "net_value": 0.0,
-   "count": 21
   },
   "WINR": {
    "net_shares": 18750000,
@@ -5480,16 +5647,6 @@
    "net_shares": 2811900,
    "net_value": 0.0,
    "count": 7
-  },
-  "BMRI": {
-   "net_shares": 29100,
-   "net_value": 0.0,
-   "count": 4
-  },
-  "AHAP": {
-   "net_shares": 2770090000,
-   "net_value": 0.0,
-   "count": 3
   },
   "MBSS": {
    "net_shares": 8460000,
@@ -5591,6 +5748,11 @@
    "net_value": 0.0,
    "count": 1
   },
+  "IMPC": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "TAPG": {
    "net_shares": 1723000,
    "net_value": 0.0,
@@ -5646,11 +5808,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "ATIC": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
-  },
   "AVIA": {
    "net_shares": 2876970000,
    "net_value": 0.0,
@@ -5659,7 +5816,7 @@
   "ADRO": {
    "net_shares": 470000,
    "net_value": 0.0,
-   "count": 5
+   "count": 6
   },
   "EMMI": {
    "net_shares": 3570000,
@@ -5672,11 +5829,6 @@
    "count": 4
   },
   "AADI": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "IMPC": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
@@ -5765,11 +5917,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "MMIX": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "MPRO": {
    "net_shares": 0,
