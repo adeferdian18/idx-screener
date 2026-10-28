@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-28T08:52+07:00",
+ "updated": "2026-10-28T09:43+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 106
+  "news": 109
  },
  "transactions": [
+  {
+   "id": "f04a5fece331",
+   "date": "2026-10-28",
+   "code": "BREN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWnZnMGJRdHlwRTdtdkdSLVlpNGEyb1U0RHYxRlZEM3FwWFZEZEI1VjBNRk14WGQyUkNzd0V3UDZxRXdZSVFNVzBxanRfV1FlZXRLRUFTS2Z4d2haQnRKaXFzWml6YnlCS0VleEZKX0NuMFVrQTVmNmlYRW5qVm5ndEVybXR4ajJDaTkzVGJYZ3pmazlvWEFkcVRhai1PNFNkc0xKYg?oc=5",
+   "title": "Deretan Broker Lepas Saham BREN: Mandiri Hingga UBS",
+   "first_seen": "2026-10-28T09:43+07:00"
+  },
   {
    "id": "0d54a8d2acff",
    "date": "2026-10-28",
@@ -46,6 +67,27 @@
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNanZRaTBXbl9LQWFJOEtZRDVWUnA5cVFLQklvc3ZsVkN0X3VweTVpVUhrUnBRbnE5WjBEUlJwbVg2UkFzdTNQSWdMeVZNbURyb3Rmb1NDTFQ2ZWFqcl9adHF1WkZGMXZmVHprdzdyWmJFQlh6aWZnc1kyTmlSbGdYR3d2WEsyeFpiMUttbWx3Y19GUVhtbGNmbVlrTUE2cl9BVktDM2JRV3pvRE4xMFE?oc=5",
    "title": "BERITA POPULER: Gabriel Rey Borong MMIX hingga Dinamika Harga Emas Perhiasan",
    "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
+   "id": "d61fe3b42323",
+   "date": "2026-10-27",
+   "code": "JPFA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBOREdRTGlQbWNOOTREbDJhVkgxb1NLUW92bTQxaHN1aXhuWTVfdlBsb3VPdHJpdE44TklwWXpMSVJNaGRTUUhPXzBsSVJsdm5MdXpjQg?oc=5",
+   "title": "saham terafiliasi - Japfa Comfeed (JPFA) Divestasi Vaksindo Rp 1,807 Triliun, Ini Alasan dan Dampaknya",
+   "first_seen": "2026-10-28T09:43+07:00"
   },
   {
    "id": "380def384f4e",
@@ -928,6 +970,27 @@
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZWNEcjl0VE55RXdnZkNQYWloaGNSZ0JEMUZlQkNtX1R2cDZid3o2cDNEWDNkbEVMODlhVXYtdGMtbjdtUmJkUmNWbTVFaTM5dTJ5OU1YcWhYRmVsMVZRWjA2eGdTVmo5N3BLZURKX0hyQ1ZKblgxUUJaRzFkZUxNbEVuTzJaVmhBR2JYVlNsTUJKV25PdGd3MzhONEZhMVYxM0k5OTVQOWwybTI5?oc=5",
    "title": "Gloriajaya Gempita Lepas 3 Juta Saham SPMA, Kepemilikan Turun Jadi 23,96%",
    "first_seen": "2026-10-26T08:42+07:00"
+  },
+  {
+   "id": "655c71f9346c",
+   "date": "2026-10-25",
+   "code": "HOPE",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOGVPd2dNVXh2S2N4Z2JmNXV5ZkpPUkRBMHNyVmlnY0d5Z1dOYjd2Nk5pODI1OWVUYTc2VFg3SDZxR2pEN0ZPMFdCTzVYaEotQi1UazdmUzAxWnRZelVCMFh4T3RjVEROeElOV1psdGdJWjRhbThkb2dCUHlCU0h3U2hjdTFJUTBLLVRhVW1tR285dU5XM3VhWlZ3?oc=5",
+   "title": "Celebes Mining Cabut dari HOPE, Divestasi 13,87 Persen Saham Rp67,38M",
+   "first_seen": "2026-10-28T09:43+07:00"
   },
   {
    "id": "bbb8e7ddd317",
@@ -5593,6 +5656,11 @@
   }
  ],
  "net_by_code": {
+  "BREN": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BRMS": {
    "net_shares": 69580000,
    "net_value": 0.0,
@@ -5602,6 +5670,11 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 3
+  },
+  "JPFA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
   },
   "AHAP": {
    "net_shares": 3352090000,
@@ -5707,6 +5780,11 @@
    "net_shares": -6000000,
    "net_value": 0.0,
    "count": 2
+  },
+  "HOPE": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
   },
   "SPTO": {
    "net_shares": 0,
