@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-28T11:16+07:00",
+ "updated": "2026-10-28T12:15+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 107
+  "news": 106
  },
  "transactions": [
   {
@@ -1260,8 +1260,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0bm95RFpqTlcyT3EtdWM4Q0dMOGx0ZU5VUGstMXZTQVI2WFBuTTY1ZHF4SkdCSlNtNmtkNE1lR3NVWE1KYVFpSEg0R0JrNGE4ZjFv?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sOXpGOE8wZU41SVJOMUdFeFR3YXVjYXN6VzRUblZSZzZFamFjWWpLUWo2Q29jQ0ttQ3BqTzJ3ckZVdnBab08xQ0x0U3RpU0swSFNaSGFuSk95Sld5NC1kRW9hN1piNExz?oc=5",
    "title": "BUVA Tambah Saham dan Siapkan Dana Rp 1,54 Triliun",
    "first_seen": "2026-10-26T08:42+07:00"
   },
