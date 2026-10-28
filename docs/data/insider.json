@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-28T15:13+07:00",
+ "updated": "2026-10-28T16:09+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 90
+  "news": 100
  },
  "transactions": [
   {
@@ -63,8 +63,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NTV3OUVDVG9HSXZPdTRrNVBjUTFfeXVhZlN3VldqR1J4TngzWlhPRHdiWlBVbDRVTkw2Um5Cd3NMX3pDUVNZZUJOS2R4LVpoYll3?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxVm9tQzQwd28wWkdScU9nNERFd0VWNHFGVVFXMTRxbTVGaFR6NnNFNnJROWYzQndyV1BnbHFjVHJvVXlUOElaVTBmeTk5Zm1IM2tiOVVGZ3BsakhLcUo4Sg?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX pada Oktober 2026",
    "first_seen": "2026-10-28T13:00+07:00"
   },
@@ -78,14 +78,14 @@
    "shares": 7200000,
    "price": null,
    "value": null,
-   "before_pct": 8.1,
+   "before_pct": null,
    "after_pct": 7.7,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/pengendali-dewi-jual-72-juta-saham-kepemilikan-turun-jadi-770/",
+   "source": "stockwatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQY0JyT0gyNUVPREpESWsyY3JIZ3ZnX2Ffc3o1UTF2X0drMHNpRFhTQmpiZVBuSGZSaFh1WU1Sd212WGpBdE9mVXBENlg0UlQtcEJIV3dueWZFSzNVcXNLM2xTaXpKQU1tdjJpVE1QUGRiaUZCTlR1cEdBdzdpNC0yQ3dsV1Zldko1T0F3MQ?oc=5",
    "title": "Pengendali DEWI Jual 7,2 Juta Saham, Kepemilikan Turun Jadi 7,70%",
    "first_seen": "2026-10-28T10:25+07:00"
   },
@@ -1050,8 +1050,8 @@
    "after_shares": null,
    "purpose": "nya",
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdVRnNEhEMW9pVDkwcm03aDFoTEJsbUZPRzlUZmRnYjlldDVoUXNQQ21BNDZfeUM2UEJvRU1iUmRGSGZYN0UwNVplZFYzZkNmN2lNb005QTJTSHFwTEhKSXdkemF1Z2Q4TGxSX1p3SjNBQXZKVE1xajV5aV9pUnlSYWZOMndSNTFVaXpHREJGQVhBSGdKWmY2OU1OUWtkN1dRRkFWNU5Ud2HSAaABQVVfeXFMTmFsUFlTYlhVYlctSF93SFJDOUlwSEpXWTNETkFvUTRhWEN6a3RhV0VXTXZPRllhUnU1RVp6cmItX21mcFlaamZzNlF6SW81TWJWM2FyT01LVGYydndFbzkxcjFFZk51NzRuWFFlNGpYbHJKS2VBc1FlWDVHNklzMGpET3FTQUZHd3VCRGpHdkxuUV9vSDZsN2ZLVUw2VnoyLQ?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWxQWVNiWFViVy1IX3dIUkM5SXBISldZM0ROQW9RNGFYQ3prdGFXRVdNdk9GWWFSdTVFWnpyYi1fbWZwWVpqZnM2UXpJbzVNYlYzYXJPTUtUZjJ2d0VvOTFyMUVmTnU3NG5YUWU0alhsckpLZUFzUWVYNUc2SXMwakRPcVNBRkd3dUJEakd2TG5RX29INmw3ZktVTDZWejIt0gGgAUFVX3lxTE5hbFBZU2JYVWJXLUhfd0hSQzlJcEhKV1kzRE5Bb1E0YVhDemt0YVdFV012T0ZZYVJ1NUVaenJiLV9tZnBZWmpmczZReklvNU1iVjNhck9NS1RmMnZ3RW85MXIxRWZOdTc0blhRZTRqWGxySktlQXNRZVg1RzZJczBqRE9xU0FGR3d1QkRqR3ZMblFfb0g2bDdmS1VMNlZ6Mi0?oc=5",
    "title": "Dirut Cipta Perdana (PART) Tambah Porsi Kepemilikan Saham, Ini Tujuannya",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -1323,8 +1323,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0bm95RFpqTlcyT3EtdWM4Q0dMOGx0ZU5VUGstMXZTQVI2WFBuTTY1ZHF4SkdCSlNtNmtkNE1lR3NVWE1KYVFpSEg0R0JrNGE4ZjFv?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sOXpGOE8wZU41SVJOMUdFeFR3YXVjYXN6VzRUblZSZzZFamFjWWpLUWo2Q29jQ0ttQ3BqTzJ3ckZVdnBab08xQ0x0U3RpU0swSFNaSGFuSk95Sld5NC1kRW9hN1piNExz?oc=5",
    "title": "BUVA Tambah Saham dan Siapkan Dana Rp 1,54 Triliun",
    "first_seen": "2026-10-26T08:42+07:00"
   },
