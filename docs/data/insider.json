@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-28T09:43+07:00",
+ "updated": "2026-10-28T10:25+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 109
+  "news": 112
  },
  "transactions": [
+  {
+   "id": "bc34f9fcd84d",
+   "date": "2026-10-28",
+   "code": "DEWI",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": 7200000,
+   "price": null,
+   "value": null,
+   "before_pct": 8.1,
+   "after_pct": 7.7,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/pengendali-dewi-jual-72-juta-saham-kepemilikan-turun-jadi-770/",
+   "title": "Pengendali DEWI Jual 7,2 Juta Saham, Kepemilikan Turun Jadi 7,70%",
+   "first_seen": "2026-10-28T10:25+07:00"
+  },
+  {
+   "id": "6cde3cd86028",
+   "date": "2026-10-28",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "InvestorTrust",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZFRxYWxpMU1iZE5FckdzSnhGTWxuS0k1RC01aGVaTWhEclQ5a2tQanJ4R1c2cVF2a1NhSjBlZDhmNHBjVjZsbFNqWVN5WDlNaXFrVGtLSzNhQ19SZ0c1aHpUUWU3TVRaRmdPT0JQc3c5eDd2UDRLOF9DNzhJNDgtZUFjZlFNRG03UUk2dVQwM1JHUEVaOV95YVB3eS1hVkNpNjdXZ2ZOV2lmOG1udlE?oc=5",
+   "title": "Gabriel Rey Borong Saham Multi Medika (MMIX), Usai Bikin TRUK Meroket 324%",
+   "first_seen": "2026-10-28T10:25+07:00"
+  },
+  {
+   "id": "1284ba9d5197",
+   "date": "2026-10-28",
+   "code": "ABMM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Inforiau",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa1Uzam1LWW9QbVdud21QM0FHMEFoNjRRdER0di1DNEh2X3kzaExxejNyd2JsTXZKS3hmZ01ZYUVPenJrOU1vOEZPNF9RU1N2UWFOT3JaaUNGVlJrTDVoMjc2M1FDTVotcEZocFVOQ2hlTlVfTGtFVmc3OFBlWVVWajRuMUcxRVJLa2VNM0ZEUy02VFdYc0stbmtmTWVzRk16dUE?oc=5",
+   "title": "Lo Kheng Hong Borong Saham ABMM 8 Kali di Oktober, Kepemilikan Tembus 5,7%",
+   "first_seen": "2026-10-28T10:25+07:00"
+  },
   {
    "id": "f04a5fece331",
    "date": "2026-10-28",
@@ -43,7 +106,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Warta Ekonomi",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX0dMWFNicDlJdzR6ZlNrdTZJS1hRb2FUSm03NzdBRVBnd25SbVJ1V2dqS1NhdWhKN2IwUDRzRWdXbGc5eW1NX0ZQdERRWkw5SVlaQV9UWFY1VnlzQTc0eWpRTmlXWjFIbTYwSGk1R0pHc3pQaWxNUkFfNktzaDBhVUY4SC0xR0xFZmNGeDl4NzZqYzZVYnJMQ1RB0gGfAUFVX3lxTE5hNzFTQ3Bjcms5dGJDT1RBWGprNkttYnJ1QUpWdURTak5IWVdHcEwzV194aHJVS1ZSc3BxUDJ5YmFOS1plLXptOUJsSHZFVVk3aWhqM0d5dHpZczJJVzFraEZWNVJ5WWw3ZFgybUxMMmdZa1BRLW5xd0J0eWRReWxWLWt3YWlNRi0tZUJ6c3J4UWRMNVFseEExN0NpQXQxcw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYTcxU0NwY3JrOXRiQ09UQVhqazZLbWJydUFKVnVEU2pOSFlXR3BMM1dfeGhyVUtWUnNwcVAyeWJhTktaZS16bTlCbEh2RVVZN2loajNHeXR6WXMySVcxa2hGVjVSeVlsN2RYMm1MTDJnWWtQUS1ucXdCdHlkUXlsVi1rd2FpTUYtLWVCenNyeFFkTDVRbHhBMTdDaUF0MXPSAZ8BQVVfeXFMTmE3MVNDcGNyazl0YkNPVEFYams2S21icnVBSlZ1RFNqTkhZV0dwTDNXX3hoclVLVlJzcHFQMnliYU5LWmUtem05QmxIdkVVWTdpaGozR3l0ellzMklXMWtoRlY1UnlZbDdkWDJtTEwyZ1lrUFEtbnF3QnR5ZFF5bFYta3dhaU1GLS1lQnpzcnhRZEw1UWx4QTE3Q2lBdDFz?oc=5",
    "title": "Bos BRMS dan Direksi Lainnya Borong Saham, Ada Sinyal Apa?",
    "first_seen": "2026-10-28T08:52+07:00"
   },
@@ -67,6 +130,27 @@
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNanZRaTBXbl9LQWFJOEtZRDVWUnA5cVFLQklvc3ZsVkN0X3VweTVpVUhrUnBRbnE5WjBEUlJwbVg2UkFzdTNQSWdMeVZNbURyb3Rmb1NDTFQ2ZWFqcl9adHF1WkZGMXZmVHprdzdyWmJFQlh6aWZnc1kyTmlSbGdYR3d2WEsyeFpiMUttbWx3Y19GUVhtbGNmbVlrTUE2cl9BVktDM2JRV3pvRE4xMFE?oc=5",
    "title": "BERITA POPULER: Gabriel Rey Borong MMIX hingga Dinamika Harga Emas Perhiasan",
    "first_seen": "2026-10-28T08:52+07:00"
+  },
+  {
+   "id": "8dd2ce03b8ec",
+   "date": "2026-10-27",
+   "code": "BRMS",
+   "party": "Agus Projosasmito Borong Tambahan",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 5900000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "RuangEnergi.com",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTFh1ZWdqa3ZzMFRlUlVhTGYxa3dOTG9LSnlUZVR4Mk01MEFVZ01CUzVOTjNpWTNHZElqMjctSE16TUZENGFSRFFwUUhrZ2haZTNIUkg2bHUybG85UWhnYTlJa0NTTlAyZlVzOHU1Sk1DMTRBZzhVZDBDRlB4OGY3Q1I5OUp0QUNLdGdCVS1hckFPYlRpTWJFWVpQUldaX0lUbkthN2xQemhHWjVic1MxNk9LbTlNeW1wOGl5cm4wcEluQQ?oc=5",
+   "title": "Dirut BRMS Agus Projosasmito Borong Tambahan 5,9 Juta Saham, Manajemen Optimistis Kinerja Membaik",
+   "first_seen": "2026-10-28T10:25+07:00"
   },
   {
    "id": "d61fe3b42323",
@@ -441,8 +525,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOEhrQndxOUh0YU1EaGpUcDkycW8wY1F0UVNvbWNQMXoyOE1FSHRwcmgwZmxhYjVHaWo0R1BGV2YtakZUTHY2MVVrYXRDNU1maDdoc2J6clpQY1FnV3hIaW5sdXBydkF2RHdUenZrUGhjeFZreDdyTWozM3l4OGxIWmNFVGVGdU5ua09WZUg4MFh1SF9tSkZuWGxJdzVIMlJMVi1ES18yMWd1V3FZd3loY2o1YW5BYXBja1luV1Vhc0U4ajJy0gHKAUFVX3lxTE05ZEZyN1NqZjNpdUdwUHRhYTJNdjkxR0FFbHk0cXF6d1JyTHExMFQ3N3UtbWFrZzJZb3A3UzBJSHRvM1pLLVdBZDczOGM3OVFVV3A5bER6QUt1dzNBelFlOFJiMzM4amRFa0hJSG1ZOGhwUHEzVTN5aWhlbWFuQXVrWmhJWUV2WlVsM0RqTFhVQ2JIdlp6VHVvbGxZWXFqWEJISm11YzVzT2hFdTgwM19PUzlOVEdsMkEzMmRuQUFNN3FnLWFJOGMxM3c?oc=5",
+   "source": "Head Topics",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSFBVNk5ibHN2UVJiS1NWbjAtTGFnWm1QbWJkUGNtZnUzZXN6bWZpa0lzTHZ6QVM5T2RDLWlyaEJZZVFOOWMxcWtZemFZZHRSbDd2b1pJX2FWRkM0R3Y3c09ULWJ5REFQT21RV0tjc2hyNlgxOWZNLXFEcW1mTEw4elhva0pKWGFHMFppTm5NeGtTZ1VaYThVbXMwcw?oc=5",
    "title": "Petinggi Grup Bakrie (BRMS) Borong 5,9 Juta Saham Senilai Rp 2,4 M",
    "first_seen": "2026-10-27T11:31+07:00"
   },
@@ -2461,6 +2545,27 @@
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYzNqWkRuTnpwLWdkUnJPbUdFdkNwaUFwMWhYa1RIM1pfMWdCbkQtOWFVaFRtUTFGdnhLOS0waHA0ZFAzZzBtWTNlSHFhNUxWSjFBcW04dE5xdXB6M3V6V1JkNnY4R2oyRG9XZTlHWVhKZkxHWkIzTEVnbmdwQU1XTmRMS2hrWmdjYUhQOEdGY0huaWRUaHl2SVJhSkRwaFhXWTEwUExWdw?oc=5",
    "title": "Investor Asing Ramai Jual Saham BMRI Hingga Rp 227,4 Miliar Saat IHSG Menguat ke 0,94%",
    "first_seen": "2026-10-22T09:14+07:00"
+  },
+  {
+   "id": "f9ccf75599e3",
+   "date": "2026-10-21",
+   "code": "ESSA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Journalist Independent",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdnowUG5qcTNoME9VX0RiZU56Y2pyS2JFbnFzLUpjQS02VDBWcEE1WVBoa3ZNbnJBOTRibEtGVGlvZ0R5SlBvV2lEd1daZ05wYUJTcVNyOEtvSF9EQ3pKQ1hLZ2U4S1d5bmx6emthMUl6akRoMUJ0OTFadjk2SkdtMFlCWGR2enduNHhENEJyOXMtZmoyaVFybGNVNUdXeDdLX25aWWxITzBhaVFCRzUzekIxOGJvQ3kwZ0diVFlkMDluaDZaaVFTMXJncUVxUGFUdlFxUnB4bFdOaUF0?oc=5",
+   "title": "Boy Thohir Tambah Saham ESSA, AADI, dan ADRO Senilai Rp3 Miliar, Ini Level Harga yang Perlu Dicermati",
+   "first_seen": "2026-10-28T10:25+07:00"
   },
   {
    "id": "ce83b0cf2aa9",
@@ -5656,20 +5761,30 @@
   }
  ],
  "net_by_code": {
+  "DEWI": {
+   "net_shares": -77360000,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "MMIX": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "ABMM": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BREN": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
   },
   "BRMS": {
-   "net_shares": 69580000,
+   "net_shares": 75480000,
    "net_value": 0.0,
-   "count": 22
-  },
-  "MMIX": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 3
+   "count": 23
   },
   "JPFA": {
    "net_shares": 0,
@@ -5705,11 +5820,6 @@
    "net_shares": 18750000,
    "net_value": 0.0,
    "count": 2
-  },
-  "DEWI": {
-   "net_shares": -70160000,
-   "net_value": 0.0,
-   "count": 6
   },
   "BUKA": {
    "net_shares": 424000000,
@@ -5906,6 +6016,11 @@
    "net_value": -141750000.0,
    "count": 4
   },
+  "ESSA": {
+   "net_shares": 4500000,
+   "net_value": 0.0,
+   "count": 6
+  },
   "AADI": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -5925,11 +6040,6 @@
    "net_shares": 350000,
    "net_value": 0.0,
    "count": 1
-  },
-  "ESSA": {
-   "net_shares": 4500000,
-   "net_value": 0.0,
-   "count": 5
   },
   "TPIA": {
    "net_shares": 2000000,
