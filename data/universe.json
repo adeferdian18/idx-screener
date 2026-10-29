@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-28T17:15+07:00",
+"updated": "2026-10-29T17:18+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -1785,11 +1785,6 @@
 "kode": "IFSH",
 "nama": "PT Ifishdeco Tbk",
 "sektor": "Non-Energy Minerals"
-},
-{
-"kode": "IGAR",
-"nama": "PT Champion Pacific Indonesia Tbk",
-"sektor": "Process Industries"
 },
 {
 "kode": "IKAI",
@@ -3790,11 +3785,6 @@
 "kode": "TFAS",
 "nama": "PT Telefast Indonesia Tbk",
 "sektor": "Technology Services"
-},
-{
-"kode": "TFCO",
-"nama": "PT Tifico Fiber Indonesia, Tbk",
-"sektor": "Process Industries"
 },
 {
 "kode": "TGKA",
