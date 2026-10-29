@@ -1,10 +1,73 @@
 {
- "updated": "2026-10-29T11:20+07:00",
+ "updated": "2026-10-29T12:17+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 99
+  "news": 108
  },
  "transactions": [
+  {
+   "id": "68175f7cf75e",
+   "date": "2026-10-29",
+   "code": "AKPI",
+   "party": "Argha Karya Prima Industry",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 8800,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/henry-liem-kembali-jual-saham-akpi-kepemilikan-tersisa-479-juta/",
+   "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Tersisa 4,79 Juta",
+   "first_seen": "2026-10-29T12:17+07:00"
+  },
+  {
+   "id": "cee4666b6deb",
+   "date": "2026-10-29",
+   "code": "RELF",
+   "party": "Achmad Machlus Sadat",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 81690000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSGxYUHFpVVRqcld6ZFJEVUFJalYtM2IxYmhWb3VPZlhhbXVLdV9HSzZ4QVJ0N2VaWFdCVjJ0Y291OGctUkdtODRQQ1VqQW9USTZ4SmM3aHhjS0pDYTR4X25xalYwMkltMXlNSUYzMXNVc0tHYjFLOWFJRFV1RW9FcXJRdFJ5THhJc09IQVZod0h4RXYtdHFxSm9nRWRycndQUXloVkJzOHVPX2stX2ROSHFqTnQybFFQUEJ1eHVUU3FtRnZRdW5QWldIT0tWcW9N?oc=5",
+   "title": "Komisaris Utama RELF Achmad Machlus Sadat Borong 81,69 Juta Saham, Kepemilikan Langsung Tembus 1,43%",
+   "first_seen": "2026-10-29T12:17+07:00"
+  },
+  {
+   "id": "02e977a8983f",
+   "date": "2026-10-29",
+   "code": "BMRI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbkZoQUxWRFBKSTZWZ3VZUlJrOC1Ka3FubmNYV1ZndzJYbEo5WTA3WEVGQmxnLWxZR3BWelNUTmNZVGRCZnl1UU41RGJHYjg0cWtoak93TTRnOHZwWTZQMWlGM1Jva3BOR3JaMnF3VTZUdVdTcHk0R1ZjQ2VaNjRjYndZT2RfYTd6cnFsSTcxeEwzb1dHcGFrOGduLUl0MTlwN0drMlEtZXRoN2E1TjBYS245aktZNzRHS3c?oc=5",
+   "title": "Bank Mandiri Lepas Saham Inhealth ke IFG Life Senilai Rp 570 Miliar",
+   "first_seen": "2026-10-29T12:17+07:00"
+  },
   {
    "id": "6cd525759006",
    "date": "2026-10-29",
@@ -42,7 +105,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbUdLWmFRYUd2Vm5acDdadnkxNVh4UkhsX2ZBQUMxTFVGSk5SQjZ0OEc1M1hWXzVsZDhZTW0waEVSNEpDRDNTUFNaSUEtSnpjeTVMb240SmFYRDgxNl9ENHZhdGlpUnB1eWlCdGdXdllYTjNyR0drMlZHYVlpWVlUMHJPOE5FblZnYTJ0WmVIdkM1X1lFSzBCWkVlVVVqQU5HaWVOTmVYa0dHWmliOTBMbUNlTHE?oc=5",
    "title": "Komisaris ATLA Lepas 50 Juta Saham dalam Sepekan, Kepemilikan Susut Jadi 40,81%!",
    "first_seen": "2026-10-29T11:20+07:00"
@@ -1051,7 +1114,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObG9NZHNhVU5yb05ScFNnb3h6VlVNbWZib2RRYjhBcE5UdXZ5OXkxNXJaU3VBOTFaLTdTV0Fiekx1ejVWMkhWMlNUSlJXSVRXNkp1bkhWc19lck50ZW1CZHprTjJyM1FzbWw5VmVXQUdWNUJ5UXlpWHloa3JxeXE0elhnWEFRZ2hHalMzTmRUbUdnWFN5OTRjOGxwQ0RhQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT3NDUEtrdGE5ZmVHYVRIRmJlT1VfXzVlaE5vZ2R5Q1otV19obWJuLUJ2TTBCLWZ5aWFSOFlhSXpiYkFLVGZ0MzBTWkJ1eWpqTmQ2eDAyeVdGeUJDQXo2U0x6Q1B6OXhBbVpGbmhGWm1iRUEwZGRxSDkwSS1SdzBtV2VPMHFrN2xza3c3SWxlanNuYXVwWW9nZg?oc=5",
    "title": "Saham MGLV Melonjak 353 Persen, Pengendali Sempat Divestasi Segini",
    "first_seen": "2026-10-29T09:45+07:00"
   },
@@ -1659,8 +1722,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0bm95RFpqTlcyT3EtdWM4Q0dMOGx0ZU5VUGstMXZTQVI2WFBuTTY1ZHF4SkdCSlNtNmtkNE1lR3NVWE1KYVFpSEg0R0JrNGE4ZjFv?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sOXpGOE8wZU41SVJOMUdFeFR3YXVjYXN6VzRUblZSZzZFamFjWWpLUWo2Q29jQ0ttQ3BqTzJ3ckZVdnBab08xQ0x0U3RpU0swSFNaSGFuSk95Sld5NC1kRW9hN1piNExz?oc=5",
    "title": "BUVA Tambah Saham dan Siapkan Dana Rp 1,54 Triliun",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -2016,8 +2079,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MUGFwU3hObmNuaEZjcjVKMVlobm1PTmFyb0ZaQm45V2dxS0JfbTdTOFM1bFA0SmJ6LXNkSnl3cjN0eUtwNkdHMDExZFVsRDlZVmln?oc=5",
+   "source": "Cirebon Times",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sODhiSW5MdndLbG9nbnlJOWNlaHZvRGVjemIzZnRMaUNJTzVxUlJpVEZaRFlHQ0ZFOVpzRkVKOXAtTHcyNDBzMHJjYTd0c19BZV9RdklpcEx4YW85MTZpNHF3?oc=5",
    "title": "Agoes Borong 5,5 Juta Saham BRMS Senilai Rp 2,46 Miliar",
    "first_seen": "2026-10-23T16:32+07:00"
   },
@@ -6160,6 +6223,21 @@
   }
  ],
  "net_by_code": {
+  "AKPI": {
+   "net_shares": -608800,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "RELF": {
+   "net_shares": 81690000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "BMRI": {
+   "net_shares": 29100,
+   "net_value": 0.0,
+   "count": 9
+  },
   "BRMS": {
    "net_shares": 75480000,
    "net_value": 0.0,
@@ -6179,11 +6257,6 @@
    "net_shares": 424000000,
    "net_value": 0.0,
    "count": 2
-  },
-  "BMRI": {
-   "net_shares": 29100,
-   "net_value": 0.0,
-   "count": 8
   },
   "BBCA": {
    "net_shares": 0,
@@ -6294,11 +6367,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "AKPI": {
-   "net_shares": -600000,
-   "net_value": 0.0,
-   "count": 5
   },
   "SOHO": {
    "net_shares": 0,
