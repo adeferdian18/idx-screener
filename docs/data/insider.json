@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-29T08:53+07:00",
+ "updated": "2026-10-29T09:45+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 100
+  "news": 102
  },
  "transactions": [
+  {
+   "id": "2024d91dd048",
+   "date": "2026-10-29",
+   "code": "EMTK",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObURROWZlRHJtZHNHbmpBNVpkb1lxUnhTMGV2eVYtdFIwdWZrRENBYjl4anhZUWw5ZC16UHFjVHVrdW9Ca2VXc2NkQnlxZkRhb01YMVpTMjF5bm1tUnZHWmZUQmYxRkxIaUZwVmUyX25UR2Y3ejU1WWlSdjM5RTlOQl82QTRRTDdXRlBxRU9YUXRoUVNIWnFxZ2N4OThkZk9QZExIRUVNRzRnNTVlRmxpck1DOFlHanc?oc=5",
+   "title": "Grup Emtek (EMTK) Tambah Saham Bukalapak (BUKA), Kucurkan Rp70 Miliar",
+   "first_seen": "2026-10-29T09:45+07:00"
+  },
   {
    "id": "409bfeccdcb9",
    "date": "2026-10-29",
@@ -273,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NTV3OUVDVG9HSXZPdTRrNVBjUTFfeXVhZlN3VldqR1J4TngzWlhPRHdiWlBVbDRVTkw2Um5Cd3NMX3pDUVNZZUJOS2R4LVpoYll3?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxVm9tQzQwd28wWkdScU9nNERFd0VWNHFGVVFXMTRxbTVGaFR6NnNFNnJROWYzQndyV1BnbHFjVHJvVXlUOElaVTBmeTk5Zm1IM2tiOVVGZ3BsakhLcUo4Sg?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX pada Oktober 2026",
    "first_seen": "2026-10-28T13:00+07:00"
   },
@@ -972,6 +993,27 @@
    "first_seen": "2026-10-27T08:40+07:00"
   },
   {
+   "id": "391b10f4a0e3",
+   "date": "2026-10-26",
+   "code": "MGLV",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObG9NZHNhVU5yb05ScFNnb3h6VlVNbWZib2RRYjhBcE5UdXZ5OXkxNXJaU3VBOTFaLTdTV0Fiekx1ejVWMkhWMlNUSlJXSVRXNkp1bkhWc19lck50ZW1CZHprTjJyM1FzbWw5VmVXQUdWNUJ5UXlpWHloa3JxeXE0elhnWEFRZ2hHalMzTmRUbUdnWFN5OTRjOGxwQ0RhQQ?oc=5",
+   "title": "Saham MGLV Melonjak 353 Persen, Pengendali Sempat Divestasi Segini",
+   "first_seen": "2026-10-29T09:45+07:00"
+  },
+  {
    "id": "899ccd63e5f3",
    "date": "2026-10-26",
    "code": "MMIX",
@@ -1260,8 +1302,8 @@
    "after_shares": null,
    "purpose": "nya",
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdVRnNEhEMW9pVDkwcm03aDFoTEJsbUZPRzlUZmRnYjlldDVoUXNQQ21BNDZfeUM2UEJvRU1iUmRGSGZYN0UwNVplZFYzZkNmN2lNb005QTJTSHFwTEhKSXdkemF1Z2Q4TGxSX1p3SjNBQXZKVE1xajV5aV9pUnlSYWZOMndSNTFVaXpHREJGQVhBSGdKWmY2OU1OUWtkN1dRRkFWNU5Ud2HSAaABQVVfeXFMTmFsUFlTYlhVYlctSF93SFJDOUlwSEpXWTNETkFvUTRhWEN6a3RhV0VXTXZPRllhUnU1RVp6cmItX21mcFlaamZzNlF6SW81TWJWM2FyT01LVGYydndFbzkxcjFFZk51NzRuWFFlNGpYbHJKS2VBc1FlWDVHNklzMGpET3FTQUZHd3VCRGpHdkxuUV9vSDZsN2ZLVUw2VnoyLQ?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWxQWVNiWFViVy1IX3dIUkM5SXBISldZM0ROQW9RNGFYQ3prdGFXRVdNdk9GWWFSdTVFWnpyYi1fbWZwWVpqZnM2UXpJbzVNYlYzYXJPTUtUZjJ2d0VvOTFyMUVmTnU3NG5YUWU0alhsckpLZUFzUWVYNUc2SXMwakRPcVNBRkd3dUJEakd2TG5RX29INmw3ZktVTDZWejIt0gGgAUFVX3lxTE5hbFBZU2JYVWJXLUhfd0hSQzlJcEhKV1kzRE5Bb1E0YVhDemt0YVdFV012T0ZZYVJ1NUVaenJiLV9tZnBZWmpmczZReklvNU1iVjNhck9NS1RmMnZ3RW85MXIxRWZOdTc0blhRZTRqWGxySktlQXNRZVg1RzZJczBqRE9xU0FGR3d1QkRqR3ZMblFfb0g2bDdmS1VMNlZ6Mi0?oc=5",
    "title": "Dirut Cipta Perdana (PART) Tambah Porsi Kepemilikan Saham, Ini Tujuannya",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -1327,6 +1369,27 @@
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZWNEcjl0VE55RXdnZkNQYWloaGNSZ0JEMUZlQkNtX1R2cDZid3o2cDNEWDNkbEVMODlhVXYtdGMtbjdtUmJkUmNWbTVFaTM5dTJ5OU1YcWhYRmVsMVZRWjA2eGdTVmo5N3BLZURKX0hyQ1ZKblgxUUJaRzFkZUxNbEVuTzJaVmhBR2JYVlNsTUJKV25PdGd3MzhONEZhMVYxM0k5OTVQOWwybTI5?oc=5",
    "title": "Gloriajaya Gempita Lepas 3 Juta Saham SPMA, Kepemilikan Turun Jadi 23,96%",
    "first_seen": "2026-10-26T08:42+07:00"
+  },
+  {
+   "id": "e5e4f4a2932a",
+   "date": "2026-10-26",
+   "code": "BGTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOUpCLVVjVWFabXQ1RWsyajJNLTRwMEhhcVNINGtrd0wxVk9KOG95MUdhTlRFOHE3Z3NsdjFsZWpWSlVfOEQ1MUlMWUhTWDlMcGhRMms5YUJZYkNWaGpsUlU3cllWX2xPZnQxM3JDNzZtMFpCMF9jWUM0RGZheW90S1lxbUhFeFA4UjJickJHcHdvUW84?oc=5",
+   "title": "Investor Ini Borong 5,75% Porsi Saham Bank Ganesha (BGTG) Rp172,31M!",
+   "first_seen": "2026-10-21T18:03+07:00"
   },
   {
    "id": "731c09f22289",
@@ -1408,7 +1471,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOXVNWU1EOG0xMjdDVGx3MjBLblYxQTBmSXQxT2F4Wk1keE9FbEZTU0Q3TldVWXA5d0ZXYWF3OElGUG1UVmRpM1hEX0UtdHZXRTNjM2FGTF9jRVhQMUJSN3RMS2JWZGlScEZINVV4QWFkTzNHNTcwalFsMTFHbEg5WUFKTU9vT2RiSkYyZDZBbXNZbGtvTG9ZUzZzNkw2Tm8xRnc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGxRSTM0bmxpOGdXTFNSOFk5MWt5UDJveFlrbURRMmRCU2VaOS1FNll2YXlxQmpEQ2VoVzBoMV9QOC1OVXEzYjV6SXgxYWRnUE5QbWttUU44RjE1aDctaGVaM25TbldIeUxCZjFYOTZLWEhnTGtDREE3bG5vcEpMQ2VDc0d5LVVtdEVueGNaeFR6a1ppQVppZDByTFI?oc=5",
    "title": "3x Borong Saham Sepanjang Oktober, Pengendali HRTA Rogoh Kocek Rp8,31M",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -2458,7 +2521,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "SuaraGlobal.id",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNVGRZYTJiUnREVGFPcy0zN01vYXBHR3ZvWnlMRDk2R1NBZFJjeHJxYmp6c1d0MzBGRnhnbTFCNWFQS2ozRE5ma3pLcmFVOVU2a1BLSWxrUGFBRkhoTlJtMzBVbWFfT3cwV2VnSUtiNE1qNVhWMlV2V3NGazh5VGFNOXR4amVrRGs0QVg2V3pCdU95YUNjNWx2RW5MWm9Ob2ZkcW81elhMbUl2YS1IVElXekVMRGFNLW1oclo2VFhTdW4xTXBVVlUtbUVYTUR0bUprVHhjQmhUX0JPR1hLa0hYTWZhSkxsT2VGOXNZR2k2N0NCQnZZckh3elVMZDRadDTSAf8BQVVfeXFMTVRkWWEyYlJ0RFRhT3MtMzdNb2FwR0d2b1p5TEQ5NkdTQWRSY3hycWJqenNXdDMwRkZ4Z20xQjVhUEtqM0ROZmt6S3JhVTlVNmtQS0lsa1BhQUZIaE5SbTMwVW1hX093MFdlZ0lLYjRNajVYVjJVdldzRms4eVRhTTl0eGpla0RrNEFYNld6QnVPeWFDYzVsdkVuTFpvTm9mZHFvNXpYTG1JdmEtSFRJV3pFTERhTS1taHJaNlRYU3VuMU1wVVZVLW1FWE1EdG1Ka1R4Y0JoVF9CT0dYS2tIWE1mYUpMbE9lRjlzWUdpNjdDQkJ2WXJId3pVTGQ0WnQ0?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPT1hCRThrRkNGZ1BJVGVzemxqdkdyVW1Fd3pwWk1MZlhHOHhWN1V3Y0dRNUs5a196MUUtTEVfY01TTlBUdDhrMW5YMDRjWGo3Z3daOEpKQXJYUjF3VU1CdXVqSEgySGw3RjdudDlNMWNOY2NlZmNmZ05iTGg2S3dnLVpBel9MRjFoS2tIcENHN2dBR1poQ01ObEF4cFVTeW9Qb3NPVEc1NHFyaExXUU5iM0dXMGhIS1pnanFuWEVTVC1DekJUc0kyYkM0Q3NhR3dRRDRjcktuNmNObk9EaVVlSlBUNjNlV2gxMWp4dldySXFENDFuZFM4czR30gH_AUFVX3lxTE1UZFlhMmJSdERUYU9zLTM3TW9hcEdHdm9aeUxEOTZHU0FkUmN4cnFianpzV3QzMEZGeGdtMUI1YVBLajNETmZrektyYVU5VTZrUEtJbGtQYUFGSGhOUm0zMFVtYV9PdzBXZWdJS2I0TWo1WFYyVXZXc0ZrOHlUYU05dHhqZWtEazRBWDZXekJ1T3lhQ2M1bHZFbkxab05vZmRxbzV6WExtSXZhLUhUSVd6RUxEYU0tbWhyWjZUWFN1bjFNcFVWVS1tRVhNRHRtSmtUeGNCaFRfQk9HWEtrSFhNZmFKTGxPZUY5c1lHaTY3Q0JCdllySHd6VUxkNFp0NA?oc=5",
    "title": "Low Tuck Kwong Alihkan 22 Persen Saham Bayan Resources ke Elin Low, Muhammad Lutfi Singgung Aturan Divestasi Asing",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -4899,27 +4962,6 @@
    "first_seen": "2026-10-21T18:03+07:00"
   },
   {
-   "id": "e5e4f4a2932a",
-   "date": "2026-10-19",
-   "code": "BGTG",
-   "party": null,
-   "role": "sekuritas_mi",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Lotus Andalan Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLU84eFJGX0VkSjdhblMtazBwZlNkbVFPY1lUYndiVE5yV3JCZGNrV3N6QTBnQTlubTV2RGRWZHduRFd3TFVvTjJhczZSdHRfUDJpRWFCRzhsVzZaTHFrOGpsVTFzT2N5ZGZ4X0J6d2Y5Q2RtXzVkV0dUNlAxUUVGd1loVGEtV3NhQVFZR1p1R0RudHlabWJZeVljR0Zqa29CS29uRWQ2ZUZDZw?oc=5",
-   "title": "Investor Ini Borong 5,75% Porsi Saham Bank Ganesha (BGTG) Rp172,31M!",
-   "first_seen": "2026-10-21T18:03+07:00"
-  },
-  {
    "id": "9451aa0ed87b",
    "date": "2026-10-18",
    "code": "BMRI",
@@ -6055,6 +6097,11 @@
   }
  ],
  "net_by_code": {
+  "EMTK": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BUKA": {
    "net_shares": 424000000,
    "net_value": 0.0,
@@ -6175,6 +6222,11 @@
    "net_value": 0.0,
    "count": 2
   },
+  "MGLV": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "AKPI": {
    "net_shares": -600000,
    "net_value": 0.0,
@@ -6199,6 +6251,11 @@
    "net_shares": -6000000,
    "net_value": 0.0,
    "count": 2
+  },
+  "BGTG": {
+   "net_shares": 2720000000,
+   "net_value": 168750000000.0,
+   "count": 4
   },
   "KDTN": {
    "net_shares": 0,
@@ -6394,11 +6451,6 @@
    "net_shares": -10000,
    "net_value": 0.0,
    "count": 3
-  },
-  "BGTG": {
-   "net_shares": 2720000000,
-   "net_value": 168750000000.0,
-   "count": 4
   },
   "FOLK": {
    "net_shares": 0,
