@@ -1,10 +1,52 @@
 {
- "updated": "2026-10-29T10:28+07:00",
+ "updated": "2026-10-29T11:20+07:00",
  "sources": {
   "idx": "blocked",
   "news": 99
  },
  "transactions": [
+  {
+   "id": "6cd525759006",
+   "date": "2026-10-29",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Ajaib",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ0tjWGFUdG96b3FTc0hqMFpMUFZCRWpvUDRFcEFncnFJQjJoRmIyaE1abm5jWF9IcENPU0NfMzVxNUhTTnhlanB3VkI1UzE5T0JHdEk1WVRuWmJvMmJ6MC1OZE1EMVo5V1BlNVhxS051TC1NY0luYlZaMDdQS09OR1liN3FISkRUbDR3UHpLRUNHdUc4UmE5UlVLdGJ1RkhNOGFGcUpqQ3NpNUVEUktkcEZ0bXQyRTZhMEE?oc=5",
+   "title": "Laba BRMS Rp431 Miliar hingga Kuartal III 2026, Agoes Projosasmito Borong Saham Lagi",
+   "first_seen": "2026-10-29T11:20+07:00"
+  },
+  {
+   "id": "e0f9f4c3df62",
+   "date": "2026-10-29",
+   "code": "ATLA",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 50000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 40.81,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbUdLWmFRYUd2Vm5acDdadnkxNVh4UkhsX2ZBQUMxTFVGSk5SQjZ0OEc1M1hWXzVsZDhZTW0waEVSNEpDRDNTUFNaSUEtSnpjeTVMb240SmFYRDgxNl9ENHZhdGlpUnB1eWlCdGdXdllYTjNyR0drMlZHYVlpWVlUMHJPOE5FblZnYTJ0WmVIdkM1X1lFSzBCWkVlVVVqQU5HaWVOTmVYa0dHWmliOTBMbUNlTHE?oc=5",
+   "title": "Komisaris ATLA Lepas 50 Juta Saham dalam Sepekan, Kepemilikan Susut Jadi 40,81%!",
+   "first_seen": "2026-10-29T11:20+07:00"
+  },
   {
    "id": "2024d91dd048",
    "date": "2026-10-29",
@@ -294,8 +336,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NTV3OUVDVG9HSXZPdTRrNVBjUTFfeXVhZlN3VldqR1J4TngzWlhPRHdiWlBVbDRVTkw2Um5Cd3NMX3pDUVNZZUJOS2R4LVpoYll3?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxVm9tQzQwd28wWkdScU9nNERFd0VWNHFGVVFXMTRxbTVGaFR6NnNFNnJROWYzQndyV1BnbHFjVHJvVXlUOElaVTBmeTk5Zm1IM2tiOVVGZ3BsakhLcUo4Sg?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX pada Oktober 2026",
    "first_seen": "2026-10-28T13:00+07:00"
   },
@@ -1009,7 +1051,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT3NDUEtrdGE5ZmVHYVRIRmJlT1VfXzVlaE5vZ2R5Q1otV19obWJuLUJ2TTBCLWZ5aWFSOFlhSXpiYkFLVGZ0MzBTWkJ1eWpqTmQ2eDAyeVdGeUJDQXo2U0x6Q1B6OXhBbVpGbmhGWm1iRUEwZGRxSDkwSS1SdzBtV2VPMHFrN2xza3c3SWxlanNuYXVwWW9nZg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObG9NZHNhVU5yb05ScFNnb3h6VlVNbWZib2RRYjhBcE5UdXZ5OXkxNXJaU3VBOTFaLTdTV0Fiekx1ejVWMkhWMlNUSlJXSVRXNkp1bkhWc19lck50ZW1CZHprTjJyM1FzbWw5VmVXQUdWNUJ5UXlpWHloa3JxeXE0elhnWEFRZ2hHalMzTmRUbUdnWFN5OTRjOGxwQ0RhQQ?oc=5",
    "title": "Saham MGLV Melonjak 353 Persen, Pengendali Sempat Divestasi Segini",
    "first_seen": "2026-10-29T09:45+07:00"
   },
@@ -1302,8 +1344,8 @@
    "after_shares": null,
    "purpose": "nya",
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdVRnNEhEMW9pVDkwcm03aDFoTEJsbUZPRzlUZmRnYjlldDVoUXNQQ21BNDZfeUM2UEJvRU1iUmRGSGZYN0UwNVplZFYzZkNmN2lNb005QTJTSHFwTEhKSXdkemF1Z2Q4TGxSX1p3SjNBQXZKVE1xajV5aV9pUnlSYWZOMndSNTFVaXpHREJGQVhBSGdKWmY2OU1OUWtkN1dRRkFWNU5Ud2HSAaABQVVfeXFMTmFsUFlTYlhVYlctSF93SFJDOUlwSEpXWTNETkFvUTRhWEN6a3RhV0VXTXZPRllhUnU1RVp6cmItX21mcFlaamZzNlF6SW81TWJWM2FyT01LVGYydndFbzkxcjFFZk51NzRuWFFlNGpYbHJKS2VBc1FlWDVHNklzMGpET3FTQUZHd3VCRGpHdkxuUV9vSDZsN2ZLVUw2VnoyLQ?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWxQWVNiWFViVy1IX3dIUkM5SXBISldZM0ROQW9RNGFYQ3prdGFXRVdNdk9GWWFSdTVFWnpyYi1fbWZwWVpqZnM2UXpJbzVNYlYzYXJPTUtUZjJ2d0VvOTFyMUVmTnU3NG5YUWU0alhsckpLZUFzUWVYNUc2SXMwakRPcVNBRkd3dUJEakd2TG5RX29INmw3ZktVTDZWejIt0gGgAUFVX3lxTE5hbFBZU2JYVWJXLUhfd0hSQzlJcEhKV1kzRE5Bb1E0YVhDemt0YVdFV012T0ZZYVJ1NUVaenJiLV9tZnBZWmpmczZReklvNU1iVjNhck9NS1RmMnZ3RW85MXIxRWZOdTc0blhRZTRqWGxySktlQXNRZVg1RzZJczBqRE9xU0FGR3d1QkRqR3ZMblFfb0g2bDdmS1VMNlZ6Mi0?oc=5",
    "title": "Dirut Cipta Perdana (PART) Tambah Porsi Kepemilikan Saham, Ini Tujuannya",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -1770,6 +1812,27 @@
    "first_seen": "2026-10-26T08:42+07:00"
   },
   {
+   "id": "ad24f5382efe",
+   "date": "2026-10-23",
+   "code": "ADHI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQalRVUEN6MDhteDFEbXpFR19mdUMxU2NVbjRLa0NLcXI3SDBkakg3eDBtVm1CRnNRNk9XZU9QTHptLUZXZjN5Y09RMUhrME1Ib0N5enk2cHJZMUNQN3RPVWpZNmxfaFhQU1k2TnpMWkhuenFYMDZsaWs1TVltS3ZyUWEtWDNsRmlXSXlxd0ctRlV1SFNsbEozREl4a3VaOW1RODhWekVkWUJZNlFocFhCTUVWN3RpMFIzU2NYaFlnSmJLYXpq0gHKAUFVX3lxTFByamRVZEs0MjF4ZWFUZFZVVk1VTDVGZGdMTmFjZVhfaDBLYXF6UDZ6ZWRKcXFMZ2Fnb0IxTVFWTWZIMlE1anlxem9QUDdmWFVKYW9IU2RjSFFtSml6U19tZk1ucFo5Z05nRFQ0aFRhU1F0dzl2amFrMndibUxoY0NTdl9tcmxJNHlQazVKU0tzVXhXX3paQUtLU3labnBwb2hTY1FXSFIzMWQ5cExkWWZEUGYxOWpVWjBTYnpFREk4VkhlRnAyTWl0Ymc?oc=5",
+   "title": "Adhi Karya (ADHI) Mau Gelar RUPSLB, Salah Satunya Bahas Divestasi",
+   "first_seen": "2026-10-29T11:20+07:00"
+  },
+  {
    "id": "e28897092b21",
    "date": "2026-10-23",
    "code": "HRTA",
@@ -1953,8 +2016,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Cirebon Times",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sODhiSW5MdndLbG9nbnlJOWNlaHZvRGVjemIzZnRMaUNJTzVxUlJpVEZaRFlHQ0ZFOVpzRkVKOXAtTHcyNDBzMHJjYTd0c19BZV9RdklpcEx4YW85MTZpNHF3?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MUGFwU3hObmNuaEZjcjVKMVlobm1PTmFyb0ZaQm45V2dxS0JfbTdTOFM1bFA0SmJ6LXNkSnl3cjN0eUtwNkdHMDExZFVsRDlZVmln?oc=5",
    "title": "Agoes Borong 5,5 Juta Saham BRMS Senilai Rp 2,46 Miliar",
    "first_seen": "2026-10-23T16:32+07:00"
   },
@@ -1996,7 +2059,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOekRiN3lMMk5MTTh1cEE2LXJ1aVNjd21pSUx5WFRDTmpMdGdacV9Sd21BeDFEcUZxYnlLZ3VFUGF6a0xsLUpzLV94NV9vWG9wdHhZR29zalhpN1BfOENtMGhGZ1N0SWVHY1A4bUliZW9jSXFFeHhjdDkzMkNmbm02SmRMNE1MdjBSVTdmTXlxVFZCTUVIU3c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc3VKU3J4NmM0M1pqLUJ5b2g4V2hTRXdYNGRPN1JBTFd6bC05alpaY2YxQzdqNGFMcG5sVVF3WjJ3Q1YtNlhVa3dhSTF5dkY5N0ctWWotMkpKLUtHX2hSc1h3QzY4eFR5OUd3bDNaVEV4SVo3YWxPUzBsblk5czRyMW9IM0k4YzQ1amdPX0xaSWMzQTc5MkZmVkNnaw?oc=5",
    "title": "Presdir Emiten Sawit TAPG Divestasi 700 Ribu Saham, Total Rp1,33M",
    "first_seen": "2026-10-23T16:32+07:00"
   },
@@ -6097,6 +6160,16 @@
   }
  ],
  "net_by_code": {
+  "BRMS": {
+   "net_shares": 75480000,
+   "net_value": 0.0,
+   "count": 24
+  },
+  "ATLA": {
+   "net_shares": -86500000,
+   "net_value": 0.0,
+   "count": 3
+  },
   "EMTK": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -6156,11 +6229,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BRMS": {
-   "net_shares": 75480000,
-   "net_value": 0.0,
-   "count": 23
   },
   "JPFA": {
    "net_shares": 0,
@@ -6307,6 +6375,11 @@
    "net_value": 0.0,
    "count": 1
   },
+  "ADHI": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "IMPC": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -6354,11 +6427,6 @@
   },
   "AYLS": {
    "net_shares": 9800,
-   "net_value": 0.0,
-   "count": 2
-  },
-  "ATLA": {
-   "net_shares": -36500000,
    "net_value": 0.0,
    "count": 2
   },
