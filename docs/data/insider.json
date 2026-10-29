@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-29T12:17+07:00",
+ "updated": "2026-10-29T13:14+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 108
+  "news": 95
  },
  "transactions": [
   {
@@ -1407,8 +1407,8 @@
    "after_shares": null,
    "purpose": "nya",
    "is_repo": false,
-   "source": "KONTAN",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWxQWVNiWFViVy1IX3dIUkM5SXBISldZM0ROQW9RNGFYQ3prdGFXRVdNdk9GWWFSdTVFWnpyYi1fbWZwWVpqZnM2UXpJbzVNYlYzYXJPTUtUZjJ2d0VvOTFyMUVmTnU3NG5YUWU0alhsckpLZUFzUWVYNUc2SXMwakRPcVNBRkd3dUJEakd2TG5RX29INmw3ZktVTDZWejIt0gGgAUFVX3lxTE5hbFBZU2JYVWJXLUhfd0hSQzlJcEhKV1kzRE5Bb1E0YVhDemt0YVdFV012T0ZZYVJ1NUVaenJiLV9tZnBZWmpmczZReklvNU1iVjNhck9NS1RmMnZ3RW85MXIxRWZOdTc0blhRZTRqWGxySktlQXNRZVg1RzZJczBqRE9xU0FGR3d1QkRqR3ZMblFfb0g2bDdmS1VMNlZ6Mi0?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdVRnNEhEMW9pVDkwcm03aDFoTEJsbUZPRzlUZmRnYjlldDVoUXNQQ21BNDZfeUM2UEJvRU1iUmRGSGZYN0UwNVplZFYzZkNmN2lNb005QTJTSHFwTEhKSXdkemF1Z2Q4TGxSX1p3SjNBQXZKVE1xajV5aV9pUnlSYWZOMndSNTFVaXpHREJGQVhBSGdKWmY2OU1OUWtkN1dRRkFWNU5Ud2HSAaABQVVfeXFMTmFsUFlTYlhVYlctSF93SFJDOUlwSEpXWTNETkFvUTRhWEN6a3RhV0VXTXZPRllhUnU1RVp6cmItX21mcFlaamZzNlF6SW81TWJWM2FyT01LVGYydndFbzkxcjFFZk51NzRuWFFlNGpYbHJKS2VBc1FlWDVHNklzMGpET3FTQUZHd3VCRGpHdkxuUV9vSDZsN2ZLVUw2VnoyLQ?oc=5",
    "title": "Dirut Cipta Perdana (PART) Tambah Porsi Kepemilikan Saham, Ini Tujuannya",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -2079,8 +2079,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Cirebon Times",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sODhiSW5MdndLbG9nbnlJOWNlaHZvRGVjemIzZnRMaUNJTzVxUlJpVEZaRFlHQ0ZFOVpzRkVKOXAtTHcyNDBzMHJjYTd0c19BZV9RdklpcEx4YW85MTZpNHF3?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MUGFwU3hObmNuaEZjcjVKMVlobm1PTmFyb0ZaQm45V2dxS0JfbTdTOFM1bFA0SmJ6LXNkSnl3cjN0eUtwNkdHMDExZFVsRDlZVmln?oc=5",
    "title": "Agoes Borong 5,5 Juta Saham BRMS Senilai Rp 2,46 Miliar",
    "first_seen": "2026-10-23T16:32+07:00"
   },
