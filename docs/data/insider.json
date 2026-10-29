@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-29T15:23+07:00",
+ "updated": "2026-10-29T16:22+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 103
+  "news": 92
  },
  "transactions": [
   {
@@ -1659,8 +1659,8 @@
    "after_shares": null,
    "purpose": "nya",
    "is_repo": false,
-   "source": "KONTAN",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZnBtMlE3V1VrNndWZ09ZNFNkM19JRE8tUUotY3lNYzVlX2dvQ003Sm5uWlN0ek1FbFpGUng5SVdpQm9vRFl1NTdsZHpQZF9wUHVRU203RFo3YUFYLUdwMy1uNXJhOFpnbENHUk9fSHl6b21XcWtaTmpoNTlKTDlKQ1huYnpZT25TWVRZVHM5SVhYU3JISXdpeU1nOXVNWUHSAZ8BQVVfeXFMUGZwbTJRN1dVazZ3VmdPWTRTZDNfSURPLVFKLWN5TWM1ZV9nb0NNN0publpTdHpNRWxaRlJ4OUlXaUJvb0RZdTU3bGR6UGRfcFB1UVNtN0RaN2FBWC1HcDMtbjVyYThaZ2xDR1JPX0h5em9tV3FrWk5qaDU5Skw5SkNYbmJ6WU9uU1lUWVRzOUlYWFNySEl3aXlNZzl1TVlB?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb1Zlc1Y3Ri1jcEYtNkdyOTFra1hDdDM2TEtQWS0tanRfUHp4eEpLSHFFMjJ2SXRBb2NTTlJSRjU5c094eVJrMWF4NGhLU2JOMWVPU3ZMRXBacWRBclpuNldPNDVPS1RMcjN3MzMxNnZGelZOeEpULWxPSlNaMGFjSXgxU1BIS3U0Y2lZQkx0MEQzck5BN3NDS01sd3A5WWFGVU5KNGN2TdIBnwFBVV95cUxQZnBtMlE3V1VrNndWZ09ZNFNkM19JRE8tUUotY3lNYzVlX2dvQ003Sm5uWlN0ek1FbFpGUng5SVdpQm9vRFl1NTdsZHpQZF9wUHVRU203RFo3YUFYLUdwMy1uNXJhOFpnbENHUk9fSHl6b21XcWtaTmpoNTlKTDlKQ1huYnpZT25TWVRZVHM5SVhYU3JISXdpeU1nOXVNWUE?oc=5",
    "title": "Wijaya Karya (WIKA) Divestasi 50,91 Juta Saham Anak Usaha, Ini Tujuannya",
    "first_seen": "2026-10-26T08:42+07:00"
   },
