@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-30T16:22+07:00",
+ "updated": "2026-10-30T17:21+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 94
+  "news": 96
  },
  "transactions": [
+  {
+   "id": "ea7b28c0f470",
+   "date": "2026-10-30",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUUFTZXRnS3F4aG5sM09OakxQN1VhTTRsNEtWNTBpNFhPX0gtdXlZM2RsZUR2bHNHalQ0ZWotQjk1dC13SFFxRUJ5S1BSZGFRRk9hS1psLTFSQQ?oc=5",
+   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
+   "first_seen": "2026-10-30T17:21+07:00"
+  },
   {
    "id": "94c4d4903b42",
    "date": "2026-10-30",
@@ -73,7 +94,7 @@
    "date": "2026-10-30",
    "code": "VIVA",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "jual",
    "shares": 3060000,
    "price": null,
@@ -84,8 +105,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/ubs-ag-jual-306-juta-saham-viva-kepemilikan-turun-jadi-9998/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcnRIY3N3aW9HaXpBVEpxeGpMMWROb0RMa2w4NkFSMENXM25BdzllbDAyRnZFbXpOVW1qMmdscFp6a2EwcnF0R2VVSnFHbzJpSjZJNWNkM2ZSTENDbFBORE55MG94SmxnQXdTQnloT3dzdnFxYWZJU3E1c0l1QWRmSm9XX2pyNHZtN2c?oc=5",
    "title": "UBS AG Jual 3,06 Juta Saham VIVA, Kepemilikan Turun Jadi 9,998%",
    "first_seen": "2026-10-30T12:19+07:00"
   },
@@ -273,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "IDX Channel",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaGtibVlxd2E3UnpWWWVlMTBhMUtGaWF3dEhGajRoaEt3RVkyTmF2TjR5UlFLWEM2bF9JSzlyWEVNOUFvbmtkXy00ZS15c3ktcnY1ZTRELTdCd3p3OURzLTJXSF9Zc1BFbVdHTTV5YmZkTFZncTJWNXpXOVdCT051dTY3TzdkRFJVNDlvZW9sZm1BUdIBkgFBVV95cUxPaGtibVlxd2E3UnpWWWVlMTBhMUtGaWF3dEhGajRoaEt3RVkyTmF2TjR5UlFLWEM2bF9JSzlyWEVNOUFvbmtkXy00ZS15c3ktcnY1ZTRELTdCd3p3OURzLTJXSF9Zc1BFbVdHTTV5YmZkTFZncTJWNXpXOVdCT051dTY3TzdkRFJVNDlvZW9sZm1BUQ?oc=5",
+   "source": "RCTI+",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNSE9BUzU0ZGVTcE5GUFo1RGdWZjZXckdDMGJaQmRtVVk4OERJWHVpWm9Hajl0Sy1hTm1NdXRCaHVfUldKa3hONl9XWFNJbzhQVk5LeW8tV0dmeFNsOEhMYjdDZ3FfSEptRmVXc3NPTjFGYkFRMTFaMnpxbjU4UkR1d1BmOXNjdFMyVHFMMHlUSldPNWJSLXV6eWU5LVExRTA3bm1KZGdWVUFHc25TQkMwNVduMmZ3dkcxZkZWR2dLS2VaVGtwUDVkV1hqSzdPa1dRb0VIdWRma216QmpHSkwyT20zdHFzbWRVRTVqNVAyTHpYdGNDSkJGR0EyY0xYTEU?oc=5",
    "title": "Investor Ini Borong 5 Persen Saham TRUK, Siapa?",
    "first_seen": "2026-10-30T08:53+07:00"
   },
@@ -2143,7 +2164,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGxRSTM0bmxpOGdXTFNSOFk5MWt5UDJveFlrbURRMmRCU2VaOS1FNll2YXlxQmpEQ2VoVzBoMV9QOC1OVXEzYjV6SXgxYWRnUE5QbWttUU44RjE1aDctaGVaM25TbldIeUxCZjFYOTZLWEhnTGtDREE3bG5vcEpMQ2VDc0d5LVVtdEVueGNaeFR6a1ppQVppZDByTFI?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOXVNWU1EOG0xMjdDVGx3MjBLblYxQTBmSXQxT2F4Wk1keE9FbEZTU0Q3TldVWXA5d0ZXYWF3OElGUG1UVmRpM1hEX0UtdHZXRTNjM2FGTF9jRVhQMUJSN3RMS2JWZGlScEZINVV4QWFkTzNHNTcwalFsMTFHbEg5WUFKTU9vT2RiSkYyZDZBbXNZbGtvTG9ZUzZzNkw2Tm8xRnc?oc=5",
    "title": "3x Borong Saham Sepanjang Oktober, Pengendali HRTA Rogoh Kocek Rp8,31M",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -2562,8 +2583,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tTjFVSEo5dTF5RkpCOVlDZnk1V1FyQ0Y5ZVF0cFN3Z2tOSnhKa0JWWDJudGRtRU52ZHdnTm9fVER0aTByX0NzbDlQcHd3ZzV5UXln?oc=5",
+   "source": "Liputan6.com",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWE9HMllISi1XOWc4OUtpSGFCSzZaOXJ2MmZpaGthRzFuRkhqWkVXR1hNT2R6MVBEeDFGbHJILVZnLTUwWFFPT2sydU8zYm0zZERxbHZSNzhyUVVXLUJHdXRSUHNqcEJRVDU5TE9oYUxWZDBMVnVtT3ZkUkFIY0hDVDlPOUJnVmFMajRTctIBgwFBVV95cUxNWXVQMjdNX1E0QnJ4N3JNLTk3Y2xkZlhmSjdJOTJPcmhPajZQWVJpXzVfZjFkNHBfZ0VhZGp6emxvNXlBcGg0ZkpDZWxaUk1ILUZWRmFtVHdzeWg0LWROVThxS0RCdkRYalVIZ1dWM0ZTbEJ6ZlF0TWV0TVV1ejBTV2hBYw?oc=5",
    "title": "Emiten SOHO Lepas Saham Pfizer Indonesia",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -6791,9 +6812,9 @@
  ],
  "net_by_code": {
   "MUTU": {
-   "net_shares": 28520000,
+   "net_shares": 38020000,
    "net_value": 0.0,
-   "count": 3
+   "count": 4
   },
   "MMIX": {
    "net_shares": 0,
