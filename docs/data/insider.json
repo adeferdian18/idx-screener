@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-30T17:21+07:00",
+ "updated": "2026-10-30T17:32+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 96
+  "news": 104
  },
  "transactions": [
   {
@@ -294,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "RCTI+",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNSE9BUzU0ZGVTcE5GUFo1RGdWZjZXckdDMGJaQmRtVVk4OERJWHVpWm9Hajl0Sy1hTm1NdXRCaHVfUldKa3hONl9XWFNJbzhQVk5LeW8tV0dmeFNsOEhMYjdDZ3FfSEptRmVXc3NPTjFGYkFRMTFaMnpxbjU4UkR1d1BmOXNjdFMyVHFMMHlUSldPNWJSLXV6eWU5LVExRTA3bm1KZGdWVUFHc25TQkMwNVduMmZ3dkcxZkZWR2dLS2VaVGtwUDVkV1hqSzdPa1dRb0VIdWRma216QmpHSkwyT20zdHFzbWRVRTVqNVAyTHpYdGNDSkJGR0EyY0xYTEU?oc=5",
+   "source": "IDX Channel",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaGtibVlxd2E3UnpWWWVlMTBhMUtGaWF3dEhGajRoaEt3RVkyTmF2TjR5UlFLWEM2bF9JSzlyWEVNOUFvbmtkXy00ZS15c3ktcnY1ZTRELTdCd3p3OURzLTJXSF9Zc1BFbVdHTTV5YmZkTFZncTJWNXpXOVdCT051dTY3TzdkRFJVNDlvZW9sZm1BUdIBkgFBVV95cUxPaGtibVlxd2E3UnpWWWVlMTBhMUtGaWF3dEhGajRoaEt3RVkyTmF2TjR5UlFLWEM2bF9JSzlyWEVNOUFvbmtkXy00ZS15c3ktcnY1ZTRELTdCd3p3OURzLTJXSF9Zc1BFbVdHTTV5YmZkTFZncTJWNXpXOVdCT051dTY3TzdkRFJVNDlvZW9sZm1BUQ?oc=5",
    "title": "Investor Ini Borong 5 Persen Saham TRUK, Siapa?",
    "first_seen": "2026-10-30T08:53+07:00"
   },
@@ -2583,8 +2583,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Liputan6.com",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWE9HMllISi1XOWc4OUtpSGFCSzZaOXJ2MmZpaGthRzFuRkhqWkVXR1hNT2R6MVBEeDFGbHJILVZnLTUwWFFPT2sydU8zYm0zZERxbHZSNzhyUVVXLUJHdXRSUHNqcEJRVDU5TE9oYUxWZDBMVnVtT3ZkUkFIY0hDVDlPOUJnVmFMajRTctIBgwFBVV95cUxNWXVQMjdNX1E0QnJ4N3JNLTk3Y2xkZlhmSjdJOTJPcmhPajZQWVJpXzVfZjFkNHBfZ0VhZGp6emxvNXlBcGg0ZkpDZWxaUk1ILUZWRmFtVHdzeWg0LWROVThxS0RCdkRYalVIZ1dWM0ZTbEJ6ZlF0TWV0TVV1ejBTV2hBYw?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tTjFVSEo5dTF5RkpCOVlDZnk1V1FyQ0Y5ZVF0cFN3Z2tOSnhKa0JWWDJudGRtRU52ZHdnTm9fVER0aTByX0NzbDlQcHd3ZzV5UXln?oc=5",
    "title": "Emiten SOHO Lepas Saham Pfizer Indonesia",
    "first_seen": "2026-10-26T08:42+07:00"
   },
