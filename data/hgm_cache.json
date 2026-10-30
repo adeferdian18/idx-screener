@@ -890,7 +890,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-21"
+"diambil": "2026-10-30"
 },
 "ITMG": {
 "status": "kuat",
@@ -1098,7 +1098,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-23"
+"diambil": "2026-10-30"
 },
 "MTLA": {
 "status": "lemah",
@@ -1237,5 +1237,21 @@
 "margin": true
 },
 "diambil": "2026-10-28"
+},
+"DSNG": {
+"status": "sebagian",
+"skor": 1,
+"kuartal": "2026-06",
+"laba_yoy": 0.0428,
+"penjualan_yoy": 0.0005,
+"margin": 0.1678,
+"margin_lalu": 0.161,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": false,
+"margin": true
+},
+"diambil": "2026-10-30"
 }
 }
