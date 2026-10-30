@@ -1,10 +1,31 @@
 {
- "updated": "2026-10-30T11:29+07:00",
+ "updated": "2026-10-30T12:19+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 111
+  "news": 98
  },
  "transactions": [
+  {
+   "id": "24dfcec5edfd",
+   "date": "2026-10-30",
+   "code": "VIVA",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 3060000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 9.998,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/ubs-ag-jual-306-juta-saham-viva-kepemilikan-turun-jadi-9998/",
+   "title": "UBS AG Jual 3,06 Juta Saham VIVA, Kepemilikan Turun Jadi 9,998%",
+   "first_seen": "2026-10-30T12:19+07:00"
+  },
   {
    "id": "04db4ad342d9",
    "date": "2026-10-30",
@@ -63,7 +84,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV2llYk1ramFSekVXelktWURtUTZJUmlWcDN4VlRfTkNxY3dJcm9aQXc5SmpON2hxSmZDRmJ2cEhIMVgwaWpGNTQ0R1g4U1ZDbnR6UTNSTTBwM0dDdmpyX3lUWk9SaDZ5TTZKZEtXLVUzcWY1bnU4Wm9aWmlCM05pckxGVHBrTHdHUzFKbWxNZ2xST2hIYVNBTTVCdVpEZTNYdVluV05WZmNubkgtQ1lSM2tJeXdNZw?oc=5",
    "title": "Samuel Sekuritas Borong 86,27 Juta Saham BKSL, Porsi Kepemilikan Naik Jadi 5,78%",
    "first_seen": "2026-10-30T08:53+07:00"
@@ -189,8 +210,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "IDX Channel",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaGtibVlxd2E3UnpWWWVlMTBhMUtGaWF3dEhGajRoaEt3RVkyTmF2TjR5UlFLWEM2bF9JSzlyWEVNOUFvbmtkXy00ZS15c3ktcnY1ZTRELTdCd3p3OURzLTJXSF9Zc1BFbVdHTTV5YmZkTFZncTJWNXpXOVdCT051dTY3TzdkRFJVNDlvZW9sZm1BUdIBkgFBVV95cUxPaGtibVlxd2E3UnpWWWVlMTBhMUtGaWF3dEhGajRoaEt3RVkyTmF2TjR5UlFLWEM2bF9JSzlyWEVNOUFvbmtkXy00ZS15c3ktcnY1ZTRELTdCd3p3OURzLTJXSF9Zc1BFbVdHTTV5YmZkTFZncTJWNXpXOVdCT051dTY3TzdkRFJVNDlvZW9sZm1BUQ?oc=5",
+   "source": "RCTI+",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNSE9BUzU0ZGVTcE5GUFo1RGdWZjZXckdDMGJaQmRtVVk4OERJWHVpWm9Hajl0Sy1hTm1NdXRCaHVfUldKa3hONl9XWFNJbzhQVk5LeW8tV0dmeFNsOEhMYjdDZ3FfSEptRmVXc3NPTjFGYkFRMTFaMnpxbjU4UkR1d1BmOXNjdFMyVHFMMHlUSldPNWJSLXV6eWU5LVExRTA3bm1KZGdWVUFHc25TQkMwNVduMmZ3dkcxZkZWR2dLS2VaVGtwUDVkV1hqSzdPa1dRb0VIdWRma216QmpHSkwyT20zdHFzbWRVRTVqNVAyTHpYdGNDSkJGR0EyY0xYTEU?oc=5",
    "title": "Investor Ini Borong 5 Persen Saham TRUK, Siapa?",
    "first_seen": "2026-10-30T08:53+07:00"
   },
@@ -657,6 +678,27 @@
    "first_seen": "2026-10-29T08:53+07:00"
   },
   {
+   "id": "124e301f0833",
+   "date": "2026-10-28",
+   "code": "UNVR",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaXBlejBKTE9pQmVZeE5FZXZDVjVUWE5sTnQxcnY2U1JGcWNyRzRmT21FWmN6MkJRN0FLOGhvdFVYQlYxc3BzNVZXX25iNk1hSWNXT0JyVUYyTk91cUQySTgwSjdlNTM5bC15LVg2WGxHT0Y1LTBMZ0s1ZlJBVnp2dU9EdTFtaFR0dUU2QmFFSnBWZ3ZEZUhKZEQ1UDRqWm0zbEZRT0QyNGpqcW_SAasBQVVfeXFMT2lwZXowSkxPaUJlWXhORWV2Q1Y1VFhObE50MXJ2NlNSRnFjckc0Zk9tRVpjejJCUTdBSzhob3RVWEJWMXNwczVWV19uYjZNYUljV09CclVGMk5PdXFEMkk4MEo3ZTUzOWwteS1YNlhsR09GNS0wTGdLNWZSQVZ6dnVPRHUxbWhUdHVFNkJhRUpwVmd2RGVISmRENVA0alptM2xGUU9EMjRqanFv?oc=5",
+   "title": "Laba Unilever (UNVR) Tumbuh 10,6%, Pemulihan Kinerja Ditopang Keuntungan Divestasi",
+   "first_seen": "2026-10-30T12:19+07:00"
+  },
+  {
    "id": "500e9fc3ba07",
    "date": "2026-10-28",
    "code": "BBCA",
@@ -798,8 +840,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxVm9tQzQwd28wWkdScU9nNERFd0VWNHFGVVFXMTRxbTVGaFR6NnNFNnJROWYzQndyV1BnbHFjVHJvVXlUOElaVTBmeTk5Zm1IM2tiOVVGZ3BsakhLcUo4Sg?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NTV3OUVDVG9HSXZPdTRrNVBjUTFfeXVhZlN3VldqR1J4TngzWlhPRHdiWlBVbDRVTkw2Um5Cd3NMX3pDUVNZZUJOS2R4LVpoYll3?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX pada Oktober 2026",
    "first_seen": "2026-10-28T13:00+07:00"
   },
@@ -2017,7 +2059,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOXVNWU1EOG0xMjdDVGx3MjBLblYxQTBmSXQxT2F4Wk1keE9FbEZTU0Q3TldVWXA5d0ZXYWF3OElGUG1UVmRpM1hEX0UtdHZXRTNjM2FGTF9jRVhQMUJSN3RMS2JWZGlScEZINVV4QWFkTzNHNTcwalFsMTFHbEg5WUFKTU9vT2RiSkYyZDZBbXNZbGtvTG9ZUzZzNkw2Tm8xRnc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGxRSTM0bmxpOGdXTFNSOFk5MWt5UDJveFlrbURRMmRCU2VaOS1FNll2YXlxQmpEQ2VoVzBoMV9QOC1OVXEzYjV6SXgxYWRnUE5QbWttUU44RjE1aDctaGVaM25TbldIeUxCZjFYOTZLWEhnTGtDREE3bG5vcEpMQ2VDc0d5LVVtdEVueGNaeFR6a1ppQVppZDByTFI?oc=5",
    "title": "3x Borong Saham Sepanjang Oktober, Pengendali HRTA Rogoh Kocek Rp8,31M",
    "first_seen": "2026-10-26T08:42+07:00"
   },
@@ -2520,8 +2562,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE45enJ3V1VfczdEOUhoRHVpbTdXWGpJNkZLdUZ4NnJZNkhRUHpkU3dRcFhmcnpTRHFBV2pzT0ZjQmRjWk5aTjNnRUdFZmlCZnBsdVBXUmUtVE0?oc=5",
+   "source": "Cirebon Times",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sODhiSW5MdndLbG9nbnlJOWNlaHZvRGVjemIzZnRMaUNJTzVxUlJpVEZaRFlHQ0ZFOVpzRkVKOXAtTHcyNDBzMHJjYTd0c19BZV9RdklpcEx4YW85MTZpNHF3?oc=5",
    "title": "Agoes Borong 5,5 Juta Saham BRMS Senilai Rp 2,46 Miliar",
    "first_seen": "2026-10-23T16:32+07:00"
   },
@@ -6664,6 +6706,11 @@
   }
  ],
  "net_by_code": {
+  "VIVA": {
+   "net_shares": -3060000,
+   "net_value": 0.0,
+   "count": 3
+  },
   "JECX": {
    "net_shares": 12710000,
    "net_value": 0.0,
@@ -6762,7 +6809,7 @@
   "UNVR": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 1
+   "count": 2
   },
   "AADI": {
    "net_shares": 0,
@@ -7073,11 +7120,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "VIVA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
   },
   "MPRO": {
    "net_shares": 0,
