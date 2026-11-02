@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-30T17:17+07:00",
+"updated": "2026-11-02T17:29+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -575,11 +575,6 @@
 "kode": "BHIT",
 "nama": "PT MNC Asia Holding Tbk",
 "sektor": "Consumer Services"
-},
-{
-"kode": "BIKE",
-"nama": "PT Bhineka Inovasi Ketahanan Energi Tbk",
-"sektor": "Distribution Services"
 },
 {
 "kode": "BINA",

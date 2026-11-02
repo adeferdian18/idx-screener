@@ -1114,7 +1114,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-26"
+"diambil": "2026-11-02"
 },
 "NATO": {
 "status": "sebagian",
@@ -1130,7 +1130,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-26"
+"diambil": "2026-11-02"
 },
 "TMPO": {
 "status": "data kurang",
@@ -1253,5 +1253,10 @@
 "margin": true
 },
 "diambil": "2026-10-30"
+},
+"ASPI": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-11-02"
 }
 }
