@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-02T16:42+07:00",
+ "updated": "2026-11-02T17:41+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 85
+  "news": 83
  },
  "transactions": [
+  {
+   "id": "5577420fdea6",
+   "date": "2026-11-02",
+   "code": "AVIA",
+   "party": "Avia Avian",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 7000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMnByaThlckkzRHdVZEdxTEJzOGdCbEl3dkNsTzd5all3T3hjdko0YllDRk5wdy1RLW1DWHR5REZ5SkNIM0p6X1diNm1UTXBnbUVvb1FGWE0wLXl2bnFFMmFFd3l4cmFUdlhxbjg3MHdYLUxSd3Y3WWh6MWxrcUl6NHU0TE9qak10Mm1DRHBCSGJRSjBOSlVQYjVJa0I1MVp1d0hxeDFR?oc=5",
+   "title": "Direktur Avia Avian Borong 7 Juta Saham AVIA, Kepemilikan Kian Gemuk",
+   "first_seen": "2026-11-02T17:41+07:00"
+  },
   {
    "id": "57d6f08e49cf",
    "date": "2026-11-02",
@@ -237,27 +258,6 @@
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
-   "id": "fcbbe14a7bf0",
-   "date": "2026-11-01",
-   "code": "GOTO",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Sumbardaily.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcHBaaWY4M05lRnFuY0FLZmpsY05xODhMZ0NDOC16UXY5WHE2TXM5ZUxSUU1QcHh4ZllwWk03MWJ3aWVtaG9OYXZub0JSWFVHZVJIZWh5SHVQdUdaVEd1WUVGdG85NkRWVDNUb3dFM0F0c3g5Wktmb09DQXUtdGVlcy11TVpUUTFNTkpOdUQtTHItd2FLWldMcGRZeFdsTlZWQzh5cE1CVDQ3VElZaWx0dFhINGfSAboBQVVfeXFMTjNQMzRsMXNGMU11ckV1YjUyT3RvY1ZQRUplNFZENXlwNXp2RktST2RzaC11YUZ5R1hDVHFIblZUVWRROTRhckFkZGpacFpuUEFxS2d0Tm50c1BiZURKOExROU1XcEVtV3FWYmNHbVlBYW5NYk5ZRTdWZmNqbkZkNkJoM1BOUDN3eUxfMVdOSzljaFNlM1VWOHFQRllXWFpEY3RPeDNNX3pkRUJiakVtZmN5ZmpoNVVUMEtR?oc=5",
-   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
-   "first_seen": "2026-11-02T08:58+07:00"
-  },
-  {
    "id": "89d17e706518",
    "date": "2026-10-31",
    "code": "RAAM",
@@ -277,6 +277,27 @@
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmQU5NNGdiZk9FR0hfZTRRS2xWZmQtQnluc0JtZ2hVdGdJVnhCN214X0xaV0hjR1dRcDlicG9ScGtfN3praHJxNllBeXI2TlBvcVh1SjBpUlRuQTUyMDBHcHQ5Z044V3dtSENRTmNR?oc=5",
    "title": "Ram Punjabi Borong 918.300 Saham RAAM",
    "first_seen": "2026-11-02T12:58+07:00"
+  },
+  {
+   "id": "fcbbe14a7bf0",
+   "date": "2026-10-31",
+   "code": "GOTO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koropak.co.id",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRXJXQ0RfcmNFbWF0LTNqdnp4X0UzM3VTVnZLaGtjSm9MM0NkZ0xLMzlWSlREYXJERVZPNmJDMDJUUU5lRXhTQlA0SXF3eUpLQmZuV25fdFFHRFkyU0FDN1NQR3RORXN5Zk8wb3pZVmMwMGk1REhtMnBROTBQMXIyNTFqU2Z6WmVsMXJJdHV2Y2hQRnR3S05ld21NNGNoanhwMUNnbno2YWZRVGVqU3B5clpBcTJjX0XSAbwBQVVfeXFMTXNrTV9vdVhTOW50NHdtanROUDNiSi1WTzFnOGo3SkdxQWFRSng2ZW9YS2tkSGNTRlJuZUFENGN5dDBhVm1lWUROX0dmMWQ3WlFLa1FxQkpXVDdNTjNLTURnSHlPTXRkdVUzUmpDS184LUdIWS1ZNmhQZVlQam10bGFBMkxjVDcyZmlYMTJmZ2IzU1NJVVRVSTdWZUZpc2RNNW5hSzNWQTM2WGhnRDl1MzQxcEVmbGwtZnpoV3E?oc=5",
+   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
+   "first_seen": "2026-11-02T08:58+07:00"
   },
   {
    "id": "3198e19e7a8f",
@@ -337,7 +358,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Poros Jakarta",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaExuVGZhNlhSTkZyVWQ0eURfTFB2bF9HQmZwSW8xQms5VzlTcUVkWkRYTDZoQi1jNlI3RXpMNmhFVDJqQXlmZmNYOXI2SjVIbjRCdk9XUTNod1IzdmxxblVVSzNZQXpYSmpIYzNmdFJkeTVLT2JnRWJVc1AyS2NVb2tlejgwWjZOTE9tOGZRaVppTEtXaGxOTmswMFNpNEl5ODA4eWQ4YW9hMklZb1JGbExJQl9zZmVNVWdXT0ctVGfSAcYBQVVfeXFMTmhEb3Izdm5yWnN2VVBGTkNjWnJhdHVvalFtRUdVR19TbjZ6QzlReEoyWkhTdHdjZnIzd3NjNV92N0NoakJoVXF1dDhUTERiOEUyQ2NNdG5tY044QlBTb2w4RFFpZnYzU0c2eThhQnlDVTkxaTY2cFJsOTZ2TktMVDduUld6QldPQm16MmplYm1xX0FsRTUxdDFoUWxTR0NTVUl4Z3lTMHAzRERoQmNEZkRVeTRGMEVFVVpEWmdfbGZxZm5QbUhB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeFNrUmNyTXJselFDVHdxZGFsdFN6NDhQSXVnWE9ndWhPUmZwU254a28tbDhfQVVfc1RLTGdHYVRwc3o1czBxcHR0MkxoMm9iNVVDb2VPY0pMeW8xaGlEYWVPTlp5X2VyYWZLNmJvX1IzWXRsNjhDR1liRVJCSVQ2Z1M0WXh5dmV6NnNKTmo1aF9Wdm8xWFk4eHdodjEtNHNzNXd6enNSSmFaa3R0ZjdsTXFaYkNBVG4tbHJOaW55V2w1M0N4TXNiTm5vYklmY1XSAc8BQVVfeXFMT3hTa1Jjck1ybHpRQ1R3cWRhbHRTejQ4UEl1Z1hPZ3VoT1JmcFNueGtvLWw4X0FVX3NUS0xnR2FUcHN6NXMwcXB0dDJMaDJvYjVVQ29lT2NKTHlvMWhpRGFlT05aeV9lcmFmSzZib19SM1l0bDY4Q0dZYkVSQklUNmdTNFl4eXZlejZzSk5qNWhfVnZvMVhZOHh3aHYxLTRzczV3enpzUkphWmt0dGY3bE1xWmJDQVRuLWxyTmlueVdsNTNDeE1zYk5ub2JJZmNV?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan, Investor Asing Justru Borong Saham GOTO dan BUMI",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -358,7 +379,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Cirebon Raya",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR25EQ0ZtT0lBeElpVkZkVm1ZZ0ZXVVRkU3pKeWYtUmRaVUhaaXF2NDZtSDREUjVLM09qSDF2YWJDUU9Ob2EyV2IwM1dnaDVhRm9zd0xrSjk4aVVpRkRYMjFES19hNjJ5UkZuLW9WSDI2TFBtc0Z0QVh5UlV5UDFPUVZRMW5INWxYUEVuUlVQZVJhS0txS0s5LUhrcnhHSlBYa0JRX21pS25JUUlUZU9BZEZ5ckJZRjBxSFNTeTd6UWJ4M2RSVWx5QXdxSWptczV10gHWAUFVX3lxTE8xcUl1UjhUODNJSE9MY0Z0R2REY3h3cWFPdFVKQmFTVFNLd2NMYzRERjYxMWJMY3VmUG5xaVVVMnZnQ3lmYkV3OFVWempFQ2hBT1ltcVV5dDNzRGxUWUVDT0NleW5CX0tnV21JZmRMa0RQT0NZMERTMnNZdks2cWdJd01yWEtsNHpYdmpwblhrSi12VFFWT0NDa19QT1JBUFFiYUJlS2RyR0E4blRnM2txSzJXdTREZk9qZWVEbjBPblJLQ1JsYkJrc0MtRHJWTXdmbHNILVE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeWxaVWtTZEdmalJtWkFJLTRBUnE2U1Focm9MdU9KQmlXWW1DZUxiUkF0VnBVREk5VW9DcVF4WkJEOWM4VllRdWJlb0x6TF9GRU9nUVJ5Ty1uVXVaeGtReElxS0llZVNyczdzWGhDM0VHcXRLRkFCdC1QRTY0QXhFVFA5ampBejR1LVRMalZIeUU3d3FUcWh3SXl1VklfYUIzdE56TkZDVWtFbDd2Wkk1ZzdwZGZRb3lzb2xqckU3QVMwazBNR0lMdjl3Sm4yZkFrVFdZLUY0WFM2dlcxR3lz0gHfAUFVX3lxTE55bFpVa1NkR2ZqUm1aQUktNEFScTZTUWhyb0x1T0pCaVdZbUNlTGJSQXRWcFVESTlVb0NxUXhaQkQ5YzhWWVF1YmVvTHpMX0ZFT2dRUnlPLW5VdVp4a1F4SXFLSWVlU3JzN3NYaEMzRUdxdEtGQUJ0LVBFNjRBeEVUUDlqakF6NHUtVExqVkh5RTd3cVRxaHdJeXVWSV9hQjN0TnpORkNVa0VsN3ZaSTVnN3BkZlFveXNvbGpyRTdBUzBrME1HSUx2OXdKbjJmQWtUV1ktRjRYUzZ2VzFHeXM?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan Akibat Isu MSCI, Asing Malah Pilih Borong Saham GOTO dan BUMI!",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -535,7 +556,7 @@
    "date": "2026-10-30",
    "code": "MUTU",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": 9510000,
    "price": null,
@@ -546,8 +567,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia Market",
-   "link": "https://www.cnbcindonesia.com/market/20261030151613-17-780973/sandiaga-uno-borong-951-juta-saham-mutu-senilai-rp9994-juta",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRGs5eEZ6Znd1bENHZjZXbC1GOC1XMV9YNEU2SWVpcENFSzU1cUs5U0pMY2pHNHNDV0h4N1ZLUW9nclJvbGdtZDMtWGlKOFhVR3RDaGU5d0xrTGNzX2s5aklpWjg4T3JBT2NiNS1FcVVOQjliX25FZ3d2Vm10WElrelgwNU1OaGRkYk9oU3A4dDhnQ2k2aDlsT0JZZmxYQWlRQ3lId2xpOXUzREpWRFJxZno2blByYTdBQnYzSFZ30gHDAUFVX3lxTE5ZUi12OTAtTTBOb0EzUmFCREhrUlgtMVJMUGdOWGVVMnRqTXRfLTNSdFBxYmpJdTlhTFBaeHBZR1NJRklUWV9vRlE4Zm0tRXFjc2piVlZBZ0NfMVBTSFExeUt4QmVLY0hhbF9yVjN3TENQNEFGOGVKTHEwTjVlWHpSV1JnTUNiVUxCeWhsRktrQTJVaGNfQ1RGV2p3S1ZTdjB1azFmWFZRbzZjTnViWTFQRVJHWmVaZF9tQ1BlU2RqbV9NUQ?oc=5",
    "title": "Sandiaga Uno Borong 9,51 Juta Saham MUTU Senilai Rp999,4 Juta",
    "first_seen": "2026-10-30T15:23+07:00"
   },
@@ -840,8 +861,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR1FSdFh5RXE4bXBaRDJleW90M0RoLU5reHFFNTB1YzNkZlJxSzZHdUUzb0RIcExTWm5XaS1pY2g3aG5DTDBDR1l0OWx5aXlIOGtaaEV0RlAybXBWY3ZzOHo2MzlRbV9NQ2lJeDNhMFpPalcwVnV3WmF1eFZESDFCWXlFTDEtTjVpVllJb3lCdzZDQlJTMGZXcVZ4Y00zWEx3VVIwbkFTRUhCUlJHU0VONUZCMNIBrAFBVV95cUxQY2tiWG5peTFJZHRxVkc4clYtVmlZLTZDWl9RQjlVazF0RmRSWWVEOW11TjBUNGpZTXRaNGhSU1R6dFhOejBHZ1lRaFhpM1Q5UHBlT0kwMjg2WVFmMmtRYTNqNEtkV29LRTRRNUNfamRWX1ltMTQxUEc2S2U5YzRfY0p3ZGlGM0JjSXRncENIMG1jRFdHUlFGTmduTU1FMVRvcFFiVnhJZUlheWJE?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPaHVGX1VMV05qSVVuNVFaUUYwSmF2QlB2TllXbUJ0MlF1a0VXSU9MNTNYNUIwSHEzaTlQMVB3VDk1c2NCVjBJM0wtX2dwbmZRNlNWRDRkc0VnV01pN3NjWDZYbExhRWs?oc=5",
    "title": "Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah",
    "first_seen": "2026-10-30T08:53+07:00"
   },
@@ -7378,6 +7399,11 @@
   }
  ],
  "net_by_code": {
+  "AVIA": {
+   "net_shares": 2890970000,
+   "net_value": 2086000000.0,
+   "count": 7
+  },
   "IATA": {
    "net_shares": 663230000,
    "net_value": 0.0,
@@ -7387,11 +7413,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 4
-  },
-  "AVIA": {
-   "net_shares": 2883970000,
-   "net_value": 2086000000.0,
-   "count": 6
   },
   "ARKO": {
    "net_shares": 9615000,
@@ -7428,15 +7449,15 @@
    "net_value": 0.0,
    "count": 26
   },
-  "GOTO": {
-   "net_shares": -1740000000,
-   "net_value": 0.0,
-   "count": 13
-  },
   "RAAM": {
    "net_shares": 1111300,
    "net_value": 0.0,
    "count": 4
+  },
+  "GOTO": {
+   "net_shares": -1740000000,
+   "net_value": 0.0,
+   "count": 13
   },
   "HRTA": {
    "net_shares": 41300000,
