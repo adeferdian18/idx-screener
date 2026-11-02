@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-02T12:58+07:00",
+ "updated": "2026-11-02T14:23+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 91
+  "news": 89
  },
  "transactions": [
+  {
+   "id": "f1d2663950a7",
+   "date": "2026-11-02",
+   "code": "ARKO",
+   "party": "Kembali",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 7170000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUTRFWG5uWDVCb1AtaGUzV1o4cW01QjBHNTNFS2hzbDlURlpwMHpsTkRENjJGd0RCcE5EMDNac19SQ3VYUi0tQXlpU0VlczhPVlV5YUNvd0VSU3NOVlhnb0pnZkR4T203Nk95Yng2Z2trOHlVMmdYb1Q4UnFzTEczbDE4ek8yZDhBY2EzOW9lYXhRWm53Zm8xcXppYUhDN1ZhZEhrN2oxOXFDcnJVNWkyZFdYOHU?oc=5",
+   "title": "Direktur Utama ARKO Kembali Borong Saham, Total Koleksi Tembus 7,17 Juta Lembar",
+   "first_seen": "2026-11-02T14:23+07:00"
+  },
+  {
+   "id": "8aa3f2c850ab",
+   "date": "2026-11-02",
+   "code": "TRIN",
+   "party": "Utama Chat",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8zNWRuNUd0TlBTUGJGbW5nX3AwdFllMEU3VWp0N0xMeDZtMGt5ajk3WmdQLTBlWDkzSmxQYy1USHRvMlp0VWU3dkpucVFTajMzZmpyUjFYbXZWcjVp?oc=5",
+   "title": "Saraswati Kurangi Saham TRIN dan Mundur dari Komisaris Utama",
+   "first_seen": "2026-11-02T14:23+07:00"
+  },
+  {
+   "id": "b8f0d72817d1",
+   "date": "2026-11-02",
+   "code": "TPIA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia Market",
+   "link": "https://www.cnbcindonesia.com/market/20261102125835-17-781503/ihsg-menguat-di-sesi-i-10-saham-ini-banyak-diborong-asing",
+   "title": "IHSG Menguat di Sesi I, 10 Saham Ini Banyak Diborong Asing",
+   "first_seen": "2026-11-02T14:23+07:00"
+  },
   {
    "id": "7db2b9b310a6",
    "date": "2026-11-02",
@@ -42,8 +105,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/direktur-heal-yulisar-khiat-borong-914-juta-saham-kini-miliki-654/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQkkwNGRZcWwzbWJuVTNVODNxSGhpV2ltR0o4QkR3MFBqVVVGVlZCM1dWcE91aFZsY2dIcThRaHBSdlhlY1Ewcm1Hdzd5bzhjdVBxTDhJSll5Z1c4NkM4LW4teDJtOWFBOUdCWWZvVnZicWllajk5ejVqU1lFQnVWcVpvWHJLbHo1eVVzN0l5cUxnUQ?oc=5",
    "title": "Direktur HEAL Yulisar Khiat Borong 9,14 Juta Saham, Kini Miliki 6,54%",
    "first_seen": "2026-11-02T10:51+07:00"
   },
@@ -253,7 +316,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Cirebon Raya",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR25EQ0ZtT0lBeElpVkZkVm1ZZ0ZXVVRkU3pKeWYtUmRaVUhaaXF2NDZtSDREUjVLM09qSDF2YWJDUU9Ob2EyV2IwM1dnaDVhRm9zd0xrSjk4aVVpRkRYMjFES19hNjJ5UkZuLW9WSDI2TFBtc0Z0QVh5UlV5UDFPUVZRMW5INWxYUEVuUlVQZVJhS0txS0s5LUhrcnhHSlBYa0JRX21pS25JUUlUZU9BZEZ5ckJZRjBxSFNTeTd6UWJ4M2RSVWx5QXdxSWptczV10gHWAUFVX3lxTE8xcUl1UjhUODNJSE9MY0Z0R2REY3h3cWFPdFVKQmFTVFNLd2NMYzRERjYxMWJMY3VmUG5xaVVVMnZnQ3lmYkV3OFVWempFQ2hBT1ltcVV5dDNzRGxUWUVDT0NleW5CX0tnV21JZmRMa0RQT0NZMERTMnNZdks2cWdJd01yWEtsNHpYdmpwblhrSi12VFFWT0NDa19QT1JBUFFiYUJlS2RyR0E4blRnM2txSzJXdTREZk9qZWVEbjBPblJLQ1JsYkJrc0MtRHJWTXdmbHNILVE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeWxaVWtTZEdmalJtWkFJLTRBUnE2U1Focm9MdU9KQmlXWW1DZUxiUkF0VnBVREk5VW9DcVF4WkJEOWM4VllRdWJlb0x6TF9GRU9nUVJ5Ty1uVXVaeGtReElxS0llZVNyczdzWGhDM0VHcXRLRkFCdC1QRTY0QXhFVFA5ampBejR1LVRMalZIeUU3d3FUcWh3SXl1VklfYUIzdE56TkZDVWtFbDd2Wkk1ZzdwZGZRb3lzb2xqckU3QVMwazBNR0lMdjl3Sm4yZkFrVFdZLUY0WFM2dlcxR3lz0gHfAUFVX3lxTE55bFpVa1NkR2ZqUm1aQUktNEFScTZTUWhyb0x1T0pCaVdZbUNlTGJSQXRWcFVESTlVb0NxUXhaQkQ5YzhWWVF1YmVvTHpMX0ZFT2dRUnlPLW5VdVp4a1F4SXFLSWVlU3JzN3NYaEMzRUdxdEtGQUJ0LVBFNjRBeEVUUDlqakF6NHUtVExqVkh5RTd3cVRxaHdJeXVWSV9hQjN0TnpORkNVa0VsN3ZaSTVnN3BkZlFveXNvbGpyRTdBUzBrME1HSUx2OXdKbjJmQWtUV1ktRjRYUzZ2VzFHeXM?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan Akibat Isu MSCI, Asing Malah Pilih Borong Saham GOTO dan BUMI!",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -7252,6 +7315,21 @@
   }
  ],
  "net_by_code": {
+  "ARKO": {
+   "net_shares": 9615000,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "TRIN": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "TPIA": {
+   "net_shares": 2000000,
+   "net_value": 0.0,
+   "count": 3
+  },
   "TOTL": {
    "net_shares": 6210000,
    "net_value": 0.0,
@@ -7467,11 +7545,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "ARKO": {
-   "net_shares": 2445000,
-   "net_value": 0.0,
-   "count": 5
-  },
   "MDLA": {
    "net_shares": 3320000,
    "net_value": 0.0,
@@ -7641,11 +7714,6 @@
    "net_shares": 350000,
    "net_value": 0.0,
    "count": 1
-  },
-  "TPIA": {
-   "net_shares": 2000000,
-   "net_value": 0.0,
-   "count": 2
   },
   "NSSS": {
    "net_shares": 0,
