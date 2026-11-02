@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-02T17:41+07:00",
+ "updated": "2026-11-02T17:43+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 83
+  "news": 86
  },
  "transactions": [
   {
@@ -256,6 +256,27 @@
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc3JrNzBsemlLeUdXZ0ZRTHRRb1ctaDNVY1pDZW82dW9NZ1BJdjNpaEVXTkNNQ29LYzlfalNENEdocEZNV2I2bjVtV0p5NGwtcVhrVm8wSzhiR3NBLUpMeHJ5NXpXbGFjWkk0cGtNQm03MjZldXBuSWRxT2h2Y2VHVF9RYnV3THNscmJkX3Zzb1JmQjdGd0VVRTg3N3JJWVNwX1E?oc=5",
    "title": "Direksi BRMS Agresif Borong Saham: Analisis Prospek Tambang Palu",
    "first_seen": "2026-11-02T08:58+07:00"
+  },
+  {
+   "id": "ea7b28c0f470",
+   "date": "2026-11-01",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "BertuahPos",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWN3Rkk5TUVjUzE5cjc0b2ZFcEFQc0F4c2d3UG42b1ZCSkFBMmhUOEV3ZTJvcjFkazJCY2V3ckdzUDU0Ti1GOUVhVWF1Y1U3UU1SS2RuNVE5QTBwanFWLUNSMFN2a2E4blZJSWNJd1FEU01YN2t4RExzS3R6LTNTNHIya1JDZUlCVmZnUVUtVHNaV2dVZ0sxNw?oc=5",
+   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
+   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "89d17e706518",
@@ -529,27 +550,6 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ1ZMSVVldWlBV1JES2VINlVtU18tSUNYdGlrUzlJRzJNZTJNX1BFOEU1aEFXdmhzQ3JoUjNMOFVlQnowQi05VGJUMXpYZkhVWkY2cXBiamZZQTZwV0VCeUZUYk00N244RUhFNTAtbnlKaXV1X2toc1YwSFpXWGltNC1QYjZYYTRGVkJDWjYxSEo3di1EcEd4MFVmTzRnVW1Md0RXTU1LdlI0ZlVBM3gwa9IBqgFBVV95cUxQRDE2U1RGbjlCSWRIMURjQzhjUGQ2cE5Vc3d5SGRFakVCbkxKcHV3Y1BMUC1vaUhqbWlfejQyS0xoaEd2cHRnaWh2Q21CNjJYNmVJaFFrVmFranZlT3U4d2tMcUJJWTVWeVVyZDQ1YmlBbEVCbFAwZ24ycEF6cmljMWZfV3BoLWpmVWZzYWVGY1JHNWJ6VjdiWFRSWGtZMFpWNG91Q05xNlA3UQ?oc=5",
    "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
    "first_seen": "2026-11-02T08:58+07:00"
-  },
-  {
-   "id": "ea7b28c0f470",
-   "date": "2026-10-30",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9500000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUUFTZXRnS3F4aG5sM09OakxQN1VhTTRsNEtWNTBpNFhPX0gtdXlZM2RsZUR2bHNHalQ0ZWotQjk1dC13SFFxRUJ5S1BSZGFRRk9hS1psLTFSQQ?oc=5",
-   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
-   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "94c4d4903b42",
@@ -7449,6 +7449,11 @@
    "net_value": 0.0,
    "count": 26
   },
+  "MUTU": {
+   "net_shares": 47530000,
+   "net_value": 0.0,
+   "count": 5
+  },
   "RAAM": {
    "net_shares": 1111300,
    "net_value": 0.0,
@@ -7483,11 +7488,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 12
-  },
-  "MUTU": {
-   "net_shares": 47530000,
-   "net_value": 0.0,
-   "count": 5
   },
   "MMIX": {
    "net_shares": 0,
