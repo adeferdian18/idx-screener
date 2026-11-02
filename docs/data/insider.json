@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-02T15:40+07:00",
+ "updated": "2026-11-02T16:42+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 77
+  "news": 85
  },
  "transactions": [
+  {
+   "id": "57d6f08e49cf",
+   "date": "2026-11-02",
+   "code": "IATA",
+   "party": null,
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 663230000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/karya-pacific-borong-66323-juta-saham-iata-kini-kuasai-6247/",
+   "title": "Karya Pacific Borong 663,23 Juta Saham IATA, Kini Kuasai 62,47%",
+   "first_seen": "2026-11-02T16:42+07:00"
+  },
+  {
+   "id": "e0225611eb17",
+   "date": "2026-11-02",
+   "code": "ABMM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Inforiau",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR3ZtdU9Mei1ZXy1vdXZDSk5icUN1QzhxdDB3TVdGSzktazNTbUlzY0JTc29SZ0ZBRGNWM3FsTDZkZDFUcS1BM2w3bW82YnZxY3pjRzhnenZvM3pzWUs2SnJ1Q2daVUcxOXRIQnN4Uzg4eHpBM0ZyS1RrSGE3US15UFJfMmZIQ2xaNVlrRmdFSkl1c0hmeHhj?oc=5",
+   "title": "Lo Kheng Hong Borong Saham ABMM 8 Kali, Laba Emiten Meledak 141%",
+   "first_seen": "2026-11-02T16:42+07:00"
+  },
   {
    "id": "70e0aee8c2d8",
    "date": "2026-11-02",
@@ -909,6 +951,27 @@
    "first_seen": "2026-10-30T08:53+07:00"
   },
   {
+   "id": "3f99b6f77e4f",
+   "date": "2026-10-29",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZnYwOHJ2QWt2MGZXWjJFUi1tZndmbHNCZWZzVFF1Qkhwa3ZfWWY2Y1VYTGZZX1NRZzhOdHVvamx3dGprNGdEdHQxcVg0QXpaWl93SkNvbGJnc3lmaUs1czlNOE0tSEk3dlZuNGtuSFdINDhpNWdhdzJZMFlVRll4aW50SjNsX3FlSDNJNnBuTWphc2dwTjM4Yw?oc=5",
+   "title": "Anjlok 16% Sebulan Terakhir, Sandiaga Uno Borong 9,5 Juta Saham MUTU",
+   "first_seen": "2026-10-30T08:53+07:00"
+  },
+  {
    "id": "6af5db003196",
    "date": "2026-10-29",
    "code": "DSSA",
@@ -1306,27 +1369,6 @@
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWG9yTkk5U0xVRWd0dVZxcWVFT3dOMmxWTXFzR2dHZkJraFg2RUladDVGTkpoTDhVdE5TbjZiNlVLcFpFaWF5V3VlX01jeVlfS2IyOWN6alhRRF9tRGtiVmtoMVJmZWt1NXpuM1RPNGRDb1ltVUxtRmstOVl3RS13WW5sUTdJd3BENnNjR1N4eGt0OVByM0ZWTzVGdVY1T1BpelZaZXNIaDRCdTFlelJLNFBEc9IBqwFBVV95cUxPaXBlejBKTE9pQmVZeE5FZXZDVjVUWE5sTnQxcnY2U1JGcWNyRzRmT21FWmN6MkJRN0FLOGhvdFVYQlYxc3BzNVZXX25iNk1hSWNXT0JyVUYyTk91cUQySTgwSjdlNTM5bC15LVg2WGxHT0Y1LTBMZ0s1ZlJBVnp2dU9EdTFtaFR0dUU2QmFFSnBWZ3ZEZUhKZEQ1UDRqWm0zbEZRT0QyNGpqcW8?oc=5",
    "title": "Laba Unilever (UNVR) Tumbuh 10,6%, Pemulihan Kinerja Ditopang Keuntungan Divestasi",
    "first_seen": "2026-10-30T12:19+07:00"
-  },
-  {
-   "id": "3f99b6f77e4f",
-   "date": "2026-10-28",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9500000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd3g1Smg3dHhUTHFLWnZJV2pSUldEbExLaTU4XzItZXpwdnN3RUZzc0xXTGxnb3hmVUxZa29EdFJyZHdSRXRJT1l1VWhqV2ZBblRvWTVJZ3N0ckJVS1dnNy1HTU9iQ2ZtOFRjdVh5WW1oSzBJQi1WRzNVM3A1TEE4V0J2T2NwQ3I5d0ZKcC1wRXYycHdFb2xqM2MyazRGZw?oc=5",
-   "title": "Anjlok 16% Sebulan Terakhir, Sandiaga Uno Borong 9,5 Juta Saham MUTU",
-   "first_seen": "2026-10-30T08:53+07:00"
   },
   {
    "id": "500e9fc3ba07",
@@ -7336,6 +7378,16 @@
   }
  ],
  "net_by_code": {
+  "IATA": {
+   "net_shares": 663230000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "ABMM": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 4
+  },
   "AVIA": {
    "net_shares": 2883970000,
    "net_value": 2086000000.0,
@@ -7370,11 +7422,6 @@
    "net_shares": 24140000,
    "net_value": 0.0,
    "count": 2
-  },
-  "ABMM": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 3
   },
   "BRMS": {
    "net_shares": 75480000,
