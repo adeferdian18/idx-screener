@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-02T14:23+07:00",
+ "updated": "2026-11-02T15:40+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 89
+  "news": 77
  },
  "transactions": [
+  {
+   "id": "70e0aee8c2d8",
+   "date": "2026-11-02",
+   "code": "AVIA",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 7000000,
+   "price": 298.0,
+   "value": 2086000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/putra-hermanto-tanoko-borong-7-juta-saham-porsi-kepemilikan-naik/",
+   "title": "Putra Hermanto Tanoko Borong 7 Juta Saham, Porsi Kepemilikan Naik",
+   "first_seen": "2026-11-02T15:40+07:00"
+  },
   {
    "id": "f1d2663950a7",
    "date": "2026-11-02",
@@ -174,13 +195,13 @@
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
-   "id": "ea7b28c0f470",
+   "id": "fcbbe14a7bf0",
    "date": "2026-11-01",
-   "code": "MUTU",
+   "code": "GOTO",
    "party": null,
    "role": "individu5",
    "action": "beli",
-   "shares": 9500000,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -189,10 +210,10 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "BertuahPos",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWN3Rkk5TUVjUzE5cjc0b2ZFcEFQc0F4c2d3UG42b1ZCSkFBMmhUOEV3ZTJvcjFkazJCY2V3ckdzUDU0Ti1GOUVhVWF1Y1U3UU1SS2RuNVE5QTBwanFWLUNSMFN2a2E4blZJSWNJd1FEU01YN2t4RExzS3R6LTNTNHIya1JDZUlCVmZnUVUtVHNaV2dVZ0sxNw?oc=5",
-   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
-   "first_seen": "2026-10-30T17:21+07:00"
+   "source": "Sumbardaily.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcHBaaWY4M05lRnFuY0FLZmpsY05xODhMZ0NDOC16UXY5WHE2TXM5ZUxSUU1QcHh4ZllwWk03MWJ3aWVtaG9OYXZub0JSWFVHZVJIZWh5SHVQdUdaVEd1WUVGdG85NkRWVDNUb3dFM0F0c3g5Wktmb09DQXUtdGVlcy11TVpUUTFNTkpOdUQtTHItd2FLWldMcGRZeFdsTlZWQzh5cE1CVDQ3VElZaWx0dFhINGfSAboBQVVfeXFMTjNQMzRsMXNGMU11ckV1YjUyT3RvY1ZQRUplNFZENXlwNXp2RktST2RzaC11YUZ5R1hDVHFIblZUVWRROTRhckFkZGpacFpuUEFxS2d0Tm50c1BiZURKOExROU1XcEVtV3FWYmNHbVlBYW5NYk5ZRTdWZmNqbkZkNkJoM1BOUDN3eUxfMVdOSzljaFNlM1VWOHFQRllXWFpEY3RPeDNNX3pkRUJiakVtZmN5ZmpoNVVUMEtR?oc=5",
+   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
+   "first_seen": "2026-11-02T08:58+07:00"
   },
   {
    "id": "89d17e706518",
@@ -214,27 +235,6 @@
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmQU5NNGdiZk9FR0hfZTRRS2xWZmQtQnluc0JtZ2hVdGdJVnhCN214X0xaV0hjR1dRcDlicG9ScGtfN3praHJxNllBeXI2TlBvcVh1SjBpUlRuQTUyMDBHcHQ5Z044V3dtSENRTmNR?oc=5",
    "title": "Ram Punjabi Borong 918.300 Saham RAAM",
    "first_seen": "2026-11-02T12:58+07:00"
-  },
-  {
-   "id": "fcbbe14a7bf0",
-   "date": "2026-10-31",
-   "code": "GOTO",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Koropak.co.id",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRXJXQ0RfcmNFbWF0LTNqdnp4X0UzM3VTVnZLaGtjSm9MM0NkZ0xLMzlWSlREYXJERVZPNmJDMDJUUU5lRXhTQlA0SXF3eUpLQmZuV25fdFFHRFkyU0FDN1NQR3RORXN5Zk8wb3pZVmMwMGk1REhtMnBROTBQMXIyNTFqU2Z6WmVsMXJJdHV2Y2hQRnR3S05ld21NNGNoanhwMUNnbno2YWZRVGVqU3B5clpBcTJjX0XSAbwBQVVfeXFMTXNrTV9vdVhTOW50NHdtanROUDNiSi1WTzFnOGo3SkdxQWFRSng2ZW9YS2tkSGNTRlJuZUFENGN5dDBhVm1lWUROX0dmMWQ3WlFLa1FxQkpXVDdNTjNLTURnSHlPTXRkdVUzUmpDS184LUdIWS1ZNmhQZVlQam10bGFBMkxjVDcyZmlYMTJmZ2IzU1NJVVRVSTdWZUZpc2RNNW5hSzNWQTM2WGhnRDl1MzQxcEVmbGwtZnpoV3E?oc=5",
-   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
-   "first_seen": "2026-11-02T08:58+07:00"
   },
   {
    "id": "3198e19e7a8f",
@@ -295,7 +295,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Poros Jakarta",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUlRLaEFsXzA2eUlJblRJSGRvdWhZTUNoQUs3WVFqaDc3a3FiTWlrdHY5VUJIV3p4ZEpRTmxfQTNsQ3lBay1VNEJtTDdwQVpQbjBHWjF2REIxRTRERl9DUmctOFJwS2owdzNCdU1lLUpCRXUwTUpEYkUzd2FJQUN0eEZtMzhRSFpBd1BoemhmRzZXSjFyTUFUNUFXN0RnLXQyTDN0am1iZ0pHdW1ETXlFUktUYTd1NnZENkJmbkVCQTVLMjdEZ2wwczBVWjAtTmfSAc8BQVVfeXFMTVJUS2hBbF8wNnlJSW5USUhkb3VoWU1DaEFLN1lRamg3N2txYk1pa3R2OVVCSFd6eGRKUU5sX0EzbEN5QWstVTRCbUw3cEFaUG4wR1oxdkRCMUU0REZfQ1JnLThScEtqMHczQnVNZS1KQkV1ME1KRGJFM3dhSUFDdHhGbTM4UUhaQXdQaHpoZkc2V0oxck1BVDVBVzdEZy10MkwzdGptYmdKR3VtRE15RVJLVGE3dTZ2RDZCZm5FQkE1SzI3RGdsMHMwVVowLU5n?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaExuVGZhNlhSTkZyVWQ0eURfTFB2bF9HQmZwSW8xQms5VzlTcUVkWkRYTDZoQi1jNlI3RXpMNmhFVDJqQXlmZmNYOXI2SjVIbjRCdk9XUTNod1IzdmxxblVVSzNZQXpYSmpIYzNmdFJkeTVLT2JnRWJVc1AyS2NVb2tlejgwWjZOTE9tOGZRaVppTEtXaGxOTmswMFNpNEl5ODA4eWQ4YW9hMklZb1JGbExJQl9zZmVNVWdXT0ctVGfSAcYBQVVfeXFMTmhEb3Izdm5yWnN2VVBGTkNjWnJhdHVvalFtRUdVR19TbjZ6QzlReEoyWkhTdHdjZnIzd3NjNV92N0NoakJoVXF1dDhUTERiOEUyQ2NNdG5tY044QlBTb2w4RFFpZnYzU0c2eThhQnlDVTkxaTY2cFJsOTZ2TktMVDduUld6QldPQm16MmplYm1xX0FsRTUxdDFoUWxTR0NTVUl4Z3lTMHAzRERoQmNEZkRVeTRGMEVFVVpEWmdfbGZxZm5QbUhB?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan, Investor Asing Justru Borong Saham GOTO dan BUMI",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -316,7 +316,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Cirebon Raya",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeWxaVWtTZEdmalJtWkFJLTRBUnE2U1Focm9MdU9KQmlXWW1DZUxiUkF0VnBVREk5VW9DcVF4WkJEOWM4VllRdWJlb0x6TF9GRU9nUVJ5Ty1uVXVaeGtReElxS0llZVNyczdzWGhDM0VHcXRLRkFCdC1QRTY0QXhFVFA5ampBejR1LVRMalZIeUU3d3FUcWh3SXl1VklfYUIzdE56TkZDVWtFbDd2Wkk1ZzdwZGZRb3lzb2xqckU3QVMwazBNR0lMdjl3Sm4yZkFrVFdZLUY0WFM2dlcxR3lz0gHfAUFVX3lxTE55bFpVa1NkR2ZqUm1aQUktNEFScTZTUWhyb0x1T0pCaVdZbUNlTGJSQXRWcFVESTlVb0NxUXhaQkQ5YzhWWVF1YmVvTHpMX0ZFT2dRUnlPLW5VdVp4a1F4SXFLSWVlU3JzN3NYaEMzRUdxdEtGQUJ0LVBFNjRBeEVUUDlqakF6NHUtVExqVkh5RTd3cVRxaHdJeXVWSV9hQjN0TnpORkNVa0VsN3ZaSTVnN3BkZlFveXNvbGpyRTdBUzBrME1HSUx2OXdKbjJmQWtUV1ktRjRYUzZ2VzFHeXM?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR25EQ0ZtT0lBeElpVkZkVm1ZZ0ZXVVRkU3pKeWYtUmRaVUhaaXF2NDZtSDREUjVLM09qSDF2YWJDUU9Ob2EyV2IwM1dnaDVhRm9zd0xrSjk4aVVpRkRYMjFES19hNjJ5UkZuLW9WSDI2TFBtc0Z0QVh5UlV5UDFPUVZRMW5INWxYUEVuUlVQZVJhS0txS0s5LUhrcnhHSlBYa0JRX21pS25JUUlUZU9BZEZ5ckJZRjBxSFNTeTd6UWJ4M2RSVWx5QXdxSWptczV10gHWAUFVX3lxTE8xcUl1UjhUODNJSE9MY0Z0R2REY3h3cWFPdFVKQmFTVFNLd2NMYzRERjYxMWJMY3VmUG5xaVVVMnZnQ3lmYkV3OFVWempFQ2hBT1ltcVV5dDNzRGxUWUVDT0NleW5CX0tnV21JZmRMa0RQT0NZMERTMnNZdks2cWdJd01yWEtsNHpYdmpwblhrSi12VFFWT0NDa19QT1JBUFFiYUJlS2RyR0E4blRnM2txSzJXdTREZk9qZWVEbjBPblJLQ1JsYkJrc0MtRHJWTXdmbHNILVE?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan Akibat Isu MSCI, Asing Malah Pilih Borong Saham GOTO dan BUMI!",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -381,27 +381,6 @@
    "source": "SWA.co.id",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd2JhbWx6VHkyUlpacGNNZmE3NC0wYXNpRktUTFJXdlhIOEMwUVlxbWN1R1JldzRLZEpXczcwcklLektZQXpEV3pfMkFJNTJibkkyMEV6cGNmYjRaY0JPY0U3Umk4aVBHY082QjdwazVXbW0xOHN1QktjeVJjUEFoaXpnVWRPY0RsNlEzYzJhZndtREFnZVBIdXdERDdiRFhWYzNyRjNaYVZDaFE?oc=5",
    "title": "Bos OASA Gafur Sulistyo Umar Jual 22,85 Juta Saham, Kepemilikan Turun Jadi 30,75%",
-   "first_seen": "2026-11-02T08:58+07:00"
-  },
-  {
-   "id": "2efd5c2d6e67",
-   "date": "2026-10-30",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9510000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": "investasi",
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZHZaYmlGT1lhRF96NU5LSUNvOFAzOHFFd0owMGpuSEhwZEM1NGJOX2ppSURjOWU4aTdsVHJWN0sxYVdNcHg4Mm9NeVRVd3FIQ085WU4zSjlqUi1iR3haeFExOGdwaGUyMDBFYkxoa1ZSV0FMcUtRWU9CQ19hajU2bjRkQWt6ZllHWGRqdkVtVDVvYXZpRHMtMU55OE1mdDF2cUtF?oc=5",
-   "title": "Investasi Perdana Sandiaga Uno Borong 9,51 Juta Saham MUTU Nyaris Rp1M",
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
@@ -487,6 +466,27 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ1ZMSVVldWlBV1JES2VINlVtU18tSUNYdGlrUzlJRzJNZTJNX1BFOEU1aEFXdmhzQ3JoUjNMOFVlQnowQi05VGJUMXpYZkhVWkY2cXBiamZZQTZwV0VCeUZUYk00N244RUhFNTAtbnlKaXV1X2toc1YwSFpXWGltNC1QYjZYYTRGVkJDWjYxSEo3di1EcEd4MFVmTzRnVW1Md0RXTU1LdlI0ZlVBM3gwa9IBqgFBVV95cUxQRDE2U1RGbjlCSWRIMURjQzhjUGQ2cE5Vc3d5SGRFakVCbkxKcHV3Y1BMUC1vaUhqbWlfejQyS0xoaEd2cHRnaWh2Q21CNjJYNmVJaFFrVmFranZlT3U4d2tMcUJJWTVWeVVyZDQ1YmlBbEVCbFAwZ24ycEF6cmljMWZfV3BoLWpmVWZzYWVGY1JHNWJ6VjdiWFRSWGtZMFpWNG91Q05xNlA3UQ?oc=5",
    "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
    "first_seen": "2026-11-02T08:58+07:00"
+  },
+  {
+   "id": "ea7b28c0f470",
+   "date": "2026-10-30",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUUFTZXRnS3F4aG5sM09OakxQN1VhTTRsNEtWNTBpNFhPX0gtdXlZM2RsZUR2bHNHalQ0ZWotQjk1dC13SFFxRUJ5S1BSZGFRRk9hS1psLTFSQQ?oc=5",
+   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
+   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "94c4d4903b42",
@@ -739,6 +739,27 @@
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XcWt3UnZtem5GUWRMcHREaHg0b2d6TTJTbEpLQzJDWWtQNWRYOGgzbUxaS1pPcElna1B6dHN2UkJyWkpERzJsOWhZZlRfUEhCVVZKSkNTVUhDSDlzZllHMnNfbUgzVC1MU0ozZkVRSS1qUkk?oc=5",
    "title": "Supra Sekuritas Akumulasi Saham DSSA dan CUAN yang Disanksi OJK",
    "first_seen": "2026-11-02T11:56+07:00"
+  },
+  {
+   "id": "2efd5c2d6e67",
+   "date": "2026-10-29",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9510000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVVLeTdCeGVsUU1BY0hFa1JMMXV0akRGblYyTnpIYmNTRlpldGxKWHptVGhYQzhUc2NMbXVhZVAydldTelNHOXdCemJoMF9ZOXM2NDZudVJoU2NDbWp0RUJyWkVhVFJLOTMyaWpDYTlTeWE0SkZMamZqSGt6WkpRaWlUbFRudmNodnpMVENLZjczYkNwU0ZnRDBaczA5dw?oc=5",
+   "title": "Investasi Perdana Sandiaga Uno Borong 9,51 Juta Saham MUTU Nyaris Rp1M",
+   "first_seen": "2026-11-02T08:58+07:00"
   },
   {
    "id": "079673a1f101",
@@ -7315,6 +7336,11 @@
   }
  ],
  "net_by_code": {
+  "AVIA": {
+   "net_shares": 2883970000,
+   "net_value": 2086000000.0,
+   "count": 6
+  },
   "ARKO": {
    "net_shares": 9615000,
    "net_value": 0.0,
@@ -7355,20 +7381,15 @@
    "net_value": 0.0,
    "count": 26
   },
-  "MUTU": {
-   "net_shares": 47530000,
+  "GOTO": {
+   "net_shares": -1740000000,
    "net_value": 0.0,
-   "count": 5
+   "count": 13
   },
   "RAAM": {
    "net_shares": 1111300,
    "net_value": 0.0,
    "count": 4
-  },
-  "GOTO": {
-   "net_shares": -1740000000,
-   "net_value": 0.0,
-   "count": 13
   },
   "HRTA": {
    "net_shares": 41300000,
@@ -7394,6 +7415,11 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 12
+  },
+  "MUTU": {
+   "net_shares": 47530000,
+   "net_value": 0.0,
+   "count": 5
   },
   "MMIX": {
    "net_shares": 0,
@@ -7674,11 +7700,6 @@
    "net_shares": 9800,
    "net_value": 0.0,
    "count": 2
-  },
-  "AVIA": {
-   "net_shares": 2876970000,
-   "net_value": 0.0,
-   "count": 5
   },
   "ADRO": {
    "net_shares": 470000,
