@@ -1,10 +1,157 @@
 {
- "updated": "2026-11-03T10:48+07:00",
+ "updated": "2026-11-03T11:50+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 95
+  "news": 94
  },
  "transactions": [
+  {
+   "id": "62bc4e160427",
+   "date": "2026-11-03",
+   "code": "MSIE",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 3000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 1.98,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
+   "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
+  {
+   "id": "87a487f599dc",
+   "date": "2026-11-03",
+   "code": "ISSP",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 2450000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM0pDVTdhWWZ5eUdyWUh4WEVCSllnVnNLc0JOLVZEZHp4U2VoZTFmZ2V1c0wzVlZjNGRjZ0IyNDZMMnl0M1oxdFBNUUdvV3ctVTRYMjBfemxZbkpwN00zQ3VYZ3RYVVZuNE1WbzMxdG12T3I2eF9keFdCTmFocEtqZWxMcGlTMloyUXM3WXpRQ0RmUUhhd2l0Tk1EUm5hY2t2Nk1vRUloc2RGY2d0SWlIQ3VjSEtNSXdEaHZSMGoySQ?oc=5",
+   "title": "Cakra Bhakti Para Putra (Pengendali ISSP) Borong 2,45 Juta Saham, Kepemilikan Makin Tebal!",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
+  {
+   "id": "d71011badc8f",
+   "date": "2026-11-03",
+   "code": "ARKO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 2190000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 38.98,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOY2cweVJQVUtWbGRjZ3daNmhrZk5nTERPTnJJcGkxemFZQTFlSlNlWWV4bnNfWkgyN01maThPUDVyUkxCR2RxU2JJQTI0SWU3U0FEOHhISlhEcVN2N1NKcVFqVUx1RWVPMTZGMzdzYk1ucGI1ZWtDSzk3cnJydkF4SXdUcHJLQWI3RTZfM1VuNVVEU3RELWt6RUhCaUJORkROYnppeHJieEhsUXBONk9DcVM2b2g?oc=5",
+   "title": "Borong 2,19 Juta Saham ARKO, Pemegang Saham Kakap Tambah Kepemilikan Jadi 38,98%",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
+  {
+   "id": "3bcf919e37e8",
+   "date": "2026-11-03",
+   "code": "EMTK",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "nya",
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZFUwTXhlZ0JRZ2tPaGJ0ejZpVE1yMTV4ODRjeXlvZmRXVjJqWFM0aExzS3JUVkoyR3RQczRqVDV1Z1hoam0tZFdrMDhKVzZsZUxnR0V6Tm1NbS0tSTVzeFFiMzFOMkpENnRMTzNWUlBqTkc3SFBvSjhpVFNZbWNDUW1oX0tDa2ZuWWRvN0Vvd1h5WjgzZlliNw?oc=5",
+   "title": "EMTK divestasi 99,998% saham Indopay, ini tujuannya",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
+  {
+   "id": "7016c92af2dc",
+   "date": "2026-11-03",
+   "code": "PGAS",
+   "party": "Beli",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Liputan6 Saham",
+   "link": "https://www.liputan6.com/saham/read/8327223/3-direktur-pgn-beli-saham-pgas",
+   "title": "3 Direktur PGN Beli Saham PGAS",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
+  {
+   "id": "a290cc17064b",
+   "date": "2026-11-03",
+   "code": "PEGE",
+   "party": "Optimus Vision Global Pte. Ltd",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 10090000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/85764-2/",
+   "title": "Optimus Vision Global Borong 10,09 Juta Saham PEGE, Kini Miliki 6,66%",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
+  {
+   "id": "66828c3f165a",
+   "date": "2026-11-03",
+   "code": "EMTK",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "investor.id",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONENDanpBdkxyQm8xNGpDbXU2c2o5cWJ1TFBOUDRwVjlUSkZQMUpOd1pSSE5VaGdNSG5rbXFoU0VlMTB6c3dpeG9FNGJpM29pM2g2X3ZnOURZMFdsX2pMUGtldlRpcTNEaVlHYVFlUVFYRmU0SU1XV0hXYWpmM2RFUFVR?oc=5",
+   "title": "EMTK Lepas Saham Indopay Merchant Services",
+   "first_seen": "2026-11-03T11:50+07:00"
+  },
   {
    "id": "84d9a990ec0a",
    "date": "2026-11-03",
@@ -252,8 +399,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Koridor.co.id",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBINmx5SFFLMFVidlFGMUdLN1dPT1BIdEQ1b3lNVVRMU3VxaU5Xd1RVOWtZZ3FtVFdkbVMtOHBOaklSSjJJRTdCWE1LOHYwMGZmY1lsVFY3NEZ4MG5GcWpTQUp4aWNNOHdwSlg0?oc=5",
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzVU8xTFl0QXNxRDM5OUJiNFgxR0ZvQkk1eVBIVXFndGdpMGM1aV81cHEyZmZBa25XTkozbWRPZ201bnJSTVZtaFpEQ0UydUlwcDVHeHgwMk9rUFA5dGlBMGs1dmFwWmI0N2poVVdJMA?oc=5",
    "title": "Robert Tanoko Borong 7 Juta Saham Avia Avian Senilai Rp 2,07 Miliar",
    "first_seen": "2026-11-03T08:56+07:00"
   },
@@ -594,13 +741,13 @@
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
-   "id": "fcbbe14a7bf0",
+   "id": "ea7b28c0f470",
    "date": "2026-11-01",
-   "code": "GOTO",
+   "code": "MUTU",
    "party": null,
    "role": "individu5",
    "action": "beli",
-   "shares": null,
+   "shares": 9500000,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -609,10 +756,10 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Sumbardaily.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcHBaaWY4M05lRnFuY0FLZmpsY05xODhMZ0NDOC16UXY5WHE2TXM5ZUxSUU1QcHh4ZllwWk03MWJ3aWVtaG9OYXZub0JSWFVHZVJIZWh5SHVQdUdaVEd1WUVGdG85NkRWVDNUb3dFM0F0c3g5Wktmb09DQXUtdGVlcy11TVpUUTFNTkpOdUQtTHItd2FLWldMcGRZeFdsTlZWQzh5cE1CVDQ3VElZaWx0dFhINGfSAboBQVVfeXFMTjNQMzRsMXNGMU11ckV1YjUyT3RvY1ZQRUplNFZENXlwNXp2RktST2RzaC11YUZ5R1hDVHFIblZUVWRROTRhckFkZGpacFpuUEFxS2d0Tm50c1BiZURKOExROU1XcEVtV3FWYmNHbVlBYW5NYk5ZRTdWZmNqbkZkNkJoM1BOUDN3eUxfMVdOSzljaFNlM1VWOHFQRllXWFpEY3RPeDNNX3pkRUJiakVtZmN5ZmpoNVVUMEtR?oc=5",
-   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
-   "first_seen": "2026-11-02T08:58+07:00"
+   "source": "BertuahPos",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWN3Rkk5TUVjUzE5cjc0b2ZFcEFQc0F4c2d3UG42b1ZCSkFBMmhUOEV3ZTJvcjFkazJCY2V3ckdzUDU0Ti1GOUVhVWF1Y1U3UU1SS2RuNVE5QTBwanFWLUNSMFN2a2E4blZJSWNJd1FEU01YN2t4RExzS3R6LTNTNHIya1JDZUlCVmZnUVUtVHNaV2dVZ0sxNw?oc=5",
+   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
+   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "89d17e706518",
@@ -634,6 +781,27 @@
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmQU5NNGdiZk9FR0hfZTRRS2xWZmQtQnluc0JtZ2hVdGdJVnhCN214X0xaV0hjR1dRcDlicG9ScGtfN3praHJxNllBeXI2TlBvcVh1SjBpUlRuQTUyMDBHcHQ5Z044V3dtSENRTmNR?oc=5",
    "title": "Ram Punjabi Borong 918.300 Saham RAAM",
    "first_seen": "2026-11-02T12:58+07:00"
+  },
+  {
+   "id": "fcbbe14a7bf0",
+   "date": "2026-10-31",
+   "code": "GOTO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koropak.co.id",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRXJXQ0RfcmNFbWF0LTNqdnp4X0UzM3VTVnZLaGtjSm9MM0NkZ0xLMzlWSlREYXJERVZPNmJDMDJUUU5lRXhTQlA0SXF3eUpLQmZuV25fdFFHRFkyU0FDN1NQR3RORXN5Zk8wb3pZVmMwMGk1REhtMnBROTBQMXIyNTFqU2Z6WmVsMXJJdHV2Y2hQRnR3S05ld21NNGNoanhwMUNnbno2YWZRVGVqU3B5clpBcTJjX0XSAbwBQVVfeXFMTXNrTV9vdVhTOW50NHdtanROUDNiSi1WTzFnOGo3SkdxQWFRSng2ZW9YS2tkSGNTRlJuZUFENGN5dDBhVm1lWUROX0dmMWQ3WlFLa1FxQkpXVDdNTjNLTURnSHlPTXRkdVUzUmpDS184LUdIWS1ZNmhQZVlQam10bGFBMkxjVDcyZmlYMTJmZ2IzU1NJVVRVSTdWZUZpc2RNNW5hSzNWQTM2WGhnRDl1MzQxcEVmbGwtZnpoV3E?oc=5",
+   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
+   "first_seen": "2026-11-02T08:58+07:00"
   },
   {
    "id": "3198e19e7a8f",
@@ -886,27 +1054,6 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ1ZMSVVldWlBV1JES2VINlVtU18tSUNYdGlrUzlJRzJNZTJNX1BFOEU1aEFXdmhzQ3JoUjNMOFVlQnowQi05VGJUMXpYZkhVWkY2cXBiamZZQTZwV0VCeUZUYk00N244RUhFNTAtbnlKaXV1X2toc1YwSFpXWGltNC1QYjZYYTRGVkJDWjYxSEo3di1EcEd4MFVmTzRnVW1Md0RXTU1LdlI0ZlVBM3gwa9IBqgFBVV95cUxQRDE2U1RGbjlCSWRIMURjQzhjUGQ2cE5Vc3d5SGRFakVCbkxKcHV3Y1BMUC1vaUhqbWlfejQyS0xoaEd2cHRnaWh2Q21CNjJYNmVJaFFrVmFranZlT3U4d2tMcUJJWTVWeVVyZDQ1YmlBbEVCbFAwZ24ycEF6cmljMWZfV3BoLWpmVWZzYWVGY1JHNWJ6VjdiWFRSWGtZMFpWNG91Q05xNlA3UQ?oc=5",
    "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
    "first_seen": "2026-11-02T08:58+07:00"
-  },
-  {
-   "id": "ea7b28c0f470",
-   "date": "2026-10-30",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9500000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUUFTZXRnS3F4aG5sM09OakxQN1VhTTRsNEtWNTBpNFhPX0gtdXlZM2RsZUR2bHNHalQ0ZWotQjk1dC13SFFxRUJ5S1BSZGFRRk9hS1psLTFSQQ?oc=5",
-   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
-   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "94c4d4903b42",
@@ -1197,8 +1344,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR1FSdFh5RXE4bXBaRDJleW90M0RoLU5reHFFNTB1YzNkZlJxSzZHdUUzb0RIcExTWm5XaS1pY2g3aG5DTDBDR1l0OWx5aXlIOGtaaEV0RlAybXBWY3ZzOHo2MzlRbV9NQ2lJeDNhMFpPalcwVnV3WmF1eFZESDFCWXlFTDEtTjVpVllJb3lCdzZDQlJTMGZXcVZ4Y00zWEx3VVIwbkFTRUhCUlJHU0VONUZCMNIBrAFBVV95cUxQY2tiWG5peTFJZHRxVkc4clYtVmlZLTZDWl9RQjlVazF0RmRSWWVEOW11TjBUNGpZTXRaNGhSU1R6dFhOejBHZ1lRaFhpM1Q5UHBlT0kwMjg2WVFmMmtRYTNqNEtkV29LRTRRNUNfamRWX1ltMTQxUEc2S2U5YzRfY0p3ZGlGM0JjSXRncENIMG1jRFdHUlFGTmduTU1FMVRvcFFiVnhJZUlheWJE?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPaHVGX1VMV05qSVVuNVFaUUYwSmF2QlB2TllXbUJ0MlF1a0VXSU9MNTNYNUIwSHEzaTlQMVB3VDk1c2NCVjBJM0wtX2dwbmZRNlNWRDRkc0VnV01pN3NjWDZYbExhRWs?oc=5",
    "title": "Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah",
    "first_seen": "2026-10-30T08:53+07:00"
   },
@@ -1386,8 +1533,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdF84bUcxU2JYRWd4TVEzODROWktqRzVKZFhVZnlUX3BldWQ4QnJJbTV6LXl3NE43Y1Jzb0dOYXhGLUdIWHVuREFjYm9SQU85VkZlQ2kxMVVYSE1OQ0dlTDFST2lQSXM0Y0pPc2c4OS1Sdjh6ZG5tXzJrbDVaUXBYYkVXdTNvVWJocFdRcE1tWklkSHZjQ3ZUcHlyeEhsNzjSAZgBQVVfeXFMTkFGSkUwbVpzT1RQQzZ1dm8tbDVWOWh1R2g4cHBhRHpTSFRMcUptUEV3UzZVbldfN0xMaDQ5Z2tqbUo1dVBMWkMtMGo1bHZQWXp0c3hYbW5WR3N2eVZyeXM5eVhpRU1GX000LXVLVUFfX05WY21aRlFvWHlHamFIbWdFWm5NTXVpZmZlYmQ2cFlHVHpoZFRtWjQ?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0wT1Y5YU5RRXR0ZDUtRDcyMG1ZNmt0NEtYemlJR3dqU1NuWGlqb2ViVS1VRk5qbmZvUWZVS0s5NGZrME9WcDc1MUZ5WkJnWl9vSFdmWENTUEJ5QUZWTnJzMmlGVWR6Zw?oc=5",
    "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
    "first_seen": "2026-10-29T17:21+07:00"
   },
@@ -7735,15 +7882,40 @@
   }
  ],
  "net_by_code": {
-  "AKPI": {
-   "net_shares": -824100,
+  "MSIE": {
+   "net_shares": 6500000,
    "net_value": 0.0,
-   "count": 8
+   "count": 2
+  },
+  "ISSP": {
+   "net_shares": 2450000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "ARKO": {
+   "net_shares": 11805000,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "EMTK": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 4
   },
   "PGAS": {
    "net_shares": 25000,
    "net_value": 32375000.0,
+   "count": 4
+  },
+  "PEGE": {
+   "net_shares": 18150000,
+   "net_value": 0.0,
    "count": 3
+  },
+  "AKPI": {
+   "net_shares": -824100,
+   "net_value": 0.0,
+   "count": 8
   },
   "SINI": {
    "net_shares": 0,
@@ -7790,11 +7962,6 @@
    "net_value": 0.0,
    "count": 3
   },
-  "EMTK": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
-  },
   "IATA": {
    "net_shares": 663230000,
    "net_value": 0.0,
@@ -7804,11 +7971,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 4
-  },
-  "ARKO": {
-   "net_shares": 9615000,
-   "net_value": 0.0,
-   "count": 6
   },
   "TPIA": {
    "net_shares": 2000000,
@@ -7909,11 +8071,6 @@
    "net_shares": -10000000,
    "net_value": 0.0,
    "count": 19
-  },
-  "ISSP": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "BCIC": {
    "net_shares": 4300,
@@ -8174,16 +8331,6 @@
    "net_shares": 5500000,
    "net_value": 5940000000.0,
    "count": 7
-  },
-  "PEGE": {
-   "net_shares": 8060000,
-   "net_value": 0.0,
-   "count": 2
-  },
-  "MSIE": {
-   "net_shares": 3500000,
-   "net_value": 0.0,
-   "count": 1
   },
   "FOLK": {
    "net_shares": 0,
