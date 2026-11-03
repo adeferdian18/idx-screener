@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-03T12:51+07:00",
+ "updated": "2026-11-03T13:59+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 95
+  "news": 93
  },
  "transactions": [
+  {
+   "id": "35102a69aace",
+   "date": "2026-11-03",
+   "code": "ABMM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNN Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbG8ya09YY3NZa081eUx0MTMzVTFhTlVQaWNDeE16dlNIZm85RWJvSXlPYWlMOFZDYlZtazVHLXAwNExRaGxMdVlValdrME1aWnB6NlE1dk9PSF9EREdZYlRyVzFuWV9oNDNVQkJuQXRHRWVOTzRHZG84Zk1iQk1tTHQ5TVJFdXkyQlhSZmxKVExZdVhhY3gwbDR1TXFyX1VFYVZES0xlazVsTVhlay1nU1JGZXRqZlpMZ1lJM0NjVVFMY3RYbmozcdIByAFBVV95cUxPbG8ya09YY3NZa081eUx0MTMzVTFhTlVQaWNDeE16dlNIZm85RWJvSXlPYWlMOFZDYlZtazVHLXAwNExRaGxMdVlValdrME1aWnB6NlE1dk9PSF9EREdZYlRyVzFuWV9oNDNVQkJuQXRHRWVOTzRHZG84Zk1iQk1tTHQ5TVJFdXkyQlhSZmxKVExZdVhhY3gwbDR1TXFyX1VFYVZES0xlazVsTVhlay1nU1JGZXRqZlpMZ1lJM0NjVVFMY3RYbmozcQ?oc=5",
+   "title": "Lo Kheng Hong Borong 8 Kali Saham ABMM, Laba Meroket 141 Persen",
+   "first_seen": "2026-11-03T13:59+07:00"
+  },
   {
    "id": "62bc4e160427",
    "date": "2026-11-03",
@@ -399,8 +420,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Demokratis.co.id",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzVU8xTFl0QXNxRDM5OUJiNFgxR0ZvQkk1eVBIVXFndGdpMGM1aV81cHEyZmZBa25XTkozbWRPZ201bnJSTVZtaFpEQ0UydUlwcDVHeHgwMk9rUFA5dGlBMGs1dmFwWmI0N2poVVdJMA?oc=5",
+   "source": "Koridor.co.id",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBINmx5SFFLMFVidlFGMUdLN1dPT1BIdEQ1b3lNVVRMU3VxaU5Xd1RVOWtZZ3FtVFdkbVMtOHBOaklSSjJJRTdCWE1LOHYwMGZmY1lsVFY3NEZ4MG5GcWpTQUp4aWNNOHdwSlg0?oc=5",
    "title": "Robert Tanoko Borong 7 Juta Saham Avia Avian Senilai Rp 2,07 Miliar",
    "first_seen": "2026-11-03T08:56+07:00"
   },
@@ -741,27 +762,6 @@
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
-   "id": "ea7b28c0f470",
-   "date": "2026-11-01",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9500000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "BertuahPos",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWN3Rkk5TUVjUzE5cjc0b2ZFcEFQc0F4c2d3UG42b1ZCSkFBMmhUOEV3ZTJvcjFkazJCY2V3ckdzUDU0Ti1GOUVhVWF1Y1U3UU1SS2RuNVE5QTBwanFWLUNSMFN2a2E4blZJSWNJd1FEU01YN2t4RExzS3R6LTNTNHIya1JDZUlCVmZnUVUtVHNaV2dVZ0sxNw?oc=5",
-   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
-   "first_seen": "2026-10-30T17:21+07:00"
-  },
-  {
    "id": "89d17e706518",
    "date": "2026-10-31",
    "code": "RAAM",
@@ -1054,6 +1054,27 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ1ZMSVVldWlBV1JES2VINlVtU18tSUNYdGlrUzlJRzJNZTJNX1BFOEU1aEFXdmhzQ3JoUjNMOFVlQnowQi05VGJUMXpYZkhVWkY2cXBiamZZQTZwV0VCeUZUYk00N244RUhFNTAtbnlKaXV1X2toc1YwSFpXWGltNC1QYjZYYTRGVkJDWjYxSEo3di1EcEd4MFVmTzRnVW1Md0RXTU1LdlI0ZlVBM3gwa9IBqgFBVV95cUxQRDE2U1RGbjlCSWRIMURjQzhjUGQ2cE5Vc3d5SGRFakVCbkxKcHV3Y1BMUC1vaUhqbWlfejQyS0xoaEd2cHRnaWh2Q21CNjJYNmVJaFFrVmFranZlT3U4d2tMcUJJWTVWeVVyZDQ1YmlBbEVCbFAwZ24ycEF6cmljMWZfV3BoLWpmVWZzYWVGY1JHNWJ6VjdiWFRSWGtZMFpWNG91Q05xNlA3UQ?oc=5",
    "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
    "first_seen": "2026-11-02T08:58+07:00"
+  },
+  {
+   "id": "ea7b28c0f470",
+   "date": "2026-10-30",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUUFTZXRnS3F4aG5sM09OakxQN1VhTTRsNEtWNTBpNFhPX0gtdXlZM2RsZUR2bHNHalQ0ZWotQjk1dC13SFFxRUJ5S1BSZGFRRk9hS1psLTFSQQ?oc=5",
+   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
+   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "94c4d4903b42",
@@ -1492,7 +1513,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Riau Satu",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTVYxQ0Z4ZDliNXhDRm5rX0lQdGZ1YURjUWdKYkViT2ZIRC1JaDdvbEJZZVh3OWZLc3d4bFI2c0EtelRlMENCUGNmWHlkOUR3VVpzVHVVR0NQUTJSUk45cGpSUTV0c2MtcmctbEdTem9Dc0IzaFZMQlBIZ2pnblY2aGdJd3I4SjNBdTMyMHZ5SU5hZDV0MHN6X2lybzRvNkh3b3YwMlZlUmh3WGNIR0JabTNfTkpER1k4c3hkcXN0Y2FSOVJjWGllZjhFM25wZ9IB0wFBVV95cUxQMXpFdmdLX2JzdEhCaElPcDAtZkNfZVFxbFlLSmVmWkE4UjM2blVGenZwclAwTkNYQ3ItWVNzblBrTlNHZjJBd2pJUGFXS2ZIMzM3RjB0NzZUZzh1bE1vMlFHYkNrU1NCUzRyTEdEZnRtTE5fUTFPQ015RFhPVG5zNDAtM0VCSVB3ZE1WRUlQZFNQNDd1TWE3N05oZG5IVzNWcl8tRlh2c0dFUWdmZlM4UFVEcnhEMU02b2hhaVlCZ1NDV3lCWmlxQ3ZnMTFRRFFuX01Z?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMXpFdmdLX2JzdEhCaElPcDAtZkNfZVFxbFlLSmVmWkE4UjM2blVGenZwclAwTkNYQ3ItWVNzblBrTlNHZjJBd2pJUGFXS2ZIMzM3RjB0NzZUZzh1bE1vMlFHYkNrU1NCUzRyTEdEZnRtTE5fUTFPQ015RFhPVG5zNDAtM0VCSVB3ZE1WRUlQZFNQNDd1TWE3N05oZG5IVzNWcl8tRlh2c0dFUWdmZlM4UFVEcnhEMU02b2hhaVlCZ1NDV3lCWmlxQ3ZnMTFRRFFuX01Z0gHTAUFVX3lxTFAxekV2Z0tfYnN0SEJoSU9wMC1mQ19lUXFsWUtKZWZaQThSMzZuVUZ6dnByUDBOQ1hDci1ZU3NuUGtOU0dmMkF3aklQYVdLZkgzMzdGMHQ3NlRnOHVsTW8yUUdiQ2tTU0JTNHJMR0RmdG1MTl9RMU9DTXlEWE9UbnM0MC0zRUJJUHdkTVZFSVBkU1A0N3VNYTc3TmhkbkhXM1ZyXy1GWHZzR0VRZ2ZmUzhQVURyeEQxTTZvaGFpWUJnU0NXeUJaaXFDdmcxMVFEUW5fTVk?oc=5",
    "title": "Sekuritas Afiliasi CIO Danantara Borong Saham DSSA dan CUAN, Keduanya Terseret Sanksi OJK",
    "first_seen": "2026-10-29T17:32+07:00"
   },
@@ -1765,7 +1786,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT3FYYVRUYUtBQVVWWlN3azYtbjltbU05akRVb0hKejJpdk9GNTJjbDJFRFh5LWx5VnoxQTlOSUVVbmNiaURuV0NpNUl0THVjMTlpTG1rUWxscTZzRlNSTUJHYi0xSjhTeWZFZm9SMl9UN0JXMG43c0gwdk9lMVZDdTQyMmFYU3A2ZmZMY2doMDVGekZ6anBsczgxU3hCNTNTLXEwakFzdkpJOG5kZDdPbUo1ZzV4TVkzV0FYSmxBMmFJYzhlX3EzedIBzgFBVV95cUxNME9UUkYwNmNQMS1iTjR3TkdJQTJydHZWVVFmZGM1SXl1Szh1ZEs0dDFtVTJrck1LWkNYR1FuRGVpRHVNV0xfQjJTZzFoM0hQLWFBV0FPanRjOWMxVElDVk1zMER6cDlQMU8yX2lKLVBENUJzLTBMbUdGdTQ4R0NNVGwzUGVwZ3lfa1V6Qm5iQ21NcGFjSUs5LVhpOWY1X2FHUUpzeXUtSnFCb3V4OGFnaHMzOEV1dVg5XzEtdzBtZEpoWHBJellkTE5PanoyUQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT3FYYVRUYUtBQVVWWlN3azYtbjltbU05akRVb0hKejJpdk9GNTJjbDJFRFh5LWx5VnoxQTlOSUVVbmNiaURuV0NpNUl0THVjMTlpTG1rUWxscTZzRlNSTUJHYi0xSjhTeWZFZm9SMl9UN0JXMG43c0gwdk9lMVZDdTQyMmFYU3A2ZmZMY2doMDVGekZ6anBsczgxU3hCNTNTLXEwakFzdkpJOG5kZDdPbUo1ZzV4TVkzV0FYSmxBMmFJYzhlX3EzeQ?oc=5",
    "title": "Mandiri (BMRI) Jual Saham Inhealth ke IFG Life Senilai Rp570 Miliar",
    "first_seen": "2026-10-29T08:53+07:00"
   },
@@ -7882,6 +7903,11 @@
   }
  ],
  "net_by_code": {
+  "ABMM": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 5
+  },
   "MSIE": {
    "net_shares": 6500000,
    "net_value": 0.0,
@@ -7966,11 +7992,6 @@
    "net_shares": 663230000,
    "net_value": 0.0,
    "count": 1
-  },
-  "ABMM": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 4
   },
   "TPIA": {
    "net_shares": 2000000,
