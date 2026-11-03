@@ -1135,7 +1135,7 @@
 "TMPO": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-26"
+"diambil": "2026-11-03"
 },
 "ERAL": {
 "status": "sebagian",
@@ -1156,7 +1156,7 @@
 "IDEA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-27"
+"diambil": "2026-11-03"
 },
 "AGII": {
 "status": "sebagian",
@@ -1258,5 +1258,21 @@
 "status": "data kurang",
 "skor": null,
 "diambil": "2026-11-02"
+},
+"WINS": {
+"status": "sebagian",
+"skor": 1,
+"kuartal": "2026-06",
+"laba_yoy": -0.3027,
+"penjualan_yoy": 0.2507,
+"margin": 0.1412,
+"margin_lalu": 0.2533,
+"akselerasi": false,
+"cek": {
+"laba": false,
+"penjualan": true,
+"margin": false
+},
+"diambil": "2026-11-03"
 }
 }
