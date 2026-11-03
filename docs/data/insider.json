@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-03T15:17+07:00",
+ "updated": "2026-11-03T16:23+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 85
+  "news": 90
  },
  "transactions": [
+  {
+   "id": "8570a0bc5088",
+   "date": "2026-11-03",
+   "code": "ISAT",
+   "party": "Indosat",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "infodigital.co.id",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONnJ4d1VkUVNzSDhBbXYzdVJZSjhZQ0NGVXdha19yQzFHYmFzR0pxUkotUTF1cGt2bHhjZHB1bmJ4UmpYZnE3bllJTm94akpkNmsxSjNPSG42bXFMNW5QaG85TTFDaHRCaUN0MEgxZkdhbVR2bXYzZm1KVUZ0Q1RJZkFtNWlLSl9Rd3ZnODhyTXkzXzl4MGNzNUJ3c3pRWHh0czc3UtIBmgFBVV95cUxOalhyanBvWjJqWFFVNnRrMV91elRjRUt0SC1BdHdkMVhTd1RTRklMeWE4SjRSZFFXdFlJVU1hbVFrODNLU2NJb094NG9WWjdUdm5SbTdZXy0xU3hDcEJRTVFXR1FzOGY1UmdrNE9GbHFtT3d5NEE2TVhSa3YxQVdoSkx0Um9QYXQ3MVFhUjNVQW5LZ2ZhWVVDdXhB?oc=5",
+   "title": "Dirut dan Direktur Indosat Borong Saham ISAT, Ini Rinciannya",
+   "first_seen": "2026-11-03T16:23+07:00"
+  },
+  {
+   "id": "da917999332b",
+   "date": "2026-11-03",
+   "code": "AKPI",
+   "party": "Henry Liem Pangkas Kepemilikan",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 924000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 0.567,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUFBRNjZuTTRsM3JZTmxMU0FuZkg2NEFWMWgyVjBnUFZnTFU0T0lWSjZaZmVpZG5IZUNQd09HRFpWc0VlMHhkVHJneXUza21yQmN2RlV3VndndkNXeUw2cXRTVk9vb1p4UFNJQTdLS3BxSDZEbm9ZRllXT0NNbEdXNWZIUmctaXFKTmxGZmtCb2xOVGFuX2RMSHZ5QzROaV9XTU90UlMxcEktUW1oUmNlM3JzZU90aktFbVlpRUc4aEl3cnZMRW8wTTRGZjU5V3M?oc=5",
+   "title": "Jual 924 Ribu Saham, Beli Cuma 4.300 Saham! Komisaris AKPI Henry Liem Pangkas Kepemilikan Jadi 0,567%",
+   "first_seen": "2026-11-03T16:23+07:00"
+  },
+  {
+   "id": "6b14f456966b",
+   "date": "2026-11-03",
+   "code": "FOLK",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 73650000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYllrdkE2cXlGanpLdWNyejJJZWF5dkc3czZCdFE0WFhuNE4ybThQVVhKVkxfQUd2b1c2d2g1VGFyUElFRnVjQjljM256dVVtUjZIYzdLbDZReTZVY0lzSEhaaVhmN0hYUWxZb1U3MDJTeHVEdHJ4MVVGelJsM1kwWUVDdTAwTnd4ajlFU2NJQzg5ZHFPcWlLbEl4azdPXzhmVWd6Wk53cXZNOEFURHZZLTVVWHRESzg?oc=5",
+   "title": "Divestasi 73,65 Juta Saham FOLK, Kepemilikan Sumber Garam Pratama Anjlok ke 18,36%",
+   "first_seen": "2026-11-03T16:23+07:00"
+  },
   {
    "id": "a504454d4be8",
    "date": "2026-11-03",
@@ -156,8 +219,8 @@
    "id": "a290cc17064b",
    "date": "2026-11-03",
    "code": "PEGE",
-   "party": "Optimus Vision Global Pte. Ltd",
-   "role": "korporasi",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
    "shares": 10090000,
    "price": null,
@@ -168,8 +231,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/85764-2/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBjMXVNOHJkMnFMTjVLLWUyTVk5U3piUUxIeDdZYjRzbjR3T21mZE1Ua2VBNGNoR1pqdTFiUTA3SllOMVpz?oc=5",
    "title": "Optimus Vision Global Borong 10,09 Juta Saham PEGE, Kini Miliki 6,66%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -783,27 +846,6 @@
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
-   "id": "fcbbe14a7bf0",
-   "date": "2026-11-01",
-   "code": "GOTO",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Sumbardaily.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcHBaaWY4M05lRnFuY0FLZmpsY05xODhMZ0NDOC16UXY5WHE2TXM5ZUxSUU1QcHh4ZllwWk03MWJ3aWVtaG9OYXZub0JSWFVHZVJIZWh5SHVQdUdaVEd1WUVGdG85NkRWVDNUb3dFM0F0c3g5Wktmb09DQXUtdGVlcy11TVpUUTFNTkpOdUQtTHItd2FLWldMcGRZeFdsTlZWQzh5cE1CVDQ3VElZaWx0dFhINGfSAboBQVVfeXFMTjNQMzRsMXNGMU11ckV1YjUyT3RvY1ZQRUplNFZENXlwNXp2RktST2RzaC11YUZ5R1hDVHFIblZUVWRROTRhckFkZGpacFpuUEFxS2d0Tm50c1BiZURKOExROU1XcEVtV3FWYmNHbVlBYW5NYk5ZRTdWZmNqbkZkNkJoM1BOUDN3eUxfMVdOSzljaFNlM1VWOHFQRllXWFpEY3RPeDNNX3pkRUJiakVtZmN5ZmpoNVVUMEtR?oc=5",
-   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
-   "first_seen": "2026-11-02T08:58+07:00"
-  },
-  {
    "id": "89d17e706518",
    "date": "2026-10-31",
    "code": "RAAM",
@@ -823,6 +865,27 @@
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmQU5NNGdiZk9FR0hfZTRRS2xWZmQtQnluc0JtZ2hVdGdJVnhCN214X0xaV0hjR1dRcDlicG9ScGtfN3praHJxNllBeXI2TlBvcVh1SjBpUlRuQTUyMDBHcHQ5Z044V3dtSENRTmNR?oc=5",
    "title": "Ram Punjabi Borong 918.300 Saham RAAM",
    "first_seen": "2026-11-02T12:58+07:00"
+  },
+  {
+   "id": "fcbbe14a7bf0",
+   "date": "2026-10-31",
+   "code": "GOTO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koropak.co.id",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRXJXQ0RfcmNFbWF0LTNqdnp4X0UzM3VTVnZLaGtjSm9MM0NkZ0xLMzlWSlREYXJERVZPNmJDMDJUUU5lRXhTQlA0SXF3eUpLQmZuV25fdFFHRFkyU0FDN1NQR3RORXN5Zk8wb3pZVmMwMGk1REhtMnBROTBQMXIyNTFqU2Z6WmVsMXJJdHV2Y2hQRnR3S05ld21NNGNoanhwMUNnbno2YWZRVGVqU3B5clpBcTJjX0XSAbwBQVVfeXFMTXNrTV9vdVhTOW50NHdtanROUDNiSi1WTzFnOGo3SkdxQWFRSng2ZW9YS2tkSGNTRlJuZUFENGN5dDBhVm1lWUROX0dmMWQ3WlFLa1FxQkpXVDdNTjNLTURnSHlPTXRkdVUzUmpDS184LUdIWS1ZNmhQZVlQam10bGFBMkxjVDcyZmlYMTJmZ2IzU1NJVVRVSTdWZUZpc2RNNW5hSzNWQTM2WGhnRDl1MzQxcEVmbGwtZnpoV3E?oc=5",
+   "title": "IHSG Anjlok 7 Persen Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
+   "first_seen": "2026-11-02T08:58+07:00"
   },
   {
    "id": "3198e19e7a8f",
@@ -1387,7 +1450,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPaHVGX1VMV05qSVVuNVFaUUYwSmF2QlB2TllXbUJ0MlF1a0VXSU9MNTNYNUIwSHEzaTlQMVB3VDk1c2NCVjBJM0wtX2dwbmZRNlNWRDRkc0VnV01pN3NjWDZYbExhRWs?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBES2RRU29pdnMtZmRTcWNzRzN6VjJhV3B3X0pPcHliYnFJdzlWbnAwdFd6bFVmYS1YcVQ5NjJyZlNMWTV5Z0l4T2NVMVJnazExRzJRcVAzT1JlVzBPNW12S1RyQVBBdw?oc=5",
    "title": "Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah",
    "first_seen": "2026-10-30T08:53+07:00"
   },
@@ -1494,27 +1557,6 @@
    "source": "Emitennews.com",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSE9DTHNMdWNtdXdIZTZMcXFFUllYWDktUldMQ1UyT29ObmVoN05ueDI5Wk13Zkp1M0QzSGdwMThMSVFmbXZkTDFuYm9ZVUFPdDNzdmx2aUg1M1VyYWhtMWVJWEltOGFIUlJFVUJnTmJpWk5Rd2xGa1htQWFVeUZNdDdaS01xaVBtVlhXcEszR0xWWkRtN1M5NA?oc=5",
    "title": "Tambah Saham, Cakra Bhakti Mantapkan Posisi Pengendali Spindo (ISSP)",
-   "first_seen": "2026-10-30T08:53+07:00"
-  },
-  {
-   "id": "3f99b6f77e4f",
-   "date": "2026-10-29",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9500000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZnYwOHJ2QWt2MGZXWjJFUi1tZndmbHNCZWZzVFF1Qkhwa3ZfWWY2Y1VYTGZZX1NRZzhOdHVvamx3dGprNGdEdHQxcVg0QXpaWl93SkNvbGJnc3lmaUs1czlNOE0tSEk3dlZuNGtuSFdINDhpNWdhdzJZMFlVRll4aW50SjNsX3FlSDNJNnBuTWphc2dwTjM4Yw?oc=5",
-   "title": "Anjlok 16% Sebulan Terakhir, Sandiaga Uno Borong 9,5 Juta Saham MUTU",
    "first_seen": "2026-10-30T08:53+07:00"
   },
   {
@@ -1917,6 +1959,27 @@
    "first_seen": "2026-10-30T12:19+07:00"
   },
   {
+   "id": "3f99b6f77e4f",
+   "date": "2026-10-28",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd3g1Smg3dHhUTHFLWnZJV2pSUldEbExLaTU4XzItZXpwdnN3RUZzc0xXTGxnb3hmVUxZa29EdFJyZHdSRXRJT1l1VWhqV2ZBblRvWTVJZ3N0ckJVS1dnNy1HTU9iQ2ZtOFRjdVh5WW1oSzBJQi1WRzNVM3A1TEE4V0J2T2NwQ3I5d0ZKcC1wRXYycHdFb2xqM2MyazRGZw?oc=5",
+   "title": "Anjlok 16% Sebulan Terakhir, Sandiaga Uno Borong 9,5 Juta Saham MUTU",
+   "first_seen": "2026-10-30T08:53+07:00"
+  },
+  {
    "id": "500e9fc3ba07",
    "date": "2026-10-28",
    "code": "BBCA",
@@ -2058,8 +2121,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12NTV3OUVDVG9HSXZPdTRrNVBjUTFfeXVhZlN3VldqR1J4TngzWlhPRHdiWlBVbDRVTkw2Um5Cd3NMX3pDUVNZZUJOS2R4LVpoYll3?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxVm9tQzQwd28wWkdScU9nNERFd0VWNHFGVVFXMTRxbTVGaFR6NnNFNnJROWYzQndyV1BnbHFjVHJvVXlUOElaVTBmeTk5Zm1IM2tiOVVGZ3BsakhLcUo4Sg?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX pada Oktober 2026",
    "first_seen": "2026-10-28T13:00+07:00"
   },
@@ -7924,6 +7987,21 @@
   }
  ],
  "net_by_code": {
+  "ISAT": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "AKPI": {
+   "net_shares": -1748100,
+   "net_value": 0.0,
+   "count": 9
+  },
+  "FOLK": {
+   "net_shares": -73650000,
+   "net_value": 0.0,
+   "count": 2
+  },
   "ANTM": {
    "net_shares": 6000,
    "net_value": 0.0,
@@ -7963,11 +8041,6 @@
    "net_shares": 18150000,
    "net_value": 0.0,
    "count": 3
-  },
-  "AKPI": {
-   "net_shares": -824100,
-   "net_value": 0.0,
-   "count": 8
   },
   "SINI": {
    "net_shares": 0,
@@ -8378,11 +8451,6 @@
    "net_shares": 5500000,
    "net_value": 5940000000.0,
    "count": 7
-  },
-  "FOLK": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "MPRO": {
    "net_shares": 0,
