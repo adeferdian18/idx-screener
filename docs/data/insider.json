@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-04T10:48+07:00",
+ "updated": "2026-11-04T11:53+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 81
+  "news": 80
  },
  "transactions": [
   {
@@ -262,7 +262,7 @@
    "date": "2026-11-03",
    "code": "MSIE",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -273,8 +273,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckdGTUh5cWFDUTRxbUZXa0tEb0pXb09JVzROdjRaZkJ6eDA4aEg3VDFzLW5wMVVzcTZEdUx4M3A4VXlvV0tQU3N0d2lrZ3JMSUZhdWtnVzh0aWVQUk01WHpnaGZkcC10aU05SGdXMDZfclVvNUVmVUxHckZWaTQtMlRLckM4MkRURnpJcXRvOWlrRkZWck8yaWNkbzEta05CUFI5LVV2ZkpvOUVUbTN4SDBFTFAzSW9i?oc=5",
    "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
