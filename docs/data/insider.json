@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-04T11:53+07:00",
+ "updated": "2026-11-04T12:54+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 80
+  "news": 56
  },
  "transactions": [
   {
@@ -10,7 +10,7 @@
    "date": "2026-11-04",
    "code": "MSIE",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -21,8 +21,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/permata-health-nusantara-borong-3-juta-saham-msie-kini-punya-218/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY2dtcmswVHg2RkMxOFhOZ3lWYVpUb3RvNmVXY0JHdVQxbGctY3Nzckk4ZFNBZ0dCc1NLczhKdWRFVGlqZ2xMbFBtN1huUVM5ZE42aFI2aGZ4TnJKVWVYZjVQd1lCRW9laXIwdDRfUl9TeHcxRndPdGg0Z2RWeXo5MUE2clQ0Zk5ESkVzeFJzWmQ?oc=5",
    "title": "Permata Health Nusantara Borong 3 Juta Saham MSIE, Kini Punya 2,18%",
    "first_seen": "2026-11-04T09:46+07:00"
   },
@@ -262,7 +262,7 @@
    "date": "2026-11-03",
    "code": "MSIE",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -273,8 +273,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckdGTUh5cWFDUTRxbUZXa0tEb0pXb09JVzROdjRaZkJ6eDA4aEg3VDFzLW5wMVVzcTZEdUx4M3A4VXlvV0tQU3N0d2lrZ3JMSUZhdWtnVzh0aWVQUk01WHpnaGZkcC10aU05SGdXMDZfclVvNUVmVUxHckZWaTQtMlRLckM4MkRURnpJcXRvOWlrRkZWck8yaWNkbzEta05CUFI5LVV2ZkpvOUVUbTN4SDBFTFAzSW9i?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
    "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -283,7 +283,7 @@
    "date": "2026-11-03",
    "code": "ISSP",
    "party": null,
-   "role": "pengendali",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 2450000,
    "price": null,
@@ -294,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM0pDVTdhWWZ5eUdyWUh4WEVCSllnVnNLc0JOLVZEZHp4U2VoZTFmZ2V1c0wzVlZjNGRjZ0IyNDZMMnl0M1oxdFBNUUdvV3ctVTRYMjBfemxZbkpwN00zQ3VYZ3RYVVZuNE1WbzMxdG12T3I2eF9keFdCTmFocEtqZWxMcGlTMloyUXM3WXpRQ0RmUUhhd2l0Tk1EUm5hY2t2Nk1vRUloc2RGY2d0SWlIQ3VjSEtNSXdEaHZSMGoySQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcXFNNmsxbjdLTWRZOVVWOW8yMTNrYkt5TV85Qmk2Y2hVTE4xMkl0eGUwT0ZqVlh5NUhVMlZaUmJiaWVKUV82cGUycENQcFAzU1hBT3pDREU0eEhpeWpkZEd4My1WMVVDSm1JMlZqOFFvc3BtTHlfVzZyVHJzNGxmVjZNTVFQT3AxRTFnaS0wcHI1U244WHRNY2NLMDY0RmxkdHUwTWc1UWRNUUJmTE5idWpuTFRNQWNxSkZj?oc=5",
    "title": "Cakra Bhakti Para Putra (Pengendali ISSP) Borong 2,45 Juta Saham, Kepemilikan Makin Tebal!",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -1114,7 +1114,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Cirebon Raya",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeWxaVWtTZEdmalJtWkFJLTRBUnE2U1Focm9MdU9KQmlXWW1DZUxiUkF0VnBVREk5VW9DcVF4WkJEOWM4VllRdWJlb0x6TF9GRU9nUVJ5Ty1uVXVaeGtReElxS0llZVNyczdzWGhDM0VHcXRLRkFCdC1QRTY0QXhFVFA5ampBejR1LVRMalZIeUU3d3FUcWh3SXl1VklfYUIzdE56TkZDVWtFbDd2Wkk1ZzdwZGZRb3lzb2xqckU3QVMwazBNR0lMdjl3Sm4yZkFrVFdZLUY0WFM2dlcxR3lz0gHfAUFVX3lxTE55bFpVa1NkR2ZqUm1aQUktNEFScTZTUWhyb0x1T0pCaVdZbUNlTGJSQXRWcFVESTlVb0NxUXhaQkQ5YzhWWVF1YmVvTHpMX0ZFT2dRUnlPLW5VdVp4a1F4SXFLSWVlU3JzN3NYaEMzRUdxdEtGQUJ0LVBFNjRBeEVUUDlqakF6NHUtVExqVkh5RTd3cVRxaHdJeXVWSV9hQjN0TnpORkNVa0VsN3ZaSTVnN3BkZlFveXNvbGpyRTdBUzBrME1HSUx2OXdKbjJmQWtUV1ktRjRYUzZ2VzFHeXM?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR25EQ0ZtT0lBeElpVkZkVm1ZZ0ZXVVRkU3pKeWYtUmRaVUhaaXF2NDZtSDREUjVLM09qSDF2YWJDUU9Ob2EyV2IwM1dnaDVhRm9zd0xrSjk4aVVpRkRYMjFES19hNjJ5UkZuLW9WSDI2TFBtc0Z0QVh5UlV5UDFPUVZRMW5INWxYUEVuUlVQZVJhS0txS0s5LUhrcnhHSlBYa0JRX21pS25JUUlUZU9BZEZ5ckJZRjBxSFNTeTd6UWJ4M2RSVWx5QXdxSWptczV10gHWAUFVX3lxTE8xcUl1UjhUODNJSE9MY0Z0R2REY3h3cWFPdFVKQmFTVFNLd2NMYzRERjYxMWJMY3VmUG5xaVVVMnZnQ3lmYkV3OFVWempFQ2hBT1ltcVV5dDNzRGxUWUVDT0NleW5CX0tnV21JZmRMa0RQT0NZMERTMnNZdks2cWdJd01yWEtsNHpYdmpwblhrSi12VFFWT0NDa19QT1JBUFFiYUJlS2RyR0E4blRnM2txSzJXdTREZk9qZWVEbjBPblJLQ1JsYkJrc0MtRHJWTXdmbHNILVE?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan Akibat Isu MSCI, Asing Malah Pilih Borong Saham GOTO dan BUMI!",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -1785,8 +1785,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdF84bUcxU2JYRWd4TVEzODROWktqRzVKZFhVZnlUX3BldWQ4QnJJbTV6LXl3NE43Y1Jzb0dOYXhGLUdIWHVuREFjYm9SQU85VkZlQ2kxMVVYSE1OQ0dlTDFST2lQSXM0Y0pPc2c4OS1Sdjh6ZG5tXzJrbDVaUXBYYkVXdTNvVWJocFdRcE1tWklkSHZjQ3ZUcHlyeEhsNzjSAZgBQVVfeXFMTkFGSkUwbVpzT1RQQzZ1dm8tbDVWOWh1R2g4cHBhRHpTSFRMcUptUEV3UzZVbldfN0xMaDQ5Z2tqbUo1dVBMWkMtMGo1bHZQWXp0c3hYbW5WR3N2eVZyeXM5eVhpRU1GX000LXVLVUFfX05WY21aRlFvWHlHamFIbWdFWm5NTXVpZmZlYmQ2cFlHVHpoZFRtWjQ?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0wT1Y5YU5RRXR0ZDUtRDcyMG1ZNmt0NEtYemlJR3dqU1NuWGlqb2ViVS1VRk5qbmZvUWZVS0s5NGZrME9WcDc1MUZ5WkJnWl9vSFdmWENTUEJ5QUZWTnJzMmlGVWR6Zw?oc=5",
    "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
    "first_seen": "2026-10-29T17:21+07:00"
   },
@@ -1869,8 +1869,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSGxYUHFpVVRqcld6ZFJEVUFJalYtM2IxYmhWb3VPZlhhbXVLdV9HSzZ4QVJ0N2VaWFdCVjJ0Y291OGctUkdtODRQQ1VqQW9USTZ4SmM3aHhjS0pDYTR4X25xalYwMkltMXlNSUYzMXNVc0tHYjFLOWFJRFV1RW9FcXJRdFJ5THhJc09IQVZod0h4RXYtdHFxSm9nRWRycndQUXloVkJzOHVPX2stX2ROSHFqTnQybFFQUEJ1eHVUU3FtRnZRdW5QWldIT0tWcW9N?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2hGakxSWk91S19YZTR2SktMOU1QamJaeWxOTTVUTlJDcWJoMDU5SU9Ea2lMMHV0YzRQUWloclhNSElmSEJpQ0lJMHZJSkdQY1BKLVYzekkydG9MTDl3SmxiWmg1SEJ5Yk1LNzQ5d2x0cHVydUJDSUptYUZyRi1Hc001OFdTOG5fQnBZZGJUTHpNOFNsVklwaVJoWG5mRTZQS0FZVXhIbkxJNHBobGloeDBtaDE5QWt6M1Z2aEIwS1hQWVBkeDVvenNWcw?oc=5",
    "title": "Komisaris Utama RELF Achmad Machlus Sadat Borong 81,69 Juta Saham, Kepemilikan Langsung Tembus 1,43%",
    "first_seen": "2026-10-29T12:17+07:00"
   },
@@ -2017,7 +2017,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT3FYYVRUYUtBQVVWWlN3azYtbjltbU05akRVb0hKejJpdk9GNTJjbDJFRFh5LWx5VnoxQTlOSUVVbmNiaURuV0NpNUl0THVjMTlpTG1rUWxscTZzRlNSTUJHYi0xSjhTeWZFZm9SMl9UN0JXMG43c0gwdk9lMVZDdTQyMmFYU3A2ZmZMY2doMDVGekZ6anBsczgxU3hCNTNTLXEwakFzdkpJOG5kZDdPbUo1ZzV4TVkzV0FYSmxBMmFJYzhlX3EzeQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT3FYYVRUYUtBQVVWWlN3azYtbjltbU05akRVb0hKejJpdk9GNTJjbDJFRFh5LWx5VnoxQTlOSUVVbmNiaURuV0NpNUl0THVjMTlpTG1rUWxscTZzRlNSTUJHYi0xSjhTeWZFZm9SMl9UN0JXMG43c0gwdk9lMVZDdTQyMmFYU3A2ZmZMY2doMDVGekZ6anBsczgxU3hCNTNTLXEwakFzdkpJOG5kZDdPbUo1ZzV4TVkzV0FYSmxBMmFJYzhlX3EzedIBzgFBVV95cUxNME9UUkYwNmNQMS1iTjR3TkdJQTJydHZWVVFmZGM1SXl1Szh1ZEs0dDFtVTJrck1LWkNYR1FuRGVpRHVNV0xfQjJTZzFoM0hQLWFBV0FPanRjOWMxVElDVk1zMER6cDlQMU8yX2lKLVBENUJzLTBMbUdGdTQ4R0NNVGwzUGVwZ3lfa1V6Qm5iQ21NcGFjSUs5LVhpOWY1X2FHUUpzeXUtSnFCb3V4OGFnaHMzOEV1dVg5XzEtdzBtZEpoWHBJellkTE5PanoyUQ?oc=5",
    "title": "Mandiri (BMRI) Jual Saham Inhealth ke IFG Life Senilai Rp570 Miliar",
    "first_seen": "2026-10-29T08:53+07:00"
   },
