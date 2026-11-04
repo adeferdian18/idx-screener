@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-04T15:26+07:00",
+ "updated": "2026-11-04T16:28+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 78
+  "news": 80
  },
  "transactions": [
   {
@@ -42,8 +42,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeDV2c2kwSUFwdDhoR0d2WVRPUnZJUzlGSkR6MXcxbHRaQlY0MkNHUmREbHhrQlljLWtSRmZnM2RBcWVoUHdWaEdVSXBSVGlYREJ1Zy16LXd2ZW0tOXdVbWszNnJ3cENveUw1T2xnWl9LN0xlZGdNajdPajFUOHRLQXFjMGdOTGpuUklFV1hnMGpyWGVxM2NPMzVUMXptd0hfOEt6cDNHNjBCZ0NsblB5aE9iMnk2d9IBrgFBVV95cUxNbmViR0p4YzBPbzFoVEpzV2ZQYkVBSEFSejIzODZtdHFKUHY4Q3ZTSUltY2VTZTRtdW9zN0loTmRRMXJOM1pWZE05aXVOVVZXdFQtUWh0VUllb05BLTg1Qk1nazVNX3FhYXRTQnZaaTQwOXBMVFR5MUtrdnJkZDBrcXJiVlBpWEtheWFsWUlnb2kxbWFRcF9nU2tkOFFabERTMWpjX1dnSHNheFd2Wmc?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbmViR0p4YzBPbzFoVEpzV2ZQYkVBSEFSejIzODZtdHFKUHY4Q3ZTSUltY2VTZTRtdW9zN0loTmRRMXJOM1pWZE05aXVOVVZXdFQtUWh0VUllb05BLTg1Qk1nazVNX3FhYXRTQnZaaTQwOXBMVFR5MUtrdnJkZDBrcXJiVlBpWEtheWFsWUlnb2kxbWFRcF9nU2tkOFFabERTMWpjX1dnSHNheFd2WmfSAa4BQVVfeXFMTW5lYkdKeGMwT28xaFRKc1dmUGJFQUhBUnoyMzg2bXRxSlB2OEN2U0lJbWNlU2U0bXVvczdJaE5kUTFyTjNaVmRNOWl1TlVWV3RULVFodFVJZW9OQS04NUJNZ2s1TV9xYWF0U0J2Wmk0MDlwTFRUeTFLa3ZyZGQwa3FyYlZQaVhLYXlhbFlJZ29pMW1hUXBfZ1NrZDhRWmxEUzFqY19XZ0hzYXhXdlpn?oc=5",
    "title": "Pengendali Saham Nusa Konstruksi (DGIK) Jual 25% Kepemilikan ke Tokyu Construction",
    "first_seen": "2026-11-04T15:26+07:00"
   },
@@ -325,7 +325,7 @@
    "date": "2026-11-03",
    "code": "MSIE",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -336,8 +336,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckdGTUh5cWFDUTRxbUZXa0tEb0pXb09JVzROdjRaZkJ6eDA4aEg3VDFzLW5wMVVzcTZEdUx4M3A4VXlvV0tQU3N0d2lrZ3JMSUZhdWtnVzh0aWVQUk01WHpnaGZkcC10aU05SGdXMDZfclVvNUVmVUxHckZWaTQtMlRLckM4MkRURnpJcXRvOWlrRkZWck8yaWNkbzEta05CUFI5LVV2ZkpvOUVUbTN4SDBFTFAzSW9i?oc=5",
    "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -1177,7 +1177,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Poros Jakarta",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaERvcjN2bnJac3ZVUEZOQ2NacmF0dW9qUW1FR1VHX1NuNnpDOVF4SjJaSFN0d2NmcjN3c2M1X3Y3Q2hqQmhVcXV0OFRMRGI4RTJDY010bm1jTjhCUFNvbDhEUWlmdjNTRzZ5OGFCeUNVOTFpNjZwUmw5NnZOS0xUN25SV3pCV09CbXoyamVibXFfQWxFNTF0MWhRbFNHQ1NVSXhneVMwcDNERGhCY0RmRFV5NEYwRUVVWkRaZ19sZnFmblBtSEHSAcYBQVVfeXFMTmhEb3Izdm5yWnN2VVBGTkNjWnJhdHVvalFtRUdVR19TbjZ6QzlReEoyWkhTdHdjZnIzd3NjNV92N0NoakJoVXF1dDhUTERiOEUyQ2NNdG5tY044QlBTb2w4RFFpZnYzU0c2eThhQnlDVTkxaTY2cFJsOTZ2TktMVDduUld6QldPQm16MmplYm1xX0FsRTUxdDFoUWxTR0NTVUl4Z3lTMHAzRERoQmNEZkRVeTRGMEVFVVpEWmdfbGZxZm5QbUhB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaExuVGZhNlhSTkZyVWQ0eURfTFB2bF9HQmZwSW8xQms5VzlTcUVkWkRYTDZoQi1jNlI3RXpMNmhFVDJqQXlmZmNYOXI2SjVIbjRCdk9XUTNod1IzdmxxblVVSzNZQXpYSmpIYzNmdFJkeTVLT2JnRWJVc1AyS2NVb2tlejgwWjZOTE9tOGZRaVppTEtXaGxOTmswMFNpNEl5ODA4eWQ4YW9hMklZb1JGbExJQl9zZmVNVWdXT0ctVGfSAcYBQVVfeXFMTmhEb3Izdm5yWnN2VVBGTkNjWnJhdHVvalFtRUdVR19TbjZ6QzlReEoyWkhTdHdjZnIzd3NjNV92N0NoakJoVXF1dDhUTERiOEUyQ2NNdG5tY044QlBTb2w4RFFpZnYzU0c2eThhQnlDVTkxaTY2cFJsOTZ2TktMVDduUld6QldPQm16MmplYm1xX0FsRTUxdDFoUWxTR0NTVUl4Z3lTMHAzRERoQmNEZkRVeTRGMEVFVVpEWmdfbGZxZm5QbUhB?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan, Investor Asing Justru Borong Saham GOTO dan BUMI",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -1848,8 +1848,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0wT1Y5YU5RRXR0ZDUtRDcyMG1ZNmt0NEtYemlJR3dqU1NuWGlqb2ViVS1VRk5qbmZvUWZVS0s5NGZrME9WcDc1MUZ5WkJnWl9vSFdmWENTUEJ5QUZWTnJzMmlGVWR6Zw?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdF84bUcxU2JYRWd4TVEzODROWktqRzVKZFhVZnlUX3BldWQ4QnJJbTV6LXl3NE43Y1Jzb0dOYXhGLUdIWHVuREFjYm9SQU85VkZlQ2kxMVVYSE1OQ0dlTDFST2lQSXM0Y0pPc2c4OS1Sdjh6ZG5tXzJrbDVaUXBYYkVXdTNvVWJocFdRcE1tWklkSHZjQ3ZUcHlyeEhsNzjSAZgBQVVfeXFMTkFGSkUwbVpzT1RQQzZ1dm8tbDVWOWh1R2g4cHBhRHpTSFRMcUptUEV3UzZVbldfN0xMaDQ5Z2tqbUo1dVBMWkMtMGo1bHZQWXp0c3hYbW5WR3N2eVZyeXM5eVhpRU1GX000LXVLVUFfX05WY21aRlFvWHlHamFIbWdFWm5NTXVpZmZlYmQ2cFlHVHpoZFRtWjQ?oc=5",
    "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
    "first_seen": "2026-10-29T17:21+07:00"
   },
