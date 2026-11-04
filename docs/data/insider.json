@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-04T12:54+07:00",
+ "updated": "2026-11-04T14:04+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 56
+  "news": 80
  },
  "transactions": [
+  {
+   "id": "600ec5ed8ec2",
+   "date": "2026-11-04",
+   "code": "DSSA",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "gadget.qoo10.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZG5ZMU9fcWY4eE9USFJ6ekxjVGRoN3IwUUpPdXZMdXJqOUFSSUZEWTEzTzdPMHItc3czWUFMTHYxNHpXeklET0pvVXhJRTRiLVJlMTVwNHhIVmprNjNNdDlIVS03S2x2OENDNDRZMEc1U1g5UHlVTE5GbVgtMzkwcDNn?oc=5",
+   "title": "Pandu Sjahrir Lepas Saham Supra Sekuritas Sejak Juni Sebelum Sanksi OJK Perkara DSSA",
+   "first_seen": "2026-11-04T14:04+07:00"
+  },
   {
    "id": "cfddd99a5f55",
    "date": "2026-11-04",
@@ -262,7 +283,7 @@
    "date": "2026-11-03",
    "code": "MSIE",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -273,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckdGTUh5cWFDUTRxbUZXa0tEb0pXb09JVzROdjRaZkJ6eDA4aEg3VDFzLW5wMVVzcTZEdUx4M3A4VXlvV0tQU3N0d2lrZ3JMSUZhdWtnVzh0aWVQUk01WHpnaGZkcC10aU05SGdXMDZfclVvNUVmVUxHckZWaTQtMlRLckM4MkRURnpJcXRvOWlrRkZWck8yaWNkbzEta05CUFI5LVV2ZkpvOUVUbTN4SDBFTFAzSW9i?oc=5",
    "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -283,7 +304,7 @@
    "date": "2026-11-03",
    "code": "ISSP",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "pengendali",
    "action": "beli",
    "shares": 2450000,
    "price": null,
@@ -294,8 +315,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcXFNNmsxbjdLTWRZOVVWOW8yMTNrYkt5TV85Qmk2Y2hVTE4xMkl0eGUwT0ZqVlh5NUhVMlZaUmJiaWVKUV82cGUycENQcFAzU1hBT3pDREU0eEhpeWpkZEd4My1WMVVDSm1JMlZqOFFvc3BtTHlfVzZyVHJzNGxmVjZNTVFQT3AxRTFnaS0wcHI1U244WHRNY2NLMDY0RmxkdHUwTWc1UWRNUUJmTE5idWpuTFRNQWNxSkZj?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM0pDVTdhWWZ5eUdyWUh4WEVCSllnVnNLc0JOLVZEZHp4U2VoZTFmZ2V1c0wzVlZjNGRjZ0IyNDZMMnl0M1oxdFBNUUdvV3ctVTRYMjBfemxZbkpwN00zQ3VYZ3RYVVZuNE1WbzMxdG12T3I2eF9keFdCTmFocEtqZWxMcGlTMloyUXM3WXpRQ0RmUUhhd2l0Tk1EUm5hY2t2Nk1vRUloc2RGY2d0SWlIQ3VjSEtNSXdEaHZSMGoySQ?oc=5",
    "title": "Cakra Bhakti Para Putra (Pengendali ISSP) Borong 2,45 Juta Saham, Kepemilikan Makin Tebal!",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -712,10 +733,10 @@
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
-   "purpose": "investasi",
+   "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia Market",
-   "link": "https://www.cnbcindonesia.com/market/20261102173940-17-781656/emtek--emtk--jual-saham-entitas-usaha-pt-indopay-merchant-services",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMUVXYnNMZ3RuRGlYYkZCbkJ3WS1wM19Xd09ldVNNQ1d3bEh6Q0VuQnJ4bnRWUkR1QUVUZXBzMWxhQjRSbGVMM1dtNlhDTEJiTEhTcjNadU8tWGxtUDQ5emRDRkdKMHJBODFsTEtUZUc0TWdyMFJzMHlGOWtEcWdITERic0k2TGtXQ3VDbDdzWmZvS0N3YTJNZEMzY25MMk1FVHB2TzZmX0w0Z1VYZDdwQ1NlMEsyaDJRN01iaVlUVnBzckVPdlNB0gHMAUFVX3lxTFBjSDdCSWFmOHJFWjF4RW43YTM0TzhET2EtbXphdTEzRU51cTZSdFRPM0ZnODFDSWtaVm1zUUw0c1hyM2J4QzZhRVlfbG5Ua2ZUeDFOUEZFTEFJcG10c2xTTXphWEU1dzNld0JqTk9nNTI0dnc5YWU3SU1jSDF2RzJyRXZMLXBfMy1aZGNhMk55aFhTdThUUEpzY1JEdWxLTVhOcTVXUmJiUDdIYjREeTE4d3l3Q1BDQkVRRnlXMjZ3MmlBR0N2a19aaVMwRw?oc=5",
    "title": "Emtek (EMTK) Jual Saham Entitas Usaha PT Indopay Merchant Services",
    "first_seen": "2026-11-03T08:56+07:00"
   },
@@ -1014,6 +1035,27 @@
    "first_seen": "2026-11-02T08:58+07:00"
   },
   {
+   "id": "ea7b28c0f470",
+   "date": "2026-11-01",
+   "code": "MUTU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 9500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "BertuahPos",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWN3Rkk5TUVjUzE5cjc0b2ZFcEFQc0F4c2d3UG42b1ZCSkFBMmhUOEV3ZTJvcjFkazJCY2V3ckdzUDU0Ti1GOUVhVWF1Y1U3UU1SS2RuNVE5QTBwanFWLUNSMFN2a2E4blZJSWNJd1FEU01YN2t4RExzS3R6LTNTNHIya1JDZUlCVmZnUVUtVHNaV2dVZ0sxNw?oc=5",
+   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
+   "first_seen": "2026-10-30T17:21+07:00"
+  },
+  {
    "id": "89d17e706518",
    "date": "2026-10-31",
    "code": "RAAM",
@@ -1285,27 +1327,6 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ1ZMSVVldWlBV1JES2VINlVtU18tSUNYdGlrUzlJRzJNZTJNX1BFOEU1aEFXdmhzQ3JoUjNMOFVlQnowQi05VGJUMXpYZkhVWkY2cXBiamZZQTZwV0VCeUZUYk00N244RUhFNTAtbnlKaXV1X2toc1YwSFpXWGltNC1QYjZYYTRGVkJDWjYxSEo3di1EcEd4MFVmTzRnVW1Md0RXTU1LdlI0ZlVBM3gwa9IBqgFBVV95cUxQRDE2U1RGbjlCSWRIMURjQzhjUGQ2cE5Vc3d5SGRFakVCbkxKcHV3Y1BMUC1vaUhqbWlfejQyS0xoaEd2cHRnaWh2Q21CNjJYNmVJaFFrVmFranZlT3U4d2tMcUJJWTVWeVVyZDQ1YmlBbEVCbFAwZ24ycEF6cmljMWZfV3BoLWpmVWZzYWVGY1JHNWJ6VjdiWFRSWGtZMFpWNG91Q05xNlA3UQ?oc=5",
    "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
    "first_seen": "2026-11-02T08:58+07:00"
-  },
-  {
-   "id": "ea7b28c0f470",
-   "date": "2026-10-30",
-   "code": "MUTU",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": 9500000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUUFTZXRnS3F4aG5sM09OakxQN1VhTTRsNEtWNTBpNFhPX0gtdXlZM2RsZUR2bHNHalQ0ZWotQjk1dC13SFFxRUJ5S1BSZGFRRk9hS1psLTFSQQ?oc=5",
-   "title": "Sandiaga Uno Borong 9,5 Juta Saham MUTU Senilai Rp999 Juta",
-   "first_seen": "2026-10-30T17:21+07:00"
   },
   {
    "id": "94c4d4903b42",
@@ -1869,8 +1890,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2hGakxSWk91S19YZTR2SktMOU1QamJaeWxOTTVUTlJDcWJoMDU5SU9Ea2lMMHV0YzRQUWloclhNSElmSEJpQ0lJMHZJSkdQY1BKLVYzekkydG9MTDl3SmxiWmg1SEJ5Yk1LNzQ5d2x0cHVydUJDSUptYUZyRi1Hc001OFdTOG5fQnBZZGJUTHpNOFNsVklwaVJoWG5mRTZQS0FZVXhIbkxJNHBobGloeDBtaDE5QWt6M1Z2aEIwS1hQWVBkeDVvenNWcw?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSGxYUHFpVVRqcld6ZFJEVUFJalYtM2IxYmhWb3VPZlhhbXVLdV9HSzZ4QVJ0N2VaWFdCVjJ0Y291OGctUkdtODRQQ1VqQW9USTZ4SmM3aHhjS0pDYTR4X25xalYwMkltMXlNSUYzMXNVc0tHYjFLOWFJRFV1RW9FcXJRdFJ5THhJc09IQVZod0h4RXYtdHFxSm9nRWRycndQUXloVkJzOHVPX2stX2ROSHFqTnQybFFQUEJ1eHVUU3FtRnZRdW5QWldIT0tWcW9N?oc=5",
    "title": "Komisaris Utama RELF Achmad Machlus Sadat Borong 81,69 Juta Saham, Kepemilikan Langsung Tembus 1,43%",
    "first_seen": "2026-10-29T12:17+07:00"
   },
@@ -8155,6 +8176,11 @@
   }
  ],
  "net_by_code": {
+  "DSSA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 4
+  },
   "MSIE": {
    "net_shares": 9500000,
    "net_value": 0.0,
@@ -8359,11 +8385,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "DSSA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 3
   },
   "TRUK": {
    "net_shares": 0,
