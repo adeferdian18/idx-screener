@@ -13,23 +13,13 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "AALI": {
-"status": "sebagian",
-"skor": 2,
-"kuartal": "2026-06",
-"laba_yoy": 0.7067,
-"penjualan_yoy": 0.0451,
-"margin": 0.0935,
-"margin_lalu": 0.0573,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": false,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "ADES": {
 "status": "sebagian",
@@ -61,7 +51,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "AGAR": {
 "status": "data kurang",
@@ -71,12 +61,12 @@
 "AKKU": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "ALKA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "ARII": {
 "status": "kuat",
@@ -92,35 +82,25 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "ARNA": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "ASGR": {
-"status": "sebagian",
-"skor": 1,
-"kuartal": "2026-06",
-"laba_yoy": 0.1675,
-"penjualan_yoy": -0.0101,
-"margin": 0.0866,
-"margin_lalu": 0.0734,
-"akselerasi": false,
-"cek": {
-"laba": false,
-"penjualan": false,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "AUTO": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "AYAM": {
 "status": "lemah",
@@ -136,7 +116,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "BDKR": {
 "status": "sebagian",
@@ -168,7 +148,7 @@
 "penjualan": true,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "BKDP": {
 "status": "lemah",
@@ -190,7 +170,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "BSML": {
 "status": "data kurang",
@@ -211,18 +191,18 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "DEWI": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "DMAS": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "EKAD": {
 "status": "data kurang",
@@ -243,7 +223,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "GEMS": {
 "status": "kuat",
@@ -296,12 +276,12 @@
 "GRPH": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "GULA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "HATM": {
 "status": "kuat",
@@ -333,7 +313,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "KKES": {
 "status": "data kurang",
@@ -354,7 +334,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MARK": {
 "status": "sebagian",
@@ -370,7 +350,7 @@
 "penjualan": true,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MBSS": {
 "status": "sebagian",
@@ -386,7 +366,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MGLV": {
 "status": "data kurang",
@@ -412,7 +392,7 @@
 "MMIX": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MOLI": {
 "status": "kuat",
@@ -428,33 +408,23 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MPIX": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MPMX": {
-"status": "sebagian",
-"skor": 2,
-"kuartal": "2026-06",
-"laba_yoy": 0.7078,
-"penjualan_yoy": 0.0809,
-"margin": 0.0439,
-"margin_lalu": 0.0278,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": false,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "MPXL": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "MSJA": {
 "status": "sebagian",
@@ -512,7 +482,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "PKPK": {
 "status": "kuat",
@@ -528,7 +498,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "POLA": {
 "status": "sebagian",
@@ -544,7 +514,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "POWR": {
 "status": "lemah",
@@ -560,39 +530,19 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "PRDA": {
-"status": "lemah",
-"skor": 0,
-"kuartal": "2026-06",
-"laba_yoy": -0.0386,
-"penjualan_yoy": 0.1267,
-"margin": 0.0983,
-"margin_lalu": 0.1153,
-"akselerasi": false,
-"cek": {
-"laba": false,
-"penjualan": false,
-"margin": false
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "PTBA": {
-"status": "kuat",
-"skor": 3,
-"kuartal": "2026-06",
-"laba_yoy": 3.1854,
-"penjualan_yoy": 0.1529,
-"margin": 0.1528,
-"margin_lalu": 0.0421,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": true,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "ROCK": {
 "status": "lemah",
@@ -629,12 +579,12 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "SEMA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "SGER": {
 "status": "sebagian",
@@ -650,7 +600,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "SMAR": {
 "status": "sebagian",
@@ -666,7 +616,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "SMDR": {
 "status": "kuat",
@@ -698,7 +648,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "SMMT": {
 "status": "kuat",
@@ -714,7 +664,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "SQMI": {
 "status": "sebagian",
@@ -746,23 +696,13 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "TAPG": {
-"status": "kuat",
-"skor": 3,
-"kuartal": "2026-06",
-"laba_yoy": 0.4632,
-"penjualan_yoy": 0.165,
-"margin": 0.3865,
-"margin_lalu": 0.3077,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": true,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "TOSK": {
 "status": "data kurang",
@@ -773,7 +713,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "TUGU": {
 "status": "sebagian",
@@ -792,20 +732,10 @@
 "diambil": "2026-10-28"
 },
 "ULTJ": {
-"status": "kuat",
-"skor": 3,
-"kuartal": "2026-06",
-"laba_yoy": 1.3142,
-"penjualan_yoy": 0.5081,
-"margin": 0.2041,
-"margin_lalu": 0.133,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": true,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "UVCR": {
 "status": "data kurang",
@@ -831,13 +761,13 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "AKRA": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "BEST": {
 "status": "kuat",
@@ -874,7 +804,7 @@
 "DKHH": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "GGRM": {
 "status": "sebagian",
@@ -938,7 +868,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "TINS": {
 "status": "kuat",
@@ -1160,19 +1090,19 @@
 },
 "AGII": {
 "status": "sebagian",
-"skor": 2,
-"kuartal": "2026-06",
-"laba_yoy": 1.0205,
-"penjualan_yoy": 0.0987,
-"margin": 0.0384,
-"margin_lalu": 0.0209,
+"skor": 1,
+"kuartal": "2026-09",
+"laba_yoy": 0.1859,
+"penjualan_yoy": 0.0494,
+"margin": 0.0541,
+"margin_lalu": 0.0479,
 "akselerasi": null,
 "cek": {
-"laba": true,
+"laba": false,
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "BOGA": {
 "status": "lemah",
@@ -1188,7 +1118,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-04"
 },
 "CASA": {
 "status": "sebagian",
@@ -1223,20 +1153,10 @@
 "diambil": "2026-10-28"
 },
 "PBID": {
-"status": "kuat",
-"skor": 3,
-"kuartal": "2026-06",
-"laba_yoy": 2.1004,
-"penjualan_yoy": 0.433,
-"margin": 0.1557,
-"margin_lalu": 0.072,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": true,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-04"
 },
 "DSNG": {
 "status": "sebagian",

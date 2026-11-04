@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-03T17:21+07:00",
+"updated": "2026-11-04T17:33+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -3915,11 +3915,6 @@
 "kode": "TRUE",
 "nama": "PT Triniti Dinamik Tbk",
 "sektor": "Finance"
-},
-{
-"kode": "TRUK",
-"nama": "PT Guna Timur Raya Tbk",
-"sektor": "Transportation"
 },
 {
 "kode": "TRUS",
