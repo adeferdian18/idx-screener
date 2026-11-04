@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-04T14:04+07:00",
+ "updated": "2026-11-04T15:26+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 80
+  "news": 78
  },
  "transactions": [
+  {
+   "id": "106a94eddd9c",
+   "date": "2026-11-04",
+   "code": "WGSH",
+   "party": "Walden Global Services Pte Ltd",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 454100,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/walden-global-services-borong-454-100-saham-wgsh-kini-miliki-188/",
+   "title": "Walden Global Services Borong 454.100 Saham WGSH, Kini Miliki 1,88%",
+   "first_seen": "2026-11-04T15:26+07:00"
+  },
+  {
+   "id": "44368b5ff124",
+   "date": "2026-11-04",
+   "code": "DGIK",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeDV2c2kwSUFwdDhoR0d2WVRPUnZJUzlGSkR6MXcxbHRaQlY0MkNHUmREbHhrQlljLWtSRmZnM2RBcWVoUHdWaEdVSXBSVGlYREJ1Zy16LXd2ZW0tOXdVbWszNnJ3cENveUw1T2xnWl9LN0xlZGdNajdPajFUOHRLQXFjMGdOTGpuUklFV1hnMGpyWGVxM2NPMzVUMXptd0hfOEt6cDNHNjBCZ0NsblB5aE9iMnk2d9IBrgFBVV95cUxNbmViR0p4YzBPbzFoVEpzV2ZQYkVBSEFSejIzODZtdHFKUHY4Q3ZTSUltY2VTZTRtdW9zN0loTmRRMXJOM1pWZE05aXVOVVZXdFQtUWh0VUllb05BLTg1Qk1nazVNX3FhYXRTQnZaaTQwOXBMVFR5MUtrdnJkZDBrcXJiVlBpWEtheWFsWUlnb2kxbWFRcF9nU2tkOFFabERTMWpjX1dnSHNheFd2Wmc?oc=5",
+   "title": "Pengendali Saham Nusa Konstruksi (DGIK) Jual 25% Kepemilikan ke Tokyu Construction",
+   "first_seen": "2026-11-04T15:26+07:00"
+  },
   {
    "id": "600ec5ed8ec2",
    "date": "2026-11-04",
@@ -283,7 +325,7 @@
    "date": "2026-11-03",
    "code": "MSIE",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -294,8 +336,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckdGTUh5cWFDUTRxbUZXa0tEb0pXb09JVzROdjRaZkJ6eDA4aEg3VDFzLW5wMVVzcTZEdUx4M3A4VXlvV0tQU3N0d2lrZ3JMSUZhdWtnVzh0aWVQUk01WHpnaGZkcC10aU05SGdXMDZfclVvNUVmVUxHckZWaTQtMlRLckM4MkRURnpJcXRvOWlrRkZWck8yaWNkbzEta05CUFI5LVV2ZkpvOUVUbTN4SDBFTFAzSW9i?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
    "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -640,7 +682,7 @@
    "date": "2026-11-02",
    "code": "BIRD",
    "party": "Blue Bird",
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "beli",
    "shares": 675800,
    "price": null,
@@ -651,8 +693,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia Market",
-   "link": "https://www.cnbcindonesia.com/market/20261102175313-17-781661/bos-blue-bird--bird--borong-675800-saham-bird-senilai-rp99743-juta",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQakpBT2lfU01jazlocjFOSC1waVpKc3o0TS1jNlFxSjV2MEl0dEpsc0NkaFRtSzlvZTZ6SkVUODBuUk4zTGN3bm51bklHS2Y2cmY0MlhoNm9DSm9QX2hzOGF0a243VU1tOFMtMWRFTjNLUk5WQTNIU2U0LUdFY0hPeWV4M1JNWVlFSjMwN1cxZmNWYU5Lc3FUSURLWGpoWkZHaXZ3bUp1enNmTm5hS3Z0cDlZVjducnNfdUxZUmg0LWZpZmZoLUs2UW50Q1rSAcwBQVVfeXFMUGpKQU9pX1NNY2s5aHIxTkgtcGlaSnN6NE0tYzZRcUo1djBJdHRKbHNDZGhUbUs5b2U2ekpFVDgwblJOM0xjd25udW5JR0tmNnJmNDJYaDZvQ0pvUF9oczhhdGtuN1VNbThTLTFkRU4zS1JOVkEzSFNlNC1HRWNIT3lleDNSTVlZRUozMDdXMWZjVmFOS3NxVElES1hqaFpGR2l2d21KdXpzZk5uYUt2dHA5WVY3bnJzX3VMWVJoNC1maWZmaC1LNlFudENa?oc=5",
    "title": "Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta",
    "first_seen": "2026-11-03T08:56+07:00"
   },
@@ -1156,7 +1198,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Cirebon Raya",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR25EQ0ZtT0lBeElpVkZkVm1ZZ0ZXVVRkU3pKeWYtUmRaVUhaaXF2NDZtSDREUjVLM09qSDF2YWJDUU9Ob2EyV2IwM1dnaDVhRm9zd0xrSjk4aVVpRkRYMjFES19hNjJ5UkZuLW9WSDI2TFBtc0Z0QVh5UlV5UDFPUVZRMW5INWxYUEVuUlVQZVJhS0txS0s5LUhrcnhHSlBYa0JRX21pS25JUUlUZU9BZEZ5ckJZRjBxSFNTeTd6UWJ4M2RSVWx5QXdxSWptczV10gHWAUFVX3lxTE8xcUl1UjhUODNJSE9MY0Z0R2REY3h3cWFPdFVKQmFTVFNLd2NMYzRERjYxMWJMY3VmUG5xaVVVMnZnQ3lmYkV3OFVWempFQ2hBT1ltcVV5dDNzRGxUWUVDT0NleW5CX0tnV21JZmRMa0RQT0NZMERTMnNZdks2cWdJd01yWEtsNHpYdmpwblhrSi12VFFWT0NDa19QT1JBUFFiYUJlS2RyR0E4blRnM2txSzJXdTREZk9qZWVEbjBPblJLQ1JsYkJrc0MtRHJWTXdmbHNILVE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeWxaVWtTZEdmalJtWkFJLTRBUnE2U1Focm9MdU9KQmlXWW1DZUxiUkF0VnBVREk5VW9DcVF4WkJEOWM4VllRdWJlb0x6TF9GRU9nUVJ5Ty1uVXVaeGtReElxS0llZVNyczdzWGhDM0VHcXRLRkFCdC1QRTY0QXhFVFA5ampBejR1LVRMalZIeUU3d3FUcWh3SXl1VklfYUIzdE56TkZDVWtFbDd2Wkk1ZzdwZGZRb3lzb2xqckU3QVMwazBNR0lMdjl3Sm4yZkFrVFdZLUY0WFM2dlcxR3lz0gHfAUFVX3lxTE55bFpVa1NkR2ZqUm1aQUktNEFScTZTUWhyb0x1T0pCaVdZbUNlTGJSQXRWcFVESTlVb0NxUXhaQkQ5YzhWWVF1YmVvTHpMX0ZFT2dRUnlPLW5VdVp4a1F4SXFLSWVlU3JzN3NYaEMzRUdxdEtGQUJ0LVBFNjRBeEVUUDlqakF6NHUtVExqVkh5RTd3cVRxaHdJeXVWSV9hQjN0TnpORkNVa0VsN3ZaSTVnN3BkZlFveXNvbGpyRTdBUzBrME1HSUx2OXdKbjJmQWtUV1ktRjRYUzZ2VzFHeXM?oc=5",
    "title": "IHSG Anjlok 7 Persen Sepekan Akibat Isu MSCI, Asing Malah Pilih Borong Saham GOTO dan BUMI!",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -8176,6 +8218,16 @@
   }
  ],
  "net_by_code": {
+  "WGSH": {
+   "net_shares": 454100,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "DGIK": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "DSSA": {
    "net_shares": 0,
    "net_value": 0.0,
