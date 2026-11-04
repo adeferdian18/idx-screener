@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-04T09:46+07:00",
+ "updated": "2026-11-04T10:48+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 87
+  "news": 81
  },
  "transactions": [
   {
@@ -304,7 +304,7 @@
    "date": "2026-11-03",
    "code": "ARKO",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 2190000,
    "price": null,
@@ -315,8 +315,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOY2cweVJQVUtWbGRjZ3daNmhrZk5nTERPTnJJcGkxemFZQTFlSlNlWWV4bnNfWkgyN01maThPUDVyUkxCR2RxU2JJQTI0SWU3U0FEOHhISlhEcVN2N1NKcVFqVUx1RWVPMTZGMzdzYk1ucGI1ZWtDSzk3cnJydkF4SXdUcHJLQWI3RTZfM1VuNVVEU3RELWt6RUhCaUJORkROYnppeHJieEhsUXBONk9DcVM2b2g?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNS1qckREaV8yRVlVd3E2U2lTOEVZZlVqUkpPX1ZSbUNhMExCLVlId043SXRMYlVBWmlSRV9PUlJOOFAweVhZVGY3T1pVdWotWnMwTXl6aGxrek4xa3MxZWVUbkdFcy1MRHF1T29kcVBoS1pqaTVVX2NsOGg4T0xrVFA2Z2drUlBLVmFLTVJabFJ2Z0JsSE51UmNQM2J3SFk2c09ybUpJVGZYckcxOGU0dA?oc=5",
    "title": "Borong 2,19 Juta Saham ARKO, Pemegang Saham Kakap Tambah Kepemilikan Jadi 38,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -1072,7 +1072,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Lamongan Network",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQQUozYk1mdnJVbWl3VHR6bEVRZ3FsSHF3QkQyVU9LMENpRDQybld5Mk5tSDBCc25XNVJOclFrbEdpbmtJbGw0VVl3NzhGRE5PZ3dWYjQwMDNoeENfcjRIX3pBTnN2d05fSlVXX0N1WERTN3NVYks0dGg5STVKakpwQndsdXZ1d3lQVm1hNmtPMEcwSTdFaHRiT2ZXM1VqQkx0S3huekwxQmZpWG1WeTRoM0FaZURwVGRkVV92TkdtOEdSM0JuNnRkWmlsOVotWDl1TDZ2dFVyUDdacVIwWnpzek80RjFYY2hqVkJGcTI4TjcxQdIB8gFBVV95cUxQQUozYk1mdnJVbWl3VHR6bEVRZ3FsSHF3QkQyVU9LMENpRDQybld5Mk5tSDBCc25XNVJOclFrbEdpbmtJbGw0VVl3NzhGRE5PZ3dWYjQwMDNoeENfcjRIX3pBTnN2d05fSlVXX0N1WERTN3NVYks0dGg5STVKakpwQndsdXZ1d3lQVm1hNmtPMEcwSTdFaHRiT2ZXM1VqQkx0S3huekwxQmZpWG1WeTRoM0FaZURwVGRkVV92TkdtOEdSM0JuNnRkWmlsOVotWDl1TDZ2dFVyUDdacVIwWnpzek80RjFYY2hqVkJGcTI4TjcxQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaHBDRDZUOG9PYVd1QlowdzNhb2p0bzd5Y3JKVVZNMWdST2VYZEN2VU4tb2p0clBYamhfQWNOTUhxeEVOcDVXai02eWxmcjRUWkRRMlh6VnJSVlFlZXR6OUlMSUlvMHRyc3RiMVR6RVI4cXVwTGwxVUM1VlZ3ZFZXMU96dWswRWVEd3BuQXNsR1o2TnJCbzV1UnRKbHd2YUxIbkpKVWtDZVRLUmNycjJydGh4eWdUSXZEU0d2eHdSVG0ySUtzV0JCbmxxOXUxME9kekxOd0Y3TGdJTm9YLWNDWG5HY9IB6AFBVV95cUxObFJoSVB6VDZFVmZGbVhwMkYwWUhaLU0wZVY3cENPbVpQcDZ3czkydlI4cjY5R0lvWDIycHRMYXVfNlhuSFF6bnZHTW50RDJzdENsejd2MWhHVkF3VzFrcGVTU1FKVmVsMnNQOFJtUnlic19sajZVNnNYcmFfYjVXY0RvZkhZQnJSNnJ2aWN2TWdCd2xJcjhxREI4TVBHSDFVWG1rMUpGQTdMcDlMZld2UGpzbjFJd20tVDliUXF2NkJ5Z0RfcEpkU2Y3SWFXNU5kMW5RRG45VjhHZXZ1em94aExZRjBCY0tH?oc=5",
    "title": "IHSG Terus Anjlok Hingga 7 Persen Selama Sepekan, Asing Justru Borong Saham GOTO dan BUMI",
    "first_seen": "2026-11-02T08:58+07:00"
   },
@@ -1785,8 +1785,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0wT1Y5YU5RRXR0ZDUtRDcyMG1ZNmt0NEtYemlJR3dqU1NuWGlqb2ViVS1VRk5qbmZvUWZVS0s5NGZrME9WcDc1MUZ5WkJnWl9vSFdmWENTUEJ5QUZWTnJzMmlGVWR6Zw?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdF84bUcxU2JYRWd4TVEzODROWktqRzVKZFhVZnlUX3BldWQ4QnJJbTV6LXl3NE43Y1Jzb0dOYXhGLUdIWHVuREFjYm9SQU85VkZlQ2kxMVVYSE1OQ0dlTDFST2lQSXM0Y0pPc2c4OS1Sdjh6ZG5tXzJrbDVaUXBYYkVXdTNvVWJocFdRcE1tWklkSHZjQ3ZUcHlyeEhsNzjSAZgBQVVfeXFMTkFGSkUwbVpzT1RQQzZ1dm8tbDVWOWh1R2g4cHBhRHpTSFRMcUptUEV3UzZVbldfN0xMaDQ5Z2tqbUo1dVBMWkMtMGo1bHZQWXp0c3hYbW5WR3N2eVZyeXM5eVhpRU1GX000LXVLVUFfX05WY21aRlFvWHlHamFIbWdFWm5NTXVpZmZlYmQ2cFlHVHpoZFRtWjQ?oc=5",
    "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
    "first_seen": "2026-10-29T17:21+07:00"
   },
