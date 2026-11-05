@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-05T13:20+07:00",
+ "updated": "2026-11-05T14:50+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 55
+  "news": 54
  },
  "transactions": [
+  {
+   "id": "96f8ae6f61ba",
+   "date": "2026-11-05",
+   "code": "AVIA",
+   "party": "Robert Tanoko",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 2000000,
+   "price": 296.0,
+   "value": 592000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/direktur-avia-robert-tanoko-borong-2-juta-saham-di-harga-rp296-rp298/",
+   "title": "Direktur AVIA Robert Tanoko Borong 2 Juta Saham di Harga Rp296–Rp298",
+   "first_seen": "2026-11-05T14:50+07:00"
+  },
   {
    "id": "886c335ae0e7",
    "date": "2026-11-05",
@@ -8492,9 +8513,9 @@
  ],
  "net_by_code": {
   "AVIA": {
-   "net_shares": 2930110000,
-   "net_value": 2086000000.0,
-   "count": 11
+   "net_shares": 2932110000,
+   "net_value": 2678000000.0,
+   "count": 12
   },
   "BBCA": {
    "net_shares": 0,
