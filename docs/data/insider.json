@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-05T10:04+07:00",
+ "updated": "2026-11-05T11:09+07:00",
  "sources": {
   "idx": "blocked",
   "news": 55
  },
  "transactions": [
+  {
+   "id": "c8cfb4197ec7",
+   "date": "2026-11-05",
+   "code": "ARKO",
+   "party": "Aldo Henry Tambah Koleksi",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1870000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNeHlLYmoybW9iSEItQjdqVm1rZEl2ajczV2ZHaUdSWWlOSXNCSTd1MlVQMDlCX0twbzhtUy1BbnpxMzN2SktfZl9mUzhoUkN1VzVpQU9oRVJnOFVaanVtenczRUF3Vnc5SU9hMW9wYmFzQmh0ZEh2aU0zdjhhWnQ5QW5mdnVJOUlTNXJGc09Bc0FtVU9WMzl3Z0RTdklRYzZQU2JVLW0tVjR3enNIakVFczNnRUtZeDczWjNXbkFNZm1mQjB0OGVGNExoZmk?oc=5",
+   "title": "Dua Kali Borong Saham ARKO dalam Sepekan, Dirut Aldo Henry Tambah Koleksi hingga 1,87 Juta Lembar",
+   "first_seen": "2026-11-05T11:09+07:00"
+  },
+  {
+   "id": "c0769649a8ba",
+   "date": "2026-11-05",
+   "code": "BBKP",
+   "party": "PT KB Bukopin Finance",
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 135529,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/bank-kb-bbkp-resmi-divestasi-85-saham-kb-bukopin-finance-rp33997-miliar/",
+   "title": "Bank KB (BBKP) Resmi Divestasi 85% Saham KB Bukopin Finance Rp339,97 Miliar",
+   "first_seen": "2026-11-05T11:09+07:00"
+  },
   {
    "id": "fd9a2516894d",
    "date": "2026-11-05",
@@ -862,7 +904,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQakpBT2lfU01jazlocjFOSC1waVpKc3o0TS1jNlFxSjV2MEl0dEpsc0NkaFRtSzlvZTZ6SkVUODBuUk4zTGN3bm51bklHS2Y2cmY0MlhoNm9DSm9QX2hzOGF0a243VU1tOFMtMWRFTjNLUk5WQTNIU2U0LUdFY0hPeWV4M1JNWVlFSjMwN1cxZmNWYU5Lc3FUSURLWGpoWkZHaXZ3bUp1enNmTm5hS3Z0cDlZVjducnNfdUxZUmg0LWZpZmZoLUs2UW50Q1rSAcwBQVVfeXFMUGpKQU9pX1NNY2s5aHIxTkgtcGlaSnN6NE0tYzZRcUo1djBJdHRKbHNDZGhUbUs5b2U2ekpFVDgwblJOM0xjd25udW5JR0tmNnJmNDJYaDZvQ0pvUF9oczhhdGtuN1VNbThTLTFkRU4zS1JOVkEzSFNlNC1HRWNIT3lleDNSTVlZRUozMDdXMWZjVmFOS3NxVElES1hqaFpGR2l2d21KdXpzZk5uYUt2dHA5WVY3bnJzX3VMWVJoNC1maWZmaC1LNlFudENa?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTDVnMmxXX3E4cDNkX0REajQwUW55Sm5PXzJvTUQwVTZ5ZklSRW5vMEdjRXFWTzduSk1oeWNKbDdmdkNBRHgtMFQ3Zk5CbS1LdGZmZjh5QjM0WHlVc3Flbk80MmJZTy1TVFBWeHYwVXF1X3Z3d19oSmM5OGJIa0M0M2toZDJrdUF3d2tJSmNrdWJpSEVPSEdTVlBuYW9ENTEwVVNneEVBMFdwZEh4NE0tR25DSTJVdWZjWDN6V3FVRnYxaUR6cDRR0gHMAUFVX3lxTFBqSkFPaV9TTWNrOWhyMU5ILXBpWkpzejRNLWM2UXFKNXYwSXR0SmxzQ2RoVG1LOW9lNnpKRVQ4MG5STjNMY3dubnVuSUdLZjZyZjQyWGg2b0NKb1BfaHM4YXRrbjdVTW04Uy0xZEVOM0tSTlZBM0hTZTQtR0VjSE95ZXgzUk1ZWUVKMzA3VzFmY1ZhTktzcVRJREtYamhaRkdpdndtSnV6c2ZObmFLdnRwOVlWN25yc191TFlSaDQtZmlmZmgtSzZRbnRDWg?oc=5",
    "title": "Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta",
    "first_seen": "2026-11-03T08:56+07:00"
   },
@@ -8386,6 +8428,16 @@
   }
  ],
  "net_by_code": {
+  "ARKO": {
+   "net_shares": 13675000,
+   "net_value": 0.0,
+   "count": 8
+  },
+  "BBKP": {
+   "net_shares": -135529,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BBCA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -8480,11 +8532,6 @@
    "net_shares": 2450000,
    "net_value": 0.0,
    "count": 2
-  },
-  "ARKO": {
-   "net_shares": 11805000,
-   "net_value": 0.0,
-   "count": 7
   },
   "EMTK": {
    "net_shares": 0,
