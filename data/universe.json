@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-04T17:33+07:00",
+"updated": "2026-11-05T17:30+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -4154,6 +4154,11 @@
 {
 "kode": "XCIS",
 "nama": "Dana Investasi Real Estat Ciptadana Properti Perhotelan Padjajaran",
+"sektor": "Finance"
+},
+{
+"kode": "XSPI",
+"nama": "Dana Investasi Real Estat Simas Plaza Indonesia",
 "sektor": "Finance"
 },
 {

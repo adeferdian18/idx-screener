@@ -22,20 +22,10 @@
 "diambil": "2026-11-04"
 },
 "ADES": {
-"status": "sebagian",
-"skor": 2,
-"kuartal": "2026-06",
-"laba_yoy": 0.6133,
-"penjualan_yoy": 0.7575,
-"margin": 0.2531,
-"margin_lalu": 0.2758,
-"akselerasi": false,
-"cek": {
-"laba": true,
-"penjualan": true,
-"margin": false
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-05"
 },
 "ADRO": {
 "status": "sebagian",
@@ -680,7 +670,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-05"
 },
 "SRSN": {
 "status": "sebagian",
@@ -740,7 +730,7 @@
 "UVCR": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-05"
 },
 "VERN": {
 "status": "data kurang",
@@ -1194,5 +1184,21 @@
 "margin": false
 },
 "diambil": "2026-11-03"
+},
+"AKPI": {
+"status": "kuat",
+"skor": 3,
+"kuartal": "2026-06",
+"laba_yoy": 9.99,
+"penjualan_yoy": 0.4256,
+"margin": 0.0444,
+"margin_lalu": -0.0125,
+"akselerasi": null,
+"cek": {
+"laba": true,
+"penjualan": true,
+"margin": true
+},
+"diambil": "2026-11-05"
 }
 }
