@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-05T15:55+07:00",
+ "updated": "2026-11-05T16:57+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 56
+  "news": 57
  },
  "transactions": [
+  {
+   "id": "02ba6e9fd10b",
+   "date": "2026-11-05",
+   "code": "FOLK",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 12800000,
+   "price": 69.0,
+   "value": 883200000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/sumber-garam-pratama-jual-128-juta-saham-folk-harga-rp69-kepemilikan-susut/",
+   "title": "Sumber Garam Pratama Jual 12,8 Juta Saham FOLK Harga Rp69, Kepemilikan Susut",
+   "first_seen": "2026-11-05T16:57+07:00"
+  },
+  {
+   "id": "c79e468fe2c3",
+   "date": "2026-11-05",
+   "code": "RAAM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 4690000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN0gyaDBpeUo0NGQ3blNVbFJpOUNUUnY0aU80ODFQR3JJVU51SU5kOWdMOGxNNk9sSjlSbGxGaXRlVnBDS0o1Q3doai1PSEplcklyUUtGNFk1OUQtVFVVYmdQYWtRdlFKOVdwWmpTdHZvcC1BY1NBV0lROGpUX05ock1IdnZ1aWdDTDVwUjNLTGZEU28tdjdock5QV2xEY0JsSGF3djBCRzhabVlkcFBha3VrTEZ3NFRQUzRF?oc=5",
+   "title": "Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Tembus 4,69 Miliar Lembar",
+   "first_seen": "2026-11-05T16:57+07:00"
+  },
   {
    "id": "3f5fd2544e67",
    "date": "2026-11-05",
@@ -93,10 +135,10 @@
    "id": "4bf6904557a7",
    "date": "2026-11-05",
    "code": "AKPI",
-   "party": "Argha Karya Prima Industry",
-   "role": "direksi_komisaris",
+   "party": null,
+   "role": "individu5",
    "action": "jual",
-   "shares": 250000,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -105,8 +147,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/henry-liem-kembali-jual-saham-akpi-kepemilikan-makin-susut/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSUlDVS14dkh2c0NtOURCOVFyTW4yNFpleHJJdEpNdUY0Y1VqbnRNQWFDaWJpSkpOSGVSbGZfeEZPcmJ0SUVZZHBYd0lfeGZCLTFvQkl2YjhjRkc3aURGUXltX056UGZlUEY2RWc0LUtSU1hhel8wSzg2STd6VWp1eENwWjhiYUdi?oc=5",
    "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Makin Susut",
    "first_seen": "2026-11-05T12:14+07:00"
   },
@@ -8533,10 +8575,15 @@
   }
  ],
  "net_by_code": {
+  "FOLK": {
+   "net_shares": -86450000,
+   "net_value": -883200000.0,
+   "count": 3
+  },
   "RAAM": {
-   "net_shares": 1315700,
+   "net_shares": 4691315700,
    "net_value": 0.0,
-   "count": 5
+   "count": 6
   },
   "AVIA": {
    "net_shares": 2932110000,
@@ -8549,7 +8596,7 @@
    "count": 16
   },
   "AKPI": {
-   "net_shares": -1998100,
+   "net_shares": -1748100,
    "net_value": 0.0,
    "count": 10
   },
@@ -8622,11 +8669,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "FOLK": {
-   "net_shares": -73650000,
-   "net_value": 0.0,
-   "count": 2
   },
   "ANTM": {
    "net_shares": 6000,
