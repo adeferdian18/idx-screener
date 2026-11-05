@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-04T17:55+07:00",
+ "updated": "2026-11-05T09:04+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 68
+  "news": 55
  },
  "transactions": [
+  {
+   "id": "62727e330667",
+   "date": "2026-11-05",
+   "code": "BBCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "investor.id",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQnFiNkVsdjRKa18yTHJtV3JZMmV2Q1hyaVJtaDVYLXZIRHRXYTVyejRTZW8zeXZMYXZBRko1SThKLWtDMVByQ0tFSE53cmE4WE4tSmkwYWR4eDE0M1Y2bHRJdFRPLWxRTm1SNWYxcGJDUEd0dTc2T21ubkhRVU8yYTlMcWVIelcydVBMVHUtVklkX1NGTTV2ZFY5U2xNQ1ZfSXdvYlg4cTR1SWtnOHlvTFE5ampLWF9RNDAzQzJlWQ?oc=5",
+   "title": "BERITA POPULER: Andry Hakim Borong Saham 2 Emiten Sekaligus hingga Target Harga Baru BBCA",
+   "first_seen": "2026-11-05T09:04+07:00"
+  },
+  {
+   "id": "c0a1a6f6d230",
+   "date": "2026-11-05",
+   "code": "BBCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONlRlSjBVZE1JU1B0S2hNX09aZ2Z0SUtUcTUyY3Z6cXZYY1VsbXYzTVljSXFidDltaEh4VXcyNmVGWER6anIxY0ZRcjl3V2xHZThQemljMzZCRXdsU0lDZnlIaF9OT0lJUnYxaFBnU0h1TXh1WDc4WDhDTDZJblB3YjVXYndGMnpTQV8wb2t2SnFFLVRVS1RN?oc=5",
+   "title": "Broker Asing Diam-diam Borong Saham BBCA",
+   "first_seen": "2026-11-05T09:04+07:00"
+  },
+  {
+   "id": "d463f52211c0",
+   "date": "2026-11-05",
+   "code": "JECX",
+   "party": "Borong",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Industry.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSUVfaFFBQjlyS0ZVWFBTQzhpNGVtWVRNN1dtb3h4S0l0c1VaR2xFaEtCYWdwWWIwdC13aWVhaFNwZG9UYU4zUmhmVGxzUVNfZnlxVE9ONDJwT2p3Qmtud1BxSmF5WmVpVVdxWFRRYmRyRkFFSndwc0RPSVBiZmUya1F0V1FfNjJQM0pB?oc=5",
+   "title": "Komisaris dan Dua Investor Borong Saham JECX",
+   "first_seen": "2026-11-05T09:04+07:00"
+  },
   {
    "id": "4f2157427f82",
    "date": "2026-11-04",
@@ -30,20 +93,20 @@
    "id": "196792686bad",
    "date": "2026-11-04",
    "code": "HRTA",
-   "party": "PT Terang Anugrah Abadi",
+   "party": null,
    "role": "pengendali",
    "action": "beli",
    "shares": 1000000,
-   "price": 1375.0,
-   "value": 1375000000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/pengendali-hrta-borong-1-juta-saham-kepemilikan-tembus-7123/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeTVLeGJNX1plQTczZkl5Tzh6bUp0d2RtRXlzaUVyVm45U1F4R2MtTURHb3JOV2xOZlNwVXZFdzNJeGN4SDNaOWIwTlE4Zk5OYURkT09zOUxnOGtrNDQ3RjZNbGtuS0J5TWhieVJDYUhCai1xbUwtZm1oekdZc0cxdWo3UjZFeFRDRXc?oc=5",
    "title": "Pengendali HRTA Borong 1 Juta Saham, Kepemilikan Tembus 71,23%",
    "first_seen": "2026-11-04T17:40+07:00"
   },
@@ -51,8 +114,8 @@
    "id": "106a94eddd9c",
    "date": "2026-11-04",
    "code": "WGSH",
-   "party": "Walden Global Services Pte Ltd",
-   "role": "korporasi",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
    "shares": 454100,
    "price": null,
@@ -63,8 +126,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/walden-global-services-borong-454-100-saham-wgsh-kini-miliki-188/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORGFSbktoTmd0NlM4TUpsRS0zSTduZ0xraE1GMzQ3bEg1czZHY01vcEVhX3lNRU5mM0k3WnlUc1NWNWFSZ3IzQy1WeFM4OFB3TDhZdm94TnowaldmMmFiWTRXeDROcWFId21JbTNsd0MtazBFNkkzVmEwLVBGOTJTeGQxMUtSZGptLThZSkFwTzQ?oc=5",
    "title": "Walden Global Services Borong 454.100 Saham WGSH, Kini Miliki 1,88%",
    "first_seen": "2026-11-04T15:26+07:00"
   },
@@ -367,7 +430,7 @@
    "date": "2026-11-03",
    "code": "MSIE",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 3000000,
    "price": null,
@@ -378,8 +441,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RtLVdLUWFjYmRlbHhkR3VlcUNYdE93SmxCQUZEVTBmM3lFbXVfOVg1R3NidWZETEdHaktKeVBIRzdNaUpidU1NamptTnNhODUwWFY3Y0ZwN1F1R3I1S2djNm9aSkpFQ19EZ09QbVAwMUpvcUtFQkp6YnJLdU5oLW5Ea2VKUC15V2NjMlU4YTlOX09PaThobFlpeEE2WDJ6QXZRb2hWTVI3ejk4UlZRNTJma2ZWX3MzbVptRw?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckdGTUh5cWFDUTRxbUZXa0tEb0pXb09JVzROdjRaZkJ6eDA4aEg3VDFzLW5wMVVzcTZEdUx4M3A4VXlvV0tQU3N0d2lrZ3JMSUZhdWtnVzh0aWVQUk01WHpnaGZkcC10aU05SGdXMDZfclVvNUVmVUxHckZWaTQtMlRLckM4MkRURnpJcXRvOWlrRkZWck8yaWNkbzEta05CUFI5LVV2ZkpvOUVUbTN4SDBFTFAzSW9i?oc=5",
    "title": "Borong 3 Juta Saham MSIE, Permata Health Nusantara Tambah Porsi Kepemilikan Jadi 1,98%",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -555,20 +618,20 @@
    "id": "4b1b8757053d",
    "date": "2026-11-03",
    "code": "PGAS",
-   "party": "Catur Dermawan",
-   "role": "direksi_komisaris",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
-   "shares": 25000,
-   "price": 1295.0,
-   "value": 32375000.0,
+   "shares": null,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia Market",
-   "link": "https://www.cnbcindonesia.com/market/20261103093550-17-781794/bos-pgas-diam-diam-tambah-kepemilikan-saham-rogoh-kocek-segini",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZUtwdUZ3bUlpMTlqM2xxYnNUNkw1aXB4cTEzVXNSdFJsaVVTTFpUaHprQWUxRm1rSnhYbG5NeDRaa1J5WEFUQlNCVHBfQVFNRW5LdU5DTElEUHRZejU0WVRIQ2Q0Ulk2SUdITGZlUXZOUkxVcUcyZWZlM2VuOEgwc01fUEwyT05Mc2dWYkhlZFlZUnNFUTZtR3BVU0lkOTJOWndyeURIYnA0RGhDTEV2c2Z0OURLVU5ob2V3bG12TlVHQdIBxwFBVV95cUxOR3dRYlhIcG0tQS1GeWpqbmVfX2UzQ21Vak9RZ3JheDdWaHRxOExKVTBDT0dEc3J4S3c4Q1A1OXZrSlVXUGVuQU5aR29DLTUtNXBkT2paemFod3YwQWE3SWdqenlDb0Q4MFlRSmQ5bWZ0bTZZUnIyRVRoRHN4LVhBeTJCaWFjVU03QmFCa2pHMElnYm53ZmRhTm1adUFwdG1OWVV0VUlsWFRHcF9JZmdOMG5ZOGxRVml3V3lVUTJCMVhoY2l6djdr?oc=5",
    "title": "Bos PGAS Diam-Diam Tambah Kepemilikan Saham, Rogoh Kocek Segini",
    "first_seen": "2026-11-03T09:49+07:00"
   },
@@ -1890,8 +1953,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0wT1Y5YU5RRXR0ZDUtRDcyMG1ZNmt0NEtYemlJR3dqU1NuWGlqb2ViVS1VRk5qbmZvUWZVS0s5NGZrME9WcDc1MUZ5WkJnWl9vSFdmWENTUEJ5QUZWTnJzMmlGVWR6Zw?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdF84bUcxU2JYRWd4TVEzODROWktqRzVKZFhVZnlUX3BldWQ4QnJJbTV6LXl3NE43Y1Jzb0dOYXhGLUdIWHVuREFjYm9SQU85VkZlQ2kxMVVYSE1OQ0dlTDFST2lQSXM0Y0pPc2c4OS1Sdjh6ZG5tXzJrbDVaUXBYYkVXdTNvVWJocFdRcE1tWklkSHZjQ3ZUcHlyeEhsNzjSAZgBQVVfeXFMTkFGSkUwbVpzT1RQQzZ1dm8tbDVWOWh1R2g4cHBhRHpTSFRMcUptUEV3UzZVbldfN0xMaDQ5Z2tqbUo1dVBMWkMtMGo1bHZQWXp0c3hYbW5WR3N2eVZyeXM5eVhpRU1GX000LXVLVUFfX05WY21aRlFvWHlHamFIbWdFWm5NTXVpZmZlYmQ2cFlHVHpoZFRtWjQ?oc=5",
    "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
    "first_seen": "2026-10-29T17:21+07:00"
   },
@@ -8260,6 +8323,16 @@
   }
  ],
  "net_by_code": {
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 14
+  },
+  "JECX": {
+   "net_shares": 12710000,
+   "net_value": 0.0,
+   "count": 5
+  },
   "ATLA": {
    "net_shares": -146500000,
    "net_value": 0.0,
@@ -8267,7 +8340,7 @@
   },
   "HRTA": {
    "net_shares": 42300000,
-   "net_value": 1375000000.0,
+   "net_value": 0.0,
    "count": 22
   },
   "WGSH": {
@@ -8351,8 +8424,8 @@
    "count": 4
   },
   "PGAS": {
-   "net_shares": 25000,
-   "net_value": 32375000.0,
+   "net_shares": 0,
+   "net_value": 0.0,
    "count": 4
   },
   "PEGE": {
@@ -8450,11 +8523,6 @@
    "net_value": 410000000.0,
    "count": 1
   },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 12
-  },
   "MMIX": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -8464,11 +8532,6 @@
    "net_shares": -3060000,
    "net_value": 0.0,
    "count": 3
-  },
-  "JECX": {
-   "net_shares": 12710000,
-   "net_value": 0.0,
-   "count": 4
   },
   "BKSL": {
    "net_shares": 86270000,
