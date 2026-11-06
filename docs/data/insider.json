@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T09:06+07:00",
+ "updated": "2026-11-06T10:04+07:00",
  "sources": {
   "idx": "blocked",
   "news": 56
@@ -9,8 +9,8 @@
    "id": "b343643d841c",
    "date": "2026-11-06",
    "code": "ENRG",
-   "party": "PT Kustodian Sentral Efek Indonesia",
-   "role": "korporasi",
+   "party": null,
+   "role": "individu5",
    "action": "jual",
    "shares": 515240000,
    "price": null,
@@ -21,8 +21,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/bakrie-kalila-investment-jual-51524-juta-saham-enrg-kepemilikan-turun/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbVVIZ3pYakFfdWgxMGlfb1dRUGNDTHppUzdGX3JyV0NZMEVTTjZiZ0JOX2RHdjVGUXE0cC1xMkNXMFA4RmdiTXdZbEI0cHdMRTdUR2p0R1BmZ3pJWUNYQmc3TWZNdm9yN2U1bTlsdWV4WDc4Mm9STTVENVRXbnNhUkxVbXRVZW0xSDg4WkU1ZGlNUHZWbkVJ?oc=5",
    "title": "Bakrie Kalila Investment Jual 515,24 Juta Saham ENRG, Kepemilikan Turun",
    "first_seen": "2026-11-06T09:06+07:00"
   },
@@ -136,7 +136,7 @@
    "date": "2026-11-05",
    "code": "RAAM",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 4690000000,
    "price": null,
@@ -147,8 +147,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUDF4SGduVEZ1QkQydVIxSHN4ZE5YQV9Nd0NqYS1yZ2RJUjdIX3pYci13dGZLMVZhTDFKZVNpNHNwS3k2eHZKTUwyRUs4Y3lUdGY5S1FQWUQ5QnhYZDNLS3VIX2ZOTWRjN2RKXzlTRXBLZmZsYVZsRzVlSDdqa2EzQlR3TTdud1duaGY0dUlHSGZUT3FlZHNaMmVocVVPU3U2clN1bi1jSi1wdFI2dk95Y1pXc3dQNEk?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN0gyaDBpeUo0NGQ3blNVbFJpOUNUUnY0aU80ODFQR3JJVU51SU5kOWdMOGxNNk9sSjlSbGxGaXRlVnBDS0o1Q3doai1PSEplcklyUUtGNFk1OUQtVFVVYmdQYWtRdlFKOVdwWmpTdHZvcC1BY1NBV0lROGpUX05ock1IdnZ1aWdDTDVwUjNLTGZEU28tdjdock5QV2xEY0JsSGF3djBCRzhabVlkcFBha3VrTEZ3NFRQUzRF?oc=5",
    "title": "Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Tembus 4,69 Miliar Lembar",
    "first_seen": "2026-11-05T16:57+07:00"
   },
