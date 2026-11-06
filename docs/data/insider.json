@@ -1,10 +1,94 @@
 {
- "updated": "2026-11-06T16:58+07:00",
+ "updated": "2026-11-06T17:49+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 59
+  "news": 61
  },
  "transactions": [
+  {
+   "id": "f5ea12a45261",
+   "date": "2026-11-06",
+   "code": "MASB",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 7200,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05VS1lX0F4eXp3UFpvd0xXMTdNUUY3M1JHdEVqN29RZEExaDdCdzRkTUZldFYtVG82SE1DeXZEWlJXb1Q5RXQ4UG1PYjhYdHI4ZlY2U0RabU5LRUNzcElpSHpLRm5WQQ?oc=5",
+   "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
+   "first_seen": "2026-11-06T17:49+07:00"
+  },
+  {
+   "id": "e50d01ed96dc",
+   "date": "2026-11-06",
+   "code": "MASB",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 7200,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE50dHdmX0FwcFAzRndfMUxHUnBELTY4d2dsQkpGb0JoaHJycUM3dVpKSmd2V0tocGdySXRYUmFsVUgtWGV0RTVqaU82eldnc1RPOUl2WUs2dnBjblVkLUYweEpiNA?oc=5",
+   "title": "Fely Retnowati Borong 7.200 Saham Bank Multiarta Sentosa",
+   "first_seen": "2026-11-06T17:49+07:00"
+  },
+  {
+   "id": "a0fea662783e",
+   "date": "2026-11-06",
+   "code": "NFCX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 49000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcjdXdHBlZVo3NjN3TkJzTmdXU21DeTdDUFZzVGx0NjFLcy1MYUdjdldUclJlaVNxWl9oUXdqSW1GM0NkM0JIVUZqNkk3SEh2Wmo3RUc3cHhONnN6R25CN1FNZS12bDdUb2UwdlhndURGZ0M0enRCdklrUXl1aFBtNjVlb002cWhyQTR5amFBOFpfQ2txQUp4M2w0TTJCY3pqaU8zUUlQT21JUUNWdHhKbGJfbUtqeGVtWV93Q3I4WlVjS0Fv?oc=5",
+   "title": "Pasar Bergejolak, NFCX Siapkan Dana Jumbo Rp86,97 Miliar untuk Borong 49 Juta Saham Sendiri",
+   "first_seen": "2026-11-06T17:49+07:00"
+  },
+  {
+   "id": "3a7843399229",
+   "date": "2026-11-06",
+   "code": "BBCA",
+   "party": "Asing Pangkas Kepemilikan",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Suara Independent News",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93b0VIRDYwQm84c3lQUVBqaWRWRXF3dDdmMkd5bjVwZVU5TXViTGRfTDdnbWN4OFlHanltVVBTZG5GMmhoeDdrN1RzTFpkU2FxZWhkcnZMZXQ1YjZUZUpfME9xT1N4XzV3djl6OTZVM1pYdWROZG04YUFDdEdwUQ?oc=5",
+   "title": "Investor Asing Pangkas Kepemilikan Saham BBCA ke 67 Persen",
+   "first_seen": "2026-11-06T17:49+07:00"
+  },
   {
    "id": "8ed8143e7ff6",
    "date": "2026-11-06",
@@ -367,7 +451,7 @@
    "date": "2026-11-05",
    "code": "RAAM",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 4690000000,
    "price": null,
@@ -378,8 +462,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN0gyaDBpeUo0NGQ3blNVbFJpOUNUUnY0aU80ODFQR3JJVU51SU5kOWdMOGxNNk9sSjlSbGxGaXRlVnBDS0o1Q3doai1PSEplcklyUUtGNFk1OUQtVFVVYmdQYWtRdlFKOVdwWmpTdHZvcC1BY1NBV0lROGpUX05ock1IdnZ1aWdDTDVwUjNLTGZEU28tdjdock5QV2xEY0JsSGF3djBCRzhabVlkcFBha3VrTEZ3NFRQUzRF?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUDF4SGduVEZ1QkQydVIxSHN4ZE5YQV9Nd0NqYS1yZ2RJUjdIX3pYci13dGZLMVZhTDFKZVNpNHNwS3k2eHZKTUwyRUs4Y3lUdGY5S1FQWUQ5QnhYZDNLS3VIX2ZOTWRjN2RKXzlTRXBLZmZsYVZsRzVlSDdqa2EzQlR3TTdud1duaGY0dUlHSGZUT3FlZHNaMmVocVVPU3U2clN1bi1jSi1wdFI2dk95Y1pXc3dQNEk?oc=5",
    "title": "Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Tembus 4,69 Miliar Lembar",
    "first_seen": "2026-11-05T16:57+07:00"
   },
@@ -8932,6 +9016,21 @@
   }
  ],
  "net_by_code": {
+  "MASB": {
+   "net_shares": 14400,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "NFCX": {
+   "net_shares": 49000000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 17
+  },
   "TMPO": {
    "net_shares": -128480000,
    "net_value": 0.0,
@@ -8996,11 +9095,6 @@
    "net_shares": 2932110000,
    "net_value": 2678000000.0,
    "count": 12
-  },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 16
   },
   "ARKO": {
    "net_shares": 13675000,
