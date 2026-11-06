@@ -957,20 +957,10 @@
 "diambil": "2026-10-23"
 },
 "INDF": {
-"status": "lemah",
-"skor": 0,
-"kuartal": "2026-06",
-"laba_yoy": -0.4329,
-"penjualan_yoy": 0.1183,
-"margin": 0.0558,
-"margin_lalu": 0.1101,
-"akselerasi": false,
-"cek": {
-"laba": false,
-"penjualan": false,
-"margin": false
-},
-"diambil": "2026-10-23"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-06"
 },
 "PSAB": {
 "status": "sebagian",
@@ -1018,7 +1008,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-10-30"
+"diambil": "2026-11-06"
 },
 "MTLA": {
 "status": "lemah",

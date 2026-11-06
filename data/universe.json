@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-05T17:30+07:00",
+"updated": "2026-11-06T17:28+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -1075,6 +1075,11 @@
 "kode": "CSIS",
 "nama": "PT Cahayasakti Investindo Sukses Tbk",
 "sektor": "Finance"
+},
+{
+"kode": "CSMI",
+"nama": "PT Cipta Selera Murni Tbk",
+"sektor": "Consumer Services"
 },
 {
 "kode": "CSRA",
