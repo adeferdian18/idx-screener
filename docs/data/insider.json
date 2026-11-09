@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-09T09:04+07:00",
+ "updated": "2026-11-09T10:02+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 72
+  "news": 74
  },
  "transactions": [
+  {
+   "id": "19a8f4330ad9",
+   "date": "2026-11-09",
+   "code": "AKRA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTnFHZzhwVDJuNWtMckp0cFRUbWV5UUN3TDU0a2UtdkRPWTdta1NqZVUxWnE0TE9yYTlKdWtia1JZcW5xLW9zUU9fNjdNbXJUTEk4YnZ6XzFrb0ZJcVBMZXBhY2gxbHhLZWk2TzVuX3ZlTFFpaXJIMjRKZjZrbFA0MFpoNm5KQXdkQjN4MXoyQ2xfazJoUkE?oc=5",
+   "title": "Borong dari BP, AKRA Kuasai 100 Persen Saham Aneka Petroindo",
+   "first_seen": "2026-11-09T10:02+07:00"
+  },
+  {
+   "id": "e6c98203beaf",
+   "date": "2026-11-09",
+   "code": "AVIA",
+   "party": "Avia Avian",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 2000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1aZHJCMURvTnpHTXVETlN3emJaQnhieUdIaGhKV1N0VVUxa2x1aXNQWUh1ZjQ4TXJLNzJPazFNd1pIZkJxaE4ycVdFR3lzSG1zM3V2RTllWlB3eGE2ek5j?oc=5",
+   "title": "Direktur Avia Avian Borong 2 Juta Saham AVIA Senilai Rp594 Juta",
+   "first_seen": "2026-11-09T10:02+07:00"
+  },
+  {
+   "id": "aa7eb75bf7fd",
+   "date": "2026-11-09",
+   "code": "BYAN",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia Market",
+   "link": "https://www.cnbcindonesia.com/market/20261109081903-17-783396/terungkap-ini-alasan-low-tuck-kwong-jual-saham-byan-ke-haji-isam",
+   "title": "Terungkap! Ini Alasan Low Tuck Kwong Jual Saham BYAN ke Haji Isam",
+   "first_seen": "2026-11-09T10:02+07:00"
+  },
   {
    "id": "a98077dc432e",
    "date": "2026-11-09",
@@ -69,11 +132,32 @@
    "first_seen": "2026-11-09T09:04+07:00"
   },
   {
+   "id": "b78c31da81e5",
+   "date": "2026-11-09",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "rmolsumsel.id",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcm94cko0YkxFNVdWaU1fQzg4MmNWUEFqZlVkejNTZGVBT0ZxQkRzQVpkWk93UzNBbVlsSGllaVc3dUlmXzVyNnpzS1pKQ1hoSWdpQXhaVU1pWkkwTUU0WjYtSHRrREoydWVVa1dMaGtGcnEyVEgwbFhKRkJvaXBtYjcwbzZ6dFNsMG5SUlNuQQ?oc=5",
+   "title": "Jual Saham BYAN ke Haji Isam, Low Tuck Kwong Ungkap Alasannya",
+   "first_seen": "2026-11-09T09:04+07:00"
+  },
+  {
    "id": "26cec48fe948",
    "date": "2026-11-08",
    "code": "AVIA",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -84,8 +168,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/free-float-avia-turun-jadi-1314-robert-christian-tambah-saham/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd1UzX2dSWVhsakdTMlAySUFzamVTLTFDMzI2SW01TW1tMnZHTUh0c1gxa2pRQVFBOXdyNHllSUR1MnZxUUxpXzNCM1hxd2Z1VlVDdkVHQTNiVUhOMS1GdzczTS1kQ0JUT2stb1kxS1RGYXRsV3YzVkJaMGUtVXIzNUZOY2dOR1VBcUVZQw?oc=5",
    "title": "Free Float AVIA Turun Jadi 13,14%, Robert Christian Tambah Saham",
    "first_seen": "2026-11-09T09:04+07:00"
   },
@@ -171,27 +255,6 @@
    "source": "Wartakotalive.com",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWmNkalhTdGRBTUl0TDY4N054RUgyQ0NMZ3g3UFZMTms4eHJkUlhQZmJfSElPVE9oSFZPaWlRWmgzSEZoZEVQUEFJOGljSERveWdLR3ExZkNhQ3NGUlcxN0IzWU1tQTBFWVVITUhWa29WODV2RmZzOXhtRmhDNlBZLTFxWW9NaE1sbnVieG1qYVZMWlJMOGNLajVFMHlTc2RBa2hUVFVSQjBqb2xkdTRBUUxETjdmTW1rN2t2OGhzRQ?oc=5",
    "title": "Haji Isam Borong 30,25 Persen Saham BYAN, Dato Low Tuck Kwong: Tidak Ada Tekanan",
-   "first_seen": "2026-11-09T09:04+07:00"
-  },
-  {
-   "id": "b78c31da81e5",
-   "date": "2026-11-08",
-   "code": "BYAN",
-   "party": null,
-   "role": "individu5",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "rmolsumsel.id",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcm94cko0YkxFNVdWaU1fQzg4MmNWUEFqZlVkejNTZGVBT0ZxQkRzQVpkWk93UzNBbVlsSGllaVc3dUlmXzVyNnpzS1pKQ1hoSWdpQXhaVU1pWkkwTUU0WjYtSHRrREoydWVVa1dMaGtGcnEyVEgwbFhKRkJvaXBtYjcwbzZ6dFNsMG5SUlNuQQ?oc=5",
-   "title": "Jual Saham BYAN ke Haji Isam, Low Tuck Kwong Ungkap Alasannya",
    "first_seen": "2026-11-09T09:04+07:00"
   },
   {
@@ -9604,6 +9667,21 @@
   }
  ],
  "net_by_code": {
+  "AKRA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "AVIA": {
+   "net_shares": 2934110000,
+   "net_value": 2678000000.0,
+   "count": 14
+  },
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 39
+  },
   "BBCA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -9613,16 +9691,6 @@
    "net_shares": 663230000,
    "net_value": 0.0,
    "count": 2
-  },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 38
-  },
-  "AVIA": {
-   "net_shares": 2932110000,
-   "net_value": 2678000000.0,
-   "count": 13
   },
   "BRMS": {
    "net_shares": 124750000,
