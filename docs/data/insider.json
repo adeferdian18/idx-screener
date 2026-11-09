@@ -1,10 +1,115 @@
 {
- "updated": "2026-11-09T12:26+07:00",
+ "updated": "2026-11-09T13:33+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 77
+  "news": 80
  },
  "transactions": [
+  {
+   "id": "239700cefefe",
+   "date": "2026-11-09",
+   "code": "MASB",
+   "party": "Bank Multiarta Sentosa",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 3100,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWJ6d1dXX1o5LUJqS29rd3J3VzFxdUdQZUgxOERhV0d4bnIyWjBkdW9RWlltSklvZXpmTjZTa1YzNmVjYXZXSHhiLUM4OWJTSV9RXzRBb1ViQnJxWE9GTGpyVXhsRjVoMkRzOGtRM3AwVHllNGNfWWtxOE5Oelp2SWhUR18wd1JFWVUtY2JMWHRwdnJKc01xMUdhY1lOYmFHZjlN0gGcAUFVX3lxTE1BaHZWaUxFaUhxSG85dU5hbTdoYnBqTlZhZFFWaXFRb2FZNEtUX3Q2YVpyWDBsOXhZMG1xVDNjTENqdUJCY3pMQTRRZWx2VzItOFJPcjFDQ1JOYUhseXFXMXJvR1NOcGxRU1JRcVV3NXk0aERXVVVnLUhtZGVaUTFBU0N6ZnBlamdfd29peXZHTWJDVS10N1BnV0FEdA?oc=5",
+   "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
+   "first_seen": "2026-11-09T13:33+07:00"
+  },
+  {
+   "id": "64de004fd4eb",
+   "date": "2026-11-09",
+   "code": "MASB",
+   "party": "Tambah Kepemilikan",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 3100,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE52MEVkcmlvU05OazYzaEtJLWZGUGhGWkE5TTl0S056b2I4dUE0SWVaYXJJX3NEcnFXYi1halpPM21lUVZQVlE2MUU5N0U3Q3JvWXJV?oc=5",
+   "title": "Direktur MASB Tambah Kepemilikan 3.100 Saham",
+   "first_seen": "2026-11-09T13:33+07:00"
+  },
+  {
+   "id": "8ca46c780c99",
+   "date": "2026-11-09",
+   "code": "MDLA",
+   "party": "Medela Potentia Tambah Koleksi",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1990000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQT1ZlWlZwUklLMnRaRGQ5azhFZjd1enZKTHN3SEswOERkc2FXaVMxZXdNZ1FPeVVwM1lmU1habkU5SWNZZW5ERkEwNDJCcVJfMnZOSU5QcVI4STY0YWFVUjlCa2VWc181RW1xRVlFU1BGUWpCQ0xtT3ZFbDR0c1lIR1BtVlF1ZEd0OWdiNGppRWtrczlwdm4wb0lwT3NrWWFsT0FaeU12MUFPanYyOVI4SHRsclJjNUp2LU8wNzBsVU4wS3BD?oc=5",
+   "title": "Dua Kali Borong Saham MDLA, Direktur Medela Potentia Tambah Koleksi hingga 1,99 Juta Lembar",
+   "first_seen": "2026-11-09T13:33+07:00"
+  },
+  {
+   "id": "6a96ea9ae500",
+   "date": "2026-11-09",
+   "code": "TAPG",
+   "party": "Triputra Agro Persada",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 200000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc2hXRmE1N0hQTUc4N25YQXpDdGpONWNDSTZCSHgtaVFFUnpMQ1ZrVC1TQXlDVHhPMktaOUt0bmtyUnhVYjdPWFlhYXRKNl9VUVB1MTd4Z3JZclJjUzhEQzNwaHByWV9STDRCbl84S3drSEtVcERFLTcyS0UxaXdESVlWcHA0dTgtWU9lM255b1AwVDYtdWhzaDUwQVhuRjRoTG5qU1hWMW51Smk3dkEw?oc=5",
+   "title": "Bos Triputra Agro Persada Borong 200.000 Saham TAPG, Rogoh Kocek Rp375 Juta",
+   "first_seen": "2026-11-09T13:33+07:00"
+  },
+  {
+   "id": "c08237c2b44a",
+   "date": "2026-11-09",
+   "code": "AKRA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KUzc2ejFsbk1RTlF1M2RFRzBEakxQY1E5YUEtdGZEa1R6bHdrUzhZalREVWE1Z2JJTUo3SHo0OUl3RVdrLUI2bDRZR0N3ODl2OHpSdndVU3F2Zw?oc=5",
+   "title": "AKRA Kuasai 100 Persen Saham APR Setelah BP Divestasi",
+   "first_seen": "2026-11-09T13:33+07:00"
+  },
   {
    "id": "627e474f088b",
    "date": "2026-11-09",
@@ -9709,6 +9814,26 @@
   }
  ],
  "net_by_code": {
+  "MASB": {
+   "net_shares": 20600,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "MDLA": {
+   "net_shares": 5310000,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "TAPG": {
+   "net_shares": 1923000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "AKRA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
+  },
   "AKPI": {
    "net_shares": -2348100,
    "net_value": -150000000.0,
@@ -9718,11 +9843,6 @@
    "net_shares": 127975000,
    "net_value": 0.0,
    "count": 34
-  },
-  "AKRA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "AVIA": {
    "net_shares": 2934110000,
@@ -9778,11 +9898,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "MASB": {
-   "net_shares": 14400,
-   "net_value": 0.0,
-   "count": 3
   },
   "PTRO": {
    "net_shares": 23140000,
@@ -10109,11 +10224,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "MDLA": {
-   "net_shares": 3320000,
-   "net_value": 0.0,
-   "count": 5
-  },
   "ANDI": {
    "net_shares": -2380000000,
    "net_value": 0.0,
@@ -10178,11 +10288,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "TAPG": {
-   "net_shares": 1723000,
-   "net_value": 0.0,
-   "count": 3
   },
   "BEEF": {
    "net_shares": 795500,
