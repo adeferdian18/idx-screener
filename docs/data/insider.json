@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-09T16:27+07:00",
+ "updated": "2026-11-09T17:25+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 85
+  "news": 88
  },
  "transactions": [
+  {
+   "id": "f32c33eff6ec",
+   "date": "2026-11-09",
+   "code": "VICO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8xWmpPWkdHMFBlYjNBSFl1X3VjLWRpejNQdk5QTnR1UUozelZPOE9mWjAyQkQ1VkpPV0J4T0NkZmpkcUl3Wks3czUzZ3lfYkZtalRuRm9pLWtkUkRsbWEzYndHTkJNdzZmbkZlZFc0WXFoTkRxcUZFWDJR?oc=5",
+   "title": "Victoria Investama Tambah Saham Bank Victoria Jadi 64,23 Persen",
+   "first_seen": "2026-11-09T17:25+07:00"
+  },
+  {
+   "id": "5b1eb76711b7",
+   "date": "2026-11-09",
+   "code": "LOPI",
+   "party": "Tambah Koleksi",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 100000,
+   "price": 29.0,
+   "value": 2900000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWw3MThCZ0pkdEpWTXgtbXo2RElZSXdPalBLRk45OUxfcTJFODJLQld5dzl2RDUzeVhLdDRHelg1aUxycDVITEJJeFdKanl1YlEtYnpTVG1nQ1ZNLURrYmQxRFpuNXNzYjBUVWlIaWJaVnk1eTYwZDZmQjNUYXc1dW4xbFlPNXRUdm1Razl1cU8xZnJpWlZ3UTlyeHJmNnlYWE4tRA?oc=5",
+   "title": "Bos LOPI Tambah Koleksi Saham, Borong 100 Ribu Lembar di Harga Rp29",
+   "first_seen": "2026-11-09T17:25+07:00"
+  },
+  {
+   "id": "23f032a802c9",
+   "date": "2026-11-09",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Poros Jakarta",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdG1OaE5SUFlvaVJnZVpjeDFaelhPWERkX0k5Ulo4d1h5LXFSUlREc2YxZ3U4VTdDNE9JWm9SaUs1cERVWnJmSnpmd2dUa0pNdmZKM0ZONkxSZDVINHAyZXBhMkw4alpwYWV1emtvTjJhQ1IzZ1J1VUFJc3ZOSW5MSklJSEVGeXc5T1VKMnJxRWo1WURzYUV3UWlFSzN1bmxtcXZpTjB6OGlqblA0b2VMc2Q4bWpYMUtzcFdYd9IBwgFBVV95cUxQQVNldVc1TXNfU3RQYUtZdXpDNm54R19TNmFQVEJSY1o3cmIzS0lXVjFSaXlVclJvTGVYN3BVaHRBMGxacWJ6OVY4LXctSllmX1hxT2FsNEhYVXUwZXU2TWxPTEtGZE5ZTktXSzZUZDIxbUhHLWk3bDVWY2xHWGNReVNuSmhiVzdrVXdyOTdIay1EWGJPSzNqS0M0QTJCVWkxUWwxWldxR0M2VFpoWWx6QnYxUVlZWk5oRzJDNW5jNUcxUQ?oc=5",
+   "title": "Low Tuck Kwong Ungkap Alasan Jual Saham BYAN Rp26,1 Triliun ke Haji Isam",
+   "first_seen": "2026-11-09T17:25+07:00"
+  },
   {
    "id": "cc8cec4cf7aa",
    "date": "2026-11-09",
@@ -63,7 +126,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQc1FnNEV1MDRFLUlBQjlpVjN6TDRuWTFVOWI5X3BMUi1DdkJJaUZkclBtcURHY1Fnc282NFRDZlA3NWdrcUtlZ0FGOFhoVkEyc1h4RE1UaE5kTHJ5cmZEa2VlZW5kbTViU0ZWR3VMZVh5OGt3UGw0UlFBbnhVZG1qVDhrZllaVkZoYmdGRjEtaUl1WVdEUFF2OHN3?oc=5",
    "title": "Direktur MASB Fely Retnowati Borong 3.100 Saham, Sinyal Apa?",
    "first_seen": "2026-11-09T16:27+07:00"
@@ -147,8 +210,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWJ6d1dXX1o5LUJqS29rd3J3VzFxdUdQZUgxOERhV0d4bnIyWjBkdW9RWlltSklvZXpmTjZTa1YzNmVjYXZXSHhiLUM4OWJTSV9RXzRBb1ViQnJxWE9GTGpyVXhsRjVoMkRzOGtRM3AwVHllNGNfWWtxOE5Oelp2SWhUR18wd1JFWVUtY2JMWHRwdnJKc01xMUdhY1lOYmFHZjlN0gGcAUFVX3lxTE1BaHZWaUxFaUhxSG85dU5hbTdoYnBqTlZhZFFWaXFRb2FZNEtUX3Q2YVpyWDBsOXhZMG1xVDNjTENqdUJCY3pMQTRRZWx2VzItOFJPcjFDQ1JOYUhseXFXMXJvR1NOcGxRU1JRcVV3NXk0aERXVVVnLUhtZGVaUTFBU0N6ZnBlamdfd29peXZHTWJDVS10N1BnV0FEdA?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWTzVHa2hHRWZVQUVDLUtMb2c2YTBrTUFITVNVZm44T1ZxVE5JY0s1djNXWW9lQVQwVGFobnV3TjBpbGxBeTRXTnlmQWhKNExqbElSbkxHWmhfRHRBOGR6ZGZPNkJLSGc?oc=5",
    "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -244,16 +307,16 @@
    "role": "direksi_komisaris",
    "action": "jual",
    "shares": 250000,
-   "price": 600.0,
-   "value": 150000000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/komisaris-akpi-henry-liem-lepas-250-ribu-saham-akpi-kepemilikan-tersisa-04282/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdFVaTzBST3Z6RlltV2JPQ2c2M2FKYWRUX0lncnd5WXM5R3BBVGhXa1R4blVpQlloejgzZU1YVzB3VnA5RG4yQzdGZ1VXTkxuejlXZXNTeVllbDViNjlrWEY4ZU96LWVNTURqREZQa2RlX25YbFV6UHV6RHE0UzdxQ1NfeUp4Vm02Y2pvZkZMS2Y4QmdCdVZ6MVAyYXhZalRlTXc?oc=5",
    "title": "Komisaris AKPI Henry Liem Lepas 250 Ribu Saham AKPI, Kepemilikan Tersisa 0,4282%",
    "first_seen": "2026-11-09T12:26+07:00"
   },
@@ -904,7 +967,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWEZpcGQ0YXZuVjE3ZE9ITzBoVF80cjJMZkVZQXBKeGxiRHFzQmFyX1RhYWVtUXJuWHRSQVhSay1OQk4zNVZPc3VvQmlRQUJBdmtnYlphMHhUZm9SRklKSTNWZlJIY0FrQ3FJS2ZfSk1mYmpFQjFsVk1HR1padWI3dnM3czRwRHpOT1R2UW5lZ3JYREoyY0E?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYjFXRlJJMktEcVdaZS1yZHZWRHJsV1JOTFhFRWNISWZzNjRqTXNHcmowZTFITDlqMUlEaHp2cy1CbllkODR3d1RkWmRlcUg2eVlVYm03dDRTdDZhQ0RZNURWNTV3eHg3RG1kekdBWXBqbnVXdGt1blNlZTA1aTVNa2VPcHhld0p2dEQwS2FSZU1WZlM1cEFQLWQ1TQ?oc=5",
    "title": "Pengendali Borong 11,57 Juta Saham PTRO Rp25M, Harganya Malah ARB!",
    "first_seen": "2026-11-09T09:04+07:00"
   },
@@ -1534,7 +1597,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQmd2ZUs2bmRwQkxDZFFzTVBlcS15U01OUHcwTHFKaVpoWUJleFNwSnQ3TnJNQl9hMEVxejRKSjJSRTNIRnJJM0QxLS0zVlE5bkpuNFo0M3VrMGE5emxPb3k3cnZYUWN3UWN2MW1Wa18wZUtkZ3gtRmJaZ0FwQlgzWV9nTkNsUmxOQldQaXJ0SHF4RzdpblAwNnpn?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONlRlSjBVZE1JU1B0S2hNX09aZ2Z0SUtUcTUyY3Z6cXZYY1VsbXYzTVljSXFidDltaEh4VXcyNmVGWER6anIxY0ZRcjl3V2xHZThQemljMzZCRXdsU0lDZnlIaF9OT0lJUnYxaFBnU0h1TXh1WDc4WDhDTDZJblB3YjVXYndGMnpTQV8wb2t2SnFFLVRVS1RN?oc=5",
    "title": "Broker Asing Diam-diam Borong Saham BBCA - Market",
    "first_seen": "2026-11-05T10:04+07:00"
   },
@@ -9940,6 +10003,21 @@
   }
  ],
  "net_by_code": {
+  "VICO": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "LOPI": {
+   "net_shares": 4100000,
+   "net_value": 2900000.0,
+   "count": 3
+  },
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 40
+  },
   "MAPI": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -9982,7 +10060,7 @@
   },
   "AKPI": {
    "net_shares": -2348100,
-   "net_value": -150000000.0,
+   "net_value": 0.0,
    "count": 12
   },
   "BRMS": {
@@ -9994,11 +10072,6 @@
    "net_shares": 2934110000,
    "net_value": 2678000000.0,
    "count": 14
-  },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 39
   },
   "BBCA": {
    "net_shares": 0,
@@ -10019,11 +10092,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "LOPI": {
-   "net_shares": 4000000,
-   "net_value": 0.0,
-   "count": 2
   },
   "TLKM": {
    "net_shares": 374450000,
