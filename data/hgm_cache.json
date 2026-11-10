@@ -248,20 +248,10 @@
 "diambil": "2026-10-21"
 },
 "GJTL": {
-"status": "kuat",
-"skor": 3,
-"kuartal": "2026-06",
-"laba_yoy": 3.2772,
-"penjualan_yoy": 0.1663,
-"margin": 0.0865,
-"margin_lalu": 0.0236,
-"akselerasi": true,
-"cek": {
-"laba": true,
-"penjualan": true,
-"margin": true
-},
-"diambil": "2026-10-28"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-10"
 },
 "GRPH": {
 "status": "data kurang",
@@ -1035,7 +1025,7 @@
 "TMPO": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-03"
+"diambil": "2026-11-10"
 },
 "ERAL": {
 "status": "sebagian",
@@ -1056,7 +1046,7 @@
 "IDEA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-03"
+"diambil": "2026-11-10"
 },
 "AGII": {
 "status": "sebagian",
@@ -1150,20 +1140,10 @@
 "diambil": "2026-11-09"
 },
 "WINS": {
-"status": "sebagian",
-"skor": 1,
-"kuartal": "2026-06",
-"laba_yoy": -0.3027,
-"penjualan_yoy": 0.2507,
-"margin": 0.1412,
-"margin_lalu": 0.2533,
-"akselerasi": false,
-"cek": {
-"laba": false,
-"penjualan": true,
-"margin": false
-},
-"diambil": "2026-11-03"
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-10"
 },
 "AKPI": {
 "status": "kuat",

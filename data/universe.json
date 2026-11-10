@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-09T17:23+07:00",
+"updated": "2026-11-10T17:20+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -3785,6 +3785,11 @@
 "kode": "TFAS",
 "nama": "PT Telefast Indonesia Tbk",
 "sektor": "Technology Services"
+},
+{
+"kode": "TFCO",
+"nama": "PT Tifico Fiber Indonesia, Tbk",
+"sektor": "Process Industries"
 },
 {
 "kode": "TGKA",
