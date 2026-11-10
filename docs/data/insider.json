@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-10T13:59+07:00",
+ "updated": "2026-11-10T15:17+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 77
+  "news": 76
  },
  "transactions": [
+  {
+   "id": "301c114901ee",
+   "date": "2026-11-10",
+   "code": "TLKM",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Limapagi",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WUnNDX2lZVGxmWWM5Rm5VOVNuQjZXQ2RHTXJGcDVQcE1tYzh5Q1JqVnR4eDNjVEt0QV9yMU0xQ3pDd0dPaG9iYTc0RkU1NGpnb1NNS0VvbnE0aDBMNW80cGZnbmpnQQ?oc=5",
+   "title": "Investor Asing Lepas Saham TLKM Rp 86,97 Miliar pada 10 November 2026",
+   "first_seen": "2026-11-10T15:17+07:00"
+  },
+  {
+   "id": "2d3bb5da3271",
+   "date": "2026-11-10",
+   "code": "TLKM",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9oRDQybndSblo0QTZTbVFPZXQwblI5TmVxY296aFlrelFYNzZGUndfenZIS3pqaXQ4MnlBWnBLakEwd25ad3pNUG1yRkZ3akJVMG9z?oc=5",
+   "title": "Investor Asing Lepas Saham TLKM Rp 86,97 Miliar di BEI",
+   "first_seen": "2026-11-10T15:17+07:00"
+  },
+  {
+   "id": "f45d00d44c13",
+   "date": "2026-11-10",
+   "code": "TLKM",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NQlhMSU5xTHZCMmZGTjZKU2xSZFJrNWd6ZndzQUJGdXpvekVOR3ZrbUw0ZWlReXN4eWhOd3FMOW1yVkY2cm5rMkpSbGJFanUwR0UzTVhuclBoQ1k2c0xOdzJVcmg?oc=5",
+   "title": "Investor Asing Lepas Saham TLKM Rp86,97 Miliar di BEI",
+   "first_seen": "2026-11-10T15:17+07:00"
+  },
   {
    "id": "26528b0a9b1e",
    "date": "2026-11-10",
@@ -168,8 +231,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NDRmYTM2ZkVFMFlERTAyOGl2TVE3RHg2cldSbWNpQ1lway1NS1ZYeXlkY2RTVTA1VGhnWXpoS3ZUVnM1a3Y2UTFxZE9qcHlGamNR?oc=5",
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwYzYxaXQzRWhod1NmMVFWREwwbHdvcy1sS1JjVTQ0dmY2dFBJLXJZX19BODRaVXBPS3NaWUMxOE45SDhVUzdCdnRxd0hyRFV1NE5DdGIxbkViOUxzWlQ0LWpOVlFsdw?oc=5",
    "title": "Investor Asing Lepas Saham GOTO Rp663,2 Miliar Sepekan",
    "first_seen": "2026-11-10T08:59+07:00"
   },
@@ -718,6 +781,27 @@
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWWU5c3RRSUh6enFuc0dBcE1oVHpRd21FNlJjR0Z3bDNCQ0ZoMFpkU1RSYzVhZ1pHbS1fcGsxaVJnNHUyaDJXb3h5dFN4WC1YWkRKVWgxWFdCUFVnTGE1UU5iakxZVVV0NmpoSlQxeEFhMU5FRjA2QnExUFo0Y2lCNUZCNXdvY2ZadEZWTEExaGpnU0pQYmxmOHRYSUxIWFE5d3V0QWp5czNUenNnYUd4UG5UYUFfT1Bi0gGwAUFVX3lxTE1ZUE1teEtZY1A5QVZwNXcxbFVQTVpNOTY4aENnaTVUclo4ZzlRYUZ5QXJDVERlWC1SVWExR1p2SUROSXNkNFNDV2NYNXRrNlFnaENDWjNVM0FweFNMMFlqb24zOVd2b1pfYUhkUWFDeWFrdm5BSGNxbHF0d2paSlVZUzNxRTNmWVdfbE5yNGl2WEowd0gySC1aUm1tR2ZyMzhYbkxwZmE2Sl9VaEdmenBy?oc=5",
    "title": "Apakah Dipaksa Jual Saham BYAN Ke H Isam Harga Murah? Ini Pengakuan Low Tuck Kwong",
    "first_seen": "2026-11-09T09:04+07:00"
+  },
+  {
+   "id": "d7f1b0a55347",
+   "date": "2026-11-08",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "JPNN.com",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMnFhOGJ2enN0SVdxYnRxZnMwOHJ6R09aNU1XbmpOLTFfOF9tN1ZWRWZQREhhUlg4WWV0bDJicHZwZ1lnNE1HZ3JtMGxVTml2QjM1YzA4MC1JaE8tT1JnejNmNGpEZzZuUDBPdlhZYUx2QmktMHdPYVY0Vk9FOXd4cTdwQnhhVWR5UURhODc3T09EaXk1MG16QTVxNkNBQ2xtWXRETXF3REzSAasBQVVfeXFMTlphaWlfaUdwYkVETG4xb01VV042V000NWJCelF1R3JjR3JZeDRkaWtyTVNQbHJsc0IwQkV5ci1PM2pJbUdRMF9JeVNPeTlheTM5N3k2R3pWUUxnbjB4QjhjVmdNUjNSN1YtdHhYQ2c5X05nWTR0WFJaSG1oWXNnRFpUWjhMR3VtdHMtaURDNnB2dUc4dElZRWVpZGRha1UyV1ZpWWNpNTVuVXZV?oc=5",
+   "title": "Kubu Low Tuck Kwong Akui Jual Saham BYAN ke Haji Isam, Murni Bisnis & Transparan",
+   "first_seen": "2026-11-10T15:17+07:00"
   },
   {
    "id": "26cec48fe948",
@@ -1849,7 +1933,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSG5sTFdNQlRQdE15b3k0dFNMb2dhbmMwcUFNMXByNzR1Z2lvMDhYZ3pyejFwZEVkZXRaS0JRY0Q2dGgwcjZvOUkyT2VndXlqenBxNzZGOTNoNmJsa253RjRyXzBtdld6RVJMd1dXa050VTYxXzlSZlhkaXBVZ0ZTMXpzeUpiRXByQlppdGlVXzVjejZkanlaV1dRRW8xY0lSeU1yNTk1SVNGOXhpdUhxN0RUWkNJUTVFdmVTa0NkMzZ4Vm5z?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPU1J1enE2NWZGbHEzLS1vajBzVUFYUHdMVEpiLXQ5WV82TkgyU1dia2t3RTIzZF8tTWJFR1lKdG1UcEdfdEk2ZmNnSnY3YmU4Mm5vc2duQzhKYjNZRm1tLVNFSk5yS0hvZXIxQThPb3ljQzdLaWhrYXRYVUI4cFBoZ1J0WDc2ZGJERWZDQU5RUmhpNzU1TW80Wjdtci1jWFFKNjNvV3ctZmkzRDdURkRYSnF1RVoyTDFzUXVCMWs2b0tMQTkz?oc=5",
    "title": "Dua Kali Borong Saham JECX, Komisaris Admar Anwar Tambah Kepemilikan Jadi 12,91 Juta Lembar",
    "first_seen": "2026-11-05T10:04+07:00"
   },
@@ -10234,6 +10318,11 @@
   }
  ],
  "net_by_code": {
+  "TLKM": {
+   "net_shares": 374450000,
+   "net_value": 0.0,
+   "count": 11
+  },
   "ASII": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -10277,7 +10366,7 @@
   "BYAN": {
    "net_shares": -466170000,
    "net_value": 0.0,
-   "count": 40
+   "count": 41
   },
   "VIVA": {
    "net_shares": -3060000,
@@ -10368,11 +10457,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "TLKM": {
-   "net_shares": 374450000,
-   "net_value": 0.0,
-   "count": 8
   },
   "BBRI": {
    "net_shares": 5500000,
