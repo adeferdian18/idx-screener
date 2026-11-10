@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-10T12:50+07:00",
+ "updated": "2026-11-10T13:59+07:00",
  "sources": {
   "idx": "blocked",
   "news": 77
  },
  "transactions": [
+  {
+   "id": "26528b0a9b1e",
+   "date": "2026-11-10",
+   "code": "ASII",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koridor.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE56akRVWks4YjZZWlVKd2pKaU5MWXYwNWhNRlJ1dVZxUTJVeTZiZHFSbWhJSVQtM1hkb2cxTEtyYm1vRXZlNnRFWUNDNEI0RDFNTzA4UFUzN3RfY05IeTlJ?oc=5",
+   "title": "Asing Catat Net Sell Rp2,99 Miliar dan Borong ASII serta TINS",
+   "first_seen": "2026-11-10T13:59+07:00"
+  },
   {
    "id": "bf527d2f27aa",
    "date": "2026-11-10",
@@ -252,8 +273,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Cirebon Times",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zZG9UU1NqX2ZFUGZxRDlMQTBtbzhzZFNwMVdqbnRrRXAwbFU0cGZOSmMwUmlQUVB2WWJEVTlpa3JGdW0zR1M1UnZwalJxcmZvNERLT0NvYmtrRU4tWURFM0RLTTE2cHNCZWhZM09UU2ZsczNnRy1TYkgwU1Bsbms?oc=5",
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8xWmpPWkdHMFBlYjNBSFl1X3VjLWRpejNQdk5QTnR1UUozelZPOE9mWjAyQkQ1VkpPV0J4T0NkZmpkcUl3Wks3czUzZ3lfYkZtalRuRm9pLWtkUkRsbWEzYndHTkJNdzZmbkZlZFc0WXFoTkRxcUZFWDJR?oc=5",
    "title": "Victoria Investama Tambah Saham Bank Victoria Jadi 64,23 Persen",
    "first_seen": "2026-11-09T17:25+07:00"
   },
@@ -441,8 +462,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85c3QzOEtHbEFVTmd4dGJYTHJpazZiTVFWQ2tCQklPb1B1Q2pFb0ZPNEUwWVZSck1YLVVMUlFJcmZxbm45VTNnQmdGOVMxbDVaU3YxQU9WbUJ6MG1fc2VVN1E4NGhRQQ?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWJ6d1dXX1o5LUJqS29rd3J3VzFxdUdQZUgxOERhV0d4bnIyWjBkdW9RWlltSklvZXpmTjZTa1YzNmVjYXZXSHhiLUM4OWJTSV9RXzRBb1ViQnJxWE9GTGpyVXhsRjVoMkRzOGtRM3AwVHllNGNfWWtxOE5Oelp2SWhUR18wd1JFWVUtY2JMWHRwdnJKc01xMUdhY1lOYmFHZjlN0gGcAUFVX3lxTE1BaHZWaUxFaUhxSG85dU5hbTdoYnBqTlZhZFFWaXFRb2FZNEtUX3Q2YVpyWDBsOXhZMG1xVDNjTENqdUJCY3pMQTRRZWx2VzItOFJPcjFDQ1JOYUhseXFXMXJvR1NOcGxRU1JRcVV3NXk0aERXVVVnLUhtZGVaUTFBU0N6ZnBlamdfd29peXZHTWJDVS10N1BnV0FEdA?oc=5",
    "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -462,8 +483,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE52MEVkcmlvU05OazYzaEtJLWZGUGhGWkE5TTl0S056b2I4dUE0SWVaYXJJX3NEcnFXYi1halpPM21lUVZQVlE2MUU5N0U3Q3JvWXJV?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1Z29URWRlZGNsYXl0YndUZElkTHBBS2dVR2h5dHRVWVdlZmUtMVZ1ZW9pQmhZMGM1cHgtVjFGN2R1ODFlNHR1VEg1Mmt1TTBuNVMxSW11bGM3UDE5UTJJMjl6d2xaOXhqVEVGRQ?oc=5",
    "title": "Direktur MASB Tambah Kepemilikan 3.100 Saham",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -10213,6 +10234,11 @@
   }
  ],
  "net_by_code": {
+  "ASII": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BUVA": {
    "net_shares": 0,
    "net_value": 0.0,
