@@ -1,10 +1,157 @@
 {
- "updated": "2026-11-09T17:42+07:00",
+ "updated": "2026-11-10T08:59+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 88
+  "news": 87
  },
  "transactions": [
+  {
+   "id": "43e30dbf7f12",
+   "date": "2026-11-10",
+   "code": "MRAT",
+   "party": "Mustika Ratu",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 148800,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd0hPaHVfQWxRQ3FlUlZEWHpZSzFTVXZ0QjJ3WXJGNWV6dkVKWVg3V1YxUFJCNk55Qk53YUtJRk1rXzJOYWlqWVk0VFVwYl9mNV9BSmQ4dzBNZThKV1ZwenFmRUFBT01GMFVmblV3Tlk5SmR6eUZ0anQwVmxDOGN4NlUwdWFzYzZvUWF5TjV5aENYcE9ILWIyWU5XWVExOWdseDFIMGUtcFlhbEJGVFJuSW1Taw?oc=5",
+   "title": "Direktur Mustika Ratu Borong Saham MRAT, Kepemilikan Naik Jadi 148.800 Lembar",
+   "first_seen": "2026-11-10T08:59+07:00"
+  },
+  {
+   "id": "f32492954b7c",
+   "date": "2026-11-10",
+   "code": "ISSP",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 1820000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVmxybHZNdm1HcG4xd2hfUklnNm13LVFmd2tTdk5fNWNlRWVwRlJ1ZkJpS095ZXJxQ1NvT2lfYTZDS3l6OU5BcEw2Rjd6WHpUMHBDV1hVeVpaRWRQNUdMUmp5ck1uc0IzZ2ZKSHZQVnVWYXhxcWpuT3BmUnJQeG1NZW94X0VfcHdOek1hN2ZLYm5TZ3RoMW1iUU9SSmJvUDNqemx3M1l3Ql80ajNsOHZELWFLQXVWbnctZmtxRnVXYl92b1JmOEU0?oc=5",
+   "title": "Tak Henti Akumulasi! Pengendali ISSP Kembali Borong 1,82 Juta Saham, Kepemilikan Tembus 57,80%",
+   "first_seen": "2026-11-10T08:59+07:00"
+  },
+  {
+   "id": "25af92c2f26c",
+   "date": "2026-11-10",
+   "code": "AKRA",
+   "party": "AKR Corp",
+   "role": "korporasi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Limapagi",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xQlZZcmlpMlF6M0FtNHBQSGFQM2RqRG00LU5XNW9hSDdQenJGTnhWM2J1OUlEejI1WXZjemNaQy1wWTFFUEdEWGdfdWxPcUJGemdGNE1aZw?oc=5",
+   "title": "AKR Corporindo Kuasai 100 Persen Saham APR Usai BP Divestasi",
+   "first_seen": "2026-11-10T08:59+07:00"
+  },
+  {
+   "id": "cfbd7a7c1cf7",
+   "date": "2026-11-10",
+   "code": "GOTO",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NDRmYTM2ZkVFMFlERTAyOGl2TVE3RHg2cldSbWNpQ1lway1NS1ZYeXlkY2RTVTA1VGhnWXpoS3ZUVnM1a3Y2UTFxZE9qcHlGamNR?oc=5",
+   "title": "Investor Asing Lepas Saham GOTO Rp663,2 Miliar Sepekan",
+   "first_seen": "2026-11-10T08:59+07:00"
+  },
+  {
+   "id": "b78c31da81e5",
+   "date": "2026-11-10",
+   "code": "BYAN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "rmolsumsel.id",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcm94cko0YkxFNVdWaU1fQzg4MmNWUEFqZlVkejNTZGVBT0ZxQkRzQVpkWk93UzNBbVlsSGllaVc3dUlmXzVyNnpzS1pKQ1hoSWdpQXhaVU1pWkkwTUU0WjYtSHRrREoydWVVa1dMaGtGcnEyVEgwbFhKRkJvaXBtYjcwbzZ6dFNsMG5SUlNuQQ?oc=5",
+   "title": "Jual Saham BYAN ke Haji Isam, Low Tuck Kwong Ungkap Alasannya",
+   "first_seen": "2026-11-09T09:04+07:00"
+  },
+  {
+   "id": "e9abf20f4165",
+   "date": "2026-11-09",
+   "code": "VIVA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "VIVA.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY2dtQXNTZ0VPbjdkRzdJLWphWXlVdHBBNWNZeEd5dlYzd3BpSlg5eVI3ZmR6UVlFRnk0QkRVQU5QU0JRRzVZNDBXWmUxQzFmbzZxSjZuYklKSFVCb010eG1fNUNfelRoV1dLOWRlcFpVNldkOTJqeUt6dFNMU09UWlNiT3lObzhCa3dxTXdKOFlQOTlVZzVtcDVuTXF3VEMzY3gzUnVtUGhsYUt4OVJ5THJOb3g4X2h1ZHFLRHhWWVVjbmPSAcgBQVVfeXFMTUM2MlA5QWx2QUFSVVdHaFpvaUlPMDhuUmpiY3JsV0ZFQ1oyU2UtM3cyUlk2Zi0xSzQwVmVlYV9xOVZPQ2JIVElwQi0wQ1VqbUtoSFlJSTNBZ2RUcmZGMXV3VW01MWVvNnF0akhjaG8yVnM5c3g2VHJiZVQzWS1Dck5KNVlYR1llSFJ5UmVyTTBfOUhLZ3J6RHduQXZiZ012Z1VNck9OWmMxZzFWUllyZDczR1BuTURtU1NVeFB5OVNPSnFyVldtVGo?oc=5",
+   "title": "BP Angkat Kaki dari Bisnis BBM Indonesia, AKR Borong 49,9 Persen Saham APR Rp255,96 Miliar",
+   "first_seen": "2026-11-10T08:59+07:00"
+  },
+  {
+   "id": "9f1e0d7880b8",
+   "date": "2026-11-09",
+   "code": "HALO",
+   "party": "Halozyme Matthew Posard",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Investing.com Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWi1xRVB4VDUtUGY0b3h6RXlFZl9kVGdtN250b3ZuQlRpUGFXeC1RaWdWc01HZzlvUE5BZTNJTm1tcDRGTkl4VFQ0YmczcFNrWUhReFRkazBnYS1WNHZIaXp1TlBmN1h1U2dDcE9DYVBnam1PR0Zta2psS3VSNk9BY2FZdi1yaDFUX1JxX0U0a2stTV9mNXM5cE9yeG9wRzlNenVNMTZEclR6MWZIUmVmcG1LOGhqWG5hWkdGR0EzeU9vLW5halRuUg?oc=5",
+   "title": "Direktur Halozyme Matthew Posard jual saham HALO senilai $2,05 juta",
+   "first_seen": "2026-11-10T08:59+07:00"
+  },
   {
    "id": "e88f6b174e06",
    "date": "2026-11-09",
@@ -232,7 +379,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWTzVHa2hHRWZVQUVDLUtMb2c2YTBrTUFITVNVZm44T1ZxVE5JY0s1djNXWW9lQVQwVGFobnV3TjBpbGxBeTRXTnlmQWhKNExqbElSbkxHWmhfRHRBOGR6ZGZPNkJLSGc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85c3QzOEtHbEFVTmd4dGJYTHJpazZiTVFWQ2tCQklPb1B1Q2pFb0ZPNEUwWVZSck1YLVVMUlFJcmZxbm45VTNnQmdGOVMxbDVaU3YxQU9WbUJ6MG1fc2VVN1E4NGhRQQ?oc=5",
    "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -367,7 +514,7 @@
    "date": "2026-11-09",
    "code": "AKRA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -378,8 +525,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Lotus Andalan Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObjNEUlBxbnFzRzVGNmRBa0xsUHlTcVdsQnJMVkpfZU93aDZRdmNwSFRXQ1daZFQtN1E0VU1xS1U5a1NqRHVsdVhlT0p5WFJjZjQ0VGxBbkNLVHdEUFdiejdLQjMtOFk3RXZVeDFxb3hYanR0V1RwQ18wdUhadS1rTEdNaWF6Y3hQRGhJeVFpZTVmWHFkUnVvSnM2LVJrU0du?oc=5",
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTnFHZzhwVDJuNWtMckp0cFRUbWV5UUN3TDU0a2UtdkRPWTdta1NqZVUxWnE0TE9yYTlKdWtia1JZcW5xLW9zUU9fNjdNbXJUTEk4YnZ6XzFrb0ZJcVBMZXBhY2gxbHhLZWk2TzVuX3ZlTFFpaXJIMjRKZjZrbFA0MFpoNm5KQXdkQjN4MXoyQ2xfazJoUkE?oc=5",
    "title": "Borong dari BP, AKRA Kuasai 100 Persen Saham Aneka Petroindo",
    "first_seen": "2026-11-09T10:02+07:00"
   },
@@ -486,27 +633,6 @@
    "source": "kontan.co.id",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWWU5c3RRSUh6enFuc0dBcE1oVHpRd21FNlJjR0Z3bDNCQ0ZoMFpkU1RSYzVhZ1pHbS1fcGsxaVJnNHUyaDJXb3h5dFN4WC1YWkRKVWgxWFdCUFVnTGE1UU5iakxZVVV0NmpoSlQxeEFhMU5FRjA2QnExUFo0Y2lCNUZCNXdvY2ZadEZWTEExaGpnU0pQYmxmOHRYSUxIWFE5d3V0QWp5czNUenNnYUd4UG5UYUFfT1Bi0gGwAUFVX3lxTE1ZUE1teEtZY1A5QVZwNXcxbFVQTVpNOTY4aENnaTVUclo4ZzlRYUZ5QXJDVERlWC1SVWExR1p2SUROSXNkNFNDV2NYNXRrNlFnaENDWjNVM0FweFNMMFlqb24zOVd2b1pfYUhkUWFDeWFrdm5BSGNxbHF0d2paSlVZUzNxRTNmWVdfbE5yNGl2WEowd0gySC1aUm1tR2ZyMzhYbkxwZmE2Sl9VaEdmenBy?oc=5",
    "title": "Apakah Dipaksa Jual Saham BYAN Ke H Isam Harga Murah? Ini Pengakuan Low Tuck Kwong",
-   "first_seen": "2026-11-09T09:04+07:00"
-  },
-  {
-   "id": "b78c31da81e5",
-   "date": "2026-11-09",
-   "code": "BYAN",
-   "party": null,
-   "role": "individu5",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "rmolsumsel.id",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcm94cko0YkxFNVdWaU1fQzg4MmNWUEFqZlVkejNTZGVBT0ZxQkRzQVpkWk93UzNBbVlsSGllaVc3dUlmXzVyNnpzS1pKQ1hoSWdpQXhaVU1pWkkwTUU0WjYtSHRrREoydWVVa1dMaGtGcnEyVEgwbFhKRkJvaXBtYjcwbzZ6dFNsMG5SUlNuQQ?oc=5",
-   "title": "Jual Saham BYAN ke Haji Isam, Low Tuck Kwong Ungkap Alasannya",
    "first_seen": "2026-11-09T09:04+07:00"
   },
   {
@@ -2194,7 +2320,7 @@
    "date": "2026-11-03",
    "code": "ISSP",
    "party": null,
-   "role": "pengendali",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 2450000,
    "price": null,
@@ -2205,8 +2331,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM0pDVTdhWWZ5eUdyWUh4WEVCSllnVnNLc0JOLVZEZHp4U2VoZTFmZ2V1c0wzVlZjNGRjZ0IyNDZMMnl0M1oxdFBNUUdvV3ctVTRYMjBfemxZbkpwN00zQ3VYZ3RYVVZuNE1WbzMxdG12T3I2eF9keFdCTmFocEtqZWxMcGlTMloyUXM3WXpRQ0RmUUhhd2l0Tk1EUm5hY2t2Nk1vRUloc2RGY2d0SWlIQ3VjSEtNSXdEaHZSMGoySQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcXFNNmsxbjdLTWRZOVVWOW8yMTNrYkt5TV85Qmk2Y2hVTE4xMkl0eGUwT0ZqVlh5NUhVMlZaUmJiaWVKUV82cGUycENQcFAzU1hBT3pDREU0eEhpeWpkZEd4My1WMVVDSm1JMlZqOFFvc3BtTHlfVzZyVHJzNGxmVjZNTVFQT3AxRTFnaS0wcHI1U244WHRNY2NLMDY0RmxkdHUwTWc1UWRNUUJmTE5idWpuTFRNQWNxSkZj?oc=5",
    "title": "Cakra Bhakti Para Putra (Pengendali ISSP) Borong 2,45 Juta Saham, Kepemilikan Makin Tebal!",
    "first_seen": "2026-11-03T11:50+07:00"
   },
@@ -10024,6 +10150,41 @@
   }
  ],
  "net_by_code": {
+  "MRAT": {
+   "net_shares": 148800,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "ISSP": {
+   "net_shares": 4270000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "AKRA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "GOTO": {
+   "net_shares": -1740000000,
+   "net_value": 0.0,
+   "count": 15
+  },
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 40
+  },
+  "VIVA": {
+   "net_shares": -3060000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "HALO": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BVIC": {
    "net_shares": 749630000,
    "net_value": 0.0,
@@ -10039,11 +10200,6 @@
    "net_value": 2900000.0,
    "count": 3
   },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 40
-  },
   "MAPI": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -10058,11 +10214,6 @@
    "net_shares": 23700,
    "net_value": 0.0,
    "count": 6
-  },
-  "AKRA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 3
   },
   "ELIT": {
    "net_shares": 106300,
@@ -10264,11 +10415,6 @@
    "net_value": 0.0,
    "count": 5
   },
-  "ISSP": {
-   "net_shares": 2450000,
-   "net_value": 0.0,
-   "count": 2
-  },
   "EMTK": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -10288,11 +10434,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "GOTO": {
-   "net_shares": -1740000000,
-   "net_value": 0.0,
-   "count": 14
   },
   "SPTO": {
    "net_shares": 0,
@@ -10353,11 +10494,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 8
-  },
-  "VIVA": {
-   "net_shares": -3060000,
-   "net_value": 0.0,
-   "count": 3
   },
   "BKSL": {
    "net_shares": 86270000,
