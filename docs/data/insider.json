@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-11T10:51+07:00",
+ "updated": "2026-11-11T11:55+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 83
+  "news": 82
  },
  "transactions": [
+  {
+   "id": "04a3717ef3cb",
+   "date": "2026-11-11",
+   "code": "MPRO",
+   "party": "Tahir Lepas Saham Properti",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMzAweEFMWEcwemlhTVRscTBDdFFSS052QXU2VkV1MmZqWHVxY3BxOFBpUVZtZEkzMnVxa1lKUTNZOFN3SVRsSURqd2hGUmtUTWFjLXNiaDMyTDJBd3c2Y0pzcDk3YmV6TGZSR1p1dFJIbHZJUlkwY0V1alNZSXl4WTRIX29vUUNIbW51T2l3c1ZodDZTQzJ3V2l2UmgyaV80N1NiUXhpNXl2MHNQc1h3?oc=5",
+   "title": "Konglomerat Tahir Lepas Saham Properti MPRO Rp399,99 Miliar",
+   "first_seen": "2026-11-11T11:55+07:00"
+  },
   {
    "id": "9f1b37655394",
    "date": "2026-11-11",
@@ -106,7 +127,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "IDX Channel",
-   "link": "https://www.idxchannel.com/market-news/dua-pemegang-saham-sepakat-divestasi-hrme-berpotensi-ganti-pengendali",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQN0RjbktnZ0FQVW1ybXg1Z2dVcUpvTU5HemlhcTFXblNSQ1Vuem4yX1B4Z2RaOENsTF9lcFNUTVhhbE1LUzI5RENYcUUtc3B0WE05VzBKZHhCZzdkV3FvXzAtTENSUW84UjFLVFEzVWFUeVRSdkRhcWQwQUIwakphZ1hxVnVjU2RLWThBajR1dUg2SFV1Y0FhR29RQWp5WGNKTjlnZ2VEUWstQTB0SmZrTjJ30gGyAUFVX3lxTFA3RGNuS2dnQVBVbXJteDVnZ1VxSm9NTkd6aWFxMVduU1JDVW56bjJfUHhnZFo4Q2xMX2VwU1RNWGFsTUtTMjlEQ1hxRS1zcHRYTTlXMEpkeEJnN2RXcW9fMC1MQ1JRbzhSMUtUUTNVYVR5VFJ2RGFxZDBBQjBqSmFnWHFWdWNTZEtZOEFqNHV1SDZIVXVjQWFHb1FBanlYY0pOOWdnZURRay1BMHRKZmtOMnc?oc=5",
    "title": "Dua Pemegang Saham Sepakat Divestasi, HRME Berpotensi Ganti Pengendali",
    "first_seen": "2026-11-11T10:51+07:00"
   },
@@ -10717,15 +10738,15 @@
   }
  ],
  "net_by_code": {
+  "MPRO": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 3
+  },
   "DILD": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "MPRO": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
   },
   "HRME": {
    "net_shares": 0,
