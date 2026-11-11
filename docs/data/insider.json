@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-11T14:05+07:00",
+ "updated": "2026-11-11T15:24+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 76
+  "news": 78
  },
  "transactions": [
+  {
+   "id": "0cb8c16ca945",
+   "date": "2026-11-11",
+   "code": "NRCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
+   "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
+   "first_seen": "2026-11-11T15:24+07:00"
+  },
+  {
+   "id": "7ca474bf8b71",
+   "date": "2026-11-11",
+   "code": "NRCA",
+   "party": null,
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 14000000,
+   "price": 390.0,
+   "value": 5460000000.0,
+   "before_pct": null,
+   "after_pct": 64.5,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/surya-semesta-internusa-tambah-14-juta-saham-nrca-kepemilikan-naik-jadi-6450/",
+   "title": "Surya Semesta Internusa Tambah 14 Juta Saham NRCA, Kepemilikan Naik Jadi 64,50%",
+   "first_seen": "2026-11-11T15:24+07:00"
+  },
+  {
+   "id": "68d5127aa242",
+   "date": "2026-11-11",
+   "code": "DGIK",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 204000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 57.9,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPelRIb3NZUEt1N0NQSURFeDVJLXlYcE1nTlZ6LWpGTFVqMWwtbHkzTXZKZHQ1c0RrNExucF94WDBjQ1VDbHNtYVlRQXphVUN2WFljMFZkemR4WkpCaV9scGVpeHFMQnpOZkZIcWR3cGc1ZGdHWE9QYmlUd25TZjFBTzZ1OTdqa2pfOW5YVmt1cUJKWFQtaFNaTEhXdUgxT1JYLWM2LTJxOGEzamZLRDJmV25IckF5SlpmaUJr?oc=5",
+   "title": "Global Dinamika Kencana Borong 204 Juta Saham DGIK, Kepemilikan Melonjak Jadi 57,90%",
+   "first_seen": "2026-11-11T15:24+07:00"
+  },
   {
    "id": "aab7e35ff033",
    "date": "2026-11-11",
@@ -10822,6 +10885,16 @@
   }
  ],
  "net_by_code": {
+  "NRCA": {
+   "net_shares": 14000000,
+   "net_value": 5460000000.0,
+   "count": 2
+  },
+  "DGIK": {
+   "net_shares": 408260000,
+   "net_value": 0.0,
+   "count": 3
+  },
   "PTRO": {
    "net_shares": 23140000,
    "net_value": 24991200000.0,
@@ -10860,11 +10933,6 @@
   "IKAI": {
    "net_shares": 52600000,
    "net_value": 132600000.0,
-   "count": 2
-  },
-  "DGIK": {
-   "net_shares": 204260000,
-   "net_value": 0.0,
    "count": 2
   },
   "AADI": {
