@@ -1,10 +1,220 @@
 {
- "updated": "2026-11-10T17:42+07:00",
+ "updated": "2026-11-11T08:57+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 78
+  "news": 76
  },
  "transactions": [
+  {
+   "id": "8f001d7db99e",
+   "date": "2026-11-11",
+   "code": "AADI",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTHBfM3hORVZkNnpGZ0VXYmRpaGM1NzMtZy0wM0FERjEwTUFYcjdMSE9zTmh5S1NKRExmSUtiNjRUZXhDb0dwRE13bFJoX0dNOEhKYmNfVmpaS3J5M0ZmdzlwWUUzblBiUW5hTTZoM0h4bkstYm8wTmo2ZlljMTE4VVFuM0ptNTZYRFdTaHdQX2ZMRTNodmFrN3ozNmdlZlBvenc1ZXZtbWN6VXZzWXJxZjdURTVSR1JacW1nYXFtYjlDLU10dS1HX1lQOC15UktweHluZEtTbUVKVndSTHBrWmZ1UFJ1RVR4STRRaWZhYnRzS1NOQTV5UA?oc=5",
+   "title": "Persada Capital dan Saratoga Kucurkan Dana senilai Total Rp16,88 Triliun untuk Borong Saham AADI. Kepemilikan Melonjak Signifikan!",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "0921a37c03d2",
+   "date": "2026-11-11",
+   "code": "ADRO",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 3520000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRjE4YUE5MmJIam9Xcy1VRVdkTlA2c01QbXEtTmV3TTZ4WFBDcGtMd3dUZTJ1ck9CX3RZdUJUdG5mTDRaZ2hWVGtKcDR2UHVnNHl5YkVaUk9VbEFJREpxYjY4cEc5S0VaMmF3OTNEbDR2TUpBcFI0T1MtaDQ1N3J2TERMQzhJdHkySllEU0NIQWJKZ0t5QnZWNVNPSjZNOWZldm0xeEVRN0N3ektvdDlCRWlJc2dic18tdHNHZDVvUGVRYVcxRDVSaEhWdEZVQ29OTzloNg?oc=5",
+   "title": "Transaksi Jumbo Rp8,49 Triliun! Persada Capital Borong 3,52 Miliar Saham ADRO, Kepemilikan Tembus 12,27%",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "731739fc50b1",
+   "date": "2026-11-11",
+   "code": "HRME",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "InvestorTrust",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaEtxc2xtbW16TU15QWdFeXZhSWVEazBORW5zcXJpWHhrMGZxV1RDY19KYzZ6cGs2SW4xUEsteWtfVWZ0NjVfaUZWUV80RFQyd1lPSmEtS2FkdmFjSjRJNVRyMTNMOV9LUy1uczlzcmxMNDk0R015UEdRVmQtRjcxd0hkYzB6RXJld3AwY0RzYjZkVHFfYmtHM0ViaWxfVmJHMlZkNzRlbGVWMHlhRndmbnBENmdpSlNrUjNFSFJDUmxIR1hq?oc=5",
+   "title": "Dua Pemegang Saham Menteng Heritage Realty (HRME) Sepakat Jual Saham, Ini Calon Pembelinya",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "c390a5791373",
+   "date": "2026-11-11",
+   "code": "HRME",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "PintarSaham",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNT0FKaWZNZGNDWVI0SEdlMUc2UVFweWNwSE5GWWo0cjAzVGpKM2FkaW1oSkZKYVBlRUFJTV9sWC16TzI2MHM1SUY3dEV6MnpVeHVpWjBLbnFTM0w2TFB1akF2S2VtZ2tVYk9HZ0N2LWpFQmxib2w1d1JHclNycEgtemo3OFFJSWl4MHU0QTJmU0dkdXZjRjlPRWdBUFAzNG5BZG9hX3VRZTBiVW42MHVEQmR6N0VoT1FqdHlTX0V3?oc=5",
+   "title": "PT Menteng Heritage Realty Tbk (HRME) Umumkan Penandatanganan Perjanjian Pengikatan Jual Beli Saham",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "10af80b119a2",
+   "date": "2026-11-10",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1740000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTHJ4VkM3NUlHc1lQM0NJZmVqYmM0VzI3YTZCN0ZzTFRLN3RWNXFmNTh1WHhSS0xmUnN1S1FJb1hrdzJoRjVidExaRUEyVkx5bjV3b0tnWlcxXzgxMlhnaDVNd1h6MVJPRF9RZnFVb1YxVVZHY2NHUHFUYkNBUXV4bWg1dzNLVm5tMjgzYy1lQUo4ZG9y?oc=5",
+   "title": "Edwin Soeryadjaya Borong 1,74 Juta Saham SRTG, Investasi Rp2,32 Miliar",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "7170288054aa",
+   "date": "2026-11-10",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1740000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1FbzRWNm9zUzNkM083WGFkVmdIZndqVmNFZVFqUVRzcEFQOTRwNGlxb0FkMUJiU1huNzA1YXJCUXZoNFFlUDdBZVVELVNOZll3SlVWTVFjTWZVRGFqcURaTEJhNA?oc=5",
+   "title": "Edwin Soeryadjaya Borong 1,74 Juta Saham SRTG Senilai Rp2,96 Miliar",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "e96a4d4a03d2",
+   "date": "2026-11-10",
+   "code": "ATLA",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 25000000,
+   "price": 16.0,
+   "value": 400000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaXUyQnJZODdEN1VlUGk4NktfMGhFU0ZNYmU4TERkQk9lMEVjV2xmMGJrT1FKMi0yN29uYm1XSWVzYWJGdG9MeWVTeXlGd2Vza2Nwcjdrb21zakdobzdhd1FCeTZwekZ1NGdvbjFHN1hZcGEzWDZRdVVVdTRCZklweTFQSkV1ZndVLXkxamxGY05rbV9EWmlLcFF3VWlROTdaa3dveTFiZ2EwdEpOLXdmQnhDZzBNZw?oc=5",
+   "title": "Komisaris ATLA Lepas 25 Juta Saham di Harga Rp16, Kepemilikan Turun di Bawah 40%",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "7206a15d777e",
+   "date": "2026-11-10",
+   "code": "ENRG",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0R4WEpPMnBCUEZfN0wzMFBqY0NHNlh2Q0dCQ0hMUUNZakRVZHRSdU1FVnRUY2tCY1VHX0Z6bzBLblhxTHlaV3dXcFpPUWR5WVd1aVdtVHRmTE5odUlnZjNXZFVNUGZFelRwSDZqczRMU0JkQVpPc3JOOWtJTFZzVHdoanBMLWRzNnBfSVRYUDVURFNVX19IdGFsMkRfUQ?oc=5",
+   "title": "Konsolidasi Internal, Bakrie Kalila Kurangi Kepemilikan Saham ENRG",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "860d145fa0d8",
+   "date": "2026-11-10",
+   "code": "TMPO",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": 128480000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA4RGs2N3ZMNnpWSUZ6UDN5ZzJzTksxMkNHOUVvZERuMjRnVDRqX0hUSzhyNzR2d2d6ZEV1MGhCVjBMYnE0a2JoXzBxQ2lWLXoxU1E?oc=5",
+   "title": "saham hak suara - Pemegang Saham Pengendali Tempo (TMPO) Kurangi Kepemilikan 128,48 Juta Saham",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
+   "id": "5605b85d2001",
+   "date": "2026-11-10",
+   "code": "AADI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1wRllvVTg5M2pnaVFITERORHBHMzlGZ2xPd1UxTGJ2LUZBR05nZm1BN2ZyaDlhVDdwd0w2VGVyNmdCamNReHJrbnZkNWVQT2plQmJPUTc1Tk9TZnhiTHlwNTNVQzE?oc=5",
+   "title": "Saratoga Beli Saham AADI dan ADRO Senilai Rp17,5 Triliun",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
   {
    "id": "3d29632807dd",
    "date": "2026-11-10",
@@ -168,7 +378,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "stockwatch.id",
+   "source": "StockWatch.id",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU25Zc2V6dldsQTk2WmxmUS02YVp4U3gxWEFCNEdBQmVlTktPcFRiYk11NXJOQjNuRXU0ZGgtQUp4bTFNV1d0THN4WUQwbnBydnczUVZaS1JXQWQ1OFBockZVUldSYjhPcWlEOU10SU1zdXd2NGJ5Q2U5UjdDRjhSb3NRTTBDZ2RFZ05BRkRyaWI1NHJZbXA2Wg?oc=5",
    "title": "Henry Liem Kembali Lepas 250.000 Saham AKPI, Kepemilikan Susut Jadi 0,38%",
    "first_seen": "2026-11-10T11:49+07:00"
@@ -588,8 +798,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1Z29URWRlZGNsYXl0YndUZElkTHBBS2dVR2h5dHRVWVdlZmUtMVZ1ZW9pQmhZMGM1cHgtVjFGN2R1ODFlNHR1VEg1Mmt1TTBuNVMxSW11bGM3UDE5UTJJMjl6d2xaOXhqVEVGRQ?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE52MEVkcmlvU05OazYzaEtJLWZGUGhGWkE5TTl0S056b2I4dUE0SWVaYXJJX3NEcnFXYi1halpPM21lUVZQVlE2MUU5N0U3Q3JvWXJV?oc=5",
    "title": "Direktur MASB Tambah Kepemilikan 3.100 Saham",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -745,7 +955,7 @@
    "date": "2026-11-09",
    "code": "BYAN",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -756,8 +966,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia Market",
-   "link": "https://www.cnbcindonesia.com/market/20261109081903-17-783396/terungkap-ini-alasan-low-tuck-kwong-jual-saham-byan-ke-haji-isam",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVmNDX0RZTk51aFNEeDZYTlVIbFA0Y0VtMzJaX1RtV2I3OUU5eGdnQnBkZ19xQmZMQ00xLXVMVk5BX1dQTVVzRXV3MnJ4NHRINzVvU0tJZHBncDZ0NmhpMWc5a01BalZ1d3E1QVduMXpTYlhyQkx1NGl0VklpbDFkV0VpZFlCaEJXbm02d2I2X21nWU5MUkhQOHR1SzZJbjRLdXRDWkJ5bVdvclFwV3FtMXUzYy01a1JsSDVLbkVjTnRmQ3g5bmN6ZlFR0gHKAUFVX3lxTE9WY0NfRFlOTnVoU0R4NlhOVUhsUDRjRW0zMlpfVG1XYjc5RTl4Z2dCcGRnX3FCZkxDTTEtdUxWTkFfV1BNVXNFdXcycng0dEg3NW9TS0lkcGdwNnQ2aGkxZzlrTUFqVnV3cTVBV24xelNiWHJCTHU0aXRWSWlsMWRXRWlkWUJoQldubTZ3YjZfbWdZTkxSSFA4dHVLNkluNEt1dENaQnltV29yUXBXcW0xdTNjLTVrUmxINUtuRWNOdGZDeDluY3pmUVE?oc=5",
    "title": "Terungkap! Ini Alasan Low Tuck Kwong Jual Saham BYAN ke Haji Isam",
    "first_seen": "2026-11-09T10:02+07:00"
   },
@@ -1344,8 +1554,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05VS1lX0F4eXp3UFpvd0xXMTdNUUY3M1JHdEVqN29RZEExaDdCdzRkTUZldFYtVG82SE1DeXZEWlJXb1Q5RXQ4UG1PYjhYdHI4ZlY2U0RabU5LRUNzcElpSHpLRm5WQQ?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSnQyMGl0czhNcHNVNVJqakVhbTYzX1lyT1lUWXdWX1FCZ1RBRE94aTl2TGYzb0toc3dqeWJPMEhLYWt2UFpidTVuUVk5TWtOV010Y3k2elRkcXVhSkpRNTlyNV81QzhrRUx4WnMwdlhTUnAwOUhBUW01TDZsQnFqWVVlUmJnaWNFRnZMeGl0VjlGemlHU0dQOHdjSVVSUldqMlHSAZsBQVVfeXFMTnVsS2xUR0RoWlJCb25CcHBYVENhWHMwQVIxNWJfZ2VUM2RoemZJZURLM1l0ejFrUzhoRnlQOXJEVnJ0LTIzdWRZNnFaczhKUzNPWUY3VGIwSE9YbEJMcEFlM3lPdjY2Mzg5Nzc0WFg2Ylh0UjlJTTJxSENKZFg2TjdRNUtDZUEzUG1RT28xOTNPaVZqVGJvb01qSE0?oc=5",
    "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
    "first_seen": "2026-11-06T17:49+07:00"
   },
@@ -1774,7 +1984,7 @@
    "date": "2026-11-05",
    "code": "RAAM",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 4690000000,
    "price": null,
@@ -1785,8 +1995,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUDF4SGduVEZ1QkQydVIxSHN4ZE5YQV9Nd0NqYS1yZ2RJUjdIX3pYci13dGZLMVZhTDFKZVNpNHNwS3k2eHZKTUwyRUs4Y3lUdGY5S1FQWUQ5QnhYZDNLS3VIX2ZOTWRjN2RKXzlTRXBLZmZsYVZsRzVlSDdqa2EzQlR3TTdud1duaGY0dUlHSGZUT3FlZHNaMmVocVVPU3U2clN1bi1jSi1wdFI2dk95Y1pXc3dQNEk?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN0gyaDBpeUo0NGQ3blNVbFJpOUNUUnY0aU80ODFQR3JJVU51SU5kOWdMOGxNNk9sSjlSbGxGaXRlVnBDS0o1Q3doai1PSEplcklyUUtGNFk1OUQtVFVVYmdQYWtRdlFKOVdwWmpTdHZvcC1BY1NBV0lROGpUX05ock1IdnZ1aWdDTDVwUjNLTGZEU28tdjdock5QV2xEY0JsSGF3djBCRzhabVlkcFBha3VrTEZ3NFRQUzRF?oc=5",
    "title": "Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Tembus 4,69 Miliar Lembar",
    "first_seen": "2026-11-05T16:57+07:00"
   },
@@ -10360,15 +10570,45 @@
   }
  ],
  "net_by_code": {
-  "NSSS": {
+  "AADI": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 8
+  },
+  "ADRO": {
+   "net_shares": 3520470000,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "HRME": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
   },
-  "AADI": {
+  "SRTG": {
+   "net_shares": 6261000,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "ATLA": {
+   "net_shares": -171500000,
+   "net_value": -400000000.0,
+   "count": 5
+  },
+  "ENRG": {
+   "net_shares": -30730000,
+   "net_value": 0.0,
+   "count": 10
+  },
+  "TMPO": {
+   "net_shares": -256960000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "NSSS": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 6
+   "count": 2
   },
   "TLKM": {
    "net_shares": 374450000,
@@ -10535,16 +10775,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "TMPO": {
-   "net_shares": -128480000,
-   "net_value": 0.0,
-   "count": 3
-  },
-  "ENRG": {
-   "net_shares": -30730000,
-   "net_value": 0.0,
-   "count": 9
-  },
   "DEWI": {
    "net_shares": -70210000,
    "net_value": 0.0,
@@ -10584,11 +10814,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "ATLA": {
-   "net_shares": -146500000,
-   "net_value": 0.0,
-   "count": 4
   },
   "HRTA": {
    "net_shares": 42300000,
@@ -10729,11 +10954,6 @@
    "net_shares": 86270000,
    "net_value": 0.0,
    "count": 1
-  },
-  "SRTG": {
-   "net_shares": 2781000,
-   "net_value": 0.0,
-   "count": 5
   },
   "APLN": {
    "net_shares": 0,
@@ -10914,11 +11134,6 @@
    "net_shares": 9800,
    "net_value": 0.0,
    "count": 2
-  },
-  "ADRO": {
-   "net_shares": 470000,
-   "net_value": 0.0,
-   "count": 6
   },
   "EMMI": {
    "net_shares": 3570000,
