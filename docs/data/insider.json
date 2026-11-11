@@ -1,14 +1,56 @@
 {
- "updated": "2026-11-11T15:24+07:00",
+ "updated": "2026-11-11T16:27+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 78
+  "news": 81
  },
  "transactions": [
   {
-   "id": "0cb8c16ca945",
+   "id": "01b68d09a677",
    "date": "2026-11-11",
-   "code": "NRCA",
+   "code": "RAAM",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 230000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/ram-punjabi-borong-230-ribu-saham-raam-kepemilikan-tembus-6886/",
+   "title": "Ram Punjabi Borong 230 Ribu Saham RAAM, Kepemilikan Tembus 68,86%",
+   "first_seen": "2026-11-11T16:27+07:00"
+  },
+  {
+   "id": "4c3c51967139",
+   "date": "2026-11-11",
+   "code": "AVIA",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 95400,
+   "price": 294.0,
+   "value": 28047600.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/robert-christian-tanoko-tambah-saham-avia-kini-pegang-23684/",
+   "title": "Robert Christian Tanoko Tambah Saham AVIA, Kini Pegang 2,3684%",
+   "first_seen": "2026-11-11T16:27+07:00"
+  },
+  {
+   "id": "5f28e8129884",
+   "date": "2026-11-11",
+   "code": "RAAM",
    "party": null,
    "role": "individu5",
    "action": "beli",
@@ -21,8 +63,29 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMmtCdmZpOU91ZXFzOTFYZXBESzdmaHpjTjg0OW9KMkVzZ3FnbU5RSWJBSVB1Ukk4NzFmczBtTnRsYVpNa0tKZlBDZ0ZsSnAzWUU2b3o0bVdtN1owNXNMYXRuNUk1YzJfRkFVUHhRZjNYeTRfOTM0MFdLd0w2TmNnRFNfakl1VExwRjQ2NktOVF9GS3hpZWEya0FzcWN6bFhHenFwMWF5cDVybTJWRG0waUZ0elA4M00?oc=5",
+   "title": "Ram Punjabi Borong Saham Multivision (RAAM), Total 9 Kali Transaksi",
+   "first_seen": "2026-11-11T16:27+07:00"
+  },
+  {
+   "id": "0cb8c16ca945",
+   "date": "2026-11-11",
+   "code": "NRCA",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa0RDQmpndzFPS01weVFJN3o0UE1ERUJEQlR6T01UZXRqekUyRlpYbUNQYkhzQkZOMmVJNFZtVUU2aTc5NDN1UU9rNVBXQmlqb1BpQXRQNW1UdVJfSlFveG5jV3lad2RITTdrY01wTzhERkxkZzExN3RIODZXalRQNlBOenREYUFCT1NReWJKLXdoaE1iajFIcnRyM0ZiUFpvQnIydlUtMW12NUpf?oc=5",
    "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
    "first_seen": "2026-11-11T15:24+07:00"
   },
@@ -231,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1kcWlQa3d2c1hyV09VbXdZRVJjdlFZT25DUF9EVThtT1FuUU1aQ0RLWXFYQ0NFRUNKTllLZHFkMGs3NEdjZ2U1MEZCTWNYQi1qWTY4d1BLdlhjeTNnQ1I0LWljMjB3VV94QkFzdFpiSkZRdw?oc=5",
+   "source": "Suara Independent News",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5XR213b1JINnFMOW5BWHIxNG04SHAxN2VKdWtRdFAySzNpaXdNTGJxeTZNWmc4M1FXeEpfbDlaNnVnbUI2Zk4zOFdLUjhZZHlaaDdKeHZkU1BIQXZNb2tKaWwySlVGZEpDbl9MV2JpUW9DaHdK?oc=5",
    "title": "Dua Pemegang Saham Jual Saham HRME ke Properti International",
    "first_seen": "2026-11-11T10:51+07:00"
   },
@@ -1092,8 +1155,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85c3QzOEtHbEFVTmd4dGJYTHJpazZiTVFWQ2tCQklPb1B1Q2pFb0ZPNEUwWVZSck1YLVVMUlFJcmZxbm45VTNnQmdGOVMxbDVaU3YxQU9WbUJ6MG1fc2VVN1E4NGhRQQ?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWJ6d1dXX1o5LUJqS29rd3J3VzFxdUdQZUgxOERhV0d4bnIyWjBkdW9RWlltSklvZXpmTjZTa1YzNmVjYXZXSHhiLUM4OWJTSV9RXzRBb1ViQnJxWE9GTGpyVXhsRjVoMkRzOGtRM3AwVHllNGNfWWtxOE5Oelp2SWhUR18wd1JFWVUtY2JMWHRwdnJKc01xMUdhY1lOYmFHZjlN0gGcAUFVX3lxTE1BaHZWaUxFaUhxSG85dU5hbTdoYnBqTlZhZFFWaXFRb2FZNEtUX3Q2YVpyWDBsOXhZMG1xVDNjTENqdUJCY3pMQTRRZWx2VzItOFJPcjFDQ1JOYUhseXFXMXJvR1NOcGxRU1JRcVV3NXk0aERXVVVnLUhtZGVaUTFBU0N6ZnBlamdfd29peXZHTWJDVS10N1BnV0FEdA?oc=5",
    "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -2625,7 +2688,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
+   "source": "pasardana.id",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd3NqSmdWU25iV0J3UEczWmtrdXBrMzl4cGFvUTFOdFFLNFBKcU1Sblh1U3FXNll1azBSOGxEdVZqTDdEWm5uTVhJSHFDVHc3ZWFaUkw0Sl9Zb21TTjMzVlRFanJLZ0xFNE9OdFRHTElRaU9tUlJLaG95RTZxQzgtNTdsdC1EaktIcnp6T2dZNkdMTU90aEk2SlBDd3hjM1JNU196V1ZqRm56YU9kbGN3?oc=5",
    "title": "Komisaris ATLA Terus Lepas Saham, Total 60 Juta Lembar Dilego dalam Sepekan",
    "first_seen": "2026-11-04T17:55+07:00"
@@ -10885,6 +10948,16 @@
   }
  ],
  "net_by_code": {
+  "RAAM": {
+   "net_shares": 4691545700,
+   "net_value": 0.0,
+   "count": 8
+  },
+  "AVIA": {
+   "net_shares": 2934205400,
+   "net_value": 2706047600.0,
+   "count": 15
+  },
   "NRCA": {
    "net_shares": 14000000,
    "net_value": 5460000000.0,
@@ -11080,11 +11153,6 @@
    "net_value": 0.0,
    "count": 34
   },
-  "AVIA": {
-   "net_shares": 2934110000,
-   "net_value": 2678000000.0,
-   "count": 14
-  },
   "BBCA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -11139,11 +11207,6 @@
    "net_shares": -86450000,
    "net_value": -883200000.0,
    "count": 3
-  },
-  "RAAM": {
-   "net_shares": 4691315700,
-   "net_value": 0.0,
-   "count": 6
   },
   "ARKO": {
    "net_shares": 13675000,
