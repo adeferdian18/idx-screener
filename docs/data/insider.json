@@ -1,10 +1,115 @@
 {
- "updated": "2026-11-11T09:50+07:00",
+ "updated": "2026-11-11T10:51+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 78
+  "news": 83
  },
  "transactions": [
+  {
+   "id": "9f1b37655394",
+   "date": "2026-11-11",
+   "code": "DILD",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis Indonesia Premium",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS0QwcHFkRGpFOEFtb3ptU2kyTnAzWEtJZGNZNEptell4c1VXQlAtcFRndmR1dFZsdk1OQ2ptaERJVHlhaDU2RTZlY19vaFk1czB0WTlXU1E5QU1lTjhRXzRpejZmQ2NEZkVDQ3FQVUdQaWdyODhrbUI3NFhZbVZsVC1WdVo1eDVEQkFMNWxBeC1kY0dVcWRKWGExeXVtVE9kS0VLdVczVHZrQVJxTVdNWnE4RDNZVEgw?oc=5",
+   "title": "Lo Kheng Hong Masih Gencar Borong Saham DILD Meski Harga Melorot",
+   "first_seen": "2026-11-11T10:51+07:00"
+  },
+  {
+   "id": "eede68a68583",
+   "date": "2026-11-11",
+   "code": "MPRO",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUDZHVC1TMDZDM3pNMjhOTmJqZ2FRV1JyTG1sRngwWjhHS0dqcEpTMy1XNW4yRDNuVjlNVWhJc19YZnB6dmFObDdOY3kwRHhhdXI3ZnplUmlzLXNSZ04zRFgwU0hQMEJQdVd0Z0diODdMRnhlaTdubnVEQlJDUEZGMk9UMF9Xemh4Z0RQTG1tTUQzZzVncUlYbElR?oc=5",
+   "title": "Tahir gencar jual saham MPRO usai masuk daftar HSC",
+   "first_seen": "2026-11-11T10:51+07:00"
+  },
+  {
+   "id": "39b3aa0c3b10",
+   "date": "2026-11-11",
+   "code": "HRME",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1kcWlQa3d2c1hyV09VbXdZRVJjdlFZT25DUF9EVThtT1FuUU1aQ0RLWXFYQ0NFRUNKTllLZHFkMGs3NEdjZ2U1MEZCTWNYQi1qWTY4d1BLdlhjeTNnQ1I0LWljMjB3VV94QkFzdFpiSkZRdw?oc=5",
+   "title": "Dua Pemegang Saham Jual Saham HRME ke Properti International",
+   "first_seen": "2026-11-11T10:51+07:00"
+  },
+  {
+   "id": "094763b87e42",
+   "date": "2026-11-11",
+   "code": "MEDC",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ3pLd2FycVR1bzg4ckhNbWRiby04QmpEa2pEQzBfWFVaLUJ3X1FWUjFXUEh1M2NKOGNRWTVPSnlEdnJWYXk3LUtNUEh2SVY1NHhiTmI0cVZJNHNpSk5tb2lmT08wMllYNVdIOWpwOF9ISGotNUZKdGFTRWI5ZFZvcWlqaEdLWGlSalZ1NGhvbWV5SzRJZFJnY1dHdlNwUmRoU2ZzN1hn?oc=5",
+   "title": "Dana Kelolaan BPJS Ketenagakerjaan Lepas Saham MEDC",
+   "first_seen": "2026-11-11T10:51+07:00"
+  },
+  {
+   "id": "cca4757d085b",
+   "date": "2026-11-11",
+   "code": "HRME",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "IDX Channel",
+   "link": "https://www.idxchannel.com/market-news/dua-pemegang-saham-sepakat-divestasi-hrme-berpotensi-ganti-pengendali",
+   "title": "Dua Pemegang Saham Sepakat Divestasi, HRME Berpotensi Ganti Pengendali",
+   "first_seen": "2026-11-11T10:51+07:00"
+  },
   {
    "id": "3e8648ec2c9e",
    "date": "2026-11-11",
@@ -132,6 +237,27 @@
    "first_seen": "2026-11-11T08:57+07:00"
   },
   {
+   "id": "3d29632807dd",
+   "date": "2026-11-11",
+   "code": "NSSS",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZDgxQkp1ajZ1VnFVNmZKZG9Cd1pUMkY2c01sR3hSZmRWVVpFU1FkUnpLdENWSngtSjN3eXJ0ZG1HMXVRMVlmV0lQbmxxNHBERWwtOFZfcHdBUzlPeElfS1YybUdYV016RXBjYms5eXVSQ0xNazJxbFJOcFlkQWMwX19Za3BtSmIzc1AzVUktTzNTTHpSckh2MFhZYmJNVjBxWEYtRWpfYk0?oc=5",
+   "title": "Entitas Milik UBO Emiten Sawit NSSS Borong Saham Senilai Rp285,23M",
+   "first_seen": "2026-11-10T17:42+07:00"
+  },
+  {
    "id": "10af80b119a2",
    "date": "2026-11-10",
    "code": "SRTG",
@@ -256,27 +382,6 @@
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1wRllvVTg5M2pnaVFITERORHBHMzlGZ2xPd1UxTGJ2LUZBR05nZm1BN2ZyaDlhVDdwd0w2VGVyNmdCamNReHJrbnZkNWVQT2plQmJPUTc1Tk9TZnhiTHlwNTNVQzE?oc=5",
    "title": "Saratoga Beli Saham AADI dan ADRO Senilai Rp17,5 Triliun",
    "first_seen": "2026-11-11T08:57+07:00"
-  },
-  {
-   "id": "3d29632807dd",
-   "date": "2026-11-10",
-   "code": "NSSS",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLWM2alpyWVVQVWtBYUQ4RGJERndKZ2lTNGphSkR4Y3JaekFjc2RpMDdIQTltN0lBb1lrckNxaXhNWDZLemxhdmxtY3J3V2M0ZGtZdll2b1RmQW03WFU0UUJrM1BYaTdNSDFMakJvVkFkclJlbVNQWkhRbDhnOTA1dmMyZjVSTFB5dG5iSkstdGJoNzVmb21DMDE4SVdxUQ?oc=5",
-   "title": "Entitas Milik UBO Emiten Sawit NSSS Borong Saham Senilai Rp285,23M",
-   "first_seen": "2026-11-10T17:42+07:00"
   },
   {
    "id": "a60b3264e05a",
@@ -10612,6 +10717,26 @@
   }
  ],
  "net_by_code": {
+  "DILD": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "MPRO": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "HRME": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "MEDC": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "IKAI": {
    "net_shares": 52600000,
    "net_value": 132600000.0,
@@ -10632,7 +10757,7 @@
    "net_value": 0.0,
    "count": 7
   },
-  "HRME": {
+  "NSSS": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
@@ -10656,11 +10781,6 @@
    "net_shares": -256960000,
    "net_value": 0.0,
    "count": 4
-  },
-  "NSSS": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
   },
   "TLKM": {
    "net_shares": 374450000,
@@ -11198,11 +11318,6 @@
    "count": 1
   },
   "ERAA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "MPRO": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
