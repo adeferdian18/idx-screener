@@ -1,10 +1,31 @@
 {
- "updated": "2026-11-12T14:59+07:00",
+ "updated": "2026-11-12T16:00+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 85
+  "news": 86
  },
  "transactions": [
+  {
+   "id": "90fa2e035ada",
+   "date": "2026-11-12",
+   "code": "BBCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Katadata.co.id",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZUJLXzJOWWpfZkNCckt3OE9SWEh2SU9taWZGaHRyemZwOWZIWVh1d21HVEhhdi1hdVBDUXU2MHd1MERlaHZya3pyWjY0eUdWUk9qRXJMWVZLampoQk5iVTJUWnRZLTNVZGl3eGg1cTBJd0dOd1lOOTZpSS11dmV0OGxieHdRc1ppNHVQQWVuLVBmc2EtMlR6QU9zQTdQN1NNeF9ENnRrY1k0aU5NZXh6YXcyVk9HQXh1aUlUb0RuUFp2MFhYemfSAcsBQVVfeXFMTjNzejJvZ3k4WGxTc18teUZzRlIwb210U0VQR0V1SXlSbk8yM1RWUUtQQ1gzVXozYkhjR1huU1JwRGcxaW1Yb0hlVW5Mam9MUl9jNGNoWmZmeVJjQTBGTHJaOGlfZVJWV19lMWtlVFFHNjhQZGdzNjY2Y2ExVnMyakMxbkhsYTBMMlc5cjlXN054am5zX0Zsc0lHQ2Q0QzZETTNvWHg2SzM2aVJJNkR4SFJtbWU0WTh1ejNXWGwxQXdlaV9PTHVGRUdrb1E?oc=5",
+   "title": "Asing Mulai Borong Saham Bank Jumbo BBCA hingga BMRI, Net Buy BBRI Terbesar",
+   "first_seen": "2026-11-12T16:00+07:00"
+  },
   {
    "id": "97bc7cae27c2",
    "date": "2026-11-12",
@@ -262,7 +283,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -273,8 +294,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -11263,6 +11284,11 @@
   }
  ],
  "net_by_code": {
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 22
+  },
   "DGIK": {
    "net_shares": 408260000,
    "net_value": 0.0,
@@ -11512,11 +11538,6 @@
    "net_shares": 127975000,
    "net_value": 0.0,
    "count": 34
-  },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 21
   },
   "ENRG": {
    "net_shares": -30730000,
