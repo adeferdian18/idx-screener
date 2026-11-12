@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T13:31+07:00",
+ "updated": "2026-11-12T14:59+07:00",
  "sources": {
   "idx": "blocked",
   "news": 85
@@ -262,7 +262,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -273,8 +273,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -1155,8 +1155,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Lensa Hukum",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwYzYxaXQzRWhod1NmMVFWREwwbHdvcy1sS1JjVTQ0dmY2dFBJLXJZX19BODRaVXBPS3NaWUMxOE45SDhVUzdCdnRxd0hyRFV1NE5DdGIxbkViOUxzWlQ0LWpOVlFsdw?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NDRmYTM2ZkVFMFlERTAyOGl2TVE3RHg2cldSbWNpQ1lway1NS1ZYeXlkY2RTVTA1VGhnWXpoS3ZUVnM1a3Y2UTFxZE9qcHlGamNR?oc=5",
    "title": "Investor Asing Lepas Saham GOTO Rp663,2 Miliar Sepekan",
    "first_seen": "2026-11-10T08:59+07:00"
   },
@@ -1449,8 +1449,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85c3QzOEtHbEFVTmd4dGJYTHJpazZiTVFWQ2tCQklPb1B1Q2pFb0ZPNEUwWVZSck1YLVVMUlFJcmZxbm45VTNnQmdGOVMxbDVaU3YxQU9WbUJ6MG1fc2VVN1E4NGhRQQ?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWJ6d1dXX1o5LUJqS29rd3J3VzFxdUdQZUgxOERhV0d4bnIyWjBkdW9RWlltSklvZXpmTjZTa1YzNmVjYXZXSHhiLUM4OWJTSV9RXzRBb1ViQnJxWE9GTGpyVXhsRjVoMkRzOGtRM3AwVHllNGNfWWtxOE5Oelp2SWhUR18wd1JFWVUtY2JMWHRwdnJKc01xMUdhY1lOYmFHZjlN0gGcAUFVX3lxTE1BaHZWaUxFaUhxSG85dU5hbTdoYnBqTlZhZFFWaXFRb2FZNEtUX3Q2YVpyWDBsOXhZMG1xVDNjTENqdUJCY3pMQTRRZWx2VzItOFJPcjFDQ1JOYUhseXFXMXJvR1NOcGxRU1JRcVV3NXk0aERXVVVnLUhtZGVaUTFBU0N6ZnBlamdfd29peXZHTWJDVS10N1BnV0FEdA?oc=5",
    "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -2247,8 +2247,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yT2Q3OEJadkR6N1M5NHBZNzRvMXFBZGt5VlBqRFBRS1MwSlBZRS1JZFhWMUtwQllpTG42V001eVM2RU1DWGN0bUMxa3YzUHVfanVvVUpoaDRIWEE1SmM0eERvZ1Mydw?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSnQyMGl0czhNcHNVNVJqakVhbTYzX1lyT1lUWXdWX1FCZ1RBRE94aTl2TGYzb0toc3dqeWJPMEhLYWt2UFpidTVuUVk5TWtOV010Y3k2elRkcXVhSkpRNTlyNV81QzhrRUx4WnMwdlhTUnAwOUhBUW01TDZsQnFqWVVlUmJnaWNFRnZMeGl0VjlGemlHU0dQOHdjSVVSUldqMlHSAZsBQVVfeXFMTnVsS2xUR0RoWlJCb25CcHBYVENhWHMwQVIxNWJfZ2VUM2RoemZJZURLM1l0ejFrUzhoRnlQOXJEVnJ0LTIzdWRZNnFaczhKUzNPWUY3VGIwSE9YbEJMcEFlM3lPdjY2Mzg5Nzc0WFg2Ylh0UjlJTTJxSENKZFg2TjdRNUtDZUEzUG1RT28xOTNPaVZqVGJvb01qSE0?oc=5",
    "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
    "first_seen": "2026-11-06T17:49+07:00"
   },
