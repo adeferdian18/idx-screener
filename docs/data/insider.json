@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-12T09:12+07:00",
+ "updated": "2026-11-12T10:08+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 88
+  "news": 87
  },
  "transactions": [
   {
    "id": "91f4707cb9c6",
    "date": "2026-11-12",
    "code": "LUCY",
-   "party": "PT Delta Wibawa Bersama",
-   "role": "korporasi",
+   "party": null,
+   "role": "individu5",
    "action": "jual",
    "shares": 227220000,
-   "price": 300.0,
-   "value": 68166000000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/delta-wibawa-lepas-22722-juta-saham-lucy-rp6816-miliar-kepemilikan-susut/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPS3Z4N05TMWtCa2RHTnBKNGtlWE1SOTdyOVNpRll3dkRLSVZvVTVyckRQQTl3enhfTVRfS213TFRJZk0zM1RLSkxVMzRzbm1GMG5pdTB0dWkxZEY5dnVZQXh2UTc4eV9FYlRYV1hkYmZEU2FfR3lRNnZnc0JnemptbXBDOU5mN0xkSmwtOUdDTVZRdXNvY2h6ZnNiTQ?oc=5",
    "title": "Delta Wibawa Lepas 227,22 Juta Saham LUCY Rp68,16 Miliar, Kepemilikan Susut",
    "first_seen": "2026-11-12T09:12+07:00"
   },
@@ -199,7 +199,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -210,8 +210,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -2184,8 +2184,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yT2Q3OEJadkR6N1M5NHBZNzRvMXFBZGt5VlBqRFBRS1MwSlBZRS1JZFhWMUtwQllpTG42V001eVM2RU1DWGN0bUMxa3YzUHVfanVvVUpoaDRIWEE1SmM0eERvZ1Mydw?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSnQyMGl0czhNcHNVNVJqakVhbTYzX1lyT1lUWXdWX1FCZ1RBRE94aTl2TGYzb0toc3dqeWJPMEhLYWt2UFpidTVuUVk5TWtOV010Y3k2elRkcXVhSkpRNTlyNV81QzhrRUx4WnMwdlhTUnAwOUhBUW01TDZsQnFqWVVlUmJnaWNFRnZMeGl0VjlGemlHU0dQOHdjSVVSUldqMlHSAZsBQVVfeXFMTnVsS2xUR0RoWlJCb25CcHBYVENhWHMwQVIxNWJfZ2VUM2RoemZJZURLM1l0ejFrUzhoRnlQOXJEVnJ0LTIzdWRZNnFaczhKUzNPWUY3VGIwSE9YbEJMcEFlM3lPdjY2Mzg5Nzc0WFg2Ylh0UjlJTTJxSENKZFg2TjdRNUtDZUEzUG1RT28xOTNPaVZqVGJvb01qSE0?oc=5",
    "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
    "first_seen": "2026-11-06T17:49+07:00"
   },
@@ -11202,7 +11202,7 @@
  "net_by_code": {
   "LUCY": {
    "net_shares": -227220000,
-   "net_value": -68166000000.0,
+   "net_value": 0.0,
    "count": 1
   },
   "SSIA": {
