@@ -1,10 +1,73 @@
 {
- "updated": "2026-11-12T16:00+07:00",
+ "updated": "2026-11-12T17:02+07:00",
  "sources": {
   "idx": "blocked",
   "news": 86
  },
  "transactions": [
+  {
+   "id": "8ca48f6687ea",
+   "date": "2026-11-12",
+   "code": "RAAM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYVJqMmNBRmNJOHJQMkRJQVV3dG9VVDdOU2daNzRqVUtCS0IycEZ0SWk2NDM3V2NZTmVoVEdvSnc4czUzN2xseEowMEJ5a05vV28wQVdQeVprZm1OZG5QRkQyc1VBV2o0MGVEblhHTWl2c1dNVGpWMWJhREhoSDMtVWlYRlB2ZzhSdmVKelVmc01WWE9ERkM4VzlrcHhydDZlVFd1d3pnVGw2SFkwdkRvS3NXekl2XzJheGxxU21EaDBCQQ?oc=5",
+   "title": "Tak Cukup Sekali! Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Tembus 68,86%",
+   "first_seen": "2026-11-12T17:02+07:00"
+  },
+  {
+   "id": "25da8eddd850",
+   "date": "2026-11-12",
+   "code": "MASB",
+   "party": "Bank Multiarta Sentosa Fely",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 1800,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNR0xjc0h0UDhvOWhkNDV0M1hrb0ZpRmwxLWlaTjBFWnVKVDExemphamd6bkRoTHRVSkJXZVRTdlNVb0kyOW1IT3JCUmtJZ3JRYWIwazJfajZ1RHVNbTVrSDQ4UmFjM1hzTUVUaERTV1J5MHBQODYxZEtBMHZsSnhDbDQ2cEppdzRhY1FDQVNRTVc3am14cmhLNjUtQW4zNDB3MEJ3UXk5UWdxRkg2WmJ1TjRhbVc5QXRqTTctM0FRUmU2VVY2MW1CelJVaW5ialBwVUQzejQ1VkR3WFk?oc=5",
+   "title": "Direktur Bank Multiarta Sentosa Fely Retnowati Borong 1.800 Lembar MASB, Kepemilikan Tembus 300 Ribu Lembar",
+   "first_seen": "2026-11-12T17:02+07:00"
+  },
+  {
+   "id": "4f4a75572f4a",
+   "date": "2026-11-12",
+   "code": "AKPI",
+   "party": "Henry Liem",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 250000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbzJQZlpqSV8yUnJSNzNUMkNIcEFpczh5QnBHYTVqYmFlMW4yNEMxUExpWnFPWUtFOFNucUstbmZJMVY3VVM5eDhZTEFHb2VsNFphOXYxdWdOOExWMndOTmFsU0pERm1UZnIxTGFrX1B0WGRPYVRzaGR2eVBvNEFmLXF5bFlyQ1BBcTR6eXFMbjVjdlQ3bmxySVhXQmYzRk1mSEc2ZEFnMzlDR3d2VjRYZURjaklnUQ?oc=5",
+   "title": "Lagi! Komisaris AKPI Henry Liem Lepas 250 Ribu Saham, Kepemilikan Terus Menyusut",
+   "first_seen": "2026-11-12T17:02+07:00"
+  },
   {
    "id": "90fa2e035ada",
    "date": "2026-11-12",
@@ -283,7 +346,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -294,8 +357,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -1176,8 +1239,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NDRmYTM2ZkVFMFlERTAyOGl2TVE3RHg2cldSbWNpQ1lway1NS1ZYeXlkY2RTVTA1VGhnWXpoS3ZUVnM1a3Y2UTFxZE9qcHlGamNR?oc=5",
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwYzYxaXQzRWhod1NmMVFWREwwbHdvcy1sS1JjVTQ0dmY2dFBJLXJZX19BODRaVXBPS3NaWUMxOE45SDhVUzdCdnRxd0hyRFV1NE5DdGIxbkViOUxzWlQ0LWpOVlFsdw?oc=5",
    "title": "Investor Asing Lepas Saham GOTO Rp663,2 Miliar Sepekan",
    "first_seen": "2026-11-10T08:59+07:00"
   },
@@ -1470,8 +1533,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWJ6d1dXX1o5LUJqS29rd3J3VzFxdUdQZUgxOERhV0d4bnIyWjBkdW9RWlltSklvZXpmTjZTa1YzNmVjYXZXSHhiLUM4OWJTSV9RXzRBb1ViQnJxWE9GTGpyVXhsRjVoMkRzOGtRM3AwVHllNGNfWWtxOE5Oelp2SWhUR18wd1JFWVUtY2JMWHRwdnJKc01xMUdhY1lOYmFHZjlN0gGcAUFVX3lxTE1BaHZWaUxFaUhxSG85dU5hbTdoYnBqTlZhZFFWaXFRb2FZNEtUX3Q2YVpyWDBsOXhZMG1xVDNjTENqdUJCY3pMQTRRZWx2VzItOFJPcjFDQ1JOYUhseXFXMXJvR1NOcGxRU1JRcVV3NXk0aERXVVVnLUhtZGVaUTFBU0N6ZnBlamdfd29peXZHTWJDVS10N1BnV0FEdA?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85c3QzOEtHbEFVTmd4dGJYTHJpazZiTVFWQ2tCQklPb1B1Q2pFb0ZPNEUwWVZSck1YLVVMUlFJcmZxbm45VTNnQmdGOVMxbDVaU3YxQU9WbUJ6MG1fc2VVN1E4NGhRQQ?oc=5",
    "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
    "first_seen": "2026-11-09T13:33+07:00"
   },
@@ -2268,8 +2331,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSnQyMGl0czhNcHNVNVJqakVhbTYzX1lyT1lUWXdWX1FCZ1RBRE94aTl2TGYzb0toc3dqeWJPMEhLYWt2UFpidTVuUVk5TWtOV010Y3k2elRkcXVhSkpRNTlyNV81QzhrRUx4WnMwdlhTUnAwOUhBUW01TDZsQnFqWVVlUmJnaWNFRnZMeGl0VjlGemlHU0dQOHdjSVVSUldqMlHSAZsBQVVfeXFMTnVsS2xUR0RoWlJCb25CcHBYVENhWHMwQVIxNWJfZ2VUM2RoemZJZURLM1l0ejFrUzhoRnlQOXJEVnJ0LTIzdWRZNnFaczhKUzNPWUY3VGIwSE9YbEJMcEFlM3lPdjY2Mzg5Nzc0WFg2Ylh0UjlJTTJxSENKZFg2TjdRNUtDZUEzUG1RT28xOTNPaVZqVGJvb01qSE0?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yT2Q3OEJadkR6N1M5NHBZNzRvMXFBZGt5VlBqRFBRS1MwSlBZRS1JZFhWMUtwQllpTG42V001eVM2RU1DWGN0bUMxa3YzUHVfanVvVUpoaDRIWEE1SmM0eERvZ1Mydw?oc=5",
    "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
    "first_seen": "2026-11-06T17:49+07:00"
   },
@@ -11284,6 +11347,21 @@
   }
  ],
  "net_by_code": {
+  "RAAM": {
+   "net_shares": 4691545700,
+   "net_value": 0.0,
+   "count": 9
+  },
+  "MASB": {
+   "net_shares": 25500,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "AKPI": {
+   "net_shares": -2848100,
+   "net_value": 0.0,
+   "count": 14
+  },
   "BBCA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -11358,11 +11436,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "RAAM": {
-   "net_shares": 4691545700,
-   "net_value": 0.0,
-   "count": 8
   },
   "PTRO": {
    "net_shares": 23140000,
@@ -11444,11 +11517,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "AKPI": {
-   "net_shares": -2598100,
-   "net_value": 0.0,
-   "count": 13
-  },
   "NATO": {
    "net_shares": 277130000,
    "net_value": 0.0,
@@ -11513,11 +11581,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "MASB": {
-   "net_shares": 23700,
-   "net_value": 0.0,
-   "count": 6
   },
   "ELIT": {
    "net_shares": 106300,
