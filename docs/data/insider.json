@@ -1,10 +1,178 @@
 {
- "updated": "2026-11-11T17:46+07:00",
+ "updated": "2026-11-12T09:12+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 86
+  "news": 88
  },
  "transactions": [
+  {
+   "id": "91f4707cb9c6",
+   "date": "2026-11-12",
+   "code": "LUCY",
+   "party": "PT Delta Wibawa Bersama",
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 227220000,
+   "price": 300.0,
+   "value": 68166000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/delta-wibawa-lepas-22722-juta-saham-lucy-rp6816-miliar-kepemilikan-susut/",
+   "title": "Delta Wibawa Lepas 227,22 Juta Saham LUCY Rp68,16 Miliar, Kepemilikan Susut",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "b64e0528d03a",
+   "date": "2026-11-12",
+   "code": "SSIA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Industry.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXp5MjBPQUxVVlJMMFJxbEM2OEhFaGp4cHFXemdkOTlOV3BRb1BHMVptOExkX0Z4bGJDQ1VsaVBDc3RlZ2IxdzBIV3FrTXFyOUwtTjBIMUtCRTQxUmFYVUstdldMUDBuZkphQ1ZscjlZZmJsSFhjMkV1Ull6eHR1OWR4TE1iYWg3MXJyMGE5QWNfMXF2U2h1bXBhQ1NJUURxbmhrcGtLbkhVbGc?oc=5",
+   "title": "SSIA Borong Saham NRCA Rp 5,5 Miliar, Kepemilikan Naik Jadi 64,5 Persen",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "3986a6b07883",
+   "date": "2026-11-11",
+   "code": "TLKM",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 6.9,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORi13bEV3ZHU5b002WmFOLVlTQW9BZzQtSFVJSmhSSE1TNFhDelBPNlhPVWF5SjRFeWk5TllOQXFsZkduWHpPcDRLdnBHd0dkNlBfNm5hVTFoNjBidjlxazhvZzV4cl9kbDRnOGt0SlJPaC1SRUpNY2ItVnBQYU5XcWFNLWxXbW5HT25WMm9SQ2lHc3hKSlcwRFNWenZPMjhNTlNzS2hn?oc=5",
+   "title": "BNY Mellon borong 115,23 juta TLKM, akumulasi saham jadi 6,9%",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "1b36bfc56ba3",
+   "date": "2026-11-11",
+   "code": "FOLK",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUXU3OHczV1l0cVpsTDBILVA0VG1wSHczaFFyY2hZU09tM2JTWHY3ek84MGRDQjNJSzNCLXl0VFE2Y25yOEFkZnFOWGgzSGx2T2FvSkQzb2NPWjAzcWlLUWJXbFBlUGNqeWV6Rk9mR0xfZ0xFWjZLZE5weDRac19WVnBUX3E1a1lEcnFlSjY4U0RwMjZSMnZIdW5jQkxVSU02VEQxZ1NMa2pxbUtxYjBObi1xRFN3RE1jV0NNdm1pcVRfZEFKMGsyQi1UOA?oc=5",
+   "title": "Aksi Jual Berlanjut! Kepemilikan Sumber Garam Pratama di FOLK Terus Menyusut, Kini Tersisa 17,19%",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "c077ebff7bd5",
+   "date": "2026-11-11",
+   "code": "NRCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 14000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPalJDcUpNYnRlTzVzREhvbmdQWUpKVEtLNklYX2YzZEFkMjV5TW5qQ3pUcy1fVXVLX1ZjMXRLdU1PdExHMFB3Zk5lZnJRQnN2eHBJMjZTVWFCMjNKMkcwR080ZDBVMkd2UUNmcVBxdmY0Q2F3eFdqUXZuZ2lITDVBNzVqVDBmTzRpQk5TNTJqU0xnUVVXbkp0M2luQWx0c3p0eG5GVXpXVmo3SVQzQVNzbQ?oc=5",
+   "title": "Tambah 14 Juta Saham NRCA, Kepemilikan Surya Semesta Internusa Tembus 64,50%!",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "faf9d7d78b88",
+   "date": "2026-11-11",
+   "code": "DGWG",
+   "party": "Kurangi Kepemilikan",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CNBC Indonesia Market",
+   "link": "https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham",
+   "title": "Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "abe443c49340",
+   "date": "2026-11-11",
+   "code": "FORU",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "FORTUNE Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX1Y3d3Y4SEt6NnB0V1FCZ3ZUejZMbW4zUzJwSmVCNG80Z2kwWEZDbDBJbW5ZTnUxN1ZjeUpSUjV2TGRVNzQ5aHBoLXRjZmN4MWdTR0pOemJtdTVnXzQ3RTBLbS1hcVYxN1pDMWJzTFFBZ203bWk5MGQzN1cwS0V2aDJsQnEwVldocmY1eUxGdUNVenZpc1U5btIBngFBVV95cUxQUEpaandyWWgxeTl5dU1FUEpOMUZLNndqWm9rYVVnUzFtVGxLN3I2SHh0RGNwT2ZmR1JDOWhIVjQzZGgxRnpqamVSbWt0STZJa1l3RS13SzkxeUtiTEtzaGRlVENTYWRYZzZJVVdwZkV6LW9qb1hJMk5JRTFLSzB0aTRSRDJzWUsxakR0T3JNN2YtZnZjR1JiM3pZRlpYQQ?oc=5",
+   "title": "KB Bank Bantah Kabar Divestasi di Tengah Isu Akuisisi oleh Kemenkop",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "6400efc67d6f",
+   "date": "2026-11-11",
+   "code": "BBKP",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "CNN Indonesia Ekonomi",
+   "link": "https://www.cnnindonesia.com/ekonomi/20261111205159-78-1426084/kb-financial-group-tak-ada-rencana-lepas-saham-kb-bank-di-ri",
+   "title": "KB Financial Group Tak Ada Rencana Lepas Saham KB Bank di RI",
+   "first_seen": "2026-11-12T09:12+07:00"
+  },
   {
    "id": "9639ca09d5e5",
    "date": "2026-11-11",
@@ -22,7 +190,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "IDX Channel",
-   "link": "https://www.idxchannel.com/banking/kookmin-bank-tak-punya-rencana-jual-saham-kb-bank-bbkp",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUE80TGg0X2R4MWtOUm5UWHJUcm1vZ1J3aElfemUzNDVpY0xXdWh2R25US2R6TlZ1YlBOZHFzcFkzNWJEM1NnV3QtY2Z3OGUtUmxwZmVGSGl3X0YxY3BPMkU2cjNDMWkwZU1CamhLZDRLMmJ2Nkt2X1dZY1FjZXNpU1d1d2dWblVWQTBBUTFxNldmdVhneXZEctIBmAFBVV95cUxQUE80TGg0X2R4MWtOUm5UWHJUcm1vZ1J3aElfemUzNDVpY0xXdWh2R25US2R6TlZ1YlBOZHFzcFkzNWJEM1NnV3QtY2Z3OGUtUmxwZmVGSGl3X0YxY3BPMkU2cjNDMWkwZU1CamhLZDRLMmJ2Nkt2X1dZY1FjZXNpU1d1d2dWblVWQTBBUTFxNldmdVhneXZEcg?oc=5",
    "title": "Kookmin Bank Tak Punya Rencana Jual Saham KB Bank (BBKP)",
    "first_seen": "2026-11-11T17:46+07:00"
   },
@@ -31,7 +199,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -42,8 +210,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -73,7 +241,7 @@
    "date": "2026-11-11",
    "code": "KOTA",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -82,10 +250,10 @@
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
-   "purpose": "investasi",
+   "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/saham-kota-bergejolak-pemegang-saham-utama-berpeluang-tambah-kepemilikan/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPc3Q2TXhsZTFSbHUyZVU2MzFSVlMwcTNNYTNwY3YxMnk3bzNJeFI1RmZjRnl5ODVsZDB4TEF0TVpkamhNM1p6a2xicVg5YXZNdjk1NTBBRnhVdjh1SWw2RVZMdXhuRHhReUpJeHREZmg2bEVnc3NWa3FNVF80Tk1adGRNNGJpSjJjOVhjNEZkR2E4NFhKMDZnOUF1OA?oc=5",
    "title": "Saham KOTA Bergejolak, Pemegang Saham Utama Berpeluang Tambah Kepemilikan",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -94,7 +262,7 @@
    "date": "2026-11-11",
    "code": "RAAM",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "beli",
    "shares": 230000,
    "price": null,
@@ -105,8 +273,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/ram-punjabi-borong-230-ribu-saham-raam-kepemilikan-tembus-6886/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM1dRbUdiT2FmUUFUUlRlVlpnNnpoZWFiNFBBVjVJRnJjN0JlZGRISjZwSHlyN0wybFU3UjFDYkIwNEhRYjV6R0x4M1AtLWRFRkwxQnJjNEZxM0tDWE5kVzVKRXh0X1BSQl9IWEN3ZEprREw4SllOb0RiSWVobkdZMXNHWDI0bVFadXR6bEpB?oc=5",
    "title": "Ram Punjabi Borong 230 Ribu Saham RAAM, Kepemilikan Tembus 68,86%",
    "first_seen": "2026-11-11T16:27+07:00"
   },
@@ -115,19 +283,19 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "beli",
-   "shares": 95400,
-   "price": 294.0,
-   "value": 28047600.0,
+   "shares": null,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/robert-christian-tanoko-tambah-saham-avia-kini-pegang-23684/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMDVQMy1abGl5LXVVU19kLTN0Uldrcjh1WkExYWhHU2swTlptQjMxNndEVmtwTG1RMmJFZFBpOUJ2Qy1ERjNRai00Tk1aSmFIT1VQbEg3bkQ2X0FjZG9NblZxdllCU3JLVTlieWpkSkdJVk5ta3F2bDl0bU9xYkc5Q05lenp3MUg0SUE?oc=5",
    "title": "Robert Christian Tanoko Tambah Saham AVIA, Kini Pegang 2,3684%",
    "first_seen": "2026-11-11T16:27+07:00"
   },
@@ -157,7 +325,7 @@
    "date": "2026-11-11",
    "code": "NRCA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -168,8 +336,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Lotus Andalan Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa0RDQmpndzFPS01weVFJN3o0UE1ERUJEQlR6T01UZXRqekUyRlpYbUNQYkhzQkZOMmVJNFZtVUU2aTc5NDN1UU9rNVBXQmlqb1BpQXRQNW1UdVJfSlFveG5jV3lad2RITTdrY01wTzhERkxkZzExN3RIODZXalRQNlBOenREYUFCT1NReWJKLXdoaE1iajFIcnRyM0ZiUFpvQnIydlUtMW12NUpf?oc=5",
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
    "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
    "first_seen": "2026-11-11T15:24+07:00"
   },
@@ -178,19 +346,19 @@
    "date": "2026-11-11",
    "code": "NRCA",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": 14000000,
-   "price": 390.0,
-   "value": 5460000000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": 64.5,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/surya-semesta-internusa-tambah-14-juta-saham-nrca-kepemilikan-naik-jadi-6450/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZWd5SGc3aEVTTlBWNVE0RWJKZVVZYUpDMHd6Ul9qT012RFdOdm9NdWlmT0thTDhsYU9qem1sbnFGN1hZU1FNWmItcjZPUVZXVjFSTUZBazhiZEs1T09xQVNUNUJZNGMwTUlHUElEX2JUaUxXUkpFU0ZzTkxieHFzN005MHRvNTFTWlRNXzd6Z21oMzNuRjNNencwMXRfYmVp?oc=5",
    "title": "Surya Semesta Internusa Tambah 14 Juta Saham NRCA, Kepemilikan Naik Jadi 64,50%",
    "first_seen": "2026-11-11T15:24+07:00"
   },
@@ -636,27 +804,6 @@
    "first_seen": "2026-11-11T08:57+07:00"
   },
   {
-   "id": "7206a15d777e",
-   "date": "2026-11-10",
-   "code": "ENRG",
-   "party": null,
-   "role": "individu5",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0R4WEpPMnBCUEZfN0wzMFBqY0NHNlh2Q0dCQ0hMUUNZakRVZHRSdU1FVnRUY2tCY1VHX0Z6bzBLblhxTHlaV3dXcFpPUWR5WVd1aVdtVHRmTE5odUlnZjNXZFVNUGZFelRwSDZqczRMU0JkQVpPc3JOOWtJTFZzVHdoanBMLWRzNnBfSVRYUDVURFNVX19IdGFsMkRfUQ?oc=5",
-   "title": "Konsolidasi Internal, Bakrie Kalila Kurangi Kepemilikan Saham ENRG",
-   "first_seen": "2026-11-11T08:57+07:00"
-  },
-  {
    "id": "860d145fa0d8",
    "date": "2026-11-10",
    "code": "TMPO",
@@ -777,8 +924,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OY2VleXNSczFCbGpYaFU2cVFmclFpSmEyc0RTZExnaFd5Sy16QTdaNWlhZ18wMGVXLVBWdGljSkNnQmNlTmZ1MDN4OGZNanB0aG1J?oc=5",
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NQlhMSU5xTHZCMmZGTjZKU2xSZFJrNWd6ZndzQUJGdXpvekVOR3ZrbUw0ZWlReXN4eWhOd3FMOW1yVkY2cm5rMkpSbGJFanUwR0UzTVhuclBoQ1k2c0xOdzJVcmg?oc=5",
    "title": "Investor Asing Lepas Saham TLKM Rp86,97 Miliar di BEI",
    "first_seen": "2026-11-10T15:17+07:00"
   },
@@ -945,8 +1092,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Lensa Hukum",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwYzYxaXQzRWhod1NmMVFWREwwbHdvcy1sS1JjVTQ0dmY2dFBJLXJZX19BODRaVXBPS3NaWUMxOE45SDhVUzdCdnRxd0hyRFV1NE5DdGIxbkViOUxzWlQ0LWpOVlFsdw?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NDRmYTM2ZkVFMFlERTAyOGl2TVE3RHg2cldSbWNpQ1lway1NS1ZYeXlkY2RTVTA1VGhnWXpoS3ZUVnM1a3Y2UTFxZE9qcHlGamNR?oc=5",
    "title": "Investor Asing Lepas Saham GOTO Rp663,2 Miliar Sepekan",
    "first_seen": "2026-11-10T08:59+07:00"
   },
@@ -1497,6 +1644,27 @@
    "first_seen": "2026-11-09T09:04+07:00"
   },
   {
+   "id": "7206a15d777e",
+   "date": "2026-11-08",
+   "code": "ENRG",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRF9nVXNYZlZHdWRFY0c1dnd3cXg4Mk9SMDVZSEM5MGE3bjN3UkdVX2RsY2kydVV5QWpvc1JzUmJJQXlpYW9uNUtHcTN2TU1pb0Jobm9Fb1hBZXpFaDVieVMxRmI2MHhLazFYMGpDb2FxdlRtTFZnY0hub29zOUdHZktxQm45bWQwZ2pnemt1SnFaM3ctcDdHZg?oc=5",
+   "title": "Konsolidasi Internal, Bakrie Kalila Kurangi Kepemilikan Saham ENRG",
+   "first_seen": "2026-11-11T08:57+07:00"
+  },
+  {
    "id": "d7f1b0a55347",
    "date": "2026-11-08",
    "code": "BYAN",
@@ -2016,8 +2184,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSnQyMGl0czhNcHNVNVJqakVhbTYzX1lyT1lUWXdWX1FCZ1RBRE94aTl2TGYzb0toc3dqeWJPMEhLYWt2UFpidTVuUVk5TWtOV010Y3k2elRkcXVhSkpRNTlyNV81QzhrRUx4WnMwdlhTUnAwOUhBUW01TDZsQnFqWVVlUmJnaWNFRnZMeGl0VjlGemlHU0dQOHdjSVVSUldqMlHSAZsBQVVfeXFMTnVsS2xUR0RoWlJCb25CcHBYVENhWHMwQVIxNWJfZ2VUM2RoemZJZURLM1l0ejFrUzhoRnlQOXJEVnJ0LTIzdWRZNnFaczhKUzNPWUY3VGIwSE9YbEJMcEFlM3lPdjY2Mzg5Nzc0WFg2Ylh0UjlJTTJxSENKZFg2TjdRNUtDZUEzUG1RT28xOTNPaVZqVGJvb01qSE0?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yT2Q3OEJadkR6N1M5NHBZNzRvMXFBZGt5VlBqRFBRS1MwSlBZRS1JZFhWMUtwQllpTG42V001eVM2RU1DWGN0bUMxa3YzUHVfanVvVUpoaDRIWEE1SmM0eERvZ1Mydw?oc=5",
    "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
    "first_seen": "2026-11-06T17:49+07:00"
   },
@@ -11032,14 +11200,49 @@
   }
  ],
  "net_by_code": {
+  "LUCY": {
+   "net_shares": -227220000,
+   "net_value": -68166000000.0,
+   "count": 1
+  },
+  "SSIA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "TLKM": {
+   "net_shares": 374450000,
+   "net_value": 0.0,
+   "count": 12
+  },
+  "FOLK": {
+   "net_shares": -86450000,
+   "net_value": -883200000.0,
+   "count": 4
+  },
+  "NRCA": {
+   "net_shares": 28000000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "DGWG": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "FORU": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BBKP": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 2
+   "count": 3
   },
   "AVIA": {
-   "net_shares": 4394205400,
-   "net_value": 2706047600.0,
+   "net_shares": 4394110000,
+   "net_value": 2678000000.0,
    "count": 16
   },
   "IATA": {
@@ -11056,11 +11259,6 @@
    "net_shares": 4691545700,
    "net_value": 0.0,
    "count": 8
-  },
-  "NRCA": {
-   "net_shares": 14000000,
-   "net_value": 5460000000.0,
-   "count": 2
   },
   "DGIK": {
    "net_shares": 408260000,
@@ -11132,20 +11330,10 @@
    "net_value": -400000000.0,
    "count": 5
   },
-  "ENRG": {
-   "net_shares": -30730000,
-   "net_value": 0.0,
-   "count": 10
-  },
   "TMPO": {
    "net_shares": -256960000,
    "net_value": 0.0,
    "count": 4
-  },
-  "TLKM": {
-   "net_shares": 374450000,
-   "net_value": 0.0,
-   "count": 11
   },
   "ASII": {
    "net_shares": 0,
@@ -11257,6 +11445,11 @@
    "net_value": 0.0,
    "count": 21
   },
+  "ENRG": {
+   "net_shares": -30730000,
+   "net_value": 0.0,
+   "count": 10
+  },
   "BNBA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -11296,11 +11489,6 @@
    "net_shares": 638800,
    "net_value": 0.0,
    "count": 2
-  },
-  "FOLK": {
-   "net_shares": -86450000,
-   "net_value": -883200000.0,
-   "count": 3
   },
   "ARKO": {
    "net_shares": 13675000,
