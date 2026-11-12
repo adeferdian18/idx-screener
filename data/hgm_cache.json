@@ -26,7 +26,7 @@
 "AGAR": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-28"
+"diambil": "2026-11-12"
 },
 "AKKU": {
 "status": "data kurang",
@@ -550,7 +550,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-11-05"
+"diambil": "2026-11-12"
 },
 "SRSN": {
 "status": "sebagian",
@@ -1039,11 +1039,16 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-05"
+"diambil": "2026-11-12"
 },
 "AIMS": {
 "status": "data kurang",
 "skor": null,
 "diambil": "2026-11-09"
+},
+"FLMC": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-11-12"
 }
 }
