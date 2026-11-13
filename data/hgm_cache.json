@@ -722,7 +722,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-10-28"
+"diambil": "2026-11-13"
 },
 "SRTG": {
 "status": "data kurang",
@@ -747,20 +747,20 @@
 "diambil": "2026-10-28"
 },
 "BFIN": {
-"status": "sebagian",
-"skor": 2,
-"kuartal": "2026-06",
-"laba_yoy": 0.3303,
-"penjualan_yoy": 0.0384,
-"margin": 0.2882,
-"margin_lalu": 0.2249,
-"akselerasi": true,
+"status": "lemah",
+"skor": 0,
+"kuartal": "2026-09",
+"laba_yoy": null,
+"penjualan_yoy": 0.0249,
+"margin": 0.2873,
+"margin_lalu": null,
+"akselerasi": null,
 "cek": {
-"laba": true,
+"laba": false,
 "penjualan": false,
-"margin": true
+"margin": false
 },
-"diambil": "2026-10-29"
+"diambil": "2026-11-13"
 },
 "ELSA": {
 "status": "kuat",
@@ -830,7 +830,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-06"
+"diambil": "2026-11-13"
 },
 "PSAB": {
 "status": "sebagian",
@@ -867,18 +867,18 @@
 "PTSP": {
 "status": "lemah",
 "skor": 0,
-"kuartal": "2026-06",
-"laba_yoy": -0.6984,
-"penjualan_yoy": -0.0919,
-"margin": 0.0199,
-"margin_lalu": 0.0598,
+"kuartal": "2026-09",
+"laba_yoy": -5.562,
+"penjualan_yoy": 0.0338,
+"margin": -0.0324,
+"margin_lalu": 0.0074,
 "akselerasi": null,
 "cek": {
 "laba": false,
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-11-06"
+"diambil": "2026-11-13"
 },
 "MTLA": {
 "status": "data kurang",
@@ -1050,5 +1050,11 @@
 "status": "data kurang",
 "skor": null,
 "diambil": "2026-11-12"
+},
+"BEEF": {
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-13"
 }
 }
