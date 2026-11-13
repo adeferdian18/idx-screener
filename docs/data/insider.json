@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-13T11:10+07:00",
+ "updated": "2026-11-13T12:15+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 85
+  "news": 83
  },
  "transactions": [
+  {
+   "id": "144df8be57f8",
+   "date": "2026-11-13",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "InvestorTrust",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeDRSOWk5N21OVldZVTFYZHM1ZElHMnNOQnR1Z2htUG5MWHJWdzN3TUFnYzdOOXdockZieHNrdHFnaGp2dHNWdkJ0MWhkZWhNN2dmNmpHT3M1YnIwcEVkVGpnV0o3YmY2dUtkRmtCV3lKOTZ3YXRiNkdIU29mZktoc0dvTVFTMWlqVElkd2NTcEpHX3dzbWREWVN3Sk1ycFFDeTExZ1VyZjhPTGRoemxXOFFPWmsxVXg1SDV4UDRn?oc=5",
+   "title": "Perusahaan Gabriel Rey Ini Kembali Tambah Saham Multi Medika (MMIX), Kini Kuasai 4,57%",
+   "first_seen": "2026-11-13T12:15+07:00"
+  },
+  {
+   "id": "96c1bce3f3bb",
+   "date": "2026-11-13",
+   "code": "MMIX",
+   "party": "PT Pukul Rata Kanan Tambah Kepemilikan",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5pckZWRF9MelFrbHp4a3VyZGw3ZndRbmNYdjlyVzZWcEdPVUY4U3hPUmxpVlpuSTNTREM0cUo4SDBkT29GOVQzREJlWUZ6Uy1iUDZ4R29TWUVJa3pIRFlNZ3RLMnBwVDZESzZz?oc=5",
+   "title": "PT Pukul Rata Kanan Tambah Kepemilikan Saham MMIX",
+   "first_seen": "2026-11-13T12:15+07:00"
+  },
   {
    "id": "27ad011e0840",
    "date": "2026-11-13",
@@ -214,6 +256,27 @@
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNlZPSFhfcS10TFpjQTBqTmdwWFVBX3VMam12djllbDhWbEUxWTNLckxZT19ITU1ub2pBRThzcjNmcXJRa0NMVjJKZXh1S1dJZWpnclhtVXYwLTc1cUNJVDFyZlNuYkhOd0FsUFIzc3Q5ZkZoZWRxSTBmNE4wMmk5WmNhZjFuNmstajFYZ3ZOWmh2MzFvUW1NeWpuM3hUN3NfMGl1UjlhWkZuQ1dNd0tVRkx5ZExyZEJLQ2FYQURuUjNXVXpOLXdxN0ZR0gHPAUFVX3lxTE1JNklaSjFGa1pMV2cwS2RNYy1KZ1plSFkzZm15OXhPWkE5VXhwWVU0ZWE2OGJEQzQtM1k1SHh3REc2QzBwX1V4VlBuWWpnWFRtVk1vUjhaTzBpYUY2N2E0bjlBcW82V3dENm95YXRPUklILVZVajJReUhFNEpoQXc1UF80SDJpMF9tUENvV0xBZ2JuQjBvdXgtWWxNbWtPaWQyZ19LT3hENGVyTDlkTzcwT29uN1Z0MXk0MkFSUEVaUVdYZGJDRWVYUkZLdkROQQ?oc=5",
    "title": "Adhi Karya (ADHI) Revisi RUPSLB, Bahas Divestasi Jasamarga Jogja Solo",
    "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "fcd8a7a19bb1",
+   "date": "2026-11-12",
+   "code": "RLCO",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "beli",
+   "shares": 53130000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSEc1X1l5b05kYTZMZEJid2s4eTBjNmlqbXF2dnlINlJDQXZoek8tdThab1VveHBLMVJVRzV0VFBYaXpfS3lZSXh2WUtpVm92WmV4eS1VUXZZeU4weEoxX3VxdjVTRFhlSEs1eEo3bmdRTEpvTU4tUVZtNTlta0N1eXR4WWY2Y3hQRzE3ZWJva1YtQjVyWWJwVHM5QkJwQUxFdHc1X1phT2Nxdw?oc=5",
+   "title": "Samuel Sekuritas borong 53,13 juta saham RLCO, pegang hampir 15%.",
+   "first_seen": "2026-11-13T12:15+07:00"
   },
   {
    "id": "576bf936ae53",
@@ -699,27 +762,6 @@
    "first_seen": "2026-11-11T16:27+07:00"
   },
   {
-   "id": "0cb8c16ca945",
-   "date": "2026-11-11",
-   "code": "NRCA",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
-   "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
-   "first_seen": "2026-11-11T15:24+07:00"
-  },
-  {
    "id": "7ca474bf8b71",
    "date": "2026-11-11",
    "code": "NRCA",
@@ -1140,6 +1182,27 @@
    "first_seen": "2026-11-12T13:31+07:00"
   },
   {
+   "id": "0cb8c16ca945",
+   "date": "2026-11-10",
+   "code": "NRCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
+   "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
+   "first_seen": "2026-11-11T15:24+07:00"
+  },
+  {
    "id": "10af80b119a2",
    "date": "2026-11-10",
    "code": "SRTG",
@@ -1491,8 +1554,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NDRmYTM2ZkVFMFlERTAyOGl2TVE3RHg2cldSbWNpQ1lway1NS1ZYeXlkY2RTVTA1VGhnWXpoS3ZUVnM1a3Y2UTFxZE9qcHlGamNR?oc=5",
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwYzYxaXQzRWhod1NmMVFWREwwbHdvcy1sS1JjVTQ0dmY2dFBJLXJZX19BODRaVXBPS3NaWUMxOE45SDhVUzdCdnRxd0hyRFV1NE5DdGIxbkViOUxzWlQ0LWpOVlFsdw?oc=5",
    "title": "Investor Asing Lepas Saham GOTO Rp663,2 Miliar Sepekan",
    "first_seen": "2026-11-10T08:59+07:00"
   },
@@ -11599,6 +11662,11 @@
   }
  ],
  "net_by_code": {
+  "MMIX": {
+   "net_shares": 11400000,
+   "net_value": 0.0,
+   "count": 13
+  },
   "SINI": {
    "net_shares": 2250000,
    "net_value": 0.0,
@@ -11613,11 +11681,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 23
-  },
-  "MMIX": {
-   "net_shares": 11400000,
-   "net_value": 0.0,
-   "count": 11
   },
   "BBRI": {
    "net_shares": 5500000,
@@ -11638,6 +11701,11 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
+  },
+  "RLCO": {
+   "net_shares": 102350000,
+   "net_value": 0.0,
+   "count": 3
   },
   "VIVA": {
    "net_shares": -3060000,
@@ -12223,11 +12291,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "RLCO": {
-   "net_shares": 49220000,
-   "net_value": 0.0,
-   "count": 2
   },
   "AYLS": {
    "net_shares": 9800,
