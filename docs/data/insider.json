@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T16:55+07:00",
+ "updated": "2026-11-13T17:45+07:00",
  "sources": {
   "idx": "blocked",
   "news": 90
@@ -739,6 +739,27 @@
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXp5MjBPQUxVVlJMMFJxbEM2OEhFaGp4cHFXemdkOTlOV3BRb1BHMVptOExkX0Z4bGJDQ1VsaVBDc3RlZ2IxdzBIV3FrTXFyOUwtTjBIMUtCRTQxUmFYVUstdldMUDBuZkphQ1ZscjlZZmJsSFhjMkV1Ull6eHR1OWR4TE1iYWg3MXJyMGE5QWNfMXF2U2h1bXBhQ1NJUURxbmhrcGtLbkhVbGc?oc=5",
    "title": "SSIA Borong Saham NRCA Rp 5,5 Miliar, Kepemilikan Naik Jadi 64,5 Persen",
    "first_seen": "2026-11-12T09:12+07:00"
+  },
+  {
+   "id": "2edb66d0d247",
+   "date": "2026-11-11",
+   "code": "MDLA",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 15000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSlY4WnppSHgyZUNNNERQOENBNUQ4WG5jM2hIQVFTOVlnaC1JWnlwR0dEX0tFWUg5Q1BlZFZ0a3pwUnBVbjd5eFppUDdteGx1T1hLU1FmcXU5b2JaOF95X1Q3VElwX1BmLU1jLVktM0xWa242X3llZl90Si05TjAyd21SLUFhck9KblRoTQ?oc=5",
+   "title": "Komisaris Borong 15 Ribu Saham MDLA, Intip Rinciannya!",
+   "first_seen": "2026-11-13T17:45+07:00"
   },
   {
    "id": "3986a6b07883",
@@ -12009,6 +12030,11 @@
    "net_value": 0.0,
    "count": 1
   },
+  "MDLA": {
+   "net_shares": 5325000,
+   "net_value": 0.0,
+   "count": 7
+  },
   "TLKM": {
    "net_shares": 374450000,
    "net_value": 0.0,
@@ -12198,11 +12224,6 @@
    "net_shares": 106300,
    "net_value": 19984400.0,
    "count": 1
-  },
-  "MDLA": {
-   "net_shares": 5310000,
-   "net_value": 0.0,
-   "count": 6
   },
   "TAPG": {
    "net_shares": 1923000,
