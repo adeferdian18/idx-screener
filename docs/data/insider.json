@@ -1,10 +1,199 @@
 {
- "updated": "2026-11-12T17:48+07:00",
+ "updated": "2026-11-13T09:01+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 86
+  "news": 81
  },
  "transactions": [
+  {
+   "id": "5b75f9139b41",
+   "date": "2026-11-13",
+   "code": "MMIX",
+   "party": "PT Pukul Rata Kanan Melesat Jadi",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 11400000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 4.57,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONFRRcEctT2tPRi1YMHdMSUJJMUJkbWFEUmxMTTNIUW5xbjE1SEdVeTZ3aXJqNjJBVzlZcmJuNVJmUTdnaVJ0VThKQVE2ZG9FSWZUQmNDcEdfUmplTlExVnRhczlWbVFYRzVLSkxlcy0tbWhNbnIzT25YNkl0M25SRUJVUHY1d29zUXNiaDVDTTMyWXdkQ3FTZGtuOEZKS2JsRGF2R0gzcGt5cDJCd0NoR0xOdWo?oc=5",
+   "title": "Borong 11,4 Juta Saham MMIX, Kepemilikan PT Pukul Rata Kanan Melesat Jadi 4,57%",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "c8e462fbbc72",
+   "date": "2026-11-13",
+   "code": "BBRI",
+   "party": "Asing Net Buy Rp",
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRDJBR3JsVlFIM1JnWF90N2pGLVFEYTdwUkNjcHNjXzcwZDlVOXVrYWhTMTRTRU5WZnRIY2loS2xwdE52Z3ZHWWRZZ0lnekkzY19sR1h5LUNIY3FDRENZc3R5Mm40YTVJMUV2aEluS1RBVE5TNmZGWVowaUhjTmh0MTZ6NGI5U1NNTVc4ZWxLTDctTVpEUUN6R3ZDaGRwRzVDTHZuS3NfTl9mOGtsTmY2YmxldnY?oc=5",
+   "title": "IHSG Lompat 2%, Investor Asing Net Buy Rp500 M: Borong Saham BBRI",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "0a74765ae21a",
+   "date": "2026-11-13",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRzVsb0R0NWJUSjVRdWxWNnRDVE91ZXl4QkVkSG9ZSDZmb1BTMjNpVDdiQzgxU216S2lWZVZDdmhBWVJrbFR6NTFIYzFLVUFzZkNXQWVHWG1wUjc0R2FhUGM2Xzh1c3UwaGVOMkJiSU9BTFoxTjVNWmhDdFEtejUyWHBHRGZkVkduLWxaSW5uZ3lTZw?oc=5",
+   "title": "Berlabel HSC, Anak Pendiri Astra Borong Jutaan Saham SRTG",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "4cb1dc33e1c9",
+   "date": "2026-11-13",
+   "code": "MMIX",
+   "party": "Gabriel Rey Tambah Kepemilikan",
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koridor.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NUl9JTFNpaW9FSXFPUUFDUTFlS3JQajNFNWQ4czliZ09MQ2RXVmU2VXZrcUd2MDloX2s3R0N2RnhBZzZraXJKanVPWXM1UmlIUU9HTUlFN1FjSTJJV3pDUw?oc=5",
+   "title": "Investor Gabriel Rey Tambah Kepemilikan Saham MMIX Jadi 4,57 Persen",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "7f62076d9147",
+   "date": "2026-11-13",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YVzhnaDkzYkpndkNZRHp0d3JYTlNCaEFKbEppQUYtbEZjSUxqcnRtR1owR2ZyUFI5dDFrNk9nX0wzalFmSEo3S2JLT0xtZ1pTTWdBajIySW5XeURpMFo1cDBheC0?oc=5",
+   "title": "Pukul Rata Kanan Tambah Kepemilikan Saham MMIX Jadi 4,57 Persen",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "91c0c41048cd",
+   "date": "2026-11-13",
+   "code": "DOOH",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5leWVtS2oxWWdhZURGeWVSZ3BwX3htcjBURFNYS1o4WmlmdXhXWTB3NlU4dmVCc3hNLXdDTDlTbkd1OW1XSWRXcUt4VmdaeUVrbHNKcFVfc1Q2RlZGSmVaN0hXSTAyXzRrTHNVVXBEdw?oc=5",
+   "title": "Beruntung Berkat Sejahtera Tambah Kepemilikan Saham DOOH",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "00c6a7241272",
+   "date": "2026-11-13",
+   "code": "ADHI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNlZPSFhfcS10TFpjQTBqTmdwWFVBX3VMam12djllbDhWbEUxWTNLckxZT19ITU1ub2pBRThzcjNmcXJRa0NMVjJKZXh1S1dJZWpnclhtVXYwLTc1cUNJVDFyZlNuYkhOd0FsUFIzc3Q5ZkZoZWRxSTBmNE4wMmk5WmNhZjFuNmstajFYZ3ZOWmh2MzFvUW1NeWpuM3hUN3NfMGl1UjlhWkZuQ1dNd0tVRkx5ZExyZEJLQ2FYQURuUjNXVXpOLXdxN0ZR0gHPAUFVX3lxTE1JNklaSjFGa1pMV2cwS2RNYy1KZ1plSFkzZm15OXhPWkE5VXhwWVU0ZWE2OGJEQzQtM1k1SHh3REc2QzBwX1V4VlBuWWpnWFRtVk1vUjhaTzBpYUY2N2E0bjlBcW82V3dENm95YXRPUklILVZVajJReUhFNEpoQXc1UF80SDJpMF9tUENvV0xBZ2JuQjBvdXgtWWxNbWtPaWQyZ19LT3hENGVyTDlkTzcwT29uN1Z0MXk0MkFSUEVaUVdYZGJDRWVYUkZLdkROQQ?oc=5",
+   "title": "Adhi Karya (ADHI) Revisi RUPSLB, Bahas Divestasi Jasamarga Jogja Solo",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "576bf936ae53",
+   "date": "2026-11-12",
+   "code": "VIVA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "VIVA Jakarta",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQjQyeHMtZzFYdGVjV0xndUtHQ2pCSExoNHZ0WW85OElBc21fMDAzc2JmeERvU09YUklsbVgxZmxQbTN6MTBiV08za01wSXlxNWZaX0tRWEVEZkt3WHFRNG9tNTVJQ1dxanJXaWZaYV9FWWxTRDdBVDZXUkJhNXJuc2l6VHhuQXBwZkdBZVZyM2tsQTN5bEVPeDNIM0ZrQzJNUDA1OUh3UWU4cmtEckU00gG0AUFVX3lxTE4zNExLSnhwd21YaUQzRTI3SGlxYnBFYXdnYzB5V1hiSUsteXdSY3VUT1hXdGJHeWp2OWtXSGtsbzVDaWZIbUQ5OVdhYVF5WThaNWRzU1h1LXZQcTJ6NVpUSjZqSEN6alphR2kzMnZiWnlUa2psaWxGUTR6dlFwRlplcnZ3SVZVdm93aHlUZlZZY2lSdW9FYllBcEJLM1B0YXhERWZHVERhTDN0bGtCNnRHQThjeA?oc=5",
+   "title": "Dampak Rebalancing MSCI Dinilai Terbatas, Asing Masih Borong Saham Bank",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
+  {
+   "id": "ceac38f92397",
+   "date": "2026-11-12",
+   "code": "BBRI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Digivestasi",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRmoxSHFVQlpGR3FNNHNyVDVFcklYQ2sxcmpIOUhZbndGR2prZUkyUlNXckUzTHZXcW8zbVowQWdCNU5QUDFvRmZ4Z3EyOThyZWRkbTNfckduRS1RVGpaTDNRZnVibDRjdVhjU2JucXZCT0szYnFnTVd2OXRvMVpTdnFsWEJ1d3NKMkE4Tk9EcFRwUHFtaktpODBWU1RJMTdHa1JQcDJYMDVYOFZxLU5Yd0htWWpoU3VzUHFXbXdNbUZPbU1VQUh0RHhUaWQ?oc=5",
+   "title": "IHSG Sesi I Melesat 2% ke 5.217,39, Asing Net Buy Rp83,61 Miliar dan Borong BBRI",
+   "first_seen": "2026-11-13T09:01+07:00"
+  },
   {
    "id": "8ca48f6687ea",
    "date": "2026-11-12",
@@ -88,27 +277,6 @@
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZUJLXzJOWWpfZkNCckt3OE9SWEh2SU9taWZGaHRyemZwOWZIWVh1d21HVEhhdi1hdVBDUXU2MHd1MERlaHZya3pyWjY0eUdWUk9qRXJMWVZLampoQk5iVTJUWnRZLTNVZGl3eGg1cTBJd0dOd1lOOTZpSS11dmV0OGxieHdRc1ppNHVQQWVuLVBmc2EtMlR6QU9zQTdQN1NNeF9ENnRrY1k0aU5NZXh6YXcyVk9HQXh1aUlUb0RuUFp2MFhYemfSAcsBQVVfeXFMTjNzejJvZ3k4WGxTc18teUZzRlIwb210U0VQR0V1SXlSbk8yM1RWUUtQQ1gzVXozYkhjR1huU1JwRGcxaW1Yb0hlVW5Mam9MUl9jNGNoWmZmeVJjQTBGTHJaOGlfZVJWV19lMWtlVFFHNjhQZGdzNjY2Y2ExVnMyakMxbkhsYTBMMlc5cjlXN054am5zX0Zsc0lHQ2Q0QzZETTNvWHg2SzM2aVJJNkR4SFJtbWU0WTh1ejNXWGwxQXdlaV9PTHVGRUdrb1E?oc=5",
    "title": "Asing Mulai Borong Saham Bank Jumbo BBCA hingga BMRI, Net Buy BBRI Terbesar",
    "first_seen": "2026-11-12T16:00+07:00"
-  },
-  {
-   "id": "97bc7cae27c2",
-   "date": "2026-11-12",
-   "code": "DGIK",
-   "party": null,
-   "role": "pengendali",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbHVIUnZKMkYwaW1QVjdjZjdYV0kydDJib1Q3eVJUZU4wcDlqd05BX01jQ095VGtYZ2dNbUV1eTZKOHhSeTZMWVpUeUhsYWVLYUdSb0Z6ay0zUWpCT2VGdmYzN3dVVnNYMC1TdnB6MTlPRVZoZmoxMmpwUTJucGUzNnBPNHVLV0RMZkFFSERDblQ2X01QZVhVdWs4QQ?oc=5",
-   "title": "Berturut-turut, Pengendali Borong 8,16% Saham DGIK Senilai Rp61,28M",
-   "first_seen": "2026-11-12T13:31+07:00"
   },
   {
    "id": "252b45e5f9e7",
@@ -888,6 +1056,27 @@
    "first_seen": "2026-11-10T17:42+07:00"
   },
   {
+   "id": "97bc7cae27c2",
+   "date": "2026-11-10",
+   "code": "DGIK",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbHVIUnZKMkYwaW1QVjdjZjdYV0kydDJib1Q3eVJUZU4wcDlqd05BX01jQ095VGtYZ2dNbUV1eTZKOHhSeTZMWVpUeUhsYWVLYUdSb0Z6ay0zUWpCT2VGdmYzN3dVVnNYMC1TdnB6MTlPRVZoZmoxMmpwUTJucGUzNnBPNHVLV0RMZkFFSERDblQ2X01QZVhVdWs4QQ?oc=5",
+   "title": "Berturut-turut, Pengendali Borong 8,16% Saham DGIK Senilai Rp61,28M",
+   "first_seen": "2026-11-12T13:31+07:00"
+  },
+  {
    "id": "10af80b119a2",
    "date": "2026-11-10",
    "code": "SRTG",
@@ -1264,6 +1453,27 @@
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcm94cko0YkxFNVdWaU1fQzg4MmNWUEFqZlVkejNTZGVBT0ZxQkRzQVpkWk93UzNBbVlsSGllaVc3dUlmXzVyNnpzS1pKQ1hoSWdpQXhaVU1pWkkwTUU0WjYtSHRrREoydWVVa1dMaGtGcnEyVEgwbFhKRkJvaXBtYjcwbzZ6dFNsMG5SUlNuQQ?oc=5",
    "title": "Jual Saham BYAN ke Haji Isam, Low Tuck Kwong Ungkap Alasannya",
    "first_seen": "2026-11-09T09:04+07:00"
+  },
+  {
+   "id": "d16382c18a02",
+   "date": "2026-11-10",
+   "code": "RUNS",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
+   "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
+   "first_seen": "2026-10-22T09:54+07:00"
   },
   {
    "id": "e9abf20f4165",
@@ -8280,27 +8490,6 @@
    "first_seen": "2026-10-23T09:15+07:00"
   },
   {
-   "id": "d16382c18a02",
-   "date": "2026-10-21",
-   "code": "RUNS",
-   "party": null,
-   "role": "pengendali",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": "divestasi",
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
-   "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
-   "first_seen": "2026-10-22T09:54+07:00"
-  },
-  {
    "id": "2274a0236402",
    "date": "2026-10-21",
    "code": "TLKM",
@@ -11347,6 +11536,36 @@
   }
  ],
  "net_by_code": {
+  "MMIX": {
+   "net_shares": 11400000,
+   "net_value": 0.0,
+   "count": 11
+  },
+  "BBRI": {
+   "net_shares": 5500000,
+   "net_value": 5940000000.0,
+   "count": 16
+  },
+  "SRTG": {
+   "net_shares": 6261000,
+   "net_value": 0.0,
+   "count": 8
+  },
+  "DOOH": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "ADHI": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "VIVA": {
+   "net_shares": -3060000,
+   "net_value": 0.0,
+   "count": 5
+  },
   "RAAM": {
    "net_shares": 4691545700,
    "net_value": 0.0,
@@ -11366,16 +11585,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 22
-  },
-  "DGIK": {
-   "net_shares": 408260000,
-   "net_value": 0.0,
-   "count": 4
-  },
-  "BBRI": {
-   "net_shares": 5500000,
-   "net_value": 5940000000.0,
-   "count": 14
   },
   "PSSI": {
    "net_shares": -36500,
@@ -11437,6 +11646,11 @@
    "net_value": 0.0,
    "count": 1
   },
+  "DGIK": {
+   "net_shares": 408260000,
+   "net_value": 0.0,
+   "count": 4
+  },
   "PTRO": {
    "net_shares": 23140000,
    "net_value": 24991200000.0,
@@ -11492,11 +11706,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "SRTG": {
-   "net_shares": 6261000,
-   "net_value": 0.0,
-   "count": 7
-  },
   "ATLA": {
    "net_shares": -171500000,
    "net_value": -400000000.0,
@@ -11547,10 +11756,10 @@
    "net_value": 0.0,
    "count": 41
   },
-  "VIVA": {
-   "net_shares": -3060000,
+  "RUNS": {
+   "net_shares": 0,
    "net_value": 0.0,
-   "count": 4
+   "count": 1
   },
   "HALO": {
    "net_shares": 0,
@@ -11782,11 +11991,6 @@
    "net_value": 410000000.0,
    "count": 1
   },
-  "MMIX": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 8
-  },
   "BKSL": {
    "net_shares": 86270000,
    "net_value": 0.0,
@@ -11932,11 +12136,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "ADHI": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
   "IMPC": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -11981,11 +12180,6 @@
    "net_shares": 4500000,
    "net_value": 0.0,
    "count": 6
-  },
-  "RUNS": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "ERAA": {
    "net_shares": 0,
