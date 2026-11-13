@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-13T10:00+07:00",
+ "updated": "2026-11-13T11:10+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 82
+  "news": 85
  },
  "transactions": [
+  {
+   "id": "27ad011e0840",
+   "date": "2026-11-13",
+   "code": "SINI",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 2250000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "KabarBursa.com",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbkgzeXVRN1QzTkV2Z3ZWWjVnWnEzNEoxclRlQUtpeUZlSWdWU0RDLTlkbkhNNm94SEpEQWlPRU8wVDFBbnp5Q1ZmN3VQVTAwd1BVTzA0MC14Qm1Ua2V1N2xKaERwWUhrU2ptdktmWEh1aElfajM5YW94ajdxdWpCOUh3em1uNHJJMkVENnIzenZPMVdtT3RqRjlLYjhGWGN4RjdsaF9DUkZDdkg1Y3c?oc=5",
+   "title": "Pengendali Borong 2,25 Juta Saham SINI, Nilainya Tembus Rp18,4 Miliar",
+   "first_seen": "2026-11-13T11:10+07:00"
+  },
+  {
+   "id": "b8f832237600",
+   "date": "2026-11-13",
+   "code": "DGIK",
+   "party": "PT Global Dinamika Kencana",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 189500000,
+   "price": 150.0,
+   "value": 28425000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/global-dinamika-borong-1895-juta-saham-dgik-kini-kuasai-6820/",
+   "title": "Global Dinamika Borong 189,5 Juta Saham DGIK, Kini Kuasai 68,20%",
+   "first_seen": "2026-11-13T11:10+07:00"
+  },
   {
    "id": "7ac6b3b205f9",
    "date": "2026-11-13",
@@ -73,7 +115,7 @@
    "date": "2026-11-13",
    "code": "SRTG",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -84,8 +126,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRzVsb0R0NWJUSjVRdWxWNnRDVE91ZXl4QkVkSG9ZSDZmb1BTMjNpVDdiQzgxU216S2lWZVZDdmhBWVJrbFR6NTFIYzFLVUFzZkNXQWVHWG1wUjc0R2FhUGM2Xzh1c3UwaGVOMkJiSU9BTFoxTjVNWmhDdFEtejUyWHBHRGZkVkduLWxaSW5uZ3lTZw?oc=5",
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSXMxLThCNjRVZVktQzZ0YjU5S3FIOWV2YVZnZmEyVGZLTDNHal9ySXhWTnN3UllfSUNJNWRTVjFkcFlXVjR1VEdSUzc5ekpCaWJwUzhIUmo2WHg2cHloNUlHb2pIM1dWcFdPV3k3VE53bzU4MW1Vd24weFAwMjVhYWlWOU90d0lqVjM4ek9mZ194NTJGTDlDTFF6SWY?oc=5",
    "title": "Berlabel HSC, Anak Pendiri Astra Borong Jutaan Saham SRTG",
    "first_seen": "2026-11-13T09:01+07:00"
   },
@@ -11557,6 +11599,16 @@
   }
  ],
  "net_by_code": {
+  "SINI": {
+   "net_shares": 2250000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "DGIK": {
+   "net_shares": 597760000,
+   "net_value": 28425000000.0,
+   "count": 5
+  },
   "BBCA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -11666,11 +11718,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "DGIK": {
-   "net_shares": 408260000,
-   "net_value": 0.0,
-   "count": 4
   },
   "PTRO": {
    "net_shares": 23140000,
@@ -11951,11 +11998,6 @@
    "net_shares": 18150000,
    "net_value": 0.0,
    "count": 3
-  },
-  "SINI": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
   },
   "SPTO": {
    "net_shares": 0,
