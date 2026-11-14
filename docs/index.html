@@ -452,13 +452,26 @@ dialog::backdrop{background:rgba(23,36,42,.45);backdrop-filter:blur(3px)}
 footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:12.5px;max-width:none}
 
 /* Tablet: sidebar menyempit jadi ikon */
-@media (max-width:1100px){
+.logo{border:0;padding:0;cursor:pointer}
+.side-scrim{display:none}
+@media (max-width:1100px) and (min-width:761px){
   .app{grid-template-columns:72px minmax(0,1fr)}
-  .side{padding:14px 10px;align-items:center}
-  .side-brand{padding:4px 0 12px} .side-brand > span:last-child,.side-sec,.side-note,.tab span{display:none}
-  .tab{justify-content:center;padding:10px;width:44px}
+  .main{grid-column:2}
+  .side{position:fixed;left:0;top:0;z-index:40;width:72px;padding:14px 14px;overflow-x:hidden;
+    transition:width .32s cubic-bezier(.2,.8,.2,1),box-shadow .32s ease}
+  .side-brand{padding:4px 0 12px;white-space:nowrap}
+  .side-brand > span:last-child,.side-sec,.side-note,.tab span{opacity:0;transform:translateX(-8px);transition:opacity .18s ease,transform .25s ease;white-space:nowrap}
+  .side-sec,.side-note{height:0;margin:0;padding:0;overflow:hidden}
+  .tab{gap:14px;padding:10px 11px}
   .top .fresh{display:none}
+  .app.side-open .side{width:260px;box-shadow:24px 0 60px -20px rgba(23,36,42,.35)}
+  .app.side-open .side-brand > span:last-child,.app.side-open .side-sec,.app.side-open .side-note,.app.side-open .tab span{opacity:1;transform:none;transition-delay:.1s}
+  .app.side-open .side-sec{height:auto;margin:14px 10px 4px}
+  .app.side-open .side-note{height:auto;padding:12px 10px 0}
+  .side-scrim{display:block;position:fixed;inset:0;z-index:35;background:rgba(23,36,42,.3);opacity:0;pointer-events:none;transition:opacity .3s ease}
+  .app.side-open .side-scrim{opacity:1;pointer-events:auto}
 }
+@media (prefers-reduced-motion:reduce){.side,.side *{transition:none!important}}
 /* HP: menu jadi bar bawah */
 @media (max-width:760px){
   .app{display:block}
@@ -485,7 +498,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
 <div class="app">
 <aside class="side" aria-label="Menu utama">
   <div class="side-brand">
-    <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17l5-5 4 3 7-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="7" r="1.8" fill="currentColor"/></svg></span>
+    <button class="logo" id="side-toggle" type="button" aria-label="Buka menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 17l5-5 4 3 7-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="7" r="1.8" fill="currentColor"/></svg></button>
     <span><b>Meja Pantau IDX</b><small>Screener saham BEI</small></span>
   </div>
   <nav class="side-nav" role="tablist" aria-label="Halaman">
@@ -507,6 +520,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
   </nav>
   <p class="side-note">Alat bantu riset, bukan rekomendasi beli atau jual.</p>
 </aside>
+<div class="side-scrim" id="side-scrim"></div>
 
 <div class="main">
 <header class="top">
@@ -2082,6 +2096,15 @@ function setPageHead(tab){
   if(t && saved !== "momentum") setTimeout(() => t.click(), 0); else setPageHead(document.querySelector(".tab[aria-selected=true]"));
 }
 $("#page-date").textContent = new Date().toLocaleDateString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+function setSide(open){
+  $(".app").classList.toggle("side-open", open);
+  $("#side-toggle").setAttribute("aria-expanded", open);
+  $("#side-toggle").setAttribute("aria-label", open ? "Tutup menu" : "Buka menu");
+}
+$("#side-toggle").addEventListener("click", () => setSide(!$(".app").classList.contains("side-open")));
+$("#side-scrim").addEventListener("click", () => setSide(false));
+$(".side-nav").addEventListener("click", e => { if(e.target.closest(".tab")) setSide(false); });
+addEventListener("keydown", e => { if(e.key === "Escape") setSide(false); });
 $("#theme-btn").addEventListener("click", () => {
   const next = dark() ? "light" : "dark";
   document.documentElement.dataset.theme = next;
