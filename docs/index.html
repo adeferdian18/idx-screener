@@ -503,6 +503,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
   </div>
   <nav class="side-nav" role="tablist" aria-label="Halaman">
     <div class="side-sec">Sinyal</div>
+    <button class="tab" role="tab" aria-selected="false" data-tab="setup" data-title="Setup A+"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.8"/></svg><span>Setup A+</span></button>
     <button class="tab" role="tab" aria-selected="true" data-tab="momentum" data-title="Momentum"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><span>Momentum</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="pullback" data-title="Pullback"><svg viewBox="0 0 24 24"><path d="M3 7l6 6 4-4 8 8M15 17h6v-6"/></svg><span>Pullback</span></button>
     <div class="side-sec">Analisis pasar</div>
@@ -682,6 +683,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
     <div class="chart-box" id="chart-box"></div>
   </section>
 
+  <section class="panel mod" id="panel-setup" hidden></section>
   <section class="panel mod" id="panel-peta" hidden></section>
   <section class="panel mod" id="panel-kepemilikan" hidden></section>
   <section class="panel mod" id="panel-kalkulator" hidden></section>
@@ -2125,6 +2127,7 @@ addEventListener("keydown", e => {
 loadAll(true);
 setInterval(loadAll, 60_000);
 </script>
+<script src="js/setup.js" defer></script>
 <script src="js/peta.js" defer></script>
 <script src="js/kepemilikan.js" defer></script>
 <script src="js/kalkulator.js" defer></script>

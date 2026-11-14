@@ -15,7 +15,7 @@ concurrency:
 jobs:
   backtest:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,11 +24,14 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python backtest.py
+      - name: Sweep TP/SL + Setup A+ (walk-forward)
+        run: python backtest_sweep.py
+        continue-on-error: true
       - name: Simpan hasil ke website
         run: |
           git config user.name "screener-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add docs/data/backtest.json data/backtest_trades_*.csv
+          git add docs/data/backtest.json docs/data/backtest_sweep.json data/backtest_trades_*.csv data/backtest_sweep_trades.csv
           git commit -m "Backtest $(TZ=Asia/Jakarta date "+%F %H:%M")" || exit 0
           git pull --rebase -X theirs origin ${{ github.ref_name }}
           git push

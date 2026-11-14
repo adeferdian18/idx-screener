@@ -227,6 +227,33 @@ def trend_and_stage(h):
     }
 
 
+SETUP_A_RS = 90
+SETUP_A_TP_R = 1.0
+
+
+def setup_a(z, market):
+    """Setup A+ hasil backtest_sweep.py: IHSG bukan downtrend, RS 90+, VCP valid dengan volume mengering,
+    SL struktur <= 8%, buy-stop di entry (batal jika open gap di atas entry), TP 1R, SL struktur VCP.
+    Return None kalau saham tidak punya basis VCP sama sekali."""
+    e = z.get("entry") or {}
+    v = e.get("vcp") or {}
+    if e.get("setup") != "vcp" or v.get("pivot") is None or e.get("entry") is None:
+        return None
+    entry, sl = e["entry"], e["sl"]
+    syarat = [
+        ["IHSG bukan downtrend", market.get("status") != "downtrend"],
+        [f"RS Rating ≥ {SETUP_A_RS}", (z.get("rs_rating") or 0) >= SETUP_A_RS],
+        ["Pola VCP valid", bool(v.get("valid"))],
+        ["Volume mengering di basis", bool(v.get("kering"))],
+        ["SL struktur ≤ 8%", bool(e.get("risiko_ok"))],
+        ["Harga masih di bawah entry (belum breakout)", e.get("status") in ("setup", "vcp")],
+    ]
+    lolos = all(ok for _, ok in syarat)
+    return {"lolos": lolos, "skor": sum(ok for _, ok in syarat), "dari": len(syarat), "syarat": syarat,
+            "entry": entry, "sl": sl, "tp": vcp.down(entry + SETUP_A_TP_R * (entry - sl)),
+            "sl_pct": e.get("sl_pct"), "jarak_pivot": e.get("jarak_pivot")}
+
+
 def market_status(ihsg):
     p = float(ihsg.iloc[-1])
     m50 = float(ihsg.rolling(50).mean().iloc[-1])
@@ -387,6 +414,8 @@ def main():
 
     market = market_status(ihsg)
     market["koreksi_3b"] = {"puncak": f"{peak:%Y-%m-%d}", "dasar": f"{trough:%Y-%m-%d}", "turun": round(ihsg_drop, 4)}
+    for z in out_rows:
+        z["setup_a"] = setup_a(z, market)
 
     # Fase 4: fundamental HGM & katalis hanya untuk kandidat (permintaan ke Yahoo dibatasi)
     cand = [z["kode"] for z in out_rows if z["likuid"] and (z["tt_skor"] >= 6 or z["entry"])]
