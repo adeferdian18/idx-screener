@@ -392,7 +392,7 @@ svg[viewBox="0 0 24 24"]{width:18px;height:18px;flex:0 0 auto;fill:none;stroke:c
 .tape-track{padding:9px 14px;font-size:13px;gap:24px}
 .tape-btn{border-radius:8px;background:var(--bg)}
 
-.wrap{max-width:1440px;width:100%;margin:0 auto;padding:0 24px}
+.wrap{max-width:none;width:100%;margin:0;padding:0 28px}
 .page-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:22px 0 16px}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--up);margin-bottom:2px}
 .page-head h1{margin:0;font-size:clamp(26px,3vw,34px);line-height:1.1}
@@ -494,11 +494,16 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
     <button class="tab" role="tab" aria-selected="false" data-tab="pullback" data-title="Pullback"><svg viewBox="0 0 24 24"><path d="M3 7l6 6 4-4 8 8M15 17h6v-6"/></svg><span>Pullback</span></button>
     <div class="side-sec">Analisis pasar</div>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisa" data-title="Analisa pasar"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Analisa pasar</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="peta" data-title="Peta saham & sektor"><svg viewBox="0 0 24 24"><path d="M3 3h8v10H3zM13 3h8v6h-8zM13 11h8v10h-8zM3 15h8v6H3z"/></svg><span>Peta & sektor</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="grafik" data-title="Grafik"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16M4 8h6v8H4zM14 6h6v6h-6z"/></svg><span>Grafik</span></button>
     <div class="side-sec">Data emiten</div>
     <button class="tab" role="tab" aria-selected="false" data-tab="aksi" data-title="Aksi korporasi"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 9h16M9 13h6"/></svg><span>Aksi korporasi</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="insider" data-title="Transaksi orang dalam"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M17 11l2 2 3.5-4"/></svg><span>Orang dalam</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="screener" data-title="Screener fundamental"><svg viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4z"/></svg><span>Fundamental</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="kepemilikan" data-title="Kepemilikan saham (KSEI)"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 109 9h-9z"/><path d="M15 3.5A9 9 0 0120.5 9H15z"/></svg><span>Kepemilikan</span></button>
+    <div class="side-sec">Alat</div>
+    <button class="tab" role="tab" aria-selected="false" data-tab="kalkulator" data-title="Kalkulator lot & risiko"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg><span>Kalkulator</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="jurnal" data-title="Jurnal trading"><svg viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5zM9 10h6M9 14h6M9 18h3"/></svg><span>Jurnal</span></button>
   </nav>
   <p class="side-note">Alat bantu riset, bukan rekomendasi beli atau jual.</p>
 </aside>
@@ -662,6 +667,11 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
     </div>
     <div class="chart-box" id="chart-box"></div>
   </section>
+
+  <section class="panel mod" id="panel-peta" hidden></section>
+  <section class="panel mod" id="panel-kepemilikan" hidden></section>
+  <section class="panel mod" id="panel-kalkulator" hidden></section>
+  <section class="panel mod" id="panel-jurnal" hidden></section>
 
   <footer>
     Harga dari Yahoo Finance, diperbarui tiap 15 menit di jam bursa dan tertunda sekitar 15 menit dari BEI. Fundamental dihitung ulang setiap hari pukul 16:30 WIB; aksi korporasi dipindai pukul 08:00, 12:30 dan 16:30 WIB dari berita dan jadwal dividen.
@@ -1981,6 +1991,7 @@ document.addEventListener("click", e => {
     document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t===tab));
     document.querySelectorAll(".panel").forEach(p => p.hidden = p.id !== "panel-"+tab.dataset.tab);
     setPageHead(tab); store.set("tab", tab.dataset.tab); scrollTo({top:0});
+    App.renderModule(tab.dataset.tab);
     if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
     if(tab.dataset.tab === "analisa"){ drawBreadth(); renderBacktest(); }
     return;
@@ -2042,7 +2053,22 @@ async function loadAll(first){
   if(m && !$("#panel-analisa").hidden) drawBreadth();
   renderTape(); renderLiveBox();
   if(pbNew) renderPullback();
+  const cur = document.querySelector(".tab[aria-selected=true]");
+  if(cur) App.renderModule(cur.dataset.tab);
 }
+
+/* ---------- Modul fitur (docs/js/*.js) ---------- */
+const App = window.App = {
+  S, fmt, pct, esc, cls, isNum, dark, store, getJSON,
+  openStock: code => openDetail(code),
+  mods: {},
+  register(name, mod){ this.mods[name] = mod; const t = document.querySelector(".tab[aria-selected=true]"); if(t?.dataset.tab === name) this.renderModule(name); },
+  renderModule(name){
+    const m = this.mods[name], el = document.getElementById("panel-"+name);
+    if(!m || !el || el.hidden) return;
+    try{ m.render(el, this); }catch(err){ console.error(`[modul ${name}]`, err); el.innerHTML = `<div class="empty"><h3>Halaman ini gagal dimuat</h3><p class="hint">${esc(err.message)}</p></div>`; }
+  },
+};
 /* ---------- Kerangka: judul halaman, tema, pencarian global ---------- */
 function setPageHead(tab){
   let sec = tab.previousElementSibling;
@@ -2076,5 +2102,9 @@ addEventListener("keydown", e => {
 loadAll(true);
 setInterval(loadAll, 60_000);
 </script>
+<script src="js/peta.js" defer></script>
+<script src="js/kepemilikan.js" defer></script>
+<script src="js/kalkulator.js" defer></script>
+<script src="js/jurnal.js" defer></script>
 </body>
 </html>
