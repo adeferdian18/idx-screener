@@ -7,27 +7,32 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,600&display=swap" rel="stylesheet">
+<script>try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;}catch{}</script>
 <style>
 :root{
-  --bg:#E9EDF1; --surface:#F8FAFB; --ink:#172A46; --muted:#5C6B82; --line:#CBD3DD;
-  --up:#0B8457; --down:#C33B2E; --accent:#9A6B0E; --accent-soft:#F1E3C2; --warn-soft:#F6DCD8; --good-soft:#D3EEE2;
-  --blue:#2F6FDB; --orange:#D46B12; --teal:#12968A;
-  --font:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --bg:#F6F2EA; --bg2:#EFE9DD; --surface:#FFFFFF; --ink:#17242A; --muted:#56625F; --faint:#80887F; --line:#E5DDD0; --line2:#D6CCBB;
+  --up:#1D7A5C; --down:#C4554A; --accent:#A86F1C; --accent-soft:#F6EAD3; --warn-soft:#F8E1DD; --good-soft:#E1F0E9;
+  --blue:#2F679E; --orange:#C9701E; --teal:#1F8A7D; --btn:#17242A; --btn-fg:#FFFFFF;
+  --shadow:0 1px 2px rgba(23,36,42,.04),0 8px 24px -14px rgba(23,36,42,.18);
+  --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:"Literata",Georgia,"Times New Roman",serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0E1828; --surface:#15233A; --ink:#E3E9F1; --muted:#93A2B8; --line:#26384F;
-    --up:#2FBF8A; --down:#F06A5B; --accent:#D9A63A; --accent-soft:#3A3020; --warn-soft:#3D2226; --good-soft:#173A31;
-    --blue:#6A9CF2; --orange:#F2924A; --teal:#3CC8B8;
+    --bg:#111A1D; --bg2:#172226; --surface:#1A252A; --ink:#ECE7DC; --muted:#A3ABA4; --faint:#7D867F; --line:#29373C; --line2:#34444A;
+    --up:#46B88E; --down:#E27A6E; --accent:#D9A54E; --accent-soft:#33291A; --warn-soft:#3A2522; --good-soft:#16352B;
+    --blue:#79A9D8; --orange:#EB975A; --teal:#4CC2B2; --btn:#ECE7DC; --btn-fg:#111A1D;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -16px rgba(0,0,0,.6);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0E1828; --surface:#15233A; --ink:#E3E9F1; --muted:#93A2B8; --line:#26384F;
-  --up:#2FBF8A; --down:#F06A5B; --accent:#D9A63A; --accent-soft:#3A3020; --warn-soft:#3D2226; --good-soft:#173A31;
-    --blue:#6A9CF2; --orange:#F2924A; --teal:#3CC8B8;
+  --bg:#111A1D; --bg2:#172226; --surface:#1A252A; --ink:#ECE7DC; --muted:#A3ABA4; --faint:#7D867F; --line:#29373C; --line2:#34444A;
+  --up:#46B88E; --down:#E27A6E; --accent:#D9A54E; --accent-soft:#33291A; --warn-soft:#3A2522; --good-soft:#16352B;
+  --blue:#79A9D8; --orange:#EB975A; --teal:#4CC2B2; --btn:#ECE7DC; --btn-fg:#111A1D;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -16px rgba(0,0,0,.6);
   color-scheme:dark;
 }
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -343,41 +348,187 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
   .pb-cards .pb-card:last-child{grid-column:1 / -1}
 }
 @media (prefers-reduced-motion:reduce){.ruler-mark{transition:none}}
+
+/* =====================================================================
+   Tampilan baru: kerangka aplikasi krem (sidebar + topbar + kartu)
+   ===================================================================== */
+body{font-size:15px;letter-spacing:-.003em}
+h1,h2,.t-head h2,.dlg-head h2{font-family:var(--serif);font-weight:600;letter-spacing:-.015em}
+:focus-visible{outline:2px solid var(--up)}
+svg[viewBox="0 0 24 24"]{width:18px;height:18px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.app{display:grid;grid-template-columns:248px minmax(0,1fr);min-height:100vh}
+.side{position:sticky;top:0;height:100vh;overflow:auto;background:var(--bg2);border-right:1px solid var(--line);padding:18px 12px;display:flex;flex-direction:column;gap:4px}
+.side-brand{display:flex;gap:10px;align-items:center;padding:4px 8px 16px}
+.side-brand b{display:block;font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.15}
+.side-brand small{display:block;font-size:11.5px;color:var(--faint)}
+.logo{width:34px;height:34px;border-radius:10px;background:var(--btn);color:var(--up);display:grid;place-items:center;flex:0 0 auto}
+.logo svg{width:20px;height:20px;stroke-width:0;fill:none}
+.logo svg path{stroke:#7FD8B4;stroke-width:2.4} .logo svg circle{fill:#F2C04A}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-sec{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:14px 10px 4px}
+.side-sec:first-child{margin-top:0}
+.tab{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px 10px;font-size:14px;font-weight:500;color:var(--muted);cursor:pointer;white-space:nowrap;border-bottom:0}
+.tab:hover{background:var(--surface);color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--good-soft);color:var(--up);font-weight:700;border:0}
+.side-note{margin-top:auto;font-size:11.5px;color:var(--faint);padding:12px 10px 0;line-height:1.45}
+
+.main{min-width:0;display:flex;flex-direction:column}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 24px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.gsearch{flex:1 1 280px;max-width:420px;display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 10px;color:var(--faint)}
+.gsearch:focus-within{border-color:var(--up);box-shadow:0 0 0 3px var(--good-soft)}
+.gsearch input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:14px;color:var(--ink);padding:9px 0;outline:0}
+.gsearch kbd{font:inherit;font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--faint)}
+.ihsg-pill{display:flex;align-items:baseline;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:7px 12px;white-space:nowrap}
+.ihsg-pill .index-name{font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--faint)}
+.ihsg-pill .index-val{font-size:16px;font-weight:800;letter-spacing:-.01em;line-height:1}
+.ihsg-pill .index-chg{font-size:12.5px;font-weight:700}
+.top .fresh{margin-left:auto;font-size:11.5px;line-height:1.4;color:var(--faint);text-align:right}
+.top .fresh b{color:var(--muted);font-weight:600}
+.icon-btn{width:38px;height:38px;flex:0 0 auto;display:grid;place-items:center;border:1px solid var(--line);background:var(--surface);border-radius:12px;cursor:pointer;color:var(--ink)}
+.icon-btn:hover{border-color:var(--line2)}
+
+.tape{background:var(--surface);border-bottom:1px solid var(--line);min-height:40px}
+.tape-track{padding:9px 14px;font-size:13px;gap:24px}
+.tape-btn{border-radius:8px;background:var(--bg)}
+
+.wrap{max-width:1440px;width:100%;margin:0 auto;padding:0 24px}
+.page-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:22px 0 16px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--up);margin-bottom:2px}
+.page-head h1{margin:0;font-size:clamp(26px,3vw,34px);line-height:1.1}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;color:var(--muted)}
+.pill:empty{display:none}
+
+/* Kartu & permukaan */
+.card,.t-col,.table-wrap,.empty,.mkt,.chart-box,.ins-pill{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.card{padding:18px 20px}
+.card .table-wrap{border:0;box-shadow:none;border-radius:10px}
+.card h2{font-size:20px;margin-bottom:6px}
+.t-col{padding:14px}
+.t-ihsg,.brief,.live-box,.cell,.checks li,.expo,.leader,.pb-card{background:var(--bg);border:1px solid var(--line);border-radius:12px}
+.pb-card{border-top-width:3px}
+.leader:hover,.pb-card:hover{outline:0;border-color:var(--line2);transform:translateY(-1px);box-shadow:var(--shadow)}
+.leader,.pb-card{transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+.leader h4{font-family:var(--serif);font-weight:600}
+.pb-card b,.expo b,.score{font-family:var(--serif);font-weight:600}
+details.card > summary{font-family:var(--serif);font-weight:600;font-size:18px;list-style-position:outside}
+.ev{background:var(--surface);border:1px solid var(--line);border-left-width:5px;border-radius:14px;box-shadow:var(--shadow)}
+.events{gap:10px}
+.ev-code{font-family:var(--serif);font-weight:600}
+
+/* Kontrol */
+.chip{background:var(--surface);border-color:var(--line);font-weight:500;padding:6px 13px;font-size:13.5px}
+.chip:hover{border-color:var(--line2)}
+.chip[aria-pressed="true"],.seg button[aria-pressed="true"]{background:var(--btn);color:var(--btn-fg);border-color:var(--btn)}
+.seg{border-radius:10px;background:var(--surface);border-color:var(--line)}
+.seg button{background:transparent;font-size:13.5px;padding:6px 12px}
+.search,.pb-sel,.calc input,.calc select{border-color:var(--line);background:var(--surface);border-radius:10px}
+.search{padding:8px 12px;font-size:14px}
+.search:focus,.pb-sel:focus,.calc input:focus,.calc select:focus{outline:0;border-color:var(--up);box-shadow:0 0 0 3px var(--good-soft)}
+.pb-tabs{border:0;gap:6px;margin:16px 0 12px;padding:4px;background:var(--bg2);border-radius:12px;width:max-content;max-width:100%}
+.pb-tab{border:0;border-radius:9px;padding:7px 12px;font-size:13.5px}
+.pb-tab[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.pb-tab i{background:var(--bg)}
+
+/* Tabel */
+.table-wrap{overflow:auto}
+table{font-size:13.5px}
+th{font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--faint);background:var(--surface);border-bottom:1px solid var(--line2)}
+th,td{padding:10px 12px;border-bottom-color:var(--line)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--bg)}
+td.code{font-weight:800}
+
+/* Watchlist kiri */
+.wl-item{border-radius:10px}
+.wl-item[aria-current="true"]{background:var(--good-soft);box-shadow:inset 3px 0 0 var(--up)}
+.wl-sec{color:var(--faint);font-size:10.5px;letter-spacing:.08em}
+
+/* Dialog */
+dialog{border:1px solid var(--line);border-radius:20px;box-shadow:0 30px 70px -30px rgba(23,36,42,.45)}
+dialog::backdrop{background:rgba(23,36,42,.45);backdrop-filter:blur(3px)}
+.close{background:var(--bg);border:1px solid var(--line);border-radius:10px}
+
+footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:12.5px;max-width:none}
+
+/* Tablet: sidebar menyempit jadi ikon */
+@media (max-width:1100px){
+  .app{grid-template-columns:72px minmax(0,1fr)}
+  .side{padding:14px 10px;align-items:center}
+  .side-brand{padding:4px 0 12px} .side-brand > span:last-child,.side-sec,.side-note,.tab span{display:none}
+  .tab{justify-content:center;padding:10px;width:44px}
+  .top .fresh{display:none}
+}
+/* HP: menu jadi bar bawah */
+@media (max-width:760px){
+  .app{display:block}
+  .side{position:fixed;inset:auto 0 0 0;top:auto;height:auto;z-index:30;flex-direction:row;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow-x:auto}
+  .side-brand{display:none}
+  .side-nav{flex-direction:row;gap:2px;width:100%;justify-content:space-between}
+  .tab{flex-direction:column;gap:3px;width:auto;flex:1 0 64px;padding:6px 4px;font-size:10.5px}
+  .tab span{display:block;max-width:72px;overflow:hidden;text-overflow:ellipsis}
+  .tab[aria-selected="true"]{background:var(--good-soft)}
+  .top{padding:8px 14px;gap:8px;flex-wrap:wrap}
+  .gsearch{order:3;flex:1 1 100%;max-width:none}
+  .gsearch kbd{display:none}
+  .ihsg-pill{margin-right:auto}
+  .wrap{padding:0 14px}
+  main.wrap{padding-bottom:84px}
+  .page-head{margin:16px 0 12px}
+  .card{padding:14px}
+  .term .t-side:not(.t-setup){max-height:none}
+}
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="wrap">
-    <div class="hero-top">
-      <div class="brand">Meja Pantau IDX</div>
-      <div class="fresh" id="fresh">Memuat data…</div>
-    </div>
-    <div class="index-line">
-      <span class="index-name">IHSG</span>
-      <span class="index-val" id="ihsg-val">–</span>
-      <span class="index-chg" id="ihsg-chg"></span>
-    </div>
-    <div class="ruler" aria-label="Posisi IHSG antara titik terendah dan tertinggi 52 minggu">
-      <div class="ruler-track"><div class="ruler-mark" id="ruler-mark" style="left:50%"></div></div>
-      <div class="ruler-legend"><span id="low52">Terendah 52 mgg</span><span id="peak52">Tertinggi 52 mgg</span></div>
-      <div class="ruler-note" id="ruler-note"></div>
-    </div>
-    <svg class="spark" id="spark" viewBox="0 0 760 56" preserveAspectRatio="none" aria-label="Pergerakan IHSG hari ini"></svg>
+<div class="app">
+<aside class="side" aria-label="Menu utama">
+  <div class="side-brand">
+    <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17l5-5 4 3 7-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="7" r="1.8" fill="currentColor"/></svg></span>
+    <span><b>Meja Pantau IDX</b><small>Screener saham BEI</small></span>
+  </div>
+  <nav class="side-nav" role="tablist" aria-label="Halaman">
+    <div class="side-sec">Sinyal</div>
+    <button class="tab" role="tab" aria-selected="true" data-tab="momentum" data-title="Momentum"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><span>Momentum</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="pullback" data-title="Pullback"><svg viewBox="0 0 24 24"><path d="M3 7l6 6 4-4 8 8M15 17h6v-6"/></svg><span>Pullback</span></button>
+    <div class="side-sec">Analisis pasar</div>
+    <button class="tab" role="tab" aria-selected="false" data-tab="analisa" data-title="Analisa pasar"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Analisa pasar</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="grafik" data-title="Grafik"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16M4 8h6v8H4zM14 6h6v6h-6z"/></svg><span>Grafik</span></button>
+    <div class="side-sec">Data emiten</div>
+    <button class="tab" role="tab" aria-selected="false" data-tab="aksi" data-title="Aksi korporasi"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 9h16M9 13h6"/></svg><span>Aksi korporasi</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="insider" data-title="Transaksi orang dalam"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M17 11l2 2 3.5-4"/></svg><span>Orang dalam</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="screener" data-title="Screener fundamental"><svg viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4z"/></svg><span>Fundamental</span></button>
+  </nav>
+  <p class="side-note">Alat bantu riset, bukan rekomendasi beli atau jual.</p>
+</aside>
+
+<div class="main">
+<header class="top">
+  <label class="gsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="gq" type="search" placeholder="Cari kode saham, mis. BBCA" aria-label="Cari saham" autocomplete="off"><kbd>/</kbd></label>
+  <div class="ihsg-pill" title="IHSG">
+    <span class="index-name">IHSG</span>
+    <span class="index-val" id="ihsg-val">–</span>
+    <span class="index-chg" id="ihsg-chg"></span>
+  </div>
+  <div class="fresh" id="fresh">Memuat data…</div>
+  <button class="icon-btn" id="theme-btn" aria-label="Ganti tema terang/gelap"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg></button>
+  <div hidden aria-hidden="true">
+    <div id="ruler-mark"></div><span id="low52"></span><span id="peak52"></span><div id="ruler-note"></div>
+    <svg id="spark" viewBox="0 0 760 56"></svg>
   </div>
 </header>
 
 <div class="tape" id="tape"></div>
 
 <main class="wrap">
-  <div class="tabs" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" data-tab="momentum">Momentum</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="pullback">Pullback</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="analisa">Analisa pasar</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="aksi">Aksi korporasi</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="insider">Orang dalam</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="screener">Screener fundamental</button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="grafik">Grafik</button>
+  <div class="page-head">
+    <div>
+      <div class="eyebrow" id="page-eyebrow">Sinyal</div>
+      <h1 id="page-title">Momentum</h1>
+    </div>
+    <span class="pill" id="page-date"></span>
   </div>
 
   <section class="panel" id="panel-momentum">
@@ -517,6 +668,8 @@ footer{margin:40px 0 30px;font-size:13px;color:var(--muted);max-width:80ch}
     Skor dan narasi adalah alat bantu riset, bukan rekomendasi beli atau jual. Cocokkan selalu dengan keterbukaan informasi resmi di idx.co.id.
   </footer>
 </main>
+</div>
+</div>
 
 <dialog id="dlg" aria-labelledby="dlg-title">
   <div class="dlg-head">
@@ -536,7 +689,7 @@ const isNum = x => typeof x === "number" && isFinite(x);
 const fmt = (x, d=0) => isNum(x) ? x.toLocaleString("id-ID",{minimumFractionDigits:d,maximumFractionDigits:d}) : "–";
 const pct = (x, d=1, sign=true) => isNum(x) ? (sign && x>0?"+":"") + (x*100).toLocaleString("id-ID",{minimumFractionDigits:d,maximumFractionDigits:d}) + "%" : "–";
 const cls = x => isNum(x) ? (x>0?"up":x<0?"down":"") : "";
-const dark = () => matchMedia("(prefers-color-scheme: dark)").matches;
+const dark = () => { const t = document.documentElement.dataset.theme; return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
 
 async function getJSON(name){
   try{
@@ -1827,6 +1980,7 @@ document.addEventListener("click", e => {
   if(tab){
     document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t===tab));
     document.querySelectorAll(".panel").forEach(p => p.hidden = p.id !== "panel-"+tab.dataset.tab);
+    setPageHead(tab); store.set("tab", tab.dataset.tab); scrollTo({top:0});
     if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
     if(tab.dataset.tab === "analisa"){ drawBreadth(); renderBacktest(); }
     return;
@@ -1889,6 +2043,36 @@ async function loadAll(first){
   renderTape(); renderLiveBox();
   if(pbNew) renderPullback();
 }
+/* ---------- Kerangka: judul halaman, tema, pencarian global ---------- */
+function setPageHead(tab){
+  let sec = tab.previousElementSibling;
+  while(sec && !sec.classList.contains("side-sec")) sec = sec.previousElementSibling;
+  $("#page-title").textContent = tab.dataset.title || tab.textContent.trim();
+  $("#page-eyebrow").textContent = sec ? sec.textContent : "";
+  document.title = `${tab.dataset.title} · Meja Pantau IDX`;
+}
+{
+  const saved = store.get("tab"), t = saved && document.querySelector(`.tab[data-tab="${saved}"]`);
+  if(t && saved !== "momentum") setTimeout(() => t.click(), 0); else setPageHead(document.querySelector(".tab[aria-selected=true]"));
+}
+$("#page-date").textContent = new Date().toLocaleDateString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+$("#theme-btn").addEventListener("click", () => {
+  const next = dark() ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  try{ localStorage.setItem("theme", next); }catch{}
+  location.reload(); // grafik TradingView dan lightweight-charts membaca tema saat dibuat
+});
+$("#gq").addEventListener("keydown", e => {
+  if(e.key !== "Enter") return;
+  const code = e.target.value.trim().toUpperCase().replace(".JK","");
+  if(!code) return;
+  document.querySelector('.tab[data-tab="momentum"]').click();
+  selectStock(code); e.target.value = ""; e.target.blur();
+});
+addEventListener("keydown", e => {
+  if(e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){ e.preventDefault(); $("#gq").focus(); }
+});
+
 loadAll(true);
 setInterval(loadAll, 60_000);
 </script>
