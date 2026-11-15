@@ -491,6 +491,79 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
   .card{padding:14px}
   .term .t-side:not(.t-setup){max-height:none}
 }
+
+/* ---------- Gerak halus: lembut di mata, satu kurva untuk semua ---------- */
+:root{--ease:cubic-bezier(.22,1,.36,1);--ease-in:cubic-bezier(.4,0,1,1)}
+html{scroll-behavior:smooth}
+*{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--ink) 22%,transparent) transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--ink) 20%,transparent);border-radius:10px;border:3px solid transparent;background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{background-color:color-mix(in srgb,var(--ink) 34%,transparent)}
+::-webkit-scrollbar-track{background:transparent}
+
+/* Menu: warna memudar, ikon sedikit bergeser, garis penanda aktif tumbuh dari tengah */
+.tab{position:relative;transition:background-color .22s var(--ease),color .22s var(--ease),transform .14s var(--ease)}
+.tab svg{transition:transform .3s var(--ease)}
+.tab:hover svg{transform:translateX(2px)}
+.tab:active{transform:scale(.97)}
+.tab::before{content:"";position:absolute;left:-12px;top:9px;bottom:9px;width:3px;border-radius:0 4px 4px 0;background:var(--up);
+  transform:scaleY(0);opacity:0;transition:transform .35s var(--ease),opacity .25s var(--ease)}
+.tab[aria-selected="true"]::before{transform:scaleY(1);opacity:1}
+.tab[aria-selected="true"] svg{transform:none}
+.side{scroll-behavior:smooth}
+
+/* Bilah atas: bayangan halus muncul saat halaman digulir */
+.top{transition:box-shadow .3s var(--ease),background-color .3s var(--ease)}
+.top.scrolled{box-shadow:0 10px 28px -18px rgba(23,36,42,.45)}
+
+/* Pindah menu: isi naik pelan dan memudar, kartu menyusul satu per satu */
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.page-head.enter{animation:rise .45s var(--ease) both}
+.panel.enter > *{animation:rise .5s var(--ease) both}
+.panel.enter > :nth-child(2){animation-delay:.05s}
+.panel.enter > :nth-child(3){animation-delay:.1s}
+.panel.enter > :nth-child(n+4){animation-delay:.14s}
+.card{transition:box-shadow .3s var(--ease),border-color .3s var(--ease)}
+
+/* Buka-tutup bagian dan jendela rincian */
+details.card > summary{transition:color .2s var(--ease)}
+details.card[open] > :not(summary){animation:rise .4s var(--ease) both}
+dialog[open]{animation:dlg-in .38s var(--ease) both}
+dialog[open]::backdrop{animation:fade .3s var(--ease) both}
+dialog.closing{animation:dlg-out .2s var(--ease-in) both}
+dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
+@keyframes dlg-in{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes dlg-out{from{opacity:1;transform:none}to{opacity:0;transform:translateY(8px) scale(.99)}}
+
+/* Tablet: sidebar meluncur keluar dengan kurva lembut, label muncul setelah lebar terbuka */
+@media (max-width:1100px) and (min-width:761px){
+  .tab::before{left:-14px}
+  .side{transition:width .45s var(--ease),box-shadow .45s var(--ease)}
+  .side-brand > span:last-child,.side-sec,.side-note,.tab span{transition:opacity .14s var(--ease-in),transform .2s var(--ease-in)}
+  .side-sec,.side-note{height:auto;max-height:0;transition:max-height .4s var(--ease),margin .4s var(--ease),padding .4s var(--ease),opacity .14s var(--ease-in)}
+  .app.side-open .side-brand > span:last-child,.app.side-open .side-sec,.app.side-open .side-note,.app.side-open .tab span{
+    transition:opacity .3s var(--ease) .12s,transform .45s var(--ease) .08s,max-height .4s var(--ease),margin .4s var(--ease),padding .4s var(--ease)}
+  .app.side-open .side-sec{max-height:32px}
+  .app.side-open .side-note{max-height:180px}
+  .app.side-open .side{box-shadow:28px 0 70px -28px rgba(23,36,42,.4)}
+  .side-scrim{background:rgba(23,36,42,.22);transition:opacity .4s var(--ease),backdrop-filter .4s var(--ease)}
+  .app.side-open .side-scrim{backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+}
+
+/* HP: penanda aktif di atas ikon; menu bawah menyingkir saat menggulir ke bawah, kembali saat ke atas */
+@media (max-width:760px){
+  .tab::before{left:50%;top:0;bottom:auto;width:22px;height:3px;border-radius:0 0 4px 4px;transform:translateX(-50%) scaleX(0)}
+  .tab[aria-selected="true"]::before{transform:translateX(-50%) scaleX(1)}
+  .tab:hover svg{transform:none}
+  .side{transition:transform .4s var(--ease)}
+  .app.nav-hide .side{transform:translateY(calc(100% + 4px))}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html,.side{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}
+}
 </style>
 </head>
 <body>
@@ -2032,7 +2105,7 @@ document.addEventListener("click", e => {
   if(th){ const k = th.dataset.pk; PB.sort = {key:k, dir: PB.sort.key === k ? -PB.sort.dir : (["code","status","signal_date","lead_date","left","pattern"].includes(k) ? 1 : -1)}; renderPbTable(); return; }
   const row = e.target.closest("[data-pb]");
   if(row){ pbDetail(row.dataset.pb); return; }
-  if(e.target.closest("#dlg [data-mcode]")){ e.preventDefault(); $("#dlg").close(); }
+  if(e.target.closest("#dlg [data-mcode]")){ e.preventDefault(); closeDlg(); }
 });
 $("#panel-pullback").addEventListener("change", e => {
   const f = e.target.closest("[data-pbf]");
@@ -2051,7 +2124,7 @@ document.addEventListener("click", e => {
   if(tab){
     document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t===tab));
     document.querySelectorAll(".panel").forEach(p => p.hidden = p.id !== "panel-"+tab.dataset.tab);
-    setPageHead(tab); store.set("tab", tab.dataset.tab); scrollTo({top:0});
+    setPageHead(tab); store.set("tab", tab.dataset.tab); scrollTo({top:0, behavior:"instant"}); playEnter(tab.dataset.tab);
     App.renderModule(tab.dataset.tab);
     if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
     if(tab.dataset.tab === "analisa"){ drawBreadth(); renderBacktest(); }
@@ -2105,7 +2178,7 @@ $("#ins-q").addEventListener("input", renderInsider);
 ["ins-sig","ins-repo"].forEach(id => $("#"+id).addEventListener("change", renderInsider));
 $("#chart-go").addEventListener("click", () => renderChart($("#chart-sym").value.trim().toUpperCase().replace(".JK","")));
 $("#chart-sym").addEventListener("keydown", e => { if(e.key==="Enter") $("#chart-go").click(); });
-$("#dlg-close").addEventListener("click", () => $("#dlg").close());
+$("#dlg-close").addEventListener("click", () => closeDlg());
 $("#dlg").addEventListener("close", () => { liveCharts.forEach(c => c.remove()); liveCharts = []; });
 
 async function loadAll(first){
@@ -2147,6 +2220,37 @@ function setPageHead(tab){
   if(t && saved !== "momentum") setTimeout(() => t.click(), 0); else setPageHead(document.querySelector(".tab[aria-selected=true]"));
 }
 $("#page-date").textContent = new Date().toLocaleDateString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+/* ---------- Gerak halus ---------- */
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+function playEnter(name){
+  const els = [document.getElementById("panel-" + name), $(".page-head")].filter(Boolean);
+  els.forEach(el => { el.classList.remove("enter"); void el.offsetWidth; el.classList.add("enter"); });
+  clearTimeout(playEnter._t);
+  playEnter._t = setTimeout(() => els.forEach(el => el.classList.remove("enter")), 900);
+}
+function closeDlg(){
+  const d = $("#dlg");
+  if(!d.open || d.classList.contains("closing")) return;
+  if(reduceMotion.matches){ d.close(); return; }
+  d.classList.add("closing");
+  setTimeout(() => { d.classList.remove("closing"); d.close(); }, 190);
+}
+// Esc dan klik di luar jendela juga menutup dengan animasi
+$("#dlg").addEventListener("cancel", e => { e.preventDefault(); closeDlg(); });
+$("#dlg").addEventListener("click", e => { if(e.target === e.currentTarget) closeDlg(); });
+// Bilah atas berbayang saat menggulir; di HP menu bawah menyingkir saat menggulir ke bawah
+{
+  let lastY = scrollY;
+  const top = $(".top"), app = $(".app");
+  addEventListener("scroll", () => {
+    const y = scrollY;
+    top.classList.toggle("scrolled", y > 4);
+    if(y < 80 || y < lastY - 6) app.classList.remove("nav-hide");
+    else if(y > lastY + 6) app.classList.add("nav-hide");
+    if(Math.abs(y - lastY) > 6) lastY = y;
+  }, {passive:true});
+}
+
 function setSide(open){
   $(".app").classList.toggle("side-open", open);
   $("#side-toggle").setAttribute("aria-expanded", open);
