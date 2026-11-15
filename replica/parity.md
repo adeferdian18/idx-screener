@@ -1,22 +1,21 @@
-## Parity: 76.4 / 100
+## Parity: 82.1 / 100
 
-features 76.4  (25 counted, must-haves 9 of 9 done)
+features 82.1  (25 counted, must-haves 9 of 9 done)
 
 ## By area, weakest first
 - grafik                        50.0  (6 features)
 - money flow                    50.0  (1 features)
-- data pasar                    56.2  (5 features)
 - jurnal                        66.7  (2 features)
-- momentum                      75.0  (3 features)
+- data pasar                    68.8  (5 features)
 - sinyal                       100.0  (3 features)
 - data                         100.0  (1 features)
 - trade plan                   100.0  (1 features)
+- momentum                     100.0  (3 features)
 - daftar                       100.0  (2 features)
 - navigasi                     100.0  (1 features)
 
 ## Missing, in build order
-- [should] data pasar: Frequency Analyzer (lonjakan transaksi vs 20 hari), no
-- [should] momentum: Periode momentum 3/6/9/12 bulan, no
+- [should] data pasar: Frequency Analyzer (lonjakan transaksi vs 20 hari), partial  (tab Lonjakan transaksi; volume vs rata-rata 5 hari, Yahoo tidak memberi frekuensi)
 - [should] grafik: Checklist syarat per saham, partial  (checklist ada di Setup A+ saja)
 - [should] grafik: Support & resistance di grafik, partial
 - [should] money flow: Money Flow asing per saham dan sektor, partial  (KSEI bulanan; bukan harian)

@@ -508,6 +508,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
     <button class="tab" role="tab" aria-selected="false" data-tab="pullback" data-title="Pullback"><svg viewBox="0 0 24 24"><path d="M3 7l6 6 4-4 8 8M15 17h6v-6"/></svg><span>Pullback</span></button>
     <div class="side-sec">Analisis pasar</div>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisa" data-title="Analisa pasar"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Analisa pasar</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="lonjakan" data-title="Lonjakan transaksi"><svg viewBox="0 0 24 24"><path d="M4 20V14M9 20V8M14 20v-5M19 20V4"/></svg><span>Lonjakan transaksi</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="peta" data-title="Peta saham & sektor"><svg viewBox="0 0 24 24"><path d="M3 3h8v10H3zM13 3h8v6h-8zM13 11h8v10h-8zM3 15h8v6H3z"/></svg><span>Peta & sektor</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="grafik" data-title="Grafik"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16M4 8h6v8H4zM14 6h6v6h-6z"/></svg><span>Grafik</span></button>
     <div class="side-sec">Data emiten</div>
@@ -577,6 +578,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
         <button class="chip" data-mf="semua" aria-pressed="false">Semua saham</button>
         <button class="chip" data-mf="saya" aria-pressed="false">★ Watchlist saya</button>
         <button class="chip" id="m-rs90" aria-pressed="false">RS 90+ saja</button>
+        <label class="ck">Periode <select class="pb-sel" id="m-per" aria-label="Periode momentum"><option value="1m">1 bulan</option><option value="3m">3 bulan</option><option value="6m">6 bulan</option><option value="12m">12 bulan</option></select></label>
         <label class="ck">Pola VCP <select class="pb-sel" id="m-vcp" aria-label="Setelan VCP"><option value="">Semua</option><option value="longgar">Longgar</option><option value="sedang">Sedang</option><option value="ketat">Ketat</option></select></label>
         <span class="hint" id="m-count"></span>
       </div>
@@ -687,6 +689,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
 
   <section class="panel mod" id="panel-setup" hidden></section>
   <section class="panel mod" id="panel-peta" hidden></section>
+  <section class="panel mod" id="panel-lonjakan" hidden></section>
   <section class="panel mod" id="panel-kepemilikan" hidden></section>
   <section class="panel mod" id="panel-kalkulator" hidden></section>
   <section class="panel mod" id="panel-jurnal" hidden></section>
@@ -1010,6 +1013,7 @@ const MCOLS = [
   ["kode","Saham",r=>`${star(r.kode)}${esc(r.kode)}${r.rs_rating>=90 && r.lolos_tt?`<span class="badge good">RS 90+</span>`:""}`],
   ["skor_setup","Skor",r=>isNum(r.skor_setup) ? `${r.skor_setup}<span class="bar"><i style="width:${r.skor_setup}%"></i></span>` : "–"],
   ["rs_rating","RS",r=>`<span class="rs ${r.rs_rating>=90?"hi":""}">${r.rs_rating ?? "–"}</span>`],
+  ["rank_per","Rank periode",r=>isNum(r.rank_per) ? `<span class="rs ${r.rank_per>=90?"hi":""}">${r.rank_per}</span> <span class="hint ${cls(r.ret_per)}">${pct(r.ret_per,0)}</span>` : "–"],
   ["rs_line_high","RS Line",rsLine],
   ["harga","Harga",r=>fmt(liveOf(r.kode)?.last ?? r.harga)],
   ["chg","Hari ini",r=>`<span class="${cls(r.chg)}">${pct(r.chg)}</span>`],
@@ -1034,8 +1038,18 @@ function vcpLevel(v){
   if(v.valid) return (last <= 0.06 && v.kering && v.rapi) ? 3 : 2;
   return (last <= 0.15 && d[0] <= 0.45 && last <= d[0]*0.75) ? 1 : 0;
 }
+// Ranking periode: persentil 1-99 return periode terpilih dibanding seluruh saham BEI di data momentum.
+let _rankCache = {key:null, map:null};
+function periodRank(){
+  const per = $("#m-per").value, all = S.momentum?.rows || [], key = per + ":" + all.length + ":" + (S.momentum?.updated || "");
+  if(_rankCache.key === key) return _rankCache.map;
+  const f = "ret_" + per, xs = all.filter(r => isNum(r[f])).sort((a,b) => a[f] - b[f]), n = xs.length, map = {};
+  xs.forEach((r, i) => map[r.kode] = {rank: Math.max(1, Math.min(99, Math.round((i + 1) / n * 99))), ret: r[f]});
+  return (_rankCache = {key, map}).map;
+}
 function mRows(){
-  let rows = (S.momentum?.rows || []).map(r => ({...r, chg: liveOf(r.kode)?.chg ?? r.chg_1d}));
+  const rk = periodRank();
+  let rows = (S.momentum?.rows || []).map(r => ({...r, chg: liveOf(r.kode)?.chg ?? r.chg_1d, rank_per: rk[r.kode]?.rank, ret_per: rk[r.kode]?.ret}));
   const q = $("#mq").value.trim().toUpperCase();
   if(q) rows = rows.filter(r => r.kode.includes(q) || (r.nama||"").toUpperCase().includes(q));
   else if(S.mFilter === "lolos") rows = rows.filter(r => r.lolos_tt && r.likuid);
@@ -2068,6 +2082,8 @@ document.addEventListener("click", e => {
   const th = e.target.closest("#sc-table th");
   if(th){ const k = th.dataset.k; S.sort = {key:k, dir: S.sort.key===k ? -S.sort.dir : (["peringkat","per","pbv","kode"].includes(k)?1:-1)}; renderScreener(); return; }
 });
+$("#m-per").value = store.get("m-per") || "3m";
+$("#m-per").addEventListener("change", ev => { store.set("m-per", ev.target.value); S.msort = {key:"rank_per", dir:-1}; renderMomentum(); });
 $("#m-vcp").value = store.get("m-vcp") || "";
 $("#m-vcp").addEventListener("change", ev => { store.set("m-vcp", ev.target.value); renderMomentum(); });
 $("#m-rs90").addEventListener("click", ev => {
@@ -2159,5 +2175,6 @@ setInterval(loadAll, 60_000);
 <script src="js/kepemilikan.js" defer></script>
 <script src="js/kalkulator.js" defer></script>
 <script src="js/jurnal.js" defer></script>
+<script src="js/lonjakan.js" defer></script>
 </body>
 </html>
