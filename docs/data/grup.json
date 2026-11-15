@@ -1,0 +1,231 @@
+{
+ "updated": "2026-11-15",
+ "catatan": "Disusun manual dari informasi publik; cek keterbukaan informasi resmi",
+ "grup": [
+  {
+   "nama": "Grup Salim",
+   "pengendali": "Anthoni Salim",
+   "saham": [
+    "INDF",
+    "ICBP",
+    "SIMP",
+    "LSIP",
+    "IMAS",
+    "DNET",
+    "BINA"
+   ]
+  },
+  {
+   "nama": "Grup Djarum",
+   "pengendali": "Keluarga Hartono",
+   "saham": [
+    "BBCA",
+    "TOWR",
+    "BELI"
+   ]
+  },
+  {
+   "nama": "Grup Sinar Mas",
+   "pengendali": "Keluarga Widjaja",
+   "saham": [
+    "SMMA",
+    "BSIM",
+    "INKP",
+    "TKIM",
+    "SMAR",
+    "DSSA",
+    "BSDE",
+    "DUTI",
+    "SMRA",
+    "LIFE",
+    "DMAS"
+   ]
+  },
+  {
+   "nama": "Grup Astra (Jardine)",
+   "pengendali": "Jardine Matheson",
+   "saham": [
+    "ASII",
+    "UNTR",
+    "AALI",
+    "AUTO",
+    "ASGR",
+    "ACST",
+    "SMSM",
+    "HEXA"
+   ]
+  },
+  {
+   "nama": "Grup Lippo",
+   "pengendali": "Keluarga Riady",
+   "saham": [
+    "LPKR",
+    "LPCK",
+    "SILO",
+    "MLPL",
+    "MPPA",
+    "LPPF",
+    "NOBU",
+    "LPGI"
+   ]
+  },
+  {
+   "nama": "Grup MNC",
+   "pengendali": "Hary Tanoesoedibjo",
+   "saham": [
+    "BHIT",
+    "MNCN",
+    "BMTR",
+    "IPTV",
+    "MSKY",
+    "BABP",
+    "BCAP",
+    "KPIG",
+    "IATA",
+    "MSIN"
+   ]
+  },
+  {
+   "nama": "Grup Barito",
+   "pengendali": "Prajogo Pangestu",
+   "saham": [
+    "BRPT",
+    "TPIA",
+    "BREN",
+    "CUAN",
+    "PTRO",
+    "CDIA"
+   ]
+  },
+  {
+   "nama": "Grup Bakrie",
+   "pengendali": "Keluarga Bakrie",
+   "saham": [
+    "BUMI",
+    "BRMS",
+    "ENRG",
+    "UNSP",
+    "BNBR",
+    "DEWA",
+    "VKTR"
+   ]
+  },
+  {
+   "nama": "Grup Adaro / Saratoga",
+   "pengendali": "Garibaldi Thohir, Edwin Soeryadjaya",
+   "saham": [
+    "ADRO",
+    "ADMR",
+    "SRTG",
+    "MPMX",
+    "AADI",
+    "MDKA"
+   ]
+  },
+  {
+   "nama": "CT Corp",
+   "pengendali": "Chairul Tanjung",
+   "saham": [
+    "MEGA",
+    "BBHI"
+   ]
+  },
+  {
+   "nama": "Grup Emtek",
+   "pengendali": "Keluarga Sariaatmadja",
+   "saham": [
+    "EMTK",
+    "SCMA",
+    "BUKA"
+   ]
+  },
+  {
+   "nama": "Grup Triputra",
+   "pengendali": "T.P. Rachmat",
+   "saham": [
+    "TAPG",
+    "DSNG",
+    "ASSA"
+   ]
+  },
+  {
+   "nama": "Grup Panin",
+   "pengendali": "Mu'min Ali Gunawan",
+   "saham": [
+    "PNLF",
+    "PNBN",
+    "PNIN",
+    "PANS",
+    "PNBS"
+   ]
+  },
+  {
+   "nama": "Grup Kalla",
+   "pengendali": "Keluarga Kalla",
+   "saham": [
+    "BUKK"
+   ]
+  },
+  {
+   "nama": "Danantara / BUMN",
+   "pengendali": "Pemerintah RI (Danantara)",
+   "saham": [
+    "BBRI",
+    "BMRI",
+    "BBNI",
+    "BBTN",
+    "BRIS",
+    "TLKM",
+    "PGAS",
+    "PGEO",
+    "ANTM",
+    "PTBA",
+    "TINS",
+    "SMGR",
+    "JSMR",
+    "KAEF",
+    "ELSA",
+    "AKRA",
+    "GIAA",
+    "SMBR",
+    "TUGU"
+   ]
+  },
+  {
+   "nama": "Grup Gudang Garam",
+   "pengendali": "Keluarga Wonowidjojo",
+   "saham": [
+    "GGRM"
+   ]
+  },
+  {
+   "nama": "Grup Mayapada",
+   "pengendali": "Dato' Sri Tahir",
+   "saham": [
+    "MAYA",
+    "SRAJ"
+   ]
+  },
+  {
+   "nama": "Grup Ciputra",
+   "pengendali": "Keluarga Ciputra",
+   "saham": [
+    "CTRA"
+   ]
+  },
+  {
+   "nama": "Grup Rajawali",
+   "pengendali": "Peter Sondakh",
+   "saham": [
+    "ARCI"
+   ]
+  },
+  {
+   "nama": "Grup Indika",
+   "pengendali": "Arsjad Rasjid, Agus Lasmono",
+   "saham": [
+    "INDY"
+   ]
+  }
+ ]
+}

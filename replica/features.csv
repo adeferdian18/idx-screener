@@ -8,21 +8,21 @@ Momentum Score & Ranking vs IHSG,momentum,must,yes,yes,RS rating di momentum.py
 Periode momentum 3/6/9/12 bulan,momentum,should,yes,yes,pilihan Periode 1/3/6/12 bulan + kolom Rank periode
 VCP dengan setelan Ketat/Sedang/Longgar,momentum,must,yes,yes,pilihan Pola VCP di tab Momentum
 Grafik dengan MA5-MA200,grafik,must,yes,yes,centang MA5/20/50/200 di tab Grafik
-Support & resistance di grafik,grafik,should,yes,partial,
-Fibonacci di grafik,grafik,could,yes,no,
-Trendline dan chart pattern,grafik,could,yes,no,
-Checklist syarat per saham,grafik,should,yes,partial,checklist ada di Setup A+ saja
-Simpan grafik jadi gambar,grafik,could,yes,no,
+Support & resistance di grafik,grafik,should,yes,yes,Grafik Pro
+Fibonacci di grafik,grafik,could,yes,yes,Grafik Pro
+Trendline dan chart pattern,grafik,could,yes,partial,Grafik Pro: trendline; chart pattern selain VCP belum
+Checklist syarat per saham,grafik,should,yes,yes,Grafik Pro checklist 7 syarat
+Simpan grafik jadi gambar,grafik,could,yes,yes,Grafik Pro
 Money Flow asing per saham dan sektor,money flow,should,yes,partial,KSEI bulanan; bukan harian
 Frequency Analyzer (lonjakan transaksi vs 20 hari),data pasar,should,yes,partial,"tab Lonjakan transaksi; volume vs rata-rata 5 hari, Yahoo tidak memberi frekuensi"
 Pemegang saham & transaksi orang dalam,data pasar,should,yes,yes,tab insider + kepemilikan
 Peta saham & rotasi sektor,data pasar,should,yes,yes,peta.js
-Grup konglomerat,data pasar,could,yes,no,
+Grup konglomerat,data pasar,could,yes,yes,tab Grup konglomerat (daftar manual)
 Fundamental emiten,data pasar,could,yes,partial,
 Filter likuiditas/indeks/momentum + urutan,daftar,must,yes,yes,screener
 Tandai saham & daftar Dipantau,daftar,should,yes,yes,★ Watchlist saya
 Jurnal transaksi + statistik,jurnal,should,yes,yes,jurnal.js
-Flexing Porto (bandingkan portofolio),jurnal,could,yes,no,
+Flexing Porto (bandingkan portofolio),jurnal,could,yes,yes,tab Portofolio + kartu gambar
 Cari saham/menu dari mana saja,navigasi,should,yes,yes,kotak cari + shortcut /
 Video tutorial per fitur,belajar,could,yes,skip,butuh rekaman manual
 Login email kode 6 digit,akun,could,yes,skip,situs pribadi tanpa akun
