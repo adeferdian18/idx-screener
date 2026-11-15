@@ -14,10 +14,15 @@
 #panel-setup .sa-miss{font-size:12px;color:var(--down);white-space:normal;min-width:180px;text-align:left}
 #panel-setup .sa-cmp td:nth-child(n+3),#panel-setup .sa-cmp th:nth-child(n+3){text-align:right}
 #panel-setup .sa-warn{background:var(--accent-soft);border-radius:12px;padding:12px 14px;font-size:14px;margin-top:10px}
-#panel-setup h3{font-size:15px;margin:16px 0 8px}`;
+#panel-setup h3{font-size:15px;margin:16px 0 8px}
+#panel-setup .sa-why{white-space:normal;min-width:260px;text-align:left;font-size:12.5px;line-height:1.45}
+#panel-setup .sa-why ul{margin:0;padding-left:16px} #panel-setup .sa-why .f{color:var(--accent)}
+#panel-setup .sa-res.menunggu,#panel-setup .sa-res.berjalan{background:var(--accent-soft);color:var(--accent)}
+#panel-setup .sa-res.batal{background:var(--bg);color:var(--faint)}
+#panel-setup .sa-entry{font:inherit;font-size:12px;font-weight:700;border:0;border-radius:8px;padding:5px 10px;background:var(--btn);color:var(--btn-fg);cursor:pointer;white-space:nowrap}`;
   const st = document.createElement("style"); st.id = "setup-css"; st.textContent = css; document.head.appendChild(st);
 
-  let sweep = null, loading = false, recFilter = "semua", built = false;
+  let sweep = null, loading = false, recFilter = "semua", built = false, jl = null, jlFilter = "semua";
   const R = x => App.isNum(x) ? (x > 0 ? "+" : "") + x.toLocaleString("id-ID", {minimumFractionDigits:2, maximumFractionDigits:2}) + "R" : "–";
   const pctS = x => App.isNum(x) ? (x * 100).toLocaleString("id-ID", {maximumFractionDigits:0}) + "%" : "–";
 
@@ -47,11 +52,11 @@
       <span>IHSG status <b>${App.esc(m.pasar?.status || "–")}</b>. ${gateOk ? "Setup A+ boleh dieksekusi." :
       "Backtest: breakout saat IHSG downtrend lebih sering gagal. Tidak ada entry baru sampai IHSG keluar dari downtrend."}</span></div>`;
     const tbl = (list, miss) => `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Nama</th><th>RS</th><th>Harga</th>
-      <th>Entry (buy-stop)</th><th>SL</th><th>TP 1R</th><th>Risiko</th>${miss ? "<th>Belum terpenuhi</th>" : ""}</tr></thead><tbody>${list.map(z => {
+      <th>Entry (buy-stop)</th><th>SL</th><th>TP 1R</th><th>Risiko</th>${miss ? "<th>Belum terpenuhi</th>" : "<th></th>"}</tr></thead><tbody>${list.map(z => {
         const s = z.setup_a;
         return `<tr data-code="${App.esc(z.kode)}"><td class="code">${App.esc(z.kode)}</td><td>${App.esc((z.nama || "").slice(0, 28))}</td>
           <td>${z.rs_rating}</td><td>${App.fmt(z.harga)}</td><td class="lv-e">${App.fmt(s.entry)}</td><td class="down">${App.fmt(s.sl)}</td>
-          <td class="up">${App.fmt(s.tp)}</td><td>${pctS(s.sl_pct)}</td>${miss ? `<td class="sa-miss">${s.syarat.filter(x => !x[1]).map(x => App.esc(x[0])).join(" · ")}</td>` : ""}</tr>`;
+          <td class="up">${App.fmt(s.tp)}</td><td>${pctS(s.sl_pct)}</td>${miss ? `<td class="sa-miss">${s.syarat.filter(x => !x[1]).map(x => App.esc(x[0])).join(" · ")}</td>` : `<td><button class="sa-entry" data-saentry="${App.esc(z.kode)}">Saya entry → Jurnal</button></td>`}</tr>`;
       }).join("")}</tbody></table></div>`;
     return gate + `<h3>Lolos semua syarat (${pass.length})</h3>` +
       (pass.length ? tbl(pass, false) : `<p class="hint">Tidak ada saham yang lolos hari ini. Tidak trading juga keputusan yang sah.</p>`) +
@@ -65,12 +70,60 @@
     return `<div class="toolbar"><span class="seg">${["semua", "TP", "SL", "waktu"].map(k =>
         `<button data-sarec="${k}" aria-pressed="${recFilter === k}">${k === "semua" ? "Semua" : k === "waktu" ? "Waktu habis" : "Kena " + k} (${k === "semua" ? all.length : all.filter(t => t.keluar === k).length})</button>`).join("")}</span></div>
       <div class="table-wrap"><table><thead><tr><th>Kode</th><th>Tgl beli</th><th>Tgl keluar</th><th>Periode</th><th>IHSG</th><th>RS</th>
-      <th>Beli</th><th>SL</th><th>TP</th><th>Hasil</th><th>Hari</th><th>Return</th><th>R</th></tr></thead><tbody>${list.map(t => `
+      <th>Beli</th><th>SL</th><th>TP</th><th>Hasil</th><th>Hari</th><th>Return</th><th>R</th><th>Alasan</th></tr></thead><tbody>${list.map(t => `
       <tr data-code="${App.esc(t.kode)}"><td class="code">${App.esc(t.kode)}</td><td>${t.tgl_beli}</td><td>${t.tgl_keluar}</td>
       <td>${t.periode === "uji" ? "uji 2025-26" : "pilih 2022-24"}</td><td>${App.esc(t.pasar)}</td><td>${t.rs}</td>
       <td>${App.fmt(t.beli)}</td><td>${App.fmt(t.sl)}</td><td>${App.fmt(t.tp)}</td>
       <td><span class="sa-res ${t.keluar}">${t.keluar === "waktu" ? "Waktu" : t.keluar}</span></td><td>${t.hari}</td>
-      <td class="${App.cls(t.ret)}">${App.pct(t.ret)}</td><td class="${App.cls(t.net_r)}">${R(t.net_r)}</td></tr>`).join("")}</tbody></table></div>`;
+      <td class="${App.cls(t.ret)}">${App.pct(t.ret)}</td><td class="${App.cls(t.net_r)}">${R(t.net_r)}</td><td class="sa-why">${why(t.alasan)}</td></tr>`).join("")}</tbody></table></div>`;
+  }
+
+  const why = (tek, fun) => (tek && tek.length) || (fun && fun.length)
+    ? `<ul>${(tek || []).map(x => `<li>${App.esc(x)}</li>`).join("")}${(fun || []).map(x => `<li class="f">${App.esc(x)}</li>`).join("")}</ul>` : "–";
+
+  const JL_LBL = {menunggu:"Menunggu order", berjalan:"Berjalan", TP:"Kena TP", SL:"Kena SL", waktu:"Waktu habis (out)", batal:"Batal"};
+  function jlKey(t){ return t.status === "selesai" ? t.keluar : t.status; }
+  function journal(){
+    if(!jl) return `<p class="hint">Belum ada catatan. Jurnal mulai terisi otomatis sejak ada saham yang lolos Setup A+ (dicek setiap hari bursa pukul 16:30 WIB).</p>`;
+    const g = jl.ringkas || {}, all = jl.trades || [], maks = jl.aturan?.maks_hari || 20;
+    const list = jlFilter === "semua" ? all : all.filter(t => jlKey(t) === jlFilter);
+    const c = (l, v, k="") => `<div class="cell"><span>${l}</span><b class="${k}">${v}</b></div>`;
+    const status = t => {
+      const k = jlKey(t);
+      const sub = t.status === "menunggu" ? `sisa ${t.sisa_hari ?? "–"} hari order`
+        : t.status === "berjalan" ? `hari ${t.hari}/${maks}, sisa ${t.sisa_hari} hari`
+        : t.status === "batal" ? (t.keluar === "gap" ? "open gap di atas entry" : "tidak breakout dalam 5 hari")
+        : `${t.hari} hari · ${t.tgl_keluar}`;
+      return `<span class="sa-res ${k}">${JL_LBL[k] || k}</span><div class="hint">${App.esc(sub)}</div>`;
+    };
+    return `<div class="sa-stats">${c("Sinyal", App.fmt(g.sinyal))}${c("Kena TP", App.fmt(g.kena_tp), "up")}${c("Kena SL", App.fmt(g.kena_sl), "down")}
+      ${c("Waktu habis", App.fmt(g.waktu_habis))}${c("Berjalan", App.fmt(g.berjalan))}${c("Menunggu", App.fmt(g.menunggu))}
+      ${c("Rata-rata / trade", R(g.rata_r), App.cls(g.rata_r))}</div>
+      <div class="toolbar"><span class="seg">${["semua","menunggu","berjalan","TP","SL","waktu","batal"].map(k =>
+        `<button data-sajl="${k}" aria-pressed="${jlFilter === k}">${k === "semua" ? "Semua" : JL_LBL[k]}</button>`).join("")}</span></div>
+      <div class="table-wrap"><table><thead><tr><th>Kode</th><th>Sinyal</th><th>Beli</th><th>Entry</th><th>SL</th><th>TP</th><th>Status</th><th>Return</th><th>R</th><th>Alasan</th></tr></thead><tbody>
+      ${list.length ? list.map(t => `<tr data-code="${App.esc(t.kode)}"><td class="code">${App.esc(t.kode)}</td><td>${t.tgl_sinyal}</td><td>${t.tgl_beli || "–"}</td>
+        <td>${App.fmt(t.entry)}</td><td class="down">${App.fmt(t.sl)}</td><td class="up">${App.fmt(t.tp)}</td><td>${status(t)}</td>
+        <td class="${App.cls(t.ret)}">${App.pct(t.ret)}</td><td class="${App.cls(t.net_r)}">${R(t.net_r)}</td>
+        <td class="sa-why">${t.status === "selesai" ? why(t.alasan_teknikal, t.alasan_fundamental) : "–"}</td></tr>`).join("")
+        : `<tr><td colspan="10" style="text-align:left">Tidak ada catatan di filter ini.</td></tr>`}</tbody></table></div>
+      <p class="hint">Diperbarui ${App.esc(jl.updated || "")}. Order buy-stop berlaku 5 hari bursa; setelah entry, posisi dianggap out di penutupan hari ke-${maks} bila belum kena TP atau SL. Alasan hitam = teknikal, oranye = fundamental.</p>`;
+  }
+
+  function addToJurnal(kode){
+    const z = (App.S.momentum?.rows || []).find(r => r.kode === kode); if(!z || !z.setup_a) return;
+    const s = z.setup_a;
+    let k = {}; try{ k = JSON.parse(App.store.get("kalk") || "{}") || {}; }catch{}
+    const n = x => parseFloat(String(x || "").replace(/\./g, "").replace(",", "."));
+    const modal = n(k.modal), risk = n(k.risk || "1") / 100;
+    const lot = modal > 0 && s.entry > s.sl ? Math.max(1, Math.floor(modal * risk / (s.entry - s.sl) / 100)) : null;
+    let arr; try{ arr = JSON.parse(App.store.get("jurnal") || "[]"); }catch{ arr = []; }
+    if(!Array.isArray(arr)) arr = [];
+    const d = new Date(), tgl = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    arr.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2,6), tgl, kode, entry: s.entry, sl: s.sl, t1: s.tp, t2: null, lot,
+      catatan: `Setup A+ (RS ${z.rs_rating}). Buy-stop ${s.entry}, TP 1R ${s.tp}, SL ${s.sl}. Maks pegang 20 hari bursa, lewat itu jual (out).`, status: "rencana" });
+    App.store.set("jurnal", JSON.stringify(arr));
+    alert(`${kode} tersimpan di Jurnal sebagai rencana${lot ? ` (${lot} lot dari pengaturan Kalkulator)` : ". Isi modal di Kalkulator agar lot dihitung otomatis"}.`);
   }
 
   function build(el){
@@ -91,6 +144,9 @@
       </div>
     </div>
     <div class="card"><h2>Kandidat hari ini</h2><div id="sa-cand"></div></div>
+    <div class="card"><h2>Jurnal otomatis Setup A+</h2>
+      <p>Setiap saham yang lolos Setup A+ dicatat otomatis, lalu dilacak tiap hari bursa sampai kena TP, kena SL, atau waktu habis, lengkap dengan alasannya.</p>
+      <div id="sa-jl"></div></div>
     <div class="card">
       <h2>Rekam jejak backtest</h2>
       <p>Biaya beli ${App.pct(sweep.asumsi.biaya_beli, 2, false)}, jual ${App.pct(sweep.asumsi.biaya_jual, 2, false)}, slippage ${App.pct(sweep.asumsi.slippage, 1, false)} per sisi sudah dihitung.</p>
@@ -125,9 +181,14 @@
   function update(){
     const c = document.getElementById("sa-cand"); if(c) c.innerHTML = candidates();
     const r = document.getElementById("sa-rec"); if(r && sweep) r.innerHTML = record();
+    const j = document.getElementById("sa-jl"); if(j) j.innerHTML = journal();
   }
 
   document.addEventListener("click", e => {
+    const en = e.target.closest("[data-saentry]");
+    if(en){ e.stopPropagation(); addToJurnal(en.dataset.saentry); return; }
+    const jb = e.target.closest("[data-sajl]");
+    if(jb){ jlFilter = jb.dataset.sajl; update(); return; }
     const b = e.target.closest("[data-sarec]");
     if(!b) return;
     recFilter = b.dataset.sarec; update();
@@ -138,6 +199,7 @@
       if(!sweep && !loading){
         loading = true;
         App.getJSON("backtest_sweep").then(d => { sweep = d; loading = false; built = false; App.renderModule("setup"); });
+        App.getJSON("setup_jurnal").then(d => { jl = d; update(); }).catch(() => {});
       }
       if(!built || !el.querySelector("#sa-cand")) build(el);
       update();

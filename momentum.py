@@ -425,6 +425,13 @@ def main():
         z["hgm"] = hg.get(z["kode"])
         z["katalis"] = kat.get(z["kode"], [])
 
+    # Jurnal otomatis Setup A+: catat sinyal baru, lacak TP/SL/waktu habis beserta alasannya
+    try:
+        import setup_jurnal
+        setup_jurnal.update(out_rows, frames, ihsg, market)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! jurnal Setup A+ gagal ({e})")
+
     # Fase 3: skor setup & briefing untuk saham yang relevan (menjaga ukuran JSON tetap kecil).
     # Hasil backtest mingguan ikut dikutip di briefing sebagai bukti per kondisi pasar.
     try:

@@ -40,6 +40,7 @@ import numpy as np
 import pandas as pd
 
 import momentum as mom
+import setup_jurnal
 import signals
 import vcp
 
@@ -232,6 +233,19 @@ def main():
     base = next(x for x in results if all(v in ("semua", "RS 70+") for v in x["filter"].values())
                 and x["sl"] == "struktur" and x["tp"] == 2.0)
 
+    ih = ihsg.reindex(dates).ffill().to_numpy(float)
+
+    def _why(e, s_):
+        d, k = e["d"], s_["keluar_i"]
+        r = s_["beli"] - s_["sl"]
+        mfe = float((np.nanmax(e["_h"][d:k + 1]) - s_["beli"]) / r)
+        mae = float((np.nanmin(e["_l"][d:k + 1]) - s_["beli"]) / r)
+        ich = float(ih[k] / ih[d - 1] - 1)
+        vx = e["vol_x"] if np.isfinite(e["vol_x"]) else None
+        tek, _ = setup_jurnal.alasan(s_["keluar"], s_["hari"], mfe, mae, vx, ich, e["rs"])
+        return {"vol_x": round(vx, 2) if vx is not None else None, "mfe_r": round(mfe, 2), "mae_r": round(mae, 2),
+                "ihsg_chg": round(ich, 4), "alasan": tek}
+
     def record(cfg):
         fk_, sl_, tp_ = cfg["filter"], cfg["sl"], cfg["tp"]
         out = []
@@ -240,7 +254,8 @@ def main():
                 out.append({"kode": e["kode"], "tgl_beli": e["tgl"], "tgl_keluar": f"{dates[s_['keluar_i']]:%Y-%m-%d}",
                             "periode": "pilih" if e["tgl"] < SPLIT else "uji", "pasar": e["pasar"], "rs": int(e["rs"]),
                             "beli": round(s_["beli"], 1), "sl": s_["sl"], "tp": round(s_["tp"], 1), "keluar": s_["keluar"],
-                            "hari": s_["hari"], "net_r": round(s_["net_r"], 3), "ret": round(s_["ret"], 4)})
+                            "hari": s_["hari"], "net_r": round(s_["net_r"], 3), "ret": round(s_["ret"], 4),
+                            **_why(e, s_)})
         return out
 
     kand = next(x for x in results if x["filter"] == KANDIDAT["filter"] and x["sl"] == KANDIDAT["sl"] and x["tp"] == KANDIDAT["tp"])
