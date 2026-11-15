@@ -577,6 +577,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
         <button class="chip" data-mf="semua" aria-pressed="false">Semua saham</button>
         <button class="chip" data-mf="saya" aria-pressed="false">★ Watchlist saya</button>
         <button class="chip" id="m-rs90" aria-pressed="false">RS 90+ saja</button>
+        <label class="ck">Pola VCP <select class="pb-sel" id="m-vcp" aria-label="Setelan VCP"><option value="">Semua</option><option value="longgar">Longgar</option><option value="sedang">Sedang</option><option value="ketat">Ketat</option></select></label>
         <span class="hint" id="m-count"></span>
       </div>
       <div class="table-wrap"><table id="m-table"><thead></thead><tbody></tbody></table></div>
@@ -678,6 +679,7 @@ footer{margin:32px 0 28px;padding-top:16px;border-top:1px solid var(--line);colo
     <div class="toolbar">
       <input class="search" id="chart-sym" placeholder="Kode saham, mis. BBCA" aria-label="Kode saham untuk grafik">
       <button class="chip" id="chart-go">Tampilkan</button>
+      <span id="chart-ma"><label class="ck"><input type="checkbox" value="5"> MA5</label><label class="ck"><input type="checkbox" value="20"> MA20</label><label class="ck"><input type="checkbox" value="50"> MA50</label><label class="ck"><input type="checkbox" value="200"> MA200</label></span>
       <span class="hint">Grafik dari TradingView. Untuk saham BEI, widget gratis biasanya hanya sampai harga penutupan hari sebelumnya; harga hari ini ada di bagian atas halaman.</span>
     </div>
     <div class="chart-box" id="chart-box"></div>
@@ -801,12 +803,23 @@ function setTapePaused(p){
   if(btn){ btn.textContent = p ? "▶" : "❚❚"; btn.setAttribute("aria-label", p ? "Jalankan pita harga" : "Jeda pita harga"); btn.setAttribute("aria-pressed", p); }
   store.set("tape-pause", p ? "1" : "0");
 }
+const CHART_MA_DEF = "20,50,200";
+function chartMAs(){ return (store.get("chart-ma") ?? CHART_MA_DEF).split(",").filter(Boolean).map(Number); }
+let chartCode = null;
 function renderChart(code){
+  if(code !== undefined) chartCode = code;
+  const mas = chartMAs();
+  document.querySelectorAll("#chart-ma input").forEach(i => i.checked = mas.includes(+i.value));
   tvWidget($("#chart-box"), "advanced-chart", {
-    autosize:true, symbol: code ? `IDX:${code}` : "IDX:COMPOSITE", interval:"D", timezone:"Asia/Jakarta",
-    theme: dark()?"dark":"light", style:"1", locale:"id", allow_symbol_change:true, hide_side_toolbar:false
+    autosize:true, symbol: chartCode ? `IDX:${chartCode}` : "IDX:COMPOSITE", interval:"D", timezone:"Asia/Jakarta",
+    theme: dark()?"dark":"light", style:"1", locale:"id", allow_symbol_change:true, hide_side_toolbar:false,
+    studies: mas.map(n => ({id:"MASimple@tv-basicstudies", inputs:{length:n}}))
   });
 }
+$("#chart-ma").addEventListener("change", () => {
+  store.set("chart-ma", [...document.querySelectorAll("#chart-ma input:checked")].map(i => i.value).join(","));
+  renderChart();
+});
 
 /* ---------- Aksi korporasi ---------- */
 const EV_FILTERS = [["semua","Semua"],["Layak dicermati","Layak dicermati"],["buyback","Buyback"],["insider","Orang dalam beli"],["dividend","Dividen"],["dilusi","Rights issue & private placement"],["lain","Lainnya"]];
@@ -1011,6 +1024,16 @@ const MCOLS = [
   ["nilai_rata2","Nilai/hari",r=>isNum(r.nilai_rata2)?"Rp"+fmt(r.nilai_rata2/1e9,1)+" M":"–"],
   ["flags","Catatan",r=>`<span class="flag">${esc(r.flags.join(", ").toLowerCase())}</span>`],
 ];
+// Setelan VCP. Sedang = aturan backend (vcp.py: kontraksi terakhir ≤10%, menyusut rapi).
+// Longgar = 2+ kontraksi menyusut, terakhir ≤15%. Ketat = Sedang + terakhir ≤6% + volume kering.
+const VCP_LV = {longgar:1, sedang:2, ketat:3};
+function vcpLevel(v){
+  const d = v?.kedalaman;
+  if(!d || d.length < 2) return 0;
+  const last = d[d.length-1];
+  if(v.valid) return (last <= 0.06 && v.kering && v.rapi) ? 3 : 2;
+  return (last <= 0.15 && d[0] <= 0.45 && last <= d[0]*0.75) ? 1 : 0;
+}
 function mRows(){
   let rows = (S.momentum?.rows || []).map(r => ({...r, chg: liveOf(r.kode)?.chg ?? r.chg_1d}));
   const q = $("#mq").value.trim().toUpperCase();
@@ -1019,6 +1042,8 @@ function mRows(){
   else if(S.mFilter === "hampir") rows = rows.filter(r => r.label === "Hampir");
   else if(S.mFilter === "saya"){ const w = WL.get(); rows = rows.filter(r => w.has(r.kode)); }
   if($("#m-rs90").getAttribute("aria-pressed")==="true") rows = rows.filter(r => r.rs_rating >= 90);
+  const vp = $("#m-vcp").value;
+  if(vp) rows = rows.filter(r => vcpLevel(r.entry?.vcp) >= VCP_LV[vp]);
   const {key, dir} = S.msort;
   rows.sort((a,b) => {
     const x=a[key], y=b[key];
@@ -2043,6 +2068,8 @@ document.addEventListener("click", e => {
   const th = e.target.closest("#sc-table th");
   if(th){ const k = th.dataset.k; S.sort = {key:k, dir: S.sort.key===k ? -S.sort.dir : (["peringkat","per","pbv","kode"].includes(k)?1:-1)}; renderScreener(); return; }
 });
+$("#m-vcp").value = store.get("m-vcp") || "";
+$("#m-vcp").addEventListener("change", ev => { store.set("m-vcp", ev.target.value); renderMomentum(); });
 $("#m-rs90").addEventListener("click", ev => {
   const b = ev.currentTarget; b.setAttribute("aria-pressed", b.getAttribute("aria-pressed")!=="true"); renderMomentum();
 });

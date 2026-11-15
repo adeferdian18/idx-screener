@@ -1,0 +1,30 @@
+feature,area,priority,original,clone,notes
+Sinyal Pullback (daftar pantau),sinyal,must,yes,yes,pullback.py + tab Pullback
+Sinyal HAKA menunggu konfirmasi,sinyal,must,yes,yes,tab Pullback kelompok Menunggu trigger
+HAKA Momentum terkonfirmasi + level terkunci,sinyal,must,yes,yes,Pullback Entry hari ini/baru + level ATR/N terkunci
+Data Sesi 1 dan Penutupan,data,must,yes,yes,pullback.yml 12:05 & 16:26 WIB
+Trade plan lot dari risiko,trade plan,must,yes,yes,kalkulator.js
+Momentum Score & Ranking vs IHSG,momentum,must,yes,yes,RS rating di momentum.py
+Periode momentum 3/6/9/12 bulan,momentum,should,yes,no,
+VCP dengan setelan Ketat/Sedang/Longgar,momentum,must,yes,yes,pilihan Pola VCP di tab Momentum
+Grafik dengan MA5-MA200,grafik,must,yes,yes,centang MA5/20/50/200 di tab Grafik
+Support & resistance di grafik,grafik,should,yes,partial,
+Fibonacci di grafik,grafik,could,yes,no,
+Trendline dan chart pattern,grafik,could,yes,no,
+Checklist syarat per saham,grafik,should,yes,partial,checklist ada di Setup A+ saja
+Simpan grafik jadi gambar,grafik,could,yes,no,
+Money Flow asing per saham dan sektor,money flow,should,yes,partial,KSEI bulanan; bukan harian
+Frequency Analyzer (lonjakan transaksi vs 20 hari),data pasar,should,yes,no,
+Pemegang saham & transaksi orang dalam,data pasar,should,yes,yes,tab insider + kepemilikan
+Peta saham & rotasi sektor,data pasar,should,yes,yes,peta.js
+Grup konglomerat,data pasar,could,yes,no,
+Fundamental emiten,data pasar,could,yes,partial,
+Filter likuiditas/indeks/momentum + urutan,daftar,must,yes,yes,screener
+Tandai saham & daftar Dipantau,daftar,should,yes,yes,★ Watchlist saya
+Jurnal transaksi + statistik,jurnal,should,yes,yes,jurnal.js
+Flexing Porto (bandingkan portofolio),jurnal,could,yes,no,
+Cari saham/menu dari mana saja,navigasi,should,yes,yes,kotak cari + shortcut /
+Video tutorial per fitur,belajar,could,yes,skip,butuh rekaman manual
+Login email kode 6 digit,akun,could,yes,skip,situs pribadi tanpa akun
+Langganan QRIS,akun,could,yes,skip,gratis untuk diri sendiri
+Setup A+ dengan backtest TP/SL terekam,ekstra,could,no,yes,lebih dari aslinya
