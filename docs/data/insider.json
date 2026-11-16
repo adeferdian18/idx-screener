@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T17:05+07:00",
+ "updated": "2026-11-16T18:05+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 83
+  "news": 81
  },
  "transactions": [
   {
@@ -987,8 +987,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRDJBR3JsVlFIM1JnWF90N2pGLVFEYTdwUkNjcHNjXzcwZDlVOXVrYWhTMTRTRU5WZnRIY2loS2xwdE52Z3ZHWWRZZ0lnekkzY19sR1h5LUNIY3FDRENZc3R5Mm40YTVJMUV2aEluS1RBVE5TNmZGWVowaUhjTmh0MTZ6NGI5U1NNTVc4ZWxLTDctTVpEUUN6R3ZDaGRwRzVDTHZuS3NfTl9mOGtsTmY2YmxldnY?oc=5",
+   "source": "Berita Moneter",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSkpkOGo2cjZkWHdXMVEyWmV6cXVTVGJzX2VHUjRIcUp2b0owSlhFTDNIY0JKUnhQcmVaaExkRXNrZUZQbWlLQUhsRk1jLTNxMVlWYXpyaEtlMVhMMG8wVHVNWE50N0Q2bFdKcVhTN09CdFhmRlJuRGJSZ0pVeXdVREZLM1N5VWd2cHpsUzJlZmdWclVnMXVGQzZ1UWRfd2N5dVlnY1BqSlNrc0RNVjBMWUY3cmRYUThSejhr?oc=5",
    "title": "IHSG Lompat 2%, Investor Asing Net Buy Rp500 M: Borong Saham BBRI",
    "first_seen": "2026-11-13T09:01+07:00"
   },
@@ -1371,6 +1371,27 @@
    "first_seen": "2026-11-12T09:12+07:00"
   },
   {
+   "id": "f45d00d44c13",
+   "date": "2026-11-12",
+   "code": "TLKM",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Suara Independent News",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56Q2FzTDU0aDg4RGkxX2ZuSU9oNkNOUXpLd2xsb3BhZ3AybzEwOGRiLUJ5ekQ3YVBtdWZsVmNpcHZtYmJ2SXp5aHpNQ3FxWVk0M1lROV9PYV9rVV9OWTVaMTZOcGF1UGxKTDZRSGtlYmZ4d0M0?oc=5",
+   "title": "Investor Asing Lepas Saham TLKM Rp86,97 Miliar di BEI",
+   "first_seen": "2026-11-10T15:17+07:00"
+  },
+  {
    "id": "2edb66d0d247",
    "date": "2026-11-11",
    "code": "MDLA",
@@ -1543,7 +1564,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -1554,8 +1575,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -1932,7 +1953,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
+   "source": "pasardana.id",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdU44Zm54Mzh4OTNXVzliX3dhZVFsd2VVb0huZ19BUXg5ZDJPNVlEU093UTZrZTBMS0x2ZU5sdlNLOUhXTFJyRmF4OHI3NndYVGVHYWltRENpSXhVMThsWk1DU1V3dkxseEtkLUVXRy12R1dseGNkbm9GT1h0djBGeUtRcWNHMW1sbWhIdktyWmROSGF5dWpSXzhVTVhja3dlRGE5aF9uYzFrVnZGS0JNRkZnNnB2T05kUmUzRzhxdmRmajdnZWpkSUIyZjgzZw?oc=5",
    "title": "Presdir IKAI Desra Firza Ghazfan Borong 5 Juta Saham di Harga Rp17, Kepemilikan jadi Berlipat Dua!",
    "first_seen": "2026-11-11T09:50+07:00"
@@ -2250,27 +2271,6 @@
    "source": "cwibc.co.id",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5DU0Npb0hFWmlzSjJPbEtZTDhrcV9MY2lJX0dNSGttRnNzc3RTUWFueldZSG9MWWptcU5meUp5bGVVSHpUQ1VXSS1IcjBJQmRBTVJsZEJMSC1Sa3ZSMnZv?oc=5",
    "title": "Investor Asing Lepas Saham TLKM Rp 86,97 Miliar di BEI",
-   "first_seen": "2026-11-10T15:17+07:00"
-  },
-  {
-   "id": "f45d00d44c13",
-   "date": "2026-11-10",
-   "code": "TLKM",
-   "party": "Asing",
-   "role": "individu5",
-   "action": "jual",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Lensa Hukum",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NQlhMSU5xTHZCMmZGTjZKU2xSZFJrNWd6ZndzQUJGdXpvekVOR3ZrbUw0ZWlReXN4eWhOd3FMOW1yVkY2cm5rMkpSbGJFanUwR0UzTVhuclBoQ1k2c0xOdzJVcmg?oc=5",
-   "title": "Investor Asing Lepas Saham TLKM Rp86,97 Miliar di BEI",
    "first_seen": "2026-11-10T15:17+07:00"
   },
   {
@@ -12709,15 +12709,15 @@
    "net_value": 0.0,
    "count": 1
   },
-  "MDLA": {
-   "net_shares": 5325000,
-   "net_value": 0.0,
-   "count": 7
-  },
   "TLKM": {
    "net_shares": 374450000,
    "net_value": 0.0,
    "count": 12
+  },
+  "MDLA": {
+   "net_shares": 5325000,
+   "net_value": 0.0,
+   "count": 7
   },
   "FOLK": {
    "net_shares": -86450000,
