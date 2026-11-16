@@ -1,0 +1,39 @@
+name: Tes notifikasi email trigger
+
+# Kirim satu notifikasi tes (issue GitHub -> email pemilik). Jalan sekali saat file ini di-push,
+# dan bisa dijalankan ulang dari tab Actions -> "Tes notifikasi email trigger" -> Run workflow.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: [".github/workflows/tes-notifikasi.yml"]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  tes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests yfinance
+      - name: Kirim notifikasi tes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          python - <<'EOF'
+          import datetime as dt, alert
+          now = dt.datetime.now(alert.WIB)
+          alert.notify_trigger(f"🧪 TES notifikasi trigger · {now:%H:%M} WIB",
+              f"🧪 <b>INI HANYA TES</b> {now:%d-%m-%Y %H:%M} WIB\n\n"
+              "Kalau email ini masuk, notifikasi trigger entry sudah berfungsi.\n"
+              "Contoh: ⚡ <b>KODE</b> menembus entry 1.000 (harga 1.005). SL 950, TP 1.050.")
+          EOF
