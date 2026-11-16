@@ -1,15 +1,225 @@
 {
- "updated": "2026-11-16T09:22+07:00",
+ "updated": "2026-11-16T17:05+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 79
+  "news": 83
  },
  "transactions": [
+  {
+   "id": "500c36babf53",
+   "date": "2026-11-16",
+   "code": "MTLA",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "jual",
+   "shares": 13050000,
+   "price": 690.0,
+   "value": 9004500000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQXBFZlJCVWkxSXVxeFp3RXJmTXNSaC1rdkdBQmNtaXVaWVRwdE1aVGxiSEZ3TUsxXzEzVnBuMjM5NDQ1Q20zZzVUWmRPTU04bXVnS1E2Nzc3Rjc4Wko2Wkp1c2RGeEVnajJfOHUwRlhZREFVMzdxb0lHODBHdFRPaGg2SmdRa3pyUnJFdzdhNm9QNnRBVURyRXpORk5sQQ?oc=5",
+   "title": "Yulie Sekuritas Jual 13,05 Juta Saham MTLA di Harga Rp690, Kepemilikan Susut",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "871ef3776762",
+   "date": "2026-11-16",
+   "code": "HEAL",
+   "party": "Yulisar Khiat",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 2500000,
+   "price": 474.0,
+   "value": 1185000000.0,
+   "before_pct": null,
+   "after_pct": 6.56,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/direktur-heal-yulisar-khiat-borong-25-juta-saham-kepemilikan-jadi-656/",
+   "title": "Direktur HEAL Yulisar Khiat Borong 2,5 Juta Saham, Kepemilikan Jadi 6,56%",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "4c48f47af4ab",
+   "date": "2026-11-16",
+   "code": "RAAM",
+   "party": "Multivision Plus Ram Jethmal",
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZ2pNaGFVMzBUNGZZanZwYmstN0dZSmVKS1NaOS1jNlBOb29pQ0M3ZDdqNzFwbWtRZm5aakFmdFRuMWFTU2VyeS1FbWo0czQwVTgtUjBJa2RlMVJvUTZJTkRWTUpzOXQ4dGdyWW1VZnpFVy00VnpUeWVPcFphM2U4N2x4UmlKQnhsT0twRDBNS2tudFExUVFEemMwVEdWMHAxangyU2NOZDduaDRYZGhubk8zM0dycWR5M2RfbFJIWWg0Mkp1dWc?oc=5",
+   "title": "Bos Multivision Plus Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Makin Tebal!",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "4cd753bce026",
+   "date": "2026-11-16",
+   "code": "HEAL",
+   "party": "Hermina",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 2500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 6.56,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUTB2Rjl0QkxHdWZnZXhFajBRejVPNFNYb29VU1RUTHQ2eFBSQlJMVmptQjNGM3dKcUpuQTJoeWNHVGhYRHluSU4tMDh6dTlBa05LX2QwSmItdHFqNjlNZmFValVTOGw4UjBFYjhkdHRPR1RjT0VoV2VkaWJSc3YzMkJ5V2tmNi1HbHhoRUdRcHgzVHI1eWRlR2xOd09xczZmV3V2cA?oc=5",
+   "title": "Bos Hermina Borong 2,5 Juta Saham HEAL, Kepemilikan Naik Jadi 6,56%",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "68712b85353e",
+   "date": "2026-11-16",
+   "code": "BBCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Katadata.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQ2Z0ZVR3VlZ4RDNnRzBXSktMZ0FkWk10UVVDNDc2T3ZXa2ZWZGhtc0xkY09DeGRaVnpyQkplaDMwLS1MLWo3RE9GbWwxR2MtdnE0c1dpVXBWYU9EMHBxUUJzbEIxbkxacHVsVkRXWGZSQS0wUGpiWjZ4TmpqNzQwNHJfNEhzallYMWtRUWQwM3RYWGhKc1hYLVFuZThVUzkzUGVTZ2FqaVRMOWRaeXRzbGN3MXFJeVhTTVpHU1JOaklmejR2dXhPSmhn0gHPAUFVX3lxTFBFV2NDcDlHWTJrRXVBalhQRE1oMTRXcEg5VmFwMlhST2JUWEluQTl2Nml2ZnZTTkdjYVFNVjZkeDkxSzlqcjhxVE1tYmN5Z0pvNjIyVTBtbTZuTjBtOUc2N3d6OVdadktHLUozQVVHTWZQNmZrY21yUVBaQmEwS0Z0UjhoVS1LZ3lkUHg5N1RkcV8tZlFuaTdOT2duMWJfSWRici1XLU9SdUVtaWdCVndmRXdvUzRrNndMMVhBM2VFY1lXcmxoVjBLQnFRSVZaVQ?oc=5",
+   "title": "Asing Mulai Borong Saham: Catat Net Buy Rp 462 M Sepekan, BBCA Incaran Terbesar",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "fb8d61b83539",
+   "date": "2026-11-16",
+   "code": "MTLA",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "jual",
+   "shares": 13050000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ2tiVlpJSHc1MFl1QVkwcXlrRnFHSk5odmZDOHItY0R6Z3VFNEQwWG9IX1d2LTlaVWFvVGtndXJGamFLSHlJYTVadjRaN1pIckNNNXpwaUp2ZS1RNFZGVWljSG9BcXJsUGhBNjRFRzQ3MG5KRHV5WlNrR0FmOHF2UVpueDQ1bVM3QVRNYWpfMjNvbGRDS1ROcGxIR1dVRmI2OE9EMlNQZ25kZ1BYSVE?oc=5",
+   "title": "Yulie Sekuritas Lepas 13,05 Juta Saham MTLA, Kepemilikan Susut di Bawah 5%",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "3ec25efa6f53",
+   "date": "2026-11-16",
+   "code": "BEER",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 24500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZG5FQjJVenRnVm1nb3NhUExjWmtlWV9MMWc0b3BoMnl5ZVJFQTAtLTdrZ25uaTBJUTFTY01UZnhwM3BWVnlfTWhOX2xHZXhuQVNla3ktWmpFRGtSM1ZyaHQzWm42Y2ZwX2tfSlhpbXdpX0JNMFJ6UGJuWi1WYV8wOE1wY2xLdUNqVzNMLTBwR3BPb0pQZFJBQlV6aGVUMk1tV1Z2UUI0NkhjTFM3RXc?oc=5",
+   "title": "Pemegang Saham Mayoritas BEER Lepas 24,5 Juta Saham, Kepemilikan Menyusut!",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "2f7ad6a7e716",
+   "date": "2026-11-16",
+   "code": "ATLA",
+   "party": "Rudi Reksa Sutantra",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 30000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 39.2,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTUp0RzFOb1FGOFFaTzhyYnVPWHl1U1VpMUM3allhOXNKVG5hMm1VQkZGYlFqVHhnd1lNUDFUQmpJbFdhVTIzSXlWcTMyRFJyWGxBVzk1THdpd0taSkFlZndHakI5dFl6TTI1THI2WWxLS1F5NkRUMHF0VEVKbTFMYmdqcG01WjE1ZUVfME9YbWYtWHc3VHJ3R2RZWlN2REdWZjFqU05fSkc4a1Rod3A2dnFORmNnaU14N0VrNnhFdmp4QjdXSXE4?oc=5",
+   "title": "Lagi! Komisaris ATLA Rudi Reksa Sutantra Lepas 30 Juta Saham, Kepemilikan Menyusut Jadi 39,20%",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "c9ff91094422",
+   "date": "2026-11-16",
+   "code": "ANTM",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XSzdaMGJQNVVMWm5USEhnLV9hcTh5Y09EZXpFYVlEV0VaUEgyY1daTmVMQnFfZHcwOVV0U2ZBY2JsbmdKdXk4YmRsVEpMVElRZG9ueTgxWGJ0Z01XQktVNkc0TUw4Zk93?oc=5",
+   "title": "Investor Asing Lepas Saham ANTM dan BRMS Rp505 Miliar",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
+  {
+   "id": "57fe17334dca",
+   "date": "2026-11-16",
+   "code": "INPP",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SWA.co.id",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZmhxUW9sQkRmbERkQVVaNlhmMG10WDEtOGphUW45eXR4SnB2UElidFpYMXExWDhZMzhyd1BDcFAzRGk3VzZaRGJYenlwSFhneWZUTFhnV0VpVXdTREh1bV83YUllcnRMTHhEemhMNl8xM3pFY1JnakVJVjZDanNucW9Dcmw0TDVnRkZ0S2lhQXAwcHduNlZR?oc=5",
+   "title": "INPP Lepas Saham IGM Rp185,70 Miliar Melalui Transaksi Afiliasi",
+   "first_seen": "2026-11-16T17:05+07:00"
+  },
   {
    "id": "d153c9181584",
    "date": "2026-11-16",
    "code": "BEER",
-   "party": "PT Maju Minuman Minahasa",
+   "party": null,
    "role": "pengendali",
    "action": "jual",
    "shares": 24500000,
@@ -21,8 +231,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/pengendali-jual-245-juta-saham-beer-kepemilikan-turun-jadi-7558/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYS1ZY1JIcHAzQXAxVEkyR0xOY3QyVWJqd0tTZkhFSmJEbWRydnJzeG91dzVLVC1IQW1VMVJJWkVRLXFGVjl5SVFxNG9EdndNWFp2bllZSGg3dTh6RGVvc2ZEcVQ1eXkxZHZmeTBkV3E0Z0FRVkNTTWpoM1gwTlV0V1BUbWJFazd2ZWFvWmwybw?oc=5",
    "title": "Pengendali Jual 24,5 Juta Saham BEER, Kepemilikan Turun Jadi 75,58%",
    "first_seen": "2026-11-16T09:22+07:00"
   },
@@ -214,6 +424,27 @@
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQkR5cG1mMzlXVWs4WDdkS1FiTEw0UHVBTDRvU292d01BVlVKMHh4eXQ2YVlBOExCUkdXcnNRbnlqYmtZX0tMR2lmZE4zQUhoV3BtWG1Ta3djYVBlclc0WF80bk01dE9tOVl5SlpTWXZTNmZ3eC1RYmlfYTBRRnNyZE5rcW00TnhvSjQ2OUY3SWtBeGJlOGNUdjRGSkIzSTNFczB2UWRHTGpkdlYxWENNdXZfcld1ejdEZGJBRHRMdC1uQjNjeno4?oc=5",
    "title": "Direktur V-Cube, Inc. jual saham Ten Holdings (XHLD) senilai $3,01 juta",
    "first_seen": "2026-11-16T09:22+07:00"
+  },
+  {
+   "id": "26ee0979207f",
+   "date": "2026-11-13",
+   "code": "TOWR",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb3JlRzhMd25Hc2l6bHgtRXlnWnFnUTg4bjlycXVLLXpXYlFwWnJOci1USmg0TmlieS1ocUlnQjk4MEpjeXlhdnh1dXpsLVZOZUkzeG5HdlNoSTltQUI5TUR6WmFETy1hd2dKeXZCbUpFSkp5cEVYZEluVUxMMHdNa0tzcG1ldV9pQ2I2WEJmVzM0SjBiTXA3VjQ3N3A?oc=5",
+   "title": "Tambah Investasi di TOWR, Lingkarmulia Kerek Kepemilikan ke 5,3 Persen",
+   "first_seen": "2026-11-16T17:05+07:00"
   },
   {
    "id": "3885d15aec70",
@@ -1056,6 +1287,27 @@
    "first_seen": "2026-11-12T13:31+07:00"
   },
   {
+   "id": "97bc7cae27c2",
+   "date": "2026-11-12",
+   "code": "DGIK",
+   "party": null,
+   "role": "pengendali",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbHVIUnZKMkYwaW1QVjdjZjdYV0kydDJib1Q3eVJUZU4wcDlqd05BX01jQ095VGtYZ2dNbUV1eTZKOHhSeTZMWVpUeUhsYWVLYUdSb0Z6ay0zUWpCT2VGdmYzN3dVVnNYMC1TdnB6MTlPRVZoZmoxMmpwUTJucGUzNnBPNHVLV0RMZkFFSERDblQ2X01QZVhVdWs4QQ?oc=5",
+   "title": "Berturut-turut, Pengendali Borong 8,16% Saham DGIK Senilai Rp61,28M",
+   "first_seen": "2026-11-12T13:31+07:00"
+  },
+  {
    "id": "59003dc94544",
    "date": "2026-11-12",
    "code": "PSSI",
@@ -1291,7 +1543,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -1302,8 +1554,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -1812,27 +2064,6 @@
    "first_seen": "2026-11-10T17:42+07:00"
   },
   {
-   "id": "97bc7cae27c2",
-   "date": "2026-11-10",
-   "code": "DGIK",
-   "party": null,
-   "role": "pengendali",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbHVIUnZKMkYwaW1QVjdjZjdYV0kydDJib1Q3eVJUZU4wcDlqd05BX01jQ095VGtYZ2dNbUV1eTZKOHhSeTZMWVpUeUhsYWVLYUdSb0Z6ay0zUWpCT2VGdmYzN3dVVnNYMC1TdnB6MTlPRVZoZmoxMmpwUTJucGUzNnBPNHVLV0RMZkFFSERDblQ2X01QZVhVdWs4QQ?oc=5",
-   "title": "Berturut-turut, Pengendali Borong 8,16% Saham DGIK Senilai Rp61,28M",
-   "first_seen": "2026-11-12T13:31+07:00"
-  },
-  {
    "id": "0cb8c16ca945",
    "date": "2026-11-10",
    "code": "NRCA",
@@ -2016,8 +2247,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBuODYxWTUxTFlra1JzdEtDRnBBQUx2b0NPMHo2YUtKSkMzNkpmV1RFcHA2VkJkd2JISFU1VVk0Q0tkOHU5MkZWLTdEQlhmdkU2SDZBcTExZmVwR1ZMWXRnOUNB?oc=5",
+   "source": "cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5DU0Npb0hFWmlzSjJPbEtZTDhrcV9MY2lJX0dNSGttRnNzc3RTUWFueldZSG9MWWptcU5meUp5bGVVSHpUQ1VXSS1IcjBJQmRBTVJsZEJMSC1Sa3ZSMnZv?oc=5",
    "title": "Investor Asing Lepas Saham TLKM Rp 86,97 Miliar di BEI",
    "first_seen": "2026-11-10T15:17+07:00"
   },
@@ -12313,20 +12544,50 @@
   }
  ],
  "net_by_code": {
-  "BEER": {
-   "net_shares": -24500000,
-   "net_value": 0.0,
-   "count": 1
+  "MTLA": {
+   "net_shares": -26100000,
+   "net_value": -9004500000.0,
+   "count": 2
   },
-  "BUMI": {
+  "HEAL": {
+   "net_shares": 14140000,
+   "net_value": 1185000000.0,
+   "count": 3
+  },
+  "RAAM": {
+   "net_shares": 4691545700,
+   "net_value": 0.0,
+   "count": 10
+  },
+  "BBCA": {
    "net_shares": 0,
+   "net_value": 0.0,
+   "count": 24
+  },
+  "BEER": {
+   "net_shares": -49000000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "ATLA": {
+   "net_shares": -201500000,
+   "net_value": -400000000.0,
+   "count": 6
+  },
+  "ANTM": {
+   "net_shares": 6000,
    "net_value": 0.0,
    "count": 2
   },
   "INPP": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 1
+   "count": 2
+  },
+  "BUMI": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
   },
   "BRRC": {
    "net_shares": 0,
@@ -12349,6 +12610,11 @@
    "count": 4
   },
   "XHLD": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "TOWR": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
@@ -12403,11 +12669,6 @@
    "net_value": 5940000000.0,
    "count": 17
   },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 23
-  },
   "DOOH": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -12427,11 +12688,6 @@
    "net_shares": 102350000,
    "net_value": 0.0,
    "count": 3
-  },
-  "RAAM": {
-   "net_shares": 4691545700,
-   "net_value": 0.0,
-   "count": 9
   },
   "MASB": {
    "net_shares": 25500,
@@ -12552,11 +12808,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "ATLA": {
-   "net_shares": -171500000,
-   "net_value": -400000000.0,
-   "count": 5
   },
   "TMPO": {
    "net_shares": -256960000,
@@ -12743,11 +12994,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "ANTM": {
-   "net_shares": 6000,
-   "net_value": 0.0,
-   "count": 1
-  },
   "ABMM": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -12797,11 +13043,6 @@
    "net_shares": 6210000,
    "net_value": 0.0,
    "count": 2
-  },
-  "HEAL": {
-   "net_shares": 9140000,
-   "net_value": 0.0,
-   "count": 1
   },
   "VISI": {
    "net_shares": 24140000,
