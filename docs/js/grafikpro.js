@@ -128,7 +128,7 @@
     data = null; loadedKode = null;
     const cs = codes();
     el.querySelector("#gp-chart").innerHTML = `<div class="gp-msg">${k ? `Data grafik untuk <b>${App.esc(k)}</b> belum tersedia.` : "Ketik kode saham lalu tekan Tampilkan."} Grafik tersedia untuk saham berikut:
-      <div class="gp-codes">${cs.map(c => `<button class="chip" data-gp-code="${App.esc(c)}">${App.esc(c)}</button>`).join("") || "<span class='hint'>Memuat daftar…</span>"}</div></div>`;
+      <div class="gp-codes">${cs.map(c => `<button class="chip" data-gp-code="${App.esc(c)}">${App.esc(c)}</button>`).join("") || App.skeleton(2)}</div></div>`;
     el.querySelector("#gp-legend").innerHTML = "";
     el.querySelector("#gp-check").innerHTML = `<p class="hint">Pilih saham untuk melihat checklist.</p>`;
   }
@@ -138,7 +138,7 @@
     if(!k){ missing(el, ""); return; }
     if(busy) return; busy = true;
     try{
-      el.querySelector("#gp-chart").innerHTML = `<div class="gp-msg">Memuat grafik ${App.esc(k)}…</div>`;
+      el.querySelector("#gp-chart").innerHTML = App.skeleton(8);
       if(chart){ chart.remove(); chart = null; }
       const [d] = await Promise.all([cache[k] !== undefined ? cache[k] : App.getJSON("chart/" + k).catch(() => null), loadLWC().catch(() => null)]);
       cache[k] = d || null;

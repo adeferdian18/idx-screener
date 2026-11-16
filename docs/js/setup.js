@@ -27,7 +27,7 @@
   const pctS = x => App.isNum(x) ? (x * 100).toLocaleString("id-ID", {maximumFractionDigits:0}) + "%" : "–";
 
   function statCells(s){
-    if(!s || !s.trade) return `<p class="hint">Belum ada trade.</p>`;
+    if(!s || !s.trade) return App.empty("Belum ada trade.");
     const c = (l, v, k="") => `<div class="cell"><span>${l}</span><b class="${k}">${v}</b></div>`;
     return `<div class="sa-stats">${c("Jumlah trade", App.fmt(s.trade))}${c("Kena TP", App.fmt(s.kena_tp), "up")}${c("Kena SL", App.fmt(s.kena_sl), "down")}
       ${c("Waktu habis", App.fmt(s.waktu_habis))}${c("Menang", pctS(s.menang))}${c("Rata-rata / trade", R(s.rata_r), App.cls(s.rata_r))}
@@ -42,7 +42,7 @@
 
   function candidates(){
     const m = App.S.momentum;
-    if(!m) return `<p class="hint">Memuat data screener…</p>`;
+    if(!m) return App.skeleton(4);
     const rows = m.rows.filter(z => z.setup_a);
     const pass = rows.filter(z => z.setup_a.lolos);
     const near = rows.filter(z => !z.setup_a.lolos && z.setup_a.skor >= z.setup_a.dari - 2)
@@ -59,8 +59,8 @@
           <td class="up">${App.fmt(s.tp)}</td><td>${pctS(s.sl_pct)}</td>${miss ? `<td class="sa-miss">${s.syarat.filter(x => !x[1]).map(x => App.esc(x[0])).join(" · ")}</td>` : `<td><button class="sa-entry" data-saentry="${App.esc(z.kode)}">Saya entry → Jurnal</button></td>`}</tr>`;
       }).join("")}</tbody></table></div>`;
     return gate + `<h3>Lolos semua syarat (${pass.length})</h3>` +
-      (pass.length ? tbl(pass, false) : `<p class="hint">Tidak ada saham yang lolos hari ini. Tidak trading juga keputusan yang sah.</p>`) +
-      `<h3>Hampir lolos (kurang 1–2 syarat)</h3>` + (near.length ? tbl(near, true) : `<p class="hint">Tidak ada.</p>`) +
+      (pass.length ? tbl(pass, false) : App.empty("Tidak ada saham yang lolos hari ini. Tidak trading juga keputusan yang sah.")) +
+      `<h3>Hampir lolos (kurang 1–2 syarat)</h3>` + (near.length ? tbl(near, true) : App.empty("Tidak ada.")) +
       `<p class="hint">Data screener ${App.esc(m.tgl_data || "")}. Klik baris untuk grafik.</p>`;
   }
 
@@ -84,7 +84,7 @@
   const JL_LBL = {menunggu:"Menunggu order", berjalan:"Berjalan", TP:"Kena TP", SL:"Kena SL", waktu:"Waktu habis (out)", batal:"Batal"};
   function jlKey(t){ return t.status === "selesai" ? t.keluar : t.status; }
   function journal(){
-    if(!jl) return `<p class="hint">Belum ada catatan. Jurnal mulai terisi otomatis sejak ada saham yang lolos Setup A+ (dicek setiap hari bursa pukul 16:30 WIB).</p>`;
+    if(!jl) return App.empty("Belum ada catatan. Jurnal mulai terisi otomatis sejak ada saham yang lolos Setup A+ (dicek setiap hari bursa pukul 16:30 WIB).");
     const g = jl.ringkas || {}, all = jl.trades || [], maks = jl.aturan?.maks_hari || 20;
     const list = jlFilter === "semua" ? all : all.filter(t => jlKey(t) === jlFilter);
     const c = (l, v, k="") => `<div class="cell"><span>${l}</span><b class="${k}">${v}</b></div>`;
@@ -127,7 +127,7 @@
   }
 
   function build(el){
-    if(!sweep){ el.innerHTML = `<div class="card"><p>${loading ? "Memuat hasil backtest…" : "Hasil backtest belum tersedia. Jalankan <code>python backtest_sweep.py</code>."}</p></div>`; return; }
+    if(!sweep){ el.innerHTML = `<div class="card">${loading ? App.skeleton(5) : App.empty("Jalankan <code>python backtest_sweep.py</code>.", "Hasil backtest belum tersedia")}</div>`; return; }
     const k = sweep.kandidat, f = k.filter;
     el.innerHTML = `
     <div class="card">

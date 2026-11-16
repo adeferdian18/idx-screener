@@ -55,7 +55,7 @@
       if(!data){
         if(!loading){
           loading = true;
-          el.innerHTML = `<div class="card"><p>Memuat data…</p></div>`;
+          el.innerHTML = `<div class="card">${App.skeleton(6)}</div>`;
           App.getJSON("pullback").then(d => { data = d; loading = false; App.renderModule("lonjakan"); })
             .catch(() => { loading = false; el.innerHTML = `<div class="card"><p>Data belum tersedia.</p></div>`; });
         }

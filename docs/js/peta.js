@@ -241,7 +241,7 @@
       injectCSS();
       lastEl = el;
       if(!App.S.momentum){
-        if(!el.querySelector(".peta-card")) el.innerHTML = `<div class="card"><p class="hint">Memuat data…</p></div>`;
+        if(!el.querySelector(".peta-card")) el.innerHTML = `<div class="card">${App.skeleton(6)}</div>`;
         return;
       }
       if(!el.querySelector("#peta-map")) shell(el);

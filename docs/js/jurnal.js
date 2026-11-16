@@ -116,7 +116,7 @@
     const done = a.filter(e => e.status === "selesai" && num(e.harga_keluar) != null)
       .sort((x,y) => String(x.tgl_keluar||x.tgl).localeCompare(String(y.tgl_keluar||y.tgl)));
     const res = done.map(e => ({ e, ...calc(e, e.harga_keluar) })).filter(x => x.pl != null);
-    if(!res.length) return `<p class="hint">Belum ada transaksi selesai. Tutup posisi untuk melihat statistik.</p>`;
+    if(!res.length) return App.empty("Belum ada transaksi selesai. Tutup posisi untuk melihat statistik.");
     const wins = res.filter(x => x.pl > 0), loss = res.filter(x => x.pl < 0);
     const gp = wins.reduce((s,x) => s + x.pl, 0), gl = -loss.reduce((s,x) => s + x.pl, 0);
     const rs = res.filter(x => x.r != null), avgR = rs.length ? rs.reduce((s,x) => s + x.r, 0) / rs.length : null;
@@ -146,7 +146,7 @@
 
   function openList(a){
     const list = a.filter(e => e.status === "rencana" || e.status === "terbuka");
-    if(!list.length) return `<p class="hint">Belum ada posisi terbuka atau rencana. Tambahkan lewat form di bawah atau dari Kalkulator.</p>`;
+    if(!list.length) return App.empty("Belum ada posisi terbuka atau rencana. Tambahkan lewat form di bawah atau dari Kalkulator.");
     return list.map(e => {
       const p = price(e.kode), { pl, r } = calc(e, p), sl = num(e.sl), t1 = num(e.t1);
       let flag = "";
@@ -175,7 +175,7 @@
   function history(a){
     const list = a.filter(e => e.status === "selesai" || e.status === "batal")
       .sort((x,y) => String(y.tgl_keluar||y.tgl).localeCompare(String(x.tgl_keluar||x.tgl)));
-    if(!list.length) return `<p class="hint">Belum ada riwayat.</p>`;
+    if(!list.length) return App.empty("Belum ada riwayat.");
     return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Status</th><th>Masuk</th><th>Keluar</th><th>Entry</th><th>Harga keluar</th><th>Lot</th><th>P/L (Rp)</th><th>R</th><th></th></tr></thead><tbody>
       ${list.map(e => { const { pl, r } = e.status === "selesai" ? calc(e, e.harga_keluar) : {};
         return `<tr><td><button class="jurnal-code" data-code="${App.esc(e.kode)}">${App.esc(e.kode)}</button></td><td>${e.status === "selesai" ? "Selesai" : "Batal"}</td>

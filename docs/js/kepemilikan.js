@@ -159,7 +159,7 @@
     render(el){
       css();
       const S = App.S;
-      if(!S.ksei || !S.ksei.rows){ built = false; el.innerHTML = `<div class="card"><p class="hint">Memuat data…</p></div>`; return; }
+      if(!S.ksei || !S.ksei.rows){ built = false; el.innerHTML = `<div class="card">${App.skeleton(6)}</div>`; return; }
       const key = (S.ksei.updated || "") + "|" + (S.momentum ? "m" : "");
       if(!built || key !== lastKey || !el.querySelector(".kp-body")){
         const focused = document.activeElement?.classList.contains("kp-q");

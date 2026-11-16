@@ -32,6 +32,25 @@ Dark mode works automatically if only tokens are used. In JS, call `App.dark()` 
 - `.pill` rounded label, `.badge`, `.badge.good`.
 - Clicking a stock: put `data-code="KODE"` on a button/row; the global handler opens the stock detail.
 
+## Scales (phase 2, defined on `:root`)
+- Type: `--fs-2xs` 10.5 (eyebrow, badge, mobile nav) · `--fs-xs` 11.5 (labels, th, legend) · `--fs-sm` 12.5 · `--fs-base` 13.5 (tables, chips) · `--fs-md` 15 (body) · `--fs-lg` 18 · `--fs-xl` 22 · `--fs-2xl` 28 · `--fs-display` clamp(26–34) page title.
+- Space: `--sp-1..--sp-8` = 4, 8, 12, 16, 20, 24, 28, 32px.
+- Radius: `--r-sm` 6 (badge), `--r-md` 10 (input, seg, button), `--r-lg` 16 (card), `--r-pill`.
+- Controls: `--ctl-h` 34px (38px under 760px), `--ctl-px` 12px. `.chip`, `.seg button`, `.search`, `.input`, `.select`, `.pb-sel`, `.calc input/select`, `.close` all share this height. Focus: `--focus` (= `--up`).
+- Chart series: `--ma50`, `--ma150` (read in JS with `col("--ma50")`); entry line = `--blue`. Never hard-code hex.
+
+## Badge
+One component: `.badge` (+ `.badge--good|--warn|--down|--muted|--solid`). Legacy aliases still styled by the same rule: `.badge.good`, `.hgm-*`, `.pb-tag.syr/.hsc`, `.sc.s0..s90`, `.mo-*`, `.wl-item .tag`. Larger status labels `.lvl-*`, `.act-*`, `.verdict.v-*`, `.ev-type` share the same colour variants.
+
+## Loading / empty / error
+Never print plain "Memuat…". Use `App.skeleton(n)` (n shimmer lines, `.skel`), `App.empty(htmlText, title?)` (`.state`), `App.error(text?)` (`.state.is-error`). Escape data before passing text.
+
+## Numbers
+`body` and every table/stat cell use `font-variant-numeric:tabular-nums`; keep it when adding new number styles.
+
+## CSS order in index.html
+tokens → base → shell → components → modules/tabs → media → motion ("Gerak halus"). One rule per component; add variants in the media block instead of redefining components later.
+
 ## Rules
 - Numbers: `App.fmt(x, d)`, percentages `App.pct(x)` (x is a fraction, 0.05 = 5%). Locale id-ID.
 - Escape every data string with `App.esc()` before putting it in HTML.

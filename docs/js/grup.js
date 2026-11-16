@@ -73,7 +73,7 @@
   }
   function drawList(el){
     const gs = groups(), box = el.querySelector(".grup-list");
-    box.innerHTML = gs.length ? gs.map(card).join("") : `<p class="hint">Tidak ada grup atau saham yang cocok.</p>`;
+    box.innerHTML = gs.length ? gs.map(card).join("") : App.empty("Tidak ada grup atau saham yang cocok.");
     el.querySelector(".grup-count").textContent = `${gs.length} grup`;
     el.querySelectorAll("[data-urut]").forEach(b => b.setAttribute("aria-pressed", b.dataset.urut === st.urut));
   }
@@ -109,9 +109,9 @@
           App.getJSON("grup").then(d => { data = d; loading = false; App.renderModule("grup"); })
             .catch(() => { loading = false; failed = true; App.renderModule("grup"); });
         }
-        el.innerHTML = `<div class="card"><p>Memuat data…</p></div>`; return;
+        el.innerHTML = `<div class="card">${App.skeleton(6)}</div>`; return;
       }
-      if(!App.S.momentum?.rows){ shell = null; el.innerHTML = `<div class="card"><h2>Grup konglomerat</h2><p>Memuat data momentum…</p></div>`; return; }
+      if(!App.S.momentum?.rows){ shell = null; el.innerHTML = `<div class="card"><h2>Grup konglomerat</h2>${App.skeleton(6)}</div>`; return; }
       if(shell !== el || !el.querySelector(".grup-list")) buildShell(el);
       drawList(el);
     },

@@ -131,7 +131,7 @@
   }
 
   function table(d){
-    if(!d.list.length) return `<p class="hint">Belum ada saham. Tambah lewat form di atas.</p>`;
+    if(!d.list.length) return App.empty("Belum ada saham. Tambah lewat form di atas.");
     return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Lot</th><th>Rata-rata</th><th>Harga</th><th>Nilai</th><th>P/L</th><th>%</th><th>Bobot</th><th></th></tr></thead><tbody>
 ${d.list.map(x => `<tr><td><button class="porto-code" type="button" data-code="${App.esc(x.kode)}">${App.esc(x.kode)}</button></td>
 <td><input class="porto-in" type="number" min="1" step="1" data-edit="lot" data-i="${x.i}" value="${x.lot ?? ""}" aria-label="Lot ${App.esc(x.kode)}"></td>
@@ -151,7 +151,7 @@ ${d.start ? "" : `<p class="hint">Isi tanggal "Mulai sejak" agar pembanding IHSG
 
   function donut(d){
     const xs = d.list.filter(x => x.w > 0).sort((a, b) => b.w - a.w);
-    if(!xs.length) return `<p class="hint">Belum ada data.</p>`;
+    if(!xs.length) return App.empty("Belum ada data.");
     const R = 60, C = 2 * Math.PI * R; let off = 0;
     const segs = xs.map((x, j) => { const len = x.w * C, s = `<circle r="${R}" cx="80" cy="80" fill="none" stroke="var(${COLORS[j % COLORS.length]})" stroke-width="28" stroke-dasharray="${len} ${C - len}" stroke-dashoffset="${-off}"/>`; off += len; return s; }).join("");
     return `<div class="porto-donut"><svg viewBox="0 0 160 160" role="img" aria-label="Bobot per saham"><g transform="rotate(-90 80 80)">${segs}</g>
