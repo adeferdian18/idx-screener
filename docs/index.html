@@ -40,9 +40,9 @@
 
 /* ---------- 1. Token ---------- */
 :root{
-  --bg:#F6F2EA; --bg2:#EFE9DD; --surface:#FFFFFF; --ink:#17242A; --muted:#56625F; --faint:#80887F; --line:#E5DDD0; --line2:#D6CCBB;
-  --up:#1D7A5C; --down:#C4554A; --accent:#A86F1C; --accent-soft:#F6EAD3; --warn-soft:#F8E1DD; --good-soft:#E1F0E9;
-  --blue:#2F679E; --orange:#C9701E; --teal:#1F8A7D; --ma50:#2F9BD6; --ma150:#9B7BD4; --btn:#17242A; --btn-fg:#FFFFFF;
+  --bg:#F6F2EA; --bg2:#EFE9DD; --surface:#FFFFFF; --ink:#17242A; --muted:#56625F; --faint:#656D64; --line:#E5DDD0; --line2:#D6CCBB;
+  --up:#186B50; --down:#AB433A; --accent:#86570F; --accent-soft:#F6EAD3; --warn-soft:#F8E1DD; --good-soft:#E1F0E9;
+  --blue:#2F679E; --orange:#AD5E17; --teal:#17705F; --ma50:#2F9BD6; --ma150:#9B7BD4; --btn:#17242A; --btn-fg:#FFFFFF;
   --shadow:0 1px 2px rgba(23,36,42,.04),0 8px 24px -14px rgba(23,36,42,.18);
   --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --serif:"Literata",Georgia,"Times New Roman",serif;
@@ -60,7 +60,7 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#111A1D; --bg2:#172226; --surface:#1A252A; --ink:#ECE7DC; --muted:#A3ABA4; --faint:#7D867F; --line:#29373C; --line2:#34444A;
+    --bg:#111A1D; --bg2:#172226; --surface:#1A252A; --ink:#ECE7DC; --muted:#A3ABA4; --faint:#8E978F; --line:#29373C; --line2:#34444A;
     --up:#46B88E; --down:#E27A6E; --accent:#D9A54E; --accent-soft:#33291A; --warn-soft:#3A2522; --good-soft:#16352B;
     --blue:#79A9D8; --orange:#EB975A; --teal:#4CC2B2; --ma50:#5DB4E6; --ma150:#B39BE3; --btn:#ECE7DC; --btn-fg:#111A1D;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -16px rgba(0,0,0,.6);
@@ -68,7 +68,7 @@
   }
 }
 :root[data-theme="dark"]{
-  --bg:#111A1D; --bg2:#172226; --surface:#1A252A; --ink:#ECE7DC; --muted:#A3ABA4; --faint:#7D867F; --line:#29373C; --line2:#34444A;
+  --bg:#111A1D; --bg2:#172226; --surface:#1A252A; --ink:#ECE7DC; --muted:#A3ABA4; --faint:#8E978F; --line:#29373C; --line2:#34444A;
   --up:#46B88E; --down:#E27A6E; --accent:#D9A54E; --accent-soft:#33291A; --warn-soft:#3A2522; --good-soft:#16352B;
   --blue:#79A9D8; --orange:#EB975A; --teal:#4CC2B2; --ma50:#5DB4E6; --ma150:#B39BE3; --btn:#ECE7DC; --btn-fg:#111A1D;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -16px rgba(0,0,0,.6);
@@ -143,8 +143,8 @@ table,.cell b,.index-val,.tape-track,.pb-card b,.expo b,.score,.wl-item .px,.t-h
 
 .tape{margin:0;background:var(--surface);border-bottom:1px solid var(--line);min-height:40px;overflow:hidden;white-space:nowrap;display:flex;align-items:center}
 .tape-view{overflow:hidden;flex:1;min-width:0}
-/* Pita sengaja tetap berjalan walau sistem meminta gerakan dikurangi (permintaan pemilik situs);
-   tombol jeda di kiri menghentikannya dan pilihan itu diingat di perangkat. */
+/* Bila sistem meminta gerakan dikurangi, pita diam (kelas .playing hanya dipasang
+   bila pengguna menekan tombol jalankan); tombol jeda diingat di perangkat. */
 .tape-track{display:inline-flex;gap:var(--sp-6);padding:9px 14px;font-size:var(--fs-base);animation:tape 90s linear infinite;will-change:transform}
 .tape:hover .tape-track,.tape.paused .tape-track{animation-play-state:paused}
 @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -579,11 +579,19 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
 @media (prefers-reduced-motion:reduce){
   html,.side{scroll-behavior:auto}
   .side,.side *{transition:none!important}
-  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .live-dot{animation:none!important}
+  .tape:not(.playing) .tape-track{animation:none!important}
 }
+.skip{position:absolute;left:8px;top:-60px;z-index:1000;padding:8px 14px;border-radius:var(--r-md);background:var(--btn);color:var(--btn-fg);font-weight:700;text-decoration:none}
+.skip:focus{top:8px}
+:focus-visible{outline:2px solid var(--focus)!important;outline-offset:2px}
+tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
+.tape.playing .tape-track{animation-iteration-count:infinite!important;animation-duration:var(--tape-dur,90s)!important}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Lewati ke konten</a>
 
 <div class="app">
 <aside class="side" aria-label="Menu utama">
@@ -633,13 +641,13 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
   <button class="icon-btn" id="theme-btn" aria-label="Ganti tema terang/gelap"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg></button>
   <div hidden aria-hidden="true">
     <div id="ruler-mark"></div><span id="low52"></span><span id="peak52"></span><div id="ruler-note"></div>
-    <svg id="spark" viewBox="0 0 760 56"></svg>
+    <svg id="spark" viewBox="0 0 760 56" role="img" aria-label="Grafik garis IHSG"></svg>
   </div>
 </header>
 
 <div class="tape" id="tape"></div>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
   <div class="page-head">
     <div>
       <div class="eyebrow" id="page-eyebrow">Sinyal</div>
@@ -781,7 +789,7 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
       <span id="chart-ma"><label class="ck"><input type="checkbox" value="5"> MA5</label><label class="ck"><input type="checkbox" value="20"> MA20</label><label class="ck"><input type="checkbox" value="50"> MA50</label><label class="ck"><input type="checkbox" value="200"> MA200</label></span>
       <span class="hint">Grafik dari TradingView. Untuk saham BEI, widget gratis biasanya hanya sampai harga penutupan hari sebelumnya; harga hari ini ada di bagian atas halaman.</span>
     </div>
-    <div class="chart-box" id="chart-box"></div>
+    <div class="chart-box" id="chart-box" role="img" aria-label="Grafik harga saham"></div>
   </section>
 
   <section class="panel mod" id="panel-setup" hidden></section>
@@ -944,8 +952,8 @@ function renderTape(){
     tape.innerHTML = `<button class="tape-btn" id="tape-btn" aria-label="Jeda pita harga"></button><div class="tape-view"><div class="tape-track">${one}${one}</div></div>`;
     tape.dataset.key = key;
     const track = tape.querySelector(".tape-track");
-    requestAnimationFrame(() => { track.style.animationDuration = Math.max(30, track.scrollWidth / 2 / 45) + "s"; });
-    setTapePaused(store.get("tape-pause") === "1");
+    requestAnimationFrame(() => { const dur = Math.max(30, track.scrollWidth / 2 / 45) + "s"; track.style.animationDuration = dur; tape.style.setProperty("--tape-dur", dur); });
+    setTapePaused(store.get("tape-pause") === "1" || (store.get("tape-pause") == null && matchMedia("(prefers-reduced-motion: reduce)").matches));
   }
   for(const x of items) tape.querySelectorAll(`[data-tk="${x.k}"]`).forEach(el => {
     el.querySelector(".tk-v").textContent = fmt(x.v, x.k === "IHSG" ? 2 : 0);
@@ -955,6 +963,7 @@ function renderTape(){
 function setTapePaused(p){
   const tape = $("#tape"), btn = $("#tape-btn");
   tape.classList.toggle("paused", p);
+  tape.classList.toggle("playing", !p);
   if(btn){ btn.textContent = p ? "▶" : "❚❚"; btn.setAttribute("aria-label", p ? "Jalankan pita harga" : "Jeda pita harga"); btn.setAttribute("aria-pressed", p); }
   store.set("tape-pause", p ? "1" : "0");
 }
@@ -1476,7 +1485,7 @@ function renderTermMain(){
       <div><h2>${esc(r.kode)} ${star(r.kode)}</h2><p>${esc([r.nama, r.sektor, STAGE[r.stage] ? STAGE[r.stage] + " (perkiraan)" : null].filter(Boolean).join(" · "))}</p></div>
       <div><div class="px" id="t-px">${fmt(px)}</div><div class="${cls(ch)} td-chg" id="t-chg">${pct(ch,2)}</div></div></div>
     <div class="chart-tools">${[[63,"3 bln"],[130,"6 bln"],[260,"1 thn"]].map(([n,l]) => `<button class="chip" data-rng="${n}">${l}</button>`).join("")}</div>
-    <div class="chart-own" id="mini-chart"></div>
+    <div class="chart-own" id="mini-chart" role="img" aria-label="Grafik harga"></div>
     <div class="legend"><span><i style="background:var(--ma50)"></i>MA50</span><span><i style="background:var(--ma150)"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line</span><span><i style="background:var(--ma150)"></i>RS Rating harian</span><span><i style="background:var(--blue)"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
     <h3>Analisa</h3>${briefing(r)}
     <h3>Trend Template (8 poin)</h3>
@@ -1939,7 +1948,7 @@ function renderPbTable(){
   $("#pb-cols").setAttribute("aria-pressed", PB.allCols);
   $("#pb-cols").textContent = PB.allCols ? "Kolom ringkas" : "Tampilkan semua kolom";
   const base = pbFiltered();
-  $("#pb-tabs").innerHTML = PB_SUBS.map(([k, l, fn]) => `<button class="pb-tab" role="tab" data-pbsub="${k}" aria-selected="${PB.sub===k}">${l}<i>${d ? base.filter(fn).length : 0}</i></button>`).join("");
+  $("#pb-tabs").innerHTML = PB_SUBS.map(([k, l, fn]) => `<button class="pb-tab" role="tab" id="pbt-${k}" aria-controls="pb-table" tabindex="${PB.sub===k?0:-1}" data-pbsub="${k}" aria-selected="${PB.sub===k}">${l}<i>${d ? base.filter(fn).length : 0}</i></button>`).join("");
   const cols = pbCols();
   t.tHead.innerHTML = "<tr>" + cols.map(([k, l]) => `<th data-pk="${k}" ${PB.sort.key===k ? `aria-sort="${PB.sort.dir>0?"ascending":"descending"}"` : ""}>${typeof l === "function" ? l() : l}</th>`).join("") + "</tr>";
   if(!d){ t.tBodies[0].innerHTML = ""; $("#pb-count").textContent = ""; return; }
@@ -2359,12 +2368,12 @@ function marketStatus(d = new Date()){
   if(m >= 950 && m < 960) return ["Pra-tutup", "pre"];
   return ["Tutup", "off"];
 }
-function renderMarket(){
+function renderMktChip(){
   const [t, k] = marketStatus(), el = $("#mkt-chip");
   el.className = "mkt-chip is-" + k; el.querySelector("span").textContent = t;
   el.title = "Jam bursa WIB: Pra-buka 08.45, Sesi 1 09.00–12.00 (Jumat –11.30), Sesi 2 13.30 (Jumat 14.00)–15.50, Pra-tutup –16.00";
 }
-renderMarket(); setInterval(renderMarket, 30_000);
+renderMktChip(); setInterval(renderMktChip, 30_000);
 /* Lainnya (HP): lembar berisi menu yang tidak muat di bilah bawah */
 function openMore(){
   const d = $("#more-sheet"), list = $("#more-list");
@@ -2516,5 +2525,25 @@ if("serviceWorker" in navigator && (location.protocol === "https:" || ["localhos
 <script src="js/grafikpro.js?v=20261116" defer></script>
 <script src="js/grup.js?v=20261116" defer></script>
 <script src="js/porto.js?v=20261116" defer></script>
+<script>
+/* Aksesibilitas (fase 6): baris/kartu yang bisa diklik dapat dijangkau keyboard */
+(function(){
+  const SEL = 'tbody tr:is([data-code],[data-mcode],[data-pb],[data-ljc]), span[data-mcode], span[data-code]';
+  let q = 0;
+  const mark = () => { q = 0; document.querySelectorAll(SEL).forEach(el => { if(!el.hasAttribute("tabindex")){ el.tabIndex = 0; if(el.tagName === "SPAN") el.setAttribute("role", "link"); } }); };
+  new MutationObserver(() => { if(!q) q = requestAnimationFrame(mark); }).observe(document.body, {childList:true, subtree:true});
+  mark();
+  $(".skip").addEventListener("click", e => { e.preventDefault(); $("#main").focus(); $("#main").scrollIntoView(); });
+  document.addEventListener("keydown", e => {
+    const t = e.target;
+    if((e.key === "Enter" || e.key === " ") && t.matches && t.matches(SEL)){ e.preventDefault(); t.click(); return; }
+    if(t.classList && t.classList.contains("pb-tab") && ["ArrowLeft","ArrowRight","Home","End"].includes(e.key)){
+      const tabs = [...document.querySelectorAll("#pb-tabs .pb-tab")], i = tabs.indexOf(t);
+      const n = e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : (i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+      e.preventDefault(); tabs[n].click(); requestAnimationFrame(() => { const b = $(`#pb-tabs [data-pbsub="${tabs[n].dataset.pbsub}"]`); b && b.focus(); });
+    }
+  });
+})();
+</script>
 </body>
 </html>
