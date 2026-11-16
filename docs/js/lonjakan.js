@@ -34,16 +34,16 @@
           <label class="ck"><input type="checkbox" id="lj-liq" ${st.liq === "1" ? "checked" : ""}> Nilai transaksi ≥ Rp1 M</label>
           <span class="hint">${xs.length} saham · <span class="up">${naik} naik</span> · <span class="down">${turun} turun</span></span>
         </div>
-        <div class="table-wrap"><table><thead><tr><th>Saham</th><th>Harga</th><th>Hari ini</th><th>Lonjakan</th><th>Volume (lembar)</th><th>Nilai</th><th>Sinyal pullback</th></tr></thead><tbody>
-          ${xs.length ? xs.slice(0, 150).map(r => `<tr data-ljc="${App.esc(r.code)}" style="cursor:pointer">
-            <td style="text-align:left"><b>${App.esc(r.code)}</b><div class="hint">${App.esc((r.name || "").slice(0, 28))}</div></td>
+        <div class="table-wrap"><table class="num2"><thead><tr><th>Saham</th><th>Harga</th><th>Hari ini</th><th>Lonjakan</th><th>Volume (lembar)</th><th>Nilai</th><th>Sinyal pullback</th></tr></thead><tbody>
+          ${xs.length ? xs.slice(0, 150).map(r => `<tr data-ljc="${App.esc(r.code)}">
+            <td><b>${App.esc(r.code)}</b><div class="hint">${App.esc((r.name || "").slice(0, 28))}</div></td>
             <td>${App.fmt(r.close)}</td>
             <td class="${App.cls(r.chg)}">${App.pct(r.chg)}</td>
             <td><b>${App.fmt(r.vol_ratio, 1)}×</b><span class="bar"><i style="width:${Math.min(100, r.vol_ratio / 10 * 100)}%"></i></span></td>
             <td>${App.fmt(r.vol_today)}</td>
             <td>${rp(r.value_today)}</td>
             <td>${r.status && r.status !== "Tidak ada sinyal" ? App.esc(r.status) : "–"}</td>
-          </tr>`).join("") : `<tr><td colspan="7" style="text-align:left">Tidak ada saham yang memenuhi filter ini.</td></tr>`}
+          </tr>`).join("") : `<tr><td colspan="7" class="td-empty">Tidak ada saham yang memenuhi filter ini.</td></tr>`}
         </tbody></table></div>
         <p class="hint">Yahoo Finance tidak menyediakan jumlah transaksi (frekuensi), jadi ukuran yang dipakai adalah volume lembar. Klik baris untuk grafik dan rincian. Alat bantu analisis, bukan rekomendasi beli atau jual.</p>
       </div>`;

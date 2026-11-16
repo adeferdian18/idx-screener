@@ -135,7 +135,7 @@
     const out = root.querySelector("#kalk-out"), btn = root.querySelector("#kalk-save");
     const ready = ok(v.modal) && ok(v.risk) && ok(v.alok) && ok(v.entry) && ok(v.sl) && v.sl < v.entry;
     if(!ready){
-      out.innerHTML = `<p class="hint" style="grid-column:1/-1">Isi modal, harga entry, dan stop loss untuk melihat hasil.</p>`;
+      out.innerHTML = `<p class="hint span-all">Isi modal, harga entry, dan stop loss untuk melihat hasil.</p>`;
       root.querySelector("#kalk-ladder").innerHTML = ""; btn.disabled = true; kalkLast = null; return;
     }
     const perLembar = v.entry - v.sl;

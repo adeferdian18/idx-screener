@@ -200,14 +200,31 @@ details.card[open] > summary{margin-bottom:var(--sp-3)}
 .plan{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:var(--sp-2)}
 
 /* Tabel */
-.table-wrap{overflow:auto;max-width:100%}
-table{border-collapse:collapse;width:100%;font-size:var(--fs-base)}
+.table-wrap{overflow:auto;max-width:100%;max-height:min(72vh,780px);overscroll-behavior-x:contain}
+.table-wrap.is-short,dialog .table-wrap{max-height:none}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:var(--fs-base)}
 th,td{padding:10px var(--sp-3);text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
-th:nth-child(-n+2),td:nth-child(-n+2){text-align:left}
-th{position:sticky;top:0;font-size:var(--fs-xs);font-weight:600;letter-spacing:.02em;color:var(--faint);background:var(--surface);border-bottom-color:var(--line2);cursor:pointer;user-select:none}
-th[aria-sort="descending"]::after{content:" ▾"} th[aria-sort="ascending"]::after{content:" ▴"}
-tbody tr{cursor:pointer}
+th:nth-child(-n+2),td:nth-child(-n+2),th.l,td.l,td.txt{text-align:left}
+th{position:sticky;top:0;z-index:2;font-size:var(--fs-xs);font-weight:600;letter-spacing:.02em;color:var(--faint);background:var(--surface);border-bottom-color:var(--line2);cursor:default;user-select:none}
+:is(th[data-k],th[data-mk],th[data-pk],th[data-sort]){cursor:pointer;transition:color .15s}
+:is(th[data-k],th[data-mk],th[data-pk],th[data-sort]):hover{color:var(--ink)}
+:is(th[data-k],th[data-mk],th[data-pk],th[data-sort])::after{content:"↕";display:inline-block;margin-left:4px;font-size:.9em;opacity:.35}
+th[aria-sort="descending"]::after{content:"▼";opacity:1;color:var(--up)} th[aria-sort="ascending"]::after{content:"▲";opacity:1;color:var(--up)}
+th[aria-sort="ascending"],th[aria-sort="descending"]{color:var(--ink)}
+th:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+tbody tr{cursor:default;transition:background-color .12s}
 tbody tr:hover{background:var(--bg)}
+tbody tr:is([data-code],[data-mcode],[data-pb],[data-ljc]){cursor:pointer}
+td.td-empty{text-align:left;white-space:normal;color:var(--muted);cursor:default}
+td.td-wrap{white-space:normal;min-width:220px;text-align:left}
+.td-chg{text-align:right;font-weight:600}
+.bold{font-weight:700}
+.mt-2{margin-top:var(--sp-2)} .mt-4{margin-top:18px} .m-0{margin:0} .mb-3{margin:0 0 var(--sp-3)}
+.row-between{display:flex;justify-content:space-between;align-items:baseline}
+.code-link{cursor:pointer;margin-right:var(--sp-2)} .span-all{grid-column:1/-1} table.num2 :is(th,td):nth-child(2),:is(#m-table,#bt-table,#an-sektor) :is(th,td):nth-child(2){text-align:right} .kp-sort{flex:0 1 auto}
+.pad-3{padding:var(--sp-3)} .pb-card.is-static{cursor:default}
+.table-wrap.inset{background:var(--bg)}
+.grid.grid-240{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:var(--sp-2)}
 tbody tr:last-child td{border-bottom:0}
 td.code{font-weight:800}
 .bar{display:inline-block;width:46px;height:6px;border-radius:3px;background:var(--line);vertical-align:middle;margin-left:6px;position:relative;overflow:hidden}
@@ -428,6 +445,16 @@ dialog.wide .chart-own{height:68vh}
 }
 /* HP: menu jadi bar bawah yang menyingkir saat menggulir ke bawah */
 @media (max-width:760px){
+  .table-wrap :is(th,td):first-child{position:sticky;left:0;z-index:1;background:var(--surface);box-shadow:inset -1px 0 0 var(--line)}
+  .table-wrap th:first-child{z-index:3}
+  .table-wrap tbody tr:hover td:first-child,.table-wrap.inset :is(th,td):first-child{background:var(--bg)}
+  .table-wrap td.td-empty:first-child{position:static;box-shadow:none}
+  /* tabel yang kolom 1-nya nomor/tanggal: kode (kolom 2) yang lengket */
+  :is(#sc-table,#ins-table) td:first-child{position:static;box-shadow:none} :is(#sc-table,#ins-table) th:first-child{left:auto;z-index:2;box-shadow:none}
+  :is(#sc-table,#ins-table) :is(th,td):nth-child(2){position:sticky;left:0;z-index:1;background:var(--surface);box-shadow:inset -1px 0 0 var(--line)}
+  :is(#sc-table,#ins-table) th:nth-child(2){z-index:3}
+  :is(#sc-table,#ins-table) tbody tr:hover td:nth-child(2){background:var(--bg)}
+  th,td{padding:9px 10px}
   .term{grid-template-columns:minmax(0,1fr)}
   .t-side{position:static;max-height:55vh}
   .term .t-side:not(.t-setup){max-height:none}
@@ -564,7 +591,7 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
       <p>Dua jenis entry trigger: (1) VCP, harga tutup di atas pivot dengan volume minimal 1,5× rata-rata 50 hari; (2) pembalikan pemimpin RS (↺), RS Line high 50 hari saat harga terkoreksi lalu candle bullish. Aktif berarti trigger hari ini sampai 10 hari bursa lalu yang belum kena TP2 atau SL, ditambah yang sempat kena SL tapi sudah naik lagi di atasnya (oranye).</p>
       <div class="toolbar" id="e-filters"></div>
       <div class="table-wrap"><table id="e-table"><thead></thead><tbody></tbody></table></div>
-      <h2 style="margin-top:18px">Watchlist Trend Template</h2>
+      <h2 class="mt-4">Watchlist Trend Template</h2>
       <div class="toolbar">
         <input class="search" id="mq" type="search" placeholder="Cari kode atau nama" aria-label="Cari saham momentum">
         <button class="chip" data-mf="lolos" aria-pressed="true">Lolos Trend Template</button>
@@ -612,7 +639,7 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
   <section class="panel" id="panel-analisa" hidden>
     <div class="card">
       <h2>Briefing pasar</h2>
-      <div class="an-top"><p class="brief" id="an-text" style="margin:0"></p><div class="expo"><span>Panduan eksposur modal di saham</span><b id="an-expo">–</b><span id="an-status"></span></div></div>
+      <div class="an-top"><p class="brief m-0" id="an-text"></p><div class="expo"><span>Panduan eksposur modal di saham</span><b id="an-expo">–</b><span id="an-status"></span></div></div>
       <div class="breadth-box" id="breadth-box"></div>
       <div class="legend"><span><i style="background:var(--up)"></i>% saham likuid di atas MA200</span><span><i style="background:var(--ma50)"></i>% di atas MA50</span><span><i style="background:var(--muted)"></i>IHSG (skala kanan)</span></div>
     </div>
@@ -628,7 +655,7 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
       <div class="table-wrap"><table id="bt-table"><thead></thead><tbody></tbody></table></div>
       <div class="eq-box" id="eq-box"></div>
       <div class="legend" id="eq-legend"></div>
-      <div class="toolbar" id="bt-filters" style="margin-top:8px"></div>
+      <div class="toolbar mt-2" id="bt-filters"></div>
       <div class="table-wrap"><table id="bt-groups"><thead></thead><tbody></tbody></table></div>
       <p class="hint" id="bt-note"></p>
     </div>
@@ -648,7 +675,7 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
     <div class="card">
       <h2>Transaksi direksi, komisaris dan pemegang saham</h2>
       <p>Perubahan kepemilikan dari laporan kepemilikan BEI/KSEI (wajib dilaporkan direksi, komisaris dan pemegang saham ≥5% sesuai POJK 4/2024) bila tersedia, dilengkapi berita media. Klik kode untuk grafik.</p>
-      <p class="hint" id="ins-status" style="margin:0 0 12px"></p>
+      <p class="hint mb-3" id="ins-status"></p>
       <div class="toolbar">
         <input class="search" id="ins-q" type="search" placeholder="Cari kode atau pihak" aria-label="Cari transaksi orang dalam">
         <span class="seg" id="ins-act"><button data-ia="semua" aria-pressed="true">Semua</button><button data-ia="beli" aria-pressed="false">Beli</button><button data-ia="jual" aria-pressed="false">Jual</button></span>
@@ -954,7 +981,7 @@ function scRows(){
 function renderScreener(){
   const t = $("#sc-table");
   t.tHead.innerHTML = "<tr>" + COLS.map(([k,l]) => `<th data-k="${k}" ${S.sort.key===k?`aria-sort="${S.sort.dir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("") + "</tr>";
-  if(!S.screener){ t.tBodies[0].innerHTML = `<tr><td colspan="${COLS.length}" style="text-align:left">Belum ada data screener. Jalankan workflow harian di GitHub Actions.</td></tr>`; return; }
+  if(!S.screener){ t.tBodies[0].innerHTML = `<tr><td colspan="${COLS.length}" class="td-empty">Belum ada data screener. Jalankan workflow harian di GitHub Actions.</td></tr>`; return; }
   const rows = scRows();
   $("#sc-count").textContent = `${rows.length} saham`;
   t.tBodies[0].innerHTML = rows.map(r => `<tr data-code="${esc(r.kode)}">` + COLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("");
@@ -1072,7 +1099,7 @@ function renderMomentum(){
   const rows = mRows();
   $("#m-count").textContent = `${rows.length} saham`;
   t.tBodies[0].innerHTML = rows.length ? rows.map(r => `<tr data-mcode="${esc(r.kode)}">` + MCOLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("")
-    : `<tr><td colspan="${MCOLS.length}" style="text-align:left">${S.mFilter === "saya" ? "Belum ada saham di watchlist kamu. Klik ★ di samping kode saham untuk menyimpannya (tersimpan di perangkat ini)." : "Tidak ada saham yang memenuhi filter ini hari ini."}</td></tr>`;
+    : `<tr><td colspan="${MCOLS.length}" class="td-empty">${S.mFilter === "saya" ? "Belum ada saham di watchlist kamu. Klik ★ di samping kode saham untuk menyimpannya (tersimpan di perangkat ini)." : "Tidak ada saham yang memenuhi filter ini hari ini."}</td></tr>`;
 }
 /* ---------- Sinyal entry ---------- */
 const E_GROUPS = [
@@ -1106,7 +1133,7 @@ function renderSignals(){
       <td class="lv-tp">${fmt(e.tp1)}</td><td class="lv-tp">${fmt(e.tp2)}</td>
       <td class="${cls(e.r_sekarang)}">${isNum(e.r_sekarang) ? (e.r_sekarang>0?"+":"") + fmt(e.r_sekarang,1) + "R" : (isNum(e.jarak_pivot) ? pct(e.jarak_pivot,1) + " ke entry" : "–")}</td>
       <td>${r.rs_rating ?? "–"}</td></tr>`; }).join("")
-    : `<tr><td colspan="10" style="text-align:left;white-space:normal">Tidak ada saham di kelompok ini hari ini.${weak && S.eFilter==="aktif" ? " Pasar sedang " + esc(S.momentum.pasar.status) + ": sesuai modul, ini fase menyusun watchlist, bukan agresif entry." : ""}</td></tr>`;
+    : `<tr><td colspan="10" class="td-empty">Tidak ada saham di kelompok ini hari ini.${weak && S.eFilter==="aktif" ? " Pasar sedang " + esc(S.momentum.pasar.status) + ": sesuai modul, ini fase menyusun watchlist, bukan agresif entry." : ""}</td></tr>`;
 }
 
 /* ---------- Rencana posisi & kalkulator lot ---------- */
@@ -1122,7 +1149,7 @@ function planHTML(r){
   const revLine = rev ? `<b>Pembalikan pemimpin RS</b>: pada candle trigger ${tgl(e.tgl_trigger)} RS Line mencetak high 50 hari padahal harga
     ${pct(e.pola?.koreksi,0)} dari high 20 hari, dan candle-nya bullish (tutup di separuh atas). Entry = harga tutup candle trigger,
     SL 1 tick di bawah low candle (${fmt(e.pola?.low_trigger)}), target 2R dan 3R.` : "";
-  const risk = e.catatan_risiko?.length ? `<p class="brief" style="margin-top:8px"><b class="down">Risiko:</b> ${esc(e.catatan_risiko.join("; "))}.</p>` : "";
+  const risk = e.catatan_risiko?.length ? `<p class="brief mt-2"><b class="down">Risiko:</b> ${esc(e.catatan_risiko.join("; "))}.</p>` : "";
   return `<h3>Rencana posisi ${e.label ? "· " + esc(e.label) : "(acuan, belum trigger)"}</h3>
     <div class="plan">
       <div class="cell"><span>${rev ? "Entry (tutup candle trigger)" : "Entry (di atas pivot)"}</span><b class="lv-e">${fmt(e.entry)}</b></div>
@@ -1244,7 +1271,7 @@ function briefing(r){
   }
   const li = xs => `<ul>${xs.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
   return `<p class="brief"><span class="lvl lvl-${b.tingkat}">${LVL[b.tingkat]}</span><b>${esc(b.vonis)}</b><br><b>Langkah:</b> ${esc(b.langkah)}</p>
-    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:8px">
+    <div class="grid grid-240">
       ${b.kuat.length ? `<div class="cell"><span>Kenapa kuat</span>${li(b.kuat)}</div>` : ""}
       ${b.hati.length ? `<div class="cell"><span>Kenapa hati-hati</span>${li(b.hati)}</div>` : ""}
     </div>`;
@@ -1279,7 +1306,7 @@ function renderTermIhsg(){
   const pos = ih && isNum(ih.low52) ? (ih.last - ih.low52) / (ih.peak52 - ih.low52) : null;
   const lbl = m ? {uptrend:"Uptrend", tertekan:"Tertekan", downtrend:"Downtrend"}[m.status] : "–";
   const b200 = a?.breadth?.at(-1)?.di_atas_ma200;
-  $("#t-ihsg").innerHTML = `<div style="display:flex;justify-content:space-between;align-items:baseline"><span class="hint">IHSG</span><span class="${cls(chg)}" style="font-weight:700">${pct(chg,2)}</span></div>
+  $("#t-ihsg").innerHTML = `<div class="row-between"><span class="hint">IHSG</span><span class="${cls(chg)} bold">${pct(chg,2)}</span></div>
     <div class="v">${fmt(last,2)}</div>
     ${isNum(pos) ? `<div class="mini-ruler" title="Posisi di rentang 52 minggu"><i style="left:${Math.max(0,Math.min(1,pos))*100}%"></i></div><p>${pct(ih.last/ih.peak52-1,1)} dari puncak 52 mgg</p>` : ""}
     <div class="st-line"><span class="st ${m?.status==="uptrend"?"st-good":m?.status==="tertekan"?"st-warn":"st-bad"}">${lbl}</span><span>Eksposur <b>${esc(a?.eksposur || "–")}</b></span></div>
@@ -1296,7 +1323,7 @@ function renderTermList(){
   }
   box.innerHTML = wlSections().map(([name, rows]) => `<div class="wl-sec"><span>${name}</span><span>${rows.length}</span></div>`
     + (rows.length ? rows.map(wlItem).join("") : `<p class="wl-empty">${name.startsWith("★") ? "Klik ★ di analisa saham untuk menyimpan." : "Belum ada hari ini."}</p>`)).join("")
-    + `<p class="wl-empty" style="margin-top:10px">Saham yang memenuhi setup masuk watchlist otomatis tiap hari setelah pasar tutup.</p>`;
+    + `<p class="wl-empty mt-2">Saham yang memenuhi setup masuk watchlist otomatis tiap hari setelah pasar tutup.</p>`;
 }
 function defaultSel(){
   const secs = wlSections();
@@ -1316,7 +1343,7 @@ function renderTermMain(){
   ];
   $("#t-main").innerHTML = `<div class="t-head">
       <div><h2>${esc(r.kode)} ${star(r.kode)}</h2><p>${esc([r.nama, r.sektor, STAGE[r.stage] ? STAGE[r.stage] + " (perkiraan)" : null].filter(Boolean).join(" · "))}</p></div>
-      <div><div class="px" id="t-px">${fmt(px)}</div><div class="${cls(ch)}" id="t-chg" style="text-align:right;font-weight:600">${pct(ch,2)}</div></div></div>
+      <div><div class="px" id="t-px">${fmt(px)}</div><div class="${cls(ch)} td-chg" id="t-chg">${pct(ch,2)}</div></div></div>
     <div class="chart-tools">${[[63,"3 bln"],[130,"6 bln"],[260,"1 thn"]].map(([n,l]) => `<button class="chip" data-rng="${n}">${l}</button>`).join("")}</div>
     <div class="chart-own" id="mini-chart"></div>
     <div class="legend"><span><i style="background:var(--ma50)"></i>MA50</span><span><i style="background:var(--ma150)"></i>MA150</span><span><i style="background:var(--muted)"></i>MA200</span><span><i style="background:var(--accent)"></i>RS Line</span><span><i style="background:var(--ma150)"></i>RS Rating harian</span><span><i style="background:var(--blue)"></i>Entry</span><span><i style="background:var(--down)"></i>SL</span><span><i style="background:var(--up)"></i>TP</span></div>
@@ -1354,7 +1381,7 @@ function renderLiveBox(){
   else if(sg?.ev === "berjalan") note = `Posisi berjalan: ${isNum(sg.r) ? (sg.r > 0 ? "+" : "") + fmt(sg.r,2) + "R" : "–"} dari entry ${fmt(e?.entry)}.`;
   else if(sg?.ev === "menunggu") note = `Menunggu: harga ${pct(sg.jarak,1)} dari entry ${fmt(e?.entry)}.`;
   box.innerHTML = `<div class="live-box"><div class="lv-h"><span><span class="live-dot ${on ? "" : "off"}"></span>${esc(when)}</span><span>tertunda ±15 menit</span></div>
-    <div><span class="lv-px">${fmt(q.last)}</span> <span class="${cls(q.chg)}" style="font-weight:700">${pct(q.chg,2)}</span></div>
+    <div><span class="lv-px">${fmt(q.last)}</span> <span class="${cls(q.chg)} bold">${pct(q.chg,2)}</span></div>
     ${isNum(q.high) ? `<div class="hint">High ${fmt(q.high)} · Low ${fmt(q.low)}${q.vol ? ` · Vol ${fmt(q.vol/100)} lot` : ""}</div>` : ""}
     ${note ? `<p>${esc(note)}</p>` : ""}</div>`;
 }
@@ -1392,7 +1419,7 @@ function renderAnalisa(){
   t.tHead.innerHTML = "<tr><th>Sektor</th><th>Saham likuid</th><th>Median RS</th><th>Stage 2</th><th>Lolos TT</th><th>Rata-rata 3 bln</th><th>RS tertinggi</th></tr>";
   t.tBodies[0].innerHTML = a.sektor.map(x => `<tr><td>${esc(x.sektor)}</td><td>${x.n}</td>
     <td>${x.rs_median}<span class="bar"><i style="width:${x.rs_median}%"></i></span></td><td>${x.stage2}</td><td>${x.lolos_tt}</td>
-    <td class="${cls(x.ret_3m)}">${pct(x.ret_3m,0)}</td><td style="text-align:left">${x.pemimpin.map(k => `<span class="code" data-mcode="${esc(k)}" style="cursor:pointer;margin-right:8px">${esc(k)}</span>`).join("")}</td></tr>`).join("");
+    <td class="${cls(x.ret_3m)}">${pct(x.ret_3m,0)}</td><td class="l">${x.pemimpin.map(k => `<span class="code code-link" data-mcode="${esc(k)}">${esc(k)}</span>`).join("")}</td></tr>`).join("");
 }
 const BT_ORDER = ["pivot_semua", "pivot", "close", "eod", "rev_close", "rev_open"];
 const BT_COLOR = {pivot_semua:"--up", pivot:"--ma50", close:"--accent", eod:"--ma150", rev_close:"--down", rev_open:"--orange"};
@@ -1423,7 +1450,7 @@ function renderBtGroups(){
   const rows = [["Arah pasar", g.per_pasar], ["Tahun", g.per_tahun], ["RS Rating", g.per_rs], ["Kualitas VCP", g.per_kualitas]];
   const t = $("#bt-groups");
   t.tHead.innerHTML = "<tr><th>Kelompok</th><th></th><th>Trade</th><th>Menang</th><th>Rata-rata</th><th>Profit factor</th><th>Rata-rata hari</th></tr>";
-  t.tBodies[0].innerHTML = rows.map(([name, xs]) => xs.map((x,i) => `<tr><td>${i ? "" : esc(name)}</td><td style="text-align:left">${esc(x.kelompok)}</td>
+  t.tBodies[0].innerHTML = rows.map(([name, xs]) => xs.map((x,i) => `<tr><td>${i ? "" : esc(name)}</td><td class="l">${esc(x.kelompok)}</td>
     <td>${x.trade}</td><td>${pct(x.menang,0,false)}</td><td class="${cls(x.rata_r)}">${isNum(x.rata_r) ? (x.rata_r>0?"+":"") + fmt(x.rata_r,2) + "R" : "–"}</td>
     <td>${fmt(x.profit_factor,2)}</td><td>${fmt(x.rata_hari,1)}</td></tr>`).join("")).join("");
 }
@@ -1543,7 +1570,7 @@ function renderInsider(){
       <td class="l">${own(x.before_pct, x.before_shares)} → ${own(x.after_pct, x.after_shares)}</td>
       <td class="l wrap-txt">${esc(x.purpose || "–")}</td>
       <td class="l">${src}</td></tr>`;
-  }).join("") : `<tr><td colspan="12" class="l" style="white-space:normal">Tidak ada transaksi yang cocok dengan filter ini.</td></tr>`;
+  }).join("") : `<tr><td colspan="12" class="td-empty">Tidak ada transaksi yang cocok dengan filter ini.</td></tr>`;
 }
 
 /* ---------- Detail saham ---------- */
@@ -1769,7 +1796,7 @@ function renderPbHead(){
     <button class="pb-card c-blue" data-pbsub="trigger"><span>Entry trigger 1–5 hari lalu</span><b>${sm.past.length}</b><small>${parts.filter(p => p[0] || p[1] !== "naik lagi").map(([n, l]) => `${n} ${l}`).join(" · ")}<br>${meth}, ${how}</small></button>
     <button class="pb-card c-warn" data-pbsub="wait"><span>Menunggu entry trigger</span><b>${fmt(sm.wait)}</b><small>dalam jendela 5 candle</small></button>
     <button class="pb-card c-good" data-pbsub="setup"><span>Setup valid, jendela lewat</span><b>${fmt(sm.setup)}</b><small>tanpa trigger</small></button>
-    <div class="pb-card c-${reg === "up" ? "good" : "bad"}" style="cursor:default"><span>IHSG terhadap MA50</span><b class="${cls(m.ihsg_dist)}">${pctN(m.ihsg_dist)}</b><small>${fmt(m.ihsg_close,2)} vs MA50 ${fmt(m.ihsg_ma50,2)} · ${esc(m.regime || "–")}</small></div>`;
+    <div class="pb-card c-${reg === "up" ? "good" : "bad"} is-static"><span>IHSG terhadap MA50</span><b class="${cls(m.ihsg_dist)}">${pctN(m.ihsg_dist)}</b><small>${fmt(m.ihsg_close,2)} vs MA50 ${fmt(m.ihsg_ma50,2)} · ${esc(m.regime || "–")}</small></div>`;
 }
 function renderPbTable(){
   const t = $("#pb-table"), d = pbData();
@@ -1787,8 +1814,8 @@ function renderPbTable(){
   $("#pb-count").textContent = `${rows.length} saham`;
   const show = rows.slice(0, 400);
   t.tBodies[0].innerHTML = rows.length ? show.map(r => `<tr data-pb="${esc(r.code)}">` + cols.map(([k,,f]) => `<td>${f(r)}</td>`).join("") + "</tr>").join("")
-      + (rows.length > show.length ? `<tr><td colspan="${cols.length}" style="text-align:left" class="hint">${rows.length - show.length} saham lain disembunyikan, gunakan pencarian atau filter.</td></tr>` : "")
-    : `<tr><td colspan="${cols.length}" style="text-align:left;white-space:normal">Tidak ada saham di kelompok ini${Object.values(PB.f).some(Boolean) ? " dengan filter yang aktif" : ""}.</td></tr>`;
+      + (rows.length > show.length ? `<tr><td colspan="${cols.length}" class="td-empty hint">${rows.length - show.length} saham lain disembunyikan, gunakan pencarian atau filter.</td></tr>` : "")
+    : `<tr><td colspan="${cols.length}" class="td-empty">Tidak ada saham di kelompok ini${Object.values(PB.f).some(Boolean) ? " dengan filter yang aktif" : ""}.</td></tr>`;
 }
 function renderPullback(){
   if(S.pb && !(PB.snap && S.pb[PB.snap])){
@@ -1818,7 +1845,7 @@ function pbDrawChart(){
   const box = $("#pb-chart"), info = $("#pb-chart-info"), c = PB.chart;
   if(!box || !c) return;
   const {d, r} = c, bars = (d.bars || []).filter(b => isNum(b[4]));
-  if(bars.length < 2){ box.innerHTML = `<p class="hint" style="padding:12px">Data grafik belum cukup.</p>`; return; }
+  if(bars.length < 2){ box.innerHTML = `<p class="hint pad-3">Data grafik belum cukup.</p>`; return; }
   const W = Math.max(300, Math.round(box.clientWidth || 640)), H = W < 560 ? 380 : 470;
   const padL = 6, padR = 58, top = 12, gap = 10, axisH = 18;
   const inner = H - top - axisH - gap * 2, hP = Math.round(inner * .6), hV = Math.round(inner * .14), hM = inner - hP - hV;
@@ -1902,9 +1929,9 @@ function pbLevelTable(r){
   const row = (m, name) => {
     const f = pbTrade(r, m, "fixed"), t = pbTrade(r, m, "trail");
     const st = x => !x ? "–" : `${esc(x.label)}${isNum(x.pl) && x.k !== "open" ? ` <span class="${x.pl>0?"up":x.pl<0?"down":""}">${pctN(x.pl,1)}</span>` : ""}`;
-    return `<tr><td>${name}</td><td class="lv-e2">${fmt(r[m+"_entry"])}</td><td class="lv-sl">${fmt(r[m+"_sl"])}</td><td class="lv-tp">${fmt(r[m+"_tp"])}</td><td>${fmt(r[m+"_lot"])}</td><td style="text-align:left">${st(f)}</td><td class="lv-sl">${fmt(r[m+"_trail"])}</td><td style="text-align:left">${st(t)}</td></tr>`;
+    return `<tr><td>${name}</td><td class="lv-e2">${fmt(r[m+"_entry"])}</td><td class="lv-sl">${fmt(r[m+"_sl"])}</td><td class="lv-tp">${fmt(r[m+"_tp"])}</td><td>${fmt(r[m+"_lot"])}</td><td class="l">${st(f)}</td><td class="lv-sl">${fmt(r[m+"_trail"])}</td><td class="l">${st(t)}</td></tr>`;
   };
-  return `<div class="table-wrap" style="background:var(--bg)"><table class="pb-lv"><thead><tr><th>Metode</th><th>Entry</th><th>SL</th><th>TP</th><th>Lot</th><th>SL tetap</th><th>Stop trailing</th><th>Trailing</th></tr></thead>
+  return `<div class="table-wrap inset"><table class="pb-lv"><thead><tr><th>Metode</th><th>Entry</th><th>SL</th><th>TP</th><th>Lot</th><th>SL tetap</th><th>Stop trailing</th><th>Trailing</th></tr></thead>
     <tbody>${row("atr","ATR")}${row("n","N-candle")}</tbody></table></div>`;
 }
 async function pbDetail(code){
@@ -1952,7 +1979,7 @@ async function pbDetail(code){
   PB.chart = null;
   const d = await getJSON("pullback_chart/" + code);
   if($("#dlg-title").textContent.slice(0, code.length) !== code || !$("#pb-chart")) return;
-  if(!d){ $("#pb-chart").innerHTML = `<p class="hint" style="padding:12px">Grafik belum tersedia untuk ${esc(code)} (hanya dibuat untuk saham yang punya sinyal).</p>`; return; }
+  if(!d){ $("#pb-chart").innerHTML = `<p class="hint pad-3">Grafik belum tersedia untuk ${esc(code)} (hanya dibuat untuk saham yang punya sinyal).</p>`; return; }
   PB.chart = {d, r}; pbDrawChart();
 }
 function pbFaq(){
@@ -2182,6 +2209,28 @@ $("#side-toggle").addEventListener("click", () => setSide(!$(".app").classList.c
 $("#side-scrim").addEventListener("click", () => setSide(false));
 $(".side-nav").addEventListener("click", e => { if(e.target.closest(".tab")) setSide(false); });
 addEventListener("keydown", e => { if(e.key === "Escape") setSide(false); });
+/* Tabel: header urut bisa difokus + diurut dengan Enter/Spasi; aria-sort selalu terisi */
+const SORT_TH = "th[data-k],th[data-mk],th[data-pk],th[data-sort]";
+function prepSortTh(root){
+  root.querySelectorAll(SORT_TH).forEach(th => {
+    if(!th.hasAttribute("tabindex")) th.tabIndex = 0;
+    if(!th.hasAttribute("aria-sort")) th.setAttribute("aria-sort", "none");
+  });
+}
+let sortFocus = null;
+addEventListener("keydown", e => {
+  const th = e.target.closest?.(SORT_TH);
+  if(!th || (e.key !== "Enter" && e.key !== " ")) return;
+  e.preventDefault();
+  const tr = th.parentElement; sortFocus = [th.closest("table")?.id || th.closest("[id]")?.id, [...tr.children].indexOf(th)];
+  th.click();
+});
+new MutationObserver(ms => {
+  for(const m of ms) for(const n of m.addedNodes) if(n.nodeType === 1 && (n.matches?.(SORT_TH) || n.querySelector?.(SORT_TH))) { prepSortTh(n.parentElement || n); }
+  if(sortFocus){ const [id, i] = sortFocus, box = id && document.getElementById(id), th = box?.querySelectorAll("thead th")[i];
+    if(th && th !== document.activeElement){ th.focus({preventScroll:true}); } sortFocus = null; }
+}).observe(document.body, {childList:true, subtree:true});
+prepSortTh(document);
 $("#theme-btn").addEventListener("click", () => {
   const next = dark() ? "light" : "dark";
   document.documentElement.dataset.theme = next;

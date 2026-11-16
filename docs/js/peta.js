@@ -109,7 +109,7 @@
   <h2>Rotasi sektor</h2>
   <p>Median RS Rating (kekuatan relatif, sumbu datar) dan median return 1 bulan (momentum, sumbu tegak) per sektor, hanya saham likuid dan sektor dengan minimal 3 saham. Ukuran gelembung = jumlah saham.</p>
   <div id="peta-quad"></div>
-  <div class="table-wrap" id="peta-table" style="margin-top:14px"></div>
+  <div class="table-wrap mt-4" id="peta-table"></div>
 </div>`;
     el.querySelector("#peta-seg").addEventListener("click", e => {
       const b = e.target.closest("button[data-m]"); if(!b) return;
@@ -229,11 +229,11 @@
       if(x == null) return 1; if(y == null) return -1;
       return (typeof x === "string" ? x.localeCompare(y, "id") : x - y) * urut.dir;
     });
-    const th = (k, t) => `<th data-sort="${k}" aria-sort="${urut.k === k ? (urut.dir > 0 ? "ascending" : "descending") : "none"}">${t}${urut.k === k ? (urut.dir > 0 ? " ▲" : " ▼") : ""}</th>`;
+    const th = (k, t) => `<th data-sort="${k}" aria-sort="${urut.k === k ? (urut.dir > 0 ? "ascending" : "descending") : "none"}">${t}</th>`;
     const sp = v => v == null ? "–" : `<span class="${App.cls(v)}">${App.pct(v)}</span>`;
-    el.querySelector("#peta-table").innerHTML = data.length ? `<table><thead><tr>${th("sektor", "Sektor")}${th("n", "Saham")}${th("rs", "Median RS")}${th("r1", "Median 1B")}${th("r3", "Median 3B")}${th("naik", "% naik hari ini")}${th("kuadran", "Kuadran")}</tr></thead><tbody>${
+    el.querySelector("#peta-table").innerHTML = data.length ? `<table class="num2"><thead><tr>${th("sektor", "Sektor")}${th("n", "Saham")}${th("rs", "Median RS")}${th("r1", "Median 1B")}${th("r3", "Median 3B")}${th("naik", "% naik hari ini")}${th("kuadran", "Kuadran")}</tr></thead><tbody>${
       data.map(d => `<tr><td>${App.esc(d.sektor)}</td><td>${d.n}</td><td>${d.rs == null ? "–" : App.fmt(d.rs, 0)}</td><td>${sp(d.r1)}</td><td>${sp(d.r3)}</td><td>${d.naik == null ? "–" : App.fmt(d.naik * 100, 0) + "%"}</td><td><span class="peta-q peta-q-${d.q}">${QUAD[d.q].nama}</span></td></tr>`).join("")
-    }</tbody></table>` : `<p class="hint" style="padding:12px">Belum cukup data sektor.</p>`;
+    }</tbody></table>` : `<p class="hint pad-3">Belum cukup data sektor.</p>`;
   }
 
   App.register("peta", {

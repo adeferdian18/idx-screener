@@ -59,9 +59,9 @@
           <div><span>RS rata²</span><b>${num(x.rs_) ? App.fmt(x.rs_, 0) : "–"}</b></div>
         </div>
       </button>
-      ${open ? `<div class="grup-detail table-wrap" id="${id}"><table><thead><tr><th>Saham</th><th>Harga</th><th>Hari ini</th><th>3 bulan</th><th>RS</th><th>Trend Template</th></tr></thead><tbody>
-        ${x.rs.map(r => `<tr data-code="${App.esc(r.kode)}" style="cursor:pointer">
-          <td style="text-align:left"><b>${App.esc(r.kode)}</b><div class="hint">${App.esc((r.nama || (r.ada ? "" : "tidak ada data")).slice(0, 26))}</div></td>
+      ${open ? `<div class="grup-detail table-wrap" id="${id}"><table class="num2"><thead><tr><th>Saham</th><th>Harga</th><th>Hari ini</th><th>3 bulan</th><th>RS</th><th>Trend Template</th></tr></thead><tbody>
+        ${x.rs.map(r => `<tr data-code="${App.esc(r.kode)}">
+          <td><b>${App.esc(r.kode)}</b><div class="hint">${App.esc((r.nama || (r.ada ? "" : "tidak ada data")).slice(0, 26))}</div></td>
           <td>${num(r.harga) ? App.fmt(r.harga) : "–"}</td>
           <td class="${App.cls(r.d1)}">${num(r.d1) ? App.pct(r.d1) : "–"}</td>
           <td class="${App.cls(r.m3)}">${num(r.m3) ? App.pct(r.m3) : "–"}</td>

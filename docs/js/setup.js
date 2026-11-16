@@ -37,7 +37,7 @@
   function cmpRow(name, x){
     const t = x.train, u = x.test;
     const f = s => s && s.trade ? `${s.trade} · ${pctS(s.menang)} · <b class="${App.cls(s.rata_r)}">${R(s.rata_r)}</b>` : "–";
-    return `<tr><td>${name}</td><td style="white-space:normal;min-width:220px">${App.esc(x.label)}</td><td>${f(t)}</td><td>${f(u)}</td></tr>`;
+    return `<tr><td>${name}</td><td class="td-wrap">${App.esc(x.label)}</td><td>${f(t)}</td><td>${f(u)}</td></tr>`;
   }
 
   function candidates(){
@@ -106,7 +106,7 @@
         <td>${App.fmt(t.entry)}</td><td class="down">${App.fmt(t.sl)}</td><td class="up">${App.fmt(t.tp)}</td><td>${status(t)}</td>
         <td class="${App.cls(t.ret)}">${App.pct(t.ret)}</td><td class="${App.cls(t.net_r)}">${R(t.net_r)}</td>
         <td class="sa-why">${t.status === "selesai" ? why(t.alasan_teknikal, t.alasan_fundamental) : "–"}</td></tr>`).join("")
-        : `<tr><td colspan="10" style="text-align:left">Tidak ada catatan di filter ini.</td></tr>`}</tbody></table></div>
+        : `<tr><td colspan="10" class="td-empty">Tidak ada catatan di filter ini.</td></tr>`}</tbody></table></div>
       <p class="hint">Diperbarui ${App.esc(jl.updated || "")}. Order buy-stop berlaku 5 hari bursa; setelah entry, posisi dianggap out di penutupan hari ke-${maks} bila belum kena TP atau SL. Alasan hitam = teknikal, oranye = fundamental.</p>`;
   }
 

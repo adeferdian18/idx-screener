@@ -81,7 +81,7 @@
       <button data-sig="semua">Semua</button><button data-sig="akumulasi">Akumulasi</button><button data-sig="distribusi">Distribusi</button>
     </div>
     <button class="chip kp-liq" aria-pressed="false">Hanya likuid</button>
-    <select class="search kp-sort" aria-label="Urutkan" style="flex:0 1 auto">
+    <select class="search kp-sort" aria-label="Urutkan">
       ${Object.entries(SORTS).map(([v, t]) => `<option value="${v}">Urut: ${t}</option>`).join("")}
     </select>
   </div>
@@ -96,7 +96,7 @@
 <div class="card">
   <h2>Sektor</h2>
   <p>Median Δ smart money per sektor dan jumlah saham akumulasi/distribusi.</p>
-  <div class="table-wrap"><table>
+  <div class="table-wrap"><table class="num2">
     <thead><tr><th>Sektor</th><th>Saham</th><th>Median Δ smart</th><th>Akumulasi</th><th>Distribusi</th></tr></thead>
     <tbody class="kp-sek"></tbody>
   </table></div>
@@ -143,7 +143,7 @@
     el.querySelector(".kp-liq").setAttribute("aria-pressed", String(st.liq));
     const shown = list.slice(0, st.limit);
     el.querySelector(".kp-count").textContent = list.length ? `Menampilkan ${App.fmt(shown.length, 0)} dari ${App.fmt(list.length, 0)} saham.` : "";
-    el.querySelector(".kp-body").innerHTML = shown.length ? shown.map(r => `<tr data-code="${esc(r.kode)}" style="cursor:pointer">
+    el.querySelector(".kp-body").innerHTML = shown.length ? shown.map(r => `<tr data-code="${esc(r.kode)}">
 <td><b>${esc(r.kode)}</b></td><td class="kp-nama" title="${esc(r.nama)}">${esc(r.nama || "–")}</td>
 <td>${App.fmt(r.harga, 0)}</td>
 <td>${App.pct(r.asing, 1, false)}${bar(r)}</td>

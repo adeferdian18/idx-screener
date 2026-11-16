@@ -132,7 +132,7 @@
 
   function table(d){
     if(!d.list.length) return App.empty("Belum ada saham. Tambah lewat form di atas.");
-    return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Lot</th><th>Rata-rata</th><th>Harga</th><th>Nilai</th><th>P/L</th><th>%</th><th>Bobot</th><th></th></tr></thead><tbody>
+    return `<div class="table-wrap"><table class="num2"><thead><tr><th>Kode</th><th>Lot</th><th>Rata-rata</th><th>Harga</th><th>Nilai</th><th>P/L</th><th>%</th><th>Bobot</th><th></th></tr></thead><tbody>
 ${d.list.map(x => `<tr><td><button class="porto-code" type="button" data-code="${App.esc(x.kode)}">${App.esc(x.kode)}</button></td>
 <td><input class="porto-in" type="number" min="1" step="1" data-edit="lot" data-i="${x.i}" value="${x.lot ?? ""}" aria-label="Lot ${App.esc(x.kode)}"></td>
 <td><input class="porto-in" type="number" min="1" step="any" data-edit="avg" data-i="${x.i}" value="${x.avg != null ? +x.avg.toFixed(2) : ""}" aria-label="Rata-rata ${App.esc(x.kode)}"></td>
