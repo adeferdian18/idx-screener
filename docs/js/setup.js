@@ -22,7 +22,7 @@
 #panel-setup .sa-entry{font:inherit;font-size:12px;font-weight:700;border:0;border-radius:8px;padding:5px 10px;background:var(--btn);color:var(--btn-fg);cursor:pointer;white-space:nowrap}`;
   const st = document.createElement("style"); st.id = "setup-css"; st.textContent = css; document.head.appendChild(st);
 
-  let sweep = null, loading = false, recFilter = "semua", built = false, jl = null, jlFilter = "semua";
+  let sweep = null, loading = false, tried = false, recFilter = "semua", built = false, jl = null, jlFilter = "semua";
   const R = x => App.isNum(x) ? (x > 0 ? "+" : "") + x.toLocaleString("id-ID", {minimumFractionDigits:2, maximumFractionDigits:2}) + "R" : "–";
   const pctS = x => App.isNum(x) ? (x * 100).toLocaleString("id-ID", {maximumFractionDigits:0}) + "%" : "–";
 
@@ -127,7 +127,7 @@
   }
 
   function build(el){
-    if(!sweep){ el.innerHTML = `<div class="card">${loading ? App.skeleton(5) : App.empty("Jalankan <code>python backtest_sweep.py</code>.", "Hasil backtest belum tersedia")}</div>`; return; }
+    if(!sweep){ el.innerHTML = `<div class="card">${loading ? App.skeleton(5) : App.S && /^Server menjawab [^4]|koneksi/i.test(App.dataErr?.("backtest_sweep") || "") ? App.error("Hasil backtest gagal dimuat.", "mod:setup") : App.empty("Jalankan <code>python backtest_sweep.py</code>.", "Hasil backtest belum tersedia")}</div>`; return; }
     const k = sweep.kandidat, f = k.filter;
     el.innerHTML = `
     <div class="card">
@@ -194,12 +194,13 @@
     recFilter = b.dataset.sarec; update();
   });
 
+  (App.retry ??= {}).setup = () => { tried = false; built = false; App.renderModule("setup"); };
   App.register("setup", {
     render(el){
-      if(!sweep && !loading){
-        loading = true;
+      if(!sweep && !loading && !tried){
+        loading = true; tried = true;
         App.getJSON("backtest_sweep").then(d => { sweep = d; loading = false; built = false; App.renderModule("setup"); });
-        App.getJSON("setup_jurnal").then(d => { jl = d; update(); }).catch(() => {});
+        App.getJSON("setup_jurnal", {optional:true}).then(d => { jl = d; update(); });
       }
       if(!built || !el.querySelector("#sa-cand")) build(el);
       update();

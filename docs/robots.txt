@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /idx-screener/data/
+
+Sitemap: https://adeferdian18.github.io/idx-screener/sitemap.xml

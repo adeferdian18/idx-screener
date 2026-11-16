@@ -100,14 +100,14 @@
     shell = el;
   }
 
+  (App.retry ??= {}).grup = () => { failed = false; App.renderModule("grup"); };
   App.register("grup", {
     render(el){
       if(!data){
-        if(failed){ el.innerHTML = `<div class="card"><p>Data grup belum tersedia.</p></div>`; return; }
+        if(failed){ el.innerHTML = `<div class="card">${App.error("Data grup belum tersedia atau koneksi gagal.", "mod:grup")}</div>`; return; }
         if(!loading){
           loading = true;
-          App.getJSON("grup").then(d => { data = d; loading = false; App.renderModule("grup"); })
-            .catch(() => { loading = false; failed = true; App.renderModule("grup"); });
+          App.getJSON("grup").then(d => { data = d; loading = false; failed = !d; App.renderModule("grup"); });
         }
         el.innerHTML = `<div class="card">${App.skeleton(6)}</div>`; return;
       }

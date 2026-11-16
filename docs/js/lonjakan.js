@@ -52,13 +52,15 @@
 
   App.register("lonjakan", {
     render(el){
+      if(App.S.pb?.close) data = App.S.pb.close;
       if(!data){
         if(!loading){
           loading = true;
           el.innerHTML = `<div class="card">${App.skeleton(6)}</div>`;
-          App.getJSON("pullback").then(d => { data = d; loading = false; App.renderModule("lonjakan"); })
-            .catch(() => { loading = false; el.innerHTML = `<div class="card"><p>Data belum tersedia.</p></div>`; });
-        }
+          // pullback.json dibagi dengan tab Pullback (App.S.pb), dimuat sekali
+          App.need("pb").then(() => { data = App.S.pb?.close || null; loading = false;
+            if(data) App.renderModule("lonjakan"); else el.innerHTML = `<div class="card">${App.dataState("pb")}</div>`; });
+        } else if(!loading) el.innerHTML = `<div class="card">${App.dataState("pb")}</div>`;
         return;
       }
       draw(el);

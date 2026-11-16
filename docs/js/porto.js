@@ -45,12 +45,12 @@
   }
 
   async function ensureIhsg(start, rows){
-    if(!start || ihsgHist || ihsgCode) return;
+    if(!start || ihsgHist || ihsgCode || !App.S.momentum) return; // daftar file grafik diketahui dari momentum.json
     ihsgCode = "loading";
     // hanya sebagian saham punya file chart; coba kode portofolio dulu, lalu saham momentum teratas
     const mom = (App.S.momentum?.rows || []).slice().sort((a, b) => (b.rs_rating || 0) - (a.rs_rating || 0)).map(r => r.kode);
     const cand = [...new Set([...rows.map(r => r.kode), ...mom.slice(0, 8), "AADI"])];
-    for(const code of cand){
+    for(const code of cand.filter(App.hasChart)){
       try{ const d = await App.getJSON("chart/" + code); if(d && Array.isArray(d.t) && Array.isArray(d.ihsg)){ ihsgHist = d; update(); return; } }catch{}
     }
   }

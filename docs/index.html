@@ -4,7 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Meja Pantau IDX</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+<meta name="description" content="Meja Pantau IDX: screener saham Bursa Efek Indonesia gratis. Peringkat momentum & kekuatan relatif, setup VCP, pullback, lonjakan transaksi, aksi korporasi, transaksi orang dalam, dan kepemilikan KSEI.">
+<link rel="canonical" href="https://adeferdian18.github.io/idx-screener/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meja Pantau IDX">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Meja Pantau IDX — screener saham BEI">
+<meta property="og:description" content="Momentum, setup VCP, pullback, aksi korporasi, orang dalam, dan kepemilikan KSEI untuk seluruh saham BEI dalam satu meja.">
+<meta property="og:url" content="https://adeferdian18.github.io/idx-screener/">
+<meta property="og:image" content="https://adeferdian18.github.io/idx-screener/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Meja Pantau IDX — screener saham Bursa Efek Indonesia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meja Pantau IDX — screener saham BEI">
+<meta name="twitter:description" content="Momentum, setup VCP, pullback, aksi korporasi, orang dalam, dan kepemilikan KSEI untuk seluruh saham BEI.">
+<meta name="twitter:image" content="https://adeferdian18.github.io/idx-screener/og.png">
+<meta name="theme-color" content="#F6F2EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111A1D" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Meja Pantau">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,600&display=swap" rel="stylesheet">
@@ -240,6 +263,9 @@ td.code{font-weight:800}
 .state{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:var(--sp-4) var(--sp-1);color:var(--muted);font-size:14px}
 .state b{color:var(--ink);font-size:var(--fs-md)}
 .state.is-error b{color:var(--down)}
+.state .chip{margin-top:var(--sp-1)}
+.td-state{white-space:normal;text-align:left}
+.td-state>.state,.td-state>.skel{position:sticky;left:0;max-width:min(560px,calc(100vw - 56px))}
 .empty{padding:var(--sp-7);max-width:640px}
 .empty h3{margin:0 0 6px}
 
@@ -806,13 +832,52 @@ const pct = (x, d=1, sign=true) => isNum(x) ? (sign && x>0?"+":"") + (x*100).toL
 const cls = x => isNum(x) ? (x>0?"up":x<0?"down":"") : "";
 const dark = () => { const t = document.documentElement.dataset.theme; return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
 
-async function getJSON(name){
+/* ---------- Data: cache berversi + pemuatan per tab ----------
+   quotes.json, momentum.json & live.json selalu divalidasi ulang (cache:"no-cache" → 304 bila sama).
+   File lain memakai ?v=<quotes.updated>: tersimpan di cache browser selama datanya belum diterbitkan ulang.
+   Gagal → null + DATA.err[nama] (pesan untuk App.error); file opsional yang 404 tidak dianggap gagal. */
+const DATA = { v:"", err:{}, pend:{}, stale:new Set() };
+DATA.ready = new Promise(res => DATA.setReady = res); // versi data diketahui setelah quotes.json pertama
+const FRESH = new Set(["quotes", "live", "momentum"]); // selalu divalidasi ulang (ETag/Last-Modified → 304 bila sama)
+/* File opsional yang 404 diingat per versi data → tidak diminta ulang (tanpa 404 berulang di konsol) */
+const MISS = (() => { try{ return JSON.parse(localStorage.getItem("data-miss") || "{}"); }catch{ return {}; } })();
+async function getJSON(name, opt = {}){
+  if(!FRESH.has(name)) await DATA.ready;
+  if(opt.optional && DATA.v && MISS[name] === DATA.v) return null;
+  const fresh = FRESH.has(name) || !DATA.v;
+  const url = `data/${name}.json` + (fresh ? "" : `?v=${encodeURIComponent(DATA.v)}`);
   try{
-    const r = await fetch(`data/${name}.json?t=${Date.now()}`, {cache:"no-store"});
-    if(!r.ok) return null;
-    return await r.json();
-  }catch{ return null; }
+    const r = await fetch(url, {cache: fresh ? "no-cache" : "default"});
+    if(!r.ok){
+      if(opt.optional && r.status === 404){ if(DATA.v && !FRESH.has(name)){ MISS[name] = DATA.v; try{ localStorage.setItem("data-miss", JSON.stringify(MISS)); }catch{} } }
+      else DATA.err[name] = `Server menjawab ${r.status}.`;
+      return null;
+    }
+    const d = await r.json(); delete DATA.err[name]; return d;
+  }catch(e){ DATA.err[name] = navigator.onLine === false ? "Tidak ada koneksi internet." : "Koneksi ke server gagal."; return null; }
 }
+/* Kunci S.* → file data. need() memuat sekali (dibagi antar-tab); dimuat ulang bila versi data berganti. */
+const DATA_FILES = { screener:"screener", actions:"corporate_actions", insider:"insider", ksei:"ksei" };
+const TAB_NEEDS = { pullback:["pb"], lonjakan:["pb"], aksi:["actions"], insider:["insider","actions","ksei"], screener:["screener"], kepemilikan:["ksei"] };
+function need(key, force){
+  if(!force && !DATA.stale.has(key) && (key === "pb" ? S.pb : S[key])) return Promise.resolve(true);
+  return DATA.pend[key] ??= (async () => {
+    try{
+      if(key === "pb") return await loadPullback(true);
+      const d = await getJSON(DATA_FILES[key]);
+      if(d){ S[key] = d; return true; }
+      return false;
+    } finally { DATA.stale.delete(key); delete DATA.pend[key]; }
+  })();
+}
+const fileOf = key => key === "pb" ? "pullback" : DATA_FILES[key] || key;
+/* Isi pengganti saat data tab belum ada: kerangka memuat, atau pesan gagal + tombol coba lagi. */
+function dataState(key, n = 6){
+  const e = DATA.err[fileOf(key)] || (key === "pb" && DATA.err.pullback_s1 && DATA.err.pullback);
+  if(e && !DATA.pend[key]) return App.error(esc(e) + " Periksa koneksi lalu coba lagi.", key);
+  return App.skeleton(n);
+}
+const tabLoaded = key => key === "pb" ? !!S.pb : !!S[key];
 
 function ago(iso){
   if(!iso) return "belum pernah";
@@ -829,7 +894,7 @@ function renderHero(){
   { const t = q?.updated || S.momentum?.updated, d = t ? new Date(t) : null, f = $("#fresh");
     const hm = d && !isNaN(d) ? d.toLocaleString("id-ID",{timeZone:"Asia/Jakarta",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}) + " WIB" : "–";
     f.innerHTML = useLive() ? `<span class="live-dot"></span>Live <b>${ago(S.live.updated)}</b>` : `Data terakhir <b>${hm}</b>`;
-    f.title = `Harga ${useLive() ? "live " + ago(S.live.updated) : ago(q?.updated)} · Momentum ${ago(S.momentum?.updated)} · Fundamental ${ago(S.screener?.updated)} · Aksi korporasi ${ago(S.actions?.updated)}`; }
+    f.title = `Harga ${useLive() ? "live " + ago(S.live.updated) : ago(q?.updated)} · Momentum ${ago(S.momentum?.updated)} · Fundamental ${S.screener ? ago(S.screener.updated) : "–"} · Aksi korporasi ${S.actions ? ago(S.actions.updated) : "–"}`; }
   if(!ih || !isNum(ih.last)) return;
   $("#ihsg-val").textContent = fmt(ih.last, 2);
   const c = $("#ihsg-chg"); c.textContent = `${ih.chg>0?"+":""}${fmt(ih.last-ih.prev,2)} (${pct(ih.chg,2)})`; c.className = "index-chg " + cls(ih.chg);
@@ -936,7 +1001,7 @@ function vClass(v){ return v === "Layak dicermati" ? "v-good" : v === "Waspada" 
 const LIVE_API = "https://api.github.com/repos/adeferdian18/idx-screener/contents/live.json?ref=live";
 const LIVE_RAW = "https://raw.githubusercontent.com/adeferdian18/idx-screener/live/live.json";
 async function loadLive(){
-  let d = await getJSON("live");
+  let d = await getJSON("live", {optional:true});
   if(d){ S.liveLocal = true; S.live = d; return; }
   S.liveLocal = false;
   if(Date.now() - (S.liveRemoteAt || 0) < 110_000) return;
@@ -972,6 +1037,7 @@ function liveSig(code){ return useLive() ? S.live.sig?.[code] : null; }
 function renderEvents(){
   const box = $("#events");
   const evs = (S.actions?.events || []).filter(e => evMatch(e, S.evFilter));
+  if(!S.actions && DATA.err.corporate_actions !== "Server menjawab 404."){ box.innerHTML = dataState("actions"); return; }
   if(!S.actions){
     box.innerHTML = `<div class="empty"><h3>Data aksi korporasi belum ada</h3><p>Buka repo GitHub kamu, tab Actions, pilih "Screener + aksi korporasi (harian)" lalu klik Run workflow. Halaman ini terisi otomatis setelah selesai, sekitar 10 menit.</p></div>`;
     return;
@@ -1044,6 +1110,7 @@ function scRows(){
 function renderScreener(){
   const t = $("#sc-table");
   t.tHead.innerHTML = "<tr>" + COLS.map(([k,l]) => `<th data-k="${k}" ${S.sort.key===k?`aria-sort="${S.sort.dir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("") + "</tr>";
+  if(!S.screener && DATA.err.screener !== "Server menjawab 404."){ $("#sc-count").textContent = ""; t.tBodies[0].innerHTML = `<tr><td colspan="${COLS.length}" class="td-state">${dataState("screener")}</td></tr>`; return; }
   if(!S.screener){ t.tBodies[0].innerHTML = `<tr><td colspan="${COLS.length}" class="td-empty">Belum ada data screener. Jalankan workflow harian di GitHub Actions.</td></tr>`; return; }
   const rows = scRows();
   $("#sc-count").textContent = `${rows.length} saham`;
@@ -1054,7 +1121,7 @@ function renderScreener(){
 const STAGE = {1:"Stage 1 · basing",2:"Stage 2 · naik",3:"Stage 3 · puncak",4:"Stage 4 · turun"};
 function renderMarket(){
   const m = S.momentum?.pasar;
-  if(!m){ $("#mkt").innerHTML = `<div><b>Data momentum belum ada</b><p>Jalankan workflow harian di GitHub Actions.</p></div>`; return; }
+  if(!m){ $("#mkt").innerHTML = S.momentum || DATA.err.momentum === "Server menjawab 404." ? `<div><b>Data momentum belum ada</b><p>Jalankan workflow harian di GitHub Actions.</p></div>` : DATA.err.momentum ? `<div><b>Data belum termuat</b><p>${esc(DATA.err.momentum)}</p></div>` : App.skeleton(2); return; }
   const lbl = {uptrend:"Pasar uptrend", tertekan:"Pasar tertekan", downtrend:"Pasar downtrend"}[m.status];
   $("#mkt").className = "mkt " + m.status;
   $("#mkt").innerHTML = `<div><b>${lbl}</b> · IHSG ${fmt(m.ihsg,0)} (MA50 ${fmt(m.ma50,0)}, MA200 ${fmt(m.ma200,0)})
@@ -1158,7 +1225,7 @@ function renderMomentum(){
   document.querySelectorAll("[data-mf]").forEach(b => b.setAttribute("aria-pressed", b.dataset.mf === S.mFilter));
   const t = $("#m-table");
   t.tHead.innerHTML = "<tr>" + MCOLS.map(([k,l]) => `<th data-mk="${k}" ${S.msort.key===k?`aria-sort="${S.msort.dir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("") + "</tr>";
-  if(!S.momentum){ t.tBodies[0].innerHTML = ""; return; }
+  if(!S.momentum){ t.tBodies[0].innerHTML = `<tr><td colspan="${MCOLS.length}" class="td-state">${DATA.err.momentum ? App.error(esc(DATA.err.momentum) + " Periksa koneksi lalu coba lagi.", "core") : App.skeleton(8)}</td></tr>`; return; }
   const rows = mRows();
   $("#m-count").textContent = `${rows.length} saham`;
   t.tBodies[0].innerHTML = rows.length ? rows.map(r => `<tr data-mcode="${esc(r.kode)}">` + MCOLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("")
@@ -1261,6 +1328,7 @@ function chartOpts(col, extra={}){
     timeScale:{borderVisible:false}, crosshair:{mode:0}, ...extra};
 }
 async function drawChart(box, r){
+  if(!App.hasChart(r.kode)) return false;
   const [d] = await Promise.all([getJSON("chart/" + r.kode), loadLWC().catch(() => null)]);
   if(!d || !window.LightweightCharts) return false;
   liveCharts.forEach(c => c.remove()); liveCharts = [];
@@ -1377,7 +1445,7 @@ function renderTermIhsg(){
 }
 function renderTermList(){
   const box = $("#t-list");
-  if(!S.momentum){ box.innerHTML = `<p class="wl-empty">Data momentum belum ada.</p>`; return; }
+  if(!S.momentum){ box.innerHTML = DATA.err.momentum ? App.error(esc(DATA.err.momentum) + " Periksa koneksi lalu coba lagi.", "core") : App.skeleton(6); return; }
   const q = $("#tq").value.trim().toUpperCase();
   if(q){
     const hits = S.momentum.rows.filter(r => r.kode.includes(q) || (r.nama||"").toUpperCase().includes(q)).slice(0, 30);
@@ -1592,6 +1660,7 @@ function renderInsider(){
   const d = S.insider, t = $("#ins-table");
   $("#ins-roles").innerHTML = INS_ROLES.map(([k,l]) => `<button class="chip" data-ir="${k}" aria-pressed="${S.insRole===k}">${esc(l)}</button>`).join("");
   t.tHead.innerHTML = `<tr><th class="l">Tanggal</th><th class="l">Kode</th><th class="l">Status sinyal</th><th class="l">Pihak</th><th class="l">Peran</th><th class="l">Aksi</th><th>Jumlah</th><th>Harga</th><th>Nilai</th><th class="l">Kepemilikan sebelum → sesudah</th><th class="l">Tujuan</th><th class="l">Sumber</th></tr>`;
+  if(!d && DATA.err.insider !== "Server menjawab 404."){ $("#ins-status").textContent = ""; $("#ins-pill").innerHTML = ""; t.tBodies[0].innerHTML = `<tr><td colspan="12" class="td-state">${dataState("insider")}</td></tr>`; return; }
   if(!d){
     $("#ins-status").textContent = "Data transaksi orang dalam belum ada.";
     $("#ins-pill").innerHTML = ""; t.tBodies[0].innerHTML = ""; return;
@@ -1637,7 +1706,8 @@ function renderInsider(){
 }
 
 /* ---------- Detail saham ---------- */
-function openDetail(code){
+async function openDetail(code){
+  if(!S.screener || !S.actions) await Promise.all([need("screener"), need("actions")]); // fundamental & aksi dimuat saat pertama dibutuhkan
   const r = (S.screener?.rows || []).find(x => x.kode === code) || {};
   const live = liveOf(code);
   const evs = (S.actions?.events || []).filter(e => e.code === code);
@@ -1842,6 +1912,7 @@ function renderPbHead(){
   const snap = $("#pb-snap");
   snap.hidden = !(has.close && has.s1);
   snap.innerHTML = has.close && has.s1 ? ["s1","close"].map(k => `<button data-pbsnap="${k}" aria-pressed="${PB.snap===k}" title="${esc(tglTh(S.pb[k].market?.as_of))}">${PB_SNAP_LBL[k]}</button>`).join("") : "";
+  if(!d && DATA.err.pullback !== "Server menjawab 404."){ $("#pb-status").innerHTML = dataState("pb"); return; }
   if(!d){
     $("#pb-status").innerHTML = `Data pullback belum ada. Jalankan <code>python pullback.py</code> (penutupan) atau <code>python pullback.py s1</code> (sesi 1) untuk membuat data/pullback.json.`;
     $("#pb-cards").innerHTML = ""; return;
@@ -1893,14 +1964,12 @@ function pbInitFilters(){
   $('[data-pbf="vmax"]').innerHTML = opt([7,8,9,10,11,12,13,14,15], PB.f.vmax);
   document.querySelectorAll('input[data-pbf]').forEach(i => i.checked = !!PB.f[i.dataset.pbf]);
 }
-async function loadPullback(force){
-  if(!force && S.pbAt && Date.now() - S.pbAt < 5 * 60_000) return false;
-  const [c, s1] = await Promise.all([getJSON("pullback"), getJSON("pullback_s1")]);
+async function loadPullback(){
+  const [c, s1] = await Promise.all([getJSON("pullback"), getJSON("pullback_s1", {optional:true})]);
+  if(!c && !s1) return false;
   S.pbAt = Date.now();
-  const g = x => x?.market?.generated_at || (x ? "?" : "");
-  const changed = !S.pb || g(c) !== g(S.pb.close) || g(s1) !== g(S.pb.s1);
   S.pb = {close:c, s1};
-  return changed;
+  return true;
 }
 
 /* Grafik pullback (SVG buatan sendiri): candle + penanda, volume, Garis Momentum */
@@ -2040,7 +2109,7 @@ async function pbDetail(code){
     <p class="hint">Data ${esc(pbData()?.market?.session_label || "")} ${esc(tglTh(pbData()?.market?.as_of))}. ${inMom ? `<a href="#" data-mcode="${esc(code)}">Buka di tab Momentum</a> · ` : ""}Alat bantu analisis, bukan rekomendasi beli atau jual.</p>`;
   $("#dlg-body").scrollTop = 0; $("#dlg").showModal();
   PB.chart = null;
-  const d = await getJSON("pullback_chart/" + code);
+  const d = await getJSON("pullback_chart/" + code, {optional:true});
   if($("#dlg-title").textContent.slice(0, code.length) !== code || !$("#pb-chart")) return;
   if(!d){ $("#pb-chart").innerHTML = `<p class="hint pad-3">Grafik belum tersedia untuk ${esc(code)} (hanya dibuat untuk saham yang punya sinyal).</p>`; return; }
   PB.chart = {d, r}; pbDrawChart();
@@ -2137,9 +2206,19 @@ document.addEventListener("click", e => {
     setPageHead(tab); store.set("tab", tab.dataset.tab);
     if(location.hash.slice(1) !== tab.dataset.tab) history[e.isTrusted || e.detail ? "pushState" : "replaceState"](null, "", "#" + tab.dataset.tab);
     scrollTo({top:0, behavior:"instant"}); playEnter(tab.dataset.tab);
-    App.renderModule(tab.dataset.tab);
+    App.renderModule(tab.dataset.tab); ensureTab(tab.dataset.tab);
     if(tab.dataset.tab === "grafik" && !$("#chart-box").childElementCount) renderChart();
     if(tab.dataset.tab === "analisa"){ drawBreadth(); renderBacktest(); }
+    return;
+  }
+  const rt = e.target.closest("[data-retry]");
+  if(rt){
+    const k = rt.dataset.retry, cur = document.querySelector(".tab[aria-current=page]")?.dataset.tab;
+    rt.disabled = true;
+    if(k === "core"){ S.mAt = 0; loadAll(true); return; }
+    if(k.startsWith("mod:")){ App.retry?.[k.slice(4)]?.(); return; }
+    need(k, true).then(() => cur && renderTab(cur));
+    if(cur) setTimeout(() => renderTab(cur), 0);
     return;
   }
   if(e.target.closest("#tape-btn")){ setTapePaused(!$("#tape").classList.contains("paused")); return; }
@@ -2193,29 +2272,58 @@ $("#chart-sym").addEventListener("keydown", e => { if(e.key==="Enter") $("#chart
 $("#dlg-close").addEventListener("click", () => closeDlg());
 $("#dlg").addEventListener("close", () => { liveCharts.forEach(c => c.remove()); liveCharts = []; });
 
+/* Saat awal hanya quotes + momentum (+ live) yang dimuat; data tab lain lewat ensureTab() saat dibuka.
+   Tiap 60 dtk: quotes & live (divalidasi ulang). Momentum diperiksa tiap 10 menit. */
+const TAB_RENDER = {
+  pullback: () => renderPullback(),
+  aksi: () => { renderEvFilters(); renderEvents(); },
+  insider: () => renderInsider(),
+  screener: () => renderScreener(),
+};
+function renderTab(name){ TAB_RENDER[name]?.(); App.renderModule(name); }
+async function ensureTab(name, force){
+  const keys = TAB_NEEDS[name] || [];
+  if(!keys.length) return;
+  const todo = keys.filter(k => force || DATA.stale.has(k) || !tabLoaded(k));
+  if(!todo.length) return;
+  const p = Promise.all(todo.map(k => need(k, force)));
+  renderTab(name); // tampilkan kerangka memuat
+  await p;
+  const cur = document.querySelector(".tab[aria-current=page]");
+  if(cur?.dataset.tab === name) renderTab(name);
+  if(todo.includes("screener")) renderTape();
+}
 async function loadAll(first){
   const needM = !S.momentum || Date.now() - (S.mAt || 0) > 10 * 60_000;
-  const [q, s, a, m, ins, , pbNew] = await Promise.all([getJSON("quotes"), getJSON("screener"), getJSON("corporate_actions"), needM ? getJSON("momentum") : null, getJSON("insider"), loadLive(), loadPullback()]);
-  S.quotes = q; S.screener = s; S.actions = a; S.insider = ins;
-  if(!S.ksei) S.ksei = await getJSON("ksei");
+  const qp = getJSON("quotes").then(q => { if(q?.updated && !DATA.v) DATA.v = q.updated; DATA.setReady(); return q; });
+  const [q, m] = await Promise.all([qp, needM ? getJSON("momentum") : null, loadLive()]);
+  if(q){
+    S.quotes = q;
+    const v = q.updated || "";
+    if(v && v !== DATA.v){
+      const old = DATA.v; DATA.v = v;
+      if(old){ ["pb", ...Object.keys(DATA_FILES)].forEach(k => tabLoaded(k) && DATA.stale.add(k)); S.bt = null; }
+    }
+  }
   if(m){ S.momentum = m; S.mAt = Date.now(); }
-  renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa(); renderEvFilters(); renderEvents(); renderScreener(); renderInsider();
+  renderHero(); renderMomentum(); renderTerminal(!!m); renderAnalisa();
   if(m && !$("#panel-analisa").hidden) drawBreadth();
   renderTape(); renderLiveBox();
-  if(pbNew) renderPullback();
-  const cur = document.querySelector(".tab[aria-current=page]");
-  if(cur) App.renderModule(cur.dataset.tab);
+  const cur = document.querySelector(".tab[aria-current=page]")?.dataset.tab;
+  if(cur){ if(DATA.stale.size && (TAB_NEEDS[cur] || []).some(k => DATA.stale.has(k))) ensureTab(cur); else if(first) ensureTab(cur); App.renderModule(cur); }
 }
 
 /* ---------- Modul fitur (docs/js/*.js) ---------- */
 const App = window.App = {
-  S, fmt, pct, esc, cls, isNum, dark, store, getJSON,
+  S, fmt, pct, esc, cls, isNum, dark, store, getJSON, need, dataState, dataErr: name => DATA.err[name],
+  /* File grafik hanya dibuat momentum.py untuk saham likuid dengan TT ≥ 6 atau sinyal entry → cek dulu, hindari 404 */
+  hasChart: code => (S.momentum?.rows || []).some(r => r.kode === code && r.likuid && (r.tt_skor >= 6 || r.entry)),
   openStock: code => openDetail(code),
   mods: {},
   /* Status seragam: kerangka memuat, kosong, gagal (CSS .skel / .state) */
   skeleton: (n = 4) => `<div class="skel" role="status" aria-label="Memuat">${"<i></i>".repeat(n)}</div>`,
   empty: (text, title = "") => `<div class="state" role="status">${title ? `<b>${esc(title)}</b>` : ""}<span>${text}</span></div>`,
-  error: (text = "Data gagal dimuat. Coba muat ulang halaman.") => `<div class="state is-error" role="alert"><b>Gagal memuat</b><span>${text}</span></div>`,
+  error: (text = "Data gagal dimuat. Coba muat ulang halaman.", retry = "") => `<div class="state is-error" role="alert"><b>Gagal memuat</b><span>${text}</span>${retry ? `<button class="chip" type="button" data-retry="${esc(retry)}">Coba lagi</button>` : ""}</div>`,
   register(name, mod){ this.mods[name] = mod; const t = document.querySelector(".tab[aria-current=page]"); if(t?.dataset.tab === name) this.renderModule(name); },
   renderModule(name){
     const m = this.mods[name], el = document.getElementById("panel-"+name);
@@ -2395,15 +2503,18 @@ $("#theme-btn").addEventListener("click", () => {
 });
 loadAll(true);
 setInterval(loadAll, 60_000);
+/* PWA: service worker hanya di https atau localhost */
+if("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)))
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(err => console.warn("Service worker gagal didaftarkan:", err)));
 </script>
-<script src="js/setup.js" defer></script>
-<script src="js/peta.js" defer></script>
-<script src="js/kepemilikan.js" defer></script>
-<script src="js/kalkulator.js" defer></script>
-<script src="js/jurnal.js" defer></script>
-<script src="js/lonjakan.js" defer></script>
-<script src="js/grafikpro.js" defer></script>
-<script src="js/grup.js" defer></script>
-<script src="js/porto.js" defer></script>
+<script src="js/setup.js?v=20261116" defer></script>
+<script src="js/peta.js?v=20261116" defer></script>
+<script src="js/kepemilikan.js?v=20261116" defer></script>
+<script src="js/kalkulator.js?v=20261116" defer></script>
+<script src="js/jurnal.js?v=20261116" defer></script>
+<script src="js/lonjakan.js?v=20261116" defer></script>
+<script src="js/grafikpro.js?v=20261116" defer></script>
+<script src="js/grup.js?v=20261116" defer></script>
+<script src="js/porto.js?v=20261116" defer></script>
 </body>
 </html>

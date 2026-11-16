@@ -140,7 +140,7 @@
     try{
       el.querySelector("#gp-chart").innerHTML = App.skeleton(8);
       if(chart){ chart.remove(); chart = null; }
-      const [d] = await Promise.all([cache[k] !== undefined ? cache[k] : App.getJSON("chart/" + k).catch(() => null), loadLWC().catch(() => null)]);
+      const [d] = await Promise.all([cache[k] !== undefined ? cache[k] : App.hasChart(k) ? App.getJSON("chart/" + k) : null, loadLWC().catch(() => null)]);
       cache[k] = d || null;
       if(!d || !d.t || !window.LightweightCharts){ missing(el, k); return; }
       data = d; loadedKode = k; draw(el);
