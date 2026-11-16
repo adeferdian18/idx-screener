@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-13T17:26+07:00",
+"updated": "2026-11-16T17:55+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -2248,7 +2248,7 @@
 },
 {
 "kode": "LAPD",
-"nama": "PT Leyand International Tbk",
+"nama": "PT JSI Sinergi Internasional Tbk",
 "sektor": "Utilities"
 },
 {
@@ -2640,11 +2640,6 @@
 "kode": "MPPA",
 "nama": "PT Matahari Putra Prima Tbk",
 "sektor": "Retail Trade"
-},
-{
-"kode": "MPRO",
-"nama": "PT Maha Properti Indonesia Tbk",
-"sektor": "Finance"
 },
 {
 "kode": "MPXL",

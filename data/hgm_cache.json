@@ -376,7 +376,7 @@
 "OILS": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-09"
+"diambil": "2026-11-16"
 },
 "PCAR": {
 "status": "kuat",
@@ -884,7 +884,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-09"
+"diambil": "2026-11-16"
 },
 "NATO": {
 "status": "sebagian",
@@ -900,7 +900,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-09"
+"diambil": "2026-11-16"
 },
 "TMPO": {
 "status": "data kurang",
@@ -1017,7 +1017,7 @@
 "ASPI": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-09"
+"diambil": "2026-11-16"
 },
 "WINS": {
 "status": "data kurang",
@@ -1044,7 +1044,7 @@
 "AIMS": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-09"
+"diambil": "2026-11-16"
 },
 "FLMC": {
 "status": "data kurang",
