@@ -57,7 +57,7 @@
 
   function shell(el){
     el.innerHTML = `
-<div class="card"><h2>Portofolio</h2><p>Catat saham yang kamu pegang. Harga ikut data terbaru di situs ini.</p>
+<div class="card"><h2>Portofolio</h2><p>Catat saham yang Anda pegang. Harga ikut data terbaru di situs ini.</p>
   <form class="porto-form" data-p="form">
     <label>Kode<input name="kode" maxlength="6" required autocomplete="off" placeholder="BBCA"></label>
     <label>Lot<input name="lot" type="number" min="1" step="1" required></label>
@@ -75,7 +75,7 @@
   <div class="card"><h2>Ringkasan</h2><div data-p="sum"></div></div>
   <div class="card"><h2>Bobot</h2><div data-p="donut"></div></div>
 </div>
-<div class="card"><h2>Kartu pamer</h2><p>Bagikan hasilmu tanpa membuka isi dompet.</p>
+<div class="card"><h2>Kartu pamer</h2><p>Bagikan hasil Anda tanpa membuka isi dompet.</p>
   <div class="toolbar"><button class="chip" type="button" data-act="hide" aria-pressed="false">Sembunyikan rupiah</button>
   <button class="porto-btn solid" type="button" data-act="png">Simpan gambar</button></div>
   <div data-p="card"></div>

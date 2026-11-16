@@ -585,6 +585,16 @@ dialog.closing::backdrop{animation:fade .2s var(--ease-in) reverse both}
 }
 .skip{position:absolute;left:8px;top:-60px;z-index:1000;padding:8px 14px;border-radius:var(--r-md);background:var(--btn);color:var(--btn-fg);font-weight:700;text-decoration:none}
 .skip:focus{top:8px}
+/* Istilah: tombol ⓘ kecil + popover (fase 7) */
+.term-i{display:inline-grid;place-items:center;width:16px;height:16px;margin-left:4px;padding:0;border:1px solid var(--line2);border-radius:50%;background:transparent;color:var(--muted);font:700 10px/1 var(--font, inherit);cursor:help;vertical-align:1px;text-transform:none;letter-spacing:0}
+.term-i:hover,.term-i[aria-expanded=true]{color:var(--accent);border-color:var(--accent)}
+.term-pop{position:absolute;z-index:1200;width:min(300px,calc(100vw - 16px));padding:var(--sp-3) var(--sp-4);background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-radius:var(--r-md);box-shadow:var(--shadow);font-size:var(--fs-sm);font-weight:400;text-align:left;line-height:1.45}
+.term-pop b{display:block;margin-bottom:4px}.term-pop p{margin:0 0 6px;color:var(--muted)}.term-pop a{color:var(--accent);font-size:var(--fs-xs)}
+.site-foot{display:grid;gap:var(--sp-3) var(--sp-6);grid-template-columns:2fr 1.4fr 1.4fr;line-height:1.5}
+.site-foot b{display:block;color:var(--ink);margin-bottom:2px}
+.site-foot p{margin:0}.site-foot a{color:var(--accent)}
+.site-foot .foot-bottom{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--sp-2) var(--sp-4);justify-content:space-between;padding-top:var(--sp-3);border-top:1px solid var(--line)}
+@media (max-width:900px){.site-foot{grid-template-columns:1fr}}
 :focus-visible{outline:2px solid var(--focus)!important;outline-offset:2px}
 tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
 .tape.playing .tape-track{animation-iteration-count:infinite!important;animation-duration:var(--tape-dur,90s)!important}
@@ -621,6 +631,8 @@ tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
     <button class="tab" data-tab="kalkulator" data-sec="Alat" data-desc="Hitung jumlah lot dari modal dan batas risiko." data-title="Kalkulator lot & risiko"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg><span>Kalkulator</span></button>
     <button class="tab" data-tab="jurnal" data-sec="Alat" data-desc="Catat dan evaluasi transaksi Anda." data-title="Jurnal trading"><svg viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5zM9 10h6M9 14h6M9 18h3"/></svg><span>Jurnal</span></button>
     <button class="tab" data-tab="porto" data-sec="Alat" data-desc="Pantau posisi dan untung-rugi portofolio." data-title="Portofolio"><svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM8 7V4h8v3"/></svg><span>Portofolio</span></button>
+    <div class="side-sec">Bantuan</div>
+    <button class="tab" data-tab="panduan" data-sec="Bantuan" data-desc="Cara memakai tiap menu, glosarium istilah, FAQ, dan disclaimer." data-title="Panduan"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.9.6-1.5 1.1-1.5 2.2M12 17h.01"/></svg><span>Panduan</span></button>
     <button class="tab more-btn" type="button" id="more-btn" aria-haspopup="dialog" aria-controls="more-sheet"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg><span>Lainnya</span></button>
   </nav>
   <p class="side-note">Alat bantu riset, bukan rekomendasi beli atau jual.</p>
@@ -703,7 +715,7 @@ tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
     </div>
     <div class="pb-tabs" id="pb-tabs" role="tablist" aria-label="Kelompok saham pullback"></div>
     <div class="toolbar">
-      <span class="seg" aria-label="Metode level harga"><button data-pbm="atr">ATR</button><button data-pbm="n">N-candle</button></span>
+      <span class="seg" aria-label="Metode level harga"><button data-pbm="atr">ATR</button><button data-pbm="n">N-candle</button></span><button type="button" class="term-i" data-term="atr" aria-expanded="false" aria-label="Arti istilah ATR">i</button>
       <span class="seg" aria-label="Cara keluar"><button data-pbmode="fixed">SL tetap</button><button data-pbmode="trail">Trailing stop</button></span>
       <input class="search" id="pb-q" type="search" placeholder="Cari kode atau nama" aria-label="Cari saham pullback">
     </div>
@@ -801,10 +813,13 @@ tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
   <section class="panel mod" id="panel-kepemilikan" hidden></section>
   <section class="panel mod" id="panel-kalkulator" hidden></section>
   <section class="panel mod" id="panel-jurnal" hidden></section>
+  <section class="panel mod" id="panel-panduan" hidden></section>
 
-  <footer>
-    Harga dari Yahoo Finance, diperbarui tiap 15 menit di jam bursa dan tertunda sekitar 15 menit dari BEI. Fundamental dihitung ulang setiap hari pukul 16:30 WIB; aksi korporasi dipindai pukul 08:00, 12:30 dan 16:30 WIB dari berita dan jadwal dividen.
-    Skor dan narasi adalah alat bantu riset, bukan rekomendasi beli atau jual. Cocokkan selalu dengan keterbukaan informasi resmi di idx.co.id.
+  <footer class="site-foot">
+    <div><b>Meja Pantau IDX</b><p>Alat bantu riset saham BEI. Semua skor, sinyal, dan level harga dibuat otomatis dan <strong>bukan rekomendasi beli/jual</strong>. Keputusan dan risiko transaksi ada pada Anda. <a href="#panduan">Panduan &amp; disclaimer lengkap</a></p></div>
+    <div><b>Sumber data</b><p>Harga: Yahoo Finance, tertunda ±15 menit. Kepemilikan: KSEI. Aksi korporasi &amp; orang dalam: keterbukaan informasi BEI dan berita. Cocokkan selalu dengan idx.co.id.</p></div>
+    <div><b>Jadwal pembaruan (WIB)</b><p>Harga tiap 15 menit 09.00–16.45. Momentum, Setup A+ &amp; fundamental 16.30. Pullback setelah Sesi 1 dan 16.26. KSEI bulanan.</p></div>
+    <div class="foot-bottom"><span>© <span id="foot-year">2026</span> Meja Pantau IDX</span><span>Bukan rekomendasi beli/jual.</span></div>
   </footer>
 </main>
 </div>
@@ -833,6 +848,8 @@ tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
 const S = { quotes:null, screener:null, actions:null, momentum:null, evFilter:"semua", sort:{key:"peringkat",dir:1},
   mFilter:"lolos", msort:{key:"rs_rating",dir:-1}, eFilter:"aktif" };
 const $ = (s, el=document) => el.querySelector(s);
+/* Tombol istilah ⓘ: label + tombol kecil yang membuka arti dari glosarium (js/panduan.js) */
+const termI = (key, label = "") => `${label}<button type="button" class="term-i" data-term="${key}" aria-expanded="false" aria-label="Arti istilah ${label || key.toUpperCase()}">i</button>`;
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const isNum = x => typeof x === "number" && isFinite(x);
 const fmt = (x, d=0) => isNum(x) ? x.toLocaleString("id-ID",{minimumFractionDigits:d,maximumFractionDigits:d}) : "–";
@@ -1048,7 +1065,7 @@ function renderEvents(){
   const evs = (S.actions?.events || []).filter(e => evMatch(e, S.evFilter));
   if(!S.actions && DATA.err.corporate_actions !== "Server menjawab 404."){ box.innerHTML = dataState("actions"); return; }
   if(!S.actions){
-    box.innerHTML = `<div class="empty"><h3>Data aksi korporasi belum ada</h3><p>Buka repo GitHub kamu, tab Actions, pilih "Screener + aksi korporasi (harian)" lalu klik Run workflow. Halaman ini terisi otomatis setelah selesai, sekitar 10 menit.</p></div>`;
+    box.innerHTML = `<div class="empty"><h3>Data aksi korporasi belum ada</h3><p>Buka repo GitHub Anda, tab Actions, pilih "Screener + aksi korporasi (harian)" lalu klik Run workflow. Halaman ini terisi otomatis setelah selesai, sekitar 10 menit.</p></div>`;
     return;
   }
   if(!evs.length){ box.innerHTML = `<div class="empty"><h3>Tidak ada aksi korporasi di kategori ini</h3><p>Coba kategori lain atau tunggu pemindaian berikutnya.</p></div>`; return; }
@@ -1175,14 +1192,14 @@ const dots = tt => `<span class="dots">${tt.map(v => `<i class="${v===true?"y":v
 const MCOLS = [
   ["kode","Saham",r=>`${star(r.kode)}${esc(r.kode)}${r.rs_rating>=90 && r.lolos_tt?`<span class="badge good">RS 90+</span>`:""}`],
   ["skor_setup","Skor",r=>isNum(r.skor_setup) ? `${r.skor_setup}<span class="bar"><i style="width:${r.skor_setup}%"></i></span>` : "–"],
-  ["rs_rating","RS",r=>`<span class="rs ${r.rs_rating>=90?"hi":""}">${r.rs_rating ?? "–"}</span>`],
+  ["rs_rating",termI("rs","RS"),r=>`<span class="rs ${r.rs_rating>=90?"hi":""}">${r.rs_rating ?? "–"}</span>`],
   ["rank_per","Rank periode",r=>isNum(r.rank_per) ? `<span class="rs ${r.rank_per>=90?"hi":""}">${r.rank_per}</span> <span class="hint ${cls(r.ret_per)}">${pct(r.ret_per,0)}</span>` : "–"],
   ["rs_line_high","RS Line",rsLine],
   ["harga","Harga",r=>fmt(liveOf(r.kode)?.last ?? r.harga)],
   ["chg","Hari ini",r=>`<span class="${cls(r.chg)}">${pct(r.chg)}</span>`],
   ["dari_high52","Dari high 52m",r=>`<span class="${cls(r.dari_high52)}">${pct(r.dari_high52,0)}</span>`],
   ["dari_low52","Dari low 52m",r=>pct(r.dari_low52,0)],
-  ["tt_skor","Trend Template",r=>`${dots(r.tt)} ${r.tt_skor}/8`],
+  ["tt_skor",termI("tt","Trend Template"),r=>`${dots(r.tt)} ${r.tt_skor}/8`],
   ["setup","Setup",r=>r.entry?.label ? `<span class="st ${stClass(r.entry.status)}">${esc(r.entry.label)}</span>` : `<span class="hint">${r.entry ? "belum VCP" : "–"}</span>`],
   ["hgm","HGM",r=>hgmBadge(r.hgm)],
   ["stage","Stage",r=>r.stage ? `Stage ${r.stage}` : "–"],
@@ -1238,7 +1255,7 @@ function renderMomentum(){
   const rows = mRows();
   $("#m-count").textContent = `${rows.length} saham`;
   t.tBodies[0].innerHTML = rows.length ? rows.map(r => `<tr data-mcode="${esc(r.kode)}">` + MCOLS.map(([k,,f]) => `<td class="${k==="kode"?"code":""}">${f(r)}</td>`).join("") + "</tr>").join("")
-    : `<tr><td colspan="${MCOLS.length}" class="td-empty">${S.mFilter === "saya" ? "Belum ada saham di watchlist kamu. Klik ★ di samping kode saham untuk menyimpannya (tersimpan di perangkat ini)." : "Tidak ada saham yang memenuhi filter ini hari ini."}</td></tr>`;
+    : `<tr><td colspan="${MCOLS.length}" class="td-empty">${S.mFilter === "saya" ? "Belum ada saham di watchlist Anda. Klik ★ di samping kode saham untuk menyimpannya (tersimpan di perangkat ini)." : "Tidak ada saham yang memenuhi filter ini hari ini."}</td></tr>`;
 }
 /* ---------- Sinyal entry ---------- */
 const E_GROUPS = [
@@ -1261,7 +1278,7 @@ function eRows(group){
 function renderSignals(){
   $("#e-filters").innerHTML = E_GROUPS.map(([k,l]) => `<button class="chip" data-ef="${k}" aria-pressed="${S.eFilter===k}">${l} (${eRows(k).length})</button>`).join("");
   const t = $("#e-table");
-  t.tHead.innerHTML = "<tr><th>Kode</th><th>Status</th><th>Tgl trigger</th><th>Harga</th><th>Entry</th><th>SL</th><th>TP1 (2R)</th><th>TP2 (3R)</th><th>R saat ini</th><th>RS</th></tr>";
+  t.tHead.innerHTML = "<tr><th>Kode</th><th>Status</th><th>Tgl trigger</th><th>Harga</th><th>Entry</th><th>SL</th><th>TP1 (2R)</th><th>TP2 (3R)</th><th>R saat ini" + termI("r") + "</th><th>RS</th></tr>";
   if(!S.momentum){ t.tBodies[0].innerHTML = ""; return; }
   const rows = eRows(S.eFilter).sort((a,b) => (a.entry.hari_sejak ?? 99) - (b.entry.hari_sejak ?? 99) || (b.rs_rating||0) - (a.rs_rating||0));
   const weak = S.momentum.pasar.status !== "uptrend";
@@ -2127,7 +2144,7 @@ function pbFaq(){
   $("#dlg-title").textContent = "FAQ · cara hitung";
   $("#dlg-sub").textContent = "Setup \"saham kuat yang sedang pullback\"";
   $("#dlg-body").innerHTML = `<div class="faq">
-    <p class="warn">Alat bantu analisis, bukan rekomendasi beli atau jual. Keputusan dan risikonya tetap di tangan kamu.</p>
+    <p class="warn">Alat bantu analisis, bukan rekomendasi beli atau jual. Keputusan dan risikonya tetap di tangan Anda.</p>
     <h3>Idenya apa?</h3>
     <p>Mencari saham yang beberapa bulan terakhir lebih kuat dari IHSG, lalu sedang turun sebentar (pullback). Saat pullback itu selesai dan muncul candle pembalikan dengan volume, itulah titik masuk yang dicari: harga lebih murah dibanding mengejar saat sudah naik tinggi.</p>
     <h3>Tiga poin setup</h3>
@@ -2328,6 +2345,7 @@ const App = window.App = {
   /* File grafik hanya dibuat momentum.py untuk saham likuid dengan TT ≥ 6 atau sinyal entry → cek dulu, hindari 404 */
   hasChart: code => (S.momentum?.rows || []).some(r => r.kode === code && r.likuid && (r.tt_skor >= 6 || r.entry)),
   openStock: code => openDetail(code),
+  term: termI,
   mods: {},
   /* Status seragam: kerangka memuat, kosong, gagal (CSS .skel / .state) */
   skeleton: (n = 4) => `<div class="skel" role="status" aria-label="Memuat">${"<i></i>".repeat(n)}</div>`,
@@ -2510,21 +2528,23 @@ $("#theme-btn").addEventListener("click", () => {
   try{ localStorage.setItem("theme", next); }catch{}
   location.reload(); // grafik TradingView dan lightweight-charts membaca tema saat dibuat
 });
+$("#foot-year").textContent = new Date().getFullYear();
 loadAll(true);
 setInterval(loadAll, 60_000);
 /* PWA: service worker hanya di https atau localhost */
 if("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)))
   addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(err => console.warn("Service worker gagal didaftarkan:", err)));
 </script>
-<script src="js/setup.js?v=20261116" defer></script>
-<script src="js/peta.js?v=20261116" defer></script>
-<script src="js/kepemilikan.js?v=20261116" defer></script>
-<script src="js/kalkulator.js?v=20261116" defer></script>
-<script src="js/jurnal.js?v=20261116" defer></script>
-<script src="js/lonjakan.js?v=20261116" defer></script>
-<script src="js/grafikpro.js?v=20261116" defer></script>
-<script src="js/grup.js?v=20261116" defer></script>
-<script src="js/porto.js?v=20261116" defer></script>
+<script src="js/setup.js?v=20261116b" defer></script>
+<script src="js/peta.js?v=20261116b" defer></script>
+<script src="js/kepemilikan.js?v=20261116b" defer></script>
+<script src="js/kalkulator.js?v=20261116b" defer></script>
+<script src="js/jurnal.js?v=20261116b" defer></script>
+<script src="js/lonjakan.js?v=20261116b" defer></script>
+<script src="js/grafikpro.js?v=20261116b" defer></script>
+<script src="js/grup.js?v=20261116b" defer></script>
+<script src="js/porto.js?v=20261116b" defer></script>
+<script src="js/panduan.js?v=20261116b" defer></script>
 <script>
 /* Aksesibilitas (fase 6): baris/kartu yang bisa diklik dapat dijangkau keyboard */
 (function(){

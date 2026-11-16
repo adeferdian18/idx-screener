@@ -176,7 +176,7 @@
     const list = a.filter(e => e.status === "selesai" || e.status === "batal")
       .sort((x,y) => String(y.tgl_keluar||y.tgl).localeCompare(String(x.tgl_keluar||x.tgl)));
     if(!list.length) return App.empty("Belum ada riwayat.");
-    return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Status</th><th>Masuk</th><th>Keluar</th><th>Entry</th><th>Harga keluar</th><th>Lot</th><th>P/L (Rp)</th><th>R</th><th></th></tr></thead><tbody>
+    return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Status</th><th>Masuk</th><th>Keluar</th><th>Entry</th><th>Harga keluar</th><th>Lot</th><th>P/L (Rp)</th><th>R${App.term("r")}</th><th></th></tr></thead><tbody>
       ${list.map(e => { const { pl, r } = e.status === "selesai" ? calc(e, e.harga_keluar) : {};
         return `<tr><td><button class="jurnal-code" data-code="${App.esc(e.kode)}">${App.esc(e.kode)}</button></td><td>${e.status === "selesai" ? "Selesai" : "Batal"}</td>
         <td>${App.esc(e.tgl || "")}</td><td>${App.esc(e.tgl_keluar || "")}</td><td>${App.fmt(num(e.entry))}</td><td>${App.fmt(num(e.harga_keluar))}</td><td>${App.fmt(num(e.lot))}</td>

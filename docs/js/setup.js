@@ -51,7 +51,7 @@
     const gate = `<div class="sa-gate ${gateOk ? "ok" : "no"}"><b>${gateOk ? "Pasar terbuka" : "Pasar tertutup"}</b>
       <span>IHSG status <b>${App.esc(m.pasar?.status || "–")}</b>. ${gateOk ? "Setup A+ boleh dieksekusi." :
       "Backtest: breakout saat IHSG downtrend lebih sering gagal. Tidak ada entry baru sampai IHSG keluar dari downtrend."}</span></div>`;
-    const tbl = (list, miss) => `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Nama</th><th>RS</th><th>Harga</th>
+    const tbl = (list, miss) => `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Nama</th><th>RS${App.term("rs")}</th><th>Harga</th>
       <th>Entry (buy-stop)</th><th>SL</th><th>TP 1R</th><th>Risiko</th>${miss ? "<th>Belum terpenuhi</th>" : "<th></th>"}</tr></thead><tbody>${list.map(z => {
         const s = z.setup_a;
         return `<tr data-code="${App.esc(z.kode)}"><td class="code">${App.esc(z.kode)}</td><td>${App.esc((z.nama || "").slice(0, 28))}</td>
@@ -101,7 +101,7 @@
       ${c("Rata-rata / trade", R(g.rata_r), App.cls(g.rata_r))}</div>
       <div class="toolbar"><span class="seg">${["semua","menunggu","berjalan","TP","SL","waktu","batal"].map(k =>
         `<button data-sajl="${k}" aria-pressed="${jlFilter === k}">${k === "semua" ? "Semua" : JL_LBL[k]}</button>`).join("")}</span></div>
-      <div class="table-wrap"><table><thead><tr><th>Kode</th><th>Sinyal</th><th>Beli</th><th>Entry</th><th>SL</th><th>TP</th><th>Status</th><th>Return</th><th>R</th><th>Alasan</th></tr></thead><tbody>
+      <div class="table-wrap"><table><thead><tr><th>Kode</th><th>Sinyal</th><th>Beli</th><th>Entry</th><th>SL</th><th>TP</th><th>Status</th><th>Return</th><th>R${App.term("r")}</th><th>Alasan</th></tr></thead><tbody>
       ${list.length ? list.map(t => `<tr data-code="${App.esc(t.kode)}"><td class="code">${App.esc(t.kode)}</td><td>${t.tgl_sinyal}</td><td>${t.tgl_beli || "–"}</td>
         <td>${App.fmt(t.entry)}</td><td class="down">${App.fmt(t.sl)}</td><td class="up">${App.fmt(t.tp)}</td><td>${status(t)}</td>
         <td class="${App.cls(t.ret)}">${App.pct(t.ret)}</td><td class="${App.cls(t.net_r)}">${R(t.net_r)}</td>
@@ -131,7 +131,7 @@
     const k = sweep.kandidat, f = k.filter;
     el.innerHTML = `
     <div class="card">
-      <h2>Setup A+ · VCP momentum, TP 1R</h2>
+      <h2>Setup A+ · VCP${App.term("vcp")} momentum, TP 1R</h2>
       <p>Satu-satunya kombinasi dari ${App.fmt(sweep.asumsi.jumlah_kombinasi)} yang diuji (filter × SL × TP, ${App.fmt(sweep.asumsi.jumlah_sinyal)} sinyal breakout
       ${sweep.periode[0]} s.d. ${sweep.periode[1]}) yang untung di <b>kedua</b> periode dengan batas bawah keyakinan ~95% di atas nol.</p>
       <div class="sa-rule">
