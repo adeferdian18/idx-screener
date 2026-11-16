@@ -143,6 +143,7 @@
         <div><b>Keluar</b>TP 1R (jual semua) · SL disiplin · maks ${sweep.asumsi.maks_hari} hari</div>
       </div>
     </div>
+    <div class="pb-cards" id="sa-cards"></div>
     <div class="card"><h2>Kandidat hari ini</h2><div id="sa-cand"></div></div>
     <div class="card"><h2>Jurnal otomatis Setup A+</h2>
       <p>Setiap saham yang lolos Setup A+ dicatat otomatis, lalu dilacak tiap hari bursa sampai kena TP, kena SL, atau waktu habis, lengkap dengan alasannya.</p>
@@ -178,7 +179,23 @@
     built = true;
   }
 
+  function cards(){
+    const m = App.S.momentum, rows = (m?.rows || []).filter(z => z.setup_a);
+    const pass = rows.filter(z => z.setup_a.lolos), near = rows.filter(z => !z.setup_a.lolos && z.setup_a.skor >= z.setup_a.dari - 2);
+    const t = jl?.trades || [], k = st => t.filter(x => (x.status === "selesai" ? x.keluar : x.status) === st);
+    const run = k("berjalan"), wait = k("menunggu"), tp = k("TP"), sl = k("SL"), wk = k("waktu");
+    const codes = xs => App.esc(xs.slice(0, 6).map(x => x.kode).join(", ") || "belum ada");
+    const gateOk = m?.pasar?.status !== "downtrend";
+    return `
+      <button class="pb-card c-blue" data-sago="sa-cand"><span>Lolos Setup A+ hari ini</span><b>${pass.length}</b><small>${codes(pass)}</small></button>
+      <button class="pb-card c-warn" data-sago="sa-cand"><span>Hampir lolos (kurang 1–2)</span><b>${near.length}</b><small>${codes(near)}</small></button>
+      <button class="pb-card c-blue" data-sajl="berjalan"><span>Posisi berjalan / menunggu order</span><b>${run.length + wait.length}</b><small>${run.length} berjalan · ${wait.length} menunggu</small></button>
+      <button class="pb-card c-good" data-sajl="TP"><span>Kena TP (jurnal)</span><b>${tp.length}</b><small>${sl.length} kena SL · ${wk.length} waktu habis</small></button>
+      <button class="pb-card ${gateOk ? "c-good" : "c-bad"} is-static" tabindex="-1"><span>Gerbang pasar</span><b class="${gateOk ? "up" : "down"}">${gateOk ? "Buka" : "Tutup"}</b><small>IHSG ${App.esc(m?.pasar?.status || "–")}</small></button>`;
+  }
+
   function update(){
+    const cd = document.getElementById("sa-cards"); if(cd) cd.innerHTML = cards();
     const c = document.getElementById("sa-cand"); if(c) c.innerHTML = candidates();
     const r = document.getElementById("sa-rec"); if(r && sweep) r.innerHTML = record();
     const j = document.getElementById("sa-jl"); if(j) j.innerHTML = journal();
@@ -188,7 +205,9 @@
     const en = e.target.closest("[data-saentry]");
     if(en){ e.stopPropagation(); addToJurnal(en.dataset.saentry); return; }
     const jb = e.target.closest("[data-sajl]");
-    if(jb){ jlFilter = jb.dataset.sajl; update(); return; }
+    if(jb){ jlFilter = jb.dataset.sajl; update(); if(jb.classList.contains("pb-card")) document.getElementById("sa-jl")?.scrollIntoView({behavior:"smooth", block:"start"}); return; }
+    const go = e.target.closest("[data-sago]");
+    if(go){ document.getElementById(go.dataset.sago)?.scrollIntoView({behavior:"smooth", block:"start"}); return; }
     const b = e.target.closest("[data-sarec]");
     if(!b) return;
     recFilter = b.dataset.sarec; update();

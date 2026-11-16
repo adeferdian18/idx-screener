@@ -33,6 +33,11 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 FONNTE_TOKEN = os.getenv("FONNTE_TOKEN", "")
 WA_TARGET = os.getenv("WA_TARGET", "")
+# Email (opsional): Gmail dengan App Password. Diisi lewat GitHub Secrets, tidak pernah ditulis di kode.
+SMTP_USER = os.getenv("SMTP_USER", "")          # alamat Gmail pengirim
+SMTP_PASS = os.getenv("SMTP_PASS", "")          # App Password 16 huruf dari akun Google
+EMAIL_TO = os.getenv("EMAIL_TO", "")            # penerima, boleh beberapa dipisah koma
+SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
 
 AKTIF = ("entry_hari_ini", "entry_baru", "berjalan", "kena_tp1")
 
@@ -46,8 +51,36 @@ def pc(x, d=1):
 
 
 # ---------------------------------------------------------------- Kirim
+def send_email(text):
+    if not (SMTP_USER and SMTP_PASS and EMAIL_TO):
+        print("(Email belum diatur: isi secret SMTP_USER, SMTP_PASS, EMAIL_TO)")
+        return
+    import re
+    import smtplib
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+    first = re.sub(r"<[^>]+>", "", text.strip().split("\n")[0])[:120]
+    plain = re.sub(r"<[^>]+>", "", text)
+    html = ("<div style=\"font-family:Arial,sans-serif;font-size:14px;line-height:1.55;color:#17242A\">"
+            + text.replace("\n", "<br>")
+            + f"<br><br><a href=\"{SITE_URL}\">Buka Meja Pantau IDX</a>"
+            + "<br><small style=\"color:#6b7280\">Harga dari Yahoo Finance tertunda ±15 menit. Alat bantu analisis, bukan rekomendasi beli atau jual.</small></div>")
+    msg = MIMEMultipart("alternative")
+    msg["Subject"], msg["From"], msg["To"] = first, f"Meja Pantau IDX <{SMTP_USER}>", EMAIL_TO
+    msg.attach(MIMEText(plain, "plain", "utf-8"))
+    msg.attach(MIMEText(html, "html", "utf-8"))
+    try:
+        with smtplib.SMTP_SSL(SMTP_HOST, 465, timeout=30) as sv:
+            sv.login(SMTP_USER, SMTP_PASS)
+            sv.sendmail(SMTP_USER, [x.strip() for x in EMAIL_TO.split(",") if x.strip()], msg.as_string())
+        print("Email terkirim.")
+    except Exception as e:  # noqa: BLE001
+        print("Email error:", str(e)[:300])
+
+
 def send(text):
     print(text)
+    send_email(text)
     if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
         chunks, buf = [], ""
         for line in text.split("\n"):
@@ -94,6 +127,11 @@ def daily():
     new = [z for z in rows if (z.get("entry") or {}).get("status") == "entry_hari_ini"]
     lines += ["", f"🎯 <b>Entry trigger hari ini ({len(new)})</b>"]
     lines += [entry_line(z) for z in new] or ["Tidak ada."]
+
+    sa = [z for z in rows if (z.get("setup_a") or {}).get("lolos")]
+    lines += ["", f"⭐ <b>Lolos Setup A+ ({len(sa)})</b> · pasang buy-stop, TP 1R, maks 20 hari"]
+    lines += [f"• <b>{z['kode']}</b> RS {z['rs_rating']} · buy-stop {rp(z['setup_a']['entry'])} · "
+              f"SL {rp(z['setup_a']['sl'])} · TP {rp(z['setup_a']['tp'])}" for z in sa] or ["Tidak ada."]
 
     setup = sorted((z for z in rows if (z.get("entry") or {}).get("status") == "setup"),
                    key=lambda z: -(z.get("skor_setup") or 0))

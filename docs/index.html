@@ -686,7 +686,8 @@ tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
       <div class="mkt" id="mkt"></div>
       <h2>Sinyal entry</h2>
       <p>Dua jenis entry trigger: (1) VCP, harga tutup di atas pivot dengan volume minimal 1,5× rata-rata 50 hari; (2) pembalikan pemimpin RS (↺), RS Line high 50 hari saat harga terkoreksi lalu candle bullish. Aktif berarti trigger hari ini sampai 10 hari bursa lalu yang belum kena TP2 atau SL, ditambah yang sempat kena SL tapi sudah naik lagi di atasnya (oranye).</p>
-      <div class="toolbar" id="e-filters"></div>
+      <div class="pb-cards" id="e-cards"></div>
+      <div class="pb-tabs" id="e-filters" role="tablist" aria-label="Kelompok sinyal momentum"></div>
       <div class="table-wrap"><table id="e-table"><thead></thead><tbody></tbody></table></div>
       <h2 class="mt-4">Watchlist Trend Template</h2>
       <div class="toolbar">
@@ -847,7 +848,7 @@ tbody tr:focus-visible,.pb-tab:focus-visible{outline-offset:-2px}
 <script>
 "use strict";
 const S = { quotes:null, screener:null, actions:null, momentum:null, evFilter:"semua", sort:{key:"peringkat",dir:1},
-  mFilter:"lolos", msort:{key:"rs_rating",dir:-1}, eFilter:"aktif" };
+  mFilter:"lolos", msort:{key:"rs_rating",dir:-1}, eFilter:"trigger" };
 const $ = (s, el=document) => el.querySelector(s);
 /* Tombol istilah ⓘ: label + tombol kecil yang membuka arti dari glosarium (js/panduan.js) */
 const termI = (key, label = "") => `${label}<button type="button" class="term-i" data-term="${key}" aria-expanded="false" aria-label="Arti istilah ${label || key.toUpperCase()}">i</button>`;
@@ -1260,11 +1261,27 @@ function renderMomentum(){
 }
 /* ---------- Sinyal entry ---------- */
 const E_GROUPS = [
-  ["aktif","Aktif",["entry_hari_ini","entry_baru","berjalan","kena_tp1","sl_naik_lagi"]],
-  ["setup","Setup & VCP",["setup","vcp","volume_kurang","extended"]],
+  ["trigger","Entry trigger",["entry_hari_ini","entry_baru"]],
+  ["berjalan","Berjalan",["berjalan","kena_tp1"]],
   ["tp","Kena TP",["kena_tp2","tp1_impas"]],
-  ["sl","Kena SL & time stop",["kena_sl","time_stop"]],
+  ["sl","Kena SL",["kena_sl","sl_naik_lagi"]],
+  ["time","Time stop",["time_stop"]],
+  ["setup","Menunggu trigger",["setup","vcp"]],
+  ["lain","Volume kurang / extended",["volume_kurang","extended"]],
+  ["semua","Semua sinyal",null],
 ];
+function renderECards(){
+  const all = (S.momentum?.rows || []).filter(r => r.entry?.status), by = st => all.filter(r => st.includes(r.entry.status));
+  const today = by(["entry_hari_ini"]), past = by(["entry_baru"]), run = by(["berjalan","kena_tp1"]);
+  const tp = by(["kena_tp2","tp1_impas"]), sl = by(["kena_sl","sl_naik_lagi"]), wait = by(["setup","vcp"]);
+  const p = S.momentum?.pasar || {}, codes = xs => esc(xs.slice(0, 6).map(r => r.kode).join(", ") || "belum ada");
+  $("#e-cards").innerHTML = `
+    <button class="pb-card c-blue" data-ef="trigger"><span>Entry trigger hari ini</span><b>${today.length}</b><small>${codes(today)}</small></button>
+    <button class="pb-card c-blue" data-ef="trigger"><span>Entry trigger 1–10 hari lalu</span><b>${past.length}</b><small>${run.length} masih berjalan · ${tp.length} kena TP · ${sl.length} kena SL</small></button>
+    <button class="pb-card c-warn" data-ef="setup"><span>Menunggu entry trigger</span><b>${wait.length}</b><small>VCP terbentuk / dekat pivot</small></button>
+    <button class="pb-card c-good" data-ef="tp"><span>Kena TP</span><b>${tp.length}</b><small>${codes(tp)}</small></button>
+    <button class="pb-card c-bad is-static" tabindex="-1"><span>IHSG terhadap MA50</span><b class="${cls(p.ihsg / p.ma50 - 1)}">${isNum(p.ma50) ? pct(p.ihsg / p.ma50 - 1, 2) : "–"}</b><small>${fmt(p.ihsg, 2)} vs MA50 ${fmt(p.ma50, 2)} · ${esc(p.status || "")}</small></button>`;
+}
 function stClass(st){
   if(["entry_hari_ini","entry_baru","berjalan","kena_tp1","kena_tp2","setup"].includes(st)) return "st-good";
   if(["sl_naik_lagi","extended","volume_kurang","tp1_impas","time_stop"].includes(st)) return "st-warn";
@@ -1273,11 +1290,12 @@ function stClass(st){
 }
 const tgl = s => s ? new Date(s + "T00:00:00").toLocaleDateString("id-ID",{day:"numeric",month:"short"}) : "–";
 function eRows(group){
-  const sts = E_GROUPS.find(g => g[0] === group)[2];
-  return (S.momentum?.rows || []).filter(r => r.entry?.status && sts.includes(r.entry.status));
+  const sts = (E_GROUPS.find(g => g[0] === group) || E_GROUPS[0])[2];
+  return (S.momentum?.rows || []).filter(r => r.entry?.status && (!sts || sts.includes(r.entry.status)));
 }
 function renderSignals(){
-  $("#e-filters").innerHTML = E_GROUPS.map(([k,l]) => `<button class="chip" data-ef="${k}" aria-pressed="${S.eFilter===k}">${l} (${eRows(k).length})</button>`).join("");
+  renderECards();
+  $("#e-filters").innerHTML = E_GROUPS.map(([k,l]) => `<button class="pb-tab" role="tab" data-ef="${k}" aria-selected="${S.eFilter===k}">${l}<i>${S.momentum ? eRows(k).length : 0}</i></button>`).join("");
   const t = $("#e-table");
   t.tHead.innerHTML = "<tr><th>Kode</th><th>Status</th><th>Tgl trigger</th><th>Harga</th><th>Entry</th><th>SL</th><th>TP1 (2R)</th><th>TP2 (3R)</th><th>R saat ini" + termI("r") + "</th><th>RS</th></tr>";
   if(!S.momentum){ t.tBodies[0].innerHTML = ""; return; }
@@ -1290,7 +1308,7 @@ function renderSignals(){
       <td class="lv-tp">${fmt(e.tp1)}</td><td class="lv-tp">${fmt(e.tp2)}</td>
       <td class="${cls(e.r_sekarang)}">${isNum(e.r_sekarang) ? (e.r_sekarang>0?"+":"") + fmt(e.r_sekarang,1) + "R" : (isNum(e.jarak_pivot) ? pct(e.jarak_pivot,1) + " ke entry" : "–")}</td>
       <td>${r.rs_rating ?? "–"}</td></tr>`; }).join("")
-    : `<tr><td colspan="10" class="td-empty">Tidak ada saham di kelompok ini hari ini.${weak && S.eFilter==="aktif" ? " Pasar sedang " + esc(S.momentum.pasar.status) + ": sesuai modul, ini fase menyusun watchlist, bukan agresif entry." : ""}</td></tr>`;
+    : `<tr><td colspan="10" class="td-empty">Tidak ada saham di kelompok ini hari ini.${weak && S.eFilter==="trigger" ? " Pasar sedang " + esc(S.momentum.pasar.status) + ": sesuai modul, ini fase menyusun watchlist, bukan agresif entry." : ""}</td></tr>`;
 }
 
 /* ---------- Rencana posisi & kalkulator lot ---------- */
@@ -2536,16 +2554,16 @@ setInterval(loadAll, 60_000);
 if("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)))
   addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(err => console.warn("Service worker gagal didaftarkan:", err)));
 </script>
-<script src="js/setup.js?v=20261116c" defer></script>
-<script src="js/peta.js?v=20261116c" defer></script>
-<script src="js/kepemilikan.js?v=20261116c" defer></script>
-<script src="js/kalkulator.js?v=20261116c" defer></script>
-<script src="js/jurnal.js?v=20261116c" defer></script>
-<script src="js/lonjakan.js?v=20261116c" defer></script>
-<script src="js/grafikpro.js?v=20261116c" defer></script>
-<script src="js/grup.js?v=20261116c" defer></script>
-<script src="js/porto.js?v=20261116c" defer></script>
-<script src="js/panduan.js?v=20261116c" defer></script>
+<script src="js/setup.js?v=20261117a" defer></script>
+<script src="js/peta.js?v=20261117a" defer></script>
+<script src="js/kepemilikan.js?v=20261117a" defer></script>
+<script src="js/kalkulator.js?v=20261117a" defer></script>
+<script src="js/jurnal.js?v=20261117a" defer></script>
+<script src="js/lonjakan.js?v=20261117a" defer></script>
+<script src="js/grafikpro.js?v=20261117a" defer></script>
+<script src="js/grup.js?v=20261117a" defer></script>
+<script src="js/porto.js?v=20261117a" defer></script>
+<script src="js/panduan.js?v=20261117a" defer></script>
 <script>
 /* Aksesibilitas (fase 6): baris/kartu yang bisa diklik dapat dijangkau keyboard */
 (function(){
