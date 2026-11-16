@@ -1,0 +1,4 @@
+{
+  "catatan": "Hari libur bursa BEI (selain Sabtu/Minggu). Baru berisi libur bertanggal tetap. Tambahkan libur keagamaan dan cuti bersama sesuai kalender resmi BEI (idx.co.id) setiap tahun, format YYYY-MM-DD.",
+  "tanggal": ["2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01", "2027-05-01", "2027-06-01", "2027-08-17", "2027-12-25"]
+}

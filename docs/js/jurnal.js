@@ -61,6 +61,7 @@
       <label>Stop loss<input name="sl" type="number" step="any" min="0"></label>
       <label>Target 1<input name="t1" type="number" step="any" min="0"></label>
       <label>Lot<input name="lot" type="number" step="1" min="1" required></label>
+      <label>Maks hari bursa<input name="maks" type="number" step="1" min="0" value="20" title="0 = tanpa batas waktu"></label>
       <label>Status<select name="status"><option value="rencana">Rencana</option><option value="terbuka">Terbuka</option></select></label>
       <label class="jurnal-wide">Catatan<input name="catatan" maxlength="300" placeholder="Alasan masuk, setup, dll."></label>
       <div><button class="jurnal-btn solid" type="submit">Simpan</button></div>
@@ -87,13 +88,13 @@
       const d = Object.fromEntries(new FormData(f));
       const a = load();
       a.push({ id:newId(), tgl:d.tgl || today(), kode:String(d.kode).trim().toUpperCase().replace(".JK",""),
-        entry:num(d.entry), sl:num(d.sl), t1:num(d.t1), t2:null, lot:num(d.lot), catatan:d.catatan || "", status:d.status || "rencana" });
-      save(a); f.reset(); f.querySelector('[name=tgl]').value = today(); update(el);
+        entry:num(d.entry), sl:num(d.sl), t1:num(d.t1), t2:null, lot:num(d.lot), maks:num(d.maks) ?? 20, catatan:d.catatan || "", status:d.status || "rencana" });
+      save(a); f.reset(); f.querySelector('[name=tgl]').value = today(); f.querySelector('[name=maks]').value = 20; update(el);
     } else if(f.dataset.j === "close"){
       const k = num(f.querySelector("input").value);
       if(k == null || k <= 0){ f.querySelector("input").focus(); return; }
       const a = load(), e = a.find(x => x.id === f.dataset.id);
-      if(e){ e.status = "selesai"; e.harga_keluar = k; e.tgl_keluar = today(); save(a); }
+      if(e){ e.status = "selesai"; e.harga_keluar = k; e.tgl_keluar = today(); e.alasan_keluar = reason(e, k); save(a); }
       closingId = null; update(el);
     }
   }
@@ -105,11 +106,38 @@
     const id = b.dataset.id, act = b.dataset.act, a = load(), e = a.find(x => x.id === id);
     if(act === "batal-tutup"){ closingId = null; return update(el); }
     if(!e) return;
-    if(act === "mulai"){ e.status = "terbuka"; if(!e.tgl) e.tgl = today(); }
+    if(act === "mulai"){ e.status = "terbuka"; e.tgl = today(); }
     else if(act === "tutup"){ closingId = id; return update(el); }
     else if(act === "batal"){ e.status = "batal"; e.tgl_keluar = today(); }
     else if(act === "hapus"){ if(!confirm(`Hapus catatan ${e.kode}? Tindakan ini tidak bisa dibatalkan.`)) return; a.splice(a.indexOf(e), 1); }
     save(a); update(el);
+  }
+
+  const maksOf = e => { const m = num(e.maks); return m == null ? (/Setup A\+/.test(e.catatan || "") ? 20 : 0) : m; };
+  const daysOf = e => App.hariBursa ? App.hariBursa(e.tgl, today()) : 0;
+  function reason(e, k){
+    const sl = num(e.sl), t1 = num(e.t1);
+    if(sl != null && k <= sl) return "Kena SL";
+    if(t1 != null && k >= t1) return "Kena TP";
+    const m = maksOf(e);
+    if(m && daysOf(e) >= m) return `Waktu habis (${m} hari bursa)`;
+    return "Keluar manual";
+  }
+  // Posisi terbuka yang sudah melewati batas hari bursa dianggap out di harga terakhir
+  function autoOut(a){
+    let n = 0;
+    for(const e of a){
+      if(e.status !== "terbuka") continue;
+      const m = maksOf(e);
+      if(!m || daysOf(e) < m) continue;
+      const p = price(e.kode) ?? num(e.entry);
+      if(p == null) continue;
+      e.status = "selesai"; e.harga_keluar = p; e.tgl_keluar = today();
+      e.alasan_keluar = `Waktu habis (${m} hari bursa), otomatis keluar di harga terakhir`;
+      n++;
+    }
+    if(n) save(a);
+    return n;
   }
 
   function stats(a){
@@ -150,8 +178,13 @@
     return list.map(e => {
       const p = price(e.kode), { pl, r } = calc(e, p), sl = num(e.sl), t1 = num(e.t1);
       let flag = "";
-      if(p != null && sl != null && p <= sl) flag = `<span class="pill jurnal-sl">kena SL</span>`;
-      else if(p != null && t1 != null && p >= t1) flag = `<span class="pill jurnal-t1">capai T1</span>`;
+      if(p != null && sl != null && p <= sl) flag = `<span class="pill jurnal-sl">kena SL · jual sesuai rencana</span>`;
+      else if(p != null && t1 != null && p >= t1) flag = `<span class="pill jurnal-t1">capai TP · ambil untung</span>`;
+      const m = maksOf(e);
+      if(e.status === "terbuka" && m){
+        const d = daysOf(e), left = m - d;
+        flag += ` <span class="pill ${left <= 3 ? "jurnal-sl" : ""}">hari ${d}/${m}${left > 0 ? ` · sisa ${left}` : " · waktu habis"}</span>`;
+      }
       const cell = (l, v, c="") => `<div class="cell"><span>${l}</span><b class="${c}">${v}</b></div>`;
       const closing = closingId === e.id ? `<form class="jurnal-close" data-j="close" data-id="${App.esc(e.id)}">
           <span class="hint">Harga keluar</span><input type="number" step="any" min="0" required value="${p ?? num(e.entry) ?? ""}">
@@ -176,16 +209,17 @@
     const list = a.filter(e => e.status === "selesai" || e.status === "batal")
       .sort((x,y) => String(y.tgl_keluar||y.tgl).localeCompare(String(x.tgl_keluar||x.tgl)));
     if(!list.length) return App.empty("Belum ada riwayat.");
-    return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Status</th><th>Masuk</th><th>Keluar</th><th>Entry</th><th>Harga keluar</th><th>Lot</th><th>P/L (Rp)</th><th>R${App.term("r")}</th><th></th></tr></thead><tbody>
+    return `<div class="table-wrap"><table><thead><tr><th>Kode</th><th>Status</th><th>Masuk</th><th>Keluar</th><th>Entry</th><th>Harga keluar</th><th>Lot</th><th>P/L (Rp)</th><th>R${App.term("r")}</th><th>Alasan keluar</th><th></th></tr></thead><tbody>
       ${list.map(e => { const { pl, r } = e.status === "selesai" ? calc(e, e.harga_keluar) : {};
         return `<tr><td><button class="jurnal-code" data-code="${App.esc(e.kode)}">${App.esc(e.kode)}</button></td><td>${e.status === "selesai" ? "Selesai" : "Batal"}</td>
         <td>${App.esc(e.tgl || "")}</td><td>${App.esc(e.tgl_keluar || "")}</td><td>${App.fmt(num(e.entry))}</td><td>${App.fmt(num(e.harga_keluar))}</td><td>${App.fmt(num(e.lot))}</td>
         <td class="${App.cls(pl)}">${App.fmt(pl)}</td><td class="${App.cls(r)}">${r == null ? "–" : App.fmt(r, 2)}</td>
+        <td>${App.esc(e.status === "batal" ? "Dibatalkan" : (e.alasan_keluar || "–"))}</td>
         <td><button class="jurnal-btn danger" data-act="hapus" data-id="${App.esc(e.id)}">Hapus</button></td></tr>`; }).join("")}
     </tbody></table></div>`;
   }
 
-  const COLS = ["id","tgl","kode","entry","sl","t1","t2","lot","catatan","status","tgl_keluar","harga_keluar"];
+  const COLS = ["id","tgl","kode","entry","sl","t1","t2","lot","maks","catatan","status","tgl_keluar","harga_keluar","alasan_keluar"];
   function exportCSV(){
     const q = v => { const s = v == null ? "" : String(v); return /[",;\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; };
     const csv = [COLS.join(","), ...load().map(e => COLS.map(c => q(e[c])).join(","))].join("\n");
@@ -217,7 +251,7 @@
       const ST = ["rencana","terbuka","selesai","batal"];
       const clean = rows.filter(r => r && r.kode).map(r => ({
         id: String(r.id || newId()), tgl: String(r.tgl || ""), kode: String(r.kode).trim().toUpperCase(),
-        entry:num(r.entry), sl:num(r.sl), t1:num(r.t1), t2:num(r.t2), lot:num(r.lot), catatan:String(r.catatan || ""),
+        entry:num(r.entry), sl:num(r.sl), t1:num(r.t1), t2:num(r.t2), lot:num(r.lot), maks:num(r.maks) ?? undefined, catatan:String(r.catatan || ""), alasan_keluar: r.alasan_keluar ? String(r.alasan_keluar) : undefined,
         status: ST.includes(r.status) ? r.status : "rencana", tgl_keluar: r.tgl_keluar ? String(r.tgl_keluar) : undefined, harga_keluar: num(r.harga_keluar) ?? undefined }));
       const a = load(), ids = new Set(a.map(e => e.id)); let n = 0;
       clean.forEach(e => { if(!ids.has(e.id)){ a.push(e); ids.add(e.id); n++; } });
@@ -227,6 +261,7 @@
 
   function update(el){
     const a = load();
+    autoOut(a);
     // jangan menimpa form tutup yang sedang diketik
     const typing = el.querySelector('[data-j=close] input') === document.activeElement;
     el.querySelector('[data-j=stats]').innerHTML = stats(a);

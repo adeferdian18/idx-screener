@@ -2393,10 +2393,28 @@ addEventListener("hashchange", routeFromHash);
   if(t && t.dataset.tab !== "momentum") setTimeout(() => t.click(), 0);
   else { const cur = document.querySelector(".tab[aria-current=page]"); setPageHead(cur); if(location.hash.slice(1) !== "momentum") history.replaceState(null, "", "#momentum"); }
 }
+/* Hari libur bursa (docs/data/libur.json) — dipakai chip status pasar & hitung hari bursa di Jurnal */
+const LIBUR = new Set();
+App.LIBUR = LIBUR;
+fetch("data/libur.json").then(r => r.ok ? r.json() : null).then(d => { (d?.tanggal || []).forEach(t => LIBUR.add(t)); renderMktChip(); }).catch(() => {});
+// Jumlah hari bursa setelah tanggal `from` sampai `to` (inklusif), YYYY-MM-DD
+App.hariBursa = (from, to) => {
+  if(!from) return 0;
+  const ymd = x => `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
+  const d = new Date(from + "T00:00:00"), end = new Date((to || ymd(new Date())) + "T00:00:00");
+  let n = 0;
+  for(d.setDate(d.getDate() + 1); d <= end; d.setDate(d.getDate() + 1)){
+    const k = ymd(d), w = d.getDay();
+    if(w && w !== 6 && !LIBUR.has(k)) n++;
+  }
+  return n;
+};
 /* Status pasar BEI menurut jam WIB (Jumat istirahat lebih panjang) */
 function marketStatus(d = new Date()){
   const w = new Date(d.getTime() + (d.getTimezoneOffset() + 420) * 60000), day = w.getDay(), m = w.getHours() * 60 + w.getMinutes();
   if(day === 0 || day === 6) return ["Libur akhir pekan", "off"];
+  const ymd = `${w.getFullYear()}-${String(w.getMonth() + 1).padStart(2, "0")}-${String(w.getDate()).padStart(2, "0")}`;
+  if(LIBUR.has(ymd)) return ["Libur bursa", "off"];
   const fri = day === 5, s1End = fri ? 690 : 720, s2Start = fri ? 840 : 810;
   if(m >= 525 && m < 540) return ["Pra-buka", "pre"];
   if(m >= 540 && m < s1End) return ["Sesi 1", "open"];
@@ -2554,16 +2572,16 @@ setInterval(loadAll, 60_000);
 if("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)))
   addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(err => console.warn("Service worker gagal didaftarkan:", err)));
 </script>
-<script src="js/setup.js?v=20261117a" defer></script>
-<script src="js/peta.js?v=20261117a" defer></script>
-<script src="js/kepemilikan.js?v=20261117a" defer></script>
-<script src="js/kalkulator.js?v=20261117a" defer></script>
-<script src="js/jurnal.js?v=20261117a" defer></script>
-<script src="js/lonjakan.js?v=20261117a" defer></script>
-<script src="js/grafikpro.js?v=20261117a" defer></script>
-<script src="js/grup.js?v=20261117a" defer></script>
-<script src="js/porto.js?v=20261117a" defer></script>
-<script src="js/panduan.js?v=20261117a" defer></script>
+<script src="js/setup.js?v=20261117b" defer></script>
+<script src="js/peta.js?v=20261117b" defer></script>
+<script src="js/kepemilikan.js?v=20261117b" defer></script>
+<script src="js/kalkulator.js?v=20261117b" defer></script>
+<script src="js/jurnal.js?v=20261117b" defer></script>
+<script src="js/lonjakan.js?v=20261117b" defer></script>
+<script src="js/grafikpro.js?v=20261117b" defer></script>
+<script src="js/grup.js?v=20261117b" defer></script>
+<script src="js/porto.js?v=20261117b" defer></script>
+<script src="js/panduan.js?v=20261117b" defer></script>
 <script>
 /* Aksesibilitas (fase 6): baris/kartu yang bisa diklik dapat dijangkau keyboard */
 (function(){

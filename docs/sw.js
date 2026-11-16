@@ -3,7 +3,7 @@
    - data/*.json: jaringan dulu, jatuh ke cache bila offline.
    - Font Google & pustaka CDN: cache lalu perbarui di latar (stale-while-revalidate).
    Naikkan VERSION saat aset kerangka berubah; cache versi lama dihapus saat activate. */
-const VERSION = "20261117a";
+const VERSION = "20261117b";
 const SHELL = `shell-${VERSION}`, DATA = "data-v1", EXT = "ext-v1";
 const ASSETS = ["./", "index.html", "favicon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "manifest.webmanifest",
   ...["setup","peta","kepemilikan","kalkulator","jurnal","lonjakan","grafikpro","grup","porto","panduan"].map(n => `js/${n}.js?v=${VERSION}`)];

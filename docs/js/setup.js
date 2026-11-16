@@ -120,7 +120,7 @@
     let arr; try{ arr = JSON.parse(App.store.get("jurnal") || "[]"); }catch{ arr = []; }
     if(!Array.isArray(arr)) arr = [];
     const d = new Date(), tgl = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
-    arr.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2,6), tgl, kode, entry: s.entry, sl: s.sl, t1: s.tp, t2: null, lot,
+    arr.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2,6), tgl, kode, entry: s.entry, sl: s.sl, t1: s.tp, t2: null, lot, maks: 20,
       catatan: `Setup A+ (RS ${z.rs_rating}). Buy-stop ${s.entry}, TP 1R ${s.tp}, SL ${s.sl}. Maks pegang 20 hari bursa, lewat itu jual (out).`, status: "rencana" });
     App.store.set("jurnal", JSON.stringify(arr));
     alert(`${kode} tersimpan di Jurnal sebagai rencana${lot ? ` (${lot} lot dari pengaturan Kalkulator)` : ". Isi modal di Kalkulator agar lot dihitung otomatis"}.`);
