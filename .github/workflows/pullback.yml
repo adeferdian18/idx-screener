@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 # Sengaja TIDAK memakai grup `site-data`: GitHub hanya menyimpan SATU run tertunda per grup dan membatalkan
 # yang lebih lama. Run pullback yang lama (unduh ~900 saham) di grup itu bisa membuat run daily.yml yang sedang
@@ -64,6 +65,7 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Simpan data ke website
         run: |
           git config user.name "screener-bot"

@@ -51,7 +51,7 @@ def pc(x, d=1):
 
 
 # ---------------------------------------------------------------- Kirim
-def send_email(text):
+def send_email(text, subject=None):
     if not (SMTP_USER and SMTP_PASS and EMAIL_TO):
         print("(Email belum diatur: isi secret SMTP_USER, SMTP_PASS, EMAIL_TO)")
         return
@@ -66,7 +66,7 @@ def send_email(text):
             + f"<br><br><a href=\"{SITE_URL}\">Buka Meja Pantau IDX</a>"
             + "<br><small style=\"color:#6b7280\">Harga dari Yahoo Finance tertunda ±15 menit. Alat bantu analisis, bukan rekomendasi beli atau jual.</small></div>")
     msg = MIMEMultipart("alternative")
-    msg["Subject"], msg["From"], msg["To"] = first, f"Meja Pantau IDX <{SMTP_USER}>", EMAIL_TO
+    msg["Subject"], msg["From"], msg["To"] = subject or first, f"Meja Pantau IDX <{SMTP_USER}>", EMAIL_TO
     msg.attach(MIMEText(plain, "plain", "utf-8"))
     msg.attach(MIMEText(html, "html", "utf-8"))
     try:
@@ -78,9 +78,35 @@ def send_email(text):
         print("Email error:", str(e)[:300])
 
 
+def notify_trigger(title, text):
+    """Kabar TRIGGER ENTRY saja ke email pemilik.
+    Jalur utama tanpa password: buat issue GitHub di repo ini (GITHUB_TOKEN bawaan Actions). GitHub mengirim
+    email notifikasi issue baru ke pemilik repo yang 'Watching', lalu issue langsung ditutup supaya rapi.
+    Jalur cadangan: SMTP bila secret SMTP_USER/SMTP_PASS/EMAIL_TO diisi."""
+    import re
+    body = re.sub(r"<[^>]+>", "**", text).replace("****", "")
+    token, repo = os.getenv("GITHUB_TOKEN", ""), os.getenv("GITHUB_REPOSITORY", "")
+    if token and repo:
+        api = f"https://api.github.com/repos/{repo}/issues"
+        hdr = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+        try:
+            r = requests.post(api, headers=hdr, timeout=30, json={
+                "title": title, "labels": ["trigger"],
+                "body": body + f"\n\n{SITE_URL}\n\n_Harga tertunda ±15 menit. Alat bantu, bukan rekomendasi beli/jual._"})
+            if r.ok:
+                requests.patch(f"{api}/{r.json()['number']}", headers=hdr, timeout=30, json={"state": "closed"})
+                print("Notifikasi trigger dikirim (issue GitHub #%s)." % r.json()["number"])
+            else:
+                print("Issue error:", r.status_code, r.text[:200])
+        except Exception as e:  # noqa: BLE001
+            print("Issue error:", str(e)[:200])
+    else:
+        print("(GITHUB_TOKEN tidak ada, notifikasi issue dilewati)")
+    send_email(text, subject=title)
+
+
 def send(text):
     print(text)
-    send_email(text)
     if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
         chunks, buf = [], ""
         for line in text.split("\n"):
@@ -283,6 +309,10 @@ def intraday():
     STATE.write_text(json.dumps(state), encoding="utf-8")
     if msgs:
         send(alert_text(now, msgs))
+        trig = [x for x in msgs if x.startswith("⚡")]
+        if trig:
+            kode = ", ".join(sorted({x.split("<b>")[1].split("</b>")[0] for x in trig}))
+            notify_trigger(f"⚡ Trigger entry {kode} · {now:%H:%M} WIB", alert_text(now, trig))
     else:
         print(f"{now:%H:%M}: {len(codes)} saham dipantau, belum ada yang menembus entry/SL/TP.")
 
@@ -414,6 +444,9 @@ def pullback_daily(session="close"):
         lines += ["", f"Detail: {SITE_URL}",
                   "<i>Data Yahoo Finance. Alat bantu riset, bukan rekomendasi beli/jual.</i>"]
         send("\n".join(lines))
+        if baru:
+            notify_trigger(f"🎯 Trigger pullback {', '.join(r['code'] for r in baru)} · {lbl} {as_of}",
+                           "\n".join([f"📐 <b>PULLBACK IDX</b> · {lbl} {as_of}", ""] + [pb_entry_text(r, s1) for r in baru]))
     PB_STATE.parent.mkdir(exist_ok=True)
     PB_STATE.write_text(json.dumps(dict(sorted(state.items())), indent=0), encoding="utf-8")
 
