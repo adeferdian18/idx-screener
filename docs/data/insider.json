@@ -1,10 +1,241 @@
 {
- "updated": "2026-11-16T18:05+07:00",
+ "updated": "2026-11-17T15:58+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 81
+  "news": 77
  },
  "transactions": [
+  {
+   "id": "20e6def73569",
+   "date": "2026-11-17",
+   "code": "FILM",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "jual",
+   "shares": 214130000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 9.3,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "repo",
+   "is_repo": true,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUWZHTHUwVV9tUV9WOWw3ei1zNmc5d01LbVB3VWhjb1p0Yjh0YXJES2pvel9ySHpFYUNXSzVKTEp0Q0FqTXUxUS1YM1p0WjlHX0R4VThSS2ZFZEhfTEYzX0dmdTlOYUdyVVFrYjNLX1FPXzhYRFhQNmF3RG9Zbk9SWW9LMWxNcU44RnZTTmxzLTJ1R0w3Umd6Tk5IYVBVdw?oc=5",
+   "title": "Samuel Sekuritas Lepas 214,13 Juta Saham FILM via Repo, Kepemilikan Jadi 9,30%",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "a8682984b144",
+   "date": "2026-11-17",
+   "code": "INET",
+   "party": "PT Cakrawala Nexus Investama",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 6685000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/cakrawala-nexus-investama-borong-6685-miliar-saham-inet-rp-2-triliun-kuasai-2987/",
+   "title": "Cakrawala Nexus Investama Borong 6,685 Miliar Saham INET Rp 2 Triliun, Kuasai 29,87%",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "218e80a8c177",
+   "date": "2026-11-17",
+   "code": "VISI",
+   "party": "David Dwiputra",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 525700,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRlhkc3dXSFl3M2xaVmZkeXZjTERGVm1aVzdmcUh0LUpIZzVTazAzelE1ZlNhNGNYSkJLei1FR0lQRXBzYWR3dHBPRklGdFJwbi1jcjI1R1JYWVlyWGZCWkpNOTUxNTlxNl9yWWNfSU1ha0JpQW1HUFhvd2wzd2ZHSHJ0cS02QlNaYVFoMlpub3QzSGJISkxuY0NJRkF1Rm42SUdiU2xlOFpla2tTc195bkpBUUJQX1QwUHJvTEtaa2hBYWZsNVQ0?oc=5",
+   "title": "Bos VISI David Dwiputra Borong 525.700 Saham, Kepemilikan Melonjak Lebih dari Dua Kali Lipat",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "1883e1ff5a0d",
+   "date": "2026-11-17",
+   "code": "MMIX",
+   "party": "Pukul Rata Kanan",
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Industry.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRU1EOFVNWWRJZkpDS1FkdlRmQ3JNYS0xTk9Seng4WjZLOHhJT0lHNXNMWVNDcVQwRU94TTJOMHREM3lXU0NzbEpPUVV1ekd2QWhrdnVNVFFIamxkYnVqZ2NUTlZRcHdETEEtMU92MkVqQXNOcHNDcTdXU2VrUHRoU3JyR3hINzdfY0MwdWRtVWZSdUlQQktldlF2Zkd0SjlXWU56dXRLQURpZ1U?oc=5",
+   "title": "Siapa Gabriel Rey? Bos Pukul Rata Kanan Borong Saham MMIX hingga TRUK",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "249a37ed7c99",
+   "date": "2026-11-17",
+   "code": "AKPI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZzdPNWlwLXc3aFdZSVQ5a0ZwSFFuajY2RFJobjZrTFdOM2NIR3p6NldDMjlqRzdBZmVrbzI1OGZvQVdVQ201bnhFMzhiU2tJa3FWbHh4UHBiNS1CdVBUSlZ4ZjY4RWladGdHNWR5cjB0Q0ZXeVFBYU1OV3pkWE9PZDVWdEtWdE0yd1B4dmJCXzNSMTY3Mng4SU42VzhXbDVZZWhrT2l3?oc=5",
+   "title": "Henry Liem Kembali Jual Saham AKPI, Kepemilikan Kini Tersisa 0,3124%",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "66f45edc4a76",
+   "date": "2026-11-17",
+   "code": "INET",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 6680000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 29.89,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUG5BcmZhc0FmbmI3blFkbjhCMm1lUjVKcEM0Q254T3dqVUF3UGRxdTJHNU01N3h0YnE4MkpobUg4VVRLOFpJdkZQbVFMNzRzaXJNV1ZNTV9XVl93MjZ4ZmloNkd6US1NTUh2TkRKUFlPLW11UldnWDhJYjhKb1RVV1ZaZGlLMHhnMHdPYXVwWF9YYS1oSi05eXZQbDA5LXRsSXp1VEN6UnBMQjU5MTlzVEl3ZDZ5MTBfdmw0R2dSUzNmU28tY1VtR3kyRWhULU03dWc?oc=5",
+   "title": "Divestasi Jumbo! Pemegang Saham Mayoritas INET Lepas 6,68 Miliar Saham, Kepemilikan Anjlok Jadi 29,89%",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "10ec4b8a188a",
+   "date": "2026-11-17",
+   "code": "ANTM",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Koridor.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBsRFctWFNGMEVNN29weFFrLTBDZHEwWjdlUVNKNGtwaTV4dnBYUXI3Sm1qUkdIR1JKbGhLNE9jblhVT2FrN242SFJXTkpLT25SQkNjdURsXzRzaUQzcklmZVJn?oc=5",
+   "title": "Investor Asing Lepas Saham ANTM Senilai Rp129,59 Miliar",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "e424fed59569",
+   "date": "2026-11-17",
+   "code": "HEAL",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 2500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUWdLRkdDeTgyTkZPdlJhSUxhMlBKYngxdVYzM1lzYlJ3cGFoZWtRT08tTXVXc0dCYU5uYjhyRUJEWVpoNmdHRGlERF9QSU91d2ZxUjlfS090TWx4WXdaUTB1RjY2MVlVZ2dkME5XbEFfMDF5dG9DT1FzTGhMMUVDS1RseHd2SXJyMmJMMktrb1M1OXRsYkM1NUpxR2JoeHJfUmJUbmlKTmF3SnNpNmprYnFB?oc=5",
+   "title": "Yulisar Khiat tambah kepemilikan saham HEAL sebanyak 2,5 juta lembar",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "1fe6bc79de82",
+   "date": "2026-11-17",
+   "code": "ATLA",
+   "party": "Kembali",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 50000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ085U3dsZ3hnbC1zcDcwdExLUG1OZ3N4eDZlWTBrS3Z3a083SmZYcjBBZnJqVFpfZTZjbFBBNV95V0lxelk1STFaUnhmN2VHdmtsNUZQeHdKRklhQjNPRkNzdnozRGZxSTVPYS01eFJodjh6VmpBbnYzNG9PcndobFFObVdjeTJ1bVV3eXRKcmNwMDFOT1B3eFU2bmxWdUtJSjBZbkU3RmM4bmV6b1RmUWVQYTVGTFk?oc=5",
+   "title": "Komisaris ATLA Kembali Lepas Saham, Total 50 Juta Lembar Dilego dalam Empat Hari",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "563c9e650ff4",
+   "date": "2026-11-16",
+   "code": "VISI",
+   "party": "Tambah Kepemilikan",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdnJlLVJURVBKMzQtWkNvanBZZmExRTEyWUNJTG5JOFRmNEM1S00yODdMU0VGbGdnaktmUkQtT2xkRUNxc3pzWldFT2pJQVhMa1VhQll4dWo1ajhMU3JvSVNienJESW1tdFV1b0JYZXFmV051OFdJRE5rbVlsc0tfZ3NKRnJ0SE5yWkVSTHVYRGNOdHJFY1lHX1d3NHlRV21PUHdBX1FPdlBIYW9ERFHSAaYBQVVfeXFMT0JlRV9aOHhxa0NLaXZldGh2bUQzNGwxTmI3bFk0S19Pc2V6Q0x3aFgtUjhLNkdpaVZ2SXR2aF9iTlk1Z1lKTWplZGxxakpibnp0aV9fNlB2Tk9UejBjSlZYZEtSVW1DNU1ZbmdfLXpjdTJ5REhmcWkxYW5PbGRwZFdGRXdsazN5NzBqTllCRUlXMVpZd2w4ZW54dndYM3U3Qkg1MklLdw?oc=5",
+   "title": "Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "1c49cf70b0e8",
+   "date": "2026-11-16",
+   "code": "VISI",
+   "party": "Tambah Saham Saat Harga",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UdjYzaXNoVnI5Uk1vTGt1RXc0T1lmdDY0LU5qMkE4U2xHcXY1d0loeGlGMHNhQ0NFZFF0NUZWaFpvTlNWeVA0Uk5FMUlNV2FJUjR3aVF6dEdvcGNaalhVanYzaFM4LVhmbjlqWQ?oc=5",
+   "title": "Direktur VISI Tambah Saham Saat Harga Terkoreksi 11,02 Persen",
+   "first_seen": "2026-11-17T15:58+07:00"
+  },
   {
    "id": "500c36babf53",
    "date": "2026-11-16",
@@ -34,16 +265,16 @@
    "role": "direksi_komisaris",
    "action": "beli",
    "shares": 2500000,
-   "price": 474.0,
-   "value": 1185000000.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": 6.56,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/direktur-heal-yulisar-khiat-borong-25-juta-saham-kepemilikan-jadi-656/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQU0czMTg5ckhOT1JYbTVxX2VpcXZZQ05qWVVXdURqWDNfcTNZWkxSd3VVRzRmelJMdDBTMDJkMEIxWDJwZk9RVy1BemtKOU0tZlljTk1FSEpzbnlHVEhsY0dvM0dLa2dfakVaMW5FbkZNX2x0SWxJMUVqcWNMaGhENnBhVGd3Z3FJeHcteGYyTTV3X1dsUVFN?oc=5",
    "title": "Direktur HEAL Yulisar Khiat Borong 2,5 Juta Saham, Kepemilikan Jadi 6,56%",
    "first_seen": "2026-11-16T17:05+07:00"
   },
@@ -64,7 +295,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZ2pNaGFVMzBUNGZZanZwYmstN0dZSmVKS1NaOS1jNlBOb29pQ0M3ZDdqNzFwbWtRZm5aakFmdFRuMWFTU2VyeS1FbWo0czQwVTgtUjBJa2RlMVJvUTZJTkRWTUpzOXQ4dGdyWW1VZnpFVy00VnpUeWVPcFphM2U4N2x4UmlKQnhsT0twRDBNS2tudFExUVFEemMwVEdWMHAxangyU2NOZDduaDRYZGhubk8zM0dycWR5M2RfbFJIWWg0Mkp1dWc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUUxaMDVfX3lUX0phUUJ5ZkQyZ1ZCU3pORFR3SUNvU3ZxbVB2YnlyREFSdDFQaXAyVnVfQmVxMW5RM1k3ZVptTXllaFFROElvdGQ5QS1sMzkweDBOV1BwZUFpdXhUTHNvMEJGQkZaODh0VnFmR0RlelhrRXVCODBRbFc0a19FNEI2MW1XN1pLcmU2eVZmbUZrOHg2VG5sdFI4VS1vUGRIZmpJc1NLMmM0QTVZM3dWXzBXQXlnUVhWRzNBcmlBbnc?oc=5",
    "title": "Bos Multivision Plus Ram Jethmal Punjabi Kembali Borong Saham RAAM, Kepemilikan Makin Tebal!",
    "first_seen": "2026-11-16T17:05+07:00"
   },
@@ -277,6 +508,27 @@
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNLVA1bC1UNVdmNXFzX1ZkTldxSm1aMEs5bFV2S1FTZVpuYnQ1TUZRazdaRzk4Z3Q3NmtwZ2tnY3BCVzlLM2JDT2haY3ZZQlMwS2JKQnE4VVRWUWhlNks2cVdEdlh3Vm5aWE9aNXVUeWlYZ3c0UUhqT0UzNFd4UDdoaDZmSlYtUlhtc0I0NzdiYzlJeVdSVExLWjBnaFA4WlRKdG1XTnFaRXZmeGMwbHc?oc=5",
    "title": "Optimalisasi Struktur Bisnis, PT Indonesian Paradise Property Tbk (INPP) Lepas Saham IGM",
    "first_seen": "2026-11-16T09:22+07:00"
+  },
+  {
+   "id": "d7334a2676d5",
+   "date": "2026-11-15",
+   "code": "BRRC",
+   "party": "PT Rejo Mulya Rejeki Keluar",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Ceritojambi.com",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZ0ZvZDRMNWJfWW5kSFEzRnZSZGphSFVtbVk5R1lFTEFPT2ZwamZXQTBiUV9DUjJMZVBERUo5RDJKNWZUeERNTU9uNVdVQmFIWFZJU1h3Nk9xZDVQOWxxa3RMOEZEcnUtWUd6OF9CTUlvZDlvRU1uaGl4SGdIWGdiTHU0THloYVlENFluWlhLWE1BcnRsZXpsSTlWc25ob3N0bUFZckNWTDFhQ3p2aFFId0pINHlOMU1mT0Vnc24zQjlRa2toTm1vTzN0Zm93dmMt0gHWAUFVX3lxTE5kUjN0RlhRczR2eDJieGhNeG5qZEFTU000dUU2ZXpxRTNUbmhaeE5yWnQ0QmlFemJtX0xDR0c0a3d1eU1yU0x0b3prY1B3ajNabWlFS0RCeWNNUC1rb1NDS3FVR2RRZG1ubzFhNm94U0pzN3ZnZU5DdW5pSG5SVEdQeFlGSHhWaFdwNy14bG94RnUzX3gxYi11SDBCdTVJR1pvcUw0cUgwQ040Qm4xWVUtN2h5VW9KMDV4aDRjN2dYSGhjQ2NKbnctMG9vaHRtU2xfdzNmc1E?oc=5",
+   "title": "PT Rejo Mulya Rejeki Keluar dari BRRC, Ari Sudarsono Tambah Kepemilikan Saham Raja Roti",
+   "first_seen": "2026-11-17T15:58+07:00"
   },
   {
    "id": "b65b6d931a45",
@@ -997,7 +1249,7 @@
    "date": "2026-11-13",
    "code": "SRTG",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -1008,8 +1260,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Lotus Andalan Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSXMxLThCNjRVZVktQzZ0YjU5S3FIOWV2YVZnZmEyVGZLTDNHal9ySXhWTnN3UllfSUNJNWRTVjFkcFlXVjR1VEdSUzc5ekpCaWJwUzhIUmo2WHg2cHloNUlHb2pIM1dWcFdPV3k3VE53bzU4MW1Vd24weFAwMjVhYWlWOU90d0lqVjM4ek9mZ194NTJGTDlDTFF6SWY?oc=5",
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRzVsb0R0NWJUSjVRdWxWNnRDVE91ZXl4QkVkSG9ZSDZmb1BTMjNpVDdiQzgxU216S2lWZVZDdmhBWVJrbFR6NTFIYzFLVUFzZkNXQWVHWG1wUjc0R2FhUGM2Xzh1c3UwaGVOMkJiSU9BTFoxTjVNWmhDdFEtejUyWHBHRGZkVkduLWxaSW5uZ3lTZw?oc=5",
    "title": "Berlabel HSC, Anak Pendiri Astra Borong Jutaan Saham SRTG",
    "first_seen": "2026-11-13T09:01+07:00"
   },
@@ -1303,7 +1555,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbHVIUnZKMkYwaW1QVjdjZjdYV0kydDJib1Q3eVJUZU4wcDlqd05BX01jQ095VGtYZ2dNbUV1eTZKOHhSeTZMWVpUeUhsYWVLYUdSb0Z6ay0zUWpCT2VGdmYzN3dVVnNYMC1TdnB6MTlPRVZoZmoxMmpwUTJucGUzNnBPNHVLV0RMZkFFSERDblQ2X01QZVhVdWs4QQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaG5ObE5iSXlfT3A5RUVWc3RvTkdPdjd6c0hQTlhMVVBGUEhrclBFMHBTWDRpN0hzRllmVnRIaFhETGV0eFNHLWI4U3RCVEMtNUlCTlZPcGV4dnFrM0F3X1MzelBBOFdPY1k4b1pmZXNRX0FIVHJDVkpFSG5vd3RwNFNmY29hZXl4SGVlY0w0WjVQX3E5UUE?oc=5",
    "title": "Berturut-turut, Pengendali Borong 8,16% Saham DGIK Senilai Rp61,28M",
    "first_seen": "2026-11-12T13:31+07:00"
   },
@@ -1390,6 +1642,27 @@
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56Q2FzTDU0aDg4RGkxX2ZuSU9oNkNOUXpLd2xsb3BhZ3AybzEwOGRiLUJ5ekQ3YVBtdWZsVmNpcHZtYmJ2SXp5aHpNQ3FxWVk0M1lROV9PYV9rVV9OWTVaMTZOcGF1UGxKTDZRSGtlYmZ4d0M0?oc=5",
    "title": "Investor Asing Lepas Saham TLKM Rp86,97 Miliar di BEI",
    "first_seen": "2026-11-10T15:17+07:00"
+  },
+  {
+   "id": "40e64ef1ef08",
+   "date": "2026-11-11",
+   "code": "SSIA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVDVUcEZnTXJGTGs1WW8xaGVmZm42d2RfaFlOaDlJa2lMMllac3QwUUM4X3F6bjI2Qy1JdVVZNTA1Qmd4YnpQT3IzMnF2ZC14NHI2WnR0dFVwVnY5UWM0TTFtMnRIdDJQNm5VNkhkTDhFc25mMVYyZmFZOG4wbXdWQkNHM1cxcG9Mam5BS29TNGtXMDAwV09xbWNpak5ValNLYmZob08wQQ?oc=5",
+   "title": "Henan Putihrai tambah 1,82 juta SSIA, total kepemilikan 13,56%",
+   "first_seen": "2026-11-17T15:58+07:00"
   },
   {
    "id": "2edb66d0d247",
@@ -1564,7 +1837,7 @@
    "date": "2026-11-11",
    "code": "AVIA",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 1460000000,
    "price": null,
@@ -1575,8 +1848,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQM293N09lMFBNV1R4anBhSW1CbWtaVlAtd0d1VmVvWkdSMm9EdkhIWDhhcGJnRWRvbzJqdVpHZlVTVGx3bmhxZTJ2RTJacHZBQ1J2Y29rNFcyUjJ5Y01uRW40NlFnU1ZQTXRFUUk3czUycTVzUi1oVkpEdENtVVpDdVNhOWNwajlnMUpRWGhiMVdZS2s2MmcxdjRib0dmWTlHZEhGUXNWU1VfTDJkelBGMG1jd0ltNVVEb1ptZXRBWVNBSzFPUUhxeDlrMDJobHdaVE1J?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVI3LUtZT1VYdzZndl9pUk52QnB2RUpmMzhGczhiX1haSmZiSk84UlZQZi1CUHE5RUVoVEF3c2VvMEVGdUFZWWZXYTJUWmlzUTY0RUQ5V210cUtuanA0amZNWEgyNlltaHB1QXJXaGR0Rm5idy1Mb1ZseF9FaVI2YWNRaVZIb3FHN1ZJOGRBY2JxcXg5aE8xeTFFVzl5ejk2Z29KVW16bk1ZcEVWQ3BJSi1GYmVNSGRfelF2b0ZqY3pCaUJLc1RicmtsNmpXYzNLSjZsX3JCXzg?oc=5",
    "title": "Tak Berhenti Akumulasi! Robert Tanoko Kembali Borong Saham AVIA, Kepemilikan Kini Capai 1,46 Miliar Lembar",
    "first_seen": "2026-11-11T17:30+07:00"
   },
@@ -12544,15 +12817,45 @@
   }
  ],
  "net_by_code": {
+  "INET": {
+   "net_shares": 5000000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "VISI": {
+   "net_shares": 24665700,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "MMIX": {
+   "net_shares": 11400000,
+   "net_value": 0.0,
+   "count": 19
+  },
+  "AKPI": {
+   "net_shares": -2848100,
+   "net_value": 0.0,
+   "count": 16
+  },
+  "ANTM": {
+   "net_shares": 6000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "HEAL": {
+   "net_shares": 16640000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "ATLA": {
+   "net_shares": -251500000,
+   "net_value": -400000000.0,
+   "count": 7
+  },
   "MTLA": {
    "net_shares": -26100000,
    "net_value": -9004500000.0,
    "count": 2
-  },
-  "HEAL": {
-   "net_shares": 14140000,
-   "net_value": 1185000000.0,
-   "count": 3
   },
   "RAAM": {
    "net_shares": 4691545700,
@@ -12569,16 +12872,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "ATLA": {
-   "net_shares": -201500000,
-   "net_value": -400000000.0,
-   "count": 6
-  },
-  "ANTM": {
-   "net_shares": 6000,
-   "net_value": 0.0,
-   "count": 2
-  },
   "INPP": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -12592,12 +12885,7 @@
   "BRRC": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 1
-  },
-  "MMIX": {
-   "net_shares": 11400000,
-   "net_value": 0.0,
-   "count": 18
+   "count": 2
   },
   "BRMS": {
    "net_shares": 127975000,
@@ -12654,11 +12942,6 @@
    "net_value": 0.0,
    "count": 6
   },
-  "AKPI": {
-   "net_shares": -2848100,
-   "net_value": 0.0,
-   "count": 15
-  },
   "BRPT": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -12707,7 +12990,7 @@
   "SSIA": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 1
+   "count": 2
   },
   "TLKM": {
    "net_shares": 374450000,
@@ -13041,11 +13324,6 @@
   },
   "TOTL": {
    "net_shares": 6210000,
-   "net_value": 0.0,
-   "count": 2
-  },
-  "VISI": {
-   "net_shares": 24140000,
    "net_value": 0.0,
    "count": 2
   },
