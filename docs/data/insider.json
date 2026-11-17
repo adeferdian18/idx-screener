@@ -1,10 +1,157 @@
 {
- "updated": "2026-11-17T15:58+07:00",
+ "updated": "2026-11-18T01:27+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 77
+  "news": 74
  },
  "transactions": [
+  {
+   "id": "c9021f0670a6",
+   "date": "2026-11-17",
+   "code": "BULL",
+   "party": "Kevin Wong",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 4000000,
+   "price": 252.0,
+   "value": 1008000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/direktur-bull-kevin-wong-borong-4-juta-saham-harga-rp252-kini-miliki-347/",
+   "title": "Direktur BULL Kevin Wong Borong 4 Juta Saham Harga Rp252, Kini Miliki 3,47%",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
+  {
+   "id": "5f2780c71edb",
+   "date": "2026-11-17",
+   "code": "SRTG",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 801000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 36.14,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/edwin-soeryadjaya-tambah-801-ribu-saham-srtg-kepemilikan-jadi-3614/",
+   "title": "Edwin Soeryadjaya Tambah 801 Ribu Saham SRTG, Kepemilikan Jadi 36,14%",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
+  {
+   "id": "28b62685e4b7",
+   "date": "2026-11-17",
+   "code": "ATLA",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 20000000,
+   "price": 15.0,
+   "value": 300000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/rudi-sutantra-kembali-jual-20-juta-saham-atla-di-harga-rp15-kepemilikan-susut/",
+   "title": "Rudi Sutantra Kembali Jual 20 Juta Saham ATLA di Harga Rp15, Kepemilikan Susut",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
+  {
+   "id": "314f6247c331",
+   "date": "2026-11-17",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 5520000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOamlIZDl4ZlR5THFhcUR1b09HV0dzdWtPc2JtelZnb0JYdWpRZG9OYTZuVXA2Unp5MXFCY0Z6WnVjZXBuNnVFVzZiclowMk1QTV9lbzZ1VTJyREVJd2xDV3ExT2hhVkItMXFyVFJNUDc2REJnQl9iWVBrekhHRFZaeENUakNLTGRYWkNuMEpqdjg2aEktYzM1eGlvY2Y5dVJkS2ZDMFgxSl9FZnYyZlFpMzNB?oc=5",
+   "title": "Edwin Soeryadjaya Lanjut Borong 5,52 Juta Saham Saratoga (SRTG)",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
+  {
+   "id": "a7701e6c4600",
+   "date": "2026-11-17",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 801000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdGJlZ1lhM3U5bW0tOHlEUnRQSWZfNGNRUmplZ3F6cHZwMjVEQ2ZaSng4VnF1ZWk3Y3lURWpDSERPUXFLaVdjNVEySUxPX0hqaE5rc1pvVU5UcWNQSDZVcC14M2oxMkJ1ODJkTG9Hak9xeUxZaVlnbjVxa0l4MEhiaVBtekpoRXR3bzZjVTlDUExBbEkxQk9VeU9leTNnTjBVcFg1ZTdSRGFMd3d4?oc=5",
+   "title": "Borong 801 Ribu Saham SRTG, Edwin Soeryadjaya Makin Tebalkan Kepemilikan",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
+  {
+   "id": "073d827e1b04",
+   "date": "2026-11-17",
+   "code": "BBCA",
+   "party": "Lepas",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5LOFd6LUstaHhkdkFfSGxkOC0wWUhmN0xrZllYaXVlSlVXWE1yQXhDVzBqX0VhRFNIaV96OHZCRVByS0stbnQ3NkdqcHB4TmtUUWszcDJfV2NpOTBKdlVNQjFEbzRXQ0s4MTMzTm9fSmg?oc=5",
+   "title": "Investor Lepas BBCA dan Borong Saham BMRI Jelang RDG BI",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
+  {
+   "id": "6b7fb2e78460",
+   "date": "2026-11-17",
+   "code": "PPRO",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTC05YkJSSDFYeWJOTmNWRDNhRHIxem1tUEFna29DUE8wUXZaRmpLdUVBX1VIZmdOMWRKY3hMSFRqQXZENlQtZlpSOGdOYVJtekFBcExyYmNwNVJpUjhQeDZ4a1lWcDFLR2UtVWJSWVNfTFNHNURRVXpyQk1mMXBTeUhEWDJYYmo4S2piYjJEUWxzcnN1Wm1aaUtmYVBSUFlJOGg0aFh2dFBDRlFueUlMeUxtQ2U?oc=5",
+   "title": "IFG Life Jual Saham PPRO di Tengah Aksi Merger dengan Inhealth",
+   "first_seen": "2026-11-18T01:27+07:00"
+  },
   {
    "id": "20e6def73569",
    "date": "2026-11-17",
@@ -30,8 +177,8 @@
    "id": "a8682984b144",
    "date": "2026-11-17",
    "code": "INET",
-   "party": "PT Cakrawala Nexus Investama",
-   "role": "korporasi",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
    "shares": 6685000000,
    "price": null,
@@ -42,8 +189,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/cakrawala-nexus-investama-borong-6685-miliar-saham-inet-rp-2-triliun-kuasai-2987/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSUNLN2xpbllCRW9xYzN6N0JVUXZFNDhja191cUxBV3VUWWhtbFllM1V6Xzk3NmpaUDdaMTk0THJ0ODFDcU41b0IzNmdLSjVObEhueFF3SU12dk5WdndTeFQxeW9GR3VmbGpscVhJWExnekZKVlQ1R0NOZlJoMDNMcHRYZ1MwWGF0Wk9EV1B5azg3VXhwMUhBUlZlWXhGejkxd2dZVnJn?oc=5",
    "title": "Cakrawala Nexus Investama Borong 6,685 Miliar Saham INET Rp 2 Triliun, Kuasai 29,87%",
    "first_seen": "2026-11-17T15:58+07:00"
   },
@@ -126,7 +273,7 @@
    "after_shares": null,
    "purpose": "divestasi",
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUG5BcmZhc0FmbmI3blFkbjhCMm1lUjVKcEM0Q254T3dqVUF3UGRxdTJHNU01N3h0YnE4MkpobUg4VVRLOFpJdkZQbVFMNzRzaXJNV1ZNTV9XVl93MjZ4ZmloNkd6US1NTUh2TkRKUFlPLW11UldnWDhJYjhKb1RVV1ZaZGlLMHhnMHdPYXVwWF9YYS1oSi05eXZQbDA5LXRsSXp1VEN6UnBMQjU5MTlzVEl3ZDZ5MTBfdmw0R2dSUzNmU28tY1VtR3kyRWhULU03dWc?oc=5",
    "title": "Divestasi Jumbo! Pemegang Saham Mayoritas INET Lepas 6,68 Miliar Saham, Kepemilikan Anjlok Jadi 29,89%",
    "first_seen": "2026-11-17T15:58+07:00"
@@ -189,7 +336,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ085U3dsZ3hnbC1zcDcwdExLUG1OZ3N4eDZlWTBrS3Z3a083SmZYcjBBZnJqVFpfZTZjbFBBNV95V0lxelk1STFaUnhmN2VHdmtsNUZQeHdKRklhQjNPRkNzdnozRGZxSTVPYS01eFJodjh6VmpBbnYzNG9PcndobFFObVdjeTJ1bVV3eXRKcmNwMDFOT1B3eFU2bmxWdUtJSjBZbkU3RmM4bmV6b1RmUWVQYTVGTFk?oc=5",
    "title": "Komisaris ATLA Kembali Lepas Saham, Total 50 Juta Lembar Dilego dalam Empat Hari",
    "first_seen": "2026-11-17T15:58+07:00"
@@ -1134,8 +1281,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Demokratis.co.id",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPT0xOQlZBSkVfaXROVWd4ZV9vSVpVWlVxbVVlQWZtQ3AweHdZX1hIV2NzeWdQYWJ6VkFqRUxWamhQcXpQLXRGYzl1QmUzbmdjMXA5YzFfWEZyTEVNNWRNMEZLNGZQU1V5T2htdkxrR2E3UUk?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5pckZWRF9MelFrbHp4a3VyZGw3ZndRbmNYdjlyVzZWcEdPVUY4U3hPUmxpVlpuSTNTREM0cUo4SDBkT29GOVQzREJlWUZ6Uy1iUDZ4R29TWUVJa3pIRFlNZ3RLMnBwVDZESzZz?oc=5",
    "title": "PT Pukul Rata Kanan Tambah Kepemilikan Saham MMIX",
    "first_seen": "2026-11-13T12:15+07:00"
   },
@@ -2001,6 +2148,27 @@
    "first_seen": "2026-11-11T15:24+07:00"
   },
   {
+   "id": "0cb8c16ca945",
+   "date": "2026-11-11",
+   "code": "NRCA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
+   "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
+   "first_seen": "2026-11-11T15:24+07:00"
+  },
+  {
    "id": "aab7e35ff033",
    "date": "2026-11-11",
    "code": "PTRO",
@@ -2356,27 +2524,6 @@
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZDgxQkp1ajZ1VnFVNmZKZG9Cd1pUMkY2c01sR3hSZmRWVVpFU1FkUnpLdENWSngtSjN3eXJ0ZG1HMXVRMVlmV0lQbmxxNHBERWwtOFZfcHdBUzlPeElfS1YybUdYV016RXBjYms5eXVSQ0xNazJxbFJOcFlkQWMwX19Za3BtSmIzc1AzVUktTzNTTHpSckh2MFhZYmJNVjBxWEYtRWpfYk0?oc=5",
    "title": "Entitas Milik UBO Emiten Sawit NSSS Borong Saham Senilai Rp285,23M",
    "first_seen": "2026-11-10T17:42+07:00"
-  },
-  {
-   "id": "0cb8c16ca945",
-   "date": "2026-11-10",
-   "code": "NRCA",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenNMV0V6Mm5femhuV2FUOGkxUGRaN2liaDJPQ1dDclp0dEhXcGhoZjg2MmtWanZTVFh2WVZaTzBwTDlkV0dtd012V2lORUlnNEF1bXVidi1yc3V0ekZranZrNUk5RWNReWFpTVE1dzg3Zm41MGZWLXI1Tk1fa0syVjd3SHRrb1RxUXBfMkIyOG54NUpvOVBaZlUtQQ?oc=5",
-   "title": "Owner Subang Smartpolitan Tambah Kepemilikan NRCA, Saratoga Punya 5,9%",
-   "first_seen": "2026-11-11T15:24+07:00"
   },
   {
    "id": "10af80b119a2",
@@ -12817,6 +12964,31 @@
   }
  ],
  "net_by_code": {
+  "BULL": {
+   "net_shares": 4000000,
+   "net_value": 1008000000.0,
+   "count": 1
+  },
+  "SRTG": {
+   "net_shares": 13383000,
+   "net_value": 0.0,
+   "count": 13
+  },
+  "ATLA": {
+   "net_shares": -271500000,
+   "net_value": -700000000.0,
+   "count": 8
+  },
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 25
+  },
+  "PPRO": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "INET": {
    "net_shares": 5000000,
    "net_value": 0.0,
@@ -12847,11 +13019,6 @@
    "net_value": 0.0,
    "count": 4
   },
-  "ATLA": {
-   "net_shares": -251500000,
-   "net_value": -400000000.0,
-   "count": 7
-  },
   "MTLA": {
    "net_shares": -26100000,
    "net_value": -9004500000.0,
@@ -12861,11 +13028,6 @@
    "net_shares": 4691545700,
    "net_value": 0.0,
    "count": 10
-  },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 24
   },
   "BEER": {
    "net_shares": -49000000,
@@ -12906,11 +13068,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "SRTG": {
-   "net_shares": 6261000,
-   "net_value": 0.0,
-   "count": 10
   },
   "KINO": {
    "net_shares": 87000,
