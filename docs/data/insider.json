@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T01:27+07:00",
+ "updated": "2026-11-18T01:51+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 74
+  "news": 69
  },
  "transactions": [
   {
@@ -882,8 +882,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXBnZFctQm5EV3RYUDlfT2ZjQUtjbGZvSnladUxDaW1MVmtyY2Q2SVhSanV6YkdsRUxnLWFyRm01dkFNZldSQzk1VW5GYU84amxMNmhzRmNtSnJ3WlJXUzZBNGg3T0RybEwzRGNKcmE4YWVOOTNJREU3NWFHOU13cWJ6LXZ5VTlmdUE1UHZWOUJDR1R5eDQ5WlZFUDJTMW5GeW02ck52bXpSRWM?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOXM5VlRucjk4Z0VrSFozcFhkR2pHRWpiQWtfTEt2cUtGX2FTWFF0QlVzcVZwYUk4ak56c1VWMTNLSV96LXNMVGYydFB1UmxxUVBZWnZuODRqX0M2VWxSellyQm1CUXExWjk5Mko3blZZaVdLVzlrMExsUkxfX2FuTks4eUVyWDUxUHB0LUM0NTdmY1FMaVpkRUFwemc2N01CSUYxZFZR?oc=5",
    "title": "Komisaris Kino Indonesia Mulai Koleksi Saham KINO, Borong 87.000 Lembar",
    "first_seen": "2026-11-16T09:22+07:00"
   },
