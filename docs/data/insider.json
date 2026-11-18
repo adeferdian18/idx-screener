@@ -1,10 +1,199 @@
 {
- "updated": "2026-11-18T01:51+07:00",
+ "updated": "2026-11-18T15:24+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 69
+  "news": 73
  },
  "transactions": [
+  {
+   "id": "5b1ab5aff7b1",
+   "date": "2026-11-18",
+   "code": "ARKO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 507700,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 0.32,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SWA.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU3BWRVVaaFRxdG5NRGdWSUd1U2NNYnFvR2RRSjh4NjZSaGowdHNmMGhfZU5jOE52YXlDUE5ySkNQcGdSMEpCUS0wRkpibktvMmZDS3VDTWRwUW1yWHpGdkt5YUdXZ2pfclVUUHJwWEF1SUFCS2Z1WW1JUktGNEZyUl82T1hTMXV1N0VoV1ZVdFRGb3Y2R2dQU3VQamlDSURTeDY0?oc=5",
+   "title": "Borong 507.700 Saham, Kepemilikan Aldo Henry Artoko di ARKO Naik Jadi 0,32%",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "07bed4b31d72",
+   "date": "2026-11-18",
+   "code": "NICK",
+   "party": null,
+   "role": "sekuritas_mi",
+   "action": "jual",
+   "shares": 24000000,
+   "price": null,
+   "value": null,
+   "before_pct": 57.6,
+   "after_pct": 53.92,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/indovest-central-jual-24-juta-saham-nick-senilai-rp48-miliar-kepemilikan-susut/",
+   "title": "Indovest Central Jual 24 Juta Saham NICK Senilai Rp4,8 Miliar, Kepemilikan Susut",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "da3378d16fbe",
+   "date": "2026-11-18",
+   "code": "MMIX",
+   "party": null,
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 1000000,
+   "price": 540.0,
+   "value": 540000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/mengky-mangarek-borong-1-juta-saham-mmix-harga-rp540-kini-punyai-602/",
+   "title": "Mengky Mangarek Borong 1 Juta Saham MMIX Harga Rp540, Kini Punyai 6,02%",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "eb346f47f85d",
+   "date": "2026-11-18",
+   "code": "BUVA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 600000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOGl2SEZzUVJkTXFTYXZBVVM1ZTAtaXJxaVprdGlWenptMmF6Mk45SjlJamwzeEl4blJIRDRjbHl6ME9kenpYYnNqUElGc0g4VUY3QUtBT09BbWpDcktzbEZDMGZEQzEyUTFDV09wVkhMTWsxanhiNHZ6X0ljMGlxNkhHVnhqdTdhRmlFeUZNOHNiRUlGczQtYzIzUHBZQjl1aE1sLUdVWUvSAaABQVVfeXFMTWFQMTdmemdJV3VZQWtRbmlNeTNuemtsQnMzRUJveWlxUTMxOTAwRzZiWDYzM3FqcERTOVBQSVVrSDFjODJYYzRHWVEzUlF0a3BxTk1yaUZ6NXY0d1JCZGFXMDdKSVpUdWU0MXNPNHBzY01RbkNGMl80RE03eS0yVFNXLThPV1VzM3BFV0Y5V0RseU5JYWJlY21BN09ZM3ZYbg?oc=5",
+   "title": "Hapsoro Borong 600 Juta Saham BUVA, Tapi Langsung Lepas 333 Juta Saham",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "838b2256ca00",
+   "date": "2026-11-18",
+   "code": "BBRI",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Wd3JXc0xRbHNYRmxoc3dhZEdmdnoxcl9iTzZtOEdNNVo0UE9PSWtWR3dmbTNNV1FrTnJqSldaU0RsLW1pdHl0UGp4eU80blZGUXdqZnQtYWlwU1BQOHVaQXVn?oc=5",
+   "title": "Investor Asing Lepas Saham BBRI dan BMRI Rp 337,87 Miliar",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "7cc88d23df37",
+   "date": "2026-11-18",
+   "code": "BBCA",
+   "party": "Jual",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pbVBsSFdYMUFIYzNkYTQ5RHYtQ2NmZEtRYmZhODFiYmFURzNuX1VuTWNXa1V6T3l1ck9Vd1UxbWFPaFpxZXVRbXpPNzVWUmNKRmpucDcxRTQzZWxYaV9qeE9zRFV5UQ?oc=5",
+   "title": "Investor Jual BBCA dan Borong BMRI Jelang RDG BI November",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "fba5d10d7c88",
+   "date": "2026-11-18",
+   "code": "BBRI",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CazhTRXpESkxQM3Vyc0ZHYnFPcVAteWdzMnBjTkh6YzdYMlhUQ1hJX3kxMmFrT0M3cHhhU29GbVlnT3lYc292UE8zZjYyY3Q3eGZkWG9BSFNfRmF5NjhIMl9nbmlMR3Z3RzZvejVodmVPZw?oc=5",
+   "title": "Investor Asing Lepas Saham BBRI dan BMRI pada 18 November 2026",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "92bf0bad997d",
+   "date": "2026-11-18",
+   "code": "BUVA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE42dTZ6alozb00yaXcxRDBNeTNfZTJMSjVsVXdxQUYyVVowUmcyZGl0djJRVFJZeUx5TEs2VUg1Y1p5TU1JT1hzTnJaVUpFdWNncE5NZklSdEdrZmJLUWd5Y0NvUVQ0TlgyQjh3?oc=5",
+   "title": "Hapsoro dan Nusantara Utama Kurangi Saham BUVA",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
+   "id": "8a81b3731f03",
+   "date": "2026-11-18",
+   "code": "WGSH",
+   "party": "Hendy Rusli",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 22600,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOY09wU1BDVnVUWDM5NVVucXd0dWxWQXpISDJzaG9EMFRWX2dHZ0lCV09vWE5GV3hfLTd6cU16ZXYtbUZpQ2tSVXNBMGotNG9lZk9mbmd4Q3pzb0NIb0dSX1luSFN2amNpbV9velBJRXNHeU5WT29aQ2VQcW90U2lKcEJjZGhybFhKWVA0dm9CR19QaFNQTjhQNlBLS0FyZjFleUs5VFlvREZ2MmlhOXRNbw?oc=5",
+   "title": "Dirut WGSH Hendy Rusli Lepas 22.600 Saham, Kepemilikan Tersisa 9.764 Lembar",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
   {
    "id": "c9021f0670a6",
    "date": "2026-11-17",
@@ -21,8 +210,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/direktur-bull-kevin-wong-borong-4-juta-saham-harga-rp252-kini-miliki-347/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeXlhbkl6LXZIalMzb1E2c3BvYmsxc25meE1tSndEZWdRNERlVDVlVnV4VzBqMWowUTh3YVplYzBlVkpFNy1Ta0xCMnlvMVdjS0NmRjBLRGFjU0tGSE1QRFZuX1p4Slh5ODlsTG5lZzYtcTBzeUFDZi1DZ2k3V1RZU0FFdmt6SHEzVWZfUzcweU9QODRwVkVHUk9CUQ?oc=5",
    "title": "Direktur BULL Kevin Wong Borong 4 Juta Saham Harga Rp252, Kini Miliki 3,47%",
    "first_seen": "2026-11-18T01:27+07:00"
   },
@@ -31,7 +220,7 @@
    "date": "2026-11-17",
    "code": "SRTG",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "beli",
    "shares": 801000,
    "price": null,
@@ -42,8 +231,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/edwin-soeryadjaya-tambah-801-ribu-saham-srtg-kepemilikan-jadi-3614/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUTNyZHlqQnBUQkJIMkxXSk1VcUFlZzBvUURLc0IweXhlel9XckNscEVTRkRJN1VDV3NKeFFyZFdxQWhBeHZyWmNIbXBYMExOUXFJZVdKTkM2azZERzVFQ0NuYkxrbHVCUGhkQXdtclJ4dU1hN3hLZjVlcmhwbm9xVVZCWDl5c05fdkVGR2RjRWd3OWM?oc=5",
    "title": "Edwin Soeryadjaya Tambah 801 Ribu Saham SRTG, Kepemilikan Jadi 36,14%",
    "first_seen": "2026-11-18T01:27+07:00"
   },
@@ -52,7 +241,7 @@
    "date": "2026-11-17",
    "code": "ATLA",
    "party": null,
-   "role": "direksi_komisaris",
+   "role": "individu5",
    "action": "jual",
    "shares": 20000000,
    "price": 15.0,
@@ -63,8 +252,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/rudi-sutantra-kembali-jual-20-juta-saham-atla-di-harga-rp15-kepemilikan-susut/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOV29kNHdYc01CMHRyR182RUgzMEpHTjhkdm4wV1dLSjljaFNIOUdwaWRDUVJEb3NTNDYzLWgtdzBISkJZZXBnNjhHZ3BQV2YtSG1FS0U3VHFBZTNiaVk0dVdCUzZfcEV1aDZwV2xFNXFtVmJxakw0aTBOWjdaQVhRTzlWMzhOUW02SVV6U05uRllRbFFzV1BCNHpISDFFenpLb1E?oc=5",
    "title": "Rudi Sutantra Kembali Jual 20 Juta Saham ATLA di Harga Rp15, Kepemilikan Susut",
    "first_seen": "2026-11-18T01:27+07:00"
   },
@@ -657,6 +846,27 @@
    "first_seen": "2026-11-16T09:22+07:00"
   },
   {
+   "id": "0ca5846ac416",
+   "date": "2026-11-15",
+   "code": "SMBR",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaDU0OTk5MGNYblZ0QUdGallFc0E0alNSaUgzbWpINzUzczgydDNlUmVrcTlSOTFVVVVMNVRzSHNMNzIxejFBbDZuMzFZRW1XNFVRVGRfLWc5N1FfenowR0lLN19na0FfelVJYUpzY25XYlZCc2k1SUFzSXI0ZkpIZFR0cFF6aDRa?oc=5",
+   "title": "Perusahaan Asuransi Ini Jual Saham SMBR, Apa Alasannya?",
+   "first_seen": "2026-11-18T15:24+07:00"
+  },
+  {
    "id": "d7334a2676d5",
    "date": "2026-11-15",
    "code": "BRRC",
@@ -718,6 +928,48 @@
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTmdERTAxTTFXY2tmVmF4WXZwYm5ENE9uN1BtbEEwVFFkRWppSXJYc0paVVJPOEdndl9fSlRqWWZ2VzF6dkUwaEZuTTNGNlJvVTVsdVNvbG9zSW9YTG1NYmV0Rm1pa0JyTkppTGFHSlk3Q3NZWXZiMDBXMmQ3a2U5WHY4bkhGR2Y5eXFJSmpicVJ4WUVubWZhaS1ZdzBkUWpOWVVFNVB5Z1dlQ2Y5Um9xNnZPLUR5UVlXX0luRDZpMnRySEw4d1VsbThfY2Rjek84NGF0eXlZQmJlakd30gHiAUFVX3lxTE1KQ0dDeUFKNWlnZDJlOXE4aU8zZ1lsQUJtVlYxOEpYQlp2aU1tWWxJNWxTLXEtUmx0TE0tY0tWZWdDXzlRQTRRUGJLcnRILUxzNVZsNlFaN190RE10UUVDd2tqZzNVMGFtR3Q5TzEzZmlxT09fU0tIWktWeTE2Y21OS2pEZTVzc25Zb2VwSmN6MnZNMGtqajl3Zk1uUUNoYnp0SERKbXA5MlB4Q1NFaV91dGlMZXVQTEN2REk1T05SUzUtZHN4RTBrcjBrc2ozWXFRSU1rLUxyM1Q4R3VtWE1YRUE?oc=5",
    "title": "Setelah Jual Saham pada Juli, Ari Sudarsono Kembali Perbesar Kepemilikan BRRC pada November 2026",
    "first_seen": "2026-11-16T09:22+07:00"
+  },
+  {
+   "id": "b465e080dae8",
+   "date": "2026-11-15",
+   "code": "DGIK",
+   "party": "Jepang",
+   "role": "pengendali",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbmJ1QVBMVVJvM1JRLVBrS2ZUQ04yQzlwUkwycmh6S1Q5cUt6OXpSeXIxQkJQc0Vrdk1NcUtaWlJwVmdQVlBZaER0czBtVG1QVktkQ1F3TTlaQ3RsaTVlUVR0TXZhS0JlazVoODBnOUZsYU5PSmhIQ1h3WF9zQUdLQVhGMWZHak5Hc1Nacnh4OU9iMDJNNElB?oc=5",
+   "title": "Sambut Investor Jepang, Pengendali Borong 14,02% Saham DGIK Rp107,8M",
+   "first_seen": "2026-11-16T09:22+07:00"
+  },
+  {
+   "id": "a5a69dfc2fc5",
+   "date": "2026-11-15",
+   "code": "GMFI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 350000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
+   "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
+   "first_seen": "2026-10-22T08:34+07:00"
   },
   {
    "id": "d8ac100e5592",
@@ -882,30 +1134,9 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOXM5VlRucjk4Z0VrSFozcFhkR2pHRWpiQWtfTEt2cUtGX2FTWFF0QlVzcVZwYUk4ak56c1VWMTNLSV96LXNMVGYydFB1UmxxUVBZWnZuODRqX0M2VWxSellyQm1CUXExWjk5Mko3blZZaVdLVzlrMExsUkxfX2FuTks4eUVyWDUxUHB0LUM0NTdmY1FMaVpkRUFwemc2N01CSUYxZFZR?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXBnZFctQm5EV3RYUDlfT2ZjQUtjbGZvSnladUxDaW1MVmtyY2Q2SVhSanV6YkdsRUxnLWFyRm01dkFNZldSQzk1VW5GYU84amxMNmhzRmNtSnJ3WlJXUzZBNGg3T0RybEwzRGNKcmE4YWVOOTNJREU3NWFHOU13cWJ6LXZ5VTlmdUE1UHZWOUJDR1R5eDQ5WlZFUDJTMW5GeW02ck52bXpSRWM?oc=5",
    "title": "Komisaris Kino Indonesia Mulai Koleksi Saham KINO, Borong 87.000 Lembar",
-   "first_seen": "2026-11-16T09:22+07:00"
-  },
-  {
-   "id": "b465e080dae8",
-   "date": "2026-11-13",
-   "code": "DGIK",
-   "party": "Jepang",
-   "role": "pengendali",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaGVWalRKQTZaaEVCS2pKWUQydktJLXRpajctS0ZtWVAyeEtpYm9UYUR1MmI5bGFZX0R4NHlVblktd2IwQXB2cjJ2ODh1NEFOaHpiSFBmV05sa1B1elVBOFhuSXIyTTEySGRhblR3LXhUcC11bXRfRW1wYXd5dEk0Uk9NLUpzREIzTjU2QWF2N0VBQmZNaEVjRVY0UXk?oc=5",
-   "title": "Sambut Investor Jepang, Pengendali Borong 14,02% Saham DGIK Rp107,8M",
    "first_seen": "2026-11-16T09:22+07:00"
   },
   {
@@ -1386,8 +1617,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Berita Moneter",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSkpkOGo2cjZkWHdXMVEyWmV6cXVTVGJzX2VHUjRIcUp2b0owSlhFTDNIY0JKUnhQcmVaaExkRXNrZUZQbWlLQUhsRk1jLTNxMVlWYXpyaEtlMVhMMG8wVHVNWE50N0Q2bFdKcVhTN09CdFhmRlJuRGJSZ0pVeXdVREZLM1N5VWd2cHpsUzJlZmdWclVnMXVGQzZ1UWRfd2N5dVlnY1BqSlNrc0RNVjBMWUY3cmRYUThSejhr?oc=5",
+   "source": "Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRDJBR3JsVlFIM1JnWF90N2pGLVFEYTdwUkNjcHNjXzcwZDlVOXVrYWhTMTRTRU5WZnRIY2loS2xwdE52Z3ZHWWRZZ0lnekkzY19sR1h5LUNIY3FDRENZc3R5Mm40YTVJMUV2aEluS1RBVE5TNmZGWVowaUhjTmh0MTZ6NGI5U1NNTVc4ZWxLTDctTVpEUUN6R3ZDaGRwRzVDTHZuS3NfTl9mOGtsTmY2YmxldnY?oc=5",
    "title": "IHSG Lompat 2%, Investor Asing Net Buy Rp500 M: Borong Saham BBRI",
    "first_seen": "2026-11-13T09:01+07:00"
   },
@@ -1975,7 +2206,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "IDX Channel",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUE80TGg0X2R4MWtOUm5UWHJUcm1vZ1J3aElfemUzNDVpY0xXdWh2R25US2R6TlZ1YlBOZHFzcFkzNWJEM1NnV3QtY2Z3OGUtUmxwZmVGSGl3X0YxY3BPMkU2cjNDMWkwZU1CamhLZDRLMmJ2Nkt2X1dZY1FjZXNpU1d1d2dWblVWQTBBUTFxNldmdVhneXZEctIBmAFBVV95cUxQUE80TGg0X2R4MWtOUm5UWHJUcm1vZ1J3aElfemUzNDVpY0xXdWh2R25US2R6TlZ1YlBOZHFzcFkzNWJEM1NnV3QtY2Z3OGUtUmxwZmVGSGl3X0YxY3BPMkU2cjNDMWkwZU1CamhLZDRLMmJ2Nkt2X1dZY1FjZXNpU1d1d2dWblVWQTBBUTFxNldmdVhneXZEcg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWWRVa2gxM2lSaDBGZWF0YTM0dkRRNmRaVHlmREFRNGF5SHdSamxKSDMyc2Zya0pEXzEyTm14UE9iTmlzLW5CRTBiOHp1Y0VwN2YtbkhULUl1blE2Vk56OXdqSXFfdkpmQkFnMmJFWmxzdEpMN3o0c0F3VDVTSmpxQVdSMUVldTVnb1ZJUFg1S1dHbXfSAZgBQVVfeXFMUFBPNExoNF9keDFrTlJuVFhyVHJtb2dSd2hJX3plMzQ1aWNMV3VodkduVEtkek5WdWJQTmRxc3BZMzViRDNTZ1d0LWNmdzhlLVJscGZlRkhpd19GMWNwTzJFNnIzQzFpMGVNQmpoS2Q0SzJidjZLdl9XWWNRY2VzaVNXdXdnVm5VVkEwQVExcTZXZnVYZ3l2RHI?oc=5",
    "title": "Kookmin Bank Tak Punya Rencana Jual Saham KB Bank (BBKP)",
    "first_seen": "2026-11-11T17:46+07:00"
   },
@@ -2902,27 +3133,6 @@
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2c4bVhKVlk0bk1CNmtqVlMxR0t4WDN0X3dtNEkwQUl1dHkyZXZjeHNmRFMtck10Y00tcmR6Q2dLNDFjRVhTMkJFd3dpaHhpeGl4Um0tVnlpLTBHRE0zS0ZkY2xkS2JpU2k4QmpPS2FaZjljZWM1TXIyUlZiYVpJRlBUNWRLV2hPMDlDRkJSNWp4RTNERjlUajFqLXk?oc=5",
    "title": "BEI Curigai Insider Trading di Divestasi Saham RUNS Milik Pengendali",
    "first_seen": "2026-10-22T09:54+07:00"
-  },
-  {
-   "id": "a5a69dfc2fc5",
-   "date": "2026-11-10",
-   "code": "GMFI",
-   "party": null,
-   "role": "direksi_komisaris",
-   "action": "beli",
-   "shares": 350000,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": "investasi",
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0ZTZTJJa2REdWVOT2c4bThzdEI1UnVNTmJsV0d0QkZPcjVGZGNDVlotMVVUNG1JRnByeEkyM2NrUEM2VmhnQ0phMlhBajVEdzJ2TXJ6emdvLU5hTktZdUZNVjUtM1dnSWZVUDRZWEJveTEwYzg2MGZzeE1SSFhFSnhSLVN3cG5DaU9CZk9nb0FXNHV1?oc=5",
-   "title": "Investasi Pribadi, Direktur GMFI Ini Beli 350 Ribu Lembar Saham",
-   "first_seen": "2026-10-22T08:34+07:00"
   },
   {
    "id": "e9abf20f4165",
@@ -12964,6 +13174,41 @@
   }
  ],
  "net_by_code": {
+  "ARKO": {
+   "net_shares": 14182700,
+   "net_value": 0.0,
+   "count": 9
+  },
+  "NICK": {
+   "net_shares": -24000000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "MMIX": {
+   "net_shares": 12400000,
+   "net_value": 540000000.0,
+   "count": 20
+  },
+  "BUVA": {
+   "net_shares": 600000000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "BBRI": {
+   "net_shares": 5500000,
+   "net_value": 5940000000.0,
+   "count": 19
+  },
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 26
+  },
+  "WGSH": {
+   "net_shares": 431500,
+   "net_value": 0.0,
+   "count": 2
+  },
   "BULL": {
    "net_shares": 4000000,
    "net_value": 1008000000.0,
@@ -12979,11 +13224,6 @@
    "net_value": -700000000.0,
    "count": 8
   },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 25
-  },
   "PPRO": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -12998,11 +13238,6 @@
    "net_shares": 24665700,
    "net_value": 0.0,
    "count": 5
-  },
-  "MMIX": {
-   "net_shares": 11400000,
-   "net_value": 0.0,
-   "count": 19
   },
   "AKPI": {
    "net_shares": -2848100,
@@ -13044,10 +13279,25 @@
    "net_value": 0.0,
    "count": 2
   },
+  "SMBR": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "BRRC": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
+  },
+  "DGIK": {
+   "net_shares": 597760000,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "GMFI": {
+   "net_shares": 350000,
+   "net_value": 0.0,
+   "count": 1
   },
   "BRMS": {
    "net_shares": 127975000,
@@ -13074,11 +13324,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "DGIK": {
-   "net_shares": 597760000,
-   "net_value": 0.0,
-   "count": 7
-  },
   "ERAA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -13103,11 +13348,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "BBRI": {
-   "net_shares": 5500000,
-   "net_value": 5940000000.0,
-   "count": 17
   },
   "DOOH": {
    "net_shares": 0,
@@ -13259,11 +13499,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "BUVA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 2
-  },
   "NATO": {
    "net_shares": 277130000,
    "net_value": 0.0,
@@ -13296,11 +13531,6 @@
   },
   "RUNS": {
    "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "GMFI": {
-   "net_shares": 350000,
    "net_value": 0.0,
    "count": 1
   },
@@ -13384,11 +13614,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "ARKO": {
-   "net_shares": 13675000,
-   "net_value": 0.0,
-   "count": 8
-  },
   "JECX": {
    "net_shares": 25620000,
    "net_value": 0.0,
@@ -13403,11 +13628,6 @@
    "net_shares": 42300000,
    "net_value": 0.0,
    "count": 22
-  },
-  "WGSH": {
-   "net_shares": 454100,
-   "net_value": 0.0,
-   "count": 1
   },
   "DSSA": {
    "net_shares": 0,
