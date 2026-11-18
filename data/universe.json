@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T01:44+07:00",
+"updated": "2026-11-19T01:20+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -2563,7 +2563,7 @@
 },
 {
 "kode": "MKNT",
-"nama": "Pt Mitra Komunikasi Nusantara Tbk",
+"nama": "PT Remitra Global International Tbk",
 "sektor": "Distribution Services"
 },
 {
@@ -3830,11 +3830,6 @@
 "kode": "TMAS",
 "nama": "PT Temas Tbk",
 "sektor": "Transportation"
-},
-{
-"kode": "TMPO",
-"nama": "PT Tempo Inti Media Tbk",
-"sektor": "Consumer Services"
 },
 {
 "kode": "TNCA",
