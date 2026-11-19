@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T00:43+07:00",
+ "updated": "2026-11-20T01:43+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 69
+  "news": 67
  },
  "transactions": [
   {
@@ -136,7 +136,7 @@
    "date": "2026-11-19",
    "code": "KDTN",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 401000000,
    "price": null,
@@ -147,8 +147,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVW93WnhuVUZ3eDJEZ3o0RXlOUkxPLVZMSzQ0UWFnSzJER3hRRTBiMER3TkF4blVWc25DaDRWX1BPUUIyRkpfYU5teXBEQ2ZnZnVaT0VEMmxFN1ktY1NCNm5hdUxRc1FjbXlONEpXa01FcGMyWV9kZlZpSkhTUFZkZXRjNmJHWHVsSmNPTXZMbTV1RVdDN1pSLUJCcHFfM2ZNQVYzbE91MzJGMUdhbDMtTkNQdm9rYk0?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTGVnZ19CUjAyN09DRW1qU21xd2IzMkVKTEkyQmJRNnMzbW0wTU4yQi1TUDV3Y2ZLYmxzZk5QNjBTZF9FOTBTOTV1d2VTT2wtNVdFVmVSei1FcjRPNEN4cXZhc18yVnZ1YWtETG9kdGhaaVFqWEdNbzBPWmtWMnB5T1gyYlo1ZGZiRWIwcnVUbkJKZEUwODNoT3c4Q3I3YXN6V1JPUXhiRGlHY1BDWmdmMjRR?oc=5",
    "title": "Putrasakti Mandiri Kembali Borong Saham KDTN, Kepemilikan Tembus 401 Juta Lembar",
    "first_seen": "2026-11-19T15:35+07:00"
   },
@@ -972,6 +972,27 @@
    "first_seen": "2026-11-17T15:58+07:00"
   },
   {
+   "id": "b465e080dae8",
+   "date": "2026-11-17",
+   "code": "DGIK",
+   "party": "Jepang",
+   "role": "pengendali",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaGVWalRKQTZaaEVCS2pKWUQydktJLXRpajctS0ZtWVAyeEtpYm9UYUR1MmI5bGFZX0R4NHlVblktd2IwQXB2cjJ2ODh1NEFOaHpiSFBmV05sa1B1elVBOFhuSXIyTTEySGRhblR3LXhUcC11bXRfRW1wYXd5dEk0Uk9NLUpzREIzTjU2QWF2N0VBQmZNaEVjRVY0UXk?oc=5",
+   "title": "Sambut Investor Jepang, Pengendali Borong 14,02% Saham DGIK Rp107,8M",
+   "first_seen": "2026-11-16T09:22+07:00"
+  },
+  {
    "id": "c70303073d18",
    "date": "2026-11-16",
    "code": "RGAS",
@@ -1389,27 +1410,6 @@
    "source": "Hallo Indonesia",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTmdERTAxTTFXY2tmVmF4WXZwYm5ENE9uN1BtbEEwVFFkRWppSXJYc0paVVJPOEdndl9fSlRqWWZ2VzF6dkUwaEZuTTNGNlJvVTVsdVNvbG9zSW9YTG1NYmV0Rm1pa0JyTkppTGFHSlk3Q3NZWXZiMDBXMmQ3a2U5WHY4bkhGR2Y5eXFJSmpicVJ4WUVubWZhaS1ZdzBkUWpOWVVFNVB5Z1dlQ2Y5Um9xNnZPLUR5UVlXX0luRDZpMnRySEw4d1VsbThfY2Rjek84NGF0eXlZQmJlakd30gHiAUFVX3lxTE1KQ0dDeUFKNWlnZDJlOXE4aU8zZ1lsQUJtVlYxOEpYQlp2aU1tWWxJNWxTLXEtUmx0TE0tY0tWZWdDXzlRQTRRUGJLcnRILUxzNVZsNlFaN190RE10UUVDd2tqZzNVMGFtR3Q5TzEzZmlxT09fU0tIWktWeTE2Y21OS2pEZTVzc25Zb2VwSmN6MnZNMGtqajl3Zk1uUUNoYnp0SERKbXA5MlB4Q1NFaV91dGlMZXVQTEN2REk1T05SUzUtZHN4RTBrcjBrc2ozWXFRSU1rLUxyM1Q4R3VtWE1YRUE?oc=5",
    "title": "Setelah Jual Saham pada Juli, Ari Sudarsono Kembali Perbesar Kepemilikan BRRC pada November 2026",
-   "first_seen": "2026-11-16T09:22+07:00"
-  },
-  {
-   "id": "b465e080dae8",
-   "date": "2026-11-15",
-   "code": "DGIK",
-   "party": "Jepang",
-   "role": "pengendali",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbmJ1QVBMVVJvM1JRLVBrS2ZUQ04yQzlwUkwycmh6S1Q5cUt6OXpSeXIxQkJQc0Vrdk1NcUtaWlJwVmdQVlBZaER0czBtVG1QVktkQ1F3TTlaQ3RsaTVlUVR0TXZhS0JlazVoODBnOUZsYU5PSmhIQ1h3WF9zQUdLQVhGMWZHak5Hc1Nacnh4OU9iMDJNNElB?oc=5",
-   "title": "Sambut Investor Jepang, Pengendali Borong 14,02% Saham DGIK Rp107,8M",
    "first_seen": "2026-11-16T09:22+07:00"
   },
   {
@@ -13776,6 +13776,11 @@
    "net_value": 0.0,
    "count": 4
   },
+  "DGIK": {
+   "net_shares": 597760000,
+   "net_value": 0.0,
+   "count": 7
+  },
   "RGAS": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -13815,11 +13820,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "DGIK": {
-   "net_shares": 597760000,
-   "net_value": 0.0,
-   "count": 7
   },
   "GMFI": {
    "net_shares": 350000,
