@@ -1,10 +1,94 @@
 {
- "updated": "2026-11-19T15:35+07:00",
+ "updated": "2026-11-20T00:43+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 68
+  "news": 69
  },
  "transactions": [
+  {
+   "id": "a169d5bd6906",
+   "date": "2026-11-19",
+   "code": "GOTO",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 1460000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 4.94,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/morgan-stanley-jual-146-miliar-saham-goto-kepemilikan-turun-jadi-494/",
+   "title": "Morgan Stanley Jual 1,46 Miliar Saham GOTO, Kepemilikan Turun Jadi 4,94%",
+   "first_seen": "2026-11-20T00:43+07:00"
+  },
+  {
+   "id": "991bb688db51",
+   "date": "2026-11-19",
+   "code": "NAYZ",
+   "party": null,
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 193000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/wise-team-international-borong-193-juta-saham-nayz-investasi-rp1448-miliar/",
+   "title": "Wise Team International Borong 193 Juta Saham NAYZ, Investasi Rp14,48 Miliar",
+   "first_seen": "2026-11-20T00:43+07:00"
+  },
+  {
+   "id": "e5ab2c4458ce",
+   "date": "2026-11-19",
+   "code": "NAYZ",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 193000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jUnpkNzIybkVjamF6R0wzanE4RTJXalJyak16cnd6eklvT3BhZE9JRU5MRy1UZEpXLU1iUkE4VExwM1Q4dWdsR1FSVnE4Vl9HeDBIM1lHSXZRcFhHV1Mw?oc=5",
+   "title": "Wise Team International Borong 193 Juta Saham NAYZ",
+   "first_seen": "2026-11-20T00:43+07:00"
+  },
+  {
+   "id": "9343ab37008e",
+   "date": "2026-11-19",
+   "code": "BIPI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNHFkZUl5R3BKTlI0MHcwVUJUank5SENfODhPeVloOF9DZHdmMWg0cHBzamw1LW1vd0lPY3Q5aFNoTTRzVzB2N0dFUW5LQllaeDFINDZ2S1NTT2JqR3NtWC1KQXhJNTlUd3lIa3ZINGZhNWdXWlRzWTNaaUxtclpGcWl3WXZsYTRlWWROZ19OZTNsYmljTFhQbDZmSTJ4cC1Idk9vTGhJRTAzeFZPd2pZT2FCMlhwUQ?oc=5",
+   "title": "BIPI Danai Proyek LNG hingga Pusat Data, Hasil Divestasi Rp1,79 T",
+   "first_seen": "2026-11-20T00:43+07:00"
+  },
   {
    "id": "f2a4bfa6f402",
    "date": "2026-11-19",
@@ -168,7 +252,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "gadget.qoo10.co.id",
+   "source": "Qoo Media",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdUk0TkZYU0RuZk5vaEZkeHNFTU81bUp6R1gxY2NWS2pWSEFBZkZPZzYwLVRfN0h2eVRYYmNzWUdaemkwM0E3RzhnV0dTSlViWEhWZ08yWXBzLUtjcWRyUkFpNUxEeUpIUWtVdjlSZHpteFVHaTNKcGFBaHNVRmRENFpuMkpYQQ?oc=5",
    "title": "PT Pukul Rata Kanan Borong 200 Juta Saham MMIX, Kepemilikan Jadi 8,74%",
    "first_seen": "2026-11-19T15:35+07:00"
@@ -219,20 +303,20 @@
    "id": "fe3ee38f64f5",
    "date": "2026-11-19",
    "code": "ISSP",
-   "party": "PT Steel Pipe Industry",
-   "role": "pengendali",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
-   "shares": 279700,
-   "price": 400.0,
-   "value": 111880000.0,
+   "shares": null,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": 57.8,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/cakra-bhakti-tambah-kepemilikan-saham-issp-jadi-5780-status-pengendalian-tetap/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPanlvZWdxU0xXNkV5cWdMbWFjR3RyUDNBenQ1Z29kOXpNUWF0MHdCcjhjM2Yzb0xmSEt0WW1kNzZOb2w0OFZyY1BDSk50dTNzSXczTkxUX1VtY1FMd2RaV2NjUmpfdlpoYmxQVEFjOC1GYjRhdktUNHlKQzNrdjFjRzJiWUFBMWhkMVI4OVFrQVJEY0ZVY0JFeU9xNDlqRldMeVk4?oc=5",
    "title": "Cakra Bhakti Tambah Kepemilikan Saham ISSP Jadi 57,80%, Status Pengendalian Tetap",
    "first_seen": "2026-11-19T15:35+07:00"
   },
@@ -882,8 +966,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ085U3dsZ3hnbC1zcDcwdExLUG1OZ3N4eDZlWTBrS3Z3a083SmZYcjBBZnJqVFpfZTZjbFBBNV95V0lxelk1STFaUnhmN2VHdmtsNUZQeHdKRklhQjNPRkNzdnozRGZxSTVPYS01eFJodjh6VmpBbnYzNG9PcndobFFObVdjeTJ1bVV3eXRKcmNwMDFOT1B3eFU2bmxWdUtJSjBZbkU3RmM4bmV6b1RmUWVQYTVGTFk?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdV8wNUZYeDVGT0FEazJuLWRpVTBJLU83SWxfU1lDWjN6elMtUmJ5Q25HVFhNeU9xd1g3bFhlYkRhYVRCV3ZILWZJakUzOHBGZHJvSmNiUWszSm9QS1ZIT2VBNmxnME1JRERqWEtKZEJlbDI4a0Q3SmNTcXZaVHRhMzdYWXlmQ0V3QksxR3JoQ0N4QjkzUW52Q1hIaXlkRFJobWI2OEpOVl9KLXlKMVY2OXVR?oc=5",
    "title": "Komisaris ATLA Kembali Lepas Saham, Total 50 Juta Lembar Dilego dalam Empat Hari",
    "first_seen": "2026-11-17T15:58+07:00"
   },
@@ -1764,8 +1848,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Suara Independent News",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9KU3lydFZNNzM0ZFM2TU02eGtPOFVaZmpHOHgzeEFBMl9xQTd0eWRWSzJFbmVIcUpqWlAtdGpzVENBcWJZeS1WQmoyN0lqYXpOTUFPR0NwVmZ2UHBRTTNqaUNjR1hFcVZqck1Qbzk5ZzNWeWF2Tzk4?oc=5",
+   "source": "CentralBatam",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wMGRJdVo3ZzlXRFJTTk1hYVRzeGRkMkFvVzVZNUpNdjJZckduT3d3OTlzcVBjTVhYUVQzbHhrcVp2VFFlb2pfa25xYjhqbDBVZDB0U0VFNC11b2VKQndrdEk4NVRlSXpnZFp3?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX Rp5 Miliar",
    "first_seen": "2026-11-13T14:51+07:00"
   },
@@ -1890,8 +1974,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5pckZWRF9MelFrbHp4a3VyZGw3ZndRbmNYdjlyVzZWcEdPVUY4U3hPUmxpVlpuSTNTREM0cUo4SDBkT29GOVQzREJlWUZ6Uy1iUDZ4R29TWUVJa3pIRFlNZ3RLMnBwVDZESzZz?oc=5",
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPT0xOQlZBSkVfaXROVWd4ZV9vSVpVWlVxbVVlQWZtQ3AweHdZX1hIV2NzeWdQYWJ6VkFqRUxWamhQcXpQLXRGYzl1QmUzbmdjMXA5YzFfWEZyTEVNNWRNMEZLNGZQU1V5T2htdkxrR2E3UUk?oc=5",
    "title": "PT Pukul Rata Kanan Tambah Kepemilikan Saham MMIX",
    "first_seen": "2026-11-13T12:15+07:00"
   },
@@ -13552,6 +13636,21 @@
   }
  ],
  "net_by_code": {
+  "GOTO": {
+   "net_shares": -3200000000,
+   "net_value": 0.0,
+   "count": 16
+  },
+  "NAYZ": {
+   "net_shares": 386000000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "BIPI": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
   "MMIX": {
    "net_shares": 1012400000,
    "net_value": 540000000.0,
@@ -13583,8 +13682,8 @@
    "count": 20
   },
   "ISSP": {
-   "net_shares": 4549700,
-   "net_value": 111880000.0,
+   "net_shares": 4270000,
+   "net_value": 0.0,
    "count": 4
   },
   "NSSS": {
@@ -13931,11 +14030,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 4
-  },
-  "GOTO": {
-   "net_shares": -1740000000,
-   "net_value": 0.0,
-   "count": 15
   },
   "BYAN": {
    "net_shares": -466170000,
