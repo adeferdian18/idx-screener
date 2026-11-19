@@ -1,1 +1,1 @@
-{"updated": "2026-11-17", "aturan": {"order_hari": 5, "maks_hari": 20, "biaya": {"beli": 0.0015, "jual": 0.0025, "slip": 0.001}}, "ringkas": {"sinyal": 0, "selesai": 0, "kena_tp": 0, "kena_sl": 0, "waktu_habis": 0, "berjalan": 0, "menunggu": 0, "batal": 0, "rata_r": null}, "trades": []}
+{"updated": "2026-11-18", "aturan": {"order_hari": 5, "maks_hari": 20, "biaya": {"beli": 0.0015, "jual": 0.0025, "slip": 0.001}}, "ringkas": {"sinyal": 0, "selesai": 0, "kena_tp": 0, "kena_sl": 0, "waktu_habis": 0, "berjalan": 0, "menunggu": 0, "batal": 0, "rata_r": null}, "trades": []}

@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-19T01:20+07:00",
+"updated": "2026-11-20T01:29+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -2562,11 +2562,6 @@
 "sektor": "Producer Manufacturing"
 },
 {
-"kode": "MKNT",
-"nama": "PT Remitra Global International Tbk",
-"sektor": "Distribution Services"
-},
-{
 "kode": "MKPI",
 "nama": "PT Metropolitan Kentjana Tbk",
 "sektor": "Finance"
@@ -3830,6 +3825,11 @@
 "kode": "TMAS",
 "nama": "PT Temas Tbk",
 "sektor": "Transportation"
+},
+{
+"kode": "TMPO",
+"nama": "PT Tempo Inti Media Tbk",
+"sektor": "Consumer Services"
 },
 {
 "kode": "TNCA",

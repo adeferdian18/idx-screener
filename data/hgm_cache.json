@@ -26,7 +26,7 @@
 "AGAR": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-12"
+"diambil": "2026-11-19"
 },
 "AKKU": {
 "status": "data kurang",
@@ -345,7 +345,7 @@
 "NAYZ": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-10-21"
+"diambil": "2026-11-19"
 },
 "NEST": {
 "status": "sebagian",
@@ -685,18 +685,18 @@
 "ITMG": {
 "status": "kuat",
 "skor": 3,
-"kuartal": "2026-06",
-"laba_yoy": 0.9732,
-"penjualan_yoy": 0.1511,
-"margin": 0.1021,
-"margin_lalu": 0.0595,
+"kuartal": "2026-09",
+"laba_yoy": 0.4374,
+"penjualan_yoy": 0.336,
+"margin": 0.0947,
+"margin_lalu": 0.0881,
 "akselerasi": null,
 "cek": {
 "laba": true,
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-09"
+"diambil": "2026-11-19"
 },
 "KKGI": {
 "status": "sebagian",
@@ -1039,12 +1039,17 @@
 "FLMC": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-12"
+"diambil": "2026-11-19"
 },
 "BEEF": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
 "diambil": "2026-11-13"
+},
+"INOV": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-11-19"
 }
 }
