@@ -1,10 +1,241 @@
 {
- "updated": "2026-11-19T01:29+07:00",
+ "updated": "2026-11-19T15:35+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 70
+  "news": 68
  },
  "transactions": [
+  {
+   "id": "f2a4bfa6f402",
+   "date": "2026-11-19",
+   "code": "MMIX",
+   "party": "PT Pukul Rata Kanan Kini Kantongi",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 200000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ1lVWU5nRTZVekxtLWVCVjlsbk45MndXRFZieEMxYTQwcWxYMDJUZUhtTTZDODl2UUI0VlZNSjk5QmV0eUNkYkFMdVpXbEhPNDEweXBSVG5uaWFfYTJyTGY1d293VEhybTVxNDYyZmRDUEpoX0Q2MmI5WXgtMlIzbzJBMElsaEphaldmMGJqeDFndjFlYXgzWU5UNkhwRVJIUWowMlRTdFVNa3JBZ09MQ2pmWUY?oc=5",
+   "title": "Borong 200 Juta Saham MMIX, PT Pukul Rata Kanan Kini Kantongi 8,74% Kepemilikan",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "51e7563fbf2a",
+   "date": "2026-11-19",
+   "code": "CYBR",
+   "party": "Borong",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaW1LSjdwZWd5OC1uRmdOdmZhM09Ea3Qxc1NlTWdWb0N0TWcwR3JITW1MZ09RdHRXRFpiRUp0MmhKbFJvYUIxWjdsLUhiMHhHU2w5WWRPOHkxLXVPRWxlZlRUYUk2TVpNS29xdDJNR0ZuZDlQZzNWN0xiSUJQd0xaZFlTOWFtQkVHUUdTX0tNd2dhd00?oc=5",
+   "title": "Dirut Borong Saham CYBR, Gelontor Dana hingga Rp2,58 Miliar",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "dbe700c2fab1",
+   "date": "2026-11-19",
+   "code": "KDTN",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 401000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVW93WnhuVUZ3eDJEZ3o0RXlOUkxPLVZMSzQ0UWFnSzJER3hRRTBiMER3TkF4blVWc25DaDRWX1BPUUIyRkpfYU5teXBEQ2ZnZnVaT0VEMmxFN1ktY1NCNm5hdUxRc1FjbXlONEpXa01FcGMyWV9kZlZpSkhTUFZkZXRjNmJHWHVsSmNPTXZMbTV1RVdDN1pSLUJCcHFfM2ZNQVYzbE91MzJGMUdhbDMtTkNQdm9rYk0?oc=5",
+   "title": "Putrasakti Mandiri Kembali Borong Saham KDTN, Kepemilikan Tembus 401 Juta Lembar",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "259b699f0b94",
+   "date": "2026-11-19",
+   "code": "SATU",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 29825,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 7.49,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTXh6ZHBZZHU2azNVemRhbHU4ajdmMGJHbjhrSG9rSjFYdmxGR3AyejRyUVZtTXpJMndBZVVGRUJZakRCWnU2bWM3b1F5YnBQLUhfcVhVLVdHTXpTNmoyM3F2QXZGVUxZcW9NenFHVk92TEJaRlh3Y085TTFnSlJoRy1XS2dZNDVCS3ZpT1RhUVBJNEhlQzl6Z09YdlBmZ1NwMDV2bmpBYnc?oc=5",
+   "title": "Borong 29.825 Saham SATU, Stefani Farida Tambah Kepemilikan Jadi 7,49%",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "b36d3d3539fb",
+   "date": "2026-11-19",
+   "code": "FOLK",
+   "party": "Sutopo Widodo",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 15820000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTUlDemNPUXZaUTZMRm85UEc2VGFPVXFyMkhvbFdxb1ZGaG5KWWtaaTRrVm1KWXQ2bW5YR25TMm5TOFlUMjRndUloWUtSTTVtcURkSU1ycGNXMFhCWkZSRHIyZTV2bWM0aS1WOGxMUzNKLXNDM0ZBTFh4T01RX3cwbktCbkpteG1BdkZGYkZ5UFVoYmYwMFoya2g0aFpFXy11SEpRYkxQODhqd0NQUEJNbWFQTQ?oc=5",
+   "title": "Komisaris FOLK Sutopo Widodo Borong 15,82 Juta Saham, Kepemilikan Tembus 5,33%",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "82162ee9f988",
+   "date": "2026-11-19",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 200000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xNXd0SDJhZmZwRGpOc3BLSTlXejJwdmdFaDBqZ1RXOGRRYURIWUVjSlpvRDB2TmdFQ1doUUYtOWUxbWVydGl4Nmd1eldrMmYyWmRWSjY4VmlfRFp3b3EtYzlFdGw?oc=5",
+   "title": "Perusahaan Gabriel Rey Borong 200 Juta Saham MMIX",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "5a66c7db2d8a",
+   "date": "2026-11-19",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 200000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Industry.co.id",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOS21hZE1hNHdJbnJENnE3SUlzUnJSU2VENjRDS0dEN0ptTy1CcHJaUG5ObXNqMjJJR3lhNDVEeWgtQThzdVc2U0pKaWV3WlZsdGtEdDloTlR0aEk5LThRN1ZTQ3prZUFOOEFOU0pkNkdjc0RzUWtrczQtQTZiSElXaThuMk1wanlLbzRfdHVJZmxqY0M3UGhhaV9WaWFWNVRfdUgzZXRoLU8xYlF6WVZ0OQ?oc=5",
+   "title": "Pukul Rata Kanan Borong 200 Juta Saham MMIX, Kepemilikan Tembus 8,7 Persen",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "a887ca5a9bd1",
+   "date": "2026-11-19",
+   "code": "MMIX",
+   "party": "PT Pukul Rata Kanan",
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 200000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 8.74,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "gadget.qoo10.co.id",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdUk0TkZYU0RuZk5vaEZkeHNFTU81bUp6R1gxY2NWS2pWSEFBZkZPZzYwLVRfN0h2eVRYYmNzWUdaemkwM0E3RzhnV0dTSlViWEhWZ08yWXBzLUtjcWRyUkFpNUxEeUpIUWtVdjlSZHpteFVHaTNKcGFBaHNVRmRENFpuMkpYQQ?oc=5",
+   "title": "PT Pukul Rata Kanan Borong 200 Juta Saham MMIX, Kepemilikan Jadi 8,74%",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "eb04d950d4a5",
+   "date": "2026-11-19",
+   "code": "MMIX",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 200000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1kX1hNSEVnZVNwQXNjYTg3UXFrN3lVRkJORVpWVmVlY1lwNDVRRERwd1BPTEkwSkdELWt3RDdDZHQ0eHZadnRJUE9CMHFEVmhOa3BvbzZQZ3pfVW9KS3c?oc=5",
+   "title": "Gabriel Rey Borong 200 Juta Saham Multi Medika Internasional",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "ca7a91325223",
+   "date": "2026-11-19",
+   "code": "WIFI",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9xQ1paLWRFYWtmcmtFSXhkX0NrTkNHcDQtckNwbzc4MlhHT2dVOE42ekxwN2tPR2ZFSFBmcGpwOERoUTFyQWl0dU4xbjdNc3djeUpVRW1jdTZIZw?oc=5",
+   "title": "kapital investasi - Pengendali WIFI Lepas 26,67% Kepemilikan Saham Senilai Rp 4,06 Triliun",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
+  {
+   "id": "fe3ee38f64f5",
+   "date": "2026-11-19",
+   "code": "ISSP",
+   "party": "PT Steel Pipe Industry",
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 279700,
+   "price": 400.0,
+   "value": 111880000.0,
+   "before_pct": null,
+   "after_pct": 57.8,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/cakra-bhakti-tambah-kepemilikan-saham-issp-jadi-5780-status-pengendalian-tetap/",
+   "title": "Cakra Bhakti Tambah Kepemilikan Saham ISSP Jadi 57,80%, Status Pengendalian Tetap",
+   "first_seen": "2026-11-19T15:35+07:00"
+  },
   {
    "id": "d9ce00bbc0fd",
    "date": "2026-11-18",
@@ -43,7 +274,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPODlldUp6aVNBTXd4TTZhNFlxNzU0NF9USDdOZ1NXNjdIdjFhUWxtcENZYVJNMy1FWE9pUFQ3TXkzbEZpTGZDLWVPeHNhWklwYUtXMHpkTFhQbkhkT0F5dGY0d0xYZ0ZQRW9BdnBmNTdhQ01uT1dNVm9BaDFyd0VpSVpKWWxVVU1SUmlSRllRRGVtWjVHN0hHei1OeGJicHk5MmNoTkxpVXhLS25ZZkh2dkNzYw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRFhUZ3dxTHRmOHFuWTdFQ0w2Vnh3VXlSRkxTd1drUGxyLTlmRzlVU3ZqU0NxMDZ2ano2R2c4QVZnWUh2cjZqRDBTOVhhYXRPN0dpWFlBRkc2N3pnUUo4MFBCeUIzSWtkOHB5bC1rMFNhZVBHTER6TW9mQk1feThocFdKcURxaXc1QjVMNGg0VHRKOG9ISkViUVpCVkdqREpIQnNrZ0pJLXJpSE92QVloeUN0RQ?oc=5",
    "title": "Indovest Central Lepas 24 Juta Saham NICK, Porsi Kepemilikan Susut Jadi 53,92%",
    "first_seen": "2026-11-19T00:29+07:00"
   },
@@ -655,6 +886,27 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ085U3dsZ3hnbC1zcDcwdExLUG1OZ3N4eDZlWTBrS3Z3a083SmZYcjBBZnJqVFpfZTZjbFBBNV95V0lxelk1STFaUnhmN2VHdmtsNUZQeHdKRklhQjNPRkNzdnozRGZxSTVPYS01eFJodjh6VmpBbnYzNG9PcndobFFObVdjeTJ1bVV3eXRKcmNwMDFOT1B3eFU2bmxWdUtJSjBZbkU3RmM4bmV6b1RmUWVQYTVGTFk?oc=5",
    "title": "Komisaris ATLA Kembali Lepas Saham, Total 50 Juta Lembar Dilego dalam Empat Hari",
    "first_seen": "2026-11-17T15:58+07:00"
+  },
+  {
+   "id": "c70303073d18",
+   "date": "2026-11-16",
+   "code": "RGAS",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZ3RFMG9WTjZtNlNSalNQbXZ0c1VpaWVWV21WRW9Od29PaW53NHh2Rl90VmxXV0tZRTY3MWlmZ193WTFqdXJmMF9VQzQ5NGE2RUdlSjFBSUhiRXE3RzA2TEJIMnRhMTQ2VnZIQ3hydU9HdHdtTmNWNE9NODAwRkNjS3llcHdVa1BxSS0wbWhBVlo3blgx?oc=5",
+   "title": "Harga Saham Merosot 50%, Investor RGAS Ternyata Divestasi Senyap!",
+   "first_seen": "2026-11-19T15:35+07:00"
   },
   {
    "id": "0ca5846ac416",
@@ -1512,8 +1764,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CentralBatam",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wMGRJdVo3ZzlXRFJTTk1hYVRzeGRkMkFvVzVZNUpNdjJZckduT3d3OTlzcVBjTVhYUVQzbHhrcVp2VFFlb2pfa25xYjhqbDBVZDB0U0VFNC11b2VKQndrdEk4NVRlSXpnZFp3?oc=5",
+   "source": "Suara Independent News",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9KU3lydFZNNzM0ZFM2TU02eGtPOFVaZmpHOHgzeEFBMl9xQTd0eWRWSzJFbmVIcUpqWlAtdGpzVENBcWJZeS1WQmoyN0lqYXpOTUFPR0NwVmZ2UHBRTTNqaUNjR1hFcVZqck1Qbzk5ZzNWeWF2Tzk4?oc=5",
    "title": "Gabriel Rey Tambah Kepemilikan Saham MMIX Rp5 Miliar",
    "first_seen": "2026-11-13T14:51+07:00"
   },
@@ -13300,6 +13552,41 @@
   }
  ],
  "net_by_code": {
+  "MMIX": {
+   "net_shares": 1012400000,
+   "net_value": 540000000.0,
+   "count": 25
+  },
+  "CYBR": {
+   "net_shares": -34473400,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "KDTN": {
+   "net_shares": 401000000,
+   "net_value": 0.0,
+   "count": 2
+  },
+  "SATU": {
+   "net_shares": 29825,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "FOLK": {
+   "net_shares": -70630000,
+   "net_value": -883200000.0,
+   "count": 6
+  },
+  "WIFI": {
+   "net_shares": -10000000,
+   "net_value": 0.0,
+   "count": 20
+  },
+  "ISSP": {
+   "net_shares": 4549700,
+   "net_value": 111880000.0,
+   "count": 4
+  },
   "NSSS": {
    "net_shares": 89100000,
    "net_value": 0.0,
@@ -13309,11 +13596,6 @@
    "net_shares": -72000000,
    "net_value": 0.0,
    "count": 3
-  },
-  "FOLK": {
-   "net_shares": -86450000,
-   "net_value": -883200000.0,
-   "count": 5
   },
   "DYAN": {
    "net_shares": 0,
@@ -13329,11 +13611,6 @@
    "net_shares": 14182700,
    "net_value": 0.0,
    "count": 9
-  },
-  "MMIX": {
-   "net_shares": 12400000,
-   "net_value": 540000000.0,
-   "count": 20
   },
   "BUVA": {
    "net_shares": 600000000,
@@ -13399,6 +13676,11 @@
    "net_shares": 16640000,
    "net_value": 0.0,
    "count": 4
+  },
+  "RGAS": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
   },
   "SMBR": {
    "net_shares": 0,
@@ -13645,11 +13927,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "ISSP": {
-   "net_shares": 4270000,
-   "net_value": 0.0,
-   "count": 3
-  },
   "AKRA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -13780,11 +14057,6 @@
    "net_value": -141750000.0,
    "count": 5
   },
-  "KDTN": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
   "ISAT": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -13865,11 +14137,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "WIFI": {
-   "net_shares": -10000000,
-   "net_value": 0.0,
-   "count": 19
-  },
   "BCIC": {
    "net_shares": 4300,
    "net_value": 473000.0,
@@ -13899,11 +14166,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "CYBR": {
-   "net_shares": -34473400,
-   "net_value": 0.0,
-   "count": 6
   },
   "JPFA": {
    "net_shares": 0,
