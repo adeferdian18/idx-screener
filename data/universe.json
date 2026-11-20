@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T01:29+07:00",
+"updated": "2026-11-21T00:58+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -2635,6 +2635,11 @@
 "kode": "MPPA",
 "nama": "PT Matahari Putra Prima Tbk",
 "sektor": "Retail Trade"
+},
+{
+"kode": "MPRO",
+"nama": "PT Maha Properti Indonesia Tbk",
+"sektor": "Finance"
 },
 {
 "kode": "MPXL",
