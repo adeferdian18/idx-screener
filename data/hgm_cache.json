@@ -874,7 +874,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-16"
+"diambil": "2026-11-23"
 },
 "NATO": {
 "status": "sebagian",
@@ -890,7 +890,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-16"
+"diambil": "2026-11-23"
 },
 "TMPO": {
 "status": "data kurang",
@@ -1007,7 +1007,7 @@
 "ASPI": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-16"
+"diambil": "2026-11-23"
 },
 "WINS": {
 "status": "data kurang",
@@ -1034,7 +1034,7 @@
 "AIMS": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-16"
+"diambil": "2026-11-23"
 },
 "FLMC": {
 "status": "data kurang",
@@ -1051,5 +1051,10 @@
 "status": "data kurang",
 "skor": null,
 "diambil": "2026-11-19"
+},
+"ASPR": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-11-23"
 }
 }
