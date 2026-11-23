@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T04:08+07:00",
+ "updated": "2026-11-24T04:48+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 75
+  "news": 94
  },
  "transactions": [
   {
@@ -699,6 +699,27 @@
    "first_seen": "2026-11-23T15:50+07:00"
   },
   {
+   "id": "803253e39549",
+   "date": "2026-11-21",
+   "code": "ESSA",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdThPM2tQT0tOb0g2eWdfUEdWVDVvWFhqX2Q2Q2VuVDRwQmpyWjNKazhwalBHdnNPcVpZX1Bkd1U0OWV5YW9aRHBFQzBEOTJoTEVfQnZyb0FBdzd4TjdhNjg3MlhyaTc0OHNVNllPeTBINzZBMmpPUHhBUmF5OHdfd2I5aG9aeVpJMWdNYWRHU0YwOGc?oc=5",
+   "title": "Boy Thohir Tambah Saham di ESSA AADI dan ADRO Senilai Rp3 Miliar",
+   "first_seen": "2026-11-24T04:48+07:00"
+  },
+  {
    "id": "f4cb66f32331",
    "date": "2026-11-21",
    "code": "WIFI",
@@ -739,6 +760,69 @@
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaU1Oamc3Y09LUTEtN01NZVlWckNhSWpjLVV6NjVVQ0lRQ0xwMjlGSlVEa1FjR2xhcjRvSzRsdnpRdzdXQ1MzczMwbEJFRHN5anZvT2U3SEdocjNKbXRyclp6WlcxbmJwcWxzVFlRdmFyUnh3QVhOSjJ1UWJPTE1qdlFuekVRVW9qaDJJOGRyN09QX1hWX25hYXQ5UWVvMk94ZlJXRFlZS2RHSklnVjZjS2V5NVR6aWF0eXpacl9mM01QQmJNWmF30gHMAUFVX3lxTE1SaHViUlp6di1pXzJQN2J4a1lYc1Z2eEplN3BoOEJHRkZsY0J2SmxRT25uQ2dPd0QxOURpZlFZWGtzWDdfRFFIZlJid0xmMnEwcnV0NXRZaVdGY3pwaDRnODBsYk5rRDJqM1FyQjYzQnQtWFhtRVhTMEdjSjRWM2JTWVhWSFVhVkxwTUFLRWwyak1XRkNCR3YzZmpNYnk0aWdtcHZyNmVHNHhxXzBRQUNjeE5IdG9VZF9PT1Jaa1BsOWJzdlhpSkxBZUwzVQ?oc=5",
    "title": "Asing Lepas Saham Rp 2,6 Triliun Sepekan, GOTO dan BUMI Ramai Diperdagangkan",
    "first_seen": "2026-11-24T04:08+07:00"
+  },
+  {
+   "id": "8300fd7ffe6d",
+   "date": "2026-11-20",
+   "code": "GOTO",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 4.93,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "FORTUNE Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVHhDRXZrdnNzWDBBV0c3MG9jNXVITXJFZ0dDQjNZRzBEdmc2SFRYQmNEV3hWemUwOE9PUEhnTW9vbXRhdXVHejdFZ3BUZ3k0a1Y3M1JZaUR0UnlmeFBVVEZaZkRtNUwzajV3MzJwNmpLWkE1WHRtazFUaEVsdG1wU3BJbk1yXzRkSk05alZ3Y24tTHlMVGFpSk1ucWJjVkhXM0JvN2M4SVVXTW56aWNCcEZtVG5Wc0xpemNRMU1OMA?oc=5",
+   "title": "Morgan Stanley Kembali Lepas Saham GOTO, Hak Suara Jadi 4,93%",
+   "first_seen": "2026-11-24T04:48+07:00"
+  },
+  {
+   "id": "30359b5be3c5",
+   "date": "2026-11-20",
+   "code": "BBCA",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "viv.co.id",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxON25JdGYtSGZScmNFdldURkV4RXE4UGs3NzRGQlpwRmd1RGhRRDJRNUVvT2JZbVM1RGk3SFVDMGNCYTR4WHMwYXV5eWF2bmJDemtibmJCTTY0OFNjS0M5YjdSVFNaS3ROcnFnblZSdFJlSTRIWjhLUE9EdGZ2bG1zYXZCY1liU3BCTzdxNnppbHZUbTQ?oc=5",
+   "title": "Investor Asing Lepas Saham BBCA Rp321,2 Miliar di BEI",
+   "first_seen": "2026-11-24T04:48+07:00"
+  },
+  {
+   "id": "2dba32c481a8",
+   "date": "2026-11-20",
+   "code": "BBCA",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "CentralBatam",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9jYzljWjdaM3BIbjlkLUgxNUliQW80bGZZMXlkWENzWmVxMEg5Z3dwNXUxaXEtVEhiTjdfY3lfTW9IWmRPQ2c4V2VTYUVEU082UXhnb2FDcFlNWGlfOUMyN09jQQ?oc=5",
+   "title": "Asing Lepas Saham BBCA Rp321,28 Miliar Saat IHSG Melemah",
+   "first_seen": "2026-11-24T04:48+07:00"
   },
   {
    "id": "ff954acfe769",
@@ -829,7 +913,7 @@
    "date": "2026-11-20",
    "code": "IMPC",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": 128500,
    "price": null,
@@ -840,8 +924,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/harimas-tunggal-perkasa-borong-128-500-saham-impc-kini-kuasai-3606/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMHd5MEg2N18wZEhPNUxHQTQyUVdXdmEyV21kR0xlWkJwUENmSWlybHJtRVpwTldna1lqWE1CWXZkemVZd001aXdXU0I3ME1wWVh3emNxcG9JYXRERXpqNVRPU09TbGtZQURISzZnN1h6a1M3T2xSNGgtSlRLMnlpSHF1b3RjU25WQXI2c2w4Ry1xNzg?oc=5",
    "title": "Harimas Tunggal Perkasa Borong 128.500 Saham IMPC, Kini Kuasai 36,06%",
    "first_seen": "2026-11-21T00:10+07:00"
   },
@@ -1209,7 +1293,7 @@
    "party": null,
    "role": "individu5",
    "action": "jual",
-   "shares": 1540000000,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -1218,8 +1302,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "CNBC Indonesia Market",
-   "link": "https://www.cnbcindonesia.com/market/20261120095816-17-786888/morgan-stanley-lepas-146-m-saham-goto-kepemilikan-turun-di-bawah-5",
+   "source": "CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRjhWN0hWb3BmdGZkYzY1WXJlMnRGeWFERDZXMlpaTDRYdE1IcGdnSzRBWkxwdmRVLV9UREZJdUM4T3lVZk5aLW03c2lOSFlaLUhYN3JmZU1BXzF6UlpHbDR4ZHZWS1NjRlhORzdsNGtnS0IwY3hJbENCNmtrTmF5RWVlZnNZRlU0bVRXTjdhQzhfVlVBRm9MTW55NkZiVlRoTUdNaUtRU1ROd2NUZXpLSTA3cjgwTDdqczBUV0V4SUE5LW9OU0NGYUx2OWfSAcwBQVVfeXFMTUY4VjdIVm9wZnRmZGM2NVlyZTJ0RnlhREQ2VzJaWkw0WHRNSHBnZ0s0QVpMcHZkVS1fVERGSXVDOE95VWZOWi1tN3NpTkhZWi1IWDdyZmVNQV8xelJaR2w0eGR2VktTY0ZYTkc3bDRrZ0tCMGN4SWxDQjZra05heUVlZWZzWUZVNG1UV043YUM4X1ZVQUZvTE1ueTZGYlZUaE1HTWlLUVNUTndjVGV6S0kwN3I4MEw3anMwVFdFeElBOS1vTlNDRmFMdjln?oc=5",
    "title": "Morgan Stanley Lepas 1,46 M Saham GOTO, Kepemilikan Turun di Bawah 5%",
    "first_seen": "2026-11-20T15:18+07:00"
   },
@@ -1869,8 +1953,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "شبكة تواصل الإخبارية",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hcG9GT2htVDVBSnNQY0RZa1pKVTIxVkt4UDBkRWRvYndqcktVcnY1MjdmRGhVTkItMFVldUVwMmNlWlVXdWNFbFJwam1yTzFnTERR?oc=5",
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CazhTRXpESkxQM3Vyc0ZHYnFPcVAteWdzMnBjTkh6YzdYMlhUQ1hJX3kxMmFrT0M3cHhhU29GbVlnT3lYc292UE8zZjYyY3Q3eGZkWG9BSFNfRmF5NjhIMl9nbmlMR3Z3RzZvejVodmVPZw?oc=5",
    "title": "Investor Asing Lepas Saham BBRI dan BMRI pada 18 November 2026",
    "first_seen": "2026-11-18T15:24+07:00"
   },
@@ -2005,7 +2089,7 @@
    "date": "2026-11-17",
    "code": "SRTG",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 801000,
    "price": null,
@@ -2016,8 +2100,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYTRURnBtMmlVMk5mYUdUeWQ0a196STMyeGZQTmM3U0RWN3kzYy1lSlUxcWJ4dU9xT3JTXzJsZzF5NWJaNk1Uek16cFFlZ3RlMnZXU00yVElvcUc4RHRJMk5LbFVuTjNZNWpMV2NGTVZrY3E4TUlpUUJxUmV6cmRrakpLQU82S1pVUEI5QnVJLXVuT2RUNmRTT2ZHRUdVTTU1SFNfQ2tRaw?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdGJlZ1lhM3U5bW0tOHlEUnRQSWZfNGNRUmplZ3F6cHZwMjVEQ2ZaSng4VnF1ZWk3Y3lURWpDSERPUXFLaVdjNVEySUxPX0hqaE5rc1pvVU5UcWNQSDZVcC14M2oxMkJ1ODJkTG9Hak9xeUxZaVlnbjVxa0l4MEhiaVBtekpoRXR3bzZjVTlDUExBbEkxQk9VeU9leTNnTjBVcFg1ZTdSRGFMd3d4?oc=5",
    "title": "Borong 801 Ribu Saham SRTG, Edwin Soeryadjaya Makin Tebalkan Kepemilikan",
    "first_seen": "2026-11-18T01:27+07:00"
   },
@@ -14937,7 +15021,12 @@
   "BBCA": {
    "net_shares": 0,
    "net_value": 0.0,
-   "count": 31
+   "count": 33
+  },
+  "ESSA": {
+   "net_shares": 4500000,
+   "net_value": 0.0,
+   "count": 7
   },
   "WIFI": {
    "net_shares": 1400000000,
@@ -14945,9 +15034,9 @@
    "count": 29
   },
   "GOTO": {
-   "net_shares": -6200000000,
+   "net_shares": -4660000000,
    "net_value": 0.0,
-   "count": 20
+   "count": 21
   },
   "BTPN": {
    "net_shares": 0,
@@ -15648,11 +15737,6 @@
    "net_shares": 3570000,
    "net_value": 0.0,
    "count": 1
-  },
-  "ESSA": {
-   "net_shares": 4500000,
-   "net_value": 0.0,
-   "count": 6
   },
   "UANG": {
    "net_shares": -12000000,
