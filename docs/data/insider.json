@@ -1,10 +1,304 @@
 {
- "updated": "2026-11-21T01:05+07:00",
+ "updated": "2026-11-23T15:50+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 64
+  "news": 33
  },
  "transactions": [
+  {
+   "id": "e368852de74a",
+   "date": "2026-11-23",
+   "code": "INCO",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "KabarBursa.com",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa3RacG9uZlFtSENOQjFYWkZyUXVUYjkwc3dNZUc5MDc4RC0wWW1fMzBBM01xcDY4N1ktZWdSVnhvdGctWndlOURITzUxRFNuOG5fZXA2bnVWODJMN0xFMlFnSWJzSGNQRThEbG8xSkJJUUlDT1Rjc3BWVlFEd2tFaVZNOFlDWEYyYlJEY0JrTXp3X2pkSjc5T0Y5TVRHV1NQTmdybDlmMXJuM2Y4NTZUSGt3azZNc0MxTlpQMU15WQ?oc=5",
+   "title": "Wakil Presiden Direktur Vale (INCO) Tambah Kepemilikan Saham, Beli di Harga Segini",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "fee831f4ee63",
+   "date": "2026-11-23",
+   "code": "NICK",
+   "party": "PT Kustodian Sentral Efek Indonesia",
+   "role": "pengendali",
+   "action": "jual",
+   "shares": 103620000,
+   "price": 200.0,
+   "value": 20724000000.0,
+   "before_pct": null,
+   "after_pct": 38.0,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/pengendali-nick-indovest-central-jual-10362-juta-saham-kepemilikan-susut-jadi-38/",
+   "title": "Pengendali NICK Indovest Central Jual 103,62 Juta Saham, Kepemilikan Susut Jadi 38%",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "cbc3884ea76e",
+   "date": "2026-11-23",
+   "code": "INCO",
+   "party": "Abu Ashar",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 300000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "nya",
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU0RoVjhKdENkNHdNMUlyX3ZLajJGS2tVSUJUYXY1TTdyWFZKNTNhT3lRN05BdC0tUzFoZjR5T2NJWGVVWlk1OWRlNk5uMG04SlNrb1dWdnJwelBzd0ZkQ25PUnV5UXlQRE4xaUQtbjZtV2lZRC11d3puZGxXY2VST1NXV2ZVSTVQU3otNkI0eWF6Qkh6MXlIZVRPdmk1Z2hzVFE?oc=5",
+   "title": "Direktur INCO Abu Ashar Borong 300.000 Saham Senilai Rp986 Juta, Ini Tujuannya",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "c5dd1b721b9b",
+   "date": "2026-11-23",
+   "code": "WINR",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 41.24,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcWxvS2JDdmtYMERvQWpYMUNhSXNsVzZWVkVMMXFpU1FSa1NfakZZemxvdlM1WHZjZ0txaUY3OEJiSWQ2R21NZkFiT0N4QUdTNkZqOGJ5bUZhTkFYby1ka3Q0TjFzOHpIR2U3eHhUcmlHWGdad2JjRmlYV0pSTUNhTDFrdlhGRGREcWlzcXd1OVhkdHZWOENIQjNsQWtvVzZETzNTRFM1dXdReFBtM0Fra3VJTV9ZMkluVV82ZDFrTXE?oc=5",
+   "title": "Pemenang Nusantara Internasional Beruntun Jual Saham WINR, Kepemilikan Susut Jadi 41,24%",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "738d3c93c896",
+   "date": "2026-11-23",
+   "code": "HRUM",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 6750000000,
+   "price": null,
+   "value": null,
+   "before_pct": 79.79,
+   "after_pct": 29.79,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNelRHQmNQN1dlcWJFZTBQWkVPU2IyXzZxSW8xVGNqdHlfX29DWXd1ODR6bXJ1MFpuTHZWaWtXWEV3Ny1LdV9MNUNuN0c1NlppRUFjZUpzNzZ3ajhqWXBWOXRwbThlQl9SVEpfbjQxT1FPbHVEZ0ZWek9HZW93MGdiTTJ6cjNwOVhmWjQzcGM4MmVlcDQ3ZDRVZFZ4U3NVdFJ3NWpHTHpFcTFBYjVjcll3OF83VWFtSzJ5R01KVXBwRGJmWVlpTGoyMS04QmNQVE9QbC03ZzRwbnRtWE9DRzhHdQ?oc=5",
+   "title": "Aksi Divestasi Jumbo! Karunia Bara Perkasa Lepas 6,75 Miliar Saham HRUM, Kepemilikan Susut dari 79,79% Jadi 29,79%",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "fa381542caf3",
+   "date": "2026-11-23",
+   "code": "TLKM",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 3.71,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "JournalArta",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE95YldrT3RlZVp1TmhOaTB1ck9jMkFCZjRWdEp5Y0NqakprbUhuVWxYMjZoblA3UWY2M3hzVzQ4a1E3cm5jNUwteWFlUENaUWkxLTdIWDhobktDNXFFbld4dURCWE5UYVp6cW9hWnVsX0p5S29IMW1zSTdTMm1EQQ?oc=5",
+   "title": "IHSG Turun 3,71% Sepekan, Asing Lepas Saham TLKM",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "de1d9e6cb7b3",
+   "date": "2026-11-23",
+   "code": "GMFI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 500000,
+   "price": 39.0,
+   "value": 19500000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUjl0bWRfdDJnSUxyaURCNFNWNE8zcV9kWVpEUnZhQTlxTG5HT3o2STVQS2dNb1dTSHJPZGFmX0RxRW52LTc0Z3F0bFZZNUF5QTgxU281SVVyamJ4LTFZOWxGdnlJVUVjRGJIampLY2ZnQVIzenpLU2phVWRydGJtakg1LXg4ZDBkQ1pWdW55ajI4Ul9IR2JIWllSdnBKMW91alBYZ2ZrUVdvaW1ZSFFycnREVEtuUQ?oc=5",
+   "title": "Direktur GMFI Borong 500 Ribu Saham di Harga Rp39, Kepemilikan Naik 33,3 Persen",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "a17e5e5d7f6b",
+   "date": "2026-11-23",
+   "code": "INCO",
+   "party": "Vale",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 300000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRDZTeFhLS1lNWW5XMGhNWVZUUmZnWm01a2FQM2dKRWJpbHJYM2lIcTRxRDFYUTh4VDlyVHdrc2dYejFhdDZPT21IOWZ2LWxMSDJPNFRkZ3M4VkdaeWZOM2V5U2FHWG11MFBLbjctVHUzVXRTcVY2RGZtbTV4MjdyUkdRd3dadEZNc3JKeWljVENRZzJwUkpQajhTb2RJWk5HX2JXZTJMNTJEbzRVUDJfNVhNYWdFMXk2SDNZ?oc=5",
+   "title": "Wakil Presiden Direktur Vale Borong 300 Ribu Saham INCO, Kepemilikan Melonjak 1.363%!",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "b799c20896ed",
+   "date": "2026-11-22",
+   "code": "PEGE",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 6.72,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SWA.co.id",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMzBsWk9GbzFSdmRERmFLdXM1bkdzYUtmNFNjaTBKTzQwS3BWSFgzTDhwUGRuMTQtQmU1X196WkkzbnVPd0dKQWNKd0ktYmVVMUxDWl8zUm5yV2pLNzB3dW1Cb0x6VXBfMzNfQnktWkhRTTJ1RDVPZEl5VHdiNjFBT3FXMjVLSGE0aHZTTWpfM1hhRHhHVjkydTdEdw?oc=5",
+   "title": "Optimus Vision Global Tambah Saham PEGE, Kepemilikan Naik Jadi 6,72%",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "1d2129d3a557",
+   "date": "2026-11-22",
+   "code": "PEGE",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": 109.0,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNURSUlFWUmUwbmI0emY4blpYbnY2ZjBqVjlaLThySnRyN2l6YTlybnlBNGxPZUh2Y1B6SGVuTm9SVEI4a3B6bUQ1eHdvOUIyLWdITjQ3V0xlREwyTlFPQVY2Q1IyN19xYWZpOWJWYTV6eEpoVUIxQnZtOHlZQ0hobE5pYU1Jb0t2cnl4QTFqX2UyRDNWZ2FqRnVlTlpyb2RIVE02dnJn?oc=5",
+   "title": "Empat Kali Transaksi, Entitas Asing Ini Akumulasi Saham PEGE di Harga Rp109–Rp112",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "2206f1b6f1db",
+   "date": "2026-11-22",
+   "code": "BBCA",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "bsinews.id",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBpYzBjOFF4QURWYVB5UFFTMGszd25qMVEzZnJyZ2VNb3hQTTNoOW85LWliMjhxazdkcGFnejZVWFJSRzhUeFpOdm1qYmlyWVhXVVcyS0NiYzRxME5PWHc?oc=5",
+   "title": "Investor Asing Lepas Saham BBCA Rp 344 Miliar",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "3ace1d6dde78",
+   "date": "2026-11-22",
+   "code": "BBCA",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1RZ1h4cEt6U0NZZllNNDFKSGhqNVFSNlBLdjJYVXoyY2pHcGk2WHdmTGQ4Tmd1bnZrWUZmOHo4c00tNi1xci1RMWlCbm9EWmVpeXhpWXE0NUY5Y2xQN1JKc1Rn?oc=5",
+   "title": "Investor Asing Lepas Saham BBCA Senilai Rp 344 Miliar",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "422fa68d5a92",
+   "date": "2026-11-22",
+   "code": "BRMS",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1080000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wS2M2YklwSzJyTTFES01WQ2JfYjF0OWo2eDgxbjlObXY1TnlGWWRaQ1lvWjBSOFE4UmlMdFBtUl9sclk0cXo0aEZqSUFKMUI5NWJmRTR0dHhPTnFRZUx3YUdmM0pMWDl0SlY2S0Q3WUloZw?oc=5",
+   "title": "Kepemilikan Asing BRMS Bertambah 1,08 Miliar Saham",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
+  {
+   "id": "3a43e89ef9f7",
+   "date": "2026-11-20",
+   "code": "BTPN",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VZ2VMVGlEME14Yk9kSGc5aExmdjZ3eHZSX1JOSmxsZ2dUYjNtTmRBb3I4ZGp6Y1FDWUhBVG03dUtSRWFxR2owaWt5aHdIaUJObHV1RVJOQW9JWEVIdS1VYzRCZU5VQQ?oc=5",
+   "title": "Kepemilikan Saham Direksi SMBC (BTPN) Bertambah Lewat Program Material Risk Taker",
+   "first_seen": "2026-11-23T15:50+07:00"
+  },
   {
    "id": "36a6a0d73d2f",
    "date": "2026-11-20",
@@ -210,8 +504,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNENkeXJkeUZvUVhXMFZENGtkbU5iOHh2MUtFN0J0MVF6eWdNdjYySWxycUZwSU1vZkRvMmpMSnNWLWVRajFTbGtmTC1HanFHUFJZUl81UGZkVXY3MzV5OHRkblo0QjlmeFdHWmwzMXBTaE5QaUxMV3RDLW9GUDlDdlFTUGZ3Ym1uX2dYNWpka1pEZ1FkdlRyVGMwcG50VllkV2I3V9IBngFBVV95cUxQc2p5d3ZBVnVFajd3WEM0ZVpJNUZKWTRxV0R0NU51dHM1dDZQS2lEQVdWNzRDZTdTc0p5Rlg2LVJNZzdyQ2dyRjdGSXM3eld4N3JWczEweHYzWmNsa3g1Zmo5Y0dJRFJZWFJCblZRb1czOWRLRWVJcFJReEk0dUFVaHVwMDVnN1B6U2ltcE1DRjhDTWJOX09VbGhVOUxlQQ?oc=5",
+   "source": "TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82dmdvODJINlF0bnJVLWJYRllvc0pSTmwwNmpiRDFmdEhac1JPMWtCWHNZOGlMVlB1emxGZVV1dEZPdnVjQU5ueGJGbU52ZGJUMjlDeXR3Znk4ZlVwTVByUFUxQXJlZw?oc=5",
    "title": "Direksi SMBC Indonesia (BTPN) Ramai-Ramai Beli Saham, Simak Rinciannya",
    "first_seen": "2026-11-20T15:18+07:00"
   },
@@ -577,7 +871,7 @@
    "date": "2026-11-19",
    "code": "SATU",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 29825,
    "price": null,
@@ -588,8 +882,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTXh6ZHBZZHU2azNVemRhbHU4ajdmMGJHbjhrSG9rSjFYdmxGR3AyejRyUVZtTXpJMndBZVVGRUJZakRCWnU2bWM3b1F5YnBQLUhfcVhVLVdHTXpTNmoyM3F2QXZGVUxZcW9NenFHVk92TEJaRlh3Y085TTFnSlJoRy1XS2dZNDVCS3ZpT1RhUVBJNEhlQzl6Z09YdlBmZ1NwMDV2bmpBYnc?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWEc4eHdIRGVGd1M1blY3OFhXUlZMSWhBN2k3T3k1YXg4TVBIZWtCRXJyRzlhRXRRWDJ4cmFXUHFjRU8xSlU1OG9FUFJXUEZxMkptZHJlR3NLUGlTWlNmcXhSd0FjVHFoSS1IY0VuSGhkTnRmd0tMdnhNOHhQM1lYVXBSVzNjNi1NQWcyOHBiUUxuRHE0cUp1M29KQWFqb1dqTVRr?oc=5",
    "title": "Borong 29.825 Saham SATU, Stefani Farida Tambah Kepemilikan Jadi 7,49%",
    "first_seen": "2026-11-19T15:35+07:00"
   },
@@ -1407,8 +1701,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ085U3dsZ3hnbC1zcDcwdExLUG1OZ3N4eDZlWTBrS3Z3a083SmZYcjBBZnJqVFpfZTZjbFBBNV95V0lxelk1STFaUnhmN2VHdmtsNUZQeHdKRklhQjNPRkNzdnozRGZxSTVPYS01eFJodjh6VmpBbnYzNG9PcndobFFObVdjeTJ1bVV3eXRKcmNwMDFOT1B3eFU2bmxWdUtJSjBZbkU3RmM4bmV6b1RmUWVQYTVGTFk?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdV8wNUZYeDVGT0FEazJuLWRpVTBJLU83SWxfU1lDWjN6elMtUmJ5Q25HVFhNeU9xd1g3bFhlYkRhYVRCV3ZILWZJakUzOHBGZHJvSmNiUWszSm9QS1ZIT2VBNmxnME1JRERqWEtKZEJlbDI4a0Q3SmNTcXZaVHRhMzdYWXlmQ0V3QksxR3JoQ0N4QjkzUW52Q1hIaXlkRFJobWI2OEpOVl9KLXlKMVY2OXVR?oc=5",
    "title": "Komisaris ATLA Kembali Lepas Saham, Total 50 Juta Lembar Dilego dalam Empat Hari",
    "first_seen": "2026-11-17T15:58+07:00"
   },
@@ -14056,6 +14350,56 @@
   }
  ],
  "net_by_code": {
+  "INCO": {
+   "net_shares": 600000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "NICK": {
+   "net_shares": -175620000,
+   "net_value": -20724000000.0,
+   "count": 4
+  },
+  "WINR": {
+   "net_shares": 18750000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "HRUM": {
+   "net_shares": -6750000000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "TLKM": {
+   "net_shares": 374450000,
+   "net_value": 0.0,
+   "count": 13
+  },
+  "GMFI": {
+   "net_shares": 850000,
+   "net_value": 19500000.0,
+   "count": 2
+  },
+  "PEGE": {
+   "net_shares": 18150000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "BBCA": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 31
+  },
+  "BRMS": {
+   "net_shares": 1207975000,
+   "net_value": 0.0,
+   "count": 37
+  },
+  "BTPN": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 2
+  },
   "CTRA": {
    "net_shares": -1100000000,
    "net_value": 0.0,
@@ -14090,16 +14434,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "BTPN": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "BBCA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 29
   },
   "DGIK": {
    "net_shares": 597760000,
@@ -14153,11 +14487,6 @@
   },
   "NSSS": {
    "net_shares": 89100000,
-   "net_value": 0.0,
-   "count": 3
-  },
-  "NICK": {
-   "net_shares": -72000000,
    "net_value": 0.0,
    "count": 3
   },
@@ -14281,16 +14610,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "GMFI": {
-   "net_shares": 350000,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "BRMS": {
-   "net_shares": 127975000,
-   "net_value": 0.0,
-   "count": 36
-  },
   "SINI": {
    "net_shares": 2250000,
    "net_value": 0.0,
@@ -14370,11 +14689,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "TLKM": {
-   "net_shares": 374450000,
-   "net_value": 0.0,
-   "count": 12
   },
   "MDLA": {
    "net_shares": 5325000,
@@ -14626,11 +14940,6 @@
    "net_value": 0.0,
    "count": 4
   },
-  "PEGE": {
-   "net_shares": 18150000,
-   "net_value": 0.0,
-   "count": 3
-  },
   "BIRD": {
    "net_shares": 1351600,
    "net_value": 0.0,
@@ -14736,11 +15045,6 @@
    "net_value": 0.0,
    "count": 2
   },
-  "WINR": {
-   "net_shares": 18750000,
-   "net_value": 0.0,
-   "count": 2
-  },
   "PART": {
    "net_shares": 2811900,
    "net_value": 0.0,
@@ -14838,11 +15142,6 @@
   },
   "UANG": {
    "net_shares": -12000000,
-   "net_value": 0.0,
-   "count": 1
-  },
-  "INCO": {
-   "net_shares": 0,
    "net_value": 0.0,
    "count": 1
   }
