@@ -1,10 +1,52 @@
 {
- "updated": "2026-11-24T17:48+07:00",
+ "updated": "2026-11-25T03:25+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 87
+  "news": 78
  },
  "transactions": [
+  {
+   "id": "2655f5082fb9",
+   "date": "2026-11-24",
+   "code": "INDF",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBLQTVUajZZemNPQ1dJRDFYUGlMR3I0M3pFbjZES3FHRlFabExJcmlyemFtbmx0LVhrMS1DYXZJcmVZc29TRzg0cjdTOW5QeGN0cF9ZTFZoOFpTV0RiTnZ2SFZ2LWt5dw?oc=5",
+   "title": "BRI Danareksa Pertahankan Rekomendasi Beli Saham INDF",
+   "first_seen": "2026-11-25T03:25+07:00"
+  },
+  {
+   "id": "c704d8fc53ad",
+   "date": "2026-11-24",
+   "code": "BBRI",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Ajaib",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMFlUeUVuZTNVOTJMdmVkaDNmSnpkckJJZ2F6RFA5LUJVWUVJSmRfYjY1Q1BYXzhtR1VBUzFaVmxFZmFWdmdwYVVJaWpoTlBZNzN1aFcyQ3RrSS16TW9DdmJvUlF0aEtYQmFNTk93WmxqcGZQcnV1UV9CSG5rS3F5eG9lNk1rMWdjLS0xdHBNbU1BbGk2aGZtckRVNERZRWN6Y1E?oc=5",
+   "title": "Asing Lepas Saham BBRI Rp187,69 Miliar, Harga Turun Tipis ke Rp3.070",
+   "first_seen": "2026-11-25T03:25+07:00"
+  },
   {
    "id": "8978bfe0011a",
    "date": "2026-11-24",
@@ -12,7 +54,7 @@
    "party": "Harry Surjanto Hambali",
    "role": "direksi_komisaris",
    "action": "beli",
-   "shares": 25000,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -21,8 +63,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/direktur-atic-harry-surjanto-hambali-tambah-kepemilikan-saham-jadi-3184/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaC1MUjNqNzQxc1FyY3g3bG1wamdNM193QlRsdUhLeDdtdzRfUi10cmppc2ZpZi1ZTUZXT2hlMTBIYjlZRVlsYlRrbUJVOThTbjRrR0tYOGxab0I1T2dnQUxLUU1UMlFvT2lyTElvcl9GaFRXbEp3RXVyaGxjNEp5NkJrMTZaeXdiYUpaeWpmVU1kTTFIbzQyb3RB?oc=5",
    "title": "Direktur ATIC Harry Surjanto Hambali Tambah Kepemilikan Saham Jadi 3,184%",
    "first_seen": "2026-11-24T17:48+07:00"
   },
@@ -462,8 +504,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUjl0bWRfdDJnSUxyaURCNFNWNE8zcV9kWVpEUnZhQTlxTG5HT3o2STVQS2dNb1dTSHJPZGFmX0RxRW52LTc0Z3F0bFZZNUF5QTgxU281SVVyamJ4LTFZOWxGdnlJVUVjRGJIampLY2ZnQVIzenpLU2phVWRydGJtakg1LXg4ZDBkQ1pWdW55ajI4Ul9IR2JIWllSdnBKMW91alBYZ2ZrUVdvaW1ZSFFycnREVEtuUQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPazd1OG1ZaV9rZHhudUZFVXY0OEJhZDFYckpVOVVtRU9LZkhnNWp3ZlBXQ2JnVk1oY1RYSTMwQ1h2M21fR2tPcVBNVV9lWkZXQW8tTVpwbXhjLVJBYm84enMyVDVoVWFvSi1IOEg0Y0U1U3FGQ2JUVjJyOWlPcWN6VlZaWXpjemtsbVRmSDJqWmhUZlB0X0dESTZOM1R0MDRuNmJrVDJ6dXd4QkVQZFJPLQ?oc=5",
    "title": "Direktur GMFI Borong 500 Ribu Saham di Harga Rp39, Kepemilikan Naik 33,3 Persen",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -483,8 +525,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRDZTeFhLS1lNWW5XMGhNWVZUUmZnWm01a2FQM2dKRWJpbHJYM2lIcTRxRDFYUTh4VDlyVHdrc2dYejFhdDZPT21IOWZ2LWxMSDJPNFRkZ3M4VkdaeWZOM2V5U2FHWG11MFBLbjctVHUzVXRTcVY2RGZtbTV4MjdyUkdRd3dadEZNc3JKeWljVENRZzJwUkpQajhTb2RJWk5HX2JXZTJMNTJEbzRVUDJfNVhNYWdFMXk2SDNZ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWjRGdWEwd2NJa2hDVE5kYWgzb1N6Mlh3NEhGM2RVc09RLWdQaVItZU5iMmk3ZVZrV20zTFR0SVBFMFZlSWV2bDBUY05fS3k4UDg2Yl9uYmNSOG40WU9ZV1hOdmRhNmpZSFNFdUduOUxDdi1Ickk2ZWFud1p0QktYQmUyeWpNTlRudHhSYnJkWGdqX2ZvVjdJenZpUEhZOW4tR2RfOHdwX09QdjF4YnR1Um1pZlNxQQ?oc=5",
    "title": "Wakil Presiden Direktur Vale Borong 300 Ribu Saham INCO, Kepemilikan Melonjak 1.363%!",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -1123,7 +1165,7 @@
    "date": "2026-11-20",
    "code": "EXCL",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": null,
    "price": null,
@@ -1134,8 +1176,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM0c4RnBFaURCZ2tiUmNLWGw2NHVNcFhzXzNGS3BidXJhcmktdFBjVkZMSVpHSGZ1czYxT3h1NFFWbDZqTFQwRXpKdm9JZ1pjeG5wdVJObjllSzVCWEV1d08wbEhCNmczYmFDUTJSMndiQWxXTzhHcUV5Nk5IQkhhdHFlcHNRUGFIYnkyNjFkaXMtUEkyRDRvZm4zc1NfOXh3WlA3dnUtZw?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWl8wYTJENkJHUlM3MV9GOHZEMER5OFBaaHBOeG1oamladHBCTlpCaWR2Vzl0aDRXalJ1SlpaT3lhSklTNC1kczVaMHJnaE1uVmNPWk9kcV9SbTVvWURULXcyVjVoaVV4SndhSDRPdG9BaTgwTzJPVmYxc0pza1RxZlRvUU83aHV1NkJNQ2JWc0ZEV2t2NUtwWE5LcFRXWXNiNXc?oc=5",
    "title": "XLSMART (EXCL) Siapkan Amunisi Rp1 Triliun untuk Borong Saham Sendiri",
    "first_seen": "2026-11-21T00:10+07:00"
   },
@@ -15106,8 +15148,18 @@
   }
  ],
  "net_by_code": {
+  "INDF": {
+   "net_shares": 3350000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "BBRI": {
+   "net_shares": 5500000,
+   "net_value": 5940000000.0,
+   "count": 21
+  },
   "ATIC": {
-   "net_shares": 55300,
+   "net_shares": 30300,
    "net_value": 0.0,
    "count": 4
   },
@@ -15150,11 +15202,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 2
-  },
-  "BBRI": {
-   "net_shares": 5500000,
-   "net_value": 5940000000.0,
-   "count": 20
   },
   "SMGR": {
    "net_shares": 0,
@@ -15880,11 +15927,6 @@
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "INDF": {
-   "net_shares": 3350000,
-   "net_value": 0.0,
-   "count": 3
   },
   "WIKA": {
    "net_shares": -50910000,
