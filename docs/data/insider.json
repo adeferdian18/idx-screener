@@ -1,28 +1,133 @@
 {
- "updated": "2026-11-24T04:48+07:00",
+ "updated": "2026-11-24T17:48+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 94
+  "news": 87
  },
  "transactions": [
+  {
+   "id": "8978bfe0011a",
+   "date": "2026-11-24",
+   "code": "ATIC",
+   "party": "Harry Surjanto Hambali",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 25000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 3.184,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/direktur-atic-harry-surjanto-hambali-tambah-kepemilikan-saham-jadi-3184/",
+   "title": "Direktur ATIC Harry Surjanto Hambali Tambah Kepemilikan Saham Jadi 3,184%",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
+   "id": "1175ec538fb5",
+   "date": "2026-11-24",
+   "code": "BRNA",
+   "party": null,
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 385950000,
+   "price": null,
+   "value": null,
+   "before_pct": 54.57,
+   "after_pct": 67.4,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/dwi-satrya-utama-borong-38595-juta-saham-brna-rp264-miliar-kuasai-6740/",
+   "title": "Dwi Satrya Utama Borong 385,95 Juta Saham BRNA Rp264 Miliar, Kuasai 67,40%",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
+   "id": "837e58b82317",
+   "date": "2026-11-24",
+   "code": "PLAN",
+   "party": "Planet Properindo",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 1840000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 2.21,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOa1o1NkJ0UXhiLU9KM2dzMERwbWRlM2dWcGpYRk9JOU5rYUxKbGxzVDA3MVRiVmJqOWlYRmM1cHZVajJUakpjekdTZDRrZk16OEtxTTFEVGJJWEFDVU9ibWpfT3lvLWVFcS1iN2F2T3RUUV80NGU4QWlrY3VvUnU1NkJ5N29nR0J3eGFlWWpucGs3WjZ0TzhmaVk4WjVERWpZdzBtY0E3eWtzZDRYQy1lZE0wMWxVTXVpamc?oc=5",
+   "title": "Dirut Planet Properindo Lepas 1,84 Juta Saham, Kepemilikan di PLAN Turun Jadi 2,21%",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
+   "id": "be3106045704",
+   "date": "2026-11-24",
+   "code": "BYAN",
+   "party": "Usai Jhonlin Baratama",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "gadget.qoo10.co.id",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYjRVYTk2UDJVVlZzVUx2MUpreXExbVJFNkhDZnRzSGlVRnRqQjdNTG9PUVRxc09EcjZ0UUxXcEFtUUpTNTZVWFYyUzBUZGhpZWZjbzZZdm1aVjBxVkFvQk9zbHZJamZiZU9zTHkzVl9OWDlEdkpNMGZrWXJTcXhaU1J3OEtsVTA?oc=5",
+   "title": "Bayan Resources Angkat Ary Bastari Jadi Dirut Usai Jhonlin Baratama Beli Saham",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
+   "id": "b96c66cff2e1",
+   "date": "2026-11-23",
+   "code": "CMNP",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 280000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTnNyVldZc3lYYVJuZHo3YU55RGdzQ1dKVEJpa200aUkyRGY2QmdsQjNWN21mWFNIUlo4UG9mUTc1SERuVGVZcFNrcVNrRS1wSzhFV1RTcUlkaXFhOWpXa0ZPZDVfTC16LWNYLVZiLS1zazlwMTBkbHQ0VmloVDZpTUNrRjU0MGRtdFQ4OHNSLU5oSzNmOHNQazBwR0hjUk9fcGU4OQ?oc=5",
+   "title": "Babah Alun borong 280 ribu lembar CMNP, total sahamnya 9,22%",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
   {
    "id": "2eae0b0cbc46",
    "date": "2026-11-23",
    "code": "SRTG",
-   "party": "Saratoga Investama Sedaya",
-   "role": "direksi_komisaris",
+   "party": null,
+   "role": "individu5",
    "action": "beli",
    "shares": 608900,
-   "price": 1637.0,
-   "value": 996769300.0,
+   "price": null,
+   "value": null,
    "before_pct": null,
    "after_pct": 36.15,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/edwin-soeryadjaya-borong-608-900-saham-srtg-kepemilikan-naik-jadi-3615/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMml1bzJzUDNRQjVQMTRhcGV3MVdhWXYwQWR4dFRrdFRrT1B0WkMtMEZJV3R1dVJ0NDZOcVhSenZqMmJTUUk0d3FacTFsRmdfMm9WQmpLV0NlYWlLUXB0Y3hUMUkwZmVsSlNEVEVsTURaVVp6R1FaVUtOVWZIcFllZG83ZkZ2bDZsLWtBTTBUMWZKOS0yZ1RteQ?oc=5",
    "title": "Edwin Soeryadjaya Borong 608.900 Saham SRTG, Kepemilikan Naik Jadi 36,15%",
    "first_seen": "2026-11-24T04:08+07:00"
   },
@@ -52,7 +157,7 @@
    "date": "2026-11-23",
    "code": "POLA",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 125000000,
    "price": null,
@@ -63,8 +168,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaGRITVFlU2t4ZW05RkhfR0w5ZFdhTmxfRklGX2dHRVdtZlhYQ09FNXNuR3F1REpmNmVFSndwbzJKS2dwU1dHV3Bpci16U1BzYUw5WldMbDZPQkN1RVd2RWh4MU5nRVRGUS1DS3hkRGNIdHdKd1dwVEFwZ2JyOVpndWFiZ0NfWHpURXNsckdiUU96Y0cyNnBGUThiVGhDYXBXYWVSX1duTmhzdk41MHgtSV9kSU51Z1U1OW9scTdOOHM?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZnN6MkpiZmVlenFBRTY4TUpjTVZPNG1vX0ZKRjN4S2NQS2JBQVhyOFhhVEtKZHZKWDhIQTNYWGFjcS1Gd0o0czFSZXYtUF8yamZTSGlOYk0tMXFFSXBlTE4wUmpyYzVTX1NVWEgzREpzSzVObV8zREotMmdjcDlyWkxUZVg0eHVsQTA4eV81REdWNHVNbHBjN04wMlNGNG1PRzRfVEk1ZXBvdXp0bEpTS2lpQ3BfOHVSaGJF?oc=5",
    "title": "KMI Cloud Indonesia Borong 125 Juta Saham POLA, Kepemilikan Langsung Melonjak Jadi 5,66%",
    "first_seen": "2026-11-24T04:08+07:00"
   },
@@ -699,6 +804,27 @@
    "first_seen": "2026-11-23T15:50+07:00"
   },
   {
+   "id": "470067b58f19",
+   "date": "2026-11-21",
+   "code": "VKTR",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Hallo.id",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNWktYURTLThaX3YyMGJUdlpDUmdyckNkYzB4enR1Y3p4dW9ES21vbTl1bmVDOVRJTVVBaGdIVzdMcGs5eXRMOGtSaUhHMVppcDM0azE5OWh3TU1rWTRIRUpSaU9NQWJtdEtLVjVndEJ0NVhPUll3ekdOajFQVW9ZSjl2bnd5YWdOd01sNTNVeXl0R0FETVlzaGMyem5TaXh5UXBGTDN6ZEhnQUxhUHVPelROVzB2RlFDT2FJWHhxbVdfaGM2ZjlUWTVLY2lwMHh1ZDRFWVNMTVVleXYyOHUyaWJhS2EwTE5FVjhxU0lwRzctS0XSAfMBQVVfeXFMTTVpLWFEUy04Wl92MjBiVHZaQ1JncnJDZGMweHp0dWN6eHVvREttb205dW5lQzlUSU1VQWhnSFc3THBrOXl0TDhrUmlIRzFaaXAzNGsxOTlod01Na1k0SEVKUmlPTUFibXRLS1Y1Z3RCdDVYT1JZd3pHTmoxUFVvWUo5dm53eWFnTndNbDUzVXl5dEdBRE1Zc2hjMnpuU2l4eVFwRkwzemRIZ0FMYVB1T3pUTlcwdkZRQ09hSVh4cW1XX2hjNmY5VFk1S2NpcDB4dWQ0RVlTTE1VZXl2Mjh1MmliYUthMExORVY4cVNJcEc3LUtF?oc=5",
+   "title": "Tambang Weda Bay Jadi Sorotan Investor, VKTR Bantah Konsorsium dan Calon Pembeli Saham Eramet Belum Diumumkan - Hallo Emiten",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
    "id": "803253e39549",
    "date": "2026-11-21",
    "code": "ESSA",
@@ -760,6 +886,27 @@
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaU1Oamc3Y09LUTEtN01NZVlWckNhSWpjLVV6NjVVQ0lRQ0xwMjlGSlVEa1FjR2xhcjRvSzRsdnpRdzdXQ1MzczMwbEJFRHN5anZvT2U3SEdocjNKbXRyclp6WlcxbmJwcWxzVFlRdmFyUnh3QVhOSjJ1UWJPTE1qdlFuekVRVW9qaDJJOGRyN09QX1hWX25hYXQ5UWVvMk94ZlJXRFlZS2RHSklnVjZjS2V5NVR6aWF0eXpacl9mM01QQmJNWmF30gHMAUFVX3lxTE1SaHViUlp6di1pXzJQN2J4a1lYc1Z2eEplN3BoOEJHRkZsY0J2SmxRT25uQ2dPd0QxOURpZlFZWGtzWDdfRFFIZlJid0xmMnEwcnV0NXRZaVdGY3pwaDRnODBsYk5rRDJqM1FyQjYzQnQtWFhtRVhTMEdjSjRWM2JTWVhWSFVhVkxwTUFLRWwyak1XRkNCR3YzZmpNYnk0aWdtcHZyNmVHNHhxXzBRQUNjeE5IdG9VZF9PT1Jaa1BsOWJzdlhpSkxBZUwzVQ?oc=5",
    "title": "Asing Lepas Saham Rp 2,6 Triliun Sepekan, GOTO dan BUMI Ramai Diperdagangkan",
    "first_seen": "2026-11-24T04:08+07:00"
+  },
+  {
+   "id": "a68605f615c5",
+   "date": "2026-11-20",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 1410000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "indikatorbisnis.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQ2hhYzRlWThSMnNmVmRNcmZwcUc2V2lzYTg4VXVCeGdmV1hTVGJ0bWxLOUg1Z3lwRTY0TkE5a1M1RkdXN1hLYVl2OW9iMi16V051Z1lnZW9FclBqWnROMG1hVzd1emJlNjd2QktMZjB1TkhsQmVyaVBzUVExLXVHdGkySVlvTFR3N3RBTko2NHpQQWozdkhzYklIUHFhQTUwMVJtTi1NQ01xcFphbXpYVtIBsAFBVV95cUxOQ2hhYzRlWThSMnNmVmRNcmZwcUc2V2lzYTg4VXVCeGdmV1hTVGJ0bWxLOUg1Z3lwRTY0TkE5a1M1RkdXN1hLYVl2OW9iMi16V051Z1lnZW9FclBqWnROMG1hVzd1emJlNjd2QktMZjB1TkhsQmVyaVBzUVExLXVHdGkySVlvTFR3N3RBTko2NHpQQWozdkhzYklIUHFhQTUwMVJtTi1NQ01xcFphbXpYVg?oc=5",
+   "title": "ISB Borong 1,41 Miliar Saham WIFI di Rp 2.870, Premium 248% dari Harga Pasar",
+   "first_seen": "2026-11-24T17:48+07:00"
   },
   {
    "id": "8300fd7ffe6d",
@@ -1350,6 +1497,27 @@
    "first_seen": "2026-10-26T08:42+07:00"
   },
   {
+   "id": "069a5bca1efb",
+   "date": "2026-11-19",
+   "code": "WIFI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kayonews.co.id",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY0pSUE55VG1jZGE2MnpXcWV5N1ZtS18wc0N3SGlZcjk4Q1NlYUF4UzluMlR0amUzVE1wbFBIODBrZ1FsdzRlX2tYci16WjNlSURJRVBSd3dLRlVfOWdYWmRWa3hxR2diYzVkRDdmOUdIeTF0eGdpZlp4ay1yVHNxWmNvQk5ibnNqelVsYjFTdlM5UlVqTm9wcU0wUmVKdjZZZUhwNURwUWo0Z29hY1BtVVRR?oc=5",
+   "title": "Hashim Djojohadikusumo Borong Lagi Saham WIFI Rp4,06 Triliun, Kini Kuasai 54,42% Saham Surge",
+   "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
    "id": "a169d5bd6906",
    "date": "2026-11-19",
    "code": "GOTO",
@@ -1786,7 +1954,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdG5fUWM1TU9yX002dTBPVlBCc0J5ejQzeTJGOExncGhxalNjWG5UNHNsbHYtX1pwdFFfSjAyYkctRWs3MDJhRUc4TlBvODZILURMNmk1MDk2U1I3U29zWF9XbDJfaEVOUWtHMjRPVS1NODE0WjgzSFBaS1R3VGZEMUhhVmV1V0g1ell0Vg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOGxCSHQwWkJlY24yNUJmOVNvZHJHSGE3YTZBZFUxcVhidUVvSndwVjh4eFRBSVNMNGtOY0Iwc29LUDl4SlFmaFh3Q0xncWZ2MjcxT0JFbWJoX3RxZ1ByWjc5ay0yY2Q4RmxnMzJIWkRzNWlxcVVPNTQwa0hmcHplWFlWdFkzTVU?oc=5",
    "title": "Divestasi 10 Persen Saham POLA, POOL Raup Dana Segini",
    "first_seen": "2026-11-19T00:29+07:00"
   },
@@ -14938,9 +15106,34 @@
   }
  ],
  "net_by_code": {
+  "ATIC": {
+   "net_shares": 55300,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "BRNA": {
+   "net_shares": 385950000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "PLAN": {
+   "net_shares": -1840000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 42
+  },
+  "CMNP": {
+   "net_shares": 280000,
+   "net_value": 0.0,
+   "count": 1
+  },
   "SRTG": {
    "net_shares": 13991900,
-   "net_value": 996769300.0,
+   "net_value": 0.0,
    "count": 15
   },
   "ENRG": {
@@ -15023,15 +15216,20 @@
    "net_value": 0.0,
    "count": 33
   },
+  "VKTR": {
+   "net_shares": 2050000,
+   "net_value": 410000000.0,
+   "count": 2
+  },
   "ESSA": {
    "net_shares": 4500000,
    "net_value": 0.0,
    "count": 7
   },
   "WIFI": {
-   "net_shares": 1400000000,
+   "net_shares": 2810000000,
    "net_value": 0.0,
-   "count": 29
+   "count": 31
   },
   "GOTO": {
    "net_shares": -4660000000,
@@ -15413,11 +15611,6 @@
    "net_value": 0.0,
    "count": 4
   },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 41
-  },
   "RUNS": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -15578,11 +15771,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "VKTR": {
-   "net_shares": 2050000,
-   "net_value": 410000000.0,
-   "count": 1
-  },
   "APLN": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -15632,11 +15820,6 @@
    "net_shares": 3352090000,
    "net_value": 0.0,
    "count": 4
-  },
-  "ATIC": {
-   "net_shares": 30300,
-   "net_value": 0.0,
-   "count": 3
   },
   "SQMI": {
    "net_shares": 0,
