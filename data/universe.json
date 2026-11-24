@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-24T04:38+07:00",
+"updated": "2026-11-25T03:20+07:00",
 "rows": [
 {
 "kode": "AADI",
@@ -1887,6 +1887,11 @@
 "sektor": "Consumer Services"
 },
 {
+"kode": "INPS",
+"nama": "PT Indah Prakasa Sentosa Tbk",
+"sektor": "Utilities"
+},
+{
 "kode": "INTD",
 "nama": "PT Inter-Delta Tbk",
 "sektor": "Consumer Durables"
@@ -3090,6 +3095,11 @@
 "kode": "POWR",
 "nama": "PT Cikarang Listrindo Tbk",
 "sektor": "Utilities"
+},
+{
+"kode": "PPGL",
+"nama": "PT Prima Globalindo Logistik Tbk",
+"sektor": "Transportation"
 },
 {
 "kode": "PPRE",

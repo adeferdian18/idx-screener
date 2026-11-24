@@ -211,7 +211,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-17"
+"diambil": "2026-11-24"
 },
 "GRPH": {
 "status": "data kurang",
@@ -750,7 +750,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-11-13"
+"diambil": "2026-11-24"
 },
 "ELSA": {
 "status": "kuat",
@@ -916,7 +916,7 @@
 "IDEA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-17"
+"diambil": "2026-11-24"
 },
 "AGII": {
 "status": "sebagian",
