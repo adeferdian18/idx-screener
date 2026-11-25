@@ -1,10 +1,367 @@
 {
- "updated": "2026-11-25T03:25+07:00",
+ "updated": "2026-11-25T16:44+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 78
+  "news": 93
  },
  "transactions": [
+  {
+   "id": "e31b9c97c4c2",
+   "date": "2026-11-25",
+   "code": "BULL",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 5000000,
+   "price": 234.0,
+   "value": 1170000000.0,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMVBHTDdZN0J1QmtSR3B0T0tpeGYtY0FFVExzMm4tXzN1NEpOb3RjQXA4ZzRfSlU0UHJDQkFOSHZCQlNxVXBJZzAwSnBWaEJ0dl94cWc3SERiZURIZjhoN21ZU2tXRU5IRFdBRlE4c1otNVRIR0d6bXQ4cS1qaFhwSmNrVGM3Zw?oc=5",
+   "title": "Direksi Borong 5 Juta Saham BULL di Harga Rp234",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "3e518ae6939c",
+   "date": "2026-11-25",
+   "code": "CYBR",
+   "party": "MB Investment Management Pte. Ltd",
+   "role": "korporasi",
+   "action": "jual",
+   "shares": 523000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 26.168,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/mb-investment-jual-523-ribu-saham-cybr-kepemilikan-susut-jadi-26168/",
+   "title": "MB Investment Jual 523 Ribu Saham CYBR, Kepemilikan Susut Jadi 26,168%",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "7b0fae8f388f",
+   "date": "2026-11-25",
+   "code": "NAYZ",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 96570000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 3.78,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ1pENGlBMXNCWnZSSG1HS05pQ3hMUVpWWGVJVUNjUk1LcUU2aDZaOUZwd00tVFF4VjhJSGZYRUNfUmFDdDdzWnBTclVPblNIdlVCVENtaGdPRGNjRzYzS0dlZHVEek42SW1mZG5PVl9uUXBOYzdtcXdoU1EtZlAyX25IRGg3MXpiRGFFNVYtRFZzLTlGQk1DZ0xvZUlRVklq?oc=5",
+   "title": "Wise Team International Jual 96,57 Juta Saham NAYZ, Kepemilikan Turun Jadi 3,78%",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "1183465cfa80",
+   "date": "2026-11-25",
+   "code": "JECX",
+   "party": "Admar Anwar",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNDZlWEtlQmdYazZLSmhSd2JSb2V2UmdRTkQ4S2xBZE5yVzdiRWFJTjhYMXM3bkFJQzlPZ0hKWHlaa3E4eXo0RVZ3TXNBSHBfX1A5WkF0cTRoaG1oSUdzQjFHYXo0N0RYdVdzVVJZa2ZISmhmY0pOLVJubjh1SVUyLXZNell0b3RNXzV6Qg?oc=5",
+   "title": "Komisaris Admar Anwar Borong Saham JECX, Kini Miliki 13,04 Juta",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "a3a034ceab5c",
+   "date": "2026-11-25",
+   "code": "TAPG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 287500,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "investasi",
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV0pFaVY0Zjl3Q3NfV3R0cEc2MnR3SlY2UGR6N0hZU1hWYWpPZUJoR01IZENWRHpRWFB4X2R6b29lcUpFQ0JrUHJtVFhzT2Zid1UxSnN6SFhwZmRoS0dBM3Y0RkZjUTZ1TE9ZR0FFT2JuLU5iRlhvUXJWWWhBTk9mb1FLQ04tbHdyX1VCdw?oc=5",
+   "title": "George Oetomo Borong 287.500 Saham TAPG, Investasi Rp502,5 Juta",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "6c7902cbcb14",
+   "date": "2026-11-25",
+   "code": "TAPG",
+   "party": "George Oetomo",
+   "role": "individu5",
+   "action": "beli",
+   "shares": 53830000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMFE5RFkyRnNLSWRuZW9tZWlqcEVkNzNhMFhHRHRNZWVlMHJUQ0taYWp1clQwb2dLWGtmR2x4TGFueWNjVXU5UjNnWV9Wa19sZHQ1aFFSZjZraUp2OUM0b3hVOGYxTW1OeGVrQVphWEh4R1VDMEpMckRsS0szdmJiaFVJbGxJQUxFSmN6Qk9VSmpiWTJtLVc2THRJNERQUmlYcUd0VWh5ZmlRbVdRWmpPamxjNkh5WFBfbmc?oc=5",
+   "title": "Bos TAPG George Oetomo Kembali Borong Saham, Koleksi Kini Tembus 53,83 Juta Lembar",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "2ab0cc23d5c2",
+   "date": "2026-11-25",
+   "code": "DGIK",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbGNzMlg1Wm1QWGkzNFF5OU9FRXRpdkw3OFREM1g1T0c2RHQ5X1NaS21rN2RLN18tZ21KUmw5T2tUMkJLNHZRUmV1MEtBMEdYUlRUQW1renhqRnBFajUwbmJKWHpmREZtTy1uT2p4U3JJVUN3aEtib3FlMWdjTUswYkJRRHBmdkNxTmxIVFZ1WkU0NDA?oc=5",
+   "title": "Entitas Ini Borong Saham DGIK 2 Hari Beruntun, Gelontor Rp1,02M!",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "225521659240",
+   "date": "2026-11-25",
+   "code": "AXIO",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 22300000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY3lvTWtTMTJ4R1RoSTVhTTZLLU1xOTd5ZWhyNW5QeWVhNDFCX2h5YmFzWjRTVVdhNWtIRjRXbmw1M09HRDJEUFRLOE1helJfWkd0ZWFyRHVlVHNvaF9OQWJyNGM2bFgwVVZSZHJhVzBhcmN1RDBHMjFHbHUyaFppUjljN2RCQ0RZNzdHenhrSFl1Sms3cml1b2hR?oc=5",
+   "title": "Sempat Menguat 10,56%, Ada yang Borong 22,3 Juta Saham AXIO Rp3 Miliar",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "bd2ccce8c242",
+   "date": "2026-11-25",
+   "code": "BULL",
+   "party": "Wong Kevin",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 5000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPT1dUR3E4ZWlrOTg1RjFIRG9xQW03ektVbm96TlJPMWJtSE1Qd3Nlbk5TdjZxUU15bExfcWJPVXpCSDdiZHlWZzlLeTVBTExTWlJyRllSVGZ4WXdVRnNodjl6cVY1TFN0a2d0UzRCZ1ZTb1lGRXM2c3ExbEE0ejluZVNWc3dkazQ2N09yWG4zWUVGaG43eDV5X2lZZlB2NDZ6VE56b2loM0xZdE1iWXlodFBLSEpNcGlVZUpaYUVrVDgwbGY5eXpn?oc=5",
+   "title": "Direktur BULL Wong Kevin Borong 5 Juta Saham, Kepemilikan Naik Jadi 3,54 Persen",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "dfb2bbd29b11",
+   "date": "2026-11-25",
+   "code": "BULL",
+   "party": "Wong Kevin",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": 5000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNHVfdXM3TjVSYU5aY2tWb1NKcTJfYXppNFp4RVdyZk1uUGhJdU40UVhQbWtIYVJWRmdFakQwZ0Q3dDFiTXoxaG96c21GRGtOT0dOMGxnVnJwNm1IM0Etek40elowdU1TRE1BVE1CSEVoZ1k4ZUl6UHhZeWdpazdsaUZaek9iM0RJTVEtQkIwNUE1c05WcGlNcVZwMkRLS3R3ejlUNWVBZDFIdFhIcTdZTTZuYkpIaHhJdUp4RlhLSXhMUl8tdHRtZGhfSU8yc21LUWc?oc=5",
+   "title": "Foto : Direktur BULL Wong Kevin Borong 5 Juta Saham, Kepemilikan Naik Jadi 3,54 Persen Halaman 1",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "2691682c13a9",
+   "date": "2026-11-25",
+   "code": "WINR",
+   "party": null,
+   "role": "pengendali",
+   "action": "jual",
+   "shares": 21500000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 40.1,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeU5lTjltelJSZW9XYUQ1Qm8wbFNzN2tvS2ZXYUV1aFZMbEtyMmR5NjFOaVpoZHlaQm9qVzdLZDJSQzVidDBTeFZEZVhpRXkxS3JIV095M3hDSzdqOXU4RFBpNS1TejBvUFpWWS1UU0lNQzlYNURLbzBJcDBMTm1YZ2xQUy1mb2JrWnpneGFvd0cwNFdua3RWcUk5X01ONzEwdHlFYmMyTjhTMG1EVVVxY3RmVXEyNmFtZ3FFbA?oc=5",
+   "title": "Berlanjut! Pengendali WINR Kembali Jual 21,5 Juta Saham, Kepemilikan Turun Jadi 40,10%",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "4a1b9fab477e",
+   "date": "2026-11-25",
+   "code": "BYAN",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdGRzaVo1VGtPSS1oS25temVXazNFSmI3anZBa3BZb0Jpb011UXNGTUZxOHRNWmprbUoyU3k1Y19ZclRweUJ2eUlrTGF6Y284eUhrQWtLQk5kQTAzNzFFSWNOeDdYczN2LUNLYmpocW4zdkdMQ3A1azN2UDRnOE9saGo5ZnFUeHVVTXBkaFR5U1Zjc1Q1aFpOQ2JsbjA4R1J6SndsMGV5cWVpTUJGbDVXamVXeFFUVzDSAa8BQVVfeXFMUE4yRFVjVi1KMEMxTWFlQVlKTTRHdm9hZ0R1MUlaNUQ2NTgxbl9CMXgyQ1A4VWdSaV80emM5Vng5TmJuMDRVemlSUTBXcFRXZ2xuN3Y1RlQwbFV5bWNBaFZ1N1Rfc2k4bXpkeXh4VW5mQ3V5QVdvaEhjbXBrMFhPMGxxZHc5VkR2YWd2NVFnVWlRaVZwZEw3SVE2LWZEU0s0M2VaVG52ei1RX2tWUll4NA?oc=5",
+   "title": "Jual Saham BYAN, Low Tuck Kwong Tergeser Dari Kursi Dirut & Puncak Orang Terkaya RI",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "aebbc9bfdc0f",
+   "date": "2026-11-25",
+   "code": "BBRI",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZUTNZdGVMYnFHMmRkdjZLRXY2ampGbUhCTGdJdk5sSE43V1VkNWRTSWlsbmlMZmdBLWIySmwwSkNwdHMxMmJ3VFVYWFNIdkUtbGxGbW5OOHlFNjFqR3Jz?oc=5",
+   "title": "Investor Asing Lepas Saham BBRI Senilai Rp 124,46 Miliar",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "f2c539fa669e",
+   "date": "2026-11-25",
+   "code": "BBRI",
+   "party": "Asing",
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uWDNydkJzdEc3WU9qNTVQWG9pVWtLWUdzUmxwQ2dQV1ZnTDhVZVR4X0pLTXRJbmh0WFphUnpZNDE4UWQ0Zy1tTVlHaWdGUktucDUxYnZfeHlVZw?oc=5",
+   "title": "Investor Asing Lepas Saham BBRI Rp 124,46 Miliar",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "4eaa57a070a2",
+   "date": "2026-11-25",
+   "code": "BULL",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 548330000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblVXNHdpeDJNcHJCSVltWU0zc0hxNWpYQUZmZ3NCeEt0d0lIbG9BS1BPeWd1STN4Q1pDSjlIbHB3MjhEOUF2SXR1a2x1VFpseUFRODBjUmNWV1NwbWNoR21Vbm54a2VXY3owM0RLckZBVy1jNUF5Z2NCdEhHeVVlZWs5M2ZlaXA3NEpBUGJTNjNxM0JibWNZcU5qeklmWWFsZVJIUzNDTERWQQ?oc=5",
+   "title": "Wong Kevin Agresif Tambah Saham BULL, Kini Kantongi 548,33 Juta Lembar",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "389d3edd591b",
+   "date": "2026-11-25",
+   "code": "NAYZ",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 194150000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 3.78,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONGRVd3pRZDJBaWg5S3ZYRVJpdW1qbUxfbGdQZnNBZXN3M1NsWHh4Q3hJSGJxN245ZWxUNV9YMWtiQW5CWjNmYkFDVkc1SWxjVUVuUjdBYkdfVHVaa2xYQ0xaTHpvSkx4WnhONkNPLUpIUGVFQ2hnSl9jcmVZd2lJU0xSVVBWOFBxTVh1OU5OeE1sSjRUQmE3TTNoQWFFc2hJMDlKdVQ4d0kxRFEycUdleWJlbl9WUXQ5bGwtR1JYZVVIWHZwcVNHdTFYMnZpVUZXWkJLbQ?oc=5",
+   "title": "Aksi Divestasi Jumbo! Wise Team International Lepas 194,15 Juta Saham NAYZ, Kepemilikan Susut Jadi 3,78%",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
+  {
+   "id": "fe9a8c03ecb5",
+   "date": "2026-11-25",
+   "code": "GOOG",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 1.06,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "JournalArta",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZVlaVTdjYWtheXlGNGNmOHlYQW5QQ3QxclNEVDJrRUxsNFBfejRkS3Jvc2NuY29leUQwdjAyT2RPQm5pWkw1QlEyQkZoNWktM1QzazUtTnRHVHNhcE92V0RNa1JuQWdOMDFiZjUwUjdjZndnSTBjLVZVVzRJdTRodGVUZXppa0EzUjdKbjVrVFVsVTFmVWRIRDZrdHhRcXY1eldIRXluVDgzS2tDLUllYjZR?oc=5",
+   "title": "Saham Alphabet (GOOG) Turun 1,06% ke US$276,58 di Tengah Aksi Jual Saham Chip",
+   "first_seen": "2026-11-25T16:44+07:00"
+  },
   {
    "id": "2655f5082fb9",
    "date": "2026-11-24",
@@ -73,19 +430,19 @@
    "date": "2026-11-24",
    "code": "BRNA",
    "party": null,
-   "role": "korporasi",
+   "role": "individu5",
    "action": "beli",
    "shares": 385950000,
    "price": null,
    "value": null,
-   "before_pct": 54.57,
-   "after_pct": 67.4,
+   "before_pct": null,
+   "after_pct": null,
    "before_shares": null,
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/dwi-satrya-utama-borong-38595-juta-saham-brna-rp264-miliar-kuasai-6740/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQX3JOeVpuRDZLQkZuY3RxOG5jR0JTa09DNmYxTllkcmRnajBaMVA2Q1NHbkdYekRwSzBNUE9sMGZBVVE2WWJ2QUZMVDFCRUwtNUVzbVhhRmNhbm5rSDZxQWFUbEZGLXVNQXR6eW9OS2doQVhLZHBHdldzMkhMbEJyOXlyYnZTR2d0RWNzRllCMEZCVV9UUkRleQ?oc=5",
    "title": "Dwi Satrya Utama Borong 385,95 Juta Saham BRNA Rp264 Miliar, Kuasai 67,40%",
    "first_seen": "2026-11-24T17:48+07:00"
   },
@@ -504,8 +861,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPazd1OG1ZaV9rZHhudUZFVXY0OEJhZDFYckpVOVVtRU9LZkhnNWp3ZlBXQ2JnVk1oY1RYSTMwQ1h2M21fR2tPcVBNVV9lWkZXQW8tTVpwbXhjLVJBYm84enMyVDVoVWFvSi1IOEg0Y0U1U3FGQ2JUVjJyOWlPcWN6VlZaWXpjemtsbVRmSDJqWmhUZlB0X0dESTZOM1R0MDRuNmJrVDJ6dXd4QkVQZFJPLQ?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUjl0bWRfdDJnSUxyaURCNFNWNE8zcV9kWVpEUnZhQTlxTG5HT3o2STVQS2dNb1dTSHJPZGFmX0RxRW52LTc0Z3F0bFZZNUF5QTgxU281SVVyamJ4LTFZOWxGdnlJVUVjRGJIampLY2ZnQVIzenpLU2phVWRydGJtakg1LXg4ZDBkQ1pWdW55ajI4Ul9IR2JIWllSdnBKMW91alBYZ2ZrUVdvaW1ZSFFycnREVEtuUQ?oc=5",
    "title": "Direktur GMFI Borong 500 Ribu Saham di Harga Rp39, Kepemilikan Naik 33,3 Persen",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -567,8 +924,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hS1hDNGZhbDlDckxHSUpNYnF0UVVRcmpmbXhXR0xFWjZCVnhna0V0eU9kRnptS1J2aEp4RGc3RUxBMzZXTENxZTV1NUo5QnlpVzJKeWlYRV91dw?oc=5",
+   "source": "bsinews.id",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MRUtMeG9OZVpUaGdISkhiRGlFRTJlMzFtWkdpZmI5b3J6T3ZQZW1lSnh6RTNXMGZGaTlabGgxOGotUEJLRXVhNjR0WlpXbmM5UkoxRGFKbHBXNVdubmVPUFBQQ2M?oc=5",
    "title": "Investor Asing Lepas Saham BRMS dan BUMI pada November 2026",
    "first_seen": "2026-11-24T04:08+07:00"
   },
@@ -1072,7 +1429,7 @@
    "purpose": null,
    "is_repo": false,
    "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VZ2VMVGlEME14Yk9kSGc5aExmdjZ3eHZSX1JOSmxsZ2dUYjNtTmRBb3I4ZGp6Y1FDWUhBVG03dUtSRWFxR2owaWt5aHdIaUJObHV1RVJOQW9JWEVIdS1VYzRCZU5VQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kNmlwNzc5bkJLS1lfdUEtc2tNaE10eDBJU2lqMzFqQ2s0V1NGSHBBcnFXYkxlTExsbVpiaG5xSzdfM2JneHRNN3pldjlmV2Y3QUl0THJwcWQ2YVdRUGhmRmh5OGFCZ00?oc=5",
    "title": "Kepemilikan Saham Direksi SMBC (BTPN) Bertambah Lewat Program Material Risk Taker",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -1942,7 +2299,7 @@
    "date": "2026-11-18",
    "code": "FOLK",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": null,
    "price": null,
@@ -1953,8 +2310,8 @@
    "after_shares": null,
    "purpose": "divestasi",
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUhHdmZ5RmR0djlQNGVjQTZmcGhPbFAyT3k5b25CMDRIWEJISnNjQ0dKTUxucVFuTHJfUl9HSWFfcG42R2dwbjZsUTZmRmtSZzlCbkd2MnRta1pNMTZNQUFNT21UYnFsT2tWUk5HTnppMXhfTC1fM1dhblY2QzRsaW5iT1JIZ2pHcXpSMTJHWW1KLVBsNUt3RDNWUmRBVXNmc01UdmVhM0FVYno0dUF4UElQby1HUQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdEVwWWNFYnhlZmJPb1hyUHM3OEVyN1F3WDJLS3cybDc5UG9vbzlDQ1J1X1JGNFRBd3ZMbkdCTG8tbkt2c05vd3hlQ2pmTGg3cGZpSmtxcXJrVUFPTF9yVnk1WEpkaGdEVHhSRXBuVURrMUlaOFNMbkc5eldLeTE5Q3hPWlFmX1JOUDBYM252VTBlZlM3MU9ZU1NJemhEUTFwdmR2VWsxY2VlNEtBWndoWg?oc=5",
    "title": "Sumber Garam Pratama Agresif Divestasi Saham FOLK, Kepemilikan Susut Jadi 15,65%",
    "first_seen": "2026-11-19T00:29+07:00"
   },
@@ -15148,15 +15505,65 @@
   }
  ],
  "net_by_code": {
-  "INDF": {
-   "net_shares": 3350000,
+  "BULL": {
+   "net_shares": 567330000,
+   "net_value": 2178000000.0,
+   "count": 5
+  },
+  "CYBR": {
+   "net_shares": -34996400,
+   "net_value": 0.0,
+   "count": 8
+  },
+  "NAYZ": {
+   "net_shares": 95280000,
    "net_value": 0.0,
    "count": 4
+  },
+  "JECX": {
+   "net_shares": 25620000,
+   "net_value": 0.0,
+   "count": 7
+  },
+  "TAPG": {
+   "net_shares": 56040500,
+   "net_value": 0.0,
+   "count": 6
+  },
+  "DGIK": {
+   "net_shares": 597760000,
+   "net_value": 0.0,
+   "count": 9
+  },
+  "AXIO": {
+   "net_shares": 22300000,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "WINR": {
+   "net_shares": -2750000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "BYAN": {
+   "net_shares": -466170000,
+   "net_value": 0.0,
+   "count": 43
   },
   "BBRI": {
    "net_shares": 5500000,
    "net_value": 5940000000.0,
-   "count": 21
+   "count": 23
+  },
+  "GOOG": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 1
+  },
+  "INDF": {
+   "net_shares": 3350000,
+   "net_value": 0.0,
+   "count": 4
   },
   "ATIC": {
    "net_shares": 30300,
@@ -15172,11 +15579,6 @@
    "net_shares": -1840000,
    "net_value": 0.0,
    "count": 1
-  },
-  "BYAN": {
-   "net_shares": -466170000,
-   "net_value": 0.0,
-   "count": 42
   },
   "CMNP": {
    "net_shares": 280000,
@@ -15227,11 +15629,6 @@
    "net_shares": -175620000,
    "net_value": 0.0,
    "count": 4
-  },
-  "WINR": {
-   "net_shares": 18750000,
-   "net_value": 0.0,
-   "count": 3
   },
   "TLKM": {
    "net_shares": 374450000,
@@ -15318,20 +15715,10 @@
    "net_value": 0.0,
    "count": 1
   },
-  "DGIK": {
-   "net_shares": 597760000,
-   "net_value": 0.0,
-   "count": 8
-  },
   "SPTO": {
    "net_shares": 0,
    "net_value": 0.0,
    "count": 1
-  },
-  "NAYZ": {
-   "net_shares": 386000000,
-   "net_value": 0.0,
-   "count": 2
   },
   "BIPI": {
    "net_shares": 0,
@@ -15342,11 +15729,6 @@
    "net_shares": 1012400000,
    "net_value": 540000000.0,
    "count": 25
-  },
-  "CYBR": {
-   "net_shares": -34473400,
-   "net_value": 0.0,
-   "count": 7
   },
   "KDTN": {
    "net_shares": 401000000,
@@ -15392,11 +15774,6 @@
    "net_shares": 431500,
    "net_value": 0.0,
    "count": 2
-  },
-  "BULL": {
-   "net_shares": 4000000,
-   "net_value": 1008000000.0,
-   "count": 1
   },
   "ATLA": {
    "net_shares": -271500000,
@@ -15693,11 +16070,6 @@
    "net_value": 19984400.0,
    "count": 1
   },
-  "TAPG": {
-   "net_shares": 1923000,
-   "net_value": 0.0,
-   "count": 4
-  },
   "BNBA": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -15732,11 +16104,6 @@
    "net_shares": 638800,
    "net_value": 0.0,
    "count": 2
-  },
-  "JECX": {
-   "net_shares": 25620000,
-   "net_value": 0.0,
-   "count": 6
   },
   "MCAS": {
    "net_shares": 0,
