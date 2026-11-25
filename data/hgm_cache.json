@@ -3,13 +3,13 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "AALI": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "ADES": {
 "status": "data kurang",
@@ -21,7 +21,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "AGAR": {
 "status": "data kurang",
@@ -31,12 +31,12 @@
 "AKKU": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "ALKA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "ARII": {
 "status": "sebagian",
@@ -58,19 +58,19 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "ASGR": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "AUTO": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "AYAM": {
 "status": "kuat",
@@ -86,7 +86,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "BDKR": {
 "status": "sebagian",
@@ -118,7 +118,7 @@
 "penjualan": true,
 "margin": false
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "BKDP": {
 "status": "lemah",
@@ -140,7 +140,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "BSML": {
 "status": "data kurang",
@@ -151,18 +151,18 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "DEWI": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "DMAS": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "EKAD": {
 "status": "data kurang",
@@ -173,7 +173,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "GEMS": {
 "status": "kuat",
@@ -216,12 +216,12 @@
 "GRPH": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "GULA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "HATM": {
 "status": "kuat",
@@ -243,7 +243,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "KKES": {
 "status": "data kurang",
@@ -254,19 +254,19 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MARK": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MBSS": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MGLV": {
 "status": "data kurang",
@@ -287,7 +287,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MMIX": {
 "status": "data kurang",
@@ -313,18 +313,18 @@
 "MPIX": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MPMX": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MPXL": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "MSJA": {
 "status": "sebagian",
@@ -382,7 +382,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "PKPK": {
 "status": "kuat",
@@ -398,7 +398,7 @@
 "penjualan": true,
 "margin": true
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "POLA": {
 "status": "lemah",
@@ -414,25 +414,25 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "POWR": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "PRDA": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "PTBA": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "ROCK": {
 "status": "lemah",
@@ -474,19 +474,19 @@
 "SEMA": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "SGER": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "SMAR": {
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "SMDR": {
 "status": "kuat",
@@ -508,7 +508,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "SMMT": {
 "status": "kuat",
@@ -573,7 +573,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "TUGU": {
 "status": "sebagian",
@@ -595,7 +595,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "UVCR": {
 "status": "data kurang",
@@ -621,7 +621,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "AKRA": {
 "status": "data kurang",
@@ -664,7 +664,7 @@
 "DKHH": {
 "status": "data kurang",
 "skor": null,
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "GGRM": {
 "status": "sebagian",
@@ -718,7 +718,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "TINS": {
 "status": "kuat",
@@ -948,7 +948,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "CASA": {
 "status": "sebagian",
@@ -986,7 +986,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-18"
+"diambil": "2026-11-25"
 },
 "DSNG": {
 "status": "sebagian",
