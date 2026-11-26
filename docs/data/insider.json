@@ -1,10 +1,115 @@
 {
- "updated": "2026-11-26T16:20+07:00",
+ "updated": "2026-11-27T02:15+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 83
+  "news": 80
  },
  "transactions": [
+  {
+   "id": "843c3061246d",
+   "date": "2026-11-26",
+   "code": "AKPI",
+   "party": null,
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": null,
+   "price": 570.0,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQa21rY0s4d1RaRWs1Q2xEUkxxY2tQa1BQSDVIOVd1emxkTWRCeFA2eEd0ZXFPMjV1WGZVVi15QzdnYl9lSUVVb2pDc3h4TjBjNlBTckRfV05qbmJpblNiejZhTTQ0MnJyQ1U3VmdfRXM1Rm5QQnBycjdpN0h4QXdaUkJzeEtaTHNWOGw1QkR3WW82bXgxVlRGTg?oc=5",
+   "title": "Anggota Dewan Komisaris AKPI Ini Jual Saham, Harga Rp570 per Helai",
+   "first_seen": "2026-11-27T02:15+07:00"
+  },
+  {
+   "id": "7b082bb18db9",
+   "date": "2026-11-26",
+   "code": "AKRA",
+   "party": "PT Arthakencana Rayatama",
+   "role": "pengendali",
+   "action": "beli",
+   "shares": 6220000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 64.658,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/pengendali-akra-borong-622-juta-saham-kepemilikan-naik-jadi-64658/",
+   "title": "Pengendali AKRA Borong 6,22 Juta Saham, Kepemilikan Naik Jadi 64,658%",
+   "first_seen": "2026-11-27T02:15+07:00"
+  },
+  {
+   "id": "07598ae14873",
+   "date": "2026-11-26",
+   "code": "CCSI",
+   "party": null,
+   "role": "korporasi",
+   "action": "beli",
+   "shares": 6740000,
+   "price": 262.0,
+   "value": 1765880000.0,
+   "before_pct": null,
+   "after_pct": 8.88,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/peter-djatmiko-borong-674-juta-saham-ccsi-kepemilikan-naik-jadi-888/",
+   "title": "Peter Djatmiko Borong 6,74 Juta Saham CCSI, Kepemilikan Naik Jadi 8,88%",
+   "first_seen": "2026-11-27T02:15+07:00"
+  },
+  {
+   "id": "71cb9d4c4764",
+   "date": "2026-11-26",
+   "code": "KDTN",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 1000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUFh5UUJ1ZGRVUXctQ2RCd2Q4VFZheVlteklOSzlUNEphNGdGMzlIU0RBaFh2bnJsWWdtWEI3eDdIUkNBMUtkVktjRXIyUmctR1pJVWZ4dFk2Tk5vYWxkby1KNjcwc1VPbV9rZVJjb2c1VThGUkxUeVZJRlBLV3l3UDVyYUw2R0ZpWUctVUFBZF8tZmc3OTREVWdUdld1TEMwamo4cXhBT3dNNlU4cUcydm9oOA?oc=5",
+   "title": "Putrasakti Mandiri Ubah Strategi, Jual 1 Juta Saham KDTN Usai Borong Beruntun",
+   "first_seen": "2026-11-27T02:15+07:00"
+  },
+  {
+   "id": "aaa2432aaf31",
+   "date": "2026-11-26",
+   "code": "TOTL",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Limapagi",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5rOGRSa3liRmg5cnNWbHV0VXNCRFpWVWc5alpSWWw3LWNDTE52c1A5S1g2YlFhWGp1YTJENnF2dUhwbWxOOWZFSl8wT2Z4VnZHVG5TQ0pzSHVBVmdpbUhuVnFoV0lKZw?oc=5",
+   "title": "TOTL Lepas Saham Lestari Kirana Rp3,85 Miliar",
+   "first_seen": "2026-11-27T02:15+07:00"
+  },
   {
    "id": "55c11a3d8506",
    "date": "2026-11-26",
@@ -12,7 +117,7 @@
    "party": "Singapore Gold Limited",
    "role": "korporasi",
    "action": "beli",
-   "shares": 2303755976,
+   "shares": null,
    "price": null,
    "value": null,
    "before_pct": null,
@@ -21,8 +126,8 @@
    "after_shares": null,
    "purpose": "repo",
    "is_repo": true,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/singapore-gold-limited-tambah-saham-msin-jadi-668-lewat-repo/",
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUlNjSUxBdkRyWE93TTN6a3VTT0VLM0Y3RzNsZzlaY25telRNMld1dW1MTFRFUkFBU1hYZUZCZThVTUZFTTduTDlVdVpTaVJxNnBOVDNHcjlSZ29mMWpWNVZqYV9pRnhlWXJPek5XTnQtSkNIYTVzUG9WV2xvZ1h0cU9ISUdLTWNSZ3Fn?oc=5",
    "title": "Singapore Gold Limited Tambah Saham MSIN Jadi 6,68% Lewat Repo",
    "first_seen": "2026-11-26T16:20+07:00"
   },
@@ -40,10 +145,10 @@
    "after_pct": null,
    "before_shares": null,
    "after_shares": null,
-   "purpose": "repo",
-   "is_repo": true,
-   "source": "Stockwatch",
-   "link": "https://stockwatch.id/trimegah-sekuritas-jual-50242-juta-saham-enrg-harga-rp555-kepemilikan-turun/",
+   "purpose": null,
+   "is_repo": false,
+   "source": "StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVVlncDdkM2tZNGVtSXU2RGRaS0gwbDNWUy12RTh2bXQyV2tsa19tNUJHS1pCRFRCcnNjaEE2LXhLMk9vOUJOdjE0dm1ZNUdKUlVuSXpXQ1RMNHNTcUJXZnZNWlVPNEhwX3JLemhJd0ZHZHFUamx0d2p1eWQ3TDZxb1dSWVQ1aDQyTHNOdDlMeUQ1R3hsdTByUUdtY2FyNEE?oc=5",
    "title": "Trimegah Sekuritas Jual 502,42 Juta Saham ENRG Harga Rp555, Kepemilikan Turun",
    "first_seen": "2026-11-26T16:20+07:00"
   },
@@ -63,7 +168,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSElGYTBDUk5EejhhMzFSWXRsYkQwYTlhSjVwOHpQWTAyZWdJZ1dPX2hmNGdZOURrSG9hU1lpdVhhV1NxS3pyb3Vma3BIbmhSZkJaUW1TRFhVX3NTckNfenlOcmFXWm11UVdwak90RVhsbURrUmdkb3FneXJXWWFSM1QyR3phX3JFLVR5SU12eGxKZTJucDZ0NGRNSENyTU1Qd1M2VF9PX2xUcTRzZ3c?oc=5",
    "title": "Direktur Mustika Ratu Borong Lagi Saham MRAT, Kepemilikan Terus Bertambah!",
    "first_seen": "2026-11-26T16:20+07:00"
@@ -189,8 +294,8 @@
    "after_shares": null,
    "purpose": "divestasi",
    "is_repo": false,
-   "source": "KONTAN",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMHYxc2FUSGNlWW9JaWZEZ0tsZXRaMzRMbUdaNW9NZVdBTFpiUnlpc3ljZTJCLTFtdm82UGZJLUlVNVdqY1k1cDlMTGJXSENqbTFnby1oMDFZZ1NRbTc1NjFCR0lReXh3RkxxWW9ZSDA0ejVsa3pLWkwxRmFZOHlLdUlMQ1VLQnMtOVF1aUhSYWx0VWg1TlJkYU9hZ0xWalFxQmoxN0F0bHbSAagBQVVfeXFMTzB2MXNhVEhjZVlvSWlmRGdLbGV0WjM0TG1HWjVvTWVXQUxaYlJ5aXN5Y2UyQi0xbXZvNlBmSS1JVTVXamNZNXA5TExiV0hDam0xZ28taDAxWWdTUW03NTYxQkdJUXl4d0ZMcVlvWUgwNHo1bGt6S1pMMUZhWTh5S3VJTENVS0JzLTlRdWlIUmFsdFVoNU5SZGFPYWdMVmpRcUJqMTdBdGx2?oc=5",
+   "source": "kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORU5nLU9BcVhVVkFBT3N1Y2gtTUl5dUw5WnE0aW8waDE1U0lBV0FDS0FwRTE0Q1MyUWlFUGxFN0pzSExCQlpyUVF3WW1lTDJfRmQxd3hlTDBaSDdlMU5sUHhkN0EzWU1vcTFjZW0xb25ydDdkX0xQRzhBd0hUay11YlVSQng4bWhzV0NiTDd4UVNBSVBjeUdOYXpnQ25TZngtUVpJVjllcGNQU25QSWxR0gGoAUFVX3lxTE8wdjFzYVRIY2VZb0lpZkRnS2xldFozNExtR1o1b01lV0FMWmJSeWlzeWNlMkItMW12bzZQZkktSVU1V2pjWTVwOUxMYldIQ2ptMWdvLWgwMVlnU1FtNzU2MUJHSVF5eHdGTHFZb1lIMDR6NWxrektaTDFGYVk4eUt1SUxDVUtCcy05UXVpSFJhbHRVaDVOUmRhT2FnTFZqUXFCajE3QXRsdg?oc=5",
    "title": "Divestasi 2 Anak Usaha Tigaraksa Satria (TGKA) Tak Berdampak Besar ke Kinerja",
    "first_seen": "2026-11-26T16:20+07:00"
   },
@@ -273,8 +378,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNERKbGdpeHRCSWdsVDhuV1Qwd2NibzFWdDVHd09lbUQ5aWhiN2xOc3lpbGt3cFdkTmJZQlROXzlPWDQyTUFmNlJBMEo4bkZ1djN5TFVoQVpOdjdTNzFZZEQxQWZiNHJSLUN1Zk5GcjBLX1gxUVVnMkZ5eTRVR3p2Sw?oc=5",
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMHFjMDBjUXhNQ2ptcmtNYmIxWUFNb2ZtamhMRmh6anhrZkRFa1Q0Yk4yY1FZcWZVOXRaOXpyZHk0Z1dTRkZfcHhfUFhtTHhoWnBiZDU5aWZZMUV0eGtibVRxNkZXaG1KMjZsSDRqeWN3UUJKbng0T1Axc3M1ajBlbjduUW1DeDgxYnZ4ZjdsOA?oc=5",
    "title": "Direksi Borong 5 Juta Saham BULL di Harga Rp234",
    "first_seen": "2026-11-25T16:44+07:00"
   },
@@ -472,7 +577,7 @@
    "date": "2026-11-25",
    "code": "WINR",
    "party": null,
-   "role": "pengendali",
+   "role": "sekuritas_mi",
    "action": "jual",
    "shares": 21500000,
    "price": null,
@@ -483,8 +588,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeU5lTjltelJSZW9XYUQ1Qm8wbFNzN2tvS2ZXYUV1aFZMbEtyMmR5NjFOaVpoZHlaQm9qVzdLZDJSQzVidDBTeFZEZVhpRXkxS3JIV095M3hDSzdqOXU4RFBpNS1TejBvUFpWWS1UU0lNQzlYNURLbzBJcDBMTm1YZ2xQUy1mb2JrWnpneGFvd0cwNFdua3RWcUk5X01ONzEwdHlFYmMyTjhTMG1EVVVxY3RmVXEyNmFtZ3FFbA?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbVZQejROSjdvNnJLeDNxYXB0UkF1Y0ZOcmNmOHVDSUdES25nczN5cHVKUDlHdFhjaTVqdXlrQV9OaEZhaEtmY1dpR0JxUGZQQ2tsb25NTlM5UnZOSVhWSjBoSnRXbG9qSWZZNlctSi1nSVFHVWl0Q2RncUt2ajFBT1NKZmhiakhhZXZkWFRDWkh4eGVtTk5iOWZ6S3p0RThwR0pLVmtPY1N4T0kxT2V0UzhlWHdFRE0?oc=5",
    "title": "Berlanjut! Pengendali WINR Kembali Jual 21,5 Juta Saham, Kepemilikan Turun Jadi 40,10%",
    "first_seen": "2026-11-25T16:44+07:00"
   },
@@ -504,8 +609,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdGRzaVo1VGtPSS1oS25temVXazNFSmI3anZBa3BZb0Jpb011UXNGTUZxOHRNWmprbUoyU3k1Y19ZclRweUJ2eUlrTGF6Y284eUhrQWtLQk5kQTAzNzFFSWNOeDdYczN2LUNLYmpocW4zdkdMQ3A1azN2UDRnOE9saGo5ZnFUeHVVTXBkaFR5U1Zjc1Q1aFpOQ2JsbjA4R1J6SndsMGV5cWVpTUJGbDVXamVXeFFUVzDSAa8BQVVfeXFMUE4yRFVjVi1KMEMxTWFlQVlKTTRHdm9hZ0R1MUlaNUQ2NTgxbl9CMXgyQ1A4VWdSaV80emM5Vng5TmJuMDRVemlSUTBXcFRXZ2xuN3Y1RlQwbFV5bWNBaFZ1N1Rfc2k4bXpkeXh4VW5mQ3V5QVdvaEhjbXBrMFhPMGxxZHc5VkR2YWd2NVFnVWlRaVZwZEw3SVE2LWZEU0s0M2VaVG52ei1RX2tWUll4NA?oc=5",
+   "source": "KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTjJEVWNWLUowQzFNYWVBWUpNNEd2b2FnRHUxSVo1RDY1ODFuX0IxeDJDUDhVZ1JpXzR6YzlWeDlOYm4wNFV6aVJRMFdwVFdnbG43djVGVDBsVXltY0FoVnU3VF9zaThtemR5eHhVbmZDdXlBV29oSGNtcGswWE8wbHFkdzlWRHZhZ3Y1UWdVaVFpVnBkTDdJUTYtZkRTSzQzZVpUbnZ6LVFfa1ZSWXg00gGvAUFVX3lxTFBOMkRVY1YtSjBDMU1hZUFZSk00R3ZvYWdEdTFJWjVENjU4MW5fQjF4MkNQOFVnUmlfNHpjOVZ4OU5ibjA0VXppUlEwV3BUV2dsbjd2NUZUMGxVeW1jQWhWdTdUX3NpOG16ZHl4eFVuZkN1eUFXb2hIY21wazBYTzBscWR3OVZEdmFndjVRZ1VpUWlWcGRMN0lRNi1mRFNLNDNlWlRudnotUV9rVlJZeDQ?oc=5",
    "title": "Jual Saham BYAN, Low Tuck Kwong Tergeser Dari Kursi Dirut & Puncak Orang Terkaya RI",
    "first_seen": "2026-11-25T16:44+07:00"
   },
@@ -739,6 +844,27 @@
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYjRVYTk2UDJVVlZzVUx2MUpreXExbVJFNkhDZnRzSGlVRnRqQjdNTG9PUVRxc09EcjZ0UUxXcEFtUUpTNTZVWFYyUzBUZGhpZWZjbzZZdm1aVjBxVkFvQk9zbHZJamZiZU9zTHkzVl9OWDlEdkpNMGZrWXJTcXhaU1J3OEtsVTA?oc=5",
    "title": "Bayan Resources Angkat Ary Bastari Jadi Dirut Usai Jhonlin Baratama Beli Saham",
    "first_seen": "2026-11-24T17:48+07:00"
+  },
+  {
+   "id": "ee872fa8bb61",
+   "date": "2026-11-23",
+   "code": "EMMI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT0s2MVVoelFxS3VIcnlDRG1PcHRSUGRoQnZ2dkhJUFBaZzBGSmRROGRGMTUyNkxDTk1walZRTUNxRnpJZllhTC1jNDdzR2g4Sm9hS2RJM0tLNVlsdlNxdWwtWFlIQWExeHlsN0l3TmhxU19tR1lQOGEzTTlZUllGVnA2d3pNYkQ5Y2s3RTE3SzVnZFBqbFFaQTJVWQ?oc=5",
+   "title": "2 Hari Beruntun! Entitas Ini Borong Saham EMMI, Total Rp290,9 Juta",
+   "first_seen": "2026-11-27T02:15+07:00"
   },
   {
    "id": "073dc4d5b00b",
@@ -1155,8 +1281,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWjRGdWEwd2NJa2hDVE5kYWgzb1N6Mlh3NEhGM2RVc09RLWdQaVItZU5iMmk3ZVZrV20zTFR0SVBFMFZlSWV2bDBUY05fS3k4UDg2Yl9uYmNSOG40WU9ZV1hOdmRhNmpZSFNFdUduOUxDdi1Ickk2ZWFud1p0QktYQmUyeWpNTlRudHhSYnJkWGdqX2ZvVjdJenZpUEhZOW4tR2RfOHdwX09QdjF4YnR1Um1pZlNxQQ?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRDZTeFhLS1lNWW5XMGhNWVZUUmZnWm01a2FQM2dKRWJpbHJYM2lIcTRxRDFYUTh4VDlyVHdrc2dYejFhdDZPT21IOWZ2LWxMSDJPNFRkZ3M4VkdaeWZOM2V5U2FHWG11MFBLbjctVHUzVXRTcVY2RGZtbTV4MjdyUkdRd3dadEZNc3JKeWljVENRZzJwUkpQajhTb2RJWk5HX2JXZTJMNTJEbzRVUDJfNVhNYWdFMXk2SDNZ?oc=5",
    "title": "Wakil Presiden Direktur Vale Borong 300 Ribu Saham INCO, Kepemilikan Melonjak 1.363%!",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -1995,8 +2121,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Lensa Hukum",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PNF9JM0tfS1dOY1h5TjZCcVNkQXlnUnlDeVVFM2RmdnNEODg1QktXLS1SeDNkdGZqTkQxYzVlSHhOR1NtOW9DaUgtY1ZOSzZ6R25MRFBEM0d6dW9tV2s5WEo0TXdqMnV4eC1pSg?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qbmhCX3M1cjBoOGttYVlHb0UtdVJVdzM1OGpzX1dzbHIxd1RGWEQ2MlE5UWNXcktLcmNnR25wS3JsdjE5WEFpV0l5YktBLU9pY0JR?oc=5",
    "title": "Investor Asing Lepas Saham BBCA dan BMRI di BEI",
    "first_seen": "2026-11-20T15:18+07:00"
   },
@@ -15778,6 +15904,36 @@
   }
  ],
  "net_by_code": {
+  "AKPI": {
+   "net_shares": -2848100,
+   "net_value": 0.0,
+   "count": 18
+  },
+  "AKRA": {
+   "net_shares": 6220000,
+   "net_value": 0.0,
+   "count": 5
+  },
+  "CCSI": {
+   "net_shares": 6740000,
+   "net_value": 1765880000.0,
+   "count": 1
+  },
+  "KDTN": {
+   "net_shares": 400000000,
+   "net_value": 0.0,
+   "count": 4
+  },
+  "TOTL": {
+   "net_shares": 6210000,
+   "net_value": 0.0,
+   "count": 3
+  },
+  "ENRG": {
+   "net_shares": -533150000,
+   "net_value": -278843100000.0,
+   "count": 12
+  },
   "MRAT": {
    "net_shares": 148800,
    "net_value": 0.0,
@@ -15792,11 +15948,6 @@
    "net_shares": 5500000,
    "net_value": 5940000000.0,
    "count": 24
-  },
-  "AKPI": {
-   "net_shares": -2848100,
-   "net_value": 0.0,
-   "count": 17
   },
   "CYBR": {
    "net_shares": -34996400,
@@ -15893,10 +16044,10 @@
    "net_value": 0.0,
    "count": 1
   },
-  "KDTN": {
-   "net_shares": 401000000,
+  "EMMI": {
+   "net_shares": 3570000,
    "net_value": 0.0,
-   "count": 3
+   "count": 2
   },
   "CMNP": {
    "net_shares": 280000,
@@ -15907,11 +16058,6 @@
    "net_shares": 13991900,
    "net_value": 0.0,
    "count": 15
-  },
-  "ENRG": {
-   "net_shares": -30730000,
-   "net_value": 0.0,
-   "count": 11
   },
   "POLA": {
    "net_shares": 125000000,
@@ -16323,11 +16469,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "AKRA": {
-   "net_shares": 0,
-   "net_value": 0.0,
-   "count": 4
-  },
   "RUNS": {
    "net_shares": 0,
    "net_value": 0.0,
@@ -16462,11 +16603,6 @@
    "net_shares": 2000000,
    "net_value": 0.0,
    "count": 3
-  },
-  "TOTL": {
-   "net_shares": 6210000,
-   "net_value": 0.0,
-   "count": 2
   },
   "MUTU": {
    "net_shares": 47530000,
@@ -16617,11 +16753,6 @@
    "net_shares": 9800,
    "net_value": 0.0,
    "count": 2
-  },
-  "EMMI": {
-   "net_shares": 3570000,
-   "net_value": 0.0,
-   "count": 1
   },
   "UANG": {
    "net_shares": -12000000,
