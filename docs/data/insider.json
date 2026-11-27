@@ -1,10 +1,136 @@
 {
- "updated": "2026-11-27T16:34+07:00",
+ "updated": "2026-11-28T02:12+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 74
+  "news": 68
  },
  "transactions": [
+  {
+   "id": "4936bcfdc092",
+   "date": "2026-11-27",
+   "code": "SRTG",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": 4900000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVkNlUlNZRE9hWXpnazVnMy15RkZrTFlPZGdtUGlRN24wdFNwZ0M5ZGF2Zm52OHRKRHZhWU5IakpYTnZQd3p0bkRKajl1UUJvcDNMLVktNmsxR3NwMVRiUHlaVTRYVm9qenlaejM4czhpU1hBRDU5VDNtbXBVUnVCYzFwRzBIZnI2eTl3enFaZFV1Tkw3SF9XYzNIN0U3QjhvTmpZZ25ORmpHMUlTMWU2TUREeFpJekVQODFVRmFzRXI?oc=5",
+   "title": "Edwin Soeryadjaya Makin Agresif Borong Saham SRTG, Kepemilikan Tembus 4,9 Miliar Lembar",
+   "first_seen": "2026-11-28T02:12+07:00"
+  },
+  {
+   "id": "b3ccb229c3af",
+   "date": "2026-11-27",
+   "code": "SRTG",
+   "party": "Saratoga",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQTg0SDZFRkxSYXM0eEh4b3pXMTFBT2Jvd2NacWNubkxSdXhOMHE3QXN2ZlN5bGhQcWdlZUM2U0E4WlFtNWNtQnc5amR4UkkzQkp1OVJNd3ZENXd3UGZfS0dzaGRtblhzMDF1bjNYUXM1UGhDNlVxX1c0WFlLMHFfdGxkYUJSZTlNQkNKajFITjAtZmFlc1N6Y0FIV1NJZjJTd3NmdC1wMk9aLTFsdVNWR2RUQ2kxckk5d1lQS2xibUFuSFU?oc=5",
+   "title": "Komisaris Saratoga Borong Saham SRTG Dua Hari Beruntun, Kepemilikan Jadi 36 Persen",
+   "first_seen": "2026-11-28T02:12+07:00"
+  },
+  {
+   "id": "fbb7fdbdf0c2",
+   "date": "2026-11-27",
+   "code": "SRTG",
+   "party": "Saratoga",
+   "role": "direksi_komisaris",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUEd2RE8zMTQxZm5ZM0lkY3dqVGR4Q2MzMDBzUmFnLUlNS2stOXp4SUNQd0U3LUg3ZUs0ZnRzMzZkN0d0S0VGWF9MazhyNG5jdldwSThMUlBLcTFpTUhCV2I4SzR5OGRTaGtRM01XUW40V0huSnFHQmM4dFZjNV9UMkYxUE9ZU0M5Xy1oaHhSYmhpMUhuVG1CVk9CWXZQVkVRaUlPenJRLVhDalpuNF94ZUpRQ0QtVTdfOUxVbGEzdGlRLWZrWkQ2NVk4Wmdydw?oc=5",
+   "title": "Foto : Komisaris Saratoga Borong Saham SRTG Dua Hari Beruntun, Kepemilikan Jadi 36 Persen Halaman 1",
+   "first_seen": "2026-11-28T02:12+07:00"
+  },
+  {
+   "id": "ff935e76d83c",
+   "date": "2026-11-27",
+   "code": "CYBR",
+   "party": "Doni Mora",
+   "role": "direksi_komisaris",
+   "action": "jual",
+   "shares": 100000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": 0.03,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY2VZanRCZllJR2JHdkZDcnRxUXo0eWV3Z0JRYWdobThLUmlSWkswY0l5cVhBY20xQ0ZLazM0UU9zRFhyXzJBNmFhdGhwblF0dU9hcDdteGI4dk5IUjNCWGMzWW1vRlExWlR0TS0welJKdjNMRE9Gdkg5bktoOFZOTzJQS3kzdnZwM0U0R25GOUlURklVTEFKamJiVXYzY3FRcUVlU05ZSVkzd3VvVGc?oc=5",
+   "title": "Direktur CYBR Doni Mora Lepas 100 Ribu Saham, Kepemilikan Turun Jadi 0,03%",
+   "first_seen": "2026-11-28T02:12+07:00"
+  },
+  {
+   "id": "f860c64d8564",
+   "date": "2026-11-27",
+   "code": "TLKM",
+   "party": null,
+   "role": "korporasi",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Stockwatch",
+   "link": "https://stockwatch.id/asing-ramai-jual-saham-net-foreign-sell-tlkm-dan-bbri-tembus-rp103-triliun-cermati-arah-pasar-saham-jelang-akhir-november/",
+   "title": "Asing Ramai Jual Saham, Net Foreign Sell TLKM dan BBRI Tembus Rp1,03 Triliun, Cermati Arah Pasar Saham Jelang Akhir November",
+   "first_seen": "2026-11-28T02:12+07:00"
+  },
+  {
+   "id": "e9ec59830b79",
+   "date": "2026-11-27",
+   "code": "UNVR",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTUtsY2szdGJxYk82SEdOX1JLMEhYODhua2oxMkNORWdKeGszdUlYMXBEUExqZlVBc3FsTUNaTlhOSUVZeDc4dGpSSmxBd2lLa04yRU00eDkwelJ4WVJsWjNycFdoYXBiTE1RbnA1ZUlLWnRqX2ZycGV0b0NHRnhsU3N5dFpkOEkyQVhVaGdkc3VRUmxxeXZwN1o4NzV0RUZBaWdJTEpNYmhMejZMMGZFQXpIU3I3c2MwNHZZYWgyd1Fud2FEckJF?oc=5",
+   "title": "Ini Alasan Unilever (UNVR) Divestasi Bisnis Makanan Rp20,5 Triliun ke McCormick",
+   "first_seen": "2026-11-28T02:12+07:00"
+  },
   {
    "id": "775f3b9e07e9",
    "date": "2026-11-27",
@@ -126,7 +252,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "pasardana.id",
+   "source": "Pasardana",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVUF5N1NBNGpIN3UwNjlmYXFVR1RwR2pkN09sNGlETFNJLTdoSndJZzB1YkM0V1NHZnB0NWNKLUQyRGRBZkpnaGlsX1FHaGZUbmZsaDhCdWNJR2dLWnNjMTIweE1xd2owVU9zUE1oWTNObVIxOE5YSjVPcHZYaGJZNHJzczJHR3FOaGZrWEF2UHdrSlZkclhCTGtHd2I4Mms0emVjVUl0dkE2Y2JfeHpuRg?oc=5",
    "title": "Samuel Sekuritas Agresif Transaksi Saham RLCO, Kepemilikan Susut Jadi 13,50%",
    "first_seen": "2026-11-27T16:34+07:00"
@@ -193,6 +319,27 @@
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXg4dTAxWkJuRUNqaHFPNkFtUXdMbWNGQlMyTEVFRGlaX2RHQmhreDN1WlNRTktkQllveVlPLUxYZzN2alhMWTFsSGNZMU9wel9NU2hKUDJEd1lGejBZdVRKRzVKT2hDUmNuR1JMY3o0SDc2TXVJWlFoQ1BpSFpBcnJ5bTNlZjdOOFJaSGZXTTlYaEpJRjNrM0EtM0d3SXlYdmlla1lXMUc?oc=5",
    "title": "Anggota Dewan Komisaris AKPI Ini Jual Saham, Harga Rp570 per Helai",
    "first_seen": "2026-11-27T02:15+07:00"
+  },
+  {
+   "id": "67dc74cf5a45",
+   "date": "2026-11-26",
+   "code": "TLKM",
+   "party": null,
+   "role": "individu5",
+   "action": "jual",
+   "shares": 1000000,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": "divestasi",
+   "is_repo": false,
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMVFKd0RXX25Vb3JkbWc3OWI5VnZsT2JtOUJ2dUhuTDdHZWRvZjNzdUg3TUFyODRqb2Q4cVZRWjlaZjNUWUgwUjFrZ0RWQWhhbWZ0dFpYLURrR1k2a19vQ2dGUjJyYUt4bFlwQ2pNbVJ0SFNlYW1HNzRBYjRab1hPakl6OHRZa0tvVlNRTzM3OE1CRFByWWpYZVJhUTRReHdBc2N6NmpEOUd0V0tj?oc=5",
+   "title": "BNY Mellon divestasi 1 juta lembar TLKM, sisakan 6,92% kepemilikan",
+   "first_seen": "2026-11-28T02:12+07:00"
   },
   {
    "id": "041e0bd444d0",
@@ -484,7 +631,7 @@
    "purpose": "divestasi",
    "is_repo": false,
    "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTG8yN0VHY0NDU0h1WWdzUjNIRk1wS3BNZGp0U2s2eG5tOWZ2bkw4LUFRU1FCWmk4MUNHOWFHLVZMdDFpclQtdjF0cm1DOGtGbUN6N0xoODh3TnpMS2ROMEw3LVowdEZGY3BXT0t2NWsySEM0SVQ5T0U4LUkta3QtRg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBtY0pDY0RTaG50WDQ2Q19hVmwxaUpTOEJBMnEtZ2l3OEJZNGRGOWpEdjYtSno5dWs2TGhRSHJlNVloMElGV1Z2OEhnY2lpZW1ya19IUTg4d21HaHBGMWlUc0JSRkM5MjdwSUQ1UEZ4UGw2X0JWTFozZmNMdGxBdnM?oc=5",
    "title": "Divestasi 2 Anak Usaha Tigaraksa Satria (TGKA) Tak Berdampak Besar ke Kinerja",
    "first_seen": "2026-11-26T16:20+07:00"
   },
@@ -531,6 +678,27 @@
    "first_seen": "2026-11-26T16:20+07:00"
   },
   {
+   "id": "ee872fa8bb61",
+   "date": "2026-11-25",
+   "code": "EMMI",
+   "party": null,
+   "role": "individu5",
+   "action": "beli",
+   "shares": null,
+   "price": null,
+   "value": null,
+   "before_pct": null,
+   "after_pct": null,
+   "before_shares": null,
+   "after_shares": null,
+   "purpose": null,
+   "is_repo": false,
+   "source": "Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVVFUWJuem5aakozdEphZDBRc3BuYzdLUWVib01SNnZlc1FkV19zQXRBSnlydWh1SWp4WHl3WUtLUUpnNmJvYmU2ZXRDRWYyNVJDbXNTOUZEYzU2Q3VMeHZzbnlvak10MUx0R0JSSV96dGxKRTBobXpxZERSMVRLcWZ3YVYxLWxWVmI0MndEdkZDeGQ3Zmc?oc=5",
+   "title": "2 Hari Beruntun! Entitas Ini Borong Saham EMMI, Total Rp290,9 Juta",
+   "first_seen": "2026-11-27T02:15+07:00"
+  },
+  {
    "id": "dd535ffcc7f9",
    "date": "2026-11-25",
    "code": "REAL",
@@ -567,8 +735,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNERKbGdpeHRCSWdsVDhuV1Qwd2NibzFWdDVHd09lbUQ5aWhiN2xOc3lpbGt3cFdkTmJZQlROXzlPWDQyTUFmNlJBMEo4bkZ1djN5TFVoQVpOdjdTNzFZZEQxQWZiNHJSLUN1Zk5GcjBLX1gxUVVnMkZ5eTRVR3p2Sw?oc=5",
+   "source": "Lotus Andalan Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMHFjMDBjUXhNQ2ptcmtNYmIxWUFNb2ZtamhMRmh6anhrZkRFa1Q0Yk4yY1FZcWZVOXRaOXpyZHk0Z1dTRkZfcHhfUFhtTHhoWnBiZDU5aWZZMUV0eGtibVRxNkZXaG1KMjZsSDRqeWN3UUJKbng0T1Axc3M1ajBlbjduUW1DeDgxYnZ4ZjdsOA?oc=5",
    "title": "Direksi Borong 5 Juta Saham BULL di Harga Rp234",
    "first_seen": "2026-11-25T16:44+07:00"
   },
@@ -850,7 +1018,7 @@
    "date": "2026-11-25",
    "code": "BULL",
    "party": null,
-   "role": "individu5",
+   "role": "sekuritas_mi",
    "action": "beli",
    "shares": 548330000,
    "price": null,
@@ -861,8 +1029,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblVXNHdpeDJNcHJCSVltWU0zc0hxNWpYQUZmZ3NCeEt0d0lIbG9BS1BPeWd1STN4Q1pDSjlIbHB3MjhEOUF2SXR1a2x1VFpseUFRODBjUmNWV1NwbWNoR21Vbm54a2VXY3owM0RLckZBVy1jNUF5Z2NCdEhHeVVlZWs5M2ZlaXA3NEpBUGJTNjNxM0JibWNZcU5qeklmWWFsZVJIUzNDTERWQQ?oc=5",
+   "source": "YB Sekuritas",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRHZPdERsRUZpU2ZMYVdfbEVZSUg2bXNNd29Nakt5S2hzVUQ1RTNUajFDRUdTNkdiN2hGeVV1THZxSEJUaVhHRDctVndWSWpRMjRIeWotbmh2dG5UR2w2WGxVZV82ZjdVaXB5cmF5azhFNzZ6MXFkNjhoRG5GYmg2OHhTMjJKU0pWaVUtTWp1Z3lzdmRQVFdnQ1FxdnlMeU1NUzNRaw?oc=5",
    "title": "Wong Kevin Agresif Tambah Saham BULL, Kini Kantongi 548,33 Juta Lembar",
    "first_seen": "2026-11-25T16:44+07:00"
   },
@@ -1033,27 +1201,6 @@
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYjRVYTk2UDJVVlZzVUx2MUpreXExbVJFNkhDZnRzSGlVRnRqQjdNTG9PUVRxc09EcjZ0UUxXcEFtUUpTNTZVWFYyUzBUZGhpZWZjbzZZdm1aVjBxVkFvQk9zbHZJamZiZU9zTHkzVl9OWDlEdkpNMGZrWXJTcXhaU1J3OEtsVTA?oc=5",
    "title": "Bayan Resources Angkat Ary Bastari Jadi Dirut Usai Jhonlin Baratama Beli Saham",
    "first_seen": "2026-11-24T17:48+07:00"
-  },
-  {
-   "id": "ee872fa8bb61",
-   "date": "2026-11-23",
-   "code": "EMMI",
-   "party": null,
-   "role": "individu5",
-   "action": "beli",
-   "shares": null,
-   "price": null,
-   "value": null,
-   "before_pct": null,
-   "after_pct": null,
-   "before_shares": null,
-   "after_shares": null,
-   "purpose": null,
-   "is_repo": false,
-   "source": "Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT0s2MVVoelFxS3VIcnlDRG1PcHRSUGRoQnZ2dkhJUFBaZzBGSmRROGRGMTUyNkxDTk1walZRTUNxRnpJZllhTC1jNDdzR2g4Sm9hS2RJM0tLNVlsdlNxdWwtWFlIQWExeHlsN0l3TmhxU19tR1lQOGEzTTlZUllGVnA2d3pNYkQ5Y2s3RTE3SzVnZFBqbFFaQTJVWQ?oc=5",
-   "title": "2 Hari Beruntun! Entitas Ini Borong Saham EMMI, Total Rp290,9 Juta",
-   "first_seen": "2026-11-27T02:15+07:00"
   },
   {
    "id": "073dc4d5b00b",
@@ -1512,8 +1659,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "bsinews.id",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MRUtMeG9OZVpUaGdISkhiRGlFRTJlMzFtWkdpZmI5b3J6T3ZQZW1lSnh6RTNXMGZGaTlabGgxOGotUEJLRXVhNjR0WlpXbmM5UkoxRGFKbHBXNVdubmVPUFBQQ2M?oc=5",
+   "source": "Limapagi",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyd2FrWFFCUXd0RHpWV2puUnBHVEpqTHZXLWhzMmRncXVhcmpzTTJjXy1nWjBqNGt5QTlfNE42X1pLOVRidWwza01tVmpLWTc3Y1dZVmhHbVBsSmdDVU5BYTd4VXZGUTAtZUJxWg?oc=5",
    "title": "Investor Asing Lepas Saham BRMS dan BUMI pada November 2026",
    "first_seen": "2026-11-24T04:08+07:00"
   },
@@ -1743,8 +1890,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "bsinews.id",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBpYzBjOFF4QURWYVB5UFFTMGszd25qMVEzZnJyZ2VNb3hQTTNoOW85LWliMjhxazdkcGFnejZVWFJSRzhUeFpOdm1qYmlyWVhXVVcyS0NiYzRxME5PWHc?oc=5",
+   "source": "cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GczdpVkhoUEVBZU1wZEFzRDZqWUxQLXNTc3dSRG9QR1JrUzZmd0dvVllFTDNzQXJzTU44ZFZjQjlCTURYNG5ZTVFtWWNtUXBvUGI3RHlTX2p0TlhQNE1R?oc=5",
    "title": "Investor Asing Lepas Saham BBCA Rp 344 Miliar",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -1764,8 +1911,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1RZ1h4cEt6U0NZZllNNDFKSGhqNVFSNlBLdjJYVXoyY2pHcGk2WHdmTGQ4Tmd1bnZrWUZmOHo4c00tNi1xci1RMWlCbm9EWmVpeXhpWXE0NUY5Y2xQN1JKc1Rn?oc=5",
+   "source": "Limapagi",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ubU1aQ0xLZTVmNzJETVdvU2dFLWROMUlTSnNaZE9ZQy1MWFV3NlNrRlZ3b3JiWTBhYW12ekRRaTZXelVpVzRXa2VQbkFhVnhnaGpBVG9CbHpIZVpNbU8tbG8wQ2Y?oc=5",
    "title": "Investor Asing Lepas Saham BBCA Senilai Rp 344 Miliar",
    "first_seen": "2026-11-23T15:50+07:00"
   },
@@ -16093,6 +16240,26 @@
   }
  ],
  "net_by_code": {
+  "SRTG": {
+   "net_shares": 4913991900,
+   "net_value": 0.0,
+   "count": 19
+  },
+  "CYBR": {
+   "net_shares": -35096400,
+   "net_value": 0.0,
+   "count": 10
+  },
+  "TLKM": {
+   "net_shares": 373450000,
+   "net_value": 0.0,
+   "count": 15
+  },
+  "UNVR": {
+   "net_shares": 0,
+   "net_value": 0.0,
+   "count": 3
+  },
   "AKPI": {
    "net_shares": -3248600,
    "net_value": 0.0,
@@ -16122,11 +16289,6 @@
    "net_shares": -4660000000,
    "net_value": 0.0,
    "count": 23
-  },
-  "SRTG": {
-   "net_shares": 13991900,
-   "net_value": 0.0,
-   "count": 16
   },
   "CCSI": {
    "net_shares": 6740000,
@@ -16158,11 +16320,6 @@
    "net_value": 5940000000.0,
    "count": 24
   },
-  "CYBR": {
-   "net_shares": -34996400,
-   "net_value": 0.0,
-   "count": 9
-  },
   "FILM": {
    "net_shares": -75850000,
    "net_value": 0.0,
@@ -16177,6 +16334,11 @@
    "net_shares": -5200000,
    "net_value": 0.0,
    "count": 1
+  },
+  "EMMI": {
+   "net_shares": 3570000,
+   "net_value": 0.0,
+   "count": 2
   },
   "REAL": {
    "net_shares": -50000000,
@@ -16248,11 +16410,6 @@
    "net_value": 0.0,
    "count": 1
   },
-  "EMMI": {
-   "net_shares": 3570000,
-   "net_value": 0.0,
-   "count": 2
-  },
   "CMNP": {
    "net_shares": 280000,
    "net_value": 0.0,
@@ -16292,11 +16449,6 @@
    "net_shares": -175620000,
    "net_value": 0.0,
    "count": 4
-  },
-  "TLKM": {
-   "net_shares": 374450000,
-   "net_value": 0.0,
-   "count": 13
   },
   "GMFI": {
    "net_shares": 850000,
@@ -16830,11 +16982,6 @@
   },
   "BUKA": {
    "net_shares": 424000000,
-   "net_value": 0.0,
-   "count": 2
-  },
-  "UNVR": {
-   "net_shares": 0,
    "net_value": 0.0,
    "count": 2
   },
