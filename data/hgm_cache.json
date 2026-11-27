@@ -52,7 +52,7 @@
 "penjualan": false,
 "margin": true
 },
-"diambil": "2026-11-20"
+"diambil": "2026-11-27"
 },
 "ARNA": {
 "status": "data kurang",
@@ -820,7 +820,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-20"
+"diambil": "2026-11-27"
 },
 "PSAB": {
 "status": "sebagian",
@@ -868,7 +868,7 @@
 "penjualan": false,
 "margin": false
 },
-"diambil": "2026-11-20"
+"diambil": "2026-11-27"
 },
 "MTLA": {
 "status": "data kurang",
@@ -1045,7 +1045,7 @@
 "status": "data kurang",
 "skor": null,
 "kuartal": "2026-09",
-"diambil": "2026-11-20"
+"diambil": "2026-11-27"
 },
 "INOV": {
 "status": "data kurang",
@@ -1056,5 +1056,21 @@
 "status": "data kurang",
 "skor": null,
 "diambil": "2026-11-23"
+},
+"DGIK": {
+"status": "data kurang",
+"skor": null,
+"kuartal": "2026-09",
+"diambil": "2026-11-27"
+},
+"NASI": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-11-27"
+},
+"VOKS": {
+"status": "data kurang",
+"skor": null,
+"diambil": "2026-11-27"
 }
 }
