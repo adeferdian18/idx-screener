@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-28T02:12+07:00",
+ "updated": "2026-11-28T02:13+07:00",
  "sources": {
   "idx": "blocked",
-  "news": 68
+  "news": 67
  },
  "transactions": [
   {
@@ -1018,7 +1018,7 @@
    "date": "2026-11-25",
    "code": "BULL",
    "party": null,
-   "role": "sekuritas_mi",
+   "role": "individu5",
    "action": "beli",
    "shares": 548330000,
    "price": null,
@@ -1029,8 +1029,8 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "YB Sekuritas",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRHZPdERsRUZpU2ZMYVdfbEVZSUg2bXNNd29Nakt5S2hzVUQ1RTNUajFDRUdTNkdiN2hGeVV1THZxSEJUaVhHRDctVndWSWpRMjRIeWotbmh2dG5UR2w2WGxVZV82ZjdVaXB5cmF5azhFNzZ6MXFkNjhoRG5GYmg2OHhTMjJKU0pWaVUtTWp1Z3lzdmRQVFdnQ1FxdnlMeU1NUzNRaw?oc=5",
+   "source": "Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblVXNHdpeDJNcHJCSVltWU0zc0hxNWpYQUZmZ3NCeEt0d0lIbG9BS1BPeWd1STN4Q1pDSjlIbHB3MjhEOUF2SXR1a2x1VFpseUFRODBjUmNWV1NwbWNoR21Vbm54a2VXY3owM0RLckZBVy1jNUF5Z2NCdEhHeVVlZWs5M2ZlaXA3NEpBUGJTNjNxM0JibWNZcU5qeklmWWFsZVJIUzNDTERWQQ?oc=5",
    "title": "Wong Kevin Agresif Tambah Saham BULL, Kini Kantongi 548,33 Juta Lembar",
    "first_seen": "2026-11-25T16:44+07:00"
   },
@@ -1533,7 +1533,7 @@
    "after_shares": null,
    "purpose": null,
    "is_repo": false,
-   "source": "Pasardana",
+   "source": "pasardana.id",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcWxvS2JDdmtYMERvQWpYMUNhSXNsVzZWVkVMMXFpU1FSa1NfakZZemxvdlM1WHZjZ0txaUY3OEJiSWQ2R21NZkFiT0N4QUdTNkZqOGJ5bUZhTkFYby1ka3Q0TjFzOHpIR2U3eHhUcmlHWGdad2JjRmlYV0pSTUNhTDFrdlhGRGREcWlzcXd1OVhkdHZWOENIQjNsQWtvVzZETzNTRFM1dXdReFBtM0Fra3VJTV9ZMkluVV82ZDFrTXE?oc=5",
    "title": "Pemenang Nusantara Internasional Beruntun Jual Saham WINR, Kepemilikan Susut Jadi 41,24%",
    "first_seen": "2026-11-23T15:50+07:00"
